@@ -79,10 +79,12 @@ The module is still under development and the current version is a beta version,
 Due to the lack of art resources, ability and funds, the textures of this mod come from sources including my personal drawing, using different AI-assisted production, modification of vanilla or other sources of textures and other sources, please understand that there are some problems with the degree of unity of quality and style.
 
  - 本模组发布前只在作者个人的游戏环境下测试，无法保证完全不存在bug和兼容性问题，如果遇到相关问题，建议及时进行反馈。但一些我不会游玩的mod恕我没有能力提供补丁与修复，例如Combat Extended、Humanoid Alien Races、Vanilla Psycast Expanded、Medieval Overhaul等。如果出现问题，我可能需要你们的帮助以解决。
- 
+
 This mod is only tested in the author's personal gaming environment before release, and there is no guarantee that it is completely free of bugs and compatibility issues, so if you encounter any related problems, it is recommended that you provide feedback in a timely manner. However, some mods that I won't be playing forgive me for not being able to provide patches and fixes, such as Combat Extended, Humanoid Alien Races, Vanilla Psycast Expanded, Medieval Overhaul, and so on. If a problem arises, I may need your help to fix it.
 
 ## Links
+ - [WorkShop](https://steamcommunity.com/sharedfiles/filedetails/?id=3370644015)
+
  - [Patreon](https://patreon.com/shiqiluna) (I probably don't use it that often)
 
  - [爱发电](https://ifdian.net/a/shiqiluna) (Available to Chinese users)
