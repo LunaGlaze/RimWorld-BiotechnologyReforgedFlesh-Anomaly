@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="Flame" Name="BRF_FleshPulse">
+    <defName>BRF_FleshPulse</defName>
+    <label>Pulse of Flesh</label>
+    <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+    <deathMessage>{0} has been Pulsed of Flesh to death.</deathMessage>
+    <harmsHealth>true</harmsHealth>
+    <hediff>ElectricalBurn</hediff>
+    <armorCategory>Sharp</armorCategory>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.8</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0.5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0.5</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.25</corpseDamageFactor>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+  </DamageDef>
+  
+  <DamageDef ParentName="BRF_FleshPulse">
+    <defName>BRF_FleshPulseExplosive</defName>
+    <label>Pulse of Flesh</label>
+    <isExplosive>true</isExplosive>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <explosionColorEdge>(0.5, 0.25, 0.25, 0.8)</explosionColorEdge>
+    <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+    <soundExplosion>Explosion_EMP</soundExplosion>
+  </DamageDef>
+
+  <DamageDef ParentName="Scratch">
+    <defName>BRF_FleshViruScratch</defName>
+    <label>flesh scratch</label>
+    <additionalHediffs>
+      <li>
+        <hediff>BRF_FleshLacerated</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Slice</impactSoundType>
+  </DamageDef>
+  <DamageDef ParentName="CutBase">
+    <defName>BRF_FleshViruCut</defName>
+    <label>flesh cut</label>
+    <additionalHediffs>
+      <li>
+        <hediff>BRF_FleshLacerated</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Slice</impactSoundType>
+  </DamageDef>
+
+  <DamageDef ParentName="Flame">
+    <defName>BRF_ViralAcidBurn</defName>
+    <label>viral acid burn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <armorCategory>Sharp</armorCategory>
+    <hediff>AcidBurn</hediff>
+    <scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <additionalHediffs>
+      <li>
+        <hediff>BRF_FleshLacerated</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+</Defs>

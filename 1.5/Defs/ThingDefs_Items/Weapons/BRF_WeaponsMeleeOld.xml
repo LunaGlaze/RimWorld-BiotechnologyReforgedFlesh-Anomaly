@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BRF_BaseMeleeWeaponOld" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+	<!-- 配方 -->
+    <recipeMaker>
+    <!-- 工作速度 -->
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <!-- 制作时有加成的技能 -->
+      <workSkill>Crafting</workSkill>
+      <!-- 工作特效 -->
+      <effectWorking>Smith</effectWorking>
+      <!-- 工作音效 -->
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="BRF_MeleeWeapon_Sharp" ParentName="BRF_BaseMeleeWeaponOld" Abstract="True">
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+  </ThingDef>
+
+  <ThingDef ParentName="BRF_MeleeWeapon_Sharp">
+    <defName>BRFMelee_BoneDagger</defName>
+    <label>bone dagger</label>
+    <description>A small knife forged from bones. Holding it in hand it was as if hear the owner of the skeleton from which it was made moaning in pain.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/BRF_BoneDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.22</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <displayPriority>310</displayPriority>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BRF_LivingMechanismResearch</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <BRF_BoneFragment>15</BRF_BoneFragment>
+      <Bioferrite>1</Bioferrite>
+    </costList>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+    </equippedStatOffsets>
+  </ThingDef>
+
+
+
+</Defs>

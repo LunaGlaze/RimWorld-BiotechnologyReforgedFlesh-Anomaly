@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 这 nm 一万个 xpath我翻 nm！仅适用于非安装了 -->
+  <!-- EN: stomach -->
+  <Stomach.label>胃</Stomach.label>
+  <!-- EN: A biological human stomach. Digests food and turns it into energy and nutrients. -->
+  <Stomach.description>一个来自生物的胃，负责消化食物将其转化为能量和营养。</Stomach.description>
+  
+  <!-- EN: Spine -->
+  <Spine.label>脊椎</Spine.label>
+  <!-- EN: A biological human spine. Required for walking and standing. -->
+  <Spine.description>一个来自生物的脊椎，需要靠它才能行走和站立。</Spine.description>
+  
+  <!-- EN: eyeball -->
+  <Eye.label>眼球</Eye.label>
+  <!-- EN: A biological human eyeball. Absorbs light, which lets a person know what's around them. -->
+  <Eye.description>一个来自生物的眼球，接收光线，让生物了解周围的情况。</Eye.description>
+  
+  <!-- EN: ear -->
+  <Ear.label>耳朵</Ear.label>
+  <!-- EN: A biological human ear. Picks up vibrations in the air, allowing people to hear sound. -->
+  <Ear.description>一个来自生物的耳朵，从周边接收机械波，让生物听到周围的声音。</Ear.description>
+  
+  <!-- EN: brain -->
+  <Brain.label>大脑</Brain.label>
+  <!-- EN: A biological human brain. The center of all Consciousness. -->
+  <Brain.description>一个来自生物的大脑，所有意识体的枢纽。</Brain.description>
+  
+  <!-- EN: Nose -->
+  <Nose.label>鼻</Nose.label>
+  <!-- EN: A biological human nose. A pretty useful organ to distinguish odors, applies the finishing touch to a face. -->
+  <Nose.description>一个来自生物的鼻子，用来区分气味的器官，非常有用的部件，同时还能充当脸部的点缀。</Nose.description>
+  
+  <!-- EN: Jaw -->
+  <Jaw.label>下颌</Jaw.label>
+  <!-- EN: A biological human jaw. A nice set of teeth for chewing food and talking. -->
+  <Jaw.description>一个来自生物的下颌，用来咀嚼食物和交流的一套整齐好看的牙齿。</Jaw.description>
+  
+  <!-- EN: Arm -->
+  <Arm.label>手臂</Arm.label>
+  <!-- EN: A biological human arm. Arms are like legs, except you can carry stuff with them. -->
+  <Arm.description>一个来自生物的手臂，手臂跟腿差不多，除了能够用它搬运东西。</Arm.description>
+  
+  <!-- EN: Hand -->
+  <Hand.label>手</Hand.label>
+  <!-- EN: A man's best friend. -->
+  <Hand.description>生物的最好的朋友</Hand.description>
+  
+  <!-- EN: leg -->
+  <Leg.label>腿</Leg.label>
+  <!-- EN: A biological human leg. Basically long meaty sticks that let you move around. -->
+  <Leg.description>一个来自生物的腿，简单描述就是长条形的肉棍，用于步行奔跑。</Leg.description>
+  
+  <!-- EN: foot -->
+  <Foot.label>足</Foot.label>
+  <!-- EN: A biological human foot. The thing you can put shoes on. -->
+  <Foot.description>一个来自生物的足，可以用来穿鞋。</Foot.description>
+
+</LanguageData>

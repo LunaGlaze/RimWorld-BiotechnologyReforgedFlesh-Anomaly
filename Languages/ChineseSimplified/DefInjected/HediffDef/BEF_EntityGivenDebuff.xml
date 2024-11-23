@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_ScarletFever.label>猩红狂热</BRF_ScarletFever.label>
+  <BRF_ScarletFever.description>那些更原始但更高效的血肉兽总是伴随着这种扭曲的狂热出现。牠们不怕疼痛，牠们所向披靡。</BRF_ScarletFever.description>
+
+  <BRF_MalignantFleshActivation.label>恶性血肉活化</BRF_MalignantFleshActivation.label>
+  <BRF_MalignantFleshActivation.description>一种通过怪异的血肉兽攻击传播的具有灵能效应的感染。虽然它能让受感染者在短时间内变得更强大，但也会导致疼痛感骤增，并可能导致某些原本难以发生的恶性实体效应。</BRF_MalignantFleshActivation.description>
+  <BRF_MalignantFleshActivation.stages.0.label>轻微</BRF_MalignantFleshActivation.stages.0.label>
+  <BRF_MalignantFleshActivation.stages.1.label>轻微</BRF_MalignantFleshActivation.stages.1.label>
+  <BRF_MalignantFleshActivation.stages.2.label>严重</BRF_MalignantFleshActivation.stages.2.label>
+  <BRF_MalignantFleshActivation.stages.3.label>严重</BRF_MalignantFleshActivation.stages.3.label>
+  <BRF_MalignantFleshActivation.stages.4.label>极度</BRF_MalignantFleshActivation.stages.4.label>
+  <BRF_MalignantFleshActivation.stages.5.label>极度</BRF_MalignantFleshActivation.stages.5.label>
+
+  <BRF_FleshLacerated.label>血肉撕裂</BRF_FleshLacerated.label>
+  <BRF_FleshLacerated.description>一种生物病毒增生物潜伏在目标体内，如果目标不是机械体，最终可能会皮开肉绽。</BRF_FleshLacerated.description>
+  <BRF_FleshLacerated.stages.0.label>轻微</BRF_FleshLacerated.stages.0.label>
+  <BRF_FleshLacerated.stages.1.label>严重</BRF_FleshLacerated.stages.1.label>
+  <BRF_FleshLacerated.stages.2.label>极度</BRF_FleshLacerated.stages.2.label>
+  <BRF_FleshLacerated.stages.3.label>极度</BRF_FleshLacerated.stages.3.label>
+
+  <BRF_FIeshLacerated.label>血肉撕裂</BRF_FIeshLacerated.label>
+  <BRF_FIeshLacerated.description>一种生物病毒增生物潜伏在目标体内，如果目标不是机械体，最终可能会皮开肉绽。</BRF_FIeshLacerated.description>
+  <BRF_FIeshLacerated.stages.0.label>轻微</BRF_FIeshLacerated.stages.0.label>
+  <BRF_FIeshLacerated.stages.1.label>严重</BRF_FIeshLacerated.stages.1.label>
+  <BRF_FIeshLacerated.stages.2.label>极度</BRF_FIeshLacerated.stages.2.label>
+  <BRF_FIeshLacerated.stages.3.label>极度</BRF_FIeshLacerated.stages.3.label>
+
+</LanguageData>

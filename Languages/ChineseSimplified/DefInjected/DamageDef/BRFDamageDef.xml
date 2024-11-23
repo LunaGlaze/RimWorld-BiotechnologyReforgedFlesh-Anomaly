@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_FleshPulse.label>血肉脉冲</BRF_FleshPulse.label>
+  <BRF_FleshPulse.deathMessage>{0}死于血肉脉冲。</BRF_FleshPulse.deathMessage>
+
+  <BRF_FleshPulseExplosive.label>血肉脉冲</BRF_FleshPulseExplosive.label>
+  <BRF_FleshPulseExplosive.deathMessage>{0}死于血肉脉冲。</BRF_FleshPulseExplosive.deathMessage>
+
+  <BRF_FleshViruScratch.label>肉毒撕裂</BRF_FleshViruScratch.label>
+  <BRF_FleshViruScratch.deathMessage>{0}被撕裂致死。</BRF_FleshViruScratch.deathMessage>
+
+  <BRF_FleshViruCut.label>肉毒切割</BRF_FleshViruCut.label>
+  <BRF_FleshViruCut.deathMessage>{0}被砍死了。</BRF_FleshViruCut.deathMessage>
+
+  <BRF_ViralAcidBurn.label>病毒性酸烧伤</BRF_ViralAcidBurn.label>
+  <BRF_ViralAcidBurn.deathMessage>{0}被烧死了。</BRF_ViralAcidBurn.deathMessage>
+
+
+</LanguageData>

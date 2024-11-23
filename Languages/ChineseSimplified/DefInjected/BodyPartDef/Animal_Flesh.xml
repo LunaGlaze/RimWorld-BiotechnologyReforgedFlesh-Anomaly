@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 振动感知器 -->
+
+  <BRF_Vibration_Sensor.label>振动感知器</BRF_Vibration_Sensor.label>
+
+
+  <!-- 肉腔 -->
+
+  <BRF_Cavity.label>肉腔</BRF_Cavity.label>
+
+
+  <!-- 口器 -->
+
+  <BRF_Mouthparts.label>口器</BRF_Mouthparts.label>
+
+
+</LanguageData>

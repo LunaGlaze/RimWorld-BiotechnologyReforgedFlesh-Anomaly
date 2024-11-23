@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="BRF_BuildingSpawnerBase" Abstract="True" ParentName="BuildingBase">
+    <graphicData>
+      <shaderType Inherit="False"/>
+    </graphicData>
+    <category>Building</category>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <filthLeaving>Filth_TwistedFlesh</filthLeaving>
+	  <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <building>
+      <buildingTags>
+        <li>BRF_LivingMechanism</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+  </ThingDef>
+<!-- 血肉温床 -->
+  <ThingDef ParentName="BRF_BuildingSpawnerBase">
+    <defName>BRF_PrimordialFleshCradle</defName>
+    <label>primordial flesh cradle</label>
+    <description>Offer adequate Tributes to the cradle and summon forth primardial messengers of exquisite flesh. This bizarre structure seems to slowly infect the natural ground around it into a mold covered in abnormal flesh.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_PeristalticFleshBlob</ThingDef>
+    </descriptionHyperlinks>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_PrimordialFleshCradle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiOrder>110</uiOrder>
+	<researchPrerequisites>
+      <li>BRF_FleshCradleResearch</li>
+    </researchPrerequisites>
+    <uiIconScale>0.75</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+	  <WorkToBuild>200</WorkToBuild>
+	  <Beauty>-45</Beauty>
+    </statBases>
+	  <size>(2,2)</size>
+    <pathCost>42</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	  <costList>
+	    <Meat_Twisted>150</Meat_Twisted>
+      <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+      <Bioferrite>5</Bioferrite>
+    </costList>
+	  <selectable>true</selectable>
+    <comps>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>100.0</fuelConsumptionRate>
+        <fuelCapacity>500.0</fuelCapacity>
+        <fuelFilter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+		  <disallowedCategories>
+			   <li>BRF_Things_ReforgedMeat</li>
+		  </disallowedCategories>
+        </fuelFilter>
+        <initialFuelPercent>0</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+	  <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Luna_BRF.CompProperties_LunaSpawnerPawnWithFuel">
+        <requiresFuel>true</requiresFuel>
+        <spawnablePawnKinds>
+          <li>BRF_PeristalticFleshBlob</li>
+        </spawnablePawnKinds>
+        <chooseSingleTypeToSpawn>False</chooseSingleTypeToSpawn>
+        <spawnMessageKey>MessagePeristalticFleshAssembled</spawnMessageKey>
+        <pawnsLeftToSpawnKey>MessagePeristalticFleshLeftToAssemble</pawnsLeftToSpawnKey>
+        <noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
+        <nextSpawnInspectStringKey>PeristalticFleshAssemblyCompleteIn</nextSpawnInspectStringKey>
+        <nextSpawnInspectStringKeyDormant>MechAssemblyNextType</nextSpawnInspectStringKeyDormant>
+        <spawnSound>Pawn_Flesh_Call</spawnSound>
+        <showNextSpawnInInspect>true</showNextSpawnInInspect>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <pawnSpawnIntervalDays>0.666</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>False</shouldJoinParentLord>
+      </li>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>15</ticksPerHeal>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>8</heatPerSecond>
+        <heatPushMaxTemperature>21</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_TwistedFlesh</filthDef>
+        <spawnCountOnSpawn>8</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>3</spawnRadius>
+      </li>
+			<li Class="Luna_BRF.CompProperties_LunaInfectedTerrainSpread">
+				<radius>7.8</radius>
+				<terrainToSet>Flesh</terrainToSet>
+				<spawnTickRate>30000</spawnTickRate>
+			</li>
+    </comps>
+	<damageMultipliers>
+	  <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>TornadoScratch</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Cut</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Crush</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Blunt</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Demolish</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Stab</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Scratch</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>ScratchToxic</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>BombSuper</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>RangedStab</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+	  <li>
+        <damageDef>Arrow</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>ArrowHighVelocity</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+  
+<!-- 消化器 -->
+  <ThingDef Name="BRF_Digester" Abstract="True" ParentName="BRF_BuildingSpawnerBase">
+    <descriptionHyperlinks><ThingDef>BRF_NutritionalPaste</ThingDef></descriptionHyperlinks>
+    <uiOrder>120</uiOrder>
+    <graphicData>
+      <texPath>Buildings/WorkTable/Digester/BRF_Digester</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+	    <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.75</uiIconScale>
+    <castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Cleanliness>-5</Cleanliness>
+      <Mass>4</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <building>
+      <uninstallWork>1800</uninstallWork>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>Pawn_Flesh_Death</destroySound>
+    </building>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>5</ticksPerHeal>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BRF_Digester">
+    <defName>BRF_Digester</defName>
+    <label>Digester</label>
+    <description>A living machine that can digest organic matter into a viscous liquid rich in nutrients... What's unsettling is that it seems to have a special fondness for human remains.</description>
+    <researchPrerequisites>
+      <li>BRF_LivingMechanismResearch</li>
+    </researchPrerequisites>
+    <costList>
+      <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+	    <Meat_Twisted>50</Meat_Twisted>
+	    <Stomach>1</Stomach>
+	    <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+    <comps>
+	    <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>100.0</fuelConsumptionRate>
+        <fuelCapacity>250.0</fuelCapacity>
+        <fuelFilter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Kibble</li>
+            <li>Pemmican</li>
+            <li>Hay</li>
+          </thingDefs>
+		      <disallowedCategories>
+			      <li>BRF_Things_ReforgedMeat</li>
+			      <li>BRF_Things_LivingMaterial</li>
+		      </disallowedCategories>
+        </fuelFilter>
+        <initialFuelPercent>0</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="Luna_BRF.CompProperties_LunaSpawnerWithFuel">
+        <requiresPower>false</requiresPower>
+        <requiresFuel>true</requiresFuel>
+        <thingToSpawn>BRF_NutritionalPaste</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+           <min>6000</min>
+           <max>6000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+        <playSound>true</playSound>
+        <sound>BRF_Digester_Crafting</sound>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_TwistedFlesh</filthDef>
+        <spawnCountOnSpawn>3</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>2</spawnRadius>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- 血污孢子 -->
+  <ThingDef ParentName="BRF_BuildingSpawnerBase">
+    <defName>BRF_FleshTaintSpore</defName>
+    <label>Flesh Taint Spore</label>
+    <description>A great work that mimics fungi and zerg, laying down some sort of disgusting ground of flesh and blood in a manner similar to mycelial expansion.\n Capable of repairing itself when fuel is available, but will slowly decay without it.</description>
+    <researchPrerequisites>
+      <li>BRF_FleshTaintSporeResearch</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks><ThingDef>BRF_NutritionalPaste</ThingDef></descriptionHyperlinks>
+    <uiOrder>130</uiOrder>
+    <graphicData>
+      <texPath>Buildings/WorkTable/FleshTaintSpore/BRF_FleshTaintSpore</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+	    <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.64</uiIconScale>
+    <castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+		<minifiedDef Inherit="False"/>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Cleanliness>-5</Cleanliness>
+      <Mass>5</Mass>
+    </statBases>
+		<specialDisplayRadius>12.9</specialDisplayRadius>
+    <costList>
+      <BRF_ReforgedMeat_Harbinger>75</BRF_ReforgedMeat_Harbinger>
+	    <Meat_Twisted>50</Meat_Twisted>
+	    <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+	    <BRF_LivingFlesh>4</BRF_LivingFlesh>
+    </costList>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>100</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <building>
+      <uninstallWork>2000</uninstallWork>
+      <destroySound>Pawn_Flesh_Death</destroySound>
+    </building>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <comps>
+	    <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>25.0</fuelConsumptionRate>
+        <fuelCapacity>250.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_GelatinousFlesh</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0.1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Blood</filthDef>
+        <spawnCountOnSpawn>3</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>2</spawnRadius>
+      </li>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>20</ticksPerHeal>
+      </li>
+		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
+		  	<interval>100</interval>
+			  <damage>1</damage>
+		  </li>
+			<li Class="Luna_BRF.CompProperties_LunaInfectedTerrainSpread">
+				<radius>12.9</radius>
+				<terrainToSet>BRF_FleshBlanket</terrainToSet>
+				<spawnTickRate>7500</spawnTickRate>
+			</li>
+    </comps>
+  </ThingDef>
+
+<!-- 厄兆藤架 -->
+  <ThingDef ParentName="BRF_BuildingSpawnerBase">
+    <defName>BRF_HarbingerTentaclesFarm</defName>
+    <label>Harbinger Tentacles Farm</label>
+    <description>A twisted and specialized construct somewhere between a plant and an animal. By applying a bizarre modification to the seeds of the harbinger tree, this construct is able to further infect the flesh blanket, causing it to grow edible tentacles.</description>
+    <researchPrerequisites>
+      <li>BRF_HarbingerTentaclesFarmResearch</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks><ThingDef>BRF_HarbingerTentacles</ThingDef></descriptionHyperlinks>
+    <uiOrder>140</uiOrder>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_HarbingerTentaclesFarm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<drawSize>(1.5, 1.5)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+    </graphicData>
+		<thingClass>Building</thingClass>
+		<minifiedDef Inherit="False"/>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0.1)</uiIconOffset>
+		<selectable>true</selectable>
+		<fillPercent>0.30</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>1.0</Flammability>
+			<MarketValue>80</MarketValue>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+    <castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+	    <WoodLog>50</WoodLog>
+	    <Meat_Twisted>50</Meat_Twisted>
+      <BRF_ReforgedMeat_Harbinger>25</BRF_ReforgedMeat_Harbinger>
+	    <BRF_LivingFlesh>2</BRF_LivingFlesh>
+	    <HarbingerSeed>1</HarbingerSeed>
+    </costList>
+    <size>(1,1)</size>
+    <building>
+      <uninstallWork>2000</uninstallWork>
+      <destroySound>Pawn_Flesh_Death</destroySound>
+    </building>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+	    <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0.1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>250</ticksPerHeal>
+      </li>
+		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
+		  	<interval>500</interval>
+			  <damage>1</damage>
+		  </li>
+			<li Class="Luna_BRF.CompProperties_LunaInfectedPlantsSpread">
+				<radius>6.9</radius>
+				<plant>BRF_HarbingerTentacles</plant>
+				<requiredTerrain>BRF_FleshBlanket</requiredTerrain>
+				<spawnTickRate>15000~25000</spawnTickRate>
+			</li>
+    </comps>
+  </ThingDef>
+
+
+</Defs>

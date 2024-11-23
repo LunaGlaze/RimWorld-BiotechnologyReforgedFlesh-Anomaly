@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/recipes</xpath>
+        <value>
+            <li>BRF_Make_TentacleMooncake</li>
+            <li>BRF_Make_TentacleMooncake4</li>
+            <li>BRF_Make_TentacleMooncake10</li>
+            <li>BRF_Make_TentacleMooncake20</li>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+            <li Class="PatchOperationFindMod">
+                <mods><li>华夏扩展 Chinese Comprehensive Expansion</li></mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="HX_TraditionalFuelStoves" or defName="HX_ElectricStove"]/recipes</xpath>
+                    <value>
+                        <li>BRF_Make_TentacleMooncake</li>
+                        <li>BRF_Make_TentacleMooncake4</li>
+                        <li>BRF_Make_TentacleMooncake10</li>
+                        <li>BRF_Make_TentacleMooncake20</li>
+                    </value> 
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods><li>Rimstro</li></mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="RS_stove"]/recipes</xpath>
+                    <value>
+                        <li>BRF_Make_TentacleMooncake</li>
+                        <li>BRF_Make_TentacleMooncake4</li>
+                        <li>BRF_Make_TentacleMooncake10</li>
+                        <li>BRF_Make_TentacleMooncake20</li>
+                    </value> 
+                </match>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedCategories</xpath>
+        <value><li>BRF_Things_LivingMaterial</li></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedCategories</xpath>
+        <value><li>BRF_Things_LivingMaterial</li></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_Pemmican"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+        <value><li>BRF_LivingFlesh</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]/fixedIngredientFilter/disallowedCategories</xpath>
+            <value><li>BRF_Things_LivingMaterial</li></value>
+        </match>
+    </Operation>
+    
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Master of Cooking</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName="Make10Kibble" or defName="Make20Kibble"]/defaultIngredientFilter/disallowedCategories</xpath>
+                    <value><li>BRF_Things_LivingMaterial</li></value>
+                </li>
+				<li Class="PatchOperationAdd">
+                    <xpath>/Defs/RecipeDef[defName="Make10Pemmican" or defName="Make20Pemmican"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                    <value><li>BRF_LivingFlesh</li></value>
+                </li>
+			</operations>
+        </match>
+    </Operation>
+
+</Patch>

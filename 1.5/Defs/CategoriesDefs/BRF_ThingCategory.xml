@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>BRF_Things_ReforgedMeat</defName>
+    <label>Reforged Meat</label>
+    <parent>MeatRaw</parent>
+    <iconPath>Items/Resource/ReforgedMeat/meat_human/Meat_Human_c</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BRF_Things_LivingMaterial</defName>
+    <label>Living Material</label>
+    <parent>AnimalProductRaw</parent>
+    <iconPath>Items/Resource/BRF_LivingFlesh</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BRF_Things_FreshShell</defName>
+    <label>Fresh Shell</label>
+    <parent>BodyPartsNatural</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BRF_Things_FreshShell_Base</defName>
+    <label>Base Fresh Body</label>
+    <parent>BRF_Things_FreshShell</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BRF_Things_FreshShell_Mutations</defName>
+    <label>Mutations Fresh Body</label>
+    <parent>BRF_Things_FreshShell</parent>
+  </ThingCategoryDef>
+
+</Defs>

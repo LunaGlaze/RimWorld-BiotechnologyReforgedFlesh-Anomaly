@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealBase">
+    <defName>BRF_TentacleMooncake</defName>
+    <label>Tentacle Mooncake</label>
+    <description>I'm not sure how you think this ghastly and delicious thing goes on food. It retains a slight activity, but requires no external nutrition, making it possible to store it for long periods of time.</description>
+    <graphicData>
+      <texPath>Items/Resource/BRF_TentacleMooncake</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>20</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>500</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>BRF_AteTentacleMooncake</specialThoughtDirect>
+      <preferability>MealFine</preferability>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 凝胶态肉 -->
+
+  <BRF_MakeGelatinousFlesh.label>凝胶化肉类</BRF_MakeGelatinousFlesh.label>
+  <BRF_MakeGelatinousFlesh.description>凝胶化肉类</BRF_MakeGelatinousFlesh.description>
+  <BRF_MakeGelatinousFlesh.jobString>正在凝胶化肉类</BRF_MakeGelatinousFlesh.jobString>
+
+  <BRF_Make4GelatinousFlesh.label>批量凝胶化肉类</BRF_Make4GelatinousFlesh.label>
+  <BRF_Make4GelatinousFlesh.description>凝胶化肉类</BRF_Make4GelatinousFlesh.description>
+  <BRF_Make4GelatinousFlesh.jobString>正在凝胶化肉类</BRF_Make4GelatinousFlesh.jobString>
+
+
+  <!-- 猩红钢 -->
+
+  <BRF_ForgeScarletFerrite1x.label>锻造猩红钢10x</BRF_ForgeScarletFerrite1x.label>
+  <BRF_ForgeScarletFerrite1x.description>猩红锻造</BRF_ForgeScarletFerrite1x.description>
+  <BRF_ForgeScarletFerrite1x.jobString>正在锻造猩红之物</BRF_ForgeScarletFerrite1x.jobString>
+
+  <BRF_ForgeScarletFerrite2x.label>锻造猩红钢20x</BRF_ForgeScarletFerrite2x.label>
+  <BRF_ForgeScarletFerrite2x.description>猩红锻造</BRF_ForgeScarletFerrite2x.description>
+  <BRF_ForgeScarletFerrite2x.jobString>正在锻造猩红之物</BRF_ForgeScarletFerrite2x.jobString>
+
+  <BRF_ForgeScarletFerrite4x.label>锻造猩红钢40x</BRF_ForgeScarletFerrite4x.label>
+  <BRF_ForgeScarletFerrite4x.description>猩红锻造</BRF_ForgeScarletFerrite4x.description>
+  <BRF_ForgeScarletFerrite4x.jobString>正在锻造猩红之物</BRF_ForgeScarletFerrite4x.jobString>
+
+  <BRF_ForgeScarletFerrite7x.label>锻造猩红钢75x</BRF_ForgeScarletFerrite7x.label>
+  <BRF_ForgeScarletFerrite7x.description>猩红锻造</BRF_ForgeScarletFerrite7x.description>
+  <BRF_ForgeScarletFerrite7x.jobString>正在锻造猩红之物</BRF_ForgeScarletFerrite7x.jobString>
+
+
+  <!-- 厄兆噬树种子 -->
+
+  <BRF_BioForgeHarbingerSeed.label>培育厄兆噬树种子</BRF_BioForgeHarbingerSeed.label>
+  <BRF_BioForgeHarbingerSeed.description>厄兆培育</BRF_BioForgeHarbingerSeed.description>
+  <BRF_BioForgeHarbingerSeed.jobString>正在培育厄兆之种</BRF_BioForgeHarbingerSeed.jobString>
+
+
+</LanguageData>

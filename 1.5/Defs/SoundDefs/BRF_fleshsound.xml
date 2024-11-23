@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>Flesh_Drop</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>FleshDrop</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.88~1.12</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MeleeHit_Flesh</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MeleeHit_Flesh</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15.34884~15.34884</volumeRange>      
+        <pitchRange>1~1.14837</pitchRange>      
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BulletImpact_Flesh</defName>  
+    <context>MapOnly</context>   
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>BulletImpact_Flesh</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>6.956522~22.17392</volumeRange>      
+        <pitchRange>0.936413~1.423913</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Pawn_Flesh_Call</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn_Flesh_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>8~20</volumeRange>
+        <pitchRange>0.58~1.63</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>Pawn_Flesh_Death</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn_Flesh_Death</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>8~20</volumeRange>
+        <pitchRange>0.80~1.18</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+    <SoundDef>
+    <defName>Pawn_Flesh_Angry</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn_Flesh_Angry</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>8~10</volumeRange>
+        <pitchRange>0.42~1.12</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>BRF_Digester_Crafting</defName>
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BRF_BioTable/Digester_Crafting</clipPath>
+          </li>
+        </grains>  
+        <onCamera>True</onCamera>    
+        <volumeRange>15</volumeRange>      
+        <pitchRange>0.95~1.05</pitchRange>   
+        <distRange>10~50</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BRF_Chewer_Crafting</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BRF_BioTable/Chewer_Crafting</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~20</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BRF_RadiationTumor_Working</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <maxSimultaneous>1</maxSimultaneous>
+    <maxVoices>1</maxVoices>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BRF_BioTable/RadiationTumor_Working</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~12</volumeRange>    
+        <distRange>5~20</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

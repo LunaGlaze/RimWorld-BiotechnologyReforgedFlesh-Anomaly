@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GenStepDef>
+    <defName>BRF_UndercavePrimordialFleshBeast</defName>
+    <order>675</order>
+    <genStep Class="Luna_BRF.GenStep_BRFUndercavePrimordialFleshBeast" />
+  </GenStepDef>
+
+</Defs>

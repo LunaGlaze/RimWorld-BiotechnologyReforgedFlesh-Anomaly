@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Base-->
+  <ThingDef Name="BRF_BuildingFunctionallBase" Abstract="True" ParentName="BuildingBase">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <filthLeaving>Filth_Fleshmass</filthLeaving>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <building>
+      <buildingTags>
+        <li>BRF_LivingMechanism</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+  </ThingDef>
+<!--血肉监视者-->
+  <ThingDef ParentName="BRF_BuildingFunctionallBase">
+    <defName>BRF_FleshWatcher</defName>
+    <label>Flesh Watcher</label>
+    <description>A near-completely modified proximity detector with the vast majority of its internal structure replaced with biological tissue. \n\n This living machine in fact interferes with the target's ability to cloak itself through the constant observation of a third-party observer with psychic effects.</description>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Buildings/Security/BRF_FleshWatcher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <uiOrder>3000</uiOrder>
+    <canOverlapZones>false</canOverlapZones>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>130</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Mass>20</Mass>
+    </statBases>
+    <costList>
+      <Eye>1</Eye>
+      <ProximityDetector>1</ProximityDetector>
+      <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
+      <BRF_GelatinousFlesh>15</BRF_GelatinousFlesh>
+      <Meat_Twisted>30</Meat_Twisted>
+    </costList>
+    <researchPrerequisites>
+      <li>BRF_InvisibleWatcherResearch</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ProximityDetector</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <buildingTags>
+        <li>Anomaly</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4.9</glowRadius>
+        <glowColor>(200, 0, 0, 0)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>1.5</fuelConsumptionRate>
+        <fuelCapacity>25.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0.1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+	  <li Class="Luna_BRF.CompProperties_InvisibleWatcher">
+        <range>19.9</range>
+        <checkIntervalTicks>120</checkIntervalTicks>
+        <requiresFuel>true</requiresFuel>
+      </li>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>600</ticksPerHeal>
+      </li>
+	  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
+		<interval>6000</interval>
+		<damage>1</damage>
+	  </li>
+    </comps>
+    <specialDisplayRadius>19.9</specialDisplayRadius>
+  </ThingDef>
+<!--湿件伺服节点-->
+  <ThingDef ParentName="BRF_BuildingFunctionallBase">
+    <defName>BRF_WetwareServoNodes</defName>
+    <label>Wetware Servo Nodes</label>
+    <description>A bioserver node with the human brain as a computing building block is connected near the research facility to aid in scientific research. It can work even without a supply of nutrients, but the brain in it will quickly necrose and rot.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Buildings/Furniture/Functional/BRF_WetwareServer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiOrder>3010</uiOrder>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>0.75</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+      <li>BRF_WetwareServerResearch</li>
+    </researchPrerequisites>
+    <size>(1,1)</size>
+    <costList>
+      <BRF_ScarletFerrite>3</BRF_ScarletFerrite>
+      <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+      <Brain>1</Brain>
+      <BRF_ReforgedMeat_Human>20</BRF_ReforgedMeat_Human>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.06</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>6</maxSimultaneous>
+        <maxDistance>13</maxDistance>
+      </li>
+	    <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.5</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0.05</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>250</ticksPerHeal>
+      </li>
+		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
+		  	<interval>300</interval>
+			  <damage>1</damage>
+		  </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <killedLeavingsRanges>
+      <BRF_ReforgedMeat_Human>10~20</BRF_ReforgedMeat_Human>
+    </killedLeavingsRanges>
+  </ThingDef>
+
+</Defs>

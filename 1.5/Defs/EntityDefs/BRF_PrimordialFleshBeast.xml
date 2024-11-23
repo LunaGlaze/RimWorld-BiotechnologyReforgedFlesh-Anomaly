@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_PrimordialFleshBeast</defName>
+    <label>Primordial Fleshbeast</label>
+    <category>Advanced</category>
+    <useDescriptionFrom>BRF_PrimordialFleshBeast</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_PrimordialFleshBeast</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_PrimordialFleshBeast</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_ScarletForgeResearch</li>
+      <li>BRF_HarbingerSeedlingResearch</li>
+    </discoveredResearchProjects>
+    <provocationIncidents>
+      <li>PitGate</li>
+    </provocationIncidents>
+    <orderInCategory>50</orderInCategory>
+  </EntityCodexEntryDef>
+<!--身体参数BodyDef-->
+  <BodyDef>
+    <defName>BRF_PrimordialFleshBeast</defName>
+    <label>PrimordialFleshBeast</label>
+    <corePart>
+      <def>Torso</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Spine</def>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+          <parts>
+            <li>
+              <def>FleshbeastSpike</def>
+              <customLabel>back great tentacle</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+                <li>MiddleSpike</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Heart</def>
+          <coverage>0.020</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Lung</def>
+          <customLabel>left lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Lung</def>
+          <customLabel>right lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>left kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>right kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Liver</def>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Neck</def>
+          <coverage>0.075</coverage>
+          <height>Top</height>
+          <groups>
+            <li>Neck</li>
+          </groups>
+          <parts>
+            <li>
+              <def>FleshbeastHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Skull</def>
+                  <coverage>0.18</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>UpperHead</li>
+                    <li>Eyes</li>
+                    <li>FullHead</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Brain</def>
+                      <coverage>0.8</coverage>
+                      <groups>
+                        <li>UpperHead</li>
+                        <li>Eyes</li>
+                        <li>FullHead</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>left eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Jaw</def>
+                  <coverage>0.10</coverage>
+                  <groups>
+                    <li>Teeth</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>left shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>right shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+        </li>
+        <li>
+          <def>FleshbeastLeg</def>
+          <customLabel>left tentacle</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>FleshbeastLeg</def>
+          <customLabel>right tentacle</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+<!--触手渲染-->
+  <PawnRenderTreeDef>
+    <defName>BRF_PrimordialFleshBeast</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li>
+          <debugLabel>Body</debugLabel>
+          <tagDef>Body</tagDef>
+          <useRottenColor>true</useRottenColor>
+          <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+          <children>
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>Spike</debugLabel>
+              <texPath>Pawns/BRF_PrimordialFleshBeast/attachments/BRF_PrimordialFleshBeast_TopLimb</texPath>
+              <linkedBodyPartsGroup>MiddleSpike</linkedBodyPartsGroup>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-18~18</rotationRange>
+              <durationTicksRange>15~45</durationTicksRange>
+              <nextSpasmTicksRange>5~30</nextSpasmTicksRange>
+              <scaleRange>0.95~1.05</scaleRange>
+              <drawSize>1.4</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataNorth>
+                  <rotationOffset>-15</rotationOffset>
+                  <offset>(0, 0, 0.3)</offset>
+                </dataNorth>
+                <dataEast><offset>(0.25, 0, 0.1)</offset></dataEast>
+                <dataSouth>
+                  <rotationOffset>15</rotationOffset>
+                  <offset>(0, 0, -0.2)</offset>
+                  <flip>true</flip>
+                </dataSouth>
+                <dataWest><flip>true</flip></dataWest>
+              </drawData>
+            </li>
+            <li>
+              <debugLabel>Wounds</debugLabel>
+              <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+              <workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+              <overlayLayer>Body</overlayLayer>
+              <baseLayer>10</baseLayer>
+            </li>
+            <li>
+              <debugLabel>Firefoam</debugLabel>
+              <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+              <workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+              <overlayLayer>Body</overlayLayer>
+              <useGraphic>false</useGraphic>
+              <baseLayer>20</baseLayer>
+            </li>
+          </children>
+        </li>
+        <li Class="PawnRenderNodeProperties_Carried">
+          <debugLabel>Carried thing</debugLabel>
+          <workerClass>PawnRenderNodeWorker_Carried</workerClass>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BaseFleshbeast" Name="BRF_PrimordialFleshBeast" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-140</ComfyTemperatureMin>
+      <ComfyTemperatureMax>120</ComfyTemperatureMax>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <race>
+      <thinkTreeMain>Fleshbeast</thinkTreeMain>
+      <thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.4</bleedRateFactor>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget" Inherit="False">
+        <baseEscapeIntervalMtbDays>80</baseEscapeIntervalMtbDays>
+      </li>
+    </comps>
+  </ThingDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_PrimordialFleshBeast</defName>
+    <label>Primordial Fleshbeast</label>
+    <race>BRF_PrimordialFleshBeast</race>
+    <abilities>
+      <li>BRF_Launch_PrimordialFleshBeast</li>
+    </abilities>
+    <combatPower>60</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_PrimordialFleshBeast/BRF_PrimordialFleshBeast</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_PrimordialFleshBeast/BRF_PrimordialFleshBeast_MenuIcon</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_PrimordialFleshBeast">
+    <defName>BRF_PrimordialFleshBeast</defName>
+    <label>Primordial Fleshbeast</label>
+    <description>A strange and deep red fleshbeast, originally found amongst pit gates. They are shaped like fingerspikes, but have powerful tentacles instead of spikes.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MinimumContainmentStrength>50</MinimumContainmentStrength>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <InjuryHealingFactor>5</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+    </statBases>
+    <uiIconPath>Pawns/BRF_PrimordialFleshBeast/BRF_PrimordialFleshBeast_MenuIcon</uiIconPath>
+    <race>
+      <body>BRF_PrimordialFleshBeast</body>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+      <lifeExpectancy>5000</lifeExpectancy>
+      <renderTree>BRF_PrimordialFleshBeast</renderTree>
+      <deathAction Class="DeathActionProperties_Vanish">
+        <workerClass>DeathActionWorker_Vanish</workerClass>
+        <filth>Filth_BRF_PrimordialTwistedFlesh</filth>
+        <filthCountRange>1~3</filthCountRange>
+        <meatExplosionSize>Small</meatExplosionSize>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Fingerspike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Fingerspike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Fingerspike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.21, 0, .21)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.21, 0, .21)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.21, 0, -.21)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.21, 0, -.21)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_CanBeDormant">
+        <maxDistAwakenByOther>3</maxDistAwakenByOther>
+        <wakeUpDelayRange>100~200</wakeUpDelayRange>
+        <jobDormancy>true</jobDormancy>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>3</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>great tentacle</label>
+        <labelNoLocation>great tentacle</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>MiddleSpike</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+    <killedLeavings>
+      <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+    </killedLeavings>
+  </ThingDef>
+</Defs>

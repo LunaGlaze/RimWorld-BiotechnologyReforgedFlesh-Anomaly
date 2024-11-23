@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- BRF_PrimordialFleshBeast -->
+
+  <BRF_Launch_PrimordialFleshBeast.label>发射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
+
+
+  <!-- 实体位移 -->
+
+  <BRF_EntityLongjump.label>实体长跃</BRF_EntityLongjump.label>
+  <BRF_EntityLongjump.description>利用这个实体强大的跳跃能力，跳到遥远的地方。</BRF_EntityLongjump.description>
+  <BRF_EntityLongjump.verbProperties.label>跳跃</BRF_EntityLongjump.verbProperties.label>
+
+
+  <!-- 进食尸体 -->
+
+  <BRF_EntityNecrophagia.label>实体噬尸</BRF_EntityNecrophagia.label>
+  <BRF_EntityNecrophagia.description>这个实体有吞噬尸体的能力。</BRF_EntityNecrophagia.description>
+
+
+</LanguageData>

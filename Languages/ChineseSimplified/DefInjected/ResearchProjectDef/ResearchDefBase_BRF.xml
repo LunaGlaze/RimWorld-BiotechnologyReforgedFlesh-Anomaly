@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 扭曲坩埚 -->
+
+  <BRF_TwistedCrucibleResearch.label>扭曲坩埚</BRF_TwistedCrucibleResearch.label>
+  <BRF_TwistedCrucibleResearch.description>一些金属，一些草药，一些我们的血肉……再加上一些奇怪的仪式和祈祷……长老们告诉我，这其实不是人类制造的东西。\n\n某个声音在粘腻腥臭的梦境里呼喊着一个听不清的名字……Yald……当我们醒来之后便浮现了这样的智慧。</BRF_TwistedCrucibleResearch.description>
+
+
+  <!-- 扭曲肉塑型 -->
+
+  <BRF_ShapingTwistedMeatResearch.label>扭曲肉塑型</BRF_ShapingTwistedMeatResearch.label>
+  <BRF_ShapingTwistedMeatResearch.description>使用重塑肉类与活体培育扭曲肉。</BRF_ShapingTwistedMeatResearch.description>
+
+
+  <!-- 血肉温床 -->
+
+  <BRF_FleshCradleResearch.label>血肉温床</BRF_FleshCradleResearch.label>
+  <BRF_FleshCradleResearch.description>向原初的摇篮献上足够的贡品，并召唤出精美的肉块形态的原初使者。\n\n这是一个奇迹，它将被改造过的人体残骸与怪物的肉体结合在一起。</BRF_FleshCradleResearch.description>
+
+
+  <!-- 活体机械 -->
+
+  <BRF_LivingMechanismResearch.label>活体机械</BRF_LivingMechanismResearch.label>
+  <BRF_LivingMechanismResearch.description>使用用血肉兽遗留的血肉重塑出最原始的活体机械。</BRF_LivingMechanismResearch.description>
+
+
+  <!-- 基础血肉躯壳 -->
+
+  <BRF_FleshShellBaseResearch.label>基础血肉躯壳</BRF_FleshShellBaseResearch.label>
+  <BRF_FleshShellBaseResearch.description>用经过最初的改造血肉代替原生的躯壳，虽然效果并没有更好，但这正是我们已经在飞升的路上的证明。</BRF_FleshShellBaseResearch.description>
+
+
+  <!-- 重塑先驱之肉 -->
+
+  <BRF_ReforgedMeatHarbingerResearch.label>重塑先驱之肉</BRF_ReforgedMeatHarbingerResearch.label>
+  <BRF_ReforgedMeatHarbingerResearch.description>把那些可怕的、扭曲的肉加入改造清单。虽然让它安全食用，并作为一种不具有感染且能与未进化的人体深度接触的状态的代价有点得不偿失，但你相信这是为了将来更深入的研究，而不是为了眼前的利益。</BRF_ReforgedMeatHarbingerResearch.description>
+
+
+  <!-- 血棘炮塔 -->
+
+  <BRF_GoreSpineLauncherResearch.label>血棘团块</BRF_GoreSpineLauncherResearch.label>
+  <BRF_GoreSpineLauncherResearch.description>By mimicking and using the remnants of Gorehulk, we get a whole new defense tech. An automated defense facility for living things that launches keratin spines at a target to do damage.</BRF_GoreSpineLauncherResearch.description>
+
+
+  <!-- 血污孢子（二本） -->
+
+  <BRF_FleshTaintSporeResearch.label>血污孢子</BRF_FleshTaintSporeResearch.label>
+  <BRF_FleshTaintSporeResearch.description>通过模仿和利用 “血棘巨人 ”的残骸，我们得到了一种全新的防御技术。一种生物性的自动防御设施，能向目标发射骨刺造成伤害。</BRF_FleshTaintSporeResearch.description>
+
+
+  <!-- 厄兆种植 -->
+
+  <BRF_HarbingerTentaclesFarmResearch.label>厄兆种植</BRF_HarbingerTentaclesFarmResearch.label>
+  <BRF_HarbingerTentaclesFarmResearch.description>将厄兆噬树改造成一种专门的植物，使其能够播种触手植株，以生长和收获重塑先驱之肉。</BRF_HarbingerTentaclesFarmResearch.description>
+
+
+  <!-- 厄兆培育 -->
+
+  <BRF_HarbingerSeedlingResearch.label>厄兆培育</BRF_HarbingerSeedlingResearch.label>
+  <BRF_HarbingerSeedlingResearch.description>厄兆噬树种子是边缘世界的稀有贸易物品，很难找到这些幼苗来改造我们的农场。我们需要继续研究，找到制造……或培育厄兆噬树的更简便方法。</BRF_HarbingerSeedlingResearch.description>
+
+
+  <!-- 生物电力学 -->
+
+  <BRF_FleshBioElectricityResearch.label>血肉电力学</BRF_FleshBioElectricityResearch.label>
+  <BRF_FleshBioElectricityResearch.description>一种利用生物生产和储存电力的技术。在利用了异常实体的残留后，它显得异常高效。</BRF_FleshBioElectricityResearch.description>
+
+
+  <!-- 猩红锻造 -->
+
+  <BRF_ScarletForgeResearch.label>猩红锻造</BRF_ScarletForgeResearch.label>
+  <BRF_ScarletForgeResearch.description>从巨坑中发现的新型血肉兽显然是一种更古老、更独特的生物……它们留下的组织揭示了一些令人不安的事实。这种肉兽更加原始，同时在某些……技术路线上也不同于我们所知的实体……或许今天的血肉兽是在活铁的影响下被调整和修改过的……\n\n也许虚空中不可名状的存在不止我们熟悉的这一个。也许在很久以前，这里还活跃着另一个凡人无法知晓的超智能。但这并不妨碍我们对古人类技术进行拙劣的模仿，比如将这些组织样本与活铁融合，创造出更新更好的事物……</BRF_ScarletForgeResearch.description>
+
+
+  <!-- 血肉脉冲炮弹 -->
+
+  <BRF_FleshPulseShellResearch.label>血肉脉冲炮弹</BRF_FleshPulseShellResearch.label>
+  <BRF_FleshPulseShellResearch.description>血肉是现代血肉兽灾害的万恶之源，通过对血肉心脏的研究，我确信那些令人不安的更原始的血肉组织是有效的。通过将这些组织与现任校长的神经块混合 我们可以得到一种生物炮弹 能够释放生物脉冲来烧灼目标。\n\n这种脉冲可以达到与分析所有神经块后得到的那种频率的电流相同的效果，让我们可以更快地摧毁血肉心脏。</BRF_FleshPulseShellResearch.description>
+
+
+  <!-- 隐形窥探 -->
+
+  <BRF_InvisibleWatcherResearch.label>隐形窥探</BRF_InvisibleWatcherResearch.label>
+  <BRF_InvisibleWatcherResearch.description>通过对幽魂的研究，我们学会了如何改造幽魂的脊椎，让我们可以短暂地借用它的隐形能力。现在或许我们也应该尝试反向研究。\n\n唯一能针对超智能的只有它们自己，但利用它们遗留下来的部分来设计一个抑制隐形能力的装置应该不难。</BRF_InvisibleWatcherResearch.description>
+
+
+  <!-- 湿件伺服器 -->
+
+  <BRF_WetwareServerResearch.label>基础湿件伺服器</BRF_WetwareServerResearch.label>
+  <BRF_WetwareServerResearch.description>将新鲜取出的大脑经过处理后串联接入某种湿器伺服系统，该伺服系统可以连接到研究设施附近，以帮助科学研究。</BRF_WetwareServerResearch.description>
+
+
+  <!-- 肢体守卫 -->
+
+  <BRF_LimbGuardResearch.label>肢体守卫</BRF_LimbGuardResearch.label>
+  <BRF_LimbGuardResearch.description>就像肢团一样，也许我们也可以制造一些以肢体为基础的实体……但更友好的那种。通过对那些更古老但更先进的组织的分析，让实体为我们工作和提供保护可能不再是痴心妄想。</BRF_LimbGuardResearch.description>
+
+
+  <!-- 活体血肉躯壳 -->
+
+  <BRF_FleshBeastShellResearch.label>活体血肉躯壳</BRF_FleshBeastShellResearch.label>
+  <BRF_FleshBeastShellResearch.description>扭曲方尖碑中创造出噩梦般可怕的异常生物的未知能量是否比想象中更......古老？亦或者更原始？\n\n在肢团或者其他更古老、更先进的血肉兽体内似乎有者某种类似的东西... 抱歉，我不能描述它。但如果利用这种存在，我们也许能制造出那种经历畸变肢体，以更稳定的方式。</BRF_FleshBeastShellResearch.description>
+
+
+  <!-- 绯红家装 -->
+
+  <BRF_CrimsonFurnitureResearch.label>绯红家装</BRF_CrimsonFurnitureResearch.label>
+  <BRF_CrimsonFurnitureResearch.description>[Sorry, but this part of the development has been put on hold due to lack of art resources and capabilities.]</BRF_CrimsonFurnitureResearch.description>
+
+
+  <!-- 血肉喷吐者 -->
+
+  <BRF_SpitterFleshwormResearch.label>血肉喷吐者</BRF_SpitterFleshwormResearch.label>
+  <BRF_SpitterFleshwormResearch.description>通过对现任校长的进一步研究，我们已经掌握了制造属于我们的喷吐器官的技术。我们已经摆脱了对那些神经组织进行破坏性分析的依赖。利用这些组织中的编码，我们能够构造出一种更像蠕虫的血肉器官，用于防御。</BRF_SpitterFleshwormResearch.description>
+
+
+</LanguageData>

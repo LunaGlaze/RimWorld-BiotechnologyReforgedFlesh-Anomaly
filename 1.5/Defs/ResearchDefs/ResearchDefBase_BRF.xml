@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>ResearchTabBRF_BiomancyAnomaly</defName>
+		<label>BRF-Biotech of Flesh</label>
+		<generalTitle>BRF-Flesh technology research projects</generalTitle>
+		<generalDescription>Unlock the technology of evil, which utilize flesh and blood and twisted things.</generalDescription>
+	</ResearchTabDef>
+<!--扭曲坩埚-->
+	<ResearchProjectDef>
+		<defName>BRF_TwistedCrucibleResearch</defName>
+		<label>Twisted Crucible</label>
+		<description>Some metal, some herbs, some of our flesh ...... plus some weird rituals and prayers ...... The elders told me it wasn't actually a thing human made. \n\n Some voice cried out an inaudible name in a sticky, fishy dream ....Yald... When we woke up such wisdom surfaced.</description>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Neolithic</techLevel>
+		<baseCost>500</baseCost>
+		<researchViewX>0.05</researchViewX>
+		<researchViewY>0.25</researchViewY>
+	</ResearchProjectDef>
+<!--扭曲肉塑型-->
+    <ResearchProjectDef>
+		<defName>BRF_ShapingTwistedMeatResearch</defName>
+		<label>Shaping Twisted Meat</label>
+		<description>Breeding Twisted Meat with Reforged Meat and Bioferrite.</description>
+		<knowledgeCost>3</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.25</researchViewY>
+    </ResearchProjectDef>
+<!--血肉温床-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshCradleResearch</defName>
+    	<label>Primordial Flesh Cradle</label>
+    	<description>Offer adequate Tributes to the cradle and summon forth primardial messengers of exquisite flesh.\n\n It was a miracle achieved by combining the remains of a human body that had been remodeled with the flesh of a monstrous being.</description>
+		<knowledgeCost>5</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.75</researchViewY>
+		<prerequisites>
+    		<li>BRF_TwistedCrucibleResearch</li>
+    		<li>BRF_ShapingTwistedMeatResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--活体机械-->
+    <ResearchProjectDef>
+		<defName>BRF_LivingMechanismResearch</defName>
+    	<label>Living Mechanism</label>
+    	<description>Recasting the most primitive living machine from the leftover flesh of our Flesh beasts.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.75</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshCradleResearch</li>
+		</prerequisites>
+    	<requiredAnalyzed>
+   	 		<li>BRF_LivingFlesh</li>
+   		 </requiredAnalyzed>
+    </ResearchProjectDef>
+<!--基础血肉躯壳-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshShellBaseResearch</defName>
+    	<label>Base Flesh Shell</label>
+    	<description>Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+    		<li>BRF_LivingMechanismResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--重塑先驱之肉-->
+    <ResearchProjectDef>
+		<defName>BRF_ReforgedMeatHarbingerResearch</defName>
+    	<label>Reconstructed Harbinger Flesh</label>
+    	<description>Add that ghastly, twisted meat to the list of things to remodel. While the cost of making it safe for consumption and as a non-infectious state for deep contact with the unevolved human body is a bit more than it's worth, you believe it's for the sake of more in-depth research in the future rather than for immediate gain.</description>
+		<knowledgeCost>3</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+    		<li>BRF_LivingMechanismResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--血棘炮塔-->
+    <ResearchProjectDef>
+		<defName>BRF_GoreSpineLauncherResearch</defName>
+    	<label>Gorehulk Flesh Mass</label>
+    	<description>By mimicking and using the remnants of Gorehulk, we get a whole new defense tech. An automated defense facility for living things that launches keratin spines at a target to do damage.</description>
+		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.25</researchViewY>
+		<prerequisites>
+    		<li>BRF_LivingMechanismResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--血污孢子（二本）-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshTaintSporeResearch</defName>
+    	<label>Flesh Taint Spore</label>
+    	<description>A great work that mimics fungi and zerg, laying down some sort of disgusting ground of flesh and blood in a manner similar to mycelial expansion.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0.75</researchViewY>
+		<prerequisites>
+    		<li>BRF_ReforgedMeatHarbingerResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--厄兆种植-->
+    <ResearchProjectDef>
+		<defName>BRF_HarbingerTentaclesFarmResearch</defName>
+    	<label>Harbinger Planting</label>
+    	<description>The harbinger tree was modified to create a specialized plant capable of spreading tentacle plants to grow and harvest reconstructed harbinger flesh.</description>
+		<knowledgeCost>5</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--厄兆培育-->
+    <ResearchProjectDef>
+		<defName>BRF_HarbingerSeedlingResearch</defName>
+    	<label>Harbinger Seedling</label>
+    	<description>Harbinger tree seeds are a rare trade item in rimworld, and it is difficult to find these seedlings to adapt to make our farms. We need to continue our research to find an easier way to manufacture ...... or a means to cultivate harbinger trees.</description>
+		<knowledgeCost>5</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+    		<li>BRF_HarbingerTentaclesFarmResearch</li>
+    		<li>BRF_ScarletForgeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--生物电力学-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshBioElectricityResearch</defName>
+    	<label>Flesh Bio-Electricity</label>
+    	<description>A technology that utilizes living organisms to produce and store electricity. It appears to be extraordinarily efficient after utilizing the remnants of anomalous entities.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+    		<li>EntityContainment</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--猩红锻造-->
+    <ResearchProjectDef>
+		<defName>BRF_ScarletForgeResearch</defName>
+    	<label>Scarlet Forge</label>
+    	<description>The new type of fleshbeast discovered from the giant pit is clearly an older and more distinctive being ... The tissues they leave behind reveal certain disturbing facts. This fleshbeast is more primitive while also differing in some ... technological lines from the entities we know ... Or perhaps today's fleshbeast was rewritten and modified by the influence of bioferrited ...\n\n Perhaps there is more to the unnameable presence in the void than just the one we are familiar with. Perhaps there was another hyperintelligent archotech mind active here long ago that no mortal can know. But that doesn't stop us from making poor imitations of archotech, such as fusing these tissue samples with bioferrited to create something newer and better ...</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.2</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+    		<li>BioferriteShaping</li>
+    		<li>Smithing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--血肉脉冲炮弹-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshPulseShellResearch</defName>
+    	<label>Pulse of Flesh Shell</label>
+    	<description>Through my research into flesh heart, the root of all evils in the attacks of the modern flesh beast, I am convinced that those disturbingly more primitive flesh and blood are valid. By mixing those tissue's with flesh heart's neural lump, we can obtain a biological artillery shell capable of releasing a biological pulse that cauterises the target. \n\n This pulse could achieve the same effect as a current of that frequency obtained after analysing all the neural lump, allowing us to destroy the flesh heart faster.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+    		<li>BRF_ScarletForgeResearch</li>
+    		<li>Mortars</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--隐形窥探-->
+    <ResearchProjectDef>
+		<defName>BRF_InvisibleWatcherResearch</defName>
+    	<label>Invisible Watcher</label>
+    	<description>By studying revenant, we have learned how to modify a revenant spine to allow us to briefly borrow its cloaking abilities. Now perhaps we should try to reverse the research as well: \n\n The only thing that can target the hyperintelligent archotech mind is themself, but it shouldn't be too hard to use what's left of them to devise a device to target the cloaking ability.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.2</researchViewY>
+		<prerequisites>
+    		<li>BRF_ScarletForgeResearch</li>
+    		<li>RevenantInvisibility</li>
+    		<li>ProximityDetector</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--湿件伺服器-->
+    <ResearchProjectDef>
+		<defName>BRF_WetwareServerResearch</defName>
+    	<label>Base Wetware Server</label>
+    	<description>Freshly removed brains are processed and strung into some sort of wetware servo, which is linked near the research facility to aid in scientific research.</description>
+		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.8</researchViewY>
+		<prerequisites>
+    		<li>BRF_ScarletForgeResearch</li>
+    		<li>MicroelectronicsBasics</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--肢体守卫-->
+    <ResearchProjectDef>
+		<defName>BRF_LimbGuardResearch</defName>
+    	<label>Limb Guard</label>
+    	<description>Like Clump, maybe we could make some of these limb-based entities ... but the friendly kind. With the analysis of those more ancient but more advanced organisations, it may no longer be delusional to have entities working and guarding for us.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+<!--活体血肉躯壳-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshBeastShellResearch</defName>
+    	<label>Living Flesh Shell</label>
+    	<description>Is the unknown energy that creates the nightmarishly terrifying aberrant creatures in Twisted Obelisk more ... ancient than thought? Or primitive? \n\n There's something in the body of Clump or some other even more ancient and advanced freshbeast with similar properties ... Sorry, I can't describe it, but if harnessed, we might be able to create the kind of limbs that go through the aberration in a more stable way.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+    		<li>BRF_LimbGuardResearch</li>
+    		<li>BRF_FleshShellBaseResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--绯红家装-->
+    <ResearchProjectDef>
+		<defName>BRF_CrimsonFurnitureResearch</defName>
+    	<label>Crimson Furniture</label>
+    	<description>[Sorry, but this part of the development has been put on hold due to lack of art resources and capabilities.]</description>
+		<baseCost>1000</baseCost>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--血肉喷吐者-->
+    <ResearchProjectDef>
+		<defName>BRF_SpitterFleshwormResearch</defName>
+    	<label>Spitter Fleshworm</label>
+    	<description>Further research on fleshheart has yielded the technology to create spitter organs that belong to us. We've freed ourselves from the reliance on destructive analysis of those neural tissues. Using the coding in those tissues, we were able to construct a more worm-like organ of flesh and blood for our defence.</description>
+		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshPulseShellResearch</li>
+    		<li>BRF_GoreSpineLauncherResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--WIP-->
+    <ResearchProjectDef>
+		<defName>BRF_WIPResearch</defName>
+    	<label>Tier 3</label>
+    	<description>--WIP--</description>
+		<knowledgeCost>666</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>8</researchViewX>
+		<researchViewY>1.6</researchViewY>
+		<prerequisites>
+		</prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

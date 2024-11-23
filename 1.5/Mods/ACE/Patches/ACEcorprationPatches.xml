@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Spike_ToughNothing"]/thingClass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Spike_ToughNothing"]</xpath>
+                <value><thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass></value>
+        </nomatch>
+        <match Class="PatchOperationAttributeSet">
+            <xpath>/Defs/ThingDef[defName="Spike_ToughNothing"]/thingClass</xpath>
+                <value>Luna_BRF.Luna_HediffAddBullet</value>
+        </match>
+    </Operation>=
+    <Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[defName="Spike_ToughNothing"]</xpath>
+        <value>
+            <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+                <addHediffChance>1</addHediffChance>
+                <NeedHediffDef>BRF_MalignantFleshActivation</NeedHediffDef>
+                <HediffDefTransform>BRF_FleshLacerated</HediffDefTransform>
+                <HediffDefToAdd>BRF_FIeshLacerated</HediffDefToAdd>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

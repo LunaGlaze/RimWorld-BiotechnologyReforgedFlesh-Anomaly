@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_RecoverOrDestroyThing.label>回收&amp;销毁物品</BRF_RecoverOrDestroyThing.label>
+  <BRF_RecoverOrDestroyThing.description>凭借咀嚼器永无止境的咀嚼本能，武器和盔甲等金属物品会被摧毁，并回收一部分资源；如果无法有效回收，则会被直接销毁。</BRF_RecoverOrDestroyThing.description>
+  <BRF_RecoverOrDestroyThing.jobString>正在回收&amp;销毁物品</BRF_RecoverOrDestroyThing.jobString>
+
+  <BRF_RecoverWeapon.label>回收武器</BRF_RecoverWeapon.label>
+  <BRF_RecoverWeapon.description>凭借咀嚼者永无止境的咀嚼本能，武器被摧毁，部分资源被收回。</BRF_RecoverWeapon.description>
+  <BRF_RecoverWeapon.jobString>正在回收武器。</BRF_RecoverWeapon.jobString>
+
+  <BRF_RecoverApparel.label>回收装备</BRF_RecoverApparel.label>
+  <BRF_RecoverApparel.description>凭借咀嚼者永无止境的咀嚼本能，装备被摧毁，部分资源被收回。</BRF_RecoverApparel.description>
+  <BRF_RecoverApparel.jobString>正在回收装备。</BRF_RecoverApparel.jobString>
+
+  <BRF_DestroyWeapon.label>摧毁武器</BRF_DestroyWeapon.label>
+  <BRF_DestroyWeapon.description>利用咀嚼者永无止境的咀嚼本能销毁不需要的武器。这个过程比普通的回收更快，对不可回收的物品也有效，但不会产生资源。</BRF_DestroyWeapon.description>
+  <BRF_DestroyWeapon.jobString>正在摧毁武器。</BRF_DestroyWeapon.jobString>
+
+  <BRF_DestroyApparel.label>摧毁装备</BRF_DestroyApparel.label>
+  <BRF_DestroyApparel.description>利用咀嚼者永无止境的咀嚼本能销毁不需要的装备。这个过程比普通的回收更快，对不可回收的物品也有效，但不会产生资源。</BRF_DestroyApparel.description>
+  <BRF_DestroyApparel.jobString>正在摧毁装备。</BRF_DestroyApparel.jobString>
+
+  <BRF_DestroyDrugs.label>销毁药品</BRF_DestroyDrugs.label>
+  <BRF_DestroyDrugs.description>使用咀嚼器处理不需要的药物，将其彻底销毁。</BRF_DestroyDrugs.description>
+  <BRF_DestroyDrugs.jobString>正在销毁药品。</BRF_DestroyDrugs.jobString>
+
+
+  <!-- 处理尸体 -->
+
+  <BRF_ChewCorpse.label>给咀嚼器喂食尸体</BRF_ChewCorpse.label>
+  <BRF_ChewCorpse.description>给咀嚼器喂食尸体</BRF_ChewCorpse.description>
+  <BRF_ChewCorpse.jobString>喂食.</BRF_ChewCorpse.jobString>
+
+
+  <!-- 血棘巨人尸体 -->
+
+  <BRF_ChewGorehulk.label>给咀嚼器喂食血棘巨人尸体</BRF_ChewGorehulk.label>
+  <BRF_ChewGorehulk.description>给咀嚼器喂食血棘巨人尸体</BRF_ChewGorehulk.description>
+  <BRF_ChewGorehulk.jobString>喂食.</BRF_ChewGorehulk.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.5/VanillaExpandedFramework</li>
+		<li IfModActive="anomaly.corpration">1.5/Mods/ACE</li>
+	</v1.5>
+</loadFolders>

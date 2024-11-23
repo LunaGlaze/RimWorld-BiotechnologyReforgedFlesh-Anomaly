@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--基础父类-->
+  <ThingDef Name="BRF_BioResourceBaseBase" Abstract="True" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType Inherit="False"/>
+    </graphicData>
+    <statBases>
+      <Flammability>0.85</Flammability>
+	  <DeteriorationRate>2</DeteriorationRate>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>0.05</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <healthAffectsPrice>false</healthAffectsPrice>
+  </ThingDef>
+
+  <ThingDef Name="BRF_RawFoodBase" Abstract="True" ParentName="BRF_BioResourceBaseBase">
+    <statBases>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+<!--再造肉类-->
+  <ThingDef Name="BRF_ReforgedMeatBase" Abstract="True" ParentName="BRF_RawFoodBase">
+    <description>As long as you don't say anything, no one will ever know what the original frightening face of these things was.</description>
+    <descriptionHyperlinks><ThingDef>BRF_TwistedCrucible</ThingDef></descriptionHyperlinks>
+    <statBases>
+      <Mass>0.03</Mass>
+      <MarketValue>0.4</MarketValue>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+      <preferability>RawTasty</preferability>
+    </ingestible>
+    <thingCategories>
+      <li>BRF_Things_ReforgedMeat</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>True</rotDestroys>
+      </li>
+    </comps>
+    <!--tradeability>None</tradeability-->
+  </ThingDef>
+  
+  <ThingDef ParentName="BRF_ReforgedMeatBase">
+    <defName>BRF_ReforgedMeat_Human</defName>
+    <label>Reconstructed Human Flesh</label>
+    <graphicData>
+      <texPath>Items/Resource/ReforgedMeat/meat_human</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BRF_ReforgedMeatBase">
+    <defName>BRF_ReforgedMeat_Insect</defName>
+    <label>Reconstructed Insect Flesh</label>
+    <graphicData>
+      <texPath>Items/Resource/ReforgedMeat/meat_insect</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BRF_ReforgedMeatBase">
+    <defName>BRF_ReforgedMeat_Harbinger</defName>
+    <label>Reconstructed Harbinger Flesh</label>
+    <graphicData>
+      <texPath>Items/Resource/ReforgedMeat/twisted_meat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--鲜活肉块-->
+  <ThingDef Name="BRF_LivingMaterialBase" Abstract="True" ParentName="BRF_RawFoodBase">
+    <label>Base Living Material Properties</label>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <specialThoughtDirect>BRF_AteLivingMeat</specialThoughtDirect>
+      <specialThoughtAsIngredient>BRF_AteLivingMeat</specialThoughtAsIngredient>
+    </ingestible>
+    <thingCategories>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>True</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BRF_LivingMaterialBase">
+    <defName>BRF_LivingFlesh</defName>
+    <label>Living Flesh</label>
+    <description>There is no doubt that it is alive... I think it is best not to consider consuming it, but as a construction of biological machinery, it is a good choice.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_PeristalticFleshBlob</ThingDef>
+      <ThingDef>BRF_PrimordialFleshCradle</ThingDef>
+    </descriptionHyperlinks>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_LivingFlesh</texPath>
+      <!--graphicClass>Graphic_StackCount</graphicClass-->
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>0.5</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>BRF_Things_ReforgedMeat</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>704266693</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+        <!-- Analyzable -->
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>true</destroyedOnAnalyzed>
+        <completedLetterLabel>Living Flesh studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the Living Flesh, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+        <!-- Interactable -->
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the Living Flesh.</activateDescString>
+        <jobString>Analyze Living Flesh</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--营养糊剂-->
+  <ThingDef Name="BRF_NutritionalPasteLike" Abstract="True" ParentName="BRF_BioResourceBaseBase">
+    <thingCategories>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>RawTasty</preferability>
+      <ingestSound>Meal_Eat</ingestSound>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="BRF_NutritionalPasteLike">
+    <defName>BRF_NutritionalPaste</defName>
+    <label>Nutritional Paste</label>
+    <description>The product of biological machine digestion, a nutrient rich viscous liquid, is also a fuel for many living machines. Perhaps it can be eaten, the taste seems decent, but thinking about its source can be a bit nauseating.</description>
+    <descriptionHyperlinks><ThingDef>BRF_Digester</ThingDef></descriptionHyperlinks>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_NutritionalPaste</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>0.2</Mass>
+      <MarketValue>0</MarketValue>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>AnimalProduct, Fluid</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--凝胶态肉-->
+  <ThingDef ParentName="BRF_NutritionalPasteLike">
+    <defName>BRF_GelatinousFlesh</defName>
+    <label>Gelatinous Flesh</label>
+    <description>A gelatinized meat that, while still composed of those animal proteins, fats, and other substances, has become jelly-like in texture.\n In addition to being edible, it is also an important component of various biological machines.</description>
+    <descriptionHyperlinks><ThingDef>BRF_BioForge</ThingDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Items/Resource/BRF_GelatinousFlesh</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.025</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.06</joy>
+      <joyKind>Gluttonous</joyKind>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+  </ThingDef>
+
+<!--骸骨碎片-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_BoneFragment</defName>
+    <label>Bone Fragment</label>
+    <description>A portion of the remains of a certain intelligent organism has been preserved because it cannot be digested.</description>
+    <descriptionHyperlinks><ThingDef>BRF_Digester</ThingDef></descriptionHyperlinks>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_BoneFragment</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <Mass>0.015</Mass>
+      <MarketValue>0.025</MarketValue>
+    </statBases>
+  </ThingDef>
+<!--血棘尖刺-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_GoreSpine</defName>
+    <label>Gore Spine</label>
+    <description>Gorehulk's relics, which proves that you have once again destroyed the infested entity.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_Digester</ThingDef>
+      <EntityCodexEntryDef>Gorehulk</EntityCodexEntryDef>
+      <ThingDef>BRF_GoreSpine_FleshMass</ThingDef>
+    </descriptionHyperlinks>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_GoreSpine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <Mass>0.015</Mass>
+      <MarketValue>0.025</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--原始组织样本-->
+  <ThingDef ParentName="BRF_LivingMaterialBase">
+    <defName>BRF_PrimordialTissueSample</defName>
+    <label>Primordial Tissue Sample</label>
+    <description>An active native tissue, but bizarrely it seems to have some kind of psyresponse. Its amazing ability to regenerate and differentiate is something Primordial Fleshbeastes have not shown.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_PrimordialFleshBeast</ThingDef>
+    </descriptionHyperlinks>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_PrimordialTissueSample</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>0.5</MarketValue>
+    </statBases>
+    <ingestible>
+	    <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BRF_MalignantFleshActivation</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+<!--猩红钢-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_ScarletFerrite</defName>
+    <label>Scarlet Ferrite</label>
+    <description>An exotic metal-like fibrous substance with both organic and metallic properties. While similar to Bioferrite, this metal also excels at something related to psychic abilities. However, its biological properties are much more pronounced. A smell of blood haunts this metal, and tentacle-like veins slowly wriggle ...... as it breathes as if it were alive.</description>
+    <graphicData>
+      <texPath>Items/Resource/BRF_ScarletFerrite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <genericMarketSellable>false</genericMarketSellable>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.25</Mass>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0.5</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+        <li>Bioferrite</li>
+        <li>BRF_LivingAlloy</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0</commonality>
+      <allowedInStuffGeneration>false</allowedInStuffGeneration>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(87, 30, 36)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <Flammability>0.5</Flammability>
+        <WorkToMake>3.2</WorkToMake>
+        <WorkToBuild>3.2</WorkToBuild>
+        <DoorOpenSpeed>0.9</DoorOpenSpeed>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.06</awful>
+          <poor>1.08</poor>
+          <normal>1.1</normal>
+          <good>1.13</good>
+          <excellent>1.15</excellent>
+          <masterwork>1.17</masterwork>
+          <legendary>1.20</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>4</awful>
+          <poor>6</poor>
+          <normal>8</normal>
+          <good>11</good>
+          <excellent>13</excellent>
+          <masterwork>15</masterwork>
+          <legendary>18</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

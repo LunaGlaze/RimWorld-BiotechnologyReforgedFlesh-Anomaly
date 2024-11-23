@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PipeSystem.PipeNetDef>
+		<defName>BRF_NutritionalPasteNet</defName>
+		<resource>
+			<name>Nutritional Paste</name>
+			<unit>B</unit>
+			<color>(240, 120, 130)</color>
+			<onlyShowStored>True</onlyShowStored>
+			<offTexPath>Items/Resource/BRF_NutritionalPaste</offTexPath>
+		</resource>
+		<noStorageAlert>true</noStorageAlert>
+		<pipeDefs>
+			<li>BRF_NutritionalBiopipe</li>
+			<li>BRF_UndergroundNutritionalBiopipe</li>
+		</pipeDefs>
+		<designator>
+			<deconstructIconPath>UI/Gizmos/BRF_NutritionalBiopipeDeconstruct</deconstructIconPath>
+			<designationCategoryDef>BRF_LivingFleshyBuilding</designationCategoryDef>
+		</designator>
+		<overlayOptions>
+			<overlayColor>(240, 120, 130)</overlayColor>
+		</overlayOptions>
+		<linkToRefuelables>
+			<li>
+				<thing>BRF_NutritionalPaste</thing>
+				<ratio>1</ratio>
+			</li>
+		</linkToRefuelables>
+	</PipeSystem.PipeNetDef>
+    
+	<ThingDef Name="BRF_BioPipesSystemBase" Abstract="True" ParentName="BuildingBase">
+    	<graphicData>
+      		<shaderType Inherit="False"/>
+    	</graphicData>
+		<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<researchPrerequisites>
+			<li>BRF_FleshNutrientPipelineResearch</li>
+		</researchPrerequisites>
+		<building>
+			<buildingTags>
+				<li>BRF_LivingMechanism</li>
+			</buildingTags>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+	</ThingDef>
+        
+	<ThingDef Name="BRF_BioPipesBase" Abstract="True" ParentName="BRF_BioPipesSystemBase">
+		<category>Building</category>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom7</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<placeWorkers>
+			<li>PipeSystem.PlaceWorker_Pipe</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<comps>
+			<li Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+			</li>
+		</comps>
+	</ThingDef>
+<!--生物营养管道-->
+	<ThingDef ParentName="BRF_BioPipesBase">
+		<defName>BRF_NutritionalBiopipe</defName>
+		<label>Nutritional Biopipe</label>
+		<description>A living biopipe for transferring Nutritional Paste.</description>
+		<thingClass>PipeSystem.Building_Pipe</thingClass>
+		<graphicData>
+			<texPath>Buildings/Structure/Linked/BRF_NutritionalBiopipes_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>Buildings/Structure/PipeSystem/BRF_NutritionalBiopipe</uiIconPath>
+		<uiIconScale>0.7</uiIconScale>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Buildings/Structure/Linked/BRF_NutritionalBiopipes_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>4</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>1</Bioferrite>
+		</costList>
+	</ThingDef>
+    <ThingDef ParentName="BRF_BioPipesBase">
+		<defName>BRF_UndergroundNutritionalBiopipe</defName>
+		<label>Hidden Nutritional Biopipe</label>
+		<description>A living biopipe for transferring Nutritional Paste. It is hidden by embedding it under the Flesh Blanket like a capillary fiber.</description>
+		<thingClass>PipeSystem.Building_Pipe</thingClass>
+		<graphicData>
+			<texPath>UI/CSG/IConduit</texPath>
+		</graphicData>
+		<uiIconPath>Buildings/Structure/PipeSystem/BRF_NutritionalBiopipeUD</uiIconPath>
+		<uiIconScale>0.7</uiIconScale>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Buildings/Structure/Linked/BRF_NutritionalBiopipes_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+            <ai_neverTrashThis>true</ai_neverTrashThis>
+            <isTargetable>false</isTargetable>
+            <expandHomeArea>false</expandHomeArea>
+            <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+		</building>
+		<statBases>
+			<MaxHitPoints>48</MaxHitPoints>
+			<WorkToBuild>280</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>6</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>2</Bioferrite>
+		</costList>
+	</ThingDef>
+<!-- 专用消化器 -->
+	<ThingDef ParentName="BRF_Digester">
+		<defName>BRF_DigesterIPipe</defName>
+		<label>PipeNet Digester</label>
+		<uiOrder>125</uiOrder>
+		<description>A living machine that can digest organic matter into a viscous liquid rich in nutrients... What's unsettling is that it seems to have a special fondness for human remains. This device is specialized for use only in the Nutritional Biopipe network.</description>
+		<researchPrerequisites>
+			<li>BRF_FleshNutrientPipelineResearch</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+		<costList>
+			<BRF_Digester>1</BRF_Digester>
+			<BRF_ReforgedMeat_Harbinger>4</BRF_ReforgedMeat_Harbinger>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+			</li>
+			<li Class="Luna_BRF_VEFAssemblies.CompProperties_PipSpawnRefuelable">
+				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelCapacity>250.0</fuelCapacity>
+				<fuelFilter>
+				  <categories>
+						<li>FoodRaw</li>
+				  </categories>
+				  <thingDefs>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+						<li>Hay</li>
+				  </thingDefs>
+				  <disallowedCategories>
+					  <li>BRF_Things_ReforgedMeat</li>
+					  <li>BRF_Things_LivingMaterial</li>
+				  </disallowedCategories>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<spawnInterval>6000</spawnInterval>
+				<PipeNet>BRF_NutritionalPasteNet</PipeNet>
+		  </li>
+		</comps>
+	</ThingDef>
+<!-- 营养储囊 -->
+	<ThingDef ParentName="BRF_BioPipesSystemBase">
+		<defName>BRF_NutrientSac</defName>
+		<label>Nutrient Sac</label>
+		<description>A fleshy storage capsule that provides the Nutritional Biopipe network with the ability to store nutrients to enable it to function.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Buildings/Furniture/Functional/BRF_NutrientSac</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.7,2.7)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.40</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>180</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>20</Bioferrite>
+			<BRF_FleshMadeStomach>1</BRF_FleshMadeStomach>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+				<storageCapacity>250</storageCapacity>
+				<barSize>(0.75, 0.20)</barSize> 
+				<margin>0.05</margin> 
+				<centerOffset>(0, 0, -0.6)</centerOffset>
+			</li>
+		</comps>
+		<canOverlapZones>false</canOverlapZones>
+	</ThingDef>
+<!-- 出入口 -->
+	<ThingDef Name="BRF_BioPipesSystemIO" Abstract="True" ParentName="FurnitureBase">
+    	<graphicData>
+      		<shaderType Inherit="False"/>
+    	</graphicData>
+		<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<researchPrerequisites>
+			<li>BRF_FleshNutrientPipelineResearch</li>
+		</researchPrerequisites>
+		<thingClass>Building_Storage</thingClass>
+		<building>
+			<buildingTags>
+				<li>BRF_LivingMechanism</li>
+			</buildingTags>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<thingDefs>
+						<li>BRF_NutritionalPaste</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<thingDefs>
+						<li>BRF_NutritionalPaste</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+	</ThingDef>
+	
+	<ThingDef ParentName="BRF_BioPipesSystemIO">
+		<defName>BRF_NutritionalTap</defName>
+		<label>Nutritional Tap</label>
+		<description>A bizarre storage device made of a creature's esophagus and tongue, connected to the Nutritional Biopipe network. Stimulating it can cause it to vomit up Nutritional Paste.</description>
+		<graphicData>
+			<texPath>Buildings/Furniture/Functional/BRF_NutritionalTap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>50</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>5</Bioferrite>
+			<Jaw>1</Jaw>
+		</costList>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ConvertResourceToThing">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+				<thing>BRF_NutritionalPaste</thing>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BRF_BioPipesSystemIO">
+		<defName>BRF_NutritionalDrain</defName>
+		<label>Nutritional Drain</label>
+		<description>A live mouthpiece that is linked to the Nutritional Biopipe network. Feeding it Nutritional Paste provides nutrients to the network.</description>
+		<graphicData>
+			<texPath>Buildings/Furniture/Functional/BRF_NutritionalDrain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>50</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>5</Bioferrite>
+			<Jaw>1</Jaw>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ConvertThingToResource">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+				<thing>BRF_NutritionalPaste</thing>
+			</li>
+		</comps>
+	</ThingDef>
+
+<!-- 阀门/管道隔膜 -->
+	<ThingDef ParentName="BRF_BioPipesSystemBase">
+		<defName>BRF_BioPipeDiaphragm</defName>
+		<label>BioPipe Diaphragm</label>
+		<description>A biological valve. Switches Nutritional Paste flow on/off.</description>
+		<thingClass>PipeSystem.Building_PipeValve</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Buildings/Structure/PipeSystem/BRF_BioPipeDiaphragm/BRF_BioPipeDiaphragm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<allowWireConnection>false</allowWireConnection>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<costList>
+			<BRF_ReforgedMeat_Harbinger>5</BRF_ReforgedMeat_Harbinger>
+			<Bioferrite>3</Bioferrite>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_PipeValve">
+				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
+				<alwaysLinkToPipes>true</alwaysLinkToPipes>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Items/Resource/BRF_NutritionalPaste</commandTexture>
+				<commandLabelKey>BRF_BioPipeDiaphragm</commandLabelKey>
+				<commandDescKey>BRF_BioPipeDiaphragmDesc</commandDescKey>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+</Defs>

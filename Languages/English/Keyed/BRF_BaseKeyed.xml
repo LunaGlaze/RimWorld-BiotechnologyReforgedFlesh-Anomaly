@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MessagePeristalticFleshAssembled>The primordial flesh cradle has hatched new peristaltic flesh blob.</MessagePeristalticFleshAssembled>
+  <PeristalticFleshAssemblyCompleteIn>will incubate {0} within {1}.</PeristalticFleshAssemblyCompleteIn>
+  
+  <NecrophagistEntityWhenDigestinng>It's being digested: </NecrophagistEntityWhenDigestinng>
+
+</Defs>

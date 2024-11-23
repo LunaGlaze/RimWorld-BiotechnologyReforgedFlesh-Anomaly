@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Base-->
+  <ThingDef Name="BRF_BuildingWorkTableBase" ParentName="BenchBase" Abstract="True">
+    <graphicData>
+      <shaderType Inherit="False"/>
+    </graphicData>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <building>
+      <buildingTags>
+        <li>BRF_WorkTable</li>
+      </buildingTags>
+    </building>
+  </ThingDef>
+  <ThingDef Name="BRF_BuildingWorkTableLiving" ParentName="BRF_BuildingWorkTableBase" Abstract="True">
+    <building>
+      <buildingTags>
+        <li>BRF_LivingMechanism</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+  </ThingDef>
+<!-- 扭曲坩埚 -->
+  <ThingDef ParentName="BRF_BuildingWorkTableBase">
+    <defName>BRF_TwistedCrucible</defName>
+    <label>Twisted Crucible</label>
+    <description>A cauldron full of grotesque, fleshy tentacles that can perform transformations that shouldn't be performed.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <researchPrerequisites>
+      <li>BRF_TwistedCrucibleResearch</li>
+    </researchPrerequisites>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_TwistedCrucible</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+    <uiIconPath>Buildings/WorkTable/BRF_TwistedCrucible</uiIconPath>
+    <uiOrder>100</uiOrder>
+    <constructEffect>ConstructDirt</constructEffect>
+    <surfaceType>Eat</surfaceType>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.50</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Steel>100</Steel>
+      <MedicineHerbal>10</MedicineHerbal>
+      <Meat_Human>150</Meat_Human>
+    </costList>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>25</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <categories>
+             <li>FoodRaw</li>
+          </categories>
+		      <disallowedCategories>
+			      <li>BRF_Things_ReforgedMeat</li>
+			      <li>BRF_Things_LivingMaterial</li>
+		      </disallowedCategories>
+        </fuelFilter>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>21</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes><li>Flame</li></focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.12</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>Campfire</li>
+              <li>TorchLamp</li>
+              <li>TorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <offsetPerBuilding>0.02</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <recipes>
+      <li MayRequire="trickity.seal.spirits">T_RendBio</li>
+    </recipes>
+  </ThingDef>
+<!-- 生物锻炉 -->
+  <ThingDef ParentName="BRF_BuildingWorkTableLiving">
+    <defName>BRF_BioForge</defName>
+    <label>Bio-Forge</label>
+    <description>Now, you have begun to understand the wisdom of flesh and blood. This living workbench can reforge biological materials into a more perfect form.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_Table_BioForge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
+	    <BRF_ReforgedMeat_Insect>50</BRF_ReforgedMeat_Insect>
+	    <Meat_Twisted>75</Meat_Twisted>
+	    <Bioferrite>15</Bioferrite>
+	    <BRF_LivingFlesh>3</BRF_LivingFlesh>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <uiOrder>2500</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>BRF_LivingMechanismResearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+<!-- 咀嚼器 -->
+  <ThingDef ParentName="BRF_BuildingWorkTableLiving">
+    <defName>BRF_Chewer</defName>
+    <label>Chewer</label>
+    <description>The ghastly maw constructed of flesh and jaws can be utilized to destroy things with its endless chewing instincts.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_Chewer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Meat_Twisted>60</Meat_Twisted>
+	    <BRF_GelatinousFlesh>15</BRF_GelatinousFlesh>
+	    <Jaw>4</Jaw>
+	    <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.75</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(2,2)</size>
+    <uiOrder>2510</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>BRF_LivingMechanismResearch</li>
+    </researchPrerequisites>
+    <recipes>
+      <li>BRF_RecoverOrDestroyThing</li>
+      <li>BRF_RecoverWeapon</li>
+      <li>BRF_RecoverApparel</li>
+      <li>BRF_DestroyWeapon</li>
+      <li>BRF_DestroyApparel</li>
+      <li>BRF_DestroyDrugs</li>
+    </recipes>
+  </ThingDef>
+
+</Defs>

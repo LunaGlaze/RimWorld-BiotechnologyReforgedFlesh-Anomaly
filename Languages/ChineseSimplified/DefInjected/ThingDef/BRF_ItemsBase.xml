@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 再造肉类 -->
+
+  <BRF_ReforgedMeat_Human.label>重塑人肉</BRF_ReforgedMeat_Human.label>
+  <BRF_ReforgedMeat_Human.description>只要你不说，就不会有人知道这些东西最初的可怕面目。</BRF_ReforgedMeat_Human.description>
+
+  <BRF_ReforgedMeat_Insect.label>重塑虫肉</BRF_ReforgedMeat_Insect.label>
+  <BRF_ReforgedMeat_Insect.description>只要你不说，就不会有人知道这些东西最初的可怕面目。</BRF_ReforgedMeat_Insect.description>
+
+  <BRF_ReforgedMeat_Harbinger.label>重塑先驱之肉</BRF_ReforgedMeat_Harbinger.label>
+  <BRF_ReforgedMeat_Harbinger.description>只要你不说，就不会有人知道这些东西最初的可怕面目。</BRF_ReforgedMeat_Harbinger.description>
+
+
+  <!-- 鲜活肉块 -->
+
+  <BRF_LivingFlesh.label>鲜活肉块</BRF_LivingFlesh.label>
+  <BRF_LivingFlesh.description>毫无疑问，它是有生命的……我认为最好不要考虑食用它，但作为一种生物机械的结构，它是一个不错的选择。</BRF_LivingFlesh.description>
+  <BRF_LivingFlesh.comps.2.jobString>分析鲜活肉块</BRF_LivingFlesh.comps.2.jobString>
+
+
+  <!-- 营养糊剂 -->
+
+  <BRF_NutritionalPaste.label>营养糊剂</BRF_NutritionalPaste.label>
+  <BRF_NutritionalPaste.description>生物机械消化的产物，一种营养丰富的粘稠液体，也是许多生物机器的燃料。或许它可以食用，味道似乎还不错，但一想到它的来源，就会让人有点反胃。</BRF_NutritionalPaste.description>
+
+
+  <!-- 凝胶态肉 -->
+
+  <BRF_GelatinousFlesh.label>凝胶态肉</BRF_GelatinousFlesh.label>
+  <BRF_GelatinousFlesh.description>一种凝胶化的肉类，虽然仍由那些动物蛋白质、脂肪和其他物质组成，但质地已变得像果冻一样。\n\n除了可以食用外，它还是各种生物机器的重要组成部分。</BRF_GelatinousFlesh.description>
+
+
+  <!-- 骸骨碎片 -->
+
+  <BRF_BoneFragment.label>骸骨碎片</BRF_BoneFragment.label>
+  <BRF_BoneFragment.description>某种智慧生物的部分遗骸因为无法被消化被保存下来。</BRF_BoneFragment.description>
+
+
+  <!-- 血棘尖刺 -->
+
+  <BRF_GoreSpine.label>血棘尖刺</BRF_GoreSpine.label>
+  <BRF_GoreSpine.description>血棘巨人的遗物，这证明你又一次摧毁了来袭的实体。</BRF_GoreSpine.description>
+
+
+  <!-- 原始组织样本 -->
+
+  <BRF_PrimordialTissueSample.label>原始组织样本</BRF_PrimordialTissueSample.label>
+  <BRF_PrimordialTissueSample.description>这是一种活跃的原生组织，但奇怪的是，它似乎具有某种灵能效应。它惊人的再生和分化能力是原始肉兽所没有完全体现的。</BRF_PrimordialTissueSample.description>
+
+
+  <!-- 猩红钢 -->
+
+  <BRF_ScarletFerrite.label>猩红钢</BRF_ScarletFerrite.label>
+  <BRF_ScarletFerrite.description>一种类似金属纤维的奇异物质，同时具有有机和金属特性。虽然与活铁相似，但这种金属也擅长与心灵能力有关的东西。不过，它的生物特性要明显得多。这种金属萦绕着一股血腥味，触手状的血管随着它的呼吸慢慢蠕动……就好像它是活的一样。</BRF_ScarletFerrite.description>
+  <BRF_ScarletFerrite.stuffProps.stuffAdjective>猩红钢</BRF_ScarletFerrite.stuffProps.stuffAdjective>
+
+
+</LanguageData>

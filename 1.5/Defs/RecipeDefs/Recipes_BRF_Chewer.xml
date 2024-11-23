@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>BRF_RecoverOrDestroyThing</defName>
+    <label>recover or destroy thing</label>
+    <description>With Chewer's never-ending chewing instincts, metal items such as weapons and armor are destroyed and a portion of the resources recovered; if they can't be efficiently recovered, then they are simply destroyed.</description>
+    <jobString>Recovering/destroying things.</jobString>
+    <workAmount>400</workAmount>
+    <smeltingWorkAmount>1600</smeltingWorkAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+        <li>Apparel</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+        <li>Apparel</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Gun_DoomsdayRocket</li>
+        <li>Gun_TripleRocket</li>
+        <li>TornadoGenerator</li>
+        <li>OrbitalTargeterPowerBeam</li>
+        <li>OrbitalTargeterBombardment</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>BRF_RecoverWeapon</defName>
+    <label>recover weapon</label>
+    <description>With Chewer's never-ending chewing instincts, weapons are destroyed and a portion of the resources recovered.</description>
+    <jobString>Recovering weapon.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowNonSmeltableWeapons</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+    </forceHiddenSpecialFilters>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>BRF_RecoverApparel</defName>
+    <label>recover apparel</label>
+    <description>With Chewer's never-ending chewing instincts, apparel is destroyed and a portion of the resources recovered.</description>
+    <jobString>Recovering apparel.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowNonSmeltableApparel</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>BRF_DestroyWeapon</defName>
+    <label>destroy weapon</label>
+    <description>Destroy unwanted weapons using Chewer's never-ending chewing instinct. This process is faster than normal recycling and works on non-smeltable items, but yields no resources.</description>
+    <jobString>Destroying weapon.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Gun_DoomsdayRocket</li>
+        <li>Gun_TripleRocket</li>
+        <li>TornadoGenerator</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>BRF_DestroyApparel</defName>
+    <label>destroy apparel</label>
+    <description>Destroy unwanted apparel using Chewer's never-ending chewing instinct. This process is faster than normal recycling and works on non-smeltable items, but yields no resources.</description>
+    <jobString>Destroying apparel.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>OrbitalTargeterPowerBeam</li>
+        <li>OrbitalTargeterBombardment</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>BRF_DestroyDrugs</defName>
+    <label>destroy drugs</label>
+    <description>Use Chewer to dispose of unwanted drugs  to completely destroy them.</description>
+    <jobString>Destroying drugs.</jobString>
+    <workAmount>60</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <requiredGiverWorkType>Hauling</requiredGiverWorkType>
+    <effectWorking>BurnDrug</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <conceptLearned>DrugBurning</conceptLearned>
+    <ignoreIngredientCountTakeEntireStacks>true</ignoreIngredientCountTakeEntireStacks>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Drugs</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+<!--处理尸体-->
+  <RecipeDef>
+    <defName>BRF_ChewCorpse</defName>
+    <label>feed corpse to chewer</label>
+    <description>Feed corpse to chewer</description>
+    <jobString>Feed.</jobString>
+    <workAmount>500</workAmount>
+    <recipeUsers>
+      <li>BRF_Chewer</li>
+    </recipeUsers>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <autoStripCorpses>true</autoStripCorpses>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Human</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+    <products>
+      <BRF_BoneFragment>15</BRF_BoneFragment>
+    </products>
+    <displayPriority>500</displayPriority>
+    <researchPrerequisite>BRF_LivingMechanismResearch</researchPrerequisite>
+  </RecipeDef>
+
+<!--血棘巨人尸体-->
+  <RecipeDef>
+    <defName>BRF_ChewGorehulk</defName>
+    <label>feed gorehulk corpse to chewer</label>
+    <description>Feed Gorehulk corpse to chewer</description>
+    <jobString>Feed.</jobString>
+    <workAmount>800</workAmount>
+    <recipeUsers>
+      <li>BRF_Chewer</li>
+    </recipeUsers>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>BRF_Chewer_Crafting</soundWorking>
+    <autoStripCorpses>true</autoStripCorpses>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Gorehulk</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_GoreSpine>1</BRF_GoreSpine>
+    </products>
+    <displayPriority>500</displayPriority>
+    <researchPrerequisite>BRF_GoreSpineLauncherResearch</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--营养管道-->
+    <ResearchProjectDef>
+		<defName>BRF_FleshNutrientPipelineResearch</defName>
+    	<label>Flesh Nutrient Pipe System</label>
+    	<description>A pipe system that uses biopipes to transport Nutritional Paste within the system and to fuel living biological machines. Construction of the pipe system must be done on Flesh Blanket.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.8</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshTaintSporeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

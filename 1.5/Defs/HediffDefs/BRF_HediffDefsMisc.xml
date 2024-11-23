@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>BRF_InvisibleWatched</defName>
+        <label>Invisible Watched</label>
+        <description>The creature's invisibility is disabled by being observed by another biostructural machine with a mind effect.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1, 0.8, 0.8)</defaultLabelColor>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <duplicationAllowed>false</duplicationAllowed>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+  <HediffDef>
+    <defName>BRF_RapidRegeneration</defName>
+    <label>rapid regeneration</label>
+    <hediffClass>Luna_BRF.Hediff_BRFRapidRegeneration</hediffClass>
+    <description>This creature has stored an incredible amount of healing energy. While not unlimited, it will rapidly regenerate until its energy has been exhausted.</description>
+    <isBad>false</isBad>
+    <preventsDeath>true</preventsDeath>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>30000</regeneration>
+        <showRegenerationStat>false</showRegenerationStat>
+        <statOffsets>
+          <PainShockThreshold>10</PainShockThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

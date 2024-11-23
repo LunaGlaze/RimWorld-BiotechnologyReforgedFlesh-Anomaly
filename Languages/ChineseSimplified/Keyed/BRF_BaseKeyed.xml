@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MessagePeristalticFleshAssembled>血肉温床已孵化新的蠕动肉块。</MessagePeristalticFleshAssembled>
+  <PeristalticFleshAssemblyCompleteIn>将在{1}内孵化出{0}。</PeristalticFleshAssemblyCompleteIn>
+  
+  <NecrophagistEntityWhenDigestinng>正在消化：</NecrophagistEntityWhenDigestinng>
+
+</Defs>

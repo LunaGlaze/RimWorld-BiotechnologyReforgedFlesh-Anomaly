@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BRF_BuildingFurniturelBase" Abstract="True" ParentName="BuildingBase">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <filthLeaving>Filth_Fleshmass</filthLeaving>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <building>
+      <buildingTags>
+        <li>BRF_LivingFurniture</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+  </ThingDef>
+<!--血肉灯-->  
+  <ThingDef ParentName="BRF_BuildingFurniturelBase">
+    <defName>BRF_GlowFleshBulb</defName>
+    <label>Glow Flesh Bulb</label>
+    <description>A bioluminescent pod made by flesh.</description>
+    <researchPrerequisites>
+      <li>BRF_LivingMechanismResearch</li>
+    </researchPrerequisites>
+    <uiOrder>300</uiOrder>
+    <thingClass>Building</thingClass>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <uiIconScale>0.75</uiIconScale>
+    <fillPercent>0.20</fillPercent>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.75</Flammability>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <costList>
+	    <Meat_Twisted>10</Meat_Twisted>
+	    <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(212,106,101,0)</glowColor>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Buildings/Furniture/BRF_GlowFleshBulb</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Furniture/BRF_GlowFleshBulb/BRF_GlowFleshBulbA</uiIconPath>
+  </ThingDef>
+<!--基础血肉桌-->
+  <ThingDef Name="BRF_FATableGatherSpotBase" Abstract="True" ParentName="TableGatherSpotBase">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <filthLeaving>Filth_Fleshmass</filthLeaving>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <building>
+      <buildingTags>
+        <li>BRF_LivingFurniture</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="BRF_FATableGatherSpotBase">
+    <defName>BRF_FleshTable</defName>
+    <label>Flesh Table</label>
+	  <description>A table made from twisted meat ... Disgusting but practical.</description>
+    <graphicData>
+      <texPath>Buildings/Furniture/BRF_FleshTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.3,2.3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+		<costList>
+			<Meat_Twisted>125</Meat_Twisted>
+			<Bioferrite>25</Bioferrite>
+		</costList>
+	  <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	  <researchPrerequisites>
+      <li>BRF_ShapingTwistedMeatResearch</li>
+    </researchPrerequisites>
+    <uiOrder>240</uiOrder>
+    <stuffCategories Inherit="False"/>
+  </ThingDef>
+</Defs>

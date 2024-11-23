@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="BRF_BuildingPowerBase" Abstract="True" ParentName="BuildingBase">
+    <graphicData>
+      <shaderType Inherit="False"/>
+    </graphicData>
+    <category>Building</category>
+    <soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+    <filthLeaving>Filth_Fleshmass</filthLeaving>
+	  <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    <building>
+      <buildingTags>
+        <li>BRF_LivingMechanism</li>
+      </buildingTags>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <researchPrerequisites>
+        <li>BRF_FleshBioElectricityResearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+<!--静电囊泡-->
+	<ThingDef ParentName="BRF_BuildingPowerBase">
+		<defName>BRF_ElectrostaticVesicle</defName>
+		<label>Electrostatic Vesicle</label>
+		<description>A monstrous flesh that utilizes the bioelectrostatic effect to generate weak electricity.</description>
+		<graphicData>
+			<texPath>Buildings/Furniture/Functional/BRF_ElectrostaticVesicle</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<drawSize>(1.5, 1.5)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<thingClass>Luna_BRF.ElectrostaticBuilding</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<tickerType>Rare</tickerType>
+		<uiIconScale>0.6</uiIconScale>
+		<uiIconOffset>(0, 0.1)</uiIconOffset>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>1.0</Flammability>
+			<MarketValue>50</MarketValue>
+			<WorkToBuild>1500</WorkToBuild>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(131,16,16,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-75</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+			</li>
+		</comps>
+		<costList>
+			<BRF_LivingFlesh>1</BRF_LivingFlesh>
+			<BRF_BoneFragment>2</BRF_BoneFragment>
+			<BRF_ReforgedMeat_Harbinger>10</BRF_ReforgedMeat_Harbinger>
+			<BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+			<Meat_Twisted>40</Meat_Twisted>
+		</costList>
+	</ThingDef>
+<!--放电肿瘤-->
+  <ThingDef ParentName="BRF_BuildingPowerBase">
+    <defName>BRF_RadiationTumor</defName>
+    <label>Radiation Tumor</label>
+    <description>A bunch of proliferating tumors that got the ability to discharge under human influence. This twisted pile of flesh is capable of consuming nutrients to generate electricity. It can discharge weakly even in the absence of nutrients, but this slowly impairs its own activity.</description>
+    <thingClass>Luna_BRF.ElectrostaticBuilding</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+	  <texPath>Buildings/Furniture/Functional/BRF_RadiationTumor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.9</fillPercent>
+    <pathCost>50</pathCost>
+    <rotatable>false</rotatable>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(2,2)</size>
+    <costList>
+	  <BRF_LivingFlesh>2</BRF_LivingFlesh>
+      <Bioferrite>10</Bioferrite>
+	  <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+	  <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+      <Meat_Twisted>100</Meat_Twisted>
+      <BRF_ElectrostaticVesicle>1</BRF_ElectrostaticVesicle>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Luna_BRF.CompPowerPlantLuna50T</compClass>
+        <basePowerConsumption>-2650</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>BRF_RadiationTumor_Working</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>24.0</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(131,16,16,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>6</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>150</ticksPerHeal>
+      </li>
+	  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
+		  	<interval>1500</interval>
+			<damage>1</damage>
+	  </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+<!--血肉电池-->
+  <ThingDef ParentName="BRF_BuildingPowerBase">
+    <defName>BRF_FleshBatterySmall</defName>
+    <label>Flesh Battery</label>
+	  <drawerType>MapMeshAndRealTime</drawerType>
+    <description>A small and square piece of meat with a bumpy upper surface. Inside it is capable of storing electricity.</description>
+    <thingClass>Luna_BRF.Building_SmallFleshBattery</thingClass>
+    <graphicData>
+	  <texPath>Buildings/Furniture/Functional/BRF_FleshBatterySmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>-5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+	  <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <Bioferrite>5</Bioferrite>
+	  <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+	  <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>550</storedEnergyMax>
+        <efficiency>0.85</efficiency>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.9</glowRadius>
+        <glowColor>(131,16,16,0)</glowColor>
+      </li>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <requiresFuel>true</requiresFuel>
+        <ticksPerHeal>6000</ticksPerHeal>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>120</wickTicks>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+		  <li>Batteries</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--再造人肉-->
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Human1</defName>
+    <label>reconstruct a little human flesh</label>
+    <description>reconstruct human flesh into something may edible.</description>
+    <jobString>Reconstructing human flesh.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Human</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Human>7</BRF_ReforgedMeat_Human>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Human2</defName>
+    <label>reconstruct some human flesh</label>
+    <description>reconstruct human flesh into something may edible.</description>
+    <jobString>Reconstructing human flesh.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>2</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Human</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Human3</defName>
+    <label>reconstruct more human flesh</label>
+    <description>reconstruct human flesh into something may edible.</description>
+    <jobString>Reconstructing human flesh.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Human</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Human>64</BRF_ReforgedMeat_Human>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+<!--再造虫肉-->
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Insect1</defName>
+    <label>reconstruct a little insect flesh</label>
+    <description>reconstruct insect flesh into something may edible.</description>
+    <jobString>Reconstructing insect flesh.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Insect>7</BRF_ReforgedMeat_Insect>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Insect2</defName>
+    <label>reconstruct some insect flesh</label>
+    <description>reconstruct insect flesh into something may edible.</description>
+    <jobString>Reconstructing insect flesh.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>2</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Insect>25</BRF_ReforgedMeat_Insect>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Insect3</defName>
+    <label>reconstruct more insect flesh</label>
+    <description>reconstruct insect flesh into something may edible.</description>
+    <jobString>Reconstructing insect flesh.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_ReforgedMeat_Insect>64</BRF_ReforgedMeat_Insect>
+    </products>
+    <researchPrerequisite>BRF_TwistedCrucibleResearch</researchPrerequisite>
+  </RecipeDef>
+<!--制造扭曲肉-->
+  <RecipeDef>
+    <defName>BRF_ShapingTwistedMeat</defName>
+    <label>Reshape Twisted Meat</label>
+    <description>Breeding Twisted Meat with Reforged Meat and Bioferrite.</description>
+    <jobString>Reshaping Twisted Meat</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bioferrite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Meat_Twisted>30</Meat_Twisted>
+    </products>
+    <researchPrerequisite>BRF_ShapingTwistedMeatResearch</researchPrerequisite>
+  </RecipeDef>
+
+<!--重塑先驱肉-->
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Harbinger1</defName>
+    <label>reconstruct a little harbinger flesh</label>
+    <description>reconstruct twisted flesh into something may edible.</description>
+    <jobString>Reconstructing harbinger flesh.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_GelatinousFlesh</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Twisted</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BRF_ReforgedMeat_Harbinger>7</BRF_ReforgedMeat_Harbinger>
+    </products>
+    <researchPrerequisite>BRF_ReforgedMeatHarbingerResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Harbinger2</defName>
+    <label>reconstruct some harbinger flesh</label>
+    <description>reconstruct twisted flesh into something may edible.</description>
+    <jobString>Reconstructing harbinger flesh.</jobString>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>2</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>13</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_GelatinousFlesh</li>
+          </thingDefs>
+        </filter>
+        <count>13</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Twisted</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BRF_ReforgedMeat_Harbinger>25</BRF_ReforgedMeat_Harbinger>
+    </products>
+    <researchPrerequisite>BRF_ReforgedMeatHarbingerResearch</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BRF_ReforgedMeat_Harbinger3</defName>
+    <label>reconstruct more harbinger flesh</label>
+    <description>reconstruct twisted flesh into something may edible.</description>
+    <jobString>Reconstructing harbinger flesh.</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_GelatinousFlesh</li>
+          </thingDefs>
+        </filter>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Twisted</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BRF_ReforgedMeat_Harbinger>64</BRF_ReforgedMeat_Harbinger>
+    </products>
+    <researchPrerequisite>BRF_ReforgedMeatHarbingerResearch</researchPrerequisite>
+  </RecipeDef>
+</Defs>

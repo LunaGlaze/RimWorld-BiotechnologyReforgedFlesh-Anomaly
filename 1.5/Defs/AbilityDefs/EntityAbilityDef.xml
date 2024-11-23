@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--实体感染弹射物-->
+  <ThingDef ParentName="SpikeBase" Name="EntityHediffProjectileBase" Abstract="True">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+  </ThingDef>
+
+ <!-- BRF_PrimordialFleshBeast -->
+  <AbilityDef ParentName="SpikeLaunchBase">
+    <defName>BRF_Launch_PrimordialFleshBeast</defName>
+    <label>Launch Primordial Spike</label>
+    <verbProperties>
+      <range>5.9</range>
+      <defaultProjectile>BRF_PrimordialSpike</defaultProjectile>
+    </verbProperties>
+  </AbilityDef>
+  <ThingDef ParentName="EntityHediffProjectileBase">
+    <defName>BRF_PrimordialSpike</defName>
+    <label>Primordial Spike</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>14</damageAmountBase>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.75</addHediffChance>
+            <HediffDefToAdd>BRF_MalignantFleshActivation</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--实体位移-->
+  <AbilityDef Name="BRF_EntityLongjump">
+    <defName>BRF_EntityLongjump</defName>
+    <label>Entity Longjump</label>
+    <description>Jump to a distant location using this entity's powerful jumping ability.</description>
+    <iconPath>UI/Abilities/Longjump</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0</warmupTime>
+      <range>12.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
+
+<!--进食尸体-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BRF_EntityNecrophagia</defName>
+    <label>Entity Necrophagia</label>
+    <description>This entity has the ability to devour corpses.</description>
+    <iconPath>UI/Abilities/BRF_EntityNecrophagia</iconPath>
+    <cooldownTicksRange>3600</cooldownTicksRange>
+	  <aiCanUse>true</aiCanUse>
+    <showPsycastEffects>false</showPsycastEffects>
+	  <showOnCharacterCard>false</showOnCharacterCard>
+    <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+    <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+    <warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+    <warmupSound>AnomalyAbilityWarmup</warmupSound>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+	    <warmupTime>0.25</warmupTime>
+	    <range>9.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>true</canTargetCorpses>
+        <canTargetHumans>false</canTargetHumans>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_EntityNecrophagia" />
+    </comps>
+  </AbilityDef>
+
+</Defs>

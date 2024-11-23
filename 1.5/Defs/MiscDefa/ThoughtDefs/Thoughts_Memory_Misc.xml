@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BRF_AteLivingMeat</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+    <nullifyingHediffs>
+      <li>Inhumanized</li>
+    </nullifyingHediffs>
+    <stages>
+      <li>
+        <label>ate living meat</label>
+        <description>It was even writhing in my mouth and oesophagus with the taste of blood. It was simply horrible.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BRF_AteTentacleMooncake</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate tentacle mooncake</label>
+        <description>I have to admit this weird thing tastes unexpectedly delicious... If only it wouldn't suddenly squirm in my mouth.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

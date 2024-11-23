@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>BRF_CorpseNecrophagistDigest</defName>
+    <driverClass>Luna_BRF.JobDriver_CorpseNecrophagistDigest</driverClass>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+    <casualInterruptible>false</casualInterruptible>
+    <playerInterruptible>false</playerInterruptible>
+  </JobDef>
+
+</Defs>

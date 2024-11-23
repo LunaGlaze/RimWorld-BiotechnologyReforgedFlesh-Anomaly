@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>BRF_AnimalResource</defName>
+    <driverClass>Luna_BRF.JobDriver_AnimalResource</driverClass>
+		<reportString>gathering animal resource from TargetA.</reportString>
+  </JobDef>
+
+</Defs>

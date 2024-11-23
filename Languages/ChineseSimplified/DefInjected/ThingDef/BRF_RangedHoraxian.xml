@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_CrimsonCrusade.label>绯红十字军</BRF_CrimsonCrusade.label>
+  <BRF_CrimsonCrusade.description>一种类似弩箭的装置，可投掷内嵌生物毒素的粗制尖刺。这种毒素会使非机械目标眩晕，并利用病毒撕裂他们的血肉。</BRF_CrimsonCrusade.description>
+  <BRF_CrimsonCrusade.tools.limb.label>柄</BRF_CrimsonCrusade.tools.limb.label>
+
+  <BRF_NerveSpiker_Spike.label>神经毒刺</BRF_NerveSpiker_Spike.label>
+
+
+</LanguageData>

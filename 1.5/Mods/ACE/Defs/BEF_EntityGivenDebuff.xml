@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>BRF_FIeshLacerated</defName>
+        <label>Flesh Lacerated</label>
+        <description>A bio-viral augmentation organism lurks within the body, and if the target isn't a mechanoid, then it will end up skinned.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1, 0.8, 0.8)</defaultLabelColor>
+        <maxSeverity>1</maxSeverity>
+        <duplicationAllowed>false</duplicationAllowed>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>25000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+            <li Class="Luna_BRF.HediffCompProperties_DamageWhenMaxSeverity">
+                <surgeryInjuries>true</surgeryInjuries>
+                <withoutMechanoid>true</withoutMechanoid>
+                <damAmount>25</damAmount>
+                <addHediff>true</addHediff>
+                <hediffDefAdd>NothingThereImplant</hediffDefAdd>
+            </li>
+        </comps>
+        <isBad>true</isBad>
+        <stages>
+            <li>
+                <label>minor</label>
+                <painOffset>0.01</painOffset>
+            </li>
+            <li>
+                <label>major</label>
+                <minSeverity>0.2</minSeverity>
+                <painOffset>0.05</painOffset>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.6</minSeverity>
+                <painOffset>0.1</painOffset>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.8</minSeverity>
+                <painOffset>0.15</painOffset>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

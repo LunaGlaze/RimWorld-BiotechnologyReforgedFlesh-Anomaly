@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="BRF_MeleeHoraxianBese" ParentName="BaseWeapon">
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>1.5</Mass>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags>
+      <li>HoraxWeapon</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+    <stuffCategories>
+      <li>BRF_LivingAlloy</li>
+    </stuffCategories>
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+      <researchPrerequisite>BRF_ScarletForgeResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>BioferriteShaper</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BRF_MeleeHoraxianBese">
+    <defName>BRF_CrimsonButcher</defName>
+    <label>Crimson Butcher</label>
+    <description>The living alloy blade is riddled with a virus that can split the skin of an enemy. This butcher's knife is alive and eager to kill.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Melee/BRF_CrimsonButcher</texPath>
+    </graphicData>
+    <costList>
+      <BRFMelee_BoneDagger>1</BRFMelee_BoneDagger>
+      <BRF_GoreSpine>3</BRF_GoreSpine>
+      <BRF_LivingFlesh>5</BRF_LivingFlesh>
+      <Bioferrite>30</Bioferrite>
+    </costList>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+      <li>LongSword</li>
+    </weaponTags>
+    <costStuffCount>15</costStuffCount>
+    <recipeMaker>
+      <displayPriority>52</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>BRF_FleshViruScratch</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BRF_FleshViruCut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+  </ThingDef>
+
+  <ThingDef ParentName="BRF_MeleeHoraxianBese">
+    <defName>BRF_CrimsonDecimator</defName>
+    <label>Crimson Decimator</label>
+    <description>The living alloy blade is riddled with a virus that can split the skin of an enemy. The only mission of this breathing axe is to break open a door and chop off someone's head.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Melee/BRF_CrimsonDecimator</texPath>
+    </graphicData>
+    <costList>
+      <BRFMelee_BoneDagger>1</BRFMelee_BoneDagger>
+      <BRF_GoreSpine>3</BRF_GoreSpine>
+      <BRF_LivingFlesh>5</BRF_LivingFlesh>
+      <Bioferrite>30</Bioferrite>
+    </costList>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>Axe</li>
+    </weaponTags>
+    <costStuffCount>15</costStuffCount>
+    <recipeMaker>
+      <displayPriority>53</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BRF_FleshViruCut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Demolish</def>
+            <amount>7.5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+  </ThingDef>
+
+</Defs>

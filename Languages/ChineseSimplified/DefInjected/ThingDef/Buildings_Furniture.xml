@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉灯 -->
+
+  <BRF_GlowFleshBulb.label>血肉荧光囊泡</BRF_GlowFleshBulb.label>
+  <BRF_GlowFleshBulb.description>血肉制造的生物发光茧囊。</BRF_GlowFleshBulb.description>
+  <BRF_GlowFleshBulb_Blueprint.label>血肉荧光囊泡（蓝图）</BRF_GlowFleshBulb_Blueprint.label>
+  <BRF_GlowFleshBulb_Blueprint_Install.label>血肉荧光囊泡（蓝图）</BRF_GlowFleshBulb_Blueprint_Install.label>
+  <BRF_GlowFleshBulb_Frame.label>血肉荧光囊泡（建造中）</BRF_GlowFleshBulb_Frame.label>
+  <BRF_GlowFleshBulb_Frame.description>血肉制造的生物发光茧囊。</BRF_GlowFleshBulb_Frame.description>
+
+
+  <!-- 基础血肉桌 -->
+
+  <BRF_FleshTable.label>肉桌</BRF_FleshTable.label>
+  <BRF_FleshTable.description>用扭曲的肉做成的桌子……恶心但实用。</BRF_FleshTable.description>
+  <BRF_FleshTable_Blueprint.label>肉桌（蓝图）</BRF_FleshTable_Blueprint.label>
+  <BRF_FleshTable_Blueprint_Install.label>肉桌（蓝图）</BRF_FleshTable_Blueprint_Install.label>
+  <BRF_FleshTable_Frame.label>肉桌（建造中）</BRF_FleshTable_Frame.label>
+  <BRF_FleshTable_Frame.description>用扭曲的肉做成的桌子……恶心但实用。</BRF_FleshTable_Frame.description>
+
+
+</LanguageData>

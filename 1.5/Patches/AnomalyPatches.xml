@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="Fleshbeasts"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_FleshCradleResearch</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/EntityCodexEntryDef[defName="HarbingerTree"]/discoveredResearchProjects</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/EntityCodexEntryDef[defName="HarbingerTree"]</xpath>
+                <value>
+                    <discoveredResearchProjects />
+                </value>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="HarbingerTree"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_ReforgedMeatHarbingerResearch</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="Gorehulk"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_GoreSpineLauncherResearch</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="Revenant"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_InvisibleWatcherResearch</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="FleshmassNucleus"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_FleshPulseShellResearch</li></value>
+    </Operation>
+    
+    <Operation Class="PatchOperationInsert">
+		<xpath>/Defs/MapGeneratorDef[defName="Undercave"]/genSteps/li[text()="UndercaveInterest"]</xpath>
+        <order>Append</order>
+        <value><li>BRF_UndercavePrimordialFleshBeast</li></value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/EntityCodexEntryDef[defName="TwistedObelisk"]/discoveredResearchProjects</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/EntityCodexEntryDef[defName="TwistedObelisk"]</xpath>
+                <value>
+                    <discoveredResearchProjects />
+                </value>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="TwistedObelisk"]/discoveredResearchProjects</xpath>
+        <value><li>BRF_FleshBeastShellResearch</li></value>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/EntityCodexEntryDef[defName="Fleshbeasts"]/linkedThings</xpath>
+        <order>Prepend</order>
+		<value>
+			<li>BRF_MiniFleshBeast</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Fingerspike"]/comps</xpath>
+		<value>
+            <li Class="Luna_BRF.CompProperties_DeadChanceSplit">
+                <DeadSplitChance>0.25</DeadSplitChance>
+                <dividePawnCount>2</dividePawnCount>
+                <dividePawnKindOptions>
+                    <li>BRF_MiniFleshBeast</li>
+                </dividePawnKindOptions>
+            </li>
+		</value>
+	</Operation>
+    
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers</xpath>
+		<value>
+            <li>
+                <kindDef>BRF_ClumpGroup</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BRF_Clump>1</BRF_Clump>
+                </options>
+            </li>
+		</value>
+	</Operation>
+    
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach"]/stages/li</xpath>
+		<value>
+            <capMods>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>0.01</offset>
+                </li>
+            </capMods>
+		</value>
+	</Operation>
+
+</Patch>

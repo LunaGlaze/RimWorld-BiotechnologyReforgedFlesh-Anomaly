@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon">
+    <techLevel>Medieval</techLevel>
+    <defName>BRF_CrimsonCrusade</defName>
+    <label>Crimson Crusade</label>
+    <description>A crossbow-like device that hurls a crude spike embedded with a biotoxin. This toxin stuns non-mechanical targets and uses the virus to tear through their flesh.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Ranged/BRF_CrimsonCrusade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <smeltable>true</smeltable>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <NerveSpiker>1</NerveSpiker>
+      <BRF_GoreSpine>3</BRF_GoreSpine>
+      <BRF_LivingFlesh>5</BRF_LivingFlesh>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>1.3</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NerveSpiker</li>
+    </weaponTags>
+    <tradeTags>
+      <li>HoraxWeapon</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <relicChance>1</relicChance>
+    <stuffCategories>
+      <li>BRF_LivingAlloy</li>
+    </stuffCategories>
+    <costStuffCount>10</costStuffCount>
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+      <researchPrerequisite>BRF_ScarletForgeResearch</researchPrerequisite>
+      <recipeUsers>
+        <li>BioferriteShaper</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>51</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BRF_NerveSpiker_Spike</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>39.9</range>
+        <soundCast>Bow_Recurve</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+    <defName>BRF_NerveSpiker_Spike</defName>
+    <label>nerve spike</label>
+    <graphicData>
+      <texPath>Things/Projectile/NerveSpikerShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>48</speed>
+      <damageDef>Nerve</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.8</addHediffChance>
+            <HediffDefToAdd>BRF_FleshLacerated</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>
