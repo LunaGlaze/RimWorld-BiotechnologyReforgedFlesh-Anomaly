@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉脈衝彈 -->
+
+  <BRF_Shell_FleshPulse.label>血肉脈衝彈</BRF_Shell_FleshPulse.label>
+  <BRF_Shell_FleshPulse.description>一種由血肉組織和血肉心臟神經組織製成的特殊炮彈。這種彈藥能產生生物電脈衝衝擊。不過，它在造成電弧燒傷的同時，還能模擬萬向脈衝，瓦解 “血肉心臟”。</BRF_Shell_FleshPulse.description>
+
+  <BRF_Bullet_Shell_FleshPulse.label>血肉脈衝彈</BRF_Bullet_Shell_FleshPulse.label>
+
+
+  <!-- 血肉EMP彈 -->
+
+  <BRF_Shell_FleshEMP.label>血肉EMP彈</BRF_Shell_FleshEMP.label>
+  <BRF_Shell_FleshEMP.description>一種類似 “血肉脈衝彈 ”的特殊炮彈。與原型不同，這種炮彈直接從EMP炮彈改裝而來。與血肉心臟專用炮彈相比，這種炮彈更像是一種具有額外能力的EMP彈，它有10%的幾率使受影響的血肉心臟開始抽搐。</BRF_Shell_FleshEMP.description>
+
+  <BRF_Bullet_Shell_FleshEMP.label>血肉EMP彈</BRF_Bullet_Shell_FleshEMP.label>
+
+
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_PrimordialFleshBeast.label>原始血肉獸</BRF_PrimordialFleshBeast.label>
+  <BRF_PrimordialFleshBeast.description>一種奇特的深紅色血肉獸，最初出現在巨坑中。它們的形狀像獨爪獸，但有強大的觸手代替尖刺。</BRF_PrimordialFleshBeast.description>
+  <BRF_PrimordialFleshBeast.tools.great_tentacle.label>巨型觸手</BRF_PrimordialFleshBeast.tools.great_tentacle.label>
+  <BRF_PrimordialFleshBeast.tools.head.label>頭</BRF_PrimordialFleshBeast.tools.head.label>
+
+
+</LanguageData>

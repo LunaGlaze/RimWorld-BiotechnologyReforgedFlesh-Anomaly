@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>MaetCore[血肉重铸]Bio-Anomaly Flesh Reforged</name>
+<name>MeatCore[血肉重铸]Bio-Anomaly Flesh Reforged</name>
 <author>幽月琉璃Luna</author>
 <packageId>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</packageId>
 <supportedVersions>
@@ -60,9 +60,9 @@ Due to the lack of art resources, ability and funds, the textures of this mod co
 This mod is only tested in the author's personal gaming environment before release, and there is no guarantee that it is completely free of bugs and compatibility issues, so if you encounter any related problems, it is recommended that you provide feedback in a timely manner. However, some mods that I won't be playing forgive me for not being able to provide patches and fixes, such as Combat Extended, Humanoid Alien Races, Vanilla Psycast Expanded, Medieval Overhaul, and so on. If a problem arises, I may need your help to fix it.
 
 [h1]Language[/h1][list]
-[*] English (default of mod)
+[*] English
 [*] 简体中文
-繁體中文很快將會被提供
+[*] 繁體中文
 
 [h1]Links[/h1][list]
 [*] [url=https://github.com/LunaGlaze/RimWorld-BiotechnologyReforgedFlesh-Anomaly] Github [/url]

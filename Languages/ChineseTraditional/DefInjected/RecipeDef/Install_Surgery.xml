@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- install stomach -->
+  <InstallNaturalStomach.label>植入胃</InstallNaturalStomach.label>
+  <!-- Install a biological stomach. -->
+  <InstallNaturalStomach.description>將胃植入身體。</InstallNaturalStomach.description>
+  <!-- Installing stomach. -->
+  <InstallNaturalStomach.jobString>正在植入胃。</InstallNaturalStomach.jobString>
+
+  <!-- install brain -->
+  <InstallNaturalBrain.label>植入大腦</InstallNaturalBrain.label>
+  <!-- Install a biological brain. -->
+  <InstallNaturalBrain.description>將大腦植入身體。</InstallNaturalBrain.description>
+  <!-- Installing brain. -->
+  <InstallNaturalBrain.jobString>正在植入大腦。</InstallNaturalBrain.jobString>
+
+  <!-- install jaw -->
+  <InstallNaturalJaw.label>安裝下頜</InstallNaturalJaw.label>
+  <!-- Install a biological jaw. -->
+  <InstallNaturalJaw.description>安裝下頜。</InstallNaturalJaw.description>
+  <!-- Installing jaw. -->
+  <InstallNaturalJaw.jobString>正在安裝下頜。</InstallNaturalJaw.jobString>
+
+  <!-- install spine -->
+  <InstallNaturalSpine.label>安裝脊椎</InstallNaturalSpine.label>
+  <!-- Install a biological spine. -->
+  <InstallNaturalSpine.description>安裝脊椎。</InstallNaturalSpine.description>
+  <!-- Installing spine. -->
+  <InstallNaturalSpine.jobString>正在安裝脊椎。</InstallNaturalSpine.jobString>
+
+  <!-- install eye -->
+  <InstallNaturalEye.label>植入眼球</InstallNaturalEye.label>
+  <!-- Install a biological eyeball. -->
+  <InstallNaturalEye.description>將眼球植入身體。</InstallNaturalEye.description>
+  <!-- Installing eyeball. -->
+  <InstallNaturalEye.jobString>正在植入眼球。</InstallNaturalEye.jobString>
+
+  <!-- install nose -->
+  <InstallNaturalNose.label>安裝鼻</InstallNaturalNose.label>
+  <!-- Install a biological nose. -->
+  <InstallNaturalNose.description>安裝鼻子。</InstallNaturalNose.description>
+  <!-- Installing nose. -->
+  <InstallNaturalNose.jobString>正在安裝鼻子。</InstallNaturalNose.jobString>
+
+  <!-- install ear -->
+  <InstallNaturalEar.label>安裝耳朵</InstallNaturalEar.label>
+  <!-- Install a biological ear. -->
+  <InstallNaturalEar.description>安裝耳朵。</InstallNaturalEar.description>
+  <!-- Installing ear. -->
+  <InstallNaturalEar.jobString>正在安裝耳朵。</InstallNaturalEar.jobString>
+
+  <!-- install arm -->
+  <InstallNaturalArm.label>安裝手臂</InstallNaturalArm.label>
+  <!-- Install a biological arm. -->
+  <InstallNaturalArm.description>安裝手臂。</InstallNaturalArm.description>
+  <!-- Installing arm. -->
+  <InstallNaturalArm.jobString>正在安裝手臂。</InstallNaturalArm.jobString>
+
+  <!-- install hand -->
+  <InstallNaturalHand.label>安裝手</InstallNaturalHand.label>
+  <!-- Install a biological hand. -->
+  <InstallNaturalHand.description>安裝手掌。</InstallNaturalHand.description>
+  <!-- Installing hand. -->
+  <InstallNaturalHand.jobString>正在安裝手。</InstallNaturalHand.jobString>
+
+  <!-- install leg -->
+  <InstallNaturalLeg.label>安裝腿</InstallNaturalLeg.label>
+  <!-- Install a biological leg. -->
+  <InstallNaturalLeg.description>安裝腿部。</InstallNaturalLeg.description>
+  <!-- Installing leg. -->
+  <InstallNaturalLeg.jobString>正在安裝腿。</InstallNaturalLeg.jobString>
+
+  <!-- install foot -->
+  <InstallNaturalFoot.label>安裝足</InstallNaturalFoot.label>
+  <!-- Install a biological foot. -->
+  <InstallNaturalFoot.description>安裝足部。</InstallNaturalFoot.description>
+  <!-- Installing foot. -->
+  <InstallNaturalFoot.jobString>正在安裝足。</InstallNaturalFoot.jobString>
+
+</LanguageData>

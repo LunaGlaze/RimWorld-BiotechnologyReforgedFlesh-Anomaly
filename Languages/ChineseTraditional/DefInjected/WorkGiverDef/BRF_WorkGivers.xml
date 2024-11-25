@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DoBills_TwistedCrucible_BRF.label>在扭曲的坩堝種褻瀆血肉</DoBills_TwistedCrucible_BRF.label>
+  <DoBills_TwistedCrucible_BRF.verb>褻瀆血肉</DoBills_TwistedCrucible_BRF.verb>
+  <DoBills_TwistedCrucible_BRF.gerund>褻瀆血肉於</DoBills_TwistedCrucible_BRF.gerund>
+
+  <DoBills_BRF_BioForge.label>重鑄新生命</DoBills_BRF_BioForge.label>
+  <DoBills_BRF_BioForge.verb>重鑄</DoBills_BRF_BioForge.verb>
+  <DoBills_BRF_BioForge.gerund>重鑄</DoBills_BRF_BioForge.gerund>
+
+  <DoBills_BRF_Chewer.label>提供咀嚼之物</DoBills_BRF_Chewer.label>
+  <DoBills_BRF_Chewer.verb>咀嚼</DoBills_BRF_Chewer.verb>
+  <DoBills_BRF_Chewer.gerund>咀嚼</DoBills_BRF_Chewer.gerund>
+
+  <BRF_AnimalResource.label>收穫動物產物</BRF_AnimalResource.label>
+  <BRF_AnimalResource.verb>從TargetA處收穫動物產物。</BRF_AnimalResource.verb>
+  <BRF_AnimalResource.gerund>正在從TargetA處收穫動物產物。</BRF_AnimalResource.gerund>
+
+
+</LanguageData>

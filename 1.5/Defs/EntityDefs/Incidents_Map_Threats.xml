@@ -11,6 +11,7 @@
     <letterText>Some hungry Clump has wandered into the vicinity of your colony. This monster of flesh and limb construction may destroy and devour everything in their sight.</letterText>
     <letterDef>ThreatBig</letterDef>
     <earliestDay>15</earliestDay>
+	  <codexEntry>BRF_Clump</codexEntry>
   </IncidentDef>
 
 </Defs>

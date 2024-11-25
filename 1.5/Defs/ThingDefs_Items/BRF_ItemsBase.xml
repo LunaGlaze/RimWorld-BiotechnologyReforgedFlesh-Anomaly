@@ -224,6 +224,9 @@
       <texPath>Items/Resource/BRF_BoneFragment</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
     <statBases>
       <Flammability>0.1</Flammability>
       <Mass>0.015</Mass>
@@ -245,6 +248,9 @@
       <texPath>Items/Resource/BRF_GoreSpine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
     <statBases>
       <Flammability>0.1</Flammability>
       <Mass>0.015</Mass>

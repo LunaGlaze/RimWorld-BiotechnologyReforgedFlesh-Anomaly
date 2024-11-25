@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 再造肉類 -->
+
+  <BRF_ReforgedMeat_Human.label>重塑人肉</BRF_ReforgedMeat_Human.label>
+  <BRF_ReforgedMeat_Human.description>只要你不說，就不會有人知道這些東西最初的可怕面目。</BRF_ReforgedMeat_Human.description>
+
+  <BRF_ReforgedMeat_Insect.label>重塑蟲肉</BRF_ReforgedMeat_Insect.label>
+  <BRF_ReforgedMeat_Insect.description>只要你不說，就不會有人知道這些東西最初的可怕面目。</BRF_ReforgedMeat_Insect.description>
+
+  <BRF_ReforgedMeat_Harbinger.label>重塑先驅之肉</BRF_ReforgedMeat_Harbinger.label>
+  <BRF_ReforgedMeat_Harbinger.description>只要你不說，就不會有人知道這些東西最初的可怕面目。</BRF_ReforgedMeat_Harbinger.description>
+
+
+  <!-- 鮮活肉塊 -->
+
+  <BRF_LivingFlesh.label>鮮活肉塊</BRF_LivingFlesh.label>
+  <BRF_LivingFlesh.description>毫無疑問，它是有生命的……我認為最好不要考慮食用它，但作為一種生物機械的結構，它是一個不錯的選擇。</BRF_LivingFlesh.description>
+  <BRF_LivingFlesh.comps.2.jobString>分析鮮活肉塊</BRF_LivingFlesh.comps.2.jobString>
+
+
+  <!-- 營養糊劑 -->
+
+  <BRF_NutritionalPaste.label>營養糊劑</BRF_NutritionalPaste.label>
+  <BRF_NutritionalPaste.description>生物機械消化的產物，一種營養豐富的粘稠液體，也是許多生物機器的燃料。或許它可以食用，味道似乎還不錯，但一想到它的來源，就會讓人有點反胃。</BRF_NutritionalPaste.description>
+
+
+  <!-- 凝膠態肉 -->
+
+  <BRF_GelatinousFlesh.label>凝膠態肉</BRF_GelatinousFlesh.label>
+  <BRF_GelatinousFlesh.description>一種凝膠化的肉類，雖然仍由那些動物蛋白質、脂肪和其他物質組成，但質地已變得像果凍一樣。\n\n除了可以食用外，它還是各種生物機器的重要組成部分。</BRF_GelatinousFlesh.description>
+
+
+  <!-- 骸骨碎片 -->
+
+  <BRF_BoneFragment.label>骸骨碎片</BRF_BoneFragment.label>
+  <BRF_BoneFragment.description>某種智慧生物的部分遺骸因為無法被消化被保存下來。</BRF_BoneFragment.description>
+
+
+  <!-- 血棘尖刺 -->
+
+  <BRF_GoreSpine.label>血棘尖刺</BRF_GoreSpine.label>
+  <BRF_GoreSpine.description>血棘巨人的遺物，這證明你又一次摧毀了來襲的實體。</BRF_GoreSpine.description>
+
+
+  <!-- 原始組織樣本 -->
+
+  <BRF_PrimordialTissueSample.label>原始組織樣本</BRF_PrimordialTissueSample.label>
+  <BRF_PrimordialTissueSample.description>這是一種活躍的原生組織，但奇怪的是，它似乎具有某種靈能效應。它驚人的再生和分化能力是原始肉獸所沒有完全體現的。</BRF_PrimordialTissueSample.description>
+
+
+  <!-- 猩紅鋼 -->
+
+  <BRF_ScarletFerrite.label>猩紅鋼</BRF_ScarletFerrite.label>
+  <BRF_ScarletFerrite.description>一種類似金屬纖維的奇異物質，同時具有有機和金屬特性。雖然與活鐵相似，但這種金屬也擅長與心靈能力有關的東西。不過，它的生物特性要明顯得多。這種金屬縈繞著一股血腥味，觸手狀的血管隨著它的呼吸慢慢蠕動……就好像它是活的一樣。</BRF_ScarletFerrite.description>
+  <BRF_ScarletFerrite.stuffProps.stuffAdjective>猩紅鋼</BRF_ScarletFerrite.stuffProps.stuffAdjective>
+
+
+</LanguageData>

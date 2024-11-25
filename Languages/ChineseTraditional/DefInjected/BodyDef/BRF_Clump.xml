@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 身體定義 -->
+
+  <BRF_ClumpBody.label>肢團</BRF_ClumpBody.label>
+  <BRF_ClumpBody.corePart.parts.0.parts.0.customLabel>背脊</BRF_ClumpBody.corePart.parts.0.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.3.customLabel>左肺</BRF_ClumpBody.corePart.parts.3.customLabel>
+  <BRF_ClumpBody.corePart.parts.4.customLabel>右肺</BRF_ClumpBody.corePart.parts.4.customLabel>
+  <BRF_ClumpBody.corePart.parts.5.customLabel>左腎</BRF_ClumpBody.corePart.parts.5.customLabel>
+  <BRF_ClumpBody.corePart.parts.6.customLabel>右腎</BRF_ClumpBody.corePart.parts.6.customLabel>
+  <BRF_ClumpBody.corePart.parts.9.customLabel>第一左肩</BRF_ClumpBody.corePart.parts.9.customLabel>
+  <BRF_ClumpBody.corePart.parts.9.parts.0.customLabel>第一左臂</BRF_ClumpBody.corePart.parts.9.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.10.customLabel>第一右肩</BRF_ClumpBody.corePart.parts.10.customLabel>
+  <BRF_ClumpBody.corePart.parts.10.parts.0.customLabel>第一右臂</BRF_ClumpBody.corePart.parts.10.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.11.customLabel>第二左肩</BRF_ClumpBody.corePart.parts.11.customLabel>
+  <BRF_ClumpBody.corePart.parts.11.parts.0.customLabel>第二左臂</BRF_ClumpBody.corePart.parts.11.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.12.customLabel>第二右肩</BRF_ClumpBody.corePart.parts.12.customLabel>
+  <BRF_ClumpBody.corePart.parts.12.parts.0.customLabel>第二右臂</BRF_ClumpBody.corePart.parts.12.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.13.customLabel>第三左肩</BRF_ClumpBody.corePart.parts.13.customLabel>
+  <BRF_ClumpBody.corePart.parts.13.parts.0.customLabel>第三左臂</BRF_ClumpBody.corePart.parts.13.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.14.customLabel>第三右肩</BRF_ClumpBody.corePart.parts.14.customLabel>
+  <BRF_ClumpBody.corePart.parts.14.parts.0.customLabel>第三右臂</BRF_ClumpBody.corePart.parts.14.parts.0.customLabel>
+  <BRF_ClumpBody.corePart.parts.15.customLabel>第一左腿</BRF_ClumpBody.corePart.parts.15.customLabel>
+  <BRF_ClumpBody.corePart.parts.16.customLabel>第一右腿</BRF_ClumpBody.corePart.parts.16.customLabel>
+  <BRF_ClumpBody.corePart.parts.17.customLabel>第二左腿</BRF_ClumpBody.corePart.parts.17.customLabel>
+  <BRF_ClumpBody.corePart.parts.18.customLabel>第二右腿</BRF_ClumpBody.corePart.parts.18.customLabel>
+  <BRF_ClumpBody.corePart.parts.19.customLabel>第三左腿</BRF_ClumpBody.corePart.parts.19.customLabel>
+  <BRF_ClumpBody.corePart.parts.20.customLabel>第三右腿</BRF_ClumpBody.corePart.parts.20.customLabel>
+
+
+</LanguageData>

@@ -148,7 +148,10 @@
 		</researchPrerequisites>
 		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
 		<costList>
-			<BRF_Digester>1</BRF_Digester>
+			<BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+	    	<Meat_Twisted>50</Meat_Twisted>
+	    	<Stomach>1</Stomach>
+	    	<BRF_LivingFlesh>1</BRF_LivingFlesh>
 			<BRF_ReforgedMeat_Harbinger>4</BRF_ReforgedMeat_Harbinger>
 		</costList>
 		<comps>

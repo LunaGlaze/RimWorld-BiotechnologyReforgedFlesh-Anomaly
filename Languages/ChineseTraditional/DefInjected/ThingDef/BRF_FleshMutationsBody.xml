@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉觸手 -->
+
+  <BRF_FleshTentacle.label>血肉觸手</BRF_FleshTentacle.label>
+  <BRF_FleshTentacle.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshTentacle.description>
+
+
+  <!-- 血肉觸鞭 -->
+
+  <BRF_FleshWhip.label>血肉觸鞭</BRF_FleshWhip.label>
+  <BRF_FleshWhip.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshWhip.description>
+
+
+  <!-- 血肉擬足 -->
+
+  <BRF_FleshPseudoLeg.label>血肉擬足</BRF_FleshPseudoLeg.label>
+  <BRF_FleshPseudoLeg.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshPseudoLeg.description>
+
+
+  <!-- 血肉腕足 -->
+
+  <BRF_FleshBrachiopod.label>血肉腕足</BRF_FleshBrachiopod.label>
+  <BRF_FleshBrachiopod.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshBrachiopod.description>
+
+
+  <!-- 肺部 -->
+
+  <BRF_FleshmassLung.label>血肉肺</BRF_FleshmassLung.label>
+  <BRF_FleshmassLung.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassLung.description>
+
+
+  <!-- 胃部 -->
+
+  <BRF_FleshmassStomach.label>血肉胃</BRF_FleshmassStomach.label>
+  <BRF_FleshmassStomach.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassStomach.description>
+
+
+  <!-- 腎臟 -->
+
+  <BRF_FleshmassKidney.label>血肉腎</BRF_FleshmassKidney.label>
+  <BRF_FleshmassKidney.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassKidney.description>
+
+
+  <!-- 肝臟 -->
+
+  <BRF_FleshmassLiver.label>血肉肝</BRF_FleshmassLiver.label>
+  <BRF_FleshmassLiver.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassLiver.description>
+
+
+  <!-- 眼 -->
+
+  <BRF_FleshmassEye.label>血肉眼</BRF_FleshmassEye.label>
+  <BRF_FleshmassEye.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassEye.description>
+
+
+  <!-- 耳 -->
+
+  <BRF_FleshmassEar.label>血肉耳</BRF_FleshmassEar.label>
+  <BRF_FleshmassEar.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassEar.description>
+
+
+  <!-- 鼻 -->
+
+  <BRF_FleshmassNose.label>血肉鼻</BRF_FleshmassNose.label>
+  <BRF_FleshmassNose.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassNose.description>
+
+
+  <!-- 舌 -->
+
+  <BRF_FleshmassTongue.label>血肉舌</BRF_FleshmassTongue.label>
+  <BRF_FleshmassTongue.description>一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它可以被組裝在人體上，以啟動並完成最後階段的發育。</BRF_FleshmassTongue.description>
+
+
+</LanguageData>

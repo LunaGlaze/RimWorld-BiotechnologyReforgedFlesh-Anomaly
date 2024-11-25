@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 靜電囊泡 -->
+
+  <BRF_ElectrostaticVesicle.label>靜電囊泡</BRF_ElectrostaticVesicle.label>
+  <BRF_ElectrostaticVesicle.description>利用生物靜電效應產生微弱電流的怪異血肉。</BRF_ElectrostaticVesicle.description>
+  <BRF_ElectrostaticVesicle_Blueprint.label>靜電囊泡（藍圖）</BRF_ElectrostaticVesicle_Blueprint.label>
+  <BRF_ElectrostaticVesicle_Blueprint_Install.label>靜電囊泡（藍圖）</BRF_ElectrostaticVesicle_Blueprint_Install.label>
+  <BRF_ElectrostaticVesicle_Frame.label>靜電囊泡（建造中）</BRF_ElectrostaticVesicle_Frame.label>
+  <BRF_ElectrostaticVesicle_Frame.description>利用生物靜電效應產生微弱電流的怪異血肉。</BRF_ElectrostaticVesicle_Frame.description>
+
+
+  <!-- 放電腫瘤 -->
+
+  <BRF_RadiationTumor.label>放電腫瘤</BRF_RadiationTumor.label>
+  <BRF_RadiationTumor.description>一堆增殖的腫瘤，在人類的干預下具有放電的能力。這堆扭曲的肉能夠消耗養分來發電。即使在缺乏營養的情況下，它也能微弱地放電，但這會慢慢削弱其自身的活性。</BRF_RadiationTumor.description>
+  <BRF_RadiationTumor_Blueprint.label>放電腫瘤（藍圖）</BRF_RadiationTumor_Blueprint.label>
+  <BRF_RadiationTumor_Frame.label>放電腫瘤（建造中）</BRF_RadiationTumor_Frame.label>
+  <BRF_RadiationTumor_Frame.description>一堆增殖的腫瘤，在人類的干預下具有放電的能力。這堆扭曲的肉能夠消耗養分來發電。即使在缺乏營養的情況下，它也能微弱地放電，但這會慢慢削弱其自身的活性。</BRF_RadiationTumor_Frame.description>
+
+
+  <!-- 血肉電池 -->
+
+  <BRF_FleshBatterySmall.label>血肉電池</BRF_FleshBatterySmall.label>
+  <BRF_FleshBatterySmall.description>一塊上表面凹凸不平的小塊立方體肉塊。它的內部可以儲存電能。</BRF_FleshBatterySmall.description>
+  <BRF_FleshBatterySmall_Blueprint.label>血肉電池（藍圖）</BRF_FleshBatterySmall_Blueprint.label>
+  <BRF_FleshBatterySmall_Blueprint_Install.label>血肉電池（藍圖）</BRF_FleshBatterySmall_Blueprint_Install.label>
+  <BRF_FleshBatterySmall_Frame.label>血肉電池（建造中）</BRF_FleshBatterySmall_Frame.label>
+  <BRF_FleshBatterySmall_Frame.description>一塊上表面凹凸不平的小塊立方體肉塊。它的內部可以儲存電能。</BRF_FleshBatterySmall_Frame.description>
+
+
+</LanguageData>

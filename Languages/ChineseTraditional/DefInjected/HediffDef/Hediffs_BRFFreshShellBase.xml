@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 手臂 -->
+
+  <BRF_FleshMadeArmHediff.label>肉質手臂</BRF_FleshMadeArmHediff.label>
+  <BRF_FleshMadeArmHediff.description>一個安裝好的肉質手臂.</BRF_FleshMadeArmHediff.description>
+  <BRF_FleshMadeArmHediff.comps.0.tools.0.label>fist</BRF_FleshMadeArmHediff.comps.0.tools.0.label>
+  <BRF_FleshMadeArmHediff.labelNoun>肉質手臂</BRF_FleshMadeArmHediff.labelNoun>
+
+
+  <!-- 手掌 -->
+
+  <BRF_FleshMadeHandHediff.label>肉質手掌</BRF_FleshMadeHandHediff.label>
+  <BRF_FleshMadeHandHediff.description>一個安裝好的肉質手掌.</BRF_FleshMadeHandHediff.description>
+  <BRF_FleshMadeHandHediff.comps.0.tools.0.label>fist</BRF_FleshMadeHandHediff.comps.0.tools.0.label>
+  <BRF_FleshMadeHandHediff.labelNoun>肉質手掌</BRF_FleshMadeHandHediff.labelNoun>
+
+
+  <!-- 手指 -->
+
+  <BRF_FleshMadeFingerHediff.label>肉質手指</BRF_FleshMadeFingerHediff.label>
+  <BRF_FleshMadeFingerHediff.description>一個安裝好的肉質手指.</BRF_FleshMadeFingerHediff.description>
+  <BRF_FleshMadeFingerHediff.labelNoun>肉質手指</BRF_FleshMadeFingerHediff.labelNoun>
+
+
+  <!-- 腳趾 -->
+
+  <BRF_FleshMadeToeHediff.label>肉質腳趾</BRF_FleshMadeToeHediff.label>
+  <BRF_FleshMadeToeHediff.description>一個安裝好的肉質腳趾.</BRF_FleshMadeToeHediff.description>
+  <BRF_FleshMadeToeHediff.labelNoun>肉質腳趾</BRF_FleshMadeToeHediff.labelNoun>
+
+
+  <!-- 腳掌 -->
+
+  <BRF_FleshMadeFootHediff.label>肉質腳掌</BRF_FleshMadeFootHediff.label>
+  <BRF_FleshMadeFootHediff.description>一個安裝好的肉質腳掌.</BRF_FleshMadeFootHediff.description>
+  <BRF_FleshMadeFootHediff.labelNoun>肉質腳掌</BRF_FleshMadeFootHediff.labelNoun>
+
+
+  <!-- 腿 -->
+
+  <BRF_FleshMadeLegHediff.label>肉質腿</BRF_FleshMadeLegHediff.label>
+  <BRF_FleshMadeLegHediff.description>一個安裝好的肉質腿.</BRF_FleshMadeLegHediff.description>
+  <BRF_FleshMadeLegHediff.labelNoun>肉質腿</BRF_FleshMadeLegHediff.labelNoun>
+
+
+  <!-- 心臟 -->
+
+  <BRF_FleshMadeHeartHediff.label>肉質心臟</BRF_FleshMadeHeartHediff.label>
+  <BRF_FleshMadeHeartHediff.description>一個安裝好的肉質心臟.</BRF_FleshMadeHeartHediff.description>
+  <BRF_FleshMadeHeartHediff.labelNoun>肉質心臟</BRF_FleshMadeHeartHediff.labelNoun>
+
+
+  <!-- 肺部 -->
+
+  <BRF_FleshMadeLungHediff.label>肉質肺</BRF_FleshMadeLungHediff.label>
+  <BRF_FleshMadeLungHediff.description>一個安裝好的肉質肺.</BRF_FleshMadeLungHediff.description>
+  <BRF_FleshMadeLungHediff.labelNoun>肉質肺</BRF_FleshMadeLungHediff.labelNoun>
+
+
+  <!-- 腎臟 -->
+
+  <BRF_FleshMadeKidneyHediff.label>肉質腎</BRF_FleshMadeKidneyHediff.label>
+  <BRF_FleshMadeKidneyHediff.description>一個安裝好的肉質腎.</BRF_FleshMadeKidneyHediff.description>
+  <BRF_FleshMadeKidneyHediff.labelNoun>肉質腎</BRF_FleshMadeKidneyHediff.labelNoun>
+
+
+  <!-- 肝臟 -->
+
+  <BRF_FleshMadeLiverHediff.label>肉質肝</BRF_FleshMadeLiverHediff.label>
+  <BRF_FleshMadeLiverHediff.description>一個安裝好的肉質肝.</BRF_FleshMadeLiverHediff.description>
+  <BRF_FleshMadeLiverHediff.labelNoun>肉質肝</BRF_FleshMadeLiverHediff.labelNoun>
+
+
+  <!-- 眼 -->
+
+  <BRF_FleshMadeEyeHediff.label>肉質眼</BRF_FleshMadeEyeHediff.label>
+  <BRF_FleshMadeEyeHediff.description>一個安裝好的肉質眼.</BRF_FleshMadeEyeHediff.description>
+  <BRF_FleshMadeEyeHediff.labelNoun>肉質眼</BRF_FleshMadeEyeHediff.labelNoun>
+
+
+  <!-- 耳朵 -->
+
+  <BRF_FleshMadeEarHediff.label>肉質耳</BRF_FleshMadeEarHediff.label>
+  <BRF_FleshMadeEarHediff.description>一個安裝好的肉質耳.</BRF_FleshMadeEarHediff.description>
+  <BRF_FleshMadeEarHediff.labelNoun>肉質耳</BRF_FleshMadeEarHediff.labelNoun>
+
+
+  <!-- 鼻子 -->
+
+  <BRF_FleshMadeNoseHediff.label>肉質鼻</BRF_FleshMadeNoseHediff.label>
+  <BRF_FleshMadeNoseHediff.description>一個安裝好的肉質鼻.</BRF_FleshMadeNoseHediff.description>
+  <BRF_FleshMadeNoseHediff.labelNoun>肉質鼻</BRF_FleshMadeNoseHediff.labelNoun>
+
+
+  <!-- 下顎 -->
+
+  <BRF_FleshMadeJawHediff.label>肉質下顎</BRF_FleshMadeJawHediff.label>
+  <BRF_FleshMadeJawHediff.description>一個安裝好的肉質下顎.</BRF_FleshMadeJawHediff.description>
+  <BRF_FleshMadeJawHediff.labelNoun>肉質下顎</BRF_FleshMadeJawHediff.labelNoun>
+
+
+  <!-- 胃部 -->
+
+  <BRF_FleshMadeStomachHediff.label>肉質胃</BRF_FleshMadeStomachHediff.label>
+  <BRF_FleshMadeStomachHediff.description>一個安裝好的肉質胃.</BRF_FleshMadeStomachHediff.description>
+  <BRF_FleshMadeStomachHediff.labelNoun>肉質胃</BRF_FleshMadeStomachHediff.labelNoun>
+
+
+  <!-- 舌頭 -->
+
+  <BRF_FleshMadeTongueHediff.label>肉質舌</BRF_FleshMadeTongueHediff.label>
+  <BRF_FleshMadeTongueHediff.description>一個安裝好的肉質舌.</BRF_FleshMadeTongueHediff.description>
+  <BRF_FleshMadeTongueHediff.labelNoun>肉質舌</BRF_FleshMadeTongueHediff.labelNoun>
+
+
+  <!-- 脊柱 -->
+
+  <BRF_FleshMadeSpineHediff.label>肉質脊柱</BRF_FleshMadeSpineHediff.label>
+  <BRF_FleshMadeSpineHediff.description>一個安裝好的肉質脊柱.</BRF_FleshMadeSpineHediff.description>
+  <BRF_FleshMadeSpineHediff.labelNoun>肉質脊柱</BRF_FleshMadeSpineHediff.labelNoun>
+
+
+</LanguageData>

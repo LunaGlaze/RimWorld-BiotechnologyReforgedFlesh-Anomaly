@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種PawnKindDef -->
+
+  <BRF_FrankensteinHand.label>弗蘭肯斯坦之手</BRF_FrankensteinHand.label>
+  <BRF_FrankensteinHand.labelPlural>弗蘭肯斯坦之手</BRF_FrankensteinHand.labelPlural>
+
+  <BRF_FrankensteinFoot.label>弗蘭肯斯坦之足</BRF_FrankensteinFoot.label>
+  <BRF_FrankensteinFoot.labelPlural>弗蘭肯斯坦之足</BRF_FrankensteinFoot.labelPlural>
+
+
+</LanguageData>

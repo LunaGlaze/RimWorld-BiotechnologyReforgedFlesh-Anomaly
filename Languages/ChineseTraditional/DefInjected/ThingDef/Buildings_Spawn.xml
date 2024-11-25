@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉溫床 -->
+
+  <BRF_PrimordialFleshCradle.label>血肉溫床</BRF_PrimordialFleshCradle.label>
+  <BRF_PrimordialFleshCradle.description>向原初的搖籃獻上足夠的貢品，並召喚出精美的肉塊形態的原初使者。這座奇異的建築似乎在慢慢感染周圍的自然環境，使其覆蓋上一層怪異的血肉。</BRF_PrimordialFleshCradle.description>
+  <BRF_PrimordialFleshCradle_Blueprint.label>血肉溫床（藍圖）</BRF_PrimordialFleshCradle_Blueprint.label>
+  <BRF_PrimordialFleshCradle_Frame.label>血肉溫床（建造中）</BRF_PrimordialFleshCradle_Frame.label>
+  <BRF_PrimordialFleshCradle_Frame.description>向原初的搖籃獻上足夠的貢品，並召喚出精美的肉塊形態的原初使者。這座奇異的建築似乎在慢慢感染周圍的自然環境，使其覆蓋上一層怪異的血肉。</BRF_PrimordialFleshCradle_Frame.description>
+
+
+  <!-- 消化器 -->
+
+  <BRF_Digester.label>消化器</BRF_Digester.label>
+  <BRF_Digester.description>一個能把有機物消化成富含營養的粘稠液體的活體機器……令人不安的是，它似乎對人類遺骸情有獨鐘。</BRF_Digester.description>
+  <BRF_Digester_Blueprint.label>消化器（藍圖）</BRF_Digester_Blueprint.label>
+  <BRF_Digester_Blueprint_Install.label>消化器（藍圖）</BRF_Digester_Blueprint_Install.label>
+  <BRF_Digester_Frame.label>消化器（建造中）</BRF_Digester_Frame.label>
+  <BRF_Digester_Frame.description>一個能把有機物消化成富含營養的粘稠液體的活體機器……令人不安的是，它似乎對人類遺骸情有獨鐘。</BRF_Digester_Frame.description>
+
+
+  <!-- 血污孢子 -->
+
+  <BRF_FleshTaintSpore.label>血污孢子</BRF_FleshTaintSpore.label>
+  <BRF_FleshTaintSpore.description>這是一個模仿真菌和蟲族的偉大作品，它以類似菌絲擴張的方式鋪設某種令人作嘔的血肉地面。\n這個生物設備在有燃料時能自我修復，但沒有燃料時會慢慢腐爛。</BRF_FleshTaintSpore.description>
+  <BRF_FleshTaintSpore_Blueprint.label>血污孢子（藍圖）</BRF_FleshTaintSpore_Blueprint.label>
+  <BRF_FleshTaintSpore_Frame.label>血污孢子（建造中）</BRF_FleshTaintSpore_Frame.label>
+  <BRF_FleshTaintSpore_Frame.description>這是一個模仿真菌和蟲族的偉大作品，它以類似菌絲擴張的方式鋪設某種令人作嘔的血肉地面。\n這個生物設備在有燃料時能自我修復，但沒有燃料時會慢慢腐爛。</BRF_FleshTaintSpore_Frame.description>
+
+
+  <!-- 厄兆藤架 -->
+
+  <BRF_HarbingerTentaclesFarm.label>厄兆藤架</BRF_HarbingerTentaclesFarm.label>
+  <BRF_HarbingerTentaclesFarm.description>一種介於植物和動物之間的扭曲而特殊的生物。通過對厄兆噬樹種子進行奇異的改造，這種構造物能夠進一步感染血肉菌毯，使其長出可食用的觸手。</BRF_HarbingerTentaclesFarm.description>
+  <BRF_HarbingerTentaclesFarm_Blueprint.label>厄兆藤架（藍圖）</BRF_HarbingerTentaclesFarm_Blueprint.label>
+  <BRF_HarbingerTentaclesFarm_Frame.label>厄兆藤架（建造中）</BRF_HarbingerTentaclesFarm_Frame.label>
+  <BRF_HarbingerTentaclesFarm_Frame.description>一種介於植物和動物之間的扭曲而特殊的生物。通過對厄兆噬樹種子進行奇異的改造，這種構造物能夠進一步感染血肉菌毯，使其長出可食用的觸手。</BRF_HarbingerTentaclesFarm_Frame.description>
+
+
+</LanguageData>

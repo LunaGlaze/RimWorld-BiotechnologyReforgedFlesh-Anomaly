@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_InvisibleWatched.label>隱形窺探</BRF_InvisibleWatched.label>
+  <BRF_InvisibleWatched.description>如果該生物被另一個具有心靈效果的生物構造機械觀測到，它的隱形能力就會失效。</BRF_InvisibleWatched.description>
+
+  <BRF_RapidRegeneration.label>高速再生</BRF_RapidRegeneration.label>
+  <BRF_RapidRegeneration.description>這個生物體內蘊含著驚人的愈療能量。若不加以限制，它便能使身體高速再生直至能量耗盡。</BRF_RapidRegeneration.description>
+
+
+</LanguageData>

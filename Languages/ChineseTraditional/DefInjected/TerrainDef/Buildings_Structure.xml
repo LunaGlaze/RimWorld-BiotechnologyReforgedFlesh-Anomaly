@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉地板 -->
+
+  <BRF_FleshSurface.label>血肉地板</BRF_FleshSurface.label>
+  <BRF_FleshSurface.description>一團密密麻麻的有機血肉，鬆鬆散散地附著在地面上。</BRF_FleshSurface.description>
+
+
+  <!-- 血肉菌毯 -->
+
+  <BRF_FleshBlanket.label>血肉菌毯</BRF_FleshBlanket.label>
+  <BRF_FleshBlanket.description>猩紅的血肉……菌毯……粘膩，柔軟，多汁……</BRF_FleshBlanket.description>
+
+
+</LanguageData>

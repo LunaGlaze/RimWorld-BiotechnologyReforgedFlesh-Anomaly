@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRFMelee_BoneDagger.label>骨質匕首</BRFMelee_BoneDagger.label>
+  <BRFMelee_BoneDagger.description>一把用骨頭製成的小刀。拿在手上時仿佛能聽到骸骨的主人在痛苦地呻吟。</BRFMelee_BoneDagger.description>
+  <BRFMelee_BoneDagger.tools.handle.label>柄</BRFMelee_BoneDagger.tools.handle.label>
+  <BRFMelee_BoneDagger.tools.blade.label>刀刃</BRFMelee_BoneDagger.tools.blade.label>
+  <BRFMelee_BoneDagger.tools.point.label>刀尖</BRFMelee_BoneDagger.tools.point.label>
+
+
+</LanguageData>

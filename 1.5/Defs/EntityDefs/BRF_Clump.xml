@@ -10,8 +10,6 @@
     <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_Clump</li>
-      <li>BRF_FrankensteinHand</li>
-      <li>BRF_FrankensteinFoot</li>
     </linkedThings>
     <discoveredResearchProjects>
       <li>BRF_LimbGuardResearch</li>

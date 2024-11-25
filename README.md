@@ -1,4 +1,4 @@
-# MaetCore [血肉重铸] Bio-Anomaly Flesh Reforged
+# MeatCore [血肉重铸] Bio-Anomaly Flesh Reforged
 
 > An in-development mod based on the Anomaly DLC that may contain elements of biopunk, meatcore, body modification, SCP, and other group weirdness creations.
 
