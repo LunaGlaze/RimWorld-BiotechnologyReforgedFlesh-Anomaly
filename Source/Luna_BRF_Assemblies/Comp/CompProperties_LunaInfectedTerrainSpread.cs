@@ -22,5 +22,7 @@ namespace Luna_BRF
 
 		public TerrainDef terrainToSet;
 
+		public List<TerrainDef> allowTerrains;
+
 	}
 }

@@ -68,8 +68,8 @@
     <Compile Include="Entity\CompProperties_DeadChanceSplit.cs" />
     <Compile Include="Entity\LunaDeadChanceSplit.cs" />
     <Compile Include="Comp\LunaInvisibleWatcherCom.cs" />
-    <Compile Include="Comp\HediffCompProperties_DamageWhenMaxSeverity.cs" />
-    <Compile Include="Comp\HediffComp_DamageWhenMaxSeverity.cs" />
+    <Compile Include="Hediff\HediffCompProperties_DamageWhenMaxSeverity.cs" />
+    <Compile Include="Hediff\HediffComp_DamageWhenMaxSeverity.cs" />
     <Compile Include="Entity\IncidentWorker_ClumpBaseAssault.cs" />
     <Compile Include="Entity\JobDriver_CorpseNecrophagistDigest.cs" />
     <Compile Include="Entity\JobGiver_CorpseNecrophagist.cs" />

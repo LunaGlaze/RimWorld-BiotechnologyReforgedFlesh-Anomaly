@@ -68,7 +68,7 @@ namespace Luna_BRF
 		{
 			TerrainDef terrain = cell.GetTerrain(this.parent.Map);
 			if (terrain != null && terrain != this.Props.terrainToSet && 
-				((this.Props.requiredTerrain == null && LunaInfectedTerrainSpread.TerrainValidator(terrain)) || this.Props.requiredTerrain == terrain))
+				((this.Props.requiredTerrain == null && (LunaInfectedTerrainSpread.TerrainValidator(terrain) || AllowTranTerrain(terrain) )) || this.Props.requiredTerrain == terrain))
 			{
 				Building edifice = cell.GetEdifice(this.parent.Map);
 				return edifice == null || (!edifice.def.building.isNaturalRock && !edifice.def.building.isResourceRock);
@@ -80,6 +80,19 @@ namespace Luna_BRF
 			return !terrain.IsWater && !terrain.layerable && 
 				(terrain.natural || (terrain.affordances != null && (terrain.affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) || 
 				terrain.affordances.Contains(LunaDefOf.Diggable)))) && !terrain.HasTag("Road");
+		}
+		public bool AllowTranTerrain(TerrainDef terrain)
+		{
+			List<TerrainDef> terrainDefs = null;
+			if (Props.allowTerrains != null)
+            {
+				return false;
+            }
+            else
+            {
+				terrainDefs = Props.allowTerrains;
+				return terrainDefs.Contains(terrain);
+			}
 		}
 		protected List<IntVec3> GetCells()
 		{

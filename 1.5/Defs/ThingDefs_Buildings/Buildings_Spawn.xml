@@ -378,6 +378,9 @@
 				<radius>12.9</radius>
 				<terrainToSet>BRF_FleshBlanket</terrainToSet>
 				<spawnTickRate>7500</spawnTickRate>
+				<allowTerrains>
+          <li>Flesh</li>
+        </allowTerrains>
 			</li>
     </comps>
   </ThingDef>
