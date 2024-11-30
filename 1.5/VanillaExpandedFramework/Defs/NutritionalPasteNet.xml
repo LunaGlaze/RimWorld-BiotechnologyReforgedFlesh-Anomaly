@@ -310,7 +310,7 @@
 		<costList>
 			<BRF_ReforgedMeat_Harbinger>50</BRF_ReforgedMeat_Harbinger>
 			<Bioferrite>5</Bioferrite>
-			<Jaw>1</Jaw>
+			<BRF_FleshMadeTongue>1</BRF_FleshMadeTongue>
 		</costList>
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>

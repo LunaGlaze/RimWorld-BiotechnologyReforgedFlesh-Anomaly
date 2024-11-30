@@ -129,10 +129,9 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
-      <BRF_FleshMadeFinger>5</BRF_FleshMadeFinger>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
-      <BRF_BoneFragment>1</BRF_BoneFragment>
+      <BRF_BoneFragment>2</BRF_BoneFragment>
     </costList>
   </ThingDef>
 
@@ -315,10 +314,9 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
-      <BRF_FleshMadeToe>5</BRF_FleshMadeToe>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
-      <BRF_BoneFragment>1</BRF_BoneFragment>
+      <BRF_BoneFragment>3</BRF_BoneFragment>
     </costList>
   </ThingDef>
 

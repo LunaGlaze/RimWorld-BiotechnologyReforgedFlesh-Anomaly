@@ -127,13 +127,13 @@
     <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
-          <ResearchSpeedFactor>0.06</ResearchSpeedFactor>
+          <ResearchSpeedFactor>0.075</ResearchSpeedFactor>
         </statOffsets>
         <maxSimultaneous>6</maxSimultaneous>
         <maxDistance>13</maxDistance>
       </li>
 	    <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>0.5</fuelConsumptionRate>
+        <fuelConsumptionRate>0.4</fuelConsumptionRate>
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>

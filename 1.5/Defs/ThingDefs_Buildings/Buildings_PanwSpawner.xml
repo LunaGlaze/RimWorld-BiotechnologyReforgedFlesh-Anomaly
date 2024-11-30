@@ -74,7 +74,7 @@
       <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
         <spawnedPawn>BRF_FrankensteinHand</spawnedPawn>
         <primordialFleshSpawer>true</primordialFleshSpawer>
-        <hatcherDaystoSpawn>3</hatcherDaystoSpawn>
+        <hatcherDaystoSpawn>1</hatcherDaystoSpawn>
       </li>
     </comps>
   </ThingDef>
@@ -93,7 +93,7 @@
       <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
         <spawnedPawn>BRF_FrankensteinFoot</spawnedPawn>
         <primordialFleshSpawer>true</primordialFleshSpawer>
-        <hatcherDaystoSpawn>3</hatcherDaystoSpawn>
+        <hatcherDaystoSpawn>1</hatcherDaystoSpawn>
       </li>
     </comps>
   </ThingDef>
@@ -162,7 +162,7 @@
       <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
         <spawnedPawn>BRF_MutationsRelicFlesh</spawnedPawn>
         <primordialFleshSpawer>true</primordialFleshSpawer>
-        <hatcherDaystoSpawn>10</hatcherDaystoSpawn>
+        <hatcherDaystoSpawn>7</hatcherDaystoSpawn>
       </li>
     </comps>
   </ThingDef>

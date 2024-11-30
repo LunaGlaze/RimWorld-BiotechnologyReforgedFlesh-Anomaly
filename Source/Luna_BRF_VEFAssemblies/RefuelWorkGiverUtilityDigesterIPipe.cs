@@ -59,10 +59,10 @@ namespace Luna_BRF_VEFAssemblies
 			if (!t.TryGetComp<LunaComPipSpawnRefuelable>().Props.atomicFueling)
 			{
 				Thing thing = FindBestFuel(pawn, t);
-				return JobMaker.MakeJob(customRefuelJob ?? JobDefOf.Refuel, t, thing);
+				return JobMaker.MakeJob(customRefuelJob ?? LunaBRF_VEFDefof.BRF_RefuelDigesterIPipe, t, thing);
 			}
 			List<Thing> source = FindAllFuel(pawn, t);
-			Job job = JobMaker.MakeJob(customAtomicRefuelJob ?? JobDefOf.RefuelAtomic, t);
+			Job job = JobMaker.MakeJob(customAtomicRefuelJob ?? LunaBRF_VEFDefof.BRF_RefuelDigesterIPipe_Atomic, t);
 			job.targetQueueB = source.Select((Thing f) => new LocalTargetInfo(f)).ToList();
 			return job;
 		}

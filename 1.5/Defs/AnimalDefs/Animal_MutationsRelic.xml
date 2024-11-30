@@ -56,7 +56,7 @@
       <MoveSpeed>1</MoveSpeed>
       <MarketValue>1250</MarketValue>
       <LeatherAmount>0</LeatherAmount>
-      <MeatAmount>200</MeatAmount>
+      <MeatAmount>175</MeatAmount>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
       <FilthRate>16</FilthRate>
@@ -143,7 +143,7 @@
     </race>
     <comps>
         <li Class="Luna_BRF.CompProperties_AnimalProduct">
-            <gatheringIntervalDays>3</gatheringIntervalDays>
+            <gatheringIntervalDays>5</gatheringIntervalDays>
             <resourceAmount>1</resourceAmount>
             <customResourceString>BRF_MutationsRelicImplantsDesc</customResourceString>
             <isRandom>true</isRandom>
