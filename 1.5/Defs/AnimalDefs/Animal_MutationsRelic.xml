@@ -110,7 +110,7 @@
       <baseBodySize>5.2</baseBodySize>
       <baseHungerRate>2</baseHungerRate>
       <baseHealthScale>7.5</baseHealthScale>
-      <foodType>Corpse, Meat, CarnivoreAnimalStrict</foodType>
+      <foodType>Corpse, Meat</foodType>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <isImmuneToInfections>true</isImmuneToInfections>
       <wildness>0.8</wildness>

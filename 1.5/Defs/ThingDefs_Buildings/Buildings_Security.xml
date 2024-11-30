@@ -92,7 +92,7 @@
         <li Class="CompProperties_Refuelable">
             <fuelLabel>Nutritional Paste</fuelLabel>
             <fuelGizmoLabel>Nutritional Paste</fuelGizmoLabel>
-            <fuelConsumptionRate>6</fuelConsumptionRate>
+            <fuelConsumptionRate>3</fuelConsumptionRate>
             <fuelCapacity>75.0</fuelCapacity>
             <fuelFilter>
                 <thingDefs>
@@ -188,7 +188,7 @@
         <li Class="CompProperties_Refuelable">
             <fuelLabel>Nutritional Paste</fuelLabel>
             <fuelGizmoLabel>Nutritional Paste</fuelGizmoLabel>
-            <fuelConsumptionRate>6</fuelConsumptionRate>
+            <fuelConsumptionRate>4</fuelConsumptionRate>
             <fuelCapacity>125.0</fuelCapacity>
             <fuelFilter>
                 <thingDefs>
