@@ -251,7 +251,7 @@
           <li>Blunt</li>
         </capacities>
         <power>14</power>
-        <cooldownTime>1.4</cooldownTime>
+        <cooldownTime>1</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -263,7 +263,7 @@
           <li>Stab</li>
         </capacities>
         <power>14</power>
-        <cooldownTime>1.4</cooldownTime>
+        <cooldownTime>1</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
         <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -275,7 +275,7 @@
           <li>Blunt</li>
         </capacities>
         <power>15</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
@@ -302,7 +302,7 @@
           <li>Blunt</li>
         </capacities>
         <power>7</power>
-        <cooldownTime>2.5</cooldownTime>
+        <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
@@ -313,7 +313,7 @@
           <li>Stab</li>
         </capacities>
         <power>7</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
@@ -324,7 +324,7 @@
           <li>Blunt</li>
         </capacities>
         <power>15</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>

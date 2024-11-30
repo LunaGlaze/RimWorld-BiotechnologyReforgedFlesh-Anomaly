@@ -56,7 +56,7 @@
       <MoveSpeed>1</MoveSpeed>
       <MarketValue>1250</MarketValue>
       <LeatherAmount>0</LeatherAmount>
-      <MeatAmount>125</MeatAmount>
+      <MeatAmount>200</MeatAmount>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
       <FilthRate>16</FilthRate>

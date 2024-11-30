@@ -3,6 +3,8 @@
 
   <MessagePeristalticFleshAssembled>血肉温床已孵化新的蠕动肉块。</MessagePeristalticFleshAssembled>
   <PeristalticFleshAssemblyCompleteIn>将在{1}内孵化出{0}。</PeristalticFleshAssemblyCompleteIn>
+
+  <BRF_MutationsRelicImplantsDesc>血肉突变仿生体生长中：</BRF_MutationsRelicImplantsDesc>
   
   <NecrophagistEntityWhenDigestinng>正在消化：</NecrophagistEntityWhenDigestinng>
 

@@ -3,6 +3,8 @@
 
   <MessagePeristalticFleshAssembled>The primordial flesh cradle has hatched new peristaltic flesh blob.</MessagePeristalticFleshAssembled>
   <PeristalticFleshAssemblyCompleteIn>will incubate {0} within {1}.</PeristalticFleshAssemblyCompleteIn>
+
+  <BRF_MutationsRelicImplantsDesc>Flesh mutant bionts growing: </BRF_MutationsRelicImplantsDesc>
   
   <NecrophagistEntityWhenDigestinng>It's being digested: </NecrophagistEntityWhenDigestinng>
 

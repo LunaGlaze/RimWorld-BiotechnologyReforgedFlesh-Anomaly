@@ -79,7 +79,7 @@ namespace Luna_BRF
         public void AddHediff (Pawn pawn , HediffDef hediffDef)
         {
             Hediff TargetHediffOnPawn = pawn.health?.hediffSet?.GetFirstHediffOfDef(hediffDef);
-            float randomSeverity = Rand.Range(0.15f, 0.30f);
+            float randomSeverity = Rand.Range(0.15f, 0.40f);
             if (TargetHediffOnPawn != null)
             {
                 TargetHediffOnPawn.Severity += randomSeverity;

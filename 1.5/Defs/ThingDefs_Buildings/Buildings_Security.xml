@@ -128,9 +128,9 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>Spine_Gorehulk</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>18.9</range>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <warmupTime>1.5</warmupTime>
+        <range>17.9</range>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Gorehulk_Spine_Launch</soundCast>
         <muzzleFlashScale>0</muzzleFlashScale>
