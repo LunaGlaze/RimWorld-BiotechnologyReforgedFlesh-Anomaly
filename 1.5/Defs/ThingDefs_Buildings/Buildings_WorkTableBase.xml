@@ -42,7 +42,7 @@
     <uiIconPath>Buildings/WorkTable/BRF_TwistedCrucible</uiIconPath>
     <uiOrder>100</uiOrder>
     <constructEffect>ConstructDirt</constructEffect>
-    <surfaceType>Eat</surfaceType>
+    <surfaceType>Item</surfaceType>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.50</fillPercent>
     <useHitPoints>True</useHitPoints>
