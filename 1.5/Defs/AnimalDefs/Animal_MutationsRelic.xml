@@ -108,9 +108,9 @@
       <hasGenders>false</hasGenders>
       <maxPreyBodySize>0.25</maxPreyBodySize>
       <baseBodySize>5.2</baseBodySize>
-      <baseHungerRate>3</baseHungerRate>
+      <baseHungerRate>2</baseHungerRate>
       <baseHealthScale>7.5</baseHealthScale>
-      <foodType>Corpse, Meat</foodType>
+      <foodType>Corpse, Meat, CarnivoreAnimalStrict</foodType>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <isImmuneToInfections>true</isImmuneToInfections>
       <wildness>0.8</wildness>
@@ -143,7 +143,7 @@
     </race>
     <comps>
         <li Class="Luna_BRF.CompProperties_AnimalProduct">
-            <gatheringIntervalDays>40</gatheringIntervalDays>
+            <gatheringIntervalDays>3</gatheringIntervalDays>
             <resourceAmount>1</resourceAmount>
             <customResourceString>BRF_MutationsRelicImplantsDesc</customResourceString>
             <isRandom>true</isRandom>

@@ -56,9 +56,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JobDriver_RefuelDigesterIPipe.cs" />
+    <Compile Include="JobDriver_RefuelDigesterIPipeAtomic.cs" />
+    <Compile Include="LunaBRF_VEFDefof.cs" />
     <Compile Include="LunaComPipSpawnRefuelable.cs" />
     <Compile Include="CompProperties_PipSpawnRefuelable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefuelWorkGiverUtilityDigesterIPipe.cs" />
+    <Compile Include="WorkGiver_RefuelDigesterIPipe.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

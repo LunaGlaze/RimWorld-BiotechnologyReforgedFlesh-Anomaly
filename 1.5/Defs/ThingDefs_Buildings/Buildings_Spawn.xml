@@ -264,6 +264,7 @@
 		      <disallowedCategories>
 			      <li>BRF_Things_ReforgedMeat</li>
 			      <li>BRF_Things_LivingMaterial</li>
+            <li>EggsFertilized</li>
 		      </disallowedCategories>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>

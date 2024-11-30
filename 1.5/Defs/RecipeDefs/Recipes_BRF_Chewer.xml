@@ -260,7 +260,7 @@
       </specialFiltersToAllow>
     </defaultIngredientFilter>
     <products>
-      <BRF_BoneFragment>15</BRF_BoneFragment>
+      <BRF_BoneFragment>25</BRF_BoneFragment>
     </products>
     <displayPriority>500</displayPriority>
     <researchPrerequisite>BRF_LivingMechanismResearch</researchPrerequisite>

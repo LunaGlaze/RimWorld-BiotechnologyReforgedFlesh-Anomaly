@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- EN: refuel fuelable buildings -->
+  <BRF_RefuelDigesterIPipes.label>補充燃料</BRF_RefuelDigesterIPipes.label>
+  <!-- EN: refueling -->
+  <BRF_RefuelDigesterIPipes.gerund>補充燃料</BRF_RefuelDigesterIPipes.gerund>
+  <!-- EN: refuel -->
+  <BRF_RefuelDigesterIPipes.verb>補充燃料</BRF_RefuelDigesterIPipes.verb>
+</Defs>
