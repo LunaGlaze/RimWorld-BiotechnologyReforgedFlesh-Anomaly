@@ -28,7 +28,7 @@
       <li>
         <label>ate tentacle mooncake</label>
         <description>I have to admit this weird thing tastes unexpectedly delicious... If only it wouldn't suddenly squirm in my mouth.</description>
-        <baseMoodEffect>3</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

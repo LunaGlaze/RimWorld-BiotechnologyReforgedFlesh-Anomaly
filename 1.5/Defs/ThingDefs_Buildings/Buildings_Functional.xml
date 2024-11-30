@@ -119,7 +119,7 @@
     </researchPrerequisites>
     <size>(1,1)</size>
     <costList>
-      <BRF_ScarletFerrite>3</BRF_ScarletFerrite>
+      <BRF_ScarletFerrite>2</BRF_ScarletFerrite>
       <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
       <Brain>1</Brain>
       <BRF_ReforgedMeat_Human>20</BRF_ReforgedMeat_Human>

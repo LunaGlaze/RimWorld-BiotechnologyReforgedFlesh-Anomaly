@@ -138,11 +138,11 @@
 		  <WorkToBuild>2500</WorkToBuild>
 	  </statBases>
     <costList>
-	    <Meat_Twisted>250</Meat_Twisted>
-	    <BRF_ReforgedMeat_Human>200</BRF_ReforgedMeat_Human>
-	    <BRF_ReforgedMeat_Harbinger>100</BRF_ReforgedMeat_Harbinger>
-	    <BRF_LivingFlesh>50</BRF_LivingFlesh>
+	    <Meat_Twisted>100</Meat_Twisted>
+	    <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+	    <BRF_ReforgedMeat_Harbinger>75</BRF_ReforgedMeat_Harbinger>
 	    <BRF_GelatinousFlesh>50</BRF_GelatinousFlesh>
+	    <BRF_LivingFlesh>25</BRF_LivingFlesh>
 	    <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
 	    <Corpse_BRF_Clump>1</Corpse_BRF_Clump>
     </costList>

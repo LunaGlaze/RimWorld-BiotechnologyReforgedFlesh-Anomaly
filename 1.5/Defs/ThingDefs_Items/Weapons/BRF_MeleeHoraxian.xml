@@ -84,23 +84,23 @@
           <li>Blunt</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.75</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>BRF_FleshViruScratch</li>
         </capacities>
-        <power>23</power>
-        <cooldownTime>2</cooldownTime>
+        <power>25</power>
+        <cooldownTime>1.75</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>BRF_FleshViruCut</li>
         </capacities>
-        <power>23</power>
-        <cooldownTime>2</cooldownTime>
+        <power>25</power>
+        <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -134,15 +134,15 @@
           <li>Poke</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.75</cooldownTime>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>BRF_FleshViruCut</li>
         </capacities>
-        <power>23</power>
-        <cooldownTime>2</cooldownTime>
+        <power>25</power>
+        <cooldownTime>1.75</cooldownTime>
         <extraMeleeDamages>
           <li>
             <def>Demolish</def>

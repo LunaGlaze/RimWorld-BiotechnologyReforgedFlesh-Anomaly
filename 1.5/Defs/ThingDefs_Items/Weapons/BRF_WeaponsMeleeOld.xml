@@ -102,7 +102,7 @@
       <researchPrerequisite>BRF_LivingMechanismResearch</researchPrerequisite>
     </recipeMaker>
     <costList>
-      <BRF_BoneFragment>15</BRF_BoneFragment>
+      <BRF_BoneFragment>5</BRF_BoneFragment>
       <Bioferrite>1</Bioferrite>
     </costList>
     <equippedStatOffsets>

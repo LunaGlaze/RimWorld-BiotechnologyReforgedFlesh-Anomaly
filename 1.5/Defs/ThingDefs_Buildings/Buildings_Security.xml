@@ -128,9 +128,9 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>Spine_Gorehulk</defaultProjectile>
-        <warmupTime>2</warmupTime>
-        <range>17.9</range>
-        <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+        <warmupTime>1</warmupTime>
+        <range>18.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Gorehulk_Spine_Launch</soundCast>
         <muzzleFlashScale>0</muzzleFlashScale>
@@ -162,8 +162,8 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <costList>
-      <BRF_ReforgedMeat_Insect>250</BRF_ReforgedMeat_Insect>
-      <Meat_Twisted>250</Meat_Twisted>
+      <BRF_ReforgedMeat_Insect>150</BRF_ReforgedMeat_Insect>
+      <Meat_Twisted>150</Meat_Twisted>
       <BRF_ScarletFerrite>15</BRF_ScarletFerrite>
       <BRF_LivingFlesh>10</BRF_LivingFlesh>
       <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>

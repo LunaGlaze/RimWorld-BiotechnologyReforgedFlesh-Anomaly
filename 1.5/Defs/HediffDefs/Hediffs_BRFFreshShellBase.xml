@@ -57,7 +57,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
       <BRF_BoneFragment>3</BRF_BoneFragment>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
       <BRF_FleshMadeHand>1</BRF_FleshMadeHand>
@@ -129,7 +129,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>8</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
       <BRF_FleshMadeFinger>5</BRF_FleshMadeFinger>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
       <BRF_BoneFragment>1</BRF_BoneFragment>
@@ -202,7 +202,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
       <BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
     </costList>
   </ThingDef>
@@ -258,7 +258,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
       <BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
     </costList>
   </ThingDef>
@@ -315,7 +315,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>8</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
       <BRF_FleshMadeToe>5</BRF_FleshMadeToe>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
       <BRF_BoneFragment>1</BRF_BoneFragment>
@@ -373,7 +373,7 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
       <BRF_BoneFragment>3</BRF_BoneFragment>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
       <BRF_FleshMadeFoot>1</BRF_FleshMadeFoot>
@@ -431,8 +431,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>15</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>3</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -488,8 +488,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>20</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>2</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -545,8 +545,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>18</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>15</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>2</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -602,8 +602,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>3</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -659,8 +659,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>6</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>12</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -716,8 +716,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>8</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>12</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -773,8 +773,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>8</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>12</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -830,8 +830,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>8</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
       <BRF_BoneFragment>1</BRF_BoneFragment>
       <BRF_FleshMadeTongue>1</BRF_FleshMadeTongue>
     </costList>
@@ -888,8 +888,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>18</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>2</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -945,8 +945,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>6</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>2</BRF_GelatinousFlesh>
       <BRF_LivingFlesh>1</BRF_LivingFlesh>
     </costList>
   </ThingDef>
@@ -1002,8 +1002,8 @@
     </statBases>
 	  <tradeability>None</tradeability>
     <costList>
-      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
-      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
       <BRF_BoneFragment>5</BRF_BoneFragment>
       <BRF_LivingFlesh>2</BRF_LivingFlesh>
     </costList>

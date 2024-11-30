@@ -34,7 +34,7 @@
     	</researchPrerequisites>
     	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
 		<costList>
-			<Meat_Twisted>10</Meat_Twisted>
+			<Meat_Twisted>5</Meat_Twisted>
 			<Bioferrite>1</Bioferrite>
 		</costList>
 		<statBases>
@@ -93,7 +93,7 @@
     		<li>BRF_ShapingTwistedMeatResearch</li>
     	</researchPrerequisites>
 		<costList>
-			<Meat_Twisted>20</Meat_Twisted>
+			<Meat_Twisted>10</Meat_Twisted>
 			<Bioferrite>2</Bioferrite>
 		</costList>
         <statBases>
@@ -155,7 +155,7 @@
 			<CleaningTimeFactor>1.25</CleaningTimeFactor>
 		</statBases>
 		<costList>
-			<Meat_Twisted>10</Meat_Twisted>
+			<Meat_Twisted>5</Meat_Twisted>
 		</costList>
 		<affordances>
 			<li>Light</li>

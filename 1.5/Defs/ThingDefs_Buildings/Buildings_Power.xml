@@ -64,7 +64,7 @@
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-75</basePowerConsumption>
+				<basePowerConsumption>-100</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
@@ -122,7 +122,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>Luna_BRF.CompPowerPlantLuna50T</compClass>
-        <basePowerConsumption>-2650</basePowerConsumption>
+        <basePowerConsumption>-3850</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <soundAmbientProducingPower>BRF_RadiationTumor_Working</soundAmbientProducingPower>
       </li>
@@ -201,10 +201,10 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-	  <BRF_LivingFlesh>1</BRF_LivingFlesh>
+	    <BRF_LivingFlesh>1</BRF_LivingFlesh>
       <Bioferrite>5</Bioferrite>
-	  <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
-	  <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+	    <BRF_GelatinousFlesh>8</BRF_GelatinousFlesh>
+	    <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">

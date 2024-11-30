@@ -348,7 +348,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <comps>
 	    <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>25.0</fuelConsumptionRate>
+        <fuelConsumptionRate>5.0</fuelConsumptionRate>
         <fuelCapacity>250.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -371,7 +371,7 @@
         <ticksPerHeal>20</ticksPerHeal>
       </li>
 		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
-		  	<interval>100</interval>
+		  	<interval>500</interval>
 			  <damage>1</damage>
 		  </li>
 			<li Class="Luna_BRF.CompProperties_LunaInfectedTerrainSpread">
@@ -462,7 +462,7 @@
         <ticksPerHeal>250</ticksPerHeal>
       </li>
 		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
-		  	<interval>500</interval>
+		  	<interval>1000</interval>
 			  <damage>1</damage>
 		  </li>
 			<li Class="Luna_BRF.CompProperties_LunaInfectedPlantsSpread">
