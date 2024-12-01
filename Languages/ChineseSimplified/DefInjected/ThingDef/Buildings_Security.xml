@@ -33,7 +33,7 @@
 
   <!-- 腐蚀酸液 -->
 
-  <BRF_Proj_CorrosiveFluid.label>腐蚀酸液</BRF_Proj_CorrosiveFluid.label>
+  <BRF_ProjShell_AcidSpit.label>酸性涎液</BRF_ProjShell_AcidSpit.label>
 
 
 </LanguageData>

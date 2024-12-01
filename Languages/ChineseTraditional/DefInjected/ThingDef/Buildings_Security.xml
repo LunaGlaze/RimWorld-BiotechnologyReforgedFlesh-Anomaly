@@ -31,9 +31,9 @@
   <BRF_FleshSpitterWorm.description>一種利用血肉心臟神經組織編碼培育出來的肉體生物。它的下半並非是一個與菌毯地面相連的肉塊，上半並非則是一個巨大的蠕蟲狀結構。這種血肉造物需要營養來維持，並能消耗少量營養向相當遠的地方噴射酸液來攻擊敵人。</BRF_FleshSpitterWorm.description>
 
 
-  <!-- 腐蝕酸液 -->
+  <!-- 酸性涎液 -->
 
-  <BRF_Proj_CorrosiveFluid.label>腐蝕酸液</BRF_Proj_CorrosiveFluid.label>
+  <BRF_ProjShell_AcidSpit.label>酸性涎液</BRF_ProjShell_AcidSpit.label>
 
 
 </LanguageData>

@@ -250,7 +250,7 @@
     </costList>
     <comps>
 	    <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>100.0</fuelConsumptionRate>
+        <fuelConsumptionRate>200.0</fuelConsumptionRate>
         <fuelCapacity>250.0</fuelCapacity>
         <fuelFilter>
           <categories>
@@ -276,8 +276,8 @@
         <thingToSpawn>BRF_NutritionalPaste</thingToSpawn>
         <spawnCount>1</spawnCount>
         <spawnIntervalRange>
-           <min>6000</min>
-           <max>6000</max>
+           <min>3000</min>
+           <max>3000</max>
         </spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>false</showMessageIfOwned>

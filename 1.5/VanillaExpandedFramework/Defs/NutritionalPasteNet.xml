@@ -162,7 +162,7 @@
 				<pipeNet>VNPE_NutrientPasteNet</pipeNet>
 			</li>
 			<li Class="Luna_BRF_VEFAssemblies.CompProperties_PipSpawnRefuelable">
-				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelConsumptionRate>200.0</fuelConsumptionRate>
 				<fuelCapacity>250.0</fuelCapacity>
 				<fuelFilter>
 				  <categories>
@@ -181,7 +181,7 @@
 				</fuelFilter>
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-				<spawnInterval>6000</spawnInterval>
+				<spawnInterval>3000</spawnInterval>
 				<PipeNet>BRF_NutritionalPasteNet</PipeNet>
 		  </li>
 		</comps>

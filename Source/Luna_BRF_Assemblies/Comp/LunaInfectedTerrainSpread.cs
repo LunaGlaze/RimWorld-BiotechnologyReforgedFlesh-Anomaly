@@ -84,7 +84,7 @@ namespace Luna_BRF
 		public bool AllowTranTerrain(TerrainDef terrain)
 		{
 			List<TerrainDef> terrainDefs = null;
-			if (Props.allowTerrains != null)
+			if (Props.allowTerrains == null)
             {
 				return false;
             }
