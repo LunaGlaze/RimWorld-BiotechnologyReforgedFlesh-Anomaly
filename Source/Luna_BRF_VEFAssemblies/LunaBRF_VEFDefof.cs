@@ -9,5 +9,7 @@ namespace Luna_BRF_VEFAssemblies
         public static JobDef BRF_RefuelDigesterIPipe;
 
         public static JobDef BRF_RefuelDigesterIPipe_Atomic;
+
+        public static ThingDef BRF_DigesterIPipe;
     }
 }

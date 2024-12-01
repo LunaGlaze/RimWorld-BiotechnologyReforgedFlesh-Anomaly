@@ -56,6 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DigesterIPipes_MapComponent.cs" />
     <Compile Include="JobDriver_RefuelDigesterIPipe.cs" />
     <Compile Include="JobDriver_RefuelDigesterIPipeAtomic.cs" />
     <Compile Include="LunaBRF_VEFDefof.cs" />

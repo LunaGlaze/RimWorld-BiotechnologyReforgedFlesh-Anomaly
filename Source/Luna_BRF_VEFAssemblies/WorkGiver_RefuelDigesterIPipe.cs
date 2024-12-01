@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -6,8 +8,11 @@ namespace Luna_BRF_VEFAssemblies
 {
 	public class WorkGiver_RefuelDigesterIPipe : WorkGiver_Scanner
 	{
-		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.Refuelable);
-
+		public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
+		{
+			return pawn.Map.GetComponent<DigesterIPipes_MapComponent>().comps.Select((LunaComPipSpawnRefuelable x) => x.parent);
+		}
+		public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(LunaBRF_VEFDefof.BRF_DigesterIPipe);
 		public override PathEndMode PathEndMode => PathEndMode.Touch;
 
 		public virtual JobDef JobStandard => LunaBRF_VEFDefof.BRF_RefuelDigesterIPipe;

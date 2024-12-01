@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Luna_BRF_VEFAssemblies
 {
     [StaticConstructorOnStartup]
-    public class LunaComPipSpawnRefuelable : CompRefuelable
+    public class LunaComPipSpawnRefuelable : CompRefuelable, IThingHolder
 	{
 		public CompProperties_PipSpawnRefuelable Props
 		{
@@ -20,34 +20,23 @@ namespace Luna_BRF_VEFAssemblies
 				return (CompProperties_PipSpawnRefuelable)this.props;
 			}
 		}
+		public LunaComPipSpawnRefuelable()
+		{
+			innerContainer = new ThingOwner<Thing>(this);
+		}
 		public override void Initialize(CompProperties props)
 		{
 			base.Initialize(props);
-			this.flickComp = this.parent.GetComp<CompFlickable>();
-			foreach (CompResource compResource in this.parent.GetComps<CompResource>())
+			flickComp = parent.GetComp<CompFlickable>();
+			foreach (CompResource comp in parent.GetComps<CompResource>())
 			{
-				string a;
-				if (compResource == null)
+				if (((comp == null) ? null : ((Def)(object)comp.Props?.pipeNet)?.defName) == "BRF_NutritionalPasteNet")
 				{
-					a = null;
+					compResource = comp;
 				}
-				else
+				if (ModLister.HasActiveModWithName("Vanilla Nutrient Paste Expanded") && ((comp == null) ? null : ((Def)(object)comp.Props?.pipeNet)?.defName) == "VNPE_NutrientPasteNet")
 				{
-					CompProperties_Resource props2 = compResource.Props;
-					if (props2 == null)
-					{
-						a = null;
-					}
-					else
-					{
-						PipeNetDef pipeNet = props2.pipeNet;
-						a = ((pipeNet != null) ? pipeNet.defName : null);
-					}
-				}
-				bool flag = a == this.Props.PipeNet;
-				if (flag)
-				{
-					this.compResource = compResource;
+					compResourceNutrientPaste = comp;
 				}
 			}
 		}
@@ -68,9 +57,27 @@ namespace Luna_BRF_VEFAssemblies
 						}
 					}
 				}
+				if (parent.IsHashIntervalTick(600) && compResourceNutrientPaste != null && compResourceNutrientPaste.PipeNet.Stored > 1f && base.FuelPercentOfMax < 0.9f)
+				{
+					compResourceNutrientPaste.PipeNet.DrawAmongStorage(1f, compResourceNutrientPaste.PipeNet.storages);
+					Refuel(18f);
+				}
 			}
 		}
-		public CompResource compResource;
+
+        public void GetChildHolders(List<IThingHolder> outChildren)
+        {
+			ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, GetDirectlyHeldThings());
+		}
+
+        public ThingOwner GetDirectlyHeldThings()
+        {
+			return innerContainer;
+		}
+
+        public CompResource compResource;
+		public CompResource compResourceNutrientPaste;
 		public CompFlickable flickComp;
+		public ThingOwner innerContainer;
 	}
 }

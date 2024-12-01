@@ -158,6 +158,9 @@
 			<li Class="PipeSystem.CompProperties_Resource">
 				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
 			</li>
+			<li MayRequire="VanillaExpanded.VNutrientE" Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>VNPE_NutrientPasteNet</pipeNet>
+			</li>
 			<li Class="Luna_BRF_VEFAssemblies.CompProperties_PipSpawnRefuelable">
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>250.0</fuelCapacity>

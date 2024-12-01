@@ -74,6 +74,7 @@
   <ThingDef ParentName="BRF_FATableGatherSpotBase">
     <defName>BRF_FleshTable</defName>
     <label>Flesh Table</label>
+    <surfaceType>Eat</surfaceType>
 	  <description>A table made from twisted meat ... Disgusting but practical.</description>
     <graphicData>
       <texPath>Buildings/Furniture/BRF_FleshTable</texPath>
