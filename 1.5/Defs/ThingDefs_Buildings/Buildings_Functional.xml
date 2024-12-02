@@ -45,10 +45,11 @@
     </statBases>
     <costList>
       <Eye>1</Eye>
-      <ProximityDetector>1</ProximityDetector>
       <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
-      <BRF_GelatinousFlesh>15</BRF_GelatinousFlesh>
-      <Meat_Twisted>30</Meat_Twisted>
+      <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
+      <Bioferrite>5</Bioferrite>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <Meat_Twisted>10</Meat_Twisted>
     </costList>
     <researchPrerequisites>
       <li>BRF_InvisibleWatcherResearch</li>

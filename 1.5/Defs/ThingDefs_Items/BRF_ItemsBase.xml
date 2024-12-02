@@ -284,6 +284,32 @@
     </ingestible>
   </ThingDef>
 
+<!--带电肉瘤-->
+  <ThingDef ParentName="BRF_LivingMaterialBase">
+    <defName>BRF_ElectrifiedSarcoma</defName>
+    <label>Electrified Sarcoma</label>
+    <description>A monstrous tumor-like tissue that carries bioelectric effects, something left over after the violent destruction of the Electrostatic Vesicle that can be processed to create some of the better flesh electrical devices.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ElectrostaticVesicle</ThingDef>
+    </descriptionHyperlinks>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Items/Resource/BRF_ElectrifiedSarcoma</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>0.5</MarketValue>
+    </statBases>
+    <ingestible>
+	    <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ElectricalBurn</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
 <!--猩红钢-->
   <ThingDef ParentName="ResourceBase">
     <defName>BRF_ScarletFerrite</defName>

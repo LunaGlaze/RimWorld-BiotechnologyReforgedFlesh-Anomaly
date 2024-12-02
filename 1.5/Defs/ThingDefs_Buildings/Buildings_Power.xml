@@ -23,7 +23,7 @@
 	<ThingDef ParentName="BRF_BuildingPowerBase">
 		<defName>BRF_ElectrostaticVesicle</defName>
 		<label>Electrostatic Vesicle</label>
-		<description>A monstrous flesh that utilizes the bioelectrostatic effect to generate weak electricity.</description>
+		<description>A monstrous flesh that utilizes the bioelectrostatic effect to generate weak electricity. Roughly destroying it will cause it to drop an electrically charged aberrant chunk of flesh.</description>
 		<graphicData>
 			<texPath>Buildings/Furniture/Functional/BRF_ElectrostaticVesicle</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -36,13 +36,15 @@
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ElectrifiedSarcoma</ThingDef>
+    </descriptionHyperlinks>
 		<thingClass>Luna_BRF.ElectrostaticBuilding</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>false</rotatable>
 		<tickerType>Rare</tickerType>
 		<uiIconScale>0.6</uiIconScale>
@@ -64,7 +66,7 @@
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-100</basePowerConsumption>
+				<basePowerConsumption>-95</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
@@ -78,6 +80,10 @@
 			<BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
 			<Meat_Twisted>40</Meat_Twisted>
 		</costList>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <BRF_ElectrifiedSarcoma>1</BRF_ElectrifiedSarcoma>
+    </killedLeavings>
 	</ThingDef>
 <!--放电肿瘤-->
   <ThingDef ParentName="BRF_BuildingPowerBase">
@@ -112,23 +118,23 @@
     <canOverlapZones>false</canOverlapZones>
     <size>(2,2)</size>
     <costList>
-	  <BRF_LivingFlesh>2</BRF_LivingFlesh>
+	    <BRF_LivingFlesh>2</BRF_LivingFlesh>
       <Bioferrite>10</Bioferrite>
-	  <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
-	  <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+	    <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+	    <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
       <Meat_Twisted>100</Meat_Twisted>
-      <BRF_ElectrostaticVesicle>1</BRF_ElectrostaticVesicle>
+      <BRF_ElectrifiedSarcoma>1</BRF_ElectrifiedSarcoma>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>Luna_BRF.CompPowerPlantLuna50T</compClass>
-        <basePowerConsumption>-3850</basePowerConsumption>
+        <basePowerConsumption>-3800</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <soundAmbientProducingPower>BRF_RadiationTumor_Working</soundAmbientProducingPower>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>24.0</fuelConsumptionRate>
+        <fuelConsumptionRate>25.0</fuelConsumptionRate>
         <fuelCapacity>100.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -201,14 +207,14 @@
     </statBases>
     <size>(1,1)</size>
     <costList>
-	    <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <BRF_ElectrifiedSarcoma>1</BRF_ElectrifiedSarcoma>
       <Bioferrite>5</Bioferrite>
-	    <BRF_GelatinousFlesh>8</BRF_GelatinousFlesh>
-	    <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+	    <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+	    <BRF_ReforgedMeat_Human>20</BRF_ReforgedMeat_Human>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
-        <storedEnergyMax>550</storedEnergyMax>
+        <storedEnergyMax>750</storedEnergyMax>
         <efficiency>0.85</efficiency>
         <shortCircuitInRain>false</shortCircuitInRain>
         <transmitsPower>true</transmitsPower>

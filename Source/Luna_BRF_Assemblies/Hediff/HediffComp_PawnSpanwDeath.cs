@@ -8,9 +8,13 @@ namespace Luna_BRF
 		public HediffCompProperties_PawnSpanwDeath Props => (HediffCompProperties_PawnSpanwDeath)props;
         public override void Notify_PawnKilled()
 		{
-			spawnPawn();
 			if (parent.Severity >= Props.minActSeverity)
 			{
+				spawnPawn();
+				if (ModsConfig.AnomalyActive && Props.codexEntry != null)
+				{
+					Find.EntityCodex.SetDiscovered(Props.codexEntry);
+				}
 				if (Props.filth != null)
 				{
 					FilthMaker.TryMakeFilth(base.Pawn.Position, base.Pawn.Map, Props.filth, Props.filthCount);

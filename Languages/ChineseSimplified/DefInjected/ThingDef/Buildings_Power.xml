@@ -4,11 +4,11 @@
   <!-- 静电囊泡 -->
 
   <BRF_ElectrostaticVesicle.label>静电囊泡</BRF_ElectrostaticVesicle.label>
-  <BRF_ElectrostaticVesicle.description>利用生物静电效应产生微弱电流的怪异血肉。</BRF_ElectrostaticVesicle.description>
+  <BRF_ElectrostaticVesicle.description>利用生物静电效应产生微弱电流的怪异血肉。粗暴地摧毁它会使其掉落一种带电的畸变肉块。</BRF_ElectrostaticVesicle.description>
   <BRF_ElectrostaticVesicle_Blueprint.label>静电囊泡（蓝图）</BRF_ElectrostaticVesicle_Blueprint.label>
   <BRF_ElectrostaticVesicle_Blueprint_Install.label>静电囊泡（蓝图）</BRF_ElectrostaticVesicle_Blueprint_Install.label>
   <BRF_ElectrostaticVesicle_Frame.label>静电囊泡（建造中）</BRF_ElectrostaticVesicle_Frame.label>
-  <BRF_ElectrostaticVesicle_Frame.description>利用生物静电效应产生微弱电流的怪异血肉。</BRF_ElectrostaticVesicle_Frame.description>
+  <BRF_ElectrostaticVesicle_Frame.description>利用生物静电效应产生微弱电流的怪异血肉。粗暴地摧毁它会使其掉落一种带电的畸变肉块。</BRF_ElectrostaticVesicle_Frame.description>
 
 
   <!-- 放电肿瘤 -->

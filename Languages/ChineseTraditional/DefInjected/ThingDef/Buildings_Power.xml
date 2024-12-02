@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 靜電囊泡 -->
+  <!-- 靜電囊體 -->
 
-  <BRF_ElectrostaticVesicle.label>靜電囊泡</BRF_ElectrostaticVesicle.label>
-  <BRF_ElectrostaticVesicle.description>利用生物靜電效應產生微弱電流的怪異血肉。</BRF_ElectrostaticVesicle.description>
-  <BRF_ElectrostaticVesicle_Blueprint.label>靜電囊泡（藍圖）</BRF_ElectrostaticVesicle_Blueprint.label>
-  <BRF_ElectrostaticVesicle_Blueprint_Install.label>靜電囊泡（藍圖）</BRF_ElectrostaticVesicle_Blueprint_Install.label>
-  <BRF_ElectrostaticVesicle_Frame.label>靜電囊泡（建造中）</BRF_ElectrostaticVesicle_Frame.label>
-  <BRF_ElectrostaticVesicle_Frame.description>利用生物靜電效應產生微弱電流的怪異血肉。</BRF_ElectrostaticVesicle_Frame.description>
+  <BRF_ElectrostaticVesicle.label>靜電囊體</BRF_ElectrostaticVesicle.label>
+  <BRF_ElectrostaticVesicle.description>利用生物靜電效應產生微弱電流的怪異血肉。粗暴地破壞它會讓它掉下一種帶電的畸變肉塊。</BRF_ElectrostaticVesicle.description>
+  <BRF_ElectrostaticVesicle_Blueprint.label>靜電囊體（藍圖）</BRF_ElectrostaticVesicle_Blueprint.label>
+  <BRF_ElectrostaticVesicle_Blueprint_Install.label>靜電囊體（藍圖）</BRF_ElectrostaticVesicle_Blueprint_Install.label>
+  <BRF_ElectrostaticVesicle_Frame.label>靜電囊體（建造中）</BRF_ElectrostaticVesicle_Frame.label>
+  <BRF_ElectrostaticVesicle_Frame.description>利用生物靜電效應產生微弱電流的怪異血肉。粗暴地破壞它會讓它掉下一種帶電的畸變肉塊。</BRF_ElectrostaticVesicle_Frame.description>
 
 
   <!-- 放電腫瘤 -->

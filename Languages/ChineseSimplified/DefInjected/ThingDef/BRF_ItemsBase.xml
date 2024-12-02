@@ -17,8 +17,13 @@
 
   <BRF_LivingFlesh.label>鲜活肉块</BRF_LivingFlesh.label>
   <BRF_LivingFlesh.description>毫无疑问，它是有生命的……我认为最好不要考虑食用它，但作为一种生物机械的结构，它是一个不错的选择。</BRF_LivingFlesh.description>
-  <BRF_LivingFlesh.comps.2.jobString>分析鲜活肉块</BRF_LivingFlesh.comps.2.jobString>
-
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateDescString>分析鲜活肉块</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateLabelString>分析...</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetter>通过分析鲜活肉块，{PAWN_labelShort}获得了研究{RESEARCH}所必要的知识。\n\n你的研究者现在可以使用研究台开始学习如何实际应用这项科技。</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>芯片分析完毕：解锁{RESEARCH}</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.guiLabelString>选择分析者</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.inspectString>可由一名殖民者进行分析。</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.inspectString>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>分析纳米结构芯片</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>
 
   <!-- 营养糊剂 -->
 
@@ -48,6 +53,11 @@
 
   <BRF_PrimordialTissueSample.label>原始组织样本</BRF_PrimordialTissueSample.label>
   <BRF_PrimordialTissueSample.description>这是一种活跃的原生组织，但奇怪的是，它似乎具有某种灵能效应。它惊人的再生和分化能力是原始肉兽所没有完全体现的。</BRF_PrimordialTissueSample.description>
+
+  <!-- 带电肉瘤 -->
+
+  <BRF_ElectrifiedSarcoma.label>带电肉瘤</BRF_ElectrifiedSarcoma.label>
+  <BRF_ElectrifiedSarcoma.description>一种携带生物电效应的畸形瘤状组织，是暴力摧毁静电囊泡之后遗留的事物，可以被用于加工创造一些更好的血肉电力设备。</BRF_ElectrifiedSarcoma.description>
 
 
   <!-- 猩红钢 -->

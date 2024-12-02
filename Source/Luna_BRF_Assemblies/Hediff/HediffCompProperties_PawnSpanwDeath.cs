@@ -15,6 +15,8 @@ namespace Luna_BRF
 
 		public PawnKindDef spanwPawnKind;
 
+		public EntityCodexEntryDef codexEntry;
+
 		public float minActSeverity = 1f;
 
 		public float severityFeduce = 1f;
