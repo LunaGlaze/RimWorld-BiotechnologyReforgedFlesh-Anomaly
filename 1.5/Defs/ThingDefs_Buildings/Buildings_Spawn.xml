@@ -470,7 +470,7 @@
 				<radius>6.9</radius>
 				<plant>BRF_HarbingerTentacles</plant>
 				<requiredTerrain>BRF_FleshBlanket</requiredTerrain>
-				<spawnTickRate>15000~25000</spawnTickRate>
+				<spawnTickRate>10000~25000</spawnTickRate>
 			</li>
     </comps>
   </ThingDef>

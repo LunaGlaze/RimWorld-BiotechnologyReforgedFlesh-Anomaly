@@ -48,7 +48,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeArm</defName>
     <label>flesh-made arm</label>
-    <description>A remodeled arm, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled arm, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseArm</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -67,7 +67,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseArm</defName>
     <label>install flesh-made arm</label>
-    <description>Install a flesh-made arm. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made arm. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made arm.</jobString>
     <ingredients>
       <li>
@@ -112,7 +112,7 @@
     </comps>
     <spawnThingOnRemoved>BRF_FleshMadeArm</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -120,7 +120,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeHand</defName>
     <label>flesh-made hand</label>
-    <description>A remodeled hand, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled hand, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseHand</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>4000</WorkToMake>
@@ -138,7 +138,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseHand</defName>
     <label>install flesh-made hand</label>
-    <description>Install a flesh-made hand. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made hand. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made hand.</jobString>
     <ingredients>
       <li>
@@ -184,7 +184,7 @@
     <spawnThingOnRemoved>BRF_FleshMadeHand</spawnThingOnRemoved>
     <addedPartProps>
     
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -192,7 +192,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeFinger</defName>
     <label>flesh-made finger</label>
-    <description>A remodeled finger, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled finger, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseFinger</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>1000</WorkToMake>
@@ -209,7 +209,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseFinger</defName>
     <label>install flesh-made finger</label>
-    <description>Install a flesh-made finger. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made finger. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made finger.</jobString>
     <ingredients>
       <li>
@@ -240,7 +240,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeFinger</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeFinger</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -248,7 +248,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeToe</defName>
     <label>flesh-made toe</label>
-    <description>A remodeled toe, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled toe, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseToe</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>1000</WorkToMake>
@@ -265,7 +265,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseToe</defName>
     <label>install flesh-made toe</label>
-    <description>Install a flesh-made toe. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made toe. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made toe.</jobString>
     <ingredients>
       <li>
@@ -297,7 +297,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeToe</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeToe</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -305,7 +305,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeFoot</defName>
     <label>flesh-made foot</label>
-    <description>A remodeled foot, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled foot, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseFoot</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>4000</WorkToMake>
@@ -323,7 +323,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseFoot</defName>
     <label>install flesh-made foot</label>
-    <description>Install a flesh-made foot. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made foot. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made foot.</jobString>
     <ingredients>
       <li>
@@ -354,7 +354,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeFoot</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeFoot</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -362,7 +362,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeLeg</defName>
     <label>flesh-made leg</label>
-    <description>A remodeled leg, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled leg, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLeg</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -381,7 +381,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseLeg</defName>
     <label>install flesh-made leg</label>
-    <description>Install a flesh-made leg. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made leg. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made leg.</jobString>
     <ingredients>
       <li>
@@ -412,7 +412,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLeg</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLeg</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -420,7 +420,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeHeart</defName>
     <label>flesh-made heart</label>
-    <description>A remodeled heart, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled heart, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseHeart</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -438,7 +438,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseHeart</defName>
     <label>install flesh-made heart</label>
-    <description>Install a flesh-made heart. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made heart. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made heart.</jobString>
     <ingredients>
       <li>
@@ -469,7 +469,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeHeart</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeHeart</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -477,7 +477,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeLung</defName>
     <label>flesh-made lung</label>
-    <description>A remodeled lung, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled lung, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLung</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -495,7 +495,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseLung</defName>
     <label>install flesh-made lung</label>
-    <description>Install a flesh-made lung. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made lung. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made lung.</jobString>
     <ingredients>
       <li>
@@ -526,7 +526,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLung</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLung</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -534,7 +534,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeKidney</defName>
     <label>flesh-made kidney</label>
-    <description>A remodeled kidney, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled kidney, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseKidney</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -552,7 +552,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseKidney</defName>
     <label>install flesh-made kidney</label>
-    <description>Install a flesh-made kidney. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made kidney. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made kidney.</jobString>
     <ingredients>
       <li>
@@ -583,7 +583,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeKidney</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeKidney</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
   
@@ -591,7 +591,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeLiver</defName>
     <label>flesh-made liver</label>
-    <description>A remodeled liver, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled liver, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLiver</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -609,7 +609,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseLiver</defName>
     <label>install flesh-made liver</label>
-    <description>Install a flesh-made liver. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made liver. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made liver.</jobString>
     <ingredients>
       <li>
@@ -640,7 +640,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLiver</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLiver</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -648,7 +648,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeEye</defName>
     <label>flesh-made eye</label>
-    <description>A remodeled eye, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled eye, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseEye</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -666,7 +666,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseEye</defName>
     <label>install flesh-made eye</label>
-    <description>Install a flesh-made eye. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made eye. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made eye.</jobString>
     <ingredients>
       <li>
@@ -697,7 +697,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeEye</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeEye</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -705,7 +705,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeEar</defName>
     <label>flesh-made ear</label>
-    <description>A remodeled ear, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled ear, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseEar</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -723,7 +723,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseEar</defName>
     <label>install flesh-made ear</label>
-    <description>Install a flesh-made ear. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made ear. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made ear.</jobString>
     <ingredients>
       <li>
@@ -754,7 +754,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeEar</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeEar</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -762,7 +762,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeNose</defName>
     <label>flesh-made nose</label>
-    <description>A remodeled nose, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled nose, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseNose</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -780,7 +780,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseNose</defName>
     <label>install flesh-made nose</label>
-    <description>Install a flesh-made nose. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made nose. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made nose.</jobString>
     <ingredients>
       <li>
@@ -811,7 +811,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeNose</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeNose</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -819,7 +819,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeJaw</defName>
     <label>flesh-made jaw</label>
-    <description>A remodeled jaw, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled jaw, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseJaw</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -838,7 +838,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseJaw</defName>
     <label>install flesh-made jaw</label>
-    <description>Install a flesh-made jaw. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made jaw. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made jaw.</jobString>
     <ingredients>
       <li>
@@ -869,7 +869,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeJaw</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeJaw</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -877,7 +877,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeStomach</defName>
     <label>flesh-made stomach</label>
-    <description>A remodeled stomach, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled stomach, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseStomach</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -895,7 +895,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseStomach</defName>
     <label>install flesh-made stomach</label>
-    <description>Install a flesh-made stomach. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made stomach. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made stomach.</jobString>
     <ingredients>
       <li>
@@ -926,7 +926,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeStomach</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeStomach</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -934,7 +934,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeTongue</defName>
     <label>flesh-made tongue</label>
-    <description>A remodeled tongue, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled tongue, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseTongue</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>4000</WorkToMake>
@@ -952,7 +952,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseTongue</defName>
     <label>install flesh-made tongue</label>
-    <description>Install a flesh-made tongue. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made tongue. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made tongue.</jobString>
     <ingredients>
       <li>
@@ -983,7 +983,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeTongue</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeTongue</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -991,7 +991,7 @@
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
     <defName>BRF_FleshMadeSpine</defName>
     <label>flesh-made spine</label>
-    <description>A remodeled spine, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>A remodeled spine, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseSpine</RecipeDef></descriptionHyperlinks>
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -1010,7 +1010,7 @@
   <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
     <defName>BRF_InstallFleshBaseSpine</defName>
     <label>install flesh-made spine</label>
-    <description>Install a flesh-made spine. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work any better, but we're well on our way to ascension.</description>
+    <description>Install a flesh-made spine. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
     <jobString>Installing flesh-made spine.</jobString>
     <ingredients>
       <li>
@@ -1041,7 +1041,7 @@
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeSpine</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeSpine</spawnThingOnRemoved>
     <addedPartProps>
-      <partEfficiency>1</partEfficiency>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
   </HediffDef>
 

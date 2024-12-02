@@ -4,119 +4,119 @@
   <!-- 手臂 -->
 
   <BRF_InstallFleshBaseArm.label>安裝肉質手臂</BRF_InstallFleshBaseArm.label>
-  <BRF_InstallFleshBaseArm.description>安裝一個肉質手臂。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseArm.description>
+  <BRF_InstallFleshBaseArm.description>安裝一個肉質手臂。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseArm.description>
   <BRF_InstallFleshBaseArm.jobString>正在安裝肉質手臂。</BRF_InstallFleshBaseArm.jobString>
 
 
   <!-- 手掌 -->
 
   <BRF_InstallFleshBaseHand.label>安裝肉質手掌</BRF_InstallFleshBaseHand.label>
-  <BRF_InstallFleshBaseHand.description>安裝一個肉質手掌。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseHand.description>
+  <BRF_InstallFleshBaseHand.description>安裝一個肉質手掌。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseHand.description>
   <BRF_InstallFleshBaseHand.jobString>正在安裝肉質手掌。</BRF_InstallFleshBaseHand.jobString>
 
 
   <!-- 手指 -->
 
   <BRF_InstallFleshBaseFinger.label>安裝肉質手指</BRF_InstallFleshBaseFinger.label>
-  <BRF_InstallFleshBaseFinger.description>安裝一個肉質手指。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseFinger.description>
+  <BRF_InstallFleshBaseFinger.description>安裝一個肉質手指。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseFinger.description>
   <BRF_InstallFleshBaseFinger.jobString>正在安裝肉質手指。</BRF_InstallFleshBaseFinger.jobString>
 
 
   <!-- 腳趾 -->
 
   <BRF_InstallFleshBaseToe.label>安裝肉質腳趾</BRF_InstallFleshBaseToe.label>
-  <BRF_InstallFleshBaseToe.description>安裝一個肉質腳趾。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseToe.description>
+  <BRF_InstallFleshBaseToe.description>安裝一個肉質腳趾。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseToe.description>
   <BRF_InstallFleshBaseToe.jobString>正在安裝肉質腳趾。</BRF_InstallFleshBaseToe.jobString>
 
 
   <!-- 腳掌 -->
 
   <BRF_InstallFleshBaseFoot.label>安裝肉質腳掌</BRF_InstallFleshBaseFoot.label>
-  <BRF_InstallFleshBaseFoot.description>安裝一個肉質腳掌。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseFoot.description>
+  <BRF_InstallFleshBaseFoot.description>安裝一個肉質腳掌。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseFoot.description>
   <BRF_InstallFleshBaseFoot.jobString>正在安裝肉質腳掌。</BRF_InstallFleshBaseFoot.jobString>
 
 
   <!-- 腿 -->
 
   <BRF_InstallFleshBaseLeg.label>安裝肉質腿</BRF_InstallFleshBaseLeg.label>
-  <BRF_InstallFleshBaseLeg.description>安裝一個肉質腿。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLeg.description>
+  <BRF_InstallFleshBaseLeg.description>安裝一個肉質腿。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLeg.description>
   <BRF_InstallFleshBaseLeg.jobString>正在安裝肉質腿。</BRF_InstallFleshBaseLeg.jobString>
 
 
   <!-- 心臟 -->
 
   <BRF_InstallFleshBaseHeart.label>安裝肉質心臟</BRF_InstallFleshBaseHeart.label>
-  <BRF_InstallFleshBaseHeart.description>安裝一個肉質心臟。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseHeart.description>
+  <BRF_InstallFleshBaseHeart.description>安裝一個肉質心臟。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseHeart.description>
   <BRF_InstallFleshBaseHeart.jobString>正在安裝肉質心臟。</BRF_InstallFleshBaseHeart.jobString>
 
 
   <!-- 肺部 -->
 
   <BRF_InstallFleshBaseLung.label>安裝肉質肺</BRF_InstallFleshBaseLung.label>
-  <BRF_InstallFleshBaseLung.description>安裝一個肉質肺。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLung.description>
+  <BRF_InstallFleshBaseLung.description>安裝一個肉質肺。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLung.description>
   <BRF_InstallFleshBaseLung.jobString>正在安裝肉質肺。</BRF_InstallFleshBaseLung.jobString>
 
 
   <!-- 腎臟 -->
 
   <BRF_InstallFleshBaseKidney.label>安裝肉質腎</BRF_InstallFleshBaseKidney.label>
-  <BRF_InstallFleshBaseKidney.description>安裝一個肉質腎。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseKidney.description>
+  <BRF_InstallFleshBaseKidney.description>安裝一個肉質腎。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseKidney.description>
   <BRF_InstallFleshBaseKidney.jobString>正在安裝肉質腎。</BRF_InstallFleshBaseKidney.jobString>
 
 
   <!-- 肝臟 -->
 
   <BRF_InstallFleshBaseLiver.label>安裝肉質肝</BRF_InstallFleshBaseLiver.label>
-  <BRF_InstallFleshBaseLiver.description>安裝一個肉質肝。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLiver.description>
+  <BRF_InstallFleshBaseLiver.description>安裝一個肉質肝。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseLiver.description>
   <BRF_InstallFleshBaseLiver.jobString>正在安裝肉質肝。</BRF_InstallFleshBaseLiver.jobString>
 
 
   <!-- 眼 -->
 
   <BRF_InstallFleshBaseEye.label>安裝肉質眼</BRF_InstallFleshBaseEye.label>
-  <BRF_InstallFleshBaseEye.description>安裝一個肉質眼。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseEye.description>
+  <BRF_InstallFleshBaseEye.description>安裝一個肉質眼。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseEye.description>
   <BRF_InstallFleshBaseEye.jobString>正在安裝肉質眼。</BRF_InstallFleshBaseEye.jobString>
 
 
   <!-- 耳朵 -->
 
   <BRF_InstallFleshBaseEar.label>安裝肉質耳</BRF_InstallFleshBaseEar.label>
-  <BRF_InstallFleshBaseEar.description>安裝一個肉質耳。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseEar.description>
+  <BRF_InstallFleshBaseEar.description>安裝一個肉質耳。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseEar.description>
   <BRF_InstallFleshBaseEar.jobString>正在安裝肉質耳。</BRF_InstallFleshBaseEar.jobString>
 
 
   <!-- 鼻子 -->
 
   <BRF_InstallFleshBaseNose.label>安裝肉質鼻</BRF_InstallFleshBaseNose.label>
-  <BRF_InstallFleshBaseNose.description>安裝一個肉質鼻。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseNose.description>
+  <BRF_InstallFleshBaseNose.description>安裝一個肉質鼻。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseNose.description>
   <BRF_InstallFleshBaseNose.jobString>正在安裝肉質鼻。</BRF_InstallFleshBaseNose.jobString>
 
 
   <!-- 下顎 -->
 
   <BRF_InstallFleshBaseJaw.label>安裝肉質下顎</BRF_InstallFleshBaseJaw.label>
-  <BRF_InstallFleshBaseJaw.description>安裝一個肉質下顎。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseJaw.description>
+  <BRF_InstallFleshBaseJaw.description>安裝一個肉質下顎。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseJaw.description>
   <BRF_InstallFleshBaseJaw.jobString>正在安裝肉質下顎。</BRF_InstallFleshBaseJaw.jobString>
 
 
   <!-- 胃部 -->
 
   <BRF_InstallFleshBaseStomach.label>安裝肉質胃</BRF_InstallFleshBaseStomach.label>
-  <BRF_InstallFleshBaseStomach.description>安裝一個肉質胃。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseStomach.description>
+  <BRF_InstallFleshBaseStomach.description>安裝一個肉質胃。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseStomach.description>
   <BRF_InstallFleshBaseStomach.jobString>正在安裝肉質胃。</BRF_InstallFleshBaseStomach.jobString>
 
 
   <!-- 舌頭 -->
 
   <BRF_InstallFleshBaseTongue.label>安裝肉質舌</BRF_InstallFleshBaseTongue.label>
-  <BRF_InstallFleshBaseTongue.description>安裝一個肉質舌。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseTongue.description>
+  <BRF_InstallFleshBaseTongue.description>安裝一個肉質舌。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseTongue.description>
   <BRF_InstallFleshBaseTongue.jobString>正在安裝肉質舌。</BRF_InstallFleshBaseTongue.jobString>
 
 
   <!-- 脊柱 -->
 
   <BRF_InstallFleshBaseSpine.label>安裝肉質脊柱</BRF_InstallFleshBaseSpine.label>
-  <BRF_InstallFleshBaseSpine.description>安裝一個肉質脊柱。用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseSpine.description>
+  <BRF_InstallFleshBaseSpine.description>安裝一個肉質脊柱。用經過最初的改造血肉代替原生的軀殼，雖然效果也沒好上多少，但這正是我們已經在飛升的路上的證明。</BRF_InstallFleshBaseSpine.description>
   <BRF_InstallFleshBaseSpine.jobString>正在安裝肉質脊柱。</BRF_InstallFleshBaseSpine.jobString>
 
 

@@ -31,7 +31,7 @@
 			<sowMinSkill>7</sowMinSkill>
 			<harvestWork>350</harvestWork>
 			<topWindExposure>0.05</topWindExposure>
-			<growDays>12</growDays>
+			<growDays>7</growDays>
 			<visualSizeRange>0.8~1.75</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>

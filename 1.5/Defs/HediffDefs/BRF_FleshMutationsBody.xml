@@ -192,6 +192,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
     <comps>
       <li Class="HediffCompProperties_FleshbeastEmerge">
@@ -345,6 +346,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
     <comps>
       <li Class="HediffCompProperties_FleshbeastEmerge">
@@ -416,6 +418,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
     <comps>
       <li Class="HediffCompProperties_FleshbeastEmerge">
@@ -617,6 +620,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
     <comps>
       <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
@@ -688,6 +692,7 @@
     </stages>
     <addedPartProps>
       <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
     </addedPartProps>
     <comps>
       <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">

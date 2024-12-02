@@ -16,9 +16,11 @@ namespace Luna_BRF
         public static PawnKindDef BRF_MiniFleshBeast;
         public static HediffDef BRF_InvisibleWatched;
         public static HediffDef BRF_RapidRegeneration;
+        public static HediffDef BRF_BloodstainedTickParasitic;
         public static DamageDef BRF_FleshPulse;
         public static PawnGroupKindDef BRF_ClumpGroup;
         public static AbilityDef BRF_EntityNecrophagia;
+        public static AbilityDef BloodstainedTickParasitic;
         public static JobDef BRF_CorpseNecrophagistDigest;
         public static JobDef BRF_AnimalResource;
         public static ThingDef Filth_BRF_PrimordialTwistedFlesh;

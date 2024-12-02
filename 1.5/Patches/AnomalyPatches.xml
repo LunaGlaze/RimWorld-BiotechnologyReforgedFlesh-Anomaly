@@ -100,5 +100,14 @@
             </capMods>
 		</value>
 	</Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach"]/addedPartProps/partEfficiency</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach"]/addedPartProps</xpath>
+                <value>
+                    <partEfficiency>1.03</partEfficiency>
+                </value>
+        </nomatch>
+    </Operation>
 
 </Patch>
