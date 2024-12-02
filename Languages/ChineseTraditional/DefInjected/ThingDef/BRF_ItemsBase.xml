@@ -20,10 +20,10 @@
   <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateDescString>分析鮮活肉塊</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateDescString>
   <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateLabelString>分析...</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.activateLabelString>
   <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetter>通過分析鮮活肉塊，{PAWN_labelShort}獲得了研究{RESEARCH}所必要的知識。\n\n你的研究者現在可以使用研究臺開始學習如何實際應用這項科技。</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetter>
-  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>晶片分析完畢：解鎖{RESEARCH}</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>肉塊分析完畢：解鎖{RESEARCH}</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
   <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.guiLabelString>選擇分析者</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.guiLabelString>
   <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.inspectString>可由一名殖民者進行分析。</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.inspectString>
-  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>分析納米結構晶片</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>
+  <BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>分析鮮活肉塊</BRF_LivingFlesh.comps.CompAnalyzableUnlockResearch.jobString>
 
 
   <!-- 營養糊劑 -->
