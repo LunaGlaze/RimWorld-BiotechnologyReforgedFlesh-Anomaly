@@ -38,7 +38,7 @@ namespace Luna_BRF
 						canSteal = false,
 						invisibleStun = true
 					});
-					parent.pawn.DeSpawn();
+					parent.pawn.Destroy();
                 }
 			}
             else

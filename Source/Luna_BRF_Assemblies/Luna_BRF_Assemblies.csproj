@@ -58,8 +58,10 @@
     <Compile Include="Cothy\CompProperties_AnimalProduct.cs" />
     <Compile Include="Comp\CompProperties_SpawnerPawnPod.cs" />
     <Compile Include="Comp\CompSpawnerPawnPod.cs" />
+    <Compile Include="Entity\CompAbilityEffect_BloodstainedTickParasitic.cs" />
     <Compile Include="Entity\CompNecrophagistEntity.cs" />
     <Compile Include="Entity\CompAbilityEffect_EntityNecrophagia.cs" />
+    <Compile Include="Entity\CompProperties_BloodstainedTickParasitic.cs" />
     <Compile Include="Entity\CompProperties_EntityNecrophagia.cs" />
     <Compile Include="Entity\CompProperties_NecrophagistEntity.cs" />
     <Compile Include="Harmony\HarmonyPatchInit.cs" />

@@ -220,7 +220,6 @@
     <label>Bone Fragment</label>
     <description>A portion of the remains of a certain intelligent organism has been preserved because it cannot be digested.</description>
     <descriptionHyperlinks><ThingDef>BRF_Digester</ThingDef></descriptionHyperlinks>
-    <tradeability>None</tradeability>
     <graphicData>
       <texPath>Items/Resource/BRF_BoneFragment</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -245,7 +244,6 @@
       <EntityCodexEntryDef>Gorehulk</EntityCodexEntryDef>
       <ThingDef>BRF_GoreSpine_FleshMass</ThingDef>
     </descriptionHyperlinks>
-    <tradeability>None</tradeability>
     <graphicData>
       <texPath>Items/Resource/BRF_GoreSpine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
