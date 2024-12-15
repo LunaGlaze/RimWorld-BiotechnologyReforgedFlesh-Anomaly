@@ -7,5 +7,10 @@
   <BRF_MutationsRelicImplantsDesc>血肉突变仿生体生长中：</BRF_MutationsRelicImplantsDesc>
   
   <NecrophagistEntityWhenDigestinng>正在消化：</NecrophagistEntityWhenDigestinng>
+  
+  <SummonSwarmsFinishText>{0_nameDef}完成了{RITUAL_definite}仪式。虫群很快就会抵达了。</SummonSwarmsFinishText>
+  
+  <SummonClumpsFinishText>{0_nameDef}完成了{RITUAL_definite}仪式。饥饿的肢团正在赶来。</SummonClumpsFinishText>
+
 
 </Defs>

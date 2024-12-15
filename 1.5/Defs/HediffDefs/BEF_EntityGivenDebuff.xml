@@ -26,10 +26,43 @@
                 <statFactors>
                   <IncomingDamageFactor>0.8</IncomingDamageFactor>
                   <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+                  <StaggerDurationFactor>0</StaggerDurationFactor>
                 </statFactors>
             </li>
         </stages>
     </HediffDef>
+
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defName>BRF_BloodstainedTickParasiticed</defName>
+    <label>Bloodstained Parasiticed</label>
+    <description>A parasitic entity exists within the body of this creature, which synthesizes biological nanomachines that strengthen the host while reaching out to a distant archotechnological engine that distorts the host's will.</description>
+    <isBad>false</isBad>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <statFactors>
+          <MoveSpeed>1.75</MoveSpeed>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_PawnSpanwDeath">
+        <spanwPawnKind>BRF_BloodstainedTick</spanwPawnKind>
+        <minActSeverity>0</minActSeverity>
+        <severityFeduce>1</severityFeduce>
+        <factionDef>Entities</factionDef>
+        <codexEntry>BRF_BloodstainedTick</codexEntry>
+        <manHunter>true</manHunter>
+      </li>
+      <li Class="Luna_BRF.HediffCompProperties_MindControlBerserk">
+        <mentalStateDef>Manhunter</mentalStateDef>
+        <factionDef>Entities</factionDef>
+      </li>
+    </comps>
+  </HediffDef>
 
   <HediffDef ParentName="InfectionBase">
     <defName>BRF_MalignantFleshActivation</defName>

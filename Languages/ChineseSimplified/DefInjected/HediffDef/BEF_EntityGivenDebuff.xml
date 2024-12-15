@@ -2,7 +2,10 @@
 <LanguageData>
 
   <BRF_ScarletFever.label>猩红狂热</BRF_ScarletFever.label>
-  <BRF_ScarletFever.description>那些更原始但更高效的血肉兽总是伴随着这种扭曲的狂热出现。牠们不怕疼痛，牠们所向披靡。</BRF_ScarletFever.description>
+  <BRF_ScarletFever.description>那些更原始但更高效的血肉怪物总是伴随着这种扭曲的狂热出现。牠们不怕疼痛，牠们所向披靡。</BRF_ScarletFever.description>
+
+  <BRF_BloodstainedTickParasiticed.label>污血寄生</BRF_BloodstainedTickParasiticed.label>
+  <BRF_BloodstainedTickParasiticed.description>这个生物的体内存在一种寄生性的实体，该实体合成的生物纳米机械在强化宿主的同时与一个遥远的超凡智能引擎达成通讯，扭曲了宿主的意志。</BRF_BloodstainedTickParasiticed.description>
 
   <BRF_MalignantFleshActivation.label>恶性血肉活化</BRF_MalignantFleshActivation.label>
   <BRF_MalignantFleshActivation.description>一种通过怪异的血肉兽攻击传播的具有灵能效应的感染。虽然它能让受感染者在短时间内变得更强大，但也会导致疼痛感骤增，并可能导致某些原本难以发生的恶性实体效应。</BRF_MalignantFleshActivation.description>

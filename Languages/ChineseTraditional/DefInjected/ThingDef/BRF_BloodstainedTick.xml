@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!-- 物種ThingsDef -->
+
+  <BRF_BloodstainedTick.label>汙血蜱蟲</BRF_BloodstainedTick.label>
+  <BRF_BloodstainedTick.description>一種散發著血的腥味的寄生蟲，能夠鑽進蟲族的屍體裏面復活並寄生它們。這種蟲族實體的壽命很短，但每一次寄生與宿主死亡對它們而言都是一種新生。</BRF_BloodstainedTick.description>
+  <BRF_BloodstainedTick.tools.mandibles.label>下顎</BRF_BloodstainedTick.tools.mandibles.label>
+  <BRF_BloodstainedTick.tools.head.label>頭</BRF_BloodstainedTick.tools.head.label>
+
+
+</LanguageData>

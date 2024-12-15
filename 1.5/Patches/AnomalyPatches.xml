@@ -90,6 +90,47 @@
 	</Operation>
     
 	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers</xpath>
+		<value>
+            <li>
+                <kindDef>BRF_BloodstainedTickParasiticable</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <Megascarab>25</Megascarab><!-- 巨型甲虫-40 -->
+                    <Spelopede>18</Spelopede><!-- 洞穴阔步虫-75 -->
+                    <Megaspider>12</Megaspider><!-- 巨型蜘蛛-150 -->
+                    <VFEI2_Megapede MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Megapede><!-- 巨型蜈蚣-300 -->
+                    <VFEI2_Boomtick MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Boomtick><!-- 爆炸蜱-40 -->
+                    <VFEI2_Megawasp MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Megawasp><!-- 巨型黄蜂-150 -->
+                    <VFEI2_Gigalocust MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Gigalocust><!-- 巨型蝗虫-250 -->
+                    <VFEI2_Macrofly MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Macrofly><!-- 巨型蓟马-75 -->
+                    <VFEI2_Durapod MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Durapod><!-- 盾背虫-75 -->
+                    <VFEI2_Tankroach MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Tankroach><!-- 坦克螂-300 -->
+                    <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Ironclad><!-- 铁卫虫-450 -->
+                    <SW_Electricfish MayRequire="Who.VFEE.IsopodaGeneline">1</SW_Electricfish><!-- 静电螨-75 -->
+                    <SW_Electricgryllotalpa MayRequire="Who.VFEE.IsopodaGeneline">1</SW_Electricgryllotalpa><!-- 电弧蝼蛄-150 -->
+                    <SW_Juggernautbeetles MayRequire="Who.VFEE.IsopodaGeneline">1</SW_Juggernautbeetles><!-- 破城锹甲-300 -->
+                    <VFEI2_Megawaterbug MayRequire="HaiLuan.Insect">1</VFEI2_Megawaterbug><!-- 巨型田鳖 -->
+                    <VFEI2_Hellstagbeetle MayRequire="HaiLuan.Insect">1</VFEI2_Hellstagbeetle><!-- 地狱锹甲 -->
+                    <AA_Animalisk MayRequire="sarg.alphaanimals">1</AA_Animalisk><!-- 灵魂编织者 -->
+                    <AA_Blizzarisk MayRequire="sarg.alphaanimals">1</AA_Blizzarisk><!-- 雪暴编织者 -->
+                    <AA_Cinderlisk MayRequire="sarg.alphaanimals">1</AA_Cinderlisk><!-- 灰烬编织者 -->
+                    <AA_Dunealisk MayRequire="sarg.alphaanimals">1</AA_Dunealisk><!-- 砂暴编织者 -->
+                    <AA_Feralisk MayRequire="sarg.alphaanimals">1</AA_Feralisk><!-- 凶暴编织者 -->
+                    <AA_Junglelisk MayRequire="sarg.alphaanimals">1</AA_Junglelisk><!-- 丛林编织者 -->
+                    <AA_BlackScarab MayRequire="sarg.alphaanimals">1</AA_BlackScarab><!-- 漆黑甲虫 -->
+                    <AA_BlackSpelopede MayRequire="sarg.alphaanimals">1</AA_BlackSpelopede><!-- 漆黑阔步虫 -->
+                    <AA_BlackSpider MayRequire="sarg.alphaanimals">1</AA_BlackSpider><!-- 漆黑蜘蛛 -->
+                    <AA_MammothWorm MayRequire="sarg.alphaanimals">1</AA_MammothWorm><!-- 猛犸虫 -->
+                    <AA_Bumbledrone MayRequire="sarg.alphaanimals">1</AA_Bumbledrone><!-- 大黄蜂 -->
+                    <AA_BumbledroneHierophant MayRequire="sarg.alphaanimals">1</AA_BumbledroneHierophant><!-- 大黄蜂领主 -->
+                    <AA_Barbslinger MayRequire="sarg.alphaanimals">1</AA_Barbslinger><!-- 刺蛇 -->
+                </options>
+            </li>
+		</value>
+	</Operation>
+    
+	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach"]/stages/li</xpath>
 		<value>
             <capMods>
@@ -108,6 +149,19 @@
                     <partEfficiency>1.03</partEfficiency>
                 </value>
         </nomatch>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="FleshTentacle" or defName="FleshWhip"]/nullifyingTraits</xpath>
+        <value><li>BRF_Sarkicism</li></value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CreepJoinerFormKindDef[defName="CultEscapee" or defName="DarkScholar" or defName="LoneGenius"]/requires</xpath>
+        <value>
+            <li>BRF_OrinTransmuteFlesh</li>
+            <li>BRF_OrinFleshyModder</li>
+        </value>
     </Operation>
 
 </Patch>

@@ -16,6 +16,12 @@
   </ThingCategoryDef>
 
   <ThingCategoryDef>
+    <defName>BRF_BodyPartsNaturalHuman</defName>
+    <label>Natural Human</label>
+    <parent>BodyPartsNatural</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
     <defName>BRF_Things_FreshShell</defName>
     <label>Fresh Shell</label>
     <parent>BodyPartsNatural</parent>

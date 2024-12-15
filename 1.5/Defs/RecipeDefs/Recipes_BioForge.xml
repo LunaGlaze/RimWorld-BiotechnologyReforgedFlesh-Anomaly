@@ -124,7 +124,7 @@
             <li>BRF_LivingFlesh</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>3</count>
       </li>
       <li>
         <filter>
@@ -132,7 +132,7 @@
             <li>BRF_PrimordialTissueSample</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
@@ -161,7 +161,7 @@
             <li>BRF_LivingFlesh</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>6</count>
       </li>
       <li>
         <filter>
@@ -169,7 +169,7 @@
             <li>BRF_PrimordialTissueSample</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
     </ingredients>
     <products>
@@ -198,7 +198,7 @@
             <li>BRF_LivingFlesh</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>12</count>
       </li>
       <li>
         <filter>
@@ -206,7 +206,7 @@
             <li>BRF_PrimordialTissueSample</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>8</count>
       </li>
     </ingredients>
     <products>
@@ -235,7 +235,7 @@
             <li>BRF_LivingFlesh</li>
           </thingDefs>
         </filter>
-        <count>40</count>
+        <count>24</count>
       </li>
       <li>
         <filter>
@@ -243,7 +243,7 @@
             <li>BRF_PrimordialTissueSample</li>
           </thingDefs>
         </filter>
-        <count>7</count>
+        <count>15</count>
       </li>
     </ingredients>
     <products>

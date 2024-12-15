@@ -103,7 +103,7 @@
       <ComfyTemperatureMax>120</ComfyTemperatureMax>
       <Flammability>0.5</Flammability>
       <MeatAmount>40</MeatAmount>
-      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>2</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>
@@ -191,7 +191,7 @@
     <defName>BRF_FrankensteinHand</defName>
     <label>Frankenstein's Hand</label>
     <race>BRF_FrankensteinHand</race>
-    <combatPower>40</combatPower>
+    <combatPower>35</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -214,7 +214,7 @@
     <abilities>
       <li>BRF_EntityLongjump</li>
     </abilities>
-    <combatPower>40</combatPower>
+    <combatPower>35</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_BloodstainedTick</defName>
+    <label>Bloodstained Tick</label>
+    <category>Basic</category>
+    <useDescriptionFrom>BRF_BloodstainedTick</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_BloodstainedTick</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_BloodstainedTick</li>
+    </linkedThings>
+    <!--discoveredResearchProjects>
+      <li></li>
+    </discoveredResearchProjects-->
+    <provocationIncidents>
+      <li>BRF_BloodstainedParasiticedInsectAssault</li>
+    </provocationIncidents>
+    <orderInCategory>250</orderInCategory>
+  </EntityCodexEntryDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_BloodstainedTick</defName>
+    <label>Bloodstained Tick</label>
+    <race>BRF_BloodstainedTick</race>
+    <abilities>
+      <li>BRF_BloodstainedTickParasitic</li>
+    </abilities>
+    <combatPower>75</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_BloodstainedTick/BRF_BloodstainedTick</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.75</drawSize>
+          <shadowData>
+            <volume>(0.15, 0.225, 0.15)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_BloodstainedTick/BRF_BloodstainedTick_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.75</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>RageSpeed</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BasePawn" Name="BRF_BaseInsectEnitiy" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+      <ComfyTemperatureMax>80</ComfyTemperatureMax>
+      <Flammability>0.5</Flammability>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <InjuryHealingFactor>2</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+      <MinimumContainmentStrength>50</MinimumContainmentStrength>
+      <LeatherAmount>0</LeatherAmount>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <fleshType>Insectoid</fleshType>
+      <bloodDef>Filth_BloodInsect</bloodDef>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>BRF_ReforgedMeat_Insect</specificMeatDef>
+      <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <trainability>None</trainability>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.5</bleedRateFactor>
+      <hediffGiverSets>
+        <li>Fleshbeast</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_BaseInsectEnitiy">
+    <defName>BRF_BloodstainedTick</defName>
+    <label>Bloodstained Tick</label>
+    <description>A parasite that reeks of blood and is able to burrow inside the corpses of Bugs to revive and parasitize them. The lifespan of this insectoid entity is short, but every parasitization and host death is a new birth for them.</description>
+    <statBases>
+      <MoveSpeed>4.75</MoveSpeed>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+    </statBases>
+    <uiIconPath>Pawns/BRF_BloodstainedTick/BRF_BloodstainedTick_east</uiIconPath>
+    <race>
+      <thinkTreeMain>BRF_BloodstainedTickThinkTree</thinkTreeMain>
+      <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
+      <body>BeetleLike</body>
+      <baseBodySize>0.2</baseBodySize>
+      <lifeExpectancy>1</lifeExpectancy>
+      <wildness>0.9</wildness>
+      <baseHealthScale>1</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>10</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>true</getsColdContainmentBonus>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.38, 0, .38)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.38, 0, .38)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.38, 0, -.38)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.38, 0, -.38)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>1</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_BloodstainedTickThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+		<li Class="ThinkNode_ConditionalHasAbility">
+		  <ability>BRF_BloodstainedTickParasitic</ability>
+		  	<subNodes>
+			  <li Class="Luna_BRF.JobGiver_BloodstainedTickParasitic">
+			    <ability>BRF_BloodstainedTickParasitic</ability>
+			  </li>
+			</subNodes>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <!-- Escaping-->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Regular fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>25</targetAcquireRadius>
+          <targetKeepRadius>36</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <!-- Wander -->
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+        </li>
+		<li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

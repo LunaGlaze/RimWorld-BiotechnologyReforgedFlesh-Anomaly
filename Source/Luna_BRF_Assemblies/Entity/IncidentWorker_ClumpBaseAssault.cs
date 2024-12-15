@@ -18,6 +18,19 @@ namespace Luna_BRF
 			{
 				parms.points = (defaultPawnGroupMakerParms.points = num * 2f);
 			}
+			if (ModsConfig.AnomalyActive)
+			{
+				if (Find.Anomaly.LevelDef.anomalyThreatTier == 2)
+				{
+					parms.points = (defaultPawnGroupMakerParms.points += 500 + num );
+
+				}
+				if (Find.Anomaly.LevelDef.anomalyThreatTier > 2)
+				{
+					parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 2);
+
+				}
+			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(defaultPawnGroupMakerParms).ToList();
 			if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
 			{

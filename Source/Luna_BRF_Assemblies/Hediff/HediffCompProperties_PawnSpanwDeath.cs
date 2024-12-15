@@ -29,6 +29,8 @@ namespace Luna_BRF
 
 		public bool sameFaction = false;
 
+		public bool manHunter = false;
+
 		public HediffCompProperties_PawnSpanwDeath()
 		{
 			compClass = typeof(HediffComp_PawnSpanwDeath);

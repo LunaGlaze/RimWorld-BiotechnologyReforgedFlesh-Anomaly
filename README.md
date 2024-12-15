@@ -26,6 +26,10 @@
  - 一套基于原版拓展框架的生物营养管道系统，以及你能想到的与其功能联动的生物朋克设备，比如经典的湿件伺服器……你不需要原版拓展框架来体验这个mod，但安装它能让你获得管道系统和更好的体验。
  - A bio-nutrient plumbing system based on the Vanilla Expanded Framework, and as many bio-punk devices as you can think of linked to its functionality, such as the classic wetware server ...... You don't need VEF to experience this mod, but installing it will give you access to the plumbing system and a better experience!
 
+ - 来自欲肉教（也许）的古怪的外来者。
+
+ -  Creep Joiner from Sarkicism (maybe).
+
  - And so on
 
 ## Projected

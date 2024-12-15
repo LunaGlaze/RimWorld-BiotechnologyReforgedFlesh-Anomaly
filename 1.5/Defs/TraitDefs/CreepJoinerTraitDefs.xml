@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>BRF_Sarkicism</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>Orin</label>
+        <degree>0</degree>
+        <description>{PAWN_nameDef} has no σάρξ blood, but seems to have served the cultist of flesh. {PAWN_pronoun} feels limited in {PAWN_possessive} feeble human body, and longs for lihakut'ak transformed body parts.</description>
+        <statFactors>
+            <PsychicSensitivity>1.05</PsychicSensitivity>
+        </statFactors>
+        <statOffsets>
+            <EntityStudyRate>0.1</EntityStudyRate>
+        </statOffsets>
+        <allowedMeditationFocusTypes>
+            <li>Morbid</li>
+            <li>Void</li>
+        </allowedMeditationFocusTypes>
+        <disallowedThoughts>
+            <li>ImprisonedWithEntity</li>
+            <li>EntityInRoom</li>
+        </disallowedThoughts>
+      </li>
+      <li>
+        <label>Zend</label>
+        <degree>1</degree>
+        <description>{PAWN_nameDef} has acquired the knowledge of drawing power from the blood of σάρξ. {PAWN_pronoun} feels limited in {PAWN_possessive} feeble human body, and longs for lihakut'ak transformed body parts.</description>
+        <statFactors>
+            <PsychicSensitivity>1.1</PsychicSensitivity>
+        </statFactors>
+        <statOffsets>
+            <PsychicSensitivity>0.05</PsychicSensitivity>
+            <EntityStudyRate>0.25</EntityStudyRate>
+        </statOffsets>
+        <allowedMeditationFocusTypes>
+            <li>Morbid</li>
+            <li>Void</li>
+        </allowedMeditationFocusTypes>
+        <disallowedThoughts>
+            <li>ImprisonedWithEntity</li>
+            <li>EntityInRoom</li>
+        </disallowedThoughts>
+      </li>
+      <li>
+        <label>Võlutaar</label>
+        <degree>2</degree>
+        <description>{PAWN_nameDef} is the wise man of the blood of σάρξ. {PAWN_pronoun} feels limited in {PAWN_possessive} feeble human body, and longs for lihakut'ak transformed body parts.</description>
+        <statFactors>
+            <PsychicSensitivity>1.2</PsychicSensitivity>
+        </statFactors>
+        <statOffsets>
+            <PsychicSensitivity>0.05</PsychicSensitivity>
+            <EntityStudyRate>0.5</EntityStudyRate>
+        </statOffsets>
+        <allowedMeditationFocusTypes>
+            <li>Morbid</li>
+            <li>Void</li>
+        </allowedMeditationFocusTypes>
+        <disallowedThoughts>
+            <li>ImprisonedWithEntity</li>
+            <li>EntityInRoom</li>
+        </disallowedThoughts>
+	    <skillGains>
+	  	    <Intellectual>2</Intellectual>
+	    </skillGains>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>BodyPurist</li>
+    </conflictingTraits>
+  </TraitDef>
+
+</Defs>

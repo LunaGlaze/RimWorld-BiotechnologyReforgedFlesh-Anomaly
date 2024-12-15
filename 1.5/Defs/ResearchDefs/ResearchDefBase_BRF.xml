@@ -23,7 +23,7 @@
 		<defName>BRF_ShapingTwistedMeatResearch</defName>
 		<label>Shaping Twisted Meat</label>
 		<description>Breeding Twisted Meat with Reforged Meat and Bioferrite.</description>
-		<knowledgeCost>3</knowledgeCost>
+		<knowledgeCost>5</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Neolithic</techLevel>
@@ -46,12 +46,30 @@
     		<li>BRF_ShapingTwistedMeatResearch</li>
 		</prerequisites>
     </ResearchProjectDef>
+
+<!--召唤虫群-->
+    <ResearchProjectDef>
+		<defName>BRF_SummonSwarmsResearch</defName>
+    	<label>Summon Swarms</label>
+    	<description>Those dark, twisted entities do not seem to be enemies of the Insect, and we do not know the reason why. But in that slimy, fishy dream, I seem to have learned that the swarm might be a resource for those things made by unnamable beings. \n\n Who knows if that's speculation or delusion?</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.8</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshCradleResearch</li>
+    		<li>BasicPsychicRituals</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
 <!--活体机械-->
     <ResearchProjectDef>
 		<defName>BRF_LivingMechanismResearch</defName>
     	<label>Living Mechanism</label>
     	<description>Recasting the most primitive living machine from the leftover flesh of our Flesh beasts.</description>
-		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCost>20</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Neolithic</techLevel>
@@ -72,7 +90,7 @@
 		<knowledgeCost>10</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
@@ -84,10 +102,10 @@
 		<defName>BRF_ReforgedMeatHarbingerResearch</defName>
     	<label>Reconstructed Harbinger Flesh</label>
     	<description>Add that ghastly, twisted meat to the list of things to remodel. While the cost of making it safe for consumption and as a non-infectious state for deep contact with the unevolved human body is a bit more than it's worth, you believe it's for the sake of more in-depth research in the future rather than for immediate gain.</description>
-		<knowledgeCost>3</knowledgeCost>
+		<knowledgeCost>5</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.6</researchViewY>
 		<prerequisites>
@@ -102,9 +120,9 @@
 		<knowledgeCost>7</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<researchViewX>3</researchViewX>
-		<researchViewY>1.25</researchViewY>
+		<researchViewY>1.2</researchViewY>
 		<prerequisites>
     		<li>BRF_LivingMechanismResearch</li>
 		</prerequisites>
@@ -131,7 +149,7 @@
 		<defName>BRF_HarbingerTentaclesFarmResearch</defName>
     	<label>Harbinger Planting</label>
     	<description>The harbinger tree was modified to create a specialized plant capable of spreading tentacle plants to grow and harvest reconstructed harbinger flesh.</description>
-		<knowledgeCost>5</knowledgeCost>
+		<knowledgeCost>7</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Medieval</techLevel>
@@ -164,7 +182,7 @@
 		<defName>BRF_FleshBioElectricityResearch</defName>
     	<label>Flesh Bio-Electricity</label>
     	<description>A technology that utilizes living organisms to produce and store electricity. It appears to be extraordinarily efficient after utilizing the remnants of anomalous entities.</description>
-		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCost>15</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Industrial</techLevel>
@@ -181,10 +199,10 @@
 		<defName>BRF_ScarletForgeResearch</defName>
     	<label>Scarlet Forge</label>
     	<description>The new type of fleshbeast discovered from the giant pit is clearly an older and more distinctive being ... The tissues they leave behind reveal certain disturbing facts. This fleshbeast is more primitive while also differing in some ... technological lines from the entities we know ... Or perhaps today's fleshbeast was rewritten and modified by the influence of bioferrited ...\n\n Perhaps there is more to the unnameable presence in the void than just the one we are familiar with. Perhaps there was another hyperintelligent archotech mind active here long ago that no mortal can know. But that doesn't stop us from making poor imitations of archotech, such as fusing these tissue samples with bioferrited to create something newer and better ...</description>
-		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCost>20</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
 		<researchViewY>1.2</researchViewY>
 		<prerequisites>
@@ -235,7 +253,7 @@
 		<knowledgeCost>7</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>6</researchViewX>
 		<researchViewY>1.8</researchViewY>
 		<prerequisites>
@@ -249,10 +267,10 @@
 		<defName>BRF_LimbGuardResearch</defName>
     	<label>Limb Guard</label>
     	<description>Like Clump, maybe we could make some of these limb-based entities ... but the friendly kind. With the analysis of those more ancient but more advanced organisations, it may no longer be delusional to have entities working and guarding for us.</description>
-		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCost>5</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
 		<researchViewY>2.4</researchViewY>
 		<prerequisites>
@@ -267,12 +285,29 @@
 		<knowledgeCost>10</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>6</researchViewX>
 		<researchViewY>2.4</researchViewY>
 		<prerequisites>
     		<li>BRF_LimbGuardResearch</li>
     		<li>BRF_FleshShellBaseResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+<!--召唤肢团-->
+    <ResearchProjectDef>
+		<defName>BRF_SummonClumpsResearch</defName>
+    	<label>Summon Clumps</label>
+    	<description>That primitive, ancient and efficient organization proved to be highly valuable material for the development of biotechnology. The kind of Clump that seems to be used as a combat unit seems to be more attracted to psychic pulse than the Primordial Fleshbeast, the rare prototype in PitGate. \n\n Though The Guards beyond the Garden of Paradise, The Ones with Eternal Limbs, and other murmuring voices ... are confusing and frightening ... \n\n "We are livestock selecting ourselves for harvest. We bite and claw and thrash to survive. We eat each other lest we be eaten ourselves only to die anyway. We breed so that our children may one day be consumed just as we will."</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+    		<li>AdvancedPsychicRituals</li>
+    		<li>BRF_ScarletForgeResearch</li>
 		</prerequisites>
     </ResearchProjectDef>
 
@@ -283,7 +318,7 @@
     	<description>[Sorry, but this part of the development has been put on hold due to lack of art resources and capabilities.]</description>
 		<baseCost>1000</baseCost>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
 		<researchViewY>3</researchViewY>
 		<prerequisites>
@@ -299,7 +334,7 @@
 		<knowledgeCost>7</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>
 		<researchViewY>0.6</researchViewY>
 		<prerequisites>

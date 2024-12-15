@@ -18,5 +18,9 @@
   <BRF_EntityNecrophagia.label>实体噬尸</BRF_EntityNecrophagia.label>
   <BRF_EntityNecrophagia.description>这个实体有吞噬尸体的能力。</BRF_EntityNecrophagia.description>
 
+<!--虫族寄生虫-->
+
+  <BRF_BloodstainedTickParasitic.label>污血寄生</BRF_BloodstainedTickParasitic.label>
+  <BRF_BloodstainedTickParasitic.description>钻入虫族的尸骸之中释放扭曲的肉体合成的纳米生物机械复活并狂化死去的虫族。</BRF_BloodstainedTickParasitic.description>
 
 </LanguageData>

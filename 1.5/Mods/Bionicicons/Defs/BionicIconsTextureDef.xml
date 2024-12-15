@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BionicIconsTextureDef>
+    <defName>BRF_FreshShellBase</defName>
+    <texture>Things/Item/Health/HealthItem</texture>
+    <onlyForColor>(203,101,102)</onlyForColor>
+    <replacement>Items/BionicIcons/Boxes/BRF_FreshShell</replacement>
+  </BionicIconsTextureDef>
+  <BionicIconsTextureDef>
+    <defName>BRF_FleshMutations</defName>
+    <texture>Things/Item/Health/HealthItem</texture>
+    <onlyForColor>(205,85,85)</onlyForColor>
+    <replacement>Items/BionicIcons/Boxes/BRF_FleshMutations</replacement>
+  </BionicIconsTextureDef>
+</Defs>

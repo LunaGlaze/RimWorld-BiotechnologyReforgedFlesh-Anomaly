@@ -7,5 +7,9 @@
   <BRF_MutationsRelicImplantsDesc>Flesh mutant bionts growing: </BRF_MutationsRelicImplantsDesc>
   
   <NecrophagistEntityWhenDigestinng>It's being digested: </NecrophagistEntityWhenDigestinng>
+  
+  <SummonClumpsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The swarms will be here soon.</SummonClumpsFinishText>
+  
+  <SummonClumpsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The hungry Clumps are on their way.</SummonClumpsFinishText>
 
 </Defs>

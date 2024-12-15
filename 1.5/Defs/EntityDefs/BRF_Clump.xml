@@ -13,6 +13,7 @@
     </linkedThings>
     <discoveredResearchProjects>
       <li>BRF_LimbGuardResearch</li>
+      <li>BRF_SummonClumpsResearch</li>
     </discoveredResearchProjects>
     <provocationIncidents>
       <li>BRF_ClumpAssault</li>
@@ -398,7 +399,7 @@
       <ComfyTemperatureMax>120</ComfyTemperatureMax>
       <Flammability>0.5</Flammability>
       <MeatAmount>120</MeatAmount>
-      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>5</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>

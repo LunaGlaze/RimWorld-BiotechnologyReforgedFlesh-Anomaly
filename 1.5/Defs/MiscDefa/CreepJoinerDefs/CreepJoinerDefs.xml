@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CreepJoinerBenefitDef>
+    <defName>BRF_OrinTransmuteFlesh</defName>
+    <label>flesh scholar</label>
+    <letterExtra>{PAWN_nameDef} seems to have served the cultist of flesh, and got some weird knowledge or ability from it. {PAWN_pronoun} can, using unknown archotechnological influence, transmute meat into other better type.</letterExtra>
+    <abilities>
+      <li>BRF_TransmuteFlesh</li>
+    </abilities>
+    <traits>
+      <BRF_Sarkicism>0</BRF_Sarkicism>
+    </traits>
+    <hediffs>
+      <li>BRF_FleshMadeHeartHediff</li>
+    </hediffs>
+  </CreepJoinerBenefitDef>
+
+  <CreepJoinerBenefitDef>
+    <defName>BRF_OrinFleshyModder</defName>
+    <label>flesh modder</label>
+    <letterExtra>{PAWN_nameDef} seems to have served the cultist of flesh, and are deeply biologically modified. {PAWN_pronoun} takes great pride in these flesh modifications and believes {PAWN_pronoun} can help our colonies with those modifications along with abilities.</letterExtra>
+    <traits>
+      <BRF_Sarkicism>0</BRF_Sarkicism>
+    </traits>
+    <skills>
+      <Shooting>10~20</Shooting>
+      <Melee>10~20</Melee>
+    </skills>
+    <hediffs>
+      <li>BRF_FleshMadeHeartHediff</li>
+      <li>BRF_FleshMadeLiverHediff</li>
+      <li>BRF_FleshMadeSpineHediff</li>
+      <li>BRF_FleshMadeStomachHediff</li>
+      <li>BRF_FleshMadeJawHediff</li>
+      <li>BRF_FleshMadeNoseHediff</li>
+    </hediffs>
+  </CreepJoinerBenefitDef>
+
+</Defs>

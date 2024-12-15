@@ -46,6 +46,10 @@ namespace Luna_BRF
 			{
 				compInspectStringEmergence.sourcePawn = pawn;
 			}
+			if(Props.manHunter && pawn2.mindState != null)
+            {
+				pawn2.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
+			}
             if (Props.giveLetter)
 			{
 				TaggedString label = Props.letterLabel.Formatted(pawn.Named("PAWN"));

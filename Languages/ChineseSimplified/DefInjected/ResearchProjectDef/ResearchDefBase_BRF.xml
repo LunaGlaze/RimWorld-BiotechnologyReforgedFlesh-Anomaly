@@ -19,6 +19,12 @@
   <BRF_FleshCradleResearch.description>向原初的摇篮献上足够的贡品，并召唤出精美的肉块形态的原初使者。\n\n这是一个奇迹，它将被改造过的人体残骸与怪物的肉体结合在一起。</BRF_FleshCradleResearch.description>
 
 
+  <!-- 召唤虫群 -->
+
+  <BRF_SummonSwarmsResearch.label>召唤虫群</BRF_SummonSwarmsResearch.label>
+  <BRF_SummonSwarmsResearch.description>那些黑暗扭曲的实体似乎不与虫巢为敌，我们不知道其中的原因。但在那个粘腻腥臭的梦境里，我似乎得知虫群或许是一种资源——对那些由不可名状的存在制造之物来说。\n\n谁知道那是臆测还是妄想呢？</BRF_SummonSwarmsResearch.description>
+
+
   <!-- 活体机械 -->
 
   <BRF_LivingMechanismResearch.label>活体机械</BRF_LivingMechanismResearch.label>
@@ -101,6 +107,12 @@
 
   <BRF_FleshBeastShellResearch.label>活体血肉躯壳</BRF_FleshBeastShellResearch.label>
   <BRF_FleshBeastShellResearch.description>扭曲方尖碑中创造出噩梦般可怕的异常生物的未知能量是否比想象中更......古老？亦或者更原始？\n\n在肢团或者其他更古老、更先进的血肉兽体内似乎有者某种类似的东西... 抱歉，我不能描述它。但如果利用这种存在，我们也许能制造出那种经历畸变肢体，以更稳定的方式。</BRF_FleshBeastShellResearch.description>
+
+
+  <!-- 召唤肢团 -->
+
+  <BRF_SummonClumpsResearch.label>召唤肢团</BRF_SummonClumpsResearch.label>
+  <BRF_SummonClumpsResearch.description>那种原始、古老而高效的组织被证明是发展生物科技的高价值材料。比起巨坑中少之又少的原型体“原始血肉兽”，那种似乎是作为战斗单位的肢团似乎更容易被心灵脉冲吸引。\n\n 尽管乐土花园之外的守卫、肢体永恒之唯一、以及其他呢喃声……令人困惑而恐惧……\n\n“我们是选择收获自己的牲畜。我们为了生存而撕咬、抓挠与挣扎。我们互相进食彼此，为了避免自己被吃掉而死。我们繁衍后代，以便终有一天我们的孩子被吞食，就如同我们一样。”</BRF_SummonClumpsResearch.description>
 
 
   <!-- 绯红家装 -->

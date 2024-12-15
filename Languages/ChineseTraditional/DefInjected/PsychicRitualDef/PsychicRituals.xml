@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_SummonSwarms.label>吸引實體蟲群</BRF_SummonSwarms.label>
+  <BRF_SummonSwarms.description>使用特殊的肉做誘餌引發一種能夠吸引特殊狀態下的昆蟲的脈衝。從理論上講，這種儀式並不是為人類設計的，其效果可能會讓人有些不安。</BRF_SummonSwarms.description>
+  <BRF_SummonSwarms.outcomeDescription>儀式品質越高，吸引的蟲群數量越多。</BRF_SummonSwarms.outcomeDescription>
+
+  <BRF_SummonClumps.label>吸引肢團</BRF_SummonClumps.label>
+  <BRF_SummonClumps.description>發射心靈脈衝，將遠處的一群肢團引向你所在的區域。這些肢團會在一段時間後帶著饑餓抵達，建議你為它們準備好屍體作為食物，亦或者做好將它們化作屍體的準備。</BRF_SummonClumps.description>
+  <BRF_SummonClumps.outcomeDescription>儀式品質越高，吸引的蟲群數量越多。</BRF_SummonClumps.outcomeDescription>
+
+</LanguageData>

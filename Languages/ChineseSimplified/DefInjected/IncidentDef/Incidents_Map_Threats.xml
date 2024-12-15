@@ -5,5 +5,8 @@
   <BRF_ClumpAssault.letterText>一群饥饿的肢团闯入了你们的殖民地附近。这种肉体和肢体构造的怪物可能会摧毁和吞噬它们所看到的一切。</BRF_ClumpAssault.letterText>
   <BRF_ClumpAssault.letterLabel>肢团袭击</BRF_ClumpAssault.letterLabel>
 
+  <BRF_BloodstainedParasiticedInsectAssault.label>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.label>
+  <BRF_BloodstainedParasiticedInsectAssault.letterText>一些被实体寄生的虫群来到了你的殖民地，它们已经因实体的寄生而发狂！</BRF_BloodstainedParasiticedInsectAssault.letterText>
+  <BRF_BloodstainedParasiticedInsectAssault.letterLabel>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.letterLabel>
 
 </LanguageData>

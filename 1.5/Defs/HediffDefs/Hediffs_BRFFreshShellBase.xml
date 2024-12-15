@@ -6,11 +6,12 @@
 			<texPath>Things/Item/Health/HealthItem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
-			<color>(200,100,100)</color>
+			<color>(203,101,102)</color>
 		</graphicData>
 	  <tickerType>Rare</tickerType>
     <thingCategories>
       <li>BRF_Things_FreshShell_Base</li>
+      <li>BodyPartsNatural</li>
     </thingCategories>
     <statBases>
       <DeteriorationRate>4.0</DeteriorationRate>
@@ -95,6 +96,7 @@
     <label>flesh-made arm</label>
     <labelNoun>a flesh-made arm</labelNoun>
     <description>An installed flesh-made arm.</description>
+    <defaultInstallPart>Arm</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeArm</ThingDef></descriptionHyperlinks>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -166,6 +168,7 @@
     <label>flesh-made hand</label>
     <labelNoun>a flesh-made hand</labelNoun>
     <description>An installed flesh-made hand.</description>
+    <defaultInstallPart>Hand</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeHand</ThingDef></descriptionHyperlinks>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -237,6 +240,7 @@
     <label>flesh-made finger</label>
     <labelNoun>a flesh-made finger</labelNoun>
     <description>An installed flesh-made finger.</description>
+    <defaultInstallPart>Finger</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeFinger</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeFinger</spawnThingOnRemoved>
     <addedPartProps>
@@ -294,6 +298,7 @@
     <label>flesh-made toe</label>
     <labelNoun>a flesh-made toe</labelNoun>
     <description>An installed flesh-made toe.</description>
+    <defaultInstallPart>Toe</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeToe</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeToe</spawnThingOnRemoved>
     <addedPartProps>
@@ -351,6 +356,7 @@
     <label>flesh-made foot</label>
     <labelNoun>a flesh-made foot</labelNoun>
     <description>An installed flesh-made foot.</description>
+    <defaultInstallPart>Foot</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeFoot</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeFoot</spawnThingOnRemoved>
     <addedPartProps>
@@ -409,6 +415,7 @@
     <label>flesh-made leg</label>
     <labelNoun>a flesh-made leg</labelNoun>
     <description>An installed flesh-made leg.</description>
+    <defaultInstallPart>Leg</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLeg</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLeg</spawnThingOnRemoved>
     <addedPartProps>
@@ -466,6 +473,7 @@
     <label>flesh-made heart</label>
     <labelNoun>a flesh-made heart</labelNoun>
     <description>An installed flesh-made heart.</description>
+    <defaultInstallPart>Heart</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeHeart</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeHeart</spawnThingOnRemoved>
     <addedPartProps>
@@ -523,6 +531,7 @@
     <label>flesh-made lung</label>
     <labelNoun>a flesh-made lung</labelNoun>
     <description>An installed flesh-made lung.</description>
+    <defaultInstallPart>Lung</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLung</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLung</spawnThingOnRemoved>
     <addedPartProps>
@@ -580,6 +589,7 @@
     <label>flesh-made kidney</label>
     <labelNoun>a flesh-made kidney</labelNoun>
     <description>An installed flesh-made kidney.</description>
+    <defaultInstallPart>Kidney</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeKidney</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeKidney</spawnThingOnRemoved>
     <addedPartProps>
@@ -637,6 +647,7 @@
     <label>flesh-made liver</label>
     <labelNoun>a flesh-made liver</labelNoun>
     <description>An installed flesh-made liver.</description>
+    <defaultInstallPart>Liver</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLiver</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLiver</spawnThingOnRemoved>
     <addedPartProps>
@@ -694,6 +705,7 @@
     <label>flesh-made eye</label>
     <labelNoun>a flesh-made eye</labelNoun>
     <description>An installed flesh-made eye.</description>
+    <defaultInstallPart>Eye</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeEye</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeEye</spawnThingOnRemoved>
     <addedPartProps>
@@ -751,6 +763,7 @@
     <label>flesh-made ear</label>
     <labelNoun>a flesh-made ear</labelNoun>
     <description>An installed flesh-made ear.</description>
+    <defaultInstallPart>Ear</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeEar</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeEar</spawnThingOnRemoved>
     <addedPartProps>
@@ -808,6 +821,7 @@
     <label>flesh-made nose</label>
     <labelNoun>a flesh-made nose</labelNoun>
     <description>An installed flesh-made nose.</description>
+    <defaultInstallPart>Nose</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeNose</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeNose</spawnThingOnRemoved>
     <addedPartProps>
@@ -866,6 +880,7 @@
     <label>flesh-made jaw</label>
     <labelNoun>a flesh-made jaw</labelNoun>
     <description>An installed flesh-made jaw.</description>
+    <defaultInstallPart>Jaw</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeJaw</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeJaw</spawnThingOnRemoved>
     <addedPartProps>
@@ -923,6 +938,7 @@
     <label>flesh-made stomach</label>
     <labelNoun>a flesh-made stomach</labelNoun>
     <description>An installed flesh-made stomach.</description>
+    <defaultInstallPart>Stomach</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeStomach</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeStomach</spawnThingOnRemoved>
     <addedPartProps>
@@ -980,6 +996,7 @@
     <label>flesh-made tongue</label>
     <labelNoun>a flesh-made tongue</labelNoun>
     <description>An installed flesh-made tongue.</description>
+    <defaultInstallPart>Tongue</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeTongue</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeTongue</spawnThingOnRemoved>
     <addedPartProps>
@@ -1038,6 +1055,7 @@
     <label>flesh-made spine</label>
     <labelNoun>a flesh-made spine</labelNoun>
     <description>An installed flesh-made spine.</description>
+    <defaultInstallPart>Spine</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeSpine</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeSpine</spawnThingOnRemoved>
     <addedPartProps>

@@ -6,7 +6,7 @@
     <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
   </ThingDef>
 
- <!-- BRF_PrimordialFleshBeast -->
+ <!-- 原始血肉兽 -->
   <AbilityDef ParentName="SpikeLaunchBase">
     <defName>BRF_Launch_PrimordialFleshBeast</defName>
     <label>Launch Primordial Spike</label>
@@ -73,7 +73,7 @@
 	  <showOnCharacterCard>false</showOnCharacterCard>
     <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
     <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
-    <warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+    <warmupEffecter>RageSpeedState</warmupEffecter>
     <warmupSound>AnomalyAbilityWarmup</warmupSound>
     <writeCombatLog>true</writeCombatLog>
     <verbProperties>
@@ -92,5 +92,38 @@
       <li Class="Luna_BRF.CompProperties_EntityNecrophagia" />
     </comps>
   </AbilityDef>
+
+<!--虫族寄生虫-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BRF_BloodstainedTickParasitic</defName>
+    <label>Bloodstained Tick Parasitic</label>
+    <description>Burrowing into insect carcasses, releasing nanobio-mechanics synthesized from twisted flesh to resurrect and berserk dead insects.</description>
+    <iconPath>Pawns/BRF_BloodstainedTick/BRF_BloodstainedTick_south</iconPath>
+    <cooldownTicksRange>2400</cooldownTicksRange>
+	  <aiCanUse>true</aiCanUse>
+    <showPsycastEffects>false</showPsycastEffects>
+	  <showOnCharacterCard>false</showOnCharacterCard>
+    <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+    <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+    <warmupEffecter>GhoulFrenzy</warmupEffecter>
+    <warmupSound>AnomalyAbilityWarmup</warmupSound>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+	    <warmupTime>7.5</warmupTime>
+	    <range>9.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>true</canTargetCorpses>
+        <canTargetHumans>false</canTargetHumans>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_BloodstainedTickParasitic" />
+    </comps>
+  </AbilityDef>
+
 
 </Defs>

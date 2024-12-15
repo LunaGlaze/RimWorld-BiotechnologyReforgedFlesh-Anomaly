@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BRF_SarkicismProsthophileHappy</defName>
+    <workerClass>Luna_BRF.ThoughtWorker_HasFleshyBodyPart</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>BRF_Sarkicism</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Flesh Modder Gratified</label>
+        <description>I'm on my way to shepherd the flesh, which is a good start.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Pleased</label>
+        <description>The experience to shepherd the flesh is growing progressively. I've found ways to make my body stronger.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Quite Pleased</label>
+        <description>The wisdom of flesh is being revealed before my eyes. I wish I had more.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Delighted</label>
+        <description>Four fleshy enhancements, and my weak original flesh is receding. But I still want more power comefrome flesh.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Quite Delighted</label>
+        <description>Five fleshy enhancements, and my weak original flesh is receding. I can't wait for the power of flesh.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Enchanted</label>
+        <description>Six fleshy enhancements and I am becoming more than human. But I need to accomplish more on the way to shepherd the flesh.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Flesh Modder Overjoyed</label>
+        <description>Seven fleshy enhancements! I am getting ready to try to understand the truth of flesh.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+      <li>
+        <label>An Incarnadescence</label>
+        <description>The very air is succulent with possibility.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

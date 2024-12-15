@@ -770,5 +770,250 @@
 	</nomatch>
 </Operation>
 
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Stomach"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Stomach"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Stomach"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Spine"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Spine"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Spine"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Eye"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Eye"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Eye"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Ear"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Ear"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Ear"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Brain"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Brain"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Brain"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Nose"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Nose"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Nose"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Jaw"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Jaw"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Jaw"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Arm"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Arm"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Arm"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Hand"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Hand"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Hand"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Leg"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Leg"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Leg"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Foot"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Foot"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Foot"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Heart"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Heart"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Heart"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Lung"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Lung"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Lung"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Kidney"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Kidney"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Kidney"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Liver"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Liver"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Liver"]/thingCategories</xpath>
+            <value><li>BRF_BodyPartsNaturalHuman</li></value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Tongue"]</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Tongue"]/thingCategories</xpath>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Tongue"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>BRF_BodyPartsNaturalHuman</li>
+                    </thingCategories>
+                </value>
+            </nomatch>
+            <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Tongue"]/thingCategories</xpath>
+                <value><li>BRF_BodyPartsNaturalHuman</li></value>
+            </match>
+        </match>
+    </Operation>
+
 </Patch>
 

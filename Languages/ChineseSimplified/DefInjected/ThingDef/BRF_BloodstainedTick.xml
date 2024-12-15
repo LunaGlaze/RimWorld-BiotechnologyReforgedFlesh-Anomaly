@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- 物种ThingsDef -->
+
+  <BRF_BloodstainedTick.label>污血蜱虫</BRF_BloodstainedTick.label>
+  <BRF_BloodstainedTick.description>一种散发着血的腥味的寄生虫，能够钻进虫族的尸体里面复活并寄生它们。这种虫族实体的寿命很短，但每一次寄生与宿主死亡对它们而言都是一种新生。</BRF_BloodstainedTick.description>
+  <BRF_BloodstainedTick.tools.mandibles.label>下颚</BRF_BloodstainedTick.tools.mandibles.label>
+  <BRF_BloodstainedTick.tools.head.label>头</BRF_BloodstainedTick.tools.head.label>
+
+
+</LanguageData>

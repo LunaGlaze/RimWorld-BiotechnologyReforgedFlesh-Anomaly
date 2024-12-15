@@ -60,7 +60,7 @@
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
       <FilthRate>16</FilthRate>
-      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <ToxicResistance>0.5</ToxicResistance>
       <InjuryHealingFactor>5</InjuryHealingFactor>
     </statBases>

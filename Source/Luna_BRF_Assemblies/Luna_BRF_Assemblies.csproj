@@ -54,6 +54,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreepJoiner\CompAbilityEffect_TransmuteFlesh.cs" />
+    <Compile Include="CreepJoiner\CompProperties_TransmuteFlesh.cs" />
     <Compile Include="Cothy\CompAnimalProduct.cs" />
     <Compile Include="Cothy\CompProperties_AnimalProduct.cs" />
     <Compile Include="Comp\CompProperties_SpawnerPawnPod.cs" />
@@ -64,12 +66,16 @@
     <Compile Include="Entity\CompProperties_BloodstainedTickParasitic.cs" />
     <Compile Include="Entity\CompProperties_EntityNecrophagia.cs" />
     <Compile Include="Entity\CompProperties_NecrophagistEntity.cs" />
+    <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssault.cs" />
+    <Compile Include="Entity\JobGiver_BloodstainedTickParasitic.cs" />
     <Compile Include="Harmony\HarmonyPatchInit.cs" />
     <Compile Include="Harmony\BRF_Patcher.cs" />
     <Compile Include="Comp\CompProperties_InvisibleWatcher.cs" />
     <Compile Include="Entity\CompProperties_DeadChanceSplit.cs" />
     <Compile Include="Entity\LunaDeadChanceSplit.cs" />
     <Compile Include="Comp\LunaInvisibleWatcherCom.cs" />
+    <Compile Include="Hediff\HediffCompProperties_MindControlBerserk.cs" />
+    <Compile Include="Hediff\HediffComp_MindControlBerserk.cs" />
     <Compile Include="Hediff\HediffCompProperties_DamageWhenMaxSeverity.cs" />
     <Compile Include="Hediff\HediffComp_DamageWhenMaxSeverity.cs" />
     <Compile Include="Entity\IncidentWorker_ClumpBaseAssault.cs" />
@@ -81,6 +87,12 @@
     <Compile Include="Hediff\HediffComp_FleshbeastEmergeLittle.cs" />
     <Compile Include="Hediff\Hediff_BRFRapidRegeneration.cs" />
     <Compile Include="Cothy\JobDriver_AnimalResource.cs" />
+    <Compile Include="LunaBRFBaseUtility.cs" />
+    <Compile Include="LunaBRFHediffUtility.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_SummonClumps.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_SummonSwarms.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_SummonClumps.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_SummonSwarms.cs" />
     <Compile Include="Things\ExtensionDef_LunaDestroyHeartBomb.cs" />
     <Compile Include="Things\Luna_DestroyHeartBomb.cs" />
     <Compile Include="Misc\GenStep_BRFUndercavePrimordialFleshBeast.cs" />
@@ -104,9 +116,8 @@
     <Compile Include="Comp\CompProperties_LunaSpawnerWithFuel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cothy\WorkGiver_AnimalResource.cs" />
+    <Compile Include="Misc\ThoughtWorker_HasFleshyBodyPart.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PsychicRitua\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

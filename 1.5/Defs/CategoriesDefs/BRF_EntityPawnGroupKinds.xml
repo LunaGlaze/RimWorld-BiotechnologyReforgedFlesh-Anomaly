@@ -6,4 +6,9 @@
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
 
+  <PawnGroupKindDef>
+    <defName>BRF_BloodstainedTickParasiticable</defName>
+    <workerClass>PawnGroupKindWorker_Normal</workerClass>
+  </PawnGroupKindDef>
+
 </Defs>

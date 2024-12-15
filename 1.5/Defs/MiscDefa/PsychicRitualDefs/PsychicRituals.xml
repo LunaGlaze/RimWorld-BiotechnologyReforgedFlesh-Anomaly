@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Luna_BRF.PsychicRitualDef_SummonSwarms>
+    <defName>BRF_SummonSwarms</defName>
+    <label>Draw Entity Swarms</label>
+    <description>Using special meat as bait triggers a pulse that attracts insects in a particular state. The use of this ritual is not theoretically designed for human use, and its effects can be somewhat disturbing.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_SummonSwarms</iconPath>
+    <researchPrerequisite>BRF_SummonSwarmsResearch</researchPrerequisite>
+    <outcomeDescription>The higher the ritual quality, the more swarms that will be summoned.</outcomeDescription>
+    <hoursUntilOutcome>2</hoursUntilOutcome>
+    <combatPointMultiplierFromQualityRange>0.5~2.5</combatPointMultiplierFromQualityRange>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_LivingFlesh</li>
+        </thingDefs>
+      </filter>
+      <count>6</count>
+    </requiredOffering>
+    <cooldownHours>180</cooldownHours>
+  </Luna_BRF.PsychicRitualDef_SummonSwarms>
+
+  <Luna_BRF.PsychicRitualDef_SummonClumps>
+    <defName>BRF_SummonClumps</defName>
+    <label>Draw Clumps</label>
+    <description>Create a psychic pulse which will draw a distant horde of Clumps towards your local area. These Clumps will arrive after some time with hunger, and it is recommended that you have carcasses ready for them to eat, or be prepared to turn them into corpses.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_SummonClumps</iconPath>
+    <researchPrerequisite>BRF_SummonClumpsResearch</researchPrerequisite>
+    <outcomeDescription>The higher the ritual quality, the more Clumps that will be summoned.</outcomeDescription>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <combatPointMultiplierFromQualityRange>0.5~2.5</combatPointMultiplierFromQualityRange>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ScarletFerrite</li>
+        </thingDefs>
+      </filter>
+      <count>15</count>
+    </requiredOffering>
+    <cooldownHours>240</cooldownHours>
+  </Luna_BRF.PsychicRitualDef_SummonClumps>
+
+</Defs>

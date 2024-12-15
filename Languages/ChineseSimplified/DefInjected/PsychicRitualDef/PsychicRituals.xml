@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_SummonSwarms.label>吸引实体虫群</BRF_SummonSwarms.label>
+  <BRF_SummonSwarms.description>使用特殊的肉做诱饵引发一种能够吸引特殊状态下的昆虫的脉冲。从理论上讲，这种仪式并不是为人类设计的，其效果可能会让人有些不安。</BRF_SummonSwarms.description>
+  <BRF_SummonSwarms.outcomeDescription>仪式质量越高，吸引的虫群数量越多。</BRF_SummonSwarms.outcomeDescription>
+  
+  <BRF_SummonClumps.label>吸引肢团</BRF_SummonClumps.label>
+  <BRF_SummonClumps.description>发射心灵脉冲，将远处的一群肢团引向你所在的区域。这些肢团会在一段时间后带着饥饿抵达，建议你为它们准备好尸体作为食物，亦或者做好将它们化作尸体的准备。</BRF_SummonClumps.description>
+  <BRF_SummonClumps.outcomeDescription>仪式质量越高，吸引的虫群数量越多。</BRF_SummonClumps.outcomeDescription>
+
+</LanguageData>

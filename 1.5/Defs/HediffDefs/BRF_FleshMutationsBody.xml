@@ -7,10 +7,11 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>0.80</drawSize>
 		<color>(205,85,85)</color>
-	</graphicData>
-	<tickerType>Rare</tickerType>
+	  </graphicData>
+	  <tickerType>Rare</tickerType>
     <thingCategories>
       <li>BRF_Things_FreshShell_Mutations</li>
+      <li>BodyPartsNatural</li>
     </thingCategories>
     <statBases>
       <DeteriorationRate>4.0</DeteriorationRate>

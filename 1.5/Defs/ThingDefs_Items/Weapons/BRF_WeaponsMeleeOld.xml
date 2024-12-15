@@ -106,7 +106,7 @@
       <Bioferrite>1</Bioferrite>
     </costList>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicSensitivity>0.06</PsychicSensitivity>
     </equippedStatOffsets>
   </ThingDef>
 
