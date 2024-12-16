@@ -163,5 +163,17 @@
             <li>BRF_OrinFleshyModder</li>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/MonolithLevelDef[defName="VoidAwakened" or defName="Gleaming"]</xpath>
+        <attribute>anomalyThreatTier</attribute>
+        <value>3</value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/MonolithLevelDef[defName="Embraced"]</xpath>
+        <attribute>anomalyThreatTier</attribute>
+        <value>4</value>
+    </Operation>
 
 </Patch>

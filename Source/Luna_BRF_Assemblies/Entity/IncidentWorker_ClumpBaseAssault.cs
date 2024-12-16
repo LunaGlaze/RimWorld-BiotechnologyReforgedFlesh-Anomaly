@@ -20,15 +20,26 @@ namespace Luna_BRF
 			}
 			if (ModsConfig.AnomalyActive)
 			{
-				if (Find.Anomaly.LevelDef.anomalyThreatTier == 2)
+				if(Find.Anomaly.LevelDef.anomalyThreatTier > 1)
 				{
-					parms.points = (defaultPawnGroupMakerParms.points += 500 + num );
+					if (Find.Anomaly.LevelDef.anomalyThreatTier <= 2)
+					{
+						parms.points = (defaultPawnGroupMakerParms.points += 250 + num);
 
-				}
-				if (Find.Anomaly.LevelDef.anomalyThreatTier > 2)
-				{
-					parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 2);
+					}else if (Find.Anomaly.LevelDef.anomalyThreatTier <= 3)
+					{
+						parms.points = (defaultPawnGroupMakerParms.points += 500 + num);
 
+					}
+					else if (Find.Anomaly.LevelDef.anomalyThreatTier <= 4)
+					{
+						parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 2);
+
+                    }
+                    else
+					{
+						parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 4);
+					}
 				}
 			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(defaultPawnGroupMakerParms).ToList();

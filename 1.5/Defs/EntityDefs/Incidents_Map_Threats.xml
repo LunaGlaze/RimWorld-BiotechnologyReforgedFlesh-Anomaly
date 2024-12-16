@@ -5,8 +5,8 @@
     <defName>BRF_ClumpAssault</defName>
     <label>Clump Assault</label>
     <workerClass>Luna_BRF.IncidentWorker_ClumpBaseAssault</workerClass>
-    <baseChance>1.00</baseChance>
-    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <baseChance>1.05</baseChance>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Clump Assault</letterLabel>
     <letterText>Some hungry Clump has wandered into the vicinity of your colony. This monster of flesh and limb construction may destroy and devour everything in their sight.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -18,8 +18,8 @@
     <defName>BRF_BloodstainedParasiticedInsectAssault</defName>
     <label>Clump Assault</label>
     <workerClass>Luna_BRF.IncidentWorker_BloodstainedTickParasiticableAssault</workerClass>
-    <baseChance>0.75</baseChance>
-    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <baseChance>0.95</baseChance>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Parasiticed Insects Assault</letterLabel>
     <letterText>Some swarms of entity-parasitized bugs have come to your colony, and they have gone berserk from the entity's parasitism!</letterText>
     <letterDef>ThreatBig</letterDef>

@@ -13,7 +13,7 @@ namespace Luna_BRF
 		{
 			Thing pitGateExit = map.listerThings.ThingsOfDef(ThingDefOf.PitGateExit).FirstOrDefault();
 			Pawn dreadmeld = map.mapPawns.AllPawnsSpawned.FirstOrDefault((Pawn p) => p.kindDef == PawnKindDefOf.Dreadmeld);
-			int randomInRange = PrimordialFleshBeastPointCountRange.RandomInRange;
+			int randomInRange = PrimordialFleshBeastPointCountRange.RandomInRange + anomalyNum;
 			List<IntVec3> interestPoints = new List<IntVec3>();
 			for (int i = 0; i < randomInRange; i++)
 			{
@@ -58,7 +58,7 @@ namespace Luna_BRF
 		}
 		private void GenerateSleepingPrimordialFleshbeasts(Map map, IntVec3 cell)
 		{
-			int randomInRange = NumFleshbeastsRange.RandomInRange;
+			int randomInRange = NumFleshbeastsRange.RandomInRange + anomalyNum;
 			for (int i = 0; i < randomInRange; i++)
 			{
 				Pawn newThing = PawnGenerator.GeneratePawn(LunaDefOf.BRF_PrimordialFleshBeast, Faction.OfEntities);
@@ -68,7 +68,8 @@ namespace Luna_BRF
 				}
 			}
 		}
-		private static readonly IntRange NumFleshbeastsRange = new IntRange(2, 4);
+		private static readonly IntRange NumFleshbeastsRange = new IntRange(2,  4);
 		private static readonly IntRange PrimordialFleshBeastPointCountRange = new IntRange(1, 3);
-	}
+        private int anomalyNum => Find.Anomaly.LevelDef.anomalyThreatTier>0 ? Find.Anomaly.LevelDef.anomalyThreatTier : 0 ;
+    }
 }

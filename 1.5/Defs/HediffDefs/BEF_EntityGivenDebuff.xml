@@ -38,6 +38,7 @@
     <label>Bloodstained Parasiticed</label>
     <description>A parasitic entity exists within the body of this creature, which synthesizes biological nanomachines that strengthen the host while reaching out to a distant archotechnological engine that distorts the host's will.</description>
     <isBad>false</isBad>
+    <defaultLabelColor>(0.9, 0.4, 0.29)</defaultLabelColor>
     <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
     <stages>
       <li>
@@ -55,7 +56,6 @@
         <severityFeduce>1</severityFeduce>
         <factionDef>Entities</factionDef>
         <codexEntry>BRF_BloodstainedTick</codexEntry>
-        <manHunter>true</manHunter>
       </li>
       <li Class="Luna_BRF.HediffCompProperties_MindControlBerserk">
         <mentalStateDef>Manhunter</mentalStateDef>

@@ -14,6 +14,7 @@ namespace Luna_BRF
         public static FleckDef BlastEMP;
         public static PawnKindDef BRF_PrimordialFleshBeast;
         public static PawnKindDef BRF_MiniFleshBeast;
+        public static HediffDef BRF_ScarletFever;
         public static HediffDef BRF_InvisibleWatched;
         public static HediffDef BRF_RapidRegeneration;
         public static HediffDef BRF_BloodstainedTickParasiticed;

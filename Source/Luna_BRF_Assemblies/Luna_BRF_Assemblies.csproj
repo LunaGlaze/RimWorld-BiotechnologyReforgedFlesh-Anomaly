@@ -68,6 +68,7 @@
     <Compile Include="Entity\CompProperties_NecrophagistEntity.cs" />
     <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssault.cs" />
     <Compile Include="Entity\JobGiver_BloodstainedTickParasitic.cs" />
+    <Compile Include="Harmony\BRF_JobGiver_Manhunter_Patcher.cs" />
     <Compile Include="Harmony\HarmonyPatchInit.cs" />
     <Compile Include="Harmony\BRF_Patcher.cs" />
     <Compile Include="Comp\CompProperties_InvisibleWatcher.cs" />
