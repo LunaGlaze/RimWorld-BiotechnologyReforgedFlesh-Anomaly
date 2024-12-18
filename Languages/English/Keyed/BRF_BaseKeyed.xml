@@ -11,5 +11,17 @@
   <SummonClumpsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The swarms will be here soon.</SummonClumpsFinishText>
   
   <SummonClumpsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The hungry Clumps are on their way.</SummonClumpsFinishText>
+  
+  <BRF_WorkingSpeedMultiplierReduced>Reduce Working Speed</BRF_WorkingSpeedMultiplierReduced>
+  <BRF_WorkingSpeedMultiplierReduced_Desc>Reduce working speed multiplier and actual fuel consumption multiplier.</BRF_WorkingSpeedMultiplierReduced_Desc>
+  
+  <BRF_WorkingSpeedMultiplierReset>Reset Working Speed</BRF_WorkingSpeedMultiplierReset>
+  <BRF_WorkingSpeedMultiplierReset_Desc>Reset working speed multiplier and actual fuel consumption multiplier to 100%.</BRF_WorkingSpeedMultiplierReset_Desc>
+  
+  <BRF_WorkingSpeedMultiplierAdded>Add Working Speed</BRF_WorkingSpeedMultiplierAdded>
+  <BRF_WorkingSpeedMultiplierAdded_Desc>Add working speed multiplier and actual fuel consumption multiplier.</BRF_WorkingSpeedMultiplierAdded_Desc>
+
+  <BRF_CompWorkingSpeedMultiplier>Current operating speed multiplier: </BRF_CompWorkingSpeedMultiplier>
+  <BRF_CompWorkingSpeedTrulyFuelConsume>Actual fuel will last for </BRF_CompWorkingSpeedTrulyFuelConsume>
 
 </Defs>

@@ -22,6 +22,8 @@ namespace Luna_BRF
 
 		public TerrainDef terrainToSet;
 
+		public float baseWorkingSpeedMultiplier = 1f;
+
 		public List<TerrainDef> allowTerrains = null;
 
 	}

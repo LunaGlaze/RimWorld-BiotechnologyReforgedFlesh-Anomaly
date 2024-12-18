@@ -11,6 +11,17 @@
   <SummonSwarmsFinishText>{0_nameDef}完成了{RITUAL_definite}仪式。虫群很快就会抵达了。</SummonSwarmsFinishText>
   
   <SummonClumpsFinishText>{0_nameDef}完成了{RITUAL_definite}仪式。饥饿的肢团正在赶来。</SummonClumpsFinishText>
+  
+  <BRF_WorkingSpeedMultiplierReduced>降低工作速度</BRF_WorkingSpeedMultiplierReduced>
+  <BRF_WorkingSpeedMultiplierReduced_Desc>降低工作速度乘数与实际燃料消耗速率。</BRF_WorkingSpeedMultiplierReduced_Desc>
+  
+  <BRF_WorkingSpeedMultiplierReset>重置工作速度</BRF_WorkingSpeedMultiplierReset>
+  <BRF_WorkingSpeedMultiplierReset_Desc>重置工作速度乘数与实际燃料消耗速率至100%。</BRF_WorkingSpeedMultiplierReset_Desc>
+  
+  <BRF_WorkingSpeedMultiplierAdded>增加工作速度</BRF_WorkingSpeedMultiplierAdded>
+  <BRF_WorkingSpeedMultiplierAdded_Desc>增加工作速度乘数与实际燃料消耗速率。</BRF_WorkingSpeedMultiplierAdded_Desc>
 
+  <BRF_CompWorkingSpeedMultiplier>当前运行速度乘数：</BRF_CompWorkingSpeedMultiplier>
+  <BRF_CompWorkingSpeedTrulyFuelConsume>实际燃料可使用情况：</BRF_CompWorkingSpeedTrulyFuelConsume>
 
 </Defs>

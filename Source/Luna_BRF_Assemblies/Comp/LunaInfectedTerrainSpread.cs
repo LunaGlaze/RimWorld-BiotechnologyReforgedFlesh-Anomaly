@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace Luna_BRF
@@ -15,6 +16,7 @@ namespace Luna_BRF
 				return this.props as CompProperties_LunaInfectedTerrainSpread;
 			}
 		}
+		public float workingSpeedMultiplier;
 		protected bool Active
 		{
 			get
@@ -52,7 +54,7 @@ namespace Luna_BRF
 		{
 			get
 			{
-				return Find.TickManager.TicksGame + this.Props.spawnTickRate.RandomInRange;
+				return Find.TickManager.TicksGame + (int)(this.Props.spawnTickRate.RandomInRange / workingSpeedMultiplier);
 			}
 		}
 		public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -111,7 +113,102 @@ namespace Luna_BRF
 		{
 			this.parent.Map.terrainGrid.SetTerrain(cell, this.Props.terrainToSet);
 		}
+		public override IEnumerable<Gizmo> CompGetGizmosExtra()
+		{
+			foreach (Gizmo item in base.CompGetGizmosExtra())
+			{
+				yield return item;
+			}
+			yield return new Command_Action
+			{
+				defaultLabel = "BRF_WorkingSpeedMultiplierReduced".Translate(),
+				defaultDesc = "BRF_WorkingSpeedMultiplierReduced_Desc".Translate(),
+				action = delegate
+				{
+					float oldSpeed = workingSpeedMultiplier;
 
+					if (oldSpeed > 1)
+					{
+						workingSpeedMultiplier -= 1f;
+                    }
+                    else
+					{
+						workingSpeedMultiplier -= 0.25f;
+					}
+					workingSpeedMultiplier = Mathf.Clamp(workingSpeedMultiplier, 0.01f, 10f);
+					this.nextTickEffect = (int)( (this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier );
+				},
+				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower")
+			};
+			yield return new Command_Action
+			{
+				defaultLabel = "BRF_WorkingSpeedMultiplierReset".Translate(),
+				defaultDesc = "BRF_WorkingSpeedMultiplierReset_Desc".Translate(),
+				action = delegate
+				{
+					workingSpeedMultiplier = 1f;
+				},
+				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempReset")
+			};
+			yield return new Command_Action
+			{
+				defaultLabel = "BRF_WorkingSpeedMultiplierAdded".Translate(),
+				defaultDesc = "BRF_WorkingSpeedMultiplierAdded_Desc".Translate(),
+				action = delegate
+				{
+					float oldSpeed = workingSpeedMultiplier;
+
+					if (oldSpeed >= 1)
+					{
+						workingSpeedMultiplier += 1f;
+					}
+					else
+					{
+                        switch (workingSpeedMultiplier)
+                        {
+							default:
+								workingSpeedMultiplier = 1f;
+								break;
+							case 0.01f:
+								workingSpeedMultiplier = 0.25f;
+								break;
+							case 0.25f:
+								workingSpeedMultiplier = 0.5f;
+								break;
+							case 0.5f:
+								workingSpeedMultiplier = 0.75f;
+								break;
+						}
+					}
+					workingSpeedMultiplier = Mathf.Clamp(workingSpeedMultiplier, 0.01f, 10f);
+					this.nextTickEffect = (int)((this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier);
+				},
+				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower")
+			};
+		}
+		public override void PostPostMake()
+		{
+			workingSpeedMultiplier = Props.baseWorkingSpeedMultiplier;
+		}
+		public override void PostExposeData()
+		{
+			base.PostExposeData();
+			Scribe_Values.Look(ref workingSpeedMultiplier, "BRF_CompWorkingSpeedMultiplier", 1f);
+		}
+		public override string CompInspectStringExtra()
+        {
+			string text = "BRF_CompWorkingSpeedMultiplier".Translate() + workingSpeedMultiplier;
+			if(this.compFuel != null && this.compFuel.HasFuel)
+            {
+                if (!compFuel.Props.consumeFuelOnlyWhenUsed)
+				{
+					int numTicks = (int)((compFuel.Fuel / compFuel.Props.fuelConsumptionRate * 60000f) / workingSpeedMultiplier);
+					text = text + "\n(" + "BRF_CompWorkingSpeedTrulyFuelConsume".Translate() + numTicks.ToStringTicksToPeriod() + ")";
+				}
+			}
+			return text;
+
+		}
 		public int nextTickEffect;
 		public CompRefuelable compFuel;
 	}
