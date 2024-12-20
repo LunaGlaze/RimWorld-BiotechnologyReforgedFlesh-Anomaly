@@ -183,7 +183,7 @@ namespace Luna_BRF
 					workingSpeedMultiplier = Mathf.Clamp(workingSpeedMultiplier, 0.01f, 10f);
 					this.nextTickEffect = (int)((this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier);
 				},
-				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower")
+				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempRaise")
 			};
 		}
 		public override void PostPostMake()

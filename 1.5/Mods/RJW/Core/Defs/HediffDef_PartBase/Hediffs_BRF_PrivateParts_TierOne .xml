@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--阴茎-->
+	<ThingDef ParentName="BRF_FleshBodyPart_GenMaleThing">
+		<defName>BRF_FleshMadePenis</defName>
+		<label>flesh-made penis</label>
+		<description>A flesh-made penis.</description>
+        <descriptionHyperlinks><RecipeDef>BRF_AddMultiFleshMadePenis</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>45</MarketValue>
+            <WorkToMake>5000</WorkToMake>
+			<Mass>0.16</Mass>
+		</statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_CookMeal</soundWorking>
+            <recipeUsers>
+                <li>BRF_BioForge</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+            <BRF_BoneFragment>5</BRF_BoneFragment>
+            <BRF_LivingFlesh>1</BRF_LivingFlesh>
+        </costList>
+	</ThingDef>
+
+	<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_PenisBase">
+		<defName>BRF_FleshMadePenis</defName>
+		<label>flesh-made penis</label>
+		<labelNoun>a flesh-made penis</labelNoun>
+		<description>A flesh-made penis. The technique of reforging flesh makes it impervious to STDs.</description>
+		<descriptionHyperlinks><ThingDef>BRF_FleshMadePenis</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BRF_FleshMadePenis</spawnThingOnRemoved>
+	</rjw.HediffDef_PartBase>
+    
+	<RecipeDef ParentName="MultiPenis">
+		<defName>BRF_AddMultiFleshMadePenis</defName>
+		<label>add flesh-made penis</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadePenis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadePenis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadePenis</addsHediff>
+	</RecipeDef>
+
+<!--阴道-->
+	<ThingDef ParentName="BRF_FleshBodyPart_GenFemaleThing">
+		<defName>BRF_FleshMadeVagina</defName>
+		<label>flesh-made vagina</label>
+		<description>A flesh-made vagina.</description>
+        <descriptionHyperlinks><RecipeDef>BRF_AddMultiFleshMadeVagina</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>45</MarketValue>
+            <WorkToMake>5000</WorkToMake>
+			<Mass>0.16</Mass>
+		</statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_CookMeal</soundWorking>
+            <recipeUsers>
+                <li>BRF_BioForge</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+            <BRF_BoneFragment>5</BRF_BoneFragment>
+            <BRF_LivingFlesh>1</BRF_LivingFlesh>
+        </costList>
+	</ThingDef>
+	
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
+		<defName>BRF_FleshMadeVagina</defName>
+		<label>flesh-made vagina</label>
+		<labelNoun>a flesh-made vagina</labelNoun>
+		<description>A flesh-made vagina. The technique of reforging flesh makes it impervious to STDs.</description>
+		<descriptionHyperlinks><ThingDef>BRF_FleshMadeVagina</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BRF_FleshMadeVagina</spawnThingOnRemoved>
+	</rjw.HediffDef_PartBase>
+
+	<RecipeDef ParentName="MultiVagina">
+		<defName>BRF_AddMultiFleshMadeVagina</defName>
+		<label>add flesh-made vagina</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeVagina</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeVagina</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeVagina</addsHediff>
+	</RecipeDef>
+
+<!--肛门-->
+	<ThingDef ParentName="BRF_FleshBodyPart_AnusThing">
+		<defName>BRF_FleshMadeAnus</defName>
+		<label>flesh-made anus</label>
+		<description>An flesh-made anus.</description>
+        <descriptionHyperlinks><RecipeDef>BRF_AddMultiFleshMadeAnus</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>45</MarketValue>
+            <WorkToMake>5000</WorkToMake>
+			<Mass>0.16</Mass>
+		</statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_CookMeal</soundWorking>
+            <recipeUsers>
+                <li>BRF_BioForge</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+            <BRF_BoneFragment>5</BRF_BoneFragment>
+            <BRF_LivingFlesh>1</BRF_LivingFlesh>
+        </costList>
+	</ThingDef>
+    
+	<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_AnusBase">
+		<defName>BRF_FleshMadeAnus</defName>
+		<label>flesh-made anus</label>
+		<labelNoun>an flesh-made anus</labelNoun>
+		<description>A flesh-made anus. The technique of reforging flesh makes it impervious to STDs.</description>
+		<descriptionHyperlinks><ThingDef>BRF_FleshMadeAnus</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BRF_FleshMadeAnus</spawnThingOnRemoved>
+	</rjw.HediffDef_PartBase>
+    
+	<RecipeDef ParentName="MultiAnus">
+		<defName>BRF_AddMultiFleshMadeAnus</defName>
+		<label>add flesh-made anus</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeAnus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeAnus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeAnus</addsHediff>
+	</RecipeDef>
+
+<!--乳房-->
+	<ThingDef ParentName="BRF_FleshBodyPart_BreastThing">
+		<defName>BRF_FleshMadeBreasts</defName>
+		<label>flesh-made breasts</label>
+		<description>A pair of flesh-made breasts.</description>
+        <descriptionHyperlinks><RecipeDef>BRF_AddMultiFleshMadeBreasts</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>45</MarketValue>
+            <WorkToMake>5000</WorkToMake>
+			<Mass>0.69</Mass>
+		</statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_CookMeal</soundWorking>
+            <recipeUsers>
+                <li>BRF_BioForge</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+            <BRF_BoneFragment>5</BRF_BoneFragment>
+            <BRF_LivingFlesh>1</BRF_LivingFlesh>
+        </costList>
+	</ThingDef>
+    
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartBreast">
+		<defName>BRF_FleshMadeBreasts</defName>
+		<label>flesh-made breasts</label>
+		<labelNoun>a pair of flesh-made breasts</labelNoun>
+		<description>A pair of flesh-made breasts. The technique of reforging flesh makes it impervious to STDs.</description>
+		<descriptionHyperlinks><ThingDef>BRF_FleshMadeBreasts</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BRF_FleshMadeBreasts</spawnThingOnRemoved>
+	</rjw.HediffDef_PartBase>
+    
+	<RecipeDef ParentName="MultiBreast">
+		<defName>BRF_AddMultiFleshMadeBreasts</defName>
+		<label>add flesh-made breasts</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeBreasts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeBreasts</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeBreasts</addsHediff>
+	</RecipeDef>
+    
+</Defs>

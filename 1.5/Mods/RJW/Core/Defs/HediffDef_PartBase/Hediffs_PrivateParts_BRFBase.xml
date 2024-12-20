@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--基础父类-->
+    <!--阴茎-->
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartPenis"  Name="BRF_FleshBodyPart_PenisBase" Abstract="True">
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <isBad>false</isBad>
+		<modExtensions>
+			<li Class="rjw.PartProps">
+				<props>
+					<li>STDImmune</li>
+				</props>
+			</li>
+		</modExtensions>
+	</rjw.HediffDef_PartBase>
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale"  Name="BRF_FleshBodyPart_GenMaleThing" Abstract="True">
+		<graphicData>
+			<color>(203,101,102)</color>
+		</graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+        </thingCategories>
+	    <tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable" Inherit="False">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+    <!--阴道-->
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina"  Name="BRF_FleshBodyPart_VaginaBase" Abstract="True">
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <isBad>false</isBad>
+		<modExtensions>
+			<li Class="rjw.PartProps">
+				<props>
+					<li>STDImmune</li>
+				</props>
+			</li>
+		</modExtensions>
+	</rjw.HediffDef_PartBase>
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale"  Name="BRF_FleshBodyPart_GenFemaleThing" Abstract="True">
+		<graphicData>
+			<color>(203,101,102)</color>
+		</graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+        </thingCategories>
+	    <tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable" Inherit="False">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+    <!--肛门-->
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartAnus"  Name="BRF_FleshBodyPart_AnusBase" Abstract="True">
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <isBad>false</isBad>
+		<modExtensions>
+			<li Class="rjw.PartProps">
+				<props>
+					<li>STDImmune</li>
+				</props>
+			</li>
+		</modExtensions>
+	</rjw.HediffDef_PartBase>
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseAnus"  Name="BRF_FleshBodyPart_AnusThing" Abstract="True">
+		<graphicData>
+			<color>(203,101,102)</color>
+		</graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+        </thingCategories>
+	    <tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable" Inherit="False">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+    <!--乳房-->
+	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartBreast"  Name="BRF_FleshBodyPart_BreastBase" Abstract="True">
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <isBad>false</isBad>
+		<modExtensions>
+			<li Class="rjw.PartProps">
+				<props>
+					<li>STDImmune</li>
+				</props>
+			</li>
+		</modExtensions>
+	</rjw.HediffDef_PartBase>
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseBreast"  Name="BRF_FleshBodyPart_BreastThing" Abstract="True">
+		<graphicData>
+			<color>(203,101,102)</color>
+		</graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+        </thingCategories>
+	    <tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable" Inherit="False">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

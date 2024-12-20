@@ -3,7 +3,7 @@
 <name>MeatCore[血肉重铸]Bio-Anomaly Flesh Reforged</name>
 <author>幽月琉璃Luna</author>
 <packageId>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</packageId>
-<modVersion>0.2.2</modVersion>
+<modVersion>0.2.3</modVersion>
 <modIconPath>Items/Resource/RecastFleshCube</modIconPath>
 <supportedVersions>
 	<li>1.5</li>
@@ -99,5 +99,6 @@ This mod is only tested in the author's personal gaming environment before relea
     <li>Rah.RBSE</li>
     <li>TranslucencY.BrainInAJar</li>
     <li>anomaly.corpration</li>
+    <li>rim.job.world</li>
 </loadAfter>
 </ModMetaData>
