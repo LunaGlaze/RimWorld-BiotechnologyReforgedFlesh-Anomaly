@@ -72,6 +72,68 @@
 		</fixedIngredientFilter>
 		<addsHediff>BRF_FleshMadePenis</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="FutaMakingF">
+		<defName>BRF_AddFleshMadePenis</defName>
+		<label>add flesh-made penis</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadePenis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadePenis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadePenis</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SexReassignmentP">
+		<defName>BRF_AttachFleshMadePenis</defName>
+		<label>attach flesh-made penis</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadePenis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadePenis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadePenis</addsHediff>
+	</RecipeDef>
 
 <!--阴道-->
 	<ThingDef ParentName="BRF_FleshBodyPart_GenFemaleThing">
@@ -117,6 +179,68 @@
 	<RecipeDef ParentName="MultiVagina">
 		<defName>BRF_AddMultiFleshMadeVagina</defName>
 		<label>add flesh-made vagina</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeVagina</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeVagina</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeVagina</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="FutaMakingM">
+		<defName>BRF_AddFleshMadeVagina</defName>
+		<label>add average flesh-made vagina</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeVagina</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeVagina</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeVagina</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SexReassignmentV">
+		<defName>BRF_InstallFleshMadeVagina</defName>
+		<label>install flesh-made vagina</label>
 		<ingredients>
 			<li>
 				<filter>
@@ -218,6 +342,37 @@
 		</fixedIngredientFilter>
 		<addsHediff>BRF_FleshMadeAnus</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AnalSurgery">
+		<defName>BRF_InstallFleshMadeAnus</defName>
+		<label>install average flesh-made anus</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeAnus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeAnus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeAnus</addsHediff>
+	</RecipeDef>
 
 <!--乳房-->
 	<ThingDef ParentName="BRF_FleshBodyPart_BreastThing">
@@ -263,6 +418,37 @@
 	<RecipeDef ParentName="MultiBreast">
 		<defName>BRF_AddMultiFleshMadeBreasts</defName>
 		<label>add flesh-made breasts</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BRF_FleshMadeBreasts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>BRF_FleshMadeBreasts</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>BRF_FleshMadeBreasts</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="BreastSurgery">
+		<defName>BRF_AttachFleshMadeBreasts</defName>
+		<label>attach flesh-made breasts</label>
 		<ingredients>
 			<li>
 				<filter>
