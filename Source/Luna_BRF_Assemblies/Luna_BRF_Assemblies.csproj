@@ -66,6 +66,7 @@
     <Compile Include="Entity\CompProperties_BloodstainedTickParasitic.cs" />
     <Compile Include="Entity\CompProperties_EntityNecrophagia.cs" />
     <Compile Include="Entity\CompProperties_NecrophagistEntity.cs" />
+    <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssaultLittle.cs" />
     <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssault.cs" />
     <Compile Include="Entity\JobGiver_BloodstainedTickParasitic.cs" />
     <Compile Include="Harmony\HarmonyPatchInit.cs" />

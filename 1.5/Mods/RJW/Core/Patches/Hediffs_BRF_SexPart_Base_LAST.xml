@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/rjw.HediffDef_SexPart[defName = "Penis"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+				<!--阴茎-->
+				<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis"  Name="BRF_FleshBodyPart_PenisBase" Abstract="True">
+					<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+					<isBad>false</isBad>
+					<partTags>
+						<li>STDImmune</li>
+					</partTags>
+				</rjw.HediffDef_SexPart>
+				<!--阴道-->
+				<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina"  Name="BRF_FleshBodyPart_VaginaBase" Abstract="True">
+					<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+					<isBad>false</isBad>
+					<partTags>
+						<li>STDImmune</li>
+					</partTags>
+				</rjw.HediffDef_SexPart>
+				<!--肛门-->
+				<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartAnus"  Name="BRF_FleshBodyPart_AnusBase" Abstract="True">
+					<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+					<isBad>false</isBad>
+					<partTags>
+						<li>STDImmune</li>
+					</partTags>
+				</rjw.HediffDef_SexPart>
+				<!--乳房-->
+				<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartBreast"  Name="BRF_FleshBodyPart_BreastBase" Abstract="True">
+					<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+					<isBad>false</isBad>
+					<partTags>
+						<li>STDImmune</li>
+					</partTags>
+				</rjw.HediffDef_SexPart>
+            </value>
+        </match>
+    </Operation>
+</Patch>

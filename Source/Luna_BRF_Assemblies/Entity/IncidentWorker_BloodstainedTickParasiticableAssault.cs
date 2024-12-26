@@ -43,8 +43,21 @@ namespace Luna_BRF
 				}
 			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(defaultPawnGroupMakerParms).ToList();
-			Pawn basePawn = PawnGenerator.GeneratePawn(PawnKindDefOf.Spelopede, Faction.OfEntities);
-			list.Add(basePawn);
+			if (ModsConfig.AnomalyActive)
+			{
+				Pawn basePawn = PawnGenerator.GeneratePawn(PawnKindDefOf.Megascarab, Faction.OfEntities);
+				if (Find.Anomaly.LevelDef.anomalyThreatTier < 1 && Find.Anomaly.LevelDef.anomalyThreatTier >= 0)
+				{
+					basePawn = PawnGenerator.GeneratePawn(PawnKindDefOf.Spelopede, Faction.OfEntities);
+				}else{
+					basePawn = PawnGenerator.GeneratePawn(PawnKindDefOf.Megaspider, Faction.OfEntities);
+					if (Find.Anomaly.LevelDef.anomalyThreatTier > 2)
+					{
+						list.Add(basePawn);
+					}
+				}
+				list.Add(basePawn);
+			}
 			if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
 			{
 				return false;

@@ -31,15 +31,6 @@
             <BRF_LivingFlesh>1</BRF_LivingFlesh>
         </costList>
 	</ThingDef>
-
-	<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_PenisBase">
-		<defName>BRF_FleshMadePenis</defName>
-		<label>flesh-made penis</label>
-		<labelNoun>a flesh-made penis</labelNoun>
-		<description>A flesh-made penis. The technique of reforging flesh makes it impervious to STDs.</description>
-		<descriptionHyperlinks><ThingDef>BRF_FleshMadePenis</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>BRF_FleshMadePenis</spawnThingOnRemoved>
-	</rjw.HediffDef_PartBase>
     
 	<RecipeDef ParentName="MultiPenis">
 		<defName>BRF_AddMultiFleshMadePenis</defName>
@@ -70,37 +61,9 @@
 				<li>BRF_FleshMadePenis</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<addsHediff>BRF_FleshMadePenis</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="FutaMakingF">
-		<defName>BRF_AddFleshMadePenis</defName>
-		<label>add flesh-made penis</label>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>BRF_FleshMadePenis</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>BRF_FleshMadePenis</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Genitals</li>
+		</appliedOnFixedBodyParts>
 		<addsHediff>BRF_FleshMadePenis</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="SexReassignmentP">
@@ -166,15 +129,6 @@
             <BRF_LivingFlesh>1</BRF_LivingFlesh>
         </costList>
 	</ThingDef>
-	
-	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
-		<defName>BRF_FleshMadeVagina</defName>
-		<label>flesh-made vagina</label>
-		<labelNoun>a flesh-made vagina</labelNoun>
-		<description>A flesh-made vagina. The technique of reforging flesh makes it impervious to STDs.</description>
-		<descriptionHyperlinks><ThingDef>BRF_FleshMadeVagina</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>BRF_FleshMadeVagina</spawnThingOnRemoved>
-	</rjw.HediffDef_PartBase>
 
 	<RecipeDef ParentName="MultiVagina">
 		<defName>BRF_AddMultiFleshMadeVagina</defName>
@@ -205,37 +159,9 @@
 				<li>BRF_FleshMadeVagina</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<addsHediff>BRF_FleshMadeVagina</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="FutaMakingM">
-		<defName>BRF_AddFleshMadeVagina</defName>
-		<label>add average flesh-made vagina</label>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>BRF_FleshMadeVagina</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>BRF_FleshMadeVagina</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Genitals</li>
+		</appliedOnFixedBodyParts>
 		<addsHediff>BRF_FleshMadeVagina</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="SexReassignmentV">
@@ -302,15 +228,6 @@
         </costList>
 	</ThingDef>
     
-	<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_AnusBase">
-		<defName>BRF_FleshMadeAnus</defName>
-		<label>flesh-made anus</label>
-		<labelNoun>an flesh-made anus</labelNoun>
-		<description>A flesh-made anus. The technique of reforging flesh makes it impervious to STDs.</description>
-		<descriptionHyperlinks><ThingDef>BRF_FleshMadeAnus</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>BRF_FleshMadeAnus</spawnThingOnRemoved>
-	</rjw.HediffDef_PartBase>
-    
 	<RecipeDef ParentName="MultiAnus">
 		<defName>BRF_AddMultiFleshMadeAnus</defName>
 		<label>add flesh-made anus</label>
@@ -340,6 +257,9 @@
 				<li>BRF_FleshMadeAnus</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Anus</li>
+		</appliedOnFixedBodyParts>
 		<addsHediff>BRF_FleshMadeAnus</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AnalSurgery">
@@ -406,15 +326,6 @@
         </costList>
 	</ThingDef>
     
-	<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartBreast">
-		<defName>BRF_FleshMadeBreasts</defName>
-		<label>flesh-made breasts</label>
-		<labelNoun>a pair of flesh-made breasts</labelNoun>
-		<description>A pair of flesh-made breasts. The technique of reforging flesh makes it impervious to STDs.</description>
-		<descriptionHyperlinks><ThingDef>BRF_FleshMadeBreasts</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>BRF_FleshMadeBreasts</spawnThingOnRemoved>
-	</rjw.HediffDef_PartBase>
-    
 	<RecipeDef ParentName="MultiBreast">
 		<defName>BRF_AddMultiFleshMadeBreasts</defName>
 		<label>add flesh-made breasts</label>
@@ -444,6 +355,9 @@
 				<li>BRF_FleshMadeBreasts</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Chest</li>
+		</appliedOnFixedBodyParts>
 		<addsHediff>BRF_FleshMadeBreasts</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="BreastSurgery">

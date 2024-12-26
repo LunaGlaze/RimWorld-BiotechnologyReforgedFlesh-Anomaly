@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/rjw.HediffDef_PartBase[defName = "Penis"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+				<!--阴茎-->
+				<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_PenisBase">
+					<defName>BRF_FleshMadePenis</defName>
+					<label>flesh-made penis</label>
+					<labelNoun>a flesh-made penis</labelNoun>
+					<description>A flesh-made penis. The technique of reforging flesh makes it impervious to STDs.</description>
+					<descriptionHyperlinks>
+						<ThingDef>BRF_FleshMadePenis</ThingDef>
+					</descriptionHyperlinks>
+					<spawnThingOnRemoved>BRF_FleshMadePenis</spawnThingOnRemoved>
+				</rjw.HediffDef_PartBase>
+				<!--阴道-->
+				<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartVagina">
+					<defName>BRF_FleshMadeVagina</defName>
+					<label>flesh-made vagina</label>
+					<labelNoun>a flesh-made vagina</labelNoun>
+					<description>A flesh-made vagina. The technique of reforging flesh makes it impervious to STDs.</description>
+					<descriptionHyperlinks>
+						<ThingDef>BRF_FleshMadeVagina</ThingDef>
+					</descriptionHyperlinks>
+					<spawnThingOnRemoved>BRF_FleshMadeVagina</spawnThingOnRemoved>
+				</rjw.HediffDef_PartBase>
+				<!--肛门-->
+				<rjw.HediffDef_PartBase ParentName="BRF_FleshBodyPart_AnusBase">
+					<defName>BRF_FleshMadeAnus</defName>
+					<label>flesh-made anus</label>
+					<labelNoun>an flesh-made anus</labelNoun>
+					<description>A flesh-made anus. The technique of reforging flesh makes it impervious to STDs.</description>
+					<descriptionHyperlinks>
+						<ThingDef>BRF_FleshMadeAnus</ThingDef>
+					</descriptionHyperlinks>
+					<spawnThingOnRemoved>BRF_FleshMadeAnus</spawnThingOnRemoved>
+				</rjw.HediffDef_PartBase>
+				<!--乳房-->
+				<rjw.HediffDef_PartBase ParentName="NaturalPrivatePartBreast">
+					<defName>BRF_FleshMadeBreasts</defName>
+					<label>flesh-made breasts</label>
+					<labelNoun>a pair of flesh-made breasts</labelNoun>
+					<description>A pair of flesh-made breasts. The technique of reforging flesh makes it impervious to STDs.</description>
+					<descriptionHyperlinks>
+						<ThingDef>BRF_FleshMadeBreasts</ThingDef>
+					</descriptionHyperlinks>
+					<spawnThingOnRemoved>BRF_FleshMadeBreasts</spawnThingOnRemoved>
+				</rjw.HediffDef_PartBase>
+            </value>
+        </match>
+    </Operation>
+</Patch>

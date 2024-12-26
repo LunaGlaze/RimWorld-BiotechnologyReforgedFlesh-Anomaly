@@ -16,10 +16,22 @@
 
   <IncidentDef ParentName="EntityAttackBase">
     <defName>BRF_BloodstainedParasiticedInsectAssault</defName>
-    <label>Clump Assault</label>
+    <label>Parasiticed Insect</label>
     <workerClass>Luna_BRF.IncidentWorker_BloodstainedTickParasiticableAssault</workerClass>
     <baseChance>0.95</baseChance>
     <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
+    <letterLabel>Parasiticed Insects Assault</letterLabel>
+    <letterText>Some swarms of entity-parasitized bugs have come to your colony, and they have gone berserk from the entity's parasitism!</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <earliestDay>15</earliestDay>
+	  <codexEntry>BRF_BloodstainedTick</codexEntry>
+  </IncidentDef>
+
+  <IncidentDef ParentName="EntityAttackBase">
+    <defName>BRF_LittleBloodstainedParasiticedInsectAssault</defName>
+    <label>Little Parasiticed Insect</label>
+    <workerClass>Luna_BRF.IncidentWorker_BloodstainedTickParasiticableAssaultLittle</workerClass>
+    <baseChance>0.5</baseChance>
     <letterLabel>Parasiticed Insects Assault</letterLabel>
     <letterText>Some swarms of entity-parasitized bugs have come to your colony, and they have gone berserk from the entity's parasitism!</letterText>
     <letterDef>ThreatBig</letterDef>

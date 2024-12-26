@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[@Name="FutaMakingF"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+				<RecipeDef ParentName="FutaMakingF">
+					<defName>BRF_AddFleshMadePenis</defName>
+					<label>add flesh-made penis</label>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>BRF_FleshMadePenis</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Medicine</li>
+						</categories>
+						<thingDefs>
+							<li>BRF_FleshMadePenis</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<addsHediff>BRF_FleshMadePenis</addsHediff>
+				</RecipeDef>
+            </value>
+        </match>
+    </Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/RecipeDef[@Name="FutaMakingM"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<RecipeDef ParentName="FutaMakingM">
+					<defName>BRF_AddFleshMadeVagina</defName>
+					<label>add average flesh-made vagina</label>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>BRF_FleshMadeVagina</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Medicine</li>
+						</categories>
+						<thingDefs>
+							<li>BRF_FleshMadeVagina</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<addsHediff>BRF_FleshMadeVagina</addsHediff>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
