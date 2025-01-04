@@ -62,7 +62,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2.9</glowRadius>
-				<glowColor>(131,16,16,0)</glowColor>
+				<glowColor>(150,75,100,50)</glowColor>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
@@ -145,7 +145,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
-        <glowColor>(131,16,16,0)</glowColor>
+        <glowColor>(150,75,100,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -221,7 +221,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>2.9</glowRadius>
-        <glowColor>(131,16,16,0)</glowColor>
+        <glowColor>(150,75,100,0)</glowColor>
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>

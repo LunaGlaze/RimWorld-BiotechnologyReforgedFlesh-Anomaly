@@ -172,6 +172,11 @@
         <chanceFactor>0.1</chanceFactor>
       </li>
     </tools>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDisallowManhunterTarget">
+            <disallowFindPawnTargetManhunter>true</disallowFindPawnTargetManhunter>
+        </li>
+    </modExtensions>
   </ThingDef>
 <!--PawnAI树-->
   <ThinkTreeDef>

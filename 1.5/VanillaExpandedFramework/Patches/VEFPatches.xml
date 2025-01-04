@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="BRF_MutationsRelicFlesh"]/comps/li[@Class="Luna_BRF.CompProperties_AnimalProduct"]</xpath>
+        <value>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <gatheringIntervalDays>5</gatheringIntervalDays>
+                <resourceAmount>1</resourceAmount>
+                <customResourceString>BRF_MutationsRelicImplantsDesc</customResourceString>
+                <isRandom>true</isRandom>
+                <randomItems>
+                    <li>BRF_FleshTentacle</li>
+                    <li>BRF_FleshWhip</li>
+                    <li>BRF_FleshPseudoLeg</li>
+                    <li>BRF_FleshBrachiopod</li>
+                    <li>BRF_FleshmassStomach</li>
+                    <li>BRF_FleshmassLung</li>
+                    <li>BRF_FleshmassKidney</li>
+                    <li>BRF_FleshmassLiver</li>
+                    <li>BRF_FleshmassEye</li>
+                    <li>BRF_FleshmassEar</li>
+                    <li>BRF_FleshmassNose</li>
+                    <li>BRF_FleshmassTongue</li>
+                </randomItems>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

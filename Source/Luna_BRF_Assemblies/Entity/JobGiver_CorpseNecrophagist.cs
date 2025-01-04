@@ -19,6 +19,16 @@ namespace Luna_BRF
             }
 			List<Thing> corpses = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse)
 				.Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.RaceProps.IsFlesh).ToList();
+			if(Rand.Bool && pawn.Map.mapPawns.AllPawnsSpawned != null)
+			{
+				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
+				{
+					if (item.AnimalOrWildMan() && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction)
+					{
+						return new LocalTargetInfo(item);
+					}
+				}
+			}
 			if (corpses.Count > 0)
 			{
 				Thing closestValidCorpse = GenClosest.ClosestThing_Global_Reachable(
@@ -38,6 +48,10 @@ namespace Luna_BRF
 				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 				{
 					if (item.health.State == PawnHealthState.Down && item.RaceProps.IsFlesh && item.Faction != ability.pawn.Faction)
+					{
+						return new LocalTargetInfo(item);
+					}
+					if (item.AnimalOrWildMan() && item.kindDef.combatPower <= 500 && item.Faction != ability.pawn.Faction)
 					{
 						return new LocalTargetInfo(item);
 					}

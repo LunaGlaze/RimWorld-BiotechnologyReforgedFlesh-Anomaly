@@ -109,7 +109,7 @@ namespace Luna_BRF
 			{
 				return 0;
 			}
-			int num = Mathf.CeilToInt(5000f * DigestingPawn.BodySize / Pawn.BodySize);
+			int num = Mathf.CeilToInt(2000f * DigestingPawn.BodySize / Pawn.BodySize);
 			return num;
 		}
 		public void CompleteDigestion()
@@ -131,11 +131,11 @@ namespace Luna_BRF
 			Hediff firstHediff = Pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_RapidRegeneration);
 			if (firstHediff != null && isflesh)
 			{
-				firstHediff.Severity += (bodySize/50) ;
+				firstHediff.Severity += (bodySize/25) ;
             }else if (isflesh)
             {
 				Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, Pawn);
-				hediff.Severity = bodySize/50;
+				hediff.Severity = bodySize/25;
 				Pawn.health.AddHediff(hediff);
 			}
 			if (Pawn.Drawer.renderer.CurAnimation == AnimationDefOf.DevourerDigesting)

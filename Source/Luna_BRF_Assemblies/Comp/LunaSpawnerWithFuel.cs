@@ -47,7 +47,12 @@ namespace Luna_BRF
 
 		public override void CompTick()
 		{
-			this.TickInterval(1);
+			int i = Math.Min(this.ticksUntilSpawn, 50);
+			bool flag = parent.IsHashIntervalTick(i);
+			if (flag)
+			{
+				this.TickInterval(i);
+			}
 		}
 
 		public override void CompTickRare()

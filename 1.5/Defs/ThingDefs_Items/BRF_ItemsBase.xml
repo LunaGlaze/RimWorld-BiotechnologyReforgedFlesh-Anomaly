@@ -81,6 +81,9 @@
   <ThingDef Name="BRF_LivingMaterialBase" Abstract="True" ParentName="BRF_RawFoodBase">
     <label>Base Living Material Properties</label>
     <tradeability>None</tradeability>
+    <statBases>
+      <FoodPoisonChanceFixedHuman>0.15</FoodPoisonChanceFixedHuman>
+    </statBases>
     <ingestible>
       <preferability>DesperateOnly</preferability>
       <specialThoughtDirect>BRF_AteLivingMeat</specialThoughtDirect>
@@ -152,6 +155,9 @@
     <stackLimit>150</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <selectable>true</selectable>
+    <statBases>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
     <ingestible>
       <foodType>AnimalProduct</foodType>
       <preferability>RawTasty</preferability>

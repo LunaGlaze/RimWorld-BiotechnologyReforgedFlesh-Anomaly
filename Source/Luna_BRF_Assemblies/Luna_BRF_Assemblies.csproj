@@ -90,6 +90,7 @@
     <Compile Include="Cothy\JobDriver_AnimalResource.cs" />
     <Compile Include="LunaBRFBaseUtility.cs" />
     <Compile Include="LunaBRFHediffUtility.cs" />
+    <Compile Include="Entity\ExtensionDef_LunaDisallowManhunterTarget.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonClumps.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonSwarms.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_SummonClumps.cs" />

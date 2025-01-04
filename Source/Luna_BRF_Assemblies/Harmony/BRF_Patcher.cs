@@ -23,11 +23,20 @@ namespace Luna_BRF
     {
         static void Postfix(ref Pawn __result, Pawn pawn, bool canBashFences, bool canBashDoors)
         {
-            if (__result.def == ThingDef.Named("BRF_BloodstainedTick") || __result.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_ScarletFever) != null || __result.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_BloodstainedTickParasiticed) != null)
+            if (flag(__result))
             {
-                Pawn newpawn = (Pawn)AttackTargetFinder.BestAttackTarget(pawn, TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable, (Thing x) => x is Pawn y && (int)x.def.race.intelligence >= 1 && x.def != ThingDef.Named("BRF_BloodstainedTick") && y.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_BloodstainedTickParasiticed) == null, 0f, 9999f, default(IntVec3), float.MaxValue, canBashDoors, canTakeTargetsCloserThanEffectiveMinRange: true, canBashFences);
+                Pawn newpawn = (Pawn)AttackTargetFinder.BestAttackTarget(pawn, 
+                    TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable, 
+                    (Thing x) => x is Pawn y && (int)x.def.race.intelligence >= 1 && !flag(y),
+                    0f, 9999f, default(IntVec3), float.MaxValue, canBashDoors, canTakeTargetsCloserThanEffectiveMinRange: true, canBashFences);
                 __result = newpawn;
             }
+        }
+        static bool flag(Pawn pawn)
+        {
+            ExtensionDef_LunaDisallowManhunterTarget pawnProps = pawn.def.GetModExtension<ExtensionDef_LunaDisallowManhunterTarget>();
+            if(pawnProps != null) { return pawnProps.disallowFindPawnTargetManhunter; }
+            else { return pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_BloodstainedTickParasiticed")) != null; }
         }
     }
     [HarmonyPatch(typeof(CompRefuelable), nameof(CompRefuelable.ConsumeFuel))]

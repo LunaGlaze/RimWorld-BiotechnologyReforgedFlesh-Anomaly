@@ -29,7 +29,12 @@ namespace Luna_BRF
 
 		public override void CompTick()
 		{
-			this.Tick(1);
+			int i = Math.Min(this.Props.ticksPerHeal,50);
+			bool flag = parent.IsHashIntervalTick(i);
+			if (flag)
+			{
+				this.Tick(i);
+			}
 		}
 
 		public override void CompTickRare()

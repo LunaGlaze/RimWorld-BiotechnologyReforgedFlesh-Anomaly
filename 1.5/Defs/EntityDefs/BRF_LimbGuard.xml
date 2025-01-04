@@ -112,7 +112,7 @@
     <tradeability>None</tradeability>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <race>
-      <thinkTreeMain>Fleshbeast</thinkTreeMain>
+      <thinkTreeMain>Animal</thinkTreeMain>
       <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
       <body>BRF_LimbGuard</body>
       <baseBodySize>0.75</baseBodySize>

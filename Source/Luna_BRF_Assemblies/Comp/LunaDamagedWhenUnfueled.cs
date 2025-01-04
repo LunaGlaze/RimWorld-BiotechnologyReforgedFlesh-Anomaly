@@ -4,7 +4,6 @@ using Verse;
 
 namespace Luna_BRF
 {
-	// Token: 0x02000028 RID: 40
 	public class LunaDamagedWhenUnfueled : ThingComp
 	{
 		public CompProperties_LunaDamagedWhenUnfueled Props
@@ -23,14 +22,17 @@ namespace Luna_BRF
 
 		public override void CompTick()
 		{
-			if (this.parent.IsHashIntervalTick(this.Props.interval) && this.refuelComp != null && !this.refuelComp.HasFuel)
+            if (this.parent.IsHashIntervalTick(this.Props.interval))
 			{
-				ThingWithComps parent = this.parent;
-				int hitPoints = parent.HitPoints;
-				parent.HitPoints = hitPoints - 1;
-				if (this.parent.HitPoints <= 0)
+				if (this.refuelComp != null && !this.refuelComp.HasFuel)
 				{
-					this.parent.Kill(null, null);
+					ThingWithComps parent = this.parent;
+					int hitPoints = parent.HitPoints;
+					parent.HitPoints = hitPoints - 1;
+					if (this.parent.HitPoints <= 0)
+					{
+						this.parent.Kill(null, null);
+					}
 				}
 			}
 		}

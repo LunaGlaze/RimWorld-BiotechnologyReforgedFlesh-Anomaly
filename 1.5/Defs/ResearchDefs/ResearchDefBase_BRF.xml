@@ -117,7 +117,7 @@
 		<defName>BRF_GoreSpineLauncherResearch</defName>
     	<label>Gorehulk Flesh Mass</label>
     	<description>By mimicking and using the remnants of Gorehulk, we get a whole new defense tech. An automated defense facility for living things that launches keratin spines at a target to do damage.</description>
-		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCost>10</knowledgeCost>
 		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Neolithic</techLevel>
