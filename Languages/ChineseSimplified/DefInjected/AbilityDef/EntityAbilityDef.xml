@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- BRF_PrimordialFleshBeast -->
+  <!-- 原始血肉兽 -->
 
   <BRF_Launch_PrimordialFleshBeast.label>发射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
 
+  <!-- 绯红活菌 -->
+
+  <BRF_Launch_CrimsonPus.label>绯红脓液</BRF_Launch_CrimsonPus.label>
 
   <!-- 实体位移 -->
 
@@ -23,4 +26,9 @@
   <BRF_BloodstainedTickParasitic.label>污血寄生</BRF_BloodstainedTickParasitic.label>
   <BRF_BloodstainedTickParasitic.description>钻入虫族的尸骸之中释放扭曲的肉体合成的纳米生物机械复活并狂化死去的虫族。</BRF_BloodstainedTickParasitic.description>
 
+<!--脑姦-->
+
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>脑姦</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>什么东西在受害者的脑子里进行活塞运动，并注入怪异的物质……令人毛骨悚然……</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+  
 </LanguageData>

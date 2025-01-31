@@ -18,14 +18,14 @@
   </SoundDef>
 
   <SoundDef>
-    <defName>MeleeHit_Flesh</defName>  
+    <defName>BRF_MeleeHit_Flesh</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>2</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>MeleeHit_Flesh</clipFolderPath>
+            <clipFolderPath>BRF_MeleeHit_Flesh</clipFolderPath>
           </li>
         </grains>      
         <volumeRange>15.34884~15.34884</volumeRange>      
@@ -53,14 +53,14 @@
   </SoundDef>
 
   <SoundDef>
-    <defName>Pawn_Flesh_Call</defName>  
+    <defName>BRF_Pawn_Flesh_Call</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawn_Flesh_Call</clipFolderPath>
+            <clipFolderPath>BRF_Pawn_Flesh_Call</clipFolderPath>
           </li>
         </grains>      
         <volumeRange>8~20</volumeRange>
@@ -69,14 +69,14 @@
     </subSounds>
   </SoundDef>
   <SoundDef>
-    <defName>Pawn_Flesh_Death</defName>  
+    <defName>BRF_Pawn_Flesh_Death</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Pawn_Flesh_Death</clipPath>
+            <clipPath>BRF_Pawn_Flesh_Death</clipPath>
           </li>
         </grains>      
         <volumeRange>8~20</volumeRange>
@@ -85,14 +85,14 @@
     </subSounds>
   </SoundDef>
     <SoundDef>
-    <defName>Pawn_Flesh_Angry</defName>  
+    <defName>BRF_Pawn_Flesh_Angry</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Pawn_Flesh_Angry</clipPath>
+            <clipPath>BRF_Pawn_Flesh_Angry</clipPath>
           </li>
         </grains>      
         <volumeRange>8~10</volumeRange>
@@ -104,7 +104,7 @@
   <SoundDef>
     <defName>BRF_Digester_Crafting</defName>
     <context>MapOnly</context>
-    <maxVoices>3</maxVoices>  
+    <maxVoices>1</maxVoices>  
     <priorityMode>PrioritizeNearest</priorityMode>  
     <subSounds>
       <li>
@@ -115,7 +115,7 @@
           </li>
         </grains>  
         <onCamera>True</onCamera>    
-        <volumeRange>15</volumeRange>      
+        <volumeRange>5</volumeRange>      
         <pitchRange>0.95~1.05</pitchRange>   
         <distRange>10~50</distRange>
         <sustainLoop>False</sustainLoop>
@@ -159,8 +159,8 @@
             <clipPath>BRF_BioTable/RadiationTumor_Working</clipPath>
           </li>
         </grains>      
-        <volumeRange>7~12</volumeRange>    
-        <distRange>5~20</distRange>
+        <volumeRange>10~16</volumeRange>    
+        <distRange>5~50</distRange>
       </li>
     </subSounds>
   </SoundDef>

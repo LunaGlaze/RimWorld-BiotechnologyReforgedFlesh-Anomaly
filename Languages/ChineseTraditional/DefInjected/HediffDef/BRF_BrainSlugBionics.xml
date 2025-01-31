@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- 擬似腦蛞蝓 -->
+
+  <BRF_AnalogBrainSlugs.label>擬似腦蛞蝓</BRF_AnalogBrainSlugs.label>
+  <BRF_AnalogBrainSlugs.description>模仿黑暗實體製造的如同軟體動物一樣的活體肉塊，其內部具有可以輔助思考與計算的神經結。</BRF_AnalogBrainSlugs.description>
+  <BRF_AnalogBrainSlugs.comps.0.letterLabel>血肉手術</BRF_AnalogBrainSlugs.comps.0.letterLabel>
+  <BRF_AnalogBrainSlugs.comps.0.letterText>試圖移除{PAWN_nameDef}身上擬似腦蛞蝓的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一隻血肉獸！</BRF_AnalogBrainSlugs.comps.0.letterText>
+  <BRF_AnalogBrainSlugs.labelNoun>擬似腦蛞蝓</BRF_AnalogBrainSlugs.labelNoun>
+
+
+</LanguageData>

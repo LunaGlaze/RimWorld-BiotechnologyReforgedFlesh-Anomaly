@@ -371,7 +371,7 @@
       <li>BRF_EntityNecrophagia</li>
       <li>BRF_EntityLongjump</li>
     </abilities>
-    <combatPower>250</combatPower>
+    <combatPower>350</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -413,7 +413,7 @@
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
       <disableIgniteVerb>true</disableIgniteVerb>
-      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <canOpenFactionlessDoors>true</canOpenFactionlessDoors>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
       <foodType>None</foodType>
@@ -446,7 +446,7 @@
     <description>Clumps are hostile entities that resemble massive clumps of human limbs that flail about and extend in every direction. This monster has a slightly fleshbeast-like build with an endless hunger. They can move forward and jump by flinging their limbs quickly and hard in a twisted position, which allows them to catch up with their prey very quickly.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
-      <MinimumContainmentStrength>150</MinimumContainmentStrength>
+      <MinimumContainmentStrength>175</MinimumContainmentStrength>
     </statBases>
     <uiIconPath>Pawns/BRF_Clump/BRF_Clump_east</uiIconPath>
     <race>
@@ -503,8 +503,9 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>16</power>
         <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
         <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
@@ -514,7 +515,8 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>14</power>
+        <power>18</power>
+        <armorPenetration>0.5</armorPenetration>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -525,8 +527,8 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>25</power>
-        <armorPenetration>0.25</armorPenetration>
+        <power>30</power>
+        <armorPenetration>0.75</armorPenetration>
         <cooldownTime>2.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -535,6 +537,11 @@
     <killedLeavings>
       <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
     </killedLeavings>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDisallowManhunterTarget">
+            <disallowFindPawnTargetManhunter>true</disallowFindPawnTargetManhunter>
+        </li>
+    </modExtensions>
   </ThingDef>
 <!--PawnAI树-->
   <ThinkTreeDef>
@@ -580,6 +587,8 @@
         <li Class="JobGiver_WanderAnywhere">
           <maxDanger>Deadly</maxDanger>
           <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+          <canBashDoors>true</canBashDoors>
+          <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
         </li>
 		<li Class="ThinkNode_Subtree">
           <treeDef>BurningResponse</treeDef>

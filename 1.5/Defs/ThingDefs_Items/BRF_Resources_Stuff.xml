@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--猩红钢-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_ScarletFerrite</defName>
+    <label>Scarlet Ferrite</label>
+    <description>An exotic metal-like fibrous substance with both organic and metallic properties. While similar to Bioferrite, this metal also excels at something related to psychic abilities. However, its biological properties are much more pronounced. A smell of blood haunts this metal, and tentacle-like veins slowly wriggle ...... as it breathes as if it were alive.</description>
+    <tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>Items/Resource/BRF_ScarletFerrite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <genericMarketSellable>false</genericMarketSellable>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.25</Mass>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0.5</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+        <li>Bioferrite</li>
+        <li>BRF_LivingAlloy</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0</commonality>
+      <allowedInStuffGeneration>false</allowedInStuffGeneration>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(87, 30, 36)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <Flammability>0.5</Flammability>
+        <WorkToMake>3.2</WorkToMake>
+        <WorkToBuild>3.2</WorkToBuild>
+        <DoorOpenSpeed>0.9</DoorOpenSpeed>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.06</awful>
+          <poor>1.08</poor>
+          <normal>1.1</normal>
+          <good>1.13</good>
+          <excellent>1.15</excellent>
+          <masterwork>1.17</masterwork>
+          <legendary>1.20</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>4</awful>
+          <poor>6</poor>
+          <normal>8</normal>
+          <good>11</good>
+          <excellent>13</excellent>
+          <masterwork>15</masterwork>
+          <legendary>18</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+<!--血肉立方-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_RecastFleshCube</defName>
+    <label>Recast Flesh Cube</label>
+    <description>It also resembles the meat of an animal and the fruit of a plant. This material can sometimes be substituted for wood and produced in small quantities with the technique of flesh reforging. But it should have a more appropriate use and access.</description>
+    <genericMarketSellable>false</genericMarketSellable>
+    <tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>Items/Resource/BRF_RecastFleshCube</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>300</stackLimit>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.15</Mass> 
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.09</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.45</BluntDamageMultiplier>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <specialThoughtDirect>BRF_AteRecastFleshCube</specialThoughtDirect>
+      <specialThoughtAsIngredient>BRF_AteRecastFleshCube</specialThoughtAsIngredient>
+      <foodType>AnimalProduct</foodType>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <burnableByRecipe>false</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stuffProps>
+      <stuffAdjective>fleshy cube</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(163,70,56)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Flesh</soundImpactBullet>
+      <soundMeleeHitSharp>BRF_MeleeHit_Flesh</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>BRF_MeleeHit_Flesh</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>0.9</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>0.75</WorkToMake>
+        <WorkToBuild>0.75</WorkToBuild>
+        <DoorOpenSpeed>1.25</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+<!--绯红菌柄-->
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>BRF_CrimsonStem</defName>
+    <label>Crimson Stem</label>
+    <description>A special material between plant and flesh, the stalk material of some giant fleshy fungus. Its bizarre structure grants it resistance to flame, and can only be used as fuel if affected in a specific way.</description>
+    <tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>Items/Resource/BRF_CrimsonStem</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass> 
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.38</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.08</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.25</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.05</BluntDamageMultiplier>
+    </statBases>
+		<stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stuffProps>
+      <stuffAdjective>crimson wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(71,21,47)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1.05</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>0.75</WorkToMake>
+        <WorkToBuild>0.75</WorkToBuild>
+        <DoorOpenSpeed>1.25</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>1.12</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <tools>
+      <li>
+        <label>Crimson Stem</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+<!--血腥皮革-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>BRF_Leather_Bloody</defName>
+    <label>Bloody Leather</label>
+    <description>A reshaped leather like product with normal leather and fabric's characteristics and stronger performance. This leather emits a faint fishy sweetness similar to fresh blood. Clothing sewn with this leather can strengthen the wearer's soul.</description>
+    <possessionCount>20</possessionCount>
+    <genericMarketSellable>false</genericMarketSellable>
+    <graphicData>
+      <color>(122,26,13)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Flammability>0.4</Flammability>
+      <StuffPower_Armor_Sharp>1.38</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.32</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>2.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(122,26,13)</color>
+      <categories Inherit="False">
+        <li>Fabric</li>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0</commonality>
+      <statFactors>
+        <Flammability>0.6</Flammability>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>3</Beauty>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.03</awful>
+          <poor>1.04</poor>
+          <normal>1.05</normal>
+          <good>1.06</good>
+          <excellent>1.07</excellent>
+          <masterwork>1.9</masterwork>
+          <legendary>1.12</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>2</awful>
+          <poor>3</poor>
+          <normal>4</normal>
+          <good>6</good>
+          <excellent>8</excellent>
+          <masterwork>10</masterwork>
+          <legendary>12</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

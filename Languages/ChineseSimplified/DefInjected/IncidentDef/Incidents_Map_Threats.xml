@@ -1,12 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <BRF_BloodstainedParasiticedInsectAssault.label>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.label>
+  <BRF_BloodstainedParasiticedInsectAssault.letterText>一些被实体寄生的虫群来到了你的殖民地，它们已经因实体的寄生而发狂！</BRF_BloodstainedParasiticedInsectAssault.letterText>
+  <BRF_BloodstainedParasiticedInsectAssault.letterLabel>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.letterLabel>
+
+  <BRF_LittleBloodstainedParasiticedInsectAssault.label>被寄生的虫群</BRF_LittleBloodstainedParasiticedInsectAssault.label>
+  <BRF_LittleBloodstainedParasiticedInsectAssault.letterText>一些被实体寄生的虫群来到了你的殖民地，它们已经因实体的寄生而发狂！</BRF_LittleBloodstainedParasiticedInsectAssault.letterText>
+  <BRF_LittleBloodstainedParasiticedInsectAssault.letterLabel>被寄生的虫群</BRF_LittleBloodstainedParasiticedInsectAssault.letterLabel>
+
   <BRF_ClumpAssault.label>肢团袭击</BRF_ClumpAssault.label>
   <BRF_ClumpAssault.letterText>一群饥饿的肢团闯入了你们的殖民地附近。这种肉体和肢体构造的怪物可能会摧毁和吞噬它们所看到的一切。</BRF_ClumpAssault.letterText>
   <BRF_ClumpAssault.letterLabel>肢团袭击</BRF_ClumpAssault.letterLabel>
 
-  <BRF_BloodstainedParasiticedInsectAssault.label>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.label>
-  <BRF_BloodstainedParasiticedInsectAssault.letterText>一些被实体寄生的虫群来到了你的殖民地，它们已经因实体的寄生而发狂！</BRF_BloodstainedParasiticedInsectAssault.letterText>
-  <BRF_BloodstainedParasiticedInsectAssault.letterLabel>被寄生的虫群</BRF_BloodstainedParasiticedInsectAssault.letterLabel>
+  <BRF_CrimsonLivingFungiAssault.label>绯红活菌抵达</BRF_CrimsonLivingFungiAssault.label>
+  <BRF_CrimsonLivingFungiAssault.letterText>一种怪异的活体血肉真菌生物到访了你都殖民地。它们只是自顾地释放着一种不知道是血肉还是真菌亦或者纳米机械的怪异孢子，履行着它们改造环境的职责。
+</BRF_CrimsonLivingFungiAssault.letterText>
+  <BRF_CrimsonLivingFungiAssault.letterLabel>绯红活菌抵达</BRF_CrimsonLivingFungiAssault.letterLabel>
+
+  <BRF_ScarletCerebralJellyfishAssault.label>怪异海蜇出现</BRF_ScarletCerebralJellyfishAssault.label>
+  <BRF_ScarletCerebralJellyfishAssault.letterText>伴随着一阵心灵波动，有什么东西出现在了你的附近。你隐约看见一个漂浮在空中的水母或是海蜇的身影……并且明显不怀好意。
+</BRF_ScarletCerebralJellyfishAssault.letterText>
+  <BRF_ScarletCerebralJellyfishAssault.letterLabel>怪异海蜇</BRF_ScarletCerebralJellyfishAssault.letterLabel>
 
 </LanguageData>

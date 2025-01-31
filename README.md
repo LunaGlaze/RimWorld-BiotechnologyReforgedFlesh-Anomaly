@@ -6,7 +6,7 @@
 
 原生血肉如此苦弱，生命的奥秘带来重铸，以此铸造飞升之基。
 
-## Substance
+## Substance|内容
 
  - 从将在道德上不建议食用的肉类转化为似乎没有道德问题的肉和使用生物的肉培育蠕动的活体肉块开始的血肉科技。
  - Flesh tech starting with converting meat that is not ethically recommended for consumption into meat that seems to have no ethical issues and using the creature's meat to cultivate wriggling, living hunks of meat.
@@ -14,8 +14,8 @@
  - 将来自实体的素材改造成守卫自己基地的力量。
  - Transform the material from the entity into a force that guards your base.
 
- - 归属于自然分类的基础血肉仿生体，包括一套医用的与一套血肉兽（畸变方尖碑同款）的。
- - The basic flesh bionics attributed to the natural classification include a set of medical ones with a set of fleshbeast ones.
+ - 归属于自然分类的血肉仿生体，包括一套医用的与一套血肉兽（畸变方尖碑同款）的，甚至有脑蛞蝓。
+ - The flesh bionics attributed to the natural classification include a set of medical ones with a set of fleshbeast ones, even brain slugs.
 
  - 建造生物机械来运营和装点你的殖民地，收获受害者超过原版可获取内容的全部器官来构造它们。
  - Build biomachines to run and decorate your colony, harvesting victims over the full range of organs more than vanilla to construct them.
@@ -30,15 +30,23 @@
 
  -  Creep Joiner from Sarkicism (maybe).
 
+ -  一些可以构建血肉生态的组件，例如血肉菌毯和血肉植物。
+
+ -  Some components that can build a flesh and blood ecosystem, such as flesh and blood bacterial blankets and flesh plants.
+
+ -  使用血肉科技制造的医疗用品。
+ 
+ -  Medical supplies manufactured using flesh technology.
+
  - And so on
 
-## Projected
+## Projected|计划
 
  - 与其他DLC的联动和支持。
  - Linkage and support with other DLC.
 
- - 更强大的血肉仿生体，包括超凡科技级别的与更多种类，例如脑蛞蝓等。
- - More powerful flesh bionts, including Archotech level, but also more species, such as brain slugs, etc.
+ - 更强大的血肉仿生体，包括超凡科技级别的与更多种类。
+ - More powerful flesh bionts, including Archotech level, but also more species.
 
  - 更多的实体和威胁；如果顺利的话，可能包括一些BOSS单位的终极实体。
  - More entities and threats; possibly including some BOSS unit ultimate entities if all goes well for me.
@@ -57,7 +65,7 @@
 
  - ......
 
-## Caveat
+## Caveat|警告
 
  - 该模组仍然处于开发中，现行版本为测试版本，可能会存在较为频繁的改动与修复。为保证您的存档不因此损坏，建议积极进行备份。
  - The module is still under development and the current version is a beta version, which may be subject to more frequent changes and fixes. To ensure that your archive is not corrupted, it is recommended that you actively back up your files.
@@ -68,7 +76,7 @@
  - 本模组发布前只在作者个人的游戏环境下测试，无法保证完全不存在bug和兼容性问题，如果遇到相关问题，建议及时进行反馈。但一些我不会游玩的mod恕我没有能力提供补丁与修复，例如Combat Extended、Humanoid Alien Races、Vanilla Psycast Expanded、Medieval Overhaul等。如果出现问题，我可能需要你们的帮助以解决。
  - This mod is only tested in the author's personal gaming environment before release, and there is no guarantee that it is completely free of bugs and compatibility issues, so if you encounter any related problems, it is recommended that you provide feedback in a timely manner. However, some mods that I won't be playing forgive me for not being able to provide patches and fixes, such as Combat Extended, Humanoid Alien Races, Vanilla Psycast Expanded, Medieval Overhaul, and so on. If a problem arises, I may need your help to fix it.
 
-## Links
+## Links|连结
  - [WorkShop](https://steamcommunity.com/sharedfiles/filedetails/?id=3370644015)
 
  - [Patreon](https://patreon.com/shiqiluna) (I probably don't use it that often)

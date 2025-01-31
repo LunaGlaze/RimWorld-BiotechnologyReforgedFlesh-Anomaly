@@ -59,12 +59,9 @@
   <BRF_ElectrifiedSarcoma.label>带电肉瘤</BRF_ElectrifiedSarcoma.label>
   <BRF_ElectrifiedSarcoma.description>一种携带生物电效应的畸形瘤状组织，是暴力摧毁静电囊泡之后遗留的事物，可以被用于加工创造一些更好的血肉电力设备。</BRF_ElectrifiedSarcoma.description>
 
+  <!-- 下界疣 -->
 
-  <!-- 猩红钢 -->
-
-  <BRF_ScarletFerrite.label>猩红钢</BRF_ScarletFerrite.label>
-  <BRF_ScarletFerrite.description>一种类似金属纤维的奇异物质，同时具有有机和金属特性。虽然与活铁相似，但这种金属也擅长与心灵能力有关的东西。不过，它的生物特性要明显得多。这种金属萦绕着一股血腥味，触手状的血管随着它的呼吸慢慢蠕动……就好像它是活的一样。</BRF_ScarletFerrite.description>
-  <BRF_ScarletFerrite.stuffProps.stuffAdjective>猩红钢</BRF_ScarletFerrite.stuffProps.stuffAdjective>
-
+  <BRF_PurgatoryWarts.label>炼狱疣</BRF_PurgatoryWarts.label>
+  <BRF_PurgatoryWarts.description>一种怪异的疣状肉质真菌。这种奇特的作物可以直接用以医疗，比起草药的效果更差一些。但它更适合使用异常血肉技术制成进阶的医疗用品。</BRF_PurgatoryWarts.description>
 
 </LanguageData>

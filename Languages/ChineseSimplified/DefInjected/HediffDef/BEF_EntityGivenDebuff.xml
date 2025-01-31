@@ -30,4 +30,17 @@
   <BRF_FIeshLacerated.stages.2.label>极度</BRF_FIeshLacerated.stages.2.label>
   <BRF_FIeshLacerated.stages.3.label>极度</BRF_FIeshLacerated.stages.3.label>
 
+  <BRF_CrimsonSporeMechanicalInterference.label>绯红孢子机械干扰</BRF_CrimsonSporeMechanicalInterference.label>
+  <BRF_CrimsonSporeMechanicalInterference.description>一种含有超凡微械的孢子进入目标内部。这种孢子旨在使植物和地形转变为更合适的形态，而不是针对生物或机械。然而，在它的影响下，机械会迅速过热乃至自毁。</BRF_CrimsonSporeMechanicalInterference.description>
+  <BRF_CrimsonSporeMechanicalInterference.stages.0.label>轻微</BRF_CrimsonSporeMechanicalInterference.stages.0.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.1.label>严重</BRF_CrimsonSporeMechanicalInterference.stages.1.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.2.label>极度</BRF_CrimsonSporeMechanicalInterference.stages.2.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.3.label>极度</BRF_CrimsonSporeMechanicalInterference.stages.3.label>
+
+  <BRF_CrimsonSporeCut.label>绯红孢子切割</BRF_CrimsonSporeCut.label>
+  <BRF_CrimsonSporeCut.description>一种人类无法理解的介于血肉、真菌和纳米机械之间的畸形孢子对机体造成了破坏。</BRF_CrimsonSporeCut.description>
+
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>猩红脑蜇插入</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>猩红脑蜇附身在受害者的头部，并将触手插入受害者的大脑。通过这种方式，该血肉实体将化学物质注入受害者的大脑，控制受害者的行为。</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+
 </LanguageData>

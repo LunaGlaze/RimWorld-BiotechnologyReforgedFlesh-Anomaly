@@ -53,4 +53,11 @@
   <BRF_ReforgedMeat_Harbinger3.jobString>正在重構先驅之肉。</BRF_ReforgedMeat_Harbinger3.jobString>
 
 
+  <!-- 血肉立方 -->
+
+  <BRF_ShapingFleshCubes.label>塑造血肉立方</BRF_ShapingFleshCubes.label>
+  <BRF_ShapingFleshCubes.description>將重塑肉類和植物材料合成某種奇異的立方體。</BRF_ShapingFleshCubes.description>
+  <BRF_ShapingFleshCubes.jobString>塑造血肉立方。</BRF_ShapingFleshCubes.jobString>
+
+
 </LanguageData>

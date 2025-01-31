@@ -15,8 +15,11 @@ namespace Luna_BRF
         public bool surgeryInjuries;
         public bool isFleshPulse;
         public bool customDamage;
-        public bool withoutMechanoid = true;
+        public bool withoutMechanoid = false;
+        public bool onlyMechanoid = false;
         public bool addHediff;
         public HediffDef hediffDefAdd;
+        public bool allowDestroysBrain = false;
+        public float severityFeduce = 0f;
     }
 }

@@ -64,5 +64,36 @@
 		  <li>Manipulation</li>
 		</requiredCapacities>
     </WorkGiverDef>
+    
+  <WorkGiverDef>
+    <defName>DoBills_BRF_CrimsonAltar</defName>
+    <label>Transmutation of flesh and blood</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>BRF_CrimsonAltar</li>
+    </fixedBillGiverDefs>
+    <verb>transmute</verb>
+    <gerund>transmute</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>BRF_PlantSeed</defName>
+    <label>plant seeds</label>
+    <giverClass>Luna_BRF.WorkGiver_PlantSeed</giverClass>
+    <workType>Growing</workType>
+    <verb>plant</verb>
+    <gerund>planting</gerund>
+    <priorityInType>80</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    
+  </WorkGiverDef>
 
 </Defs>

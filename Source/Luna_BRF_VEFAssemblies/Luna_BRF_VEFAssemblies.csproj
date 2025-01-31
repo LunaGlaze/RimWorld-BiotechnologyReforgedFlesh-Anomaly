@@ -54,8 +54,14 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="VFECore, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompFloating.cs" />
+    <Compile Include="CompProperties_Floating.cs" />
     <Compile Include="DigesterIPipes_MapComponent.cs" />
     <Compile Include="JobDriver_RefuelDigesterIPipe.cs" />
     <Compile Include="JobDriver_RefuelDigesterIPipeAtomic.cs" />

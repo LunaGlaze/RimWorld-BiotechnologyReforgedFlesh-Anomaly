@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--基础父类-->
+	<ThingDef Name="BRF_FreshNeuralSymbiosisBodyPartBase" ParentName="BodyPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Items/Bionic/BRF_BrainSlug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+	    <tickerType>Rare</tickerType>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_NeuralSymbiosis</li>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>4.0</DeteriorationRate>
+        </statBases>
+	    <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>9</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="ImplantHediffBase" Name="BRF_AddedNeuralSymbiosisPartBase" Abstract="True">
+        <tags>
+            <li>BRF_FleshReforge</li>
+            <li>BRF_NeuralSymbiosis</li>
+        </tags>
+    </HediffDef>
+
+<!-- 拟似脑蛞蝓 -->
+  <ThingDef ParentName="BRF_FreshNeuralSymbiosisBodyPartBase">
+    <defName>BRF_AnalogBrainSlugs</defName>
+    <label>Analog Brain Slugs</label>
+    <description>A living, mollusk-like lump of flesh made to mimic the Dark Entity, with internal neural knots that can aid in thought and calculation.</description>
+    <descriptionHyperlinks>
+        <HediffDef>BRF_AnalogBrainSlugs</HediffDef>
+        <RecipeDef>BRF_Install_AnalogBrainSlugs</RecipeDef>
+    </descriptionHyperlinks>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BRF_LowerNeuralSymbiosis</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Insect>15</BRF_ReforgedMeat_Insect>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <HediffDef ParentName="BRF_AddedNeuralSymbiosisPartBase">
+    <defName>BRF_AnalogBrainSlugs</defName>
+    <label>Analog Brain Slugs</label>
+    <labelNoun>a Analog Brain Slugs</labelNoun>
+    <description>A living, mollusk-like lump of flesh made to mimic the Dark Entity, with internal neural knots that can aid in thought and calculation.</description>
+    <descriptionHyperlinks><ThingDef>BRF_AnalogBrainSlugs</ThingDef></descriptionHyperlinks>
+    <defaultInstallPart>Brain</defaultInstallPart>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <spawnThingOnRemoved>BRF_PrimordialTissueSample</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <painOffset>0.06</painOffset>
+        <statOffsets>
+          <ResearchSpeed>0.2</ResearchSpeed>
+          <ReadingSpeed>0.2</ReadingSpeed>
+          <EntityStudyRate>0.2</EntityStudyRate>
+          <StudyEfficiency>0.2</StudyEfficiency>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s analog brain slugs has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>BRF_Install_AnalogBrainSlugs</defName>
+    <label>Implant Analog Brain Slugs</label>
+    <description>Implant a Analog Brain Slugs.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_AnalogBrainSlugs</ThingDef>
+      <HediffDef>BRF_AnalogBrainSlugs</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Implanting Analog Brain Slugs.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_AnalogBrainSlugs</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_AnalogBrainSlugs</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_AnalogBrainSlugs</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>BRF_Remove_AnalogBrainSlugs</defName>
+    <label>Remove Analog Brain Slugs</label>
+    <description>Remove Analog Brain Slugs.</description>
+    <descriptionHyperlinks>
+      <HediffDef>BRF_AnalogBrainSlugs</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing Analog Brain Slugs.</jobString>
+    <removesHediff>BRF_AnalogBrainSlugs</removesHediff>
+  </RecipeDef>
+
+</Defs>

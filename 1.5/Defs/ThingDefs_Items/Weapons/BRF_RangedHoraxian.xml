@@ -111,6 +111,7 @@
       <speed>48</speed>
       <damageDef>Nerve</damageDef>
       <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
     </projectile>
     <modExtensions>
         <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">

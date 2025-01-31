@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- 擬似腦蛞蝓 -->
+
+  <BRF_Install_AnalogBrainSlugs.label>植入擬似腦蛞蝓</BRF_Install_AnalogBrainSlugs.label>
+  <BRF_Install_AnalogBrainSlugs.description>植入一隻擬似腦蛞蝓。</BRF_Install_AnalogBrainSlugs.description>
+  <BRF_Install_AnalogBrainSlugs.jobString>正在植入擬似腦蛞蝓。</BRF_Install_AnalogBrainSlugs.jobString>
+
+  <BRF_Remove_AnalogBrainSlugs.label>移除擬似腦蛞蝓</BRF_Remove_AnalogBrainSlugs.label>
+  <BRF_Remove_AnalogBrainSlugs.description>移除已植入的擬似腦蛞蝓。</BRF_Remove_AnalogBrainSlugs.description>
+  <BRF_Remove_AnalogBrainSlugs.jobString>正在移除擬似腦蛞蝓。</BRF_Remove_AnalogBrainSlugs.jobString>
+
+
+
+</LanguageData>

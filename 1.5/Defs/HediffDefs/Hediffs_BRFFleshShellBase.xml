@@ -44,6 +44,13 @@
   <RecipeDef Name="BRF_SurgeryInstallBodyPartNaturalBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
   </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase" Name="BRF_AddedBodyPartNaturalBase" Abstract="True">
+    <organicAddedBodypart>true</organicAddedBodypart>
+    <tags>
+      <li>BRF_FleshReforge</li>
+    </tags>
+  </HediffDef>
 
 <!-- 手臂 -->
   <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
@@ -91,7 +98,7 @@
 	  <addsHediff>BRF_FleshMadeArmHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeArmHediff</defName>
     <label>flesh-made arm</label>
     <labelNoun>a flesh-made arm</labelNoun>
@@ -163,7 +170,7 @@
 	  <addsHediff>BRF_FleshMadeHandHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeHandHediff</defName>
     <label>flesh-made hand</label>
     <labelNoun>a flesh-made hand</labelNoun>
@@ -235,7 +242,7 @@
 	  <addsHediff>BRF_FleshMadeFingerHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeFingerHediff</defName>
     <label>flesh-made finger</label>
     <labelNoun>a flesh-made finger</labelNoun>
@@ -293,7 +300,7 @@
 	
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeToeHediff</defName>
     <label>flesh-made toe</label>
     <labelNoun>a flesh-made toe</labelNoun>
@@ -351,7 +358,7 @@
 	  <addsHediff>BRF_FleshMadeFootHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeFootHediff</defName>
     <label>flesh-made foot</label>
     <labelNoun>a flesh-made foot</labelNoun>
@@ -410,7 +417,7 @@
 	  <addsHediff>BRF_FleshMadeLegHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeLegHediff</defName>
     <label>flesh-made leg</label>
     <labelNoun>a flesh-made leg</labelNoun>
@@ -468,7 +475,7 @@
 	  <addsHediff>BRF_FleshMadeHeartHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeHeartHediff</defName>
     <label>flesh-made heart</label>
     <labelNoun>a flesh-made heart</labelNoun>
@@ -526,11 +533,12 @@
 	  <addsHediff>BRF_FleshMadeLungHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeLungHediff</defName>
     <label>flesh-made lung</label>
     <labelNoun>a flesh-made lung</labelNoun>
     <description>An installed flesh-made lung.</description>
+    <preventsLungRot>true</preventsLungRot>
     <defaultInstallPart>Lung</defaultInstallPart>
     <descriptionHyperlinks><ThingDef>BRF_FleshMadeLung</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>BRF_FleshMadeLung</spawnThingOnRemoved>
@@ -584,7 +592,7 @@
 	  <addsHediff>BRF_FleshMadeKidneyHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeKidneyHediff</defName>
     <label>flesh-made kidney</label>
     <labelNoun>a flesh-made kidney</labelNoun>
@@ -642,7 +650,7 @@
 	  <addsHediff>BRF_FleshMadeLiverHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeLiverHediff</defName>
     <label>flesh-made liver</label>
     <labelNoun>a flesh-made liver</labelNoun>
@@ -700,7 +708,7 @@
 	  <addsHediff>BRF_FleshMadeEyeHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeEyeHediff</defName>
     <label>flesh-made eye</label>
     <labelNoun>a flesh-made eye</labelNoun>
@@ -758,7 +766,7 @@
 	  <addsHediff>BRF_FleshMadeEarHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeEarHediff</defName>
     <label>flesh-made ear</label>
     <labelNoun>a flesh-made ear</labelNoun>
@@ -816,7 +824,7 @@
 	  <addsHediff>BRF_FleshMadeNoseHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeNoseHediff</defName>
     <label>flesh-made nose</label>
     <labelNoun>a flesh-made nose</labelNoun>
@@ -875,7 +883,7 @@
 	  <addsHediff>BRF_FleshMadeJawHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeJawHediff</defName>
     <label>flesh-made jaw</label>
     <labelNoun>a flesh-made jaw</labelNoun>
@@ -933,7 +941,7 @@
 	  <addsHediff>BRF_FleshMadeStomachHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeStomachHediff</defName>
     <label>flesh-made stomach</label>
     <labelNoun>a flesh-made stomach</labelNoun>
@@ -991,7 +999,7 @@
 	  <addsHediff>BRF_FleshMadeTongueHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeTongueHediff</defName>
     <label>flesh-made tongue</label>
     <labelNoun>a flesh-made tongue</labelNoun>
@@ -1050,7 +1058,7 @@
 	  <addsHediff>BRF_FleshMadeSpineHediff</addsHediff>
   </RecipeDef>
   
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
     <defName>BRF_FleshMadeSpineHediff</defName>
     <label>flesh-made spine</label>
     <labelNoun>a flesh-made spine</labelNoun>

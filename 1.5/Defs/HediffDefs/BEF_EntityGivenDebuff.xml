@@ -21,11 +21,12 @@
                   </li>
                 </capMods>
                 <statOffsets>
-                  <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                  <MeleeDodgeChance>0.2</MeleeDodgeChance>
                 </statOffsets>
                 <statFactors>
-                  <IncomingDamageFactor>0.8</IncomingDamageFactor>
-                  <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+                  <IncomingDamageFactor>0.65</IncomingDamageFactor>
+                  <MeleeCooldownFactor>0.8</MeleeCooldownFactor>
+                  <MeleeDamageFactor>1.2</MeleeDamageFactor>
                   <StaggerDurationFactor>0</StaggerDurationFactor>
                 </statFactors>
             </li>
@@ -33,8 +34,8 @@
     </HediffDef>
 
   <HediffDef>
-    <hediffClass>HediffWithComps</hediffClass>
     <defName>BRF_BloodstainedTickParasiticed</defName>
+    <hediffClass>HediffWithComps</hediffClass>
     <label>Bloodstained Parasiticed</label>
     <description>A parasitic entity exists within the body of this creature, which synthesizes biological nanomachines that strengthen the host while reaching out to a distant archotechnological engine that distorts the host's will.</description>
     <isBad>false</isBad>
@@ -44,7 +45,10 @@
       <li>
         <painFactor>0</painFactor>
         <statFactors>
-          <MoveSpeed>1.75</MoveSpeed>
+          <IncomingDamageFactor>0.75</IncomingDamageFactor>
+          <MoveSpeed>2</MoveSpeed>
+          <MeleeCooldownFactor>0.8</MeleeCooldownFactor>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
           <StaggerDurationFactor>0</StaggerDurationFactor>
         </statFactors>
       </li>
@@ -265,5 +269,269 @@
             </li>
         </stages>
     </HediffDef>
+
+    <HediffDef>
+        <defName>BRF_CrimsonSporeMechanicalInterference</defName>
+        <label>Crimson Spore Mechanical Interference</label>
+        <description>A spore containing microscopic archites enters the target's interior. This spore designed to cause plants and terrain to shift into more suitable forms, rather than targeting creatures or machinery. However, the machinery continues to rapidly overheat and self-destruct under its influence.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1, 0.8, 0.8)</defaultLabelColor>
+        <maxSeverity>1</maxSeverity>
+        <duplicationAllowed>false</duplicationAllowed>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>25000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+            <li Class="Luna_BRF.HediffCompProperties_DamageWhenMaxSeverity">
+                <isFleshPulse>true</isFleshPulse>
+                <allowDestroysBrain>true</allowDestroysBrain>
+                <onlyMechanoid>true</onlyMechanoid>
+                <damAmount>250</damAmount>
+                <severityFeduce>0.5</severityFeduce>
+            </li>
+        </comps>
+        <isBad>true</isBad>
+        <stages>
+            <li>
+                <label>minor</label>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.1</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>-0.1</offset>
+                  </li>
+                  <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.1</offset>
+                  </li>
+                  <li>
+                    <capacity>Hearing</capacity>
+                    <offset>-0.1</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.1</offset>
+                  </li>
+                </capMods>
+            </li>
+            <li>
+                <label>major</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                  <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                  <li>
+                    <capacity>Hearing</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                </capMods>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.6</minSeverity>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>Hearing</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                </capMods>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.8</minSeverity>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.5</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>-0.5</offset>
+                  </li>
+                  <li>
+                    <capacity>Sight</capacity>
+                    <offset>-0.5</offset>
+                  </li>
+                  <li>
+                    <capacity>Hearing</capacity>
+                    <offset>-0.5</offset>
+                  </li>
+                  <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>-0.5</offset>
+                  </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+  
+  <HediffDef ParentName="BurnBase">
+    <defName>BRF_CrimsonSporeCut</defName>
+    <label>Crimson Spore Cut</label>
+    <labelNoun>A Crimson Spore Cut</labelNoun>
+    <description>A monstrous spore somewhere between flesh, fungus and nanomachines, incomprehensible to humans, has caused damage to the organism.</description>
+    <comps>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>Spore Cut Scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Cut off</destroyedLabel>
+      <destroyedOutLabel>Cut out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BRF_ScarletCerebralJellyfishBrainInsertion</defName>
+    <label>CerebralJellyfish Brain Insertion</label>
+    <hediffClass>Luna_BRF.Hediff_ParasiticControl</hediffClass>
+    <description>The Scarlet Cerebral Jellyfish possessed the victim's head and inserted its tentacles into the victim's brain. In this way, the flesh entity injects chemicals into the victim's brain and controls the victim's behavior.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.9, 0.48, 0.32)</defaultLabelColor>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <!--defaultInstallPart>Brain</defaultInstallPart-->
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <statFactors>
+          <IncomingDamageFactor>0.75</IncomingDamageFactor>
+          <MoveSpeed>2</MoveSpeed>
+          <MeleeCooldownFactor>0.8</MeleeCooldownFactor>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+          <li>North</li>
+        </visibleFacing>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <baseLayer>75</baseLayer>
+        <overlayOverApparel>true</overlayOverApparel>
+        <narrowCrownHorizontalOffset>0.02</narrowCrownHorizontalOffset>
+      </li>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle1</texPath>
+        <parentTagDef>Head</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<rotateFacing>false</rotateFacing>
+				<rotationRange>-15~15</rotationRange>
+				<durationTicksRange>10~35</durationTicksRange>
+				<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+				<baseLayer>-10</baseLayer>
+				<useRottenColor>true</useRottenColor>
+				<drawData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle4</texPath>
+        <parentTagDef>Head</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<rotateFacing>false</rotateFacing>
+				<rotationRange>-15~15</rotationRange>
+				<durationTicksRange>10~35</durationTicksRange>
+				<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+				<baseLayer>-10</baseLayer>
+				<useRottenColor>true</useRottenColor>
+				<drawData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+    </renderNodeProperties>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_MindControlBerserk">
+        <mentalStateDef>Berserk</mentalStateDef>
+      </li>
+    </comps>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_ParasiticControlConfiguration">
+            <parasitismEndsWhenDowned>true</parasitismEndsWhenDowned>
+            <damageBrain>true</damageBrain>
+            <codexEntry>BRF_ScarletCerebralJellyfish</codexEntry>
+            <giveHediffDefsAlso>
+              <li>
+                <def>LuciferiumHigh</def>
+              </li>
+              <li MayRequire="rim.job.world">
+                <def>HumpShroomEffect</def>
+              </li>
+            </giveHediffDefsAlso>
+            <endGiveHediffList>
+              <li>
+                <def>LuciferiumAddiction</def>
+              </li>
+              <li>
+                <def>DarkPsychicShock</def>
+              </li>
+              <li MayRequire="rim.job.world">
+                <def>HumpShroomEffect</def>
+              </li>
+            </endGiveHediffList>
+            <endRemoveHediffList>
+              <li>LuciferiumHigh</li>
+              <li MayRequire="rim.job.world">HumpShroomEffect</li>
+            </endRemoveHediffList>
+            <endGiveHediffListMalignant>
+              <li>
+                <def>BlissLobotomy</def>
+              </li>
+            </endGiveHediffListMalignant>
+        </li>
+    </modExtensions>
+  </HediffDef>
 
 </Defs>

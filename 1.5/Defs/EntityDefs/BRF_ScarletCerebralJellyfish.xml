@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_ScarletCerebralJellyfish</defName>
+    <label>Scarlet Cerebral Jellyfish</label>
+    <category>Advanced</category>
+    <useDescriptionFrom>BRF_ScarletCerebralJellyfish</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_ScarletCerebralJellyfish</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_ScarletCerebralJellyfish</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_LowerNeuralSymbiosis</li>
+    </discoveredResearchProjects>
+    <provocationIncidents>
+      <li>BRF_ScarletCerebralJellyfishAssault</li>
+    </provocationIncidents>
+    <orderInCategory>2440</orderInCategory>
+  </EntityCodexEntryDef>
+<!--身体定义-->
+	<BodyPartDef>
+		<defName>BRF_CrimsonFleshSac</defName>
+		<label>Crimson Flesh Sac</label>
+		<hitPoints>35</hitPoints>
+		<bleedRate>1</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>BRF_GreatEye</defName>
+		<label>Great Eye</label>
+		<hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <canScarify>true</canScarify>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+	</BodyPartDef>
+	<BodyDef>
+		<defName>BRF_ScarletCerebralJellyfishBody</defName>
+		<label>Scarlet Cerebral Jellyfish</label>
+		<corePart>
+			<def>MovingBodyFleshbeast</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<customLabel>Stomach Pouch</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<customLabel>Gastrovascular Cavity</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>BRF_CrimsonFleshSac</def>
+					<customLabel>First Crimson Flesh Sac</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>BRF_CrimsonFleshSac</def>
+					<customLabel>Second Crimson Flesh Sac</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>BRF_CrimsonFleshSac</def>
+					<customLabel>Third Crimson Flesh Sac</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>BRF_Vibration_Sensor</def>
+							<coverage>0.02</coverage>
+						</li>
+						<li>
+							<def>BRF_GreatEye</def>
+							<coverage>0.02</coverage>
+						</li>
+						<li>
+							<def>BRF_BigMouth</def>
+							<coverage>0.75</coverage>
+							<height>Top</height>
+							<groups>
+								<li>HeadAttackTool</li>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+							</groups>
+							<parts>
+								<li>
+									<def>AnimalJaw</def>
+									<coverage>0.10</coverage>
+									<groups>
+										<li>HeadAttackTool</li>
+                    <li>Teeth</li>
+									</groups>
+									<parts>
+										<li>
+											<def>Tongue</def>
+											<coverage>0.001</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>First Tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>Second Tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+          <parts>
+						<li>
+							<def>Eye</def>
+              <customLabel>Tentacle Eye Spot</customLabel>
+							<coverage>0.01</coverage>
+              <height>Bottom</height>
+						</li>
+         </parts>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>Third Tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>Fourth Tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+          <parts>
+						<li>
+							<def>Eye</def>
+              <customLabel>Tentacle Eye Spot</customLabel>
+							<coverage>0.01</coverage>
+              <height>Bottom</height>
+						</li>
+         </parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<!--触手渲染-->
+	<PawnRenderTreeDef>
+		<defName>BRF_ScarletCerebralJellyfishRenderTree</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle1</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish_Tentacle4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_ScarletCerebralJellyfish</defName>
+    <label>Scarlet Cerebral Jellyfish</label>
+    <race>BRF_ScarletCerebralJellyfish</race>
+    <abilities>
+      <li>BRF_ScarletCerebralJellyfishBrainInsertion</li>
+    </abilities>
+    <combatPower>300</combatPower>
+    <overrideDeathOnDownedChance>1</overrideDeathOnDownedChance>
+    <forceDeathOnDowned>true</forceDeathOnDowned>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+    <immuneToTraps>true</immuneToTraps>
+    <collidesWithPawns>false</collidesWithPawns>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.75</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_ScarletCerebralJellyfish/BRF_ScarletCerebralJellyfish</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.75</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+      <li>
+        <def>HoraxianInvisibility</def>
+      </li>
+      <!--li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <def>BRF_FloatingWithWaterstriding</def>
+      </li-->
+    </startingHediffs>
+  </PawnKindDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BasePawn" Name="BRF_ScarletCerebralJellyfishBase" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-115</ComfyTemperatureMin>
+      <ComfyTemperatureMax>115</ComfyTemperatureMax>
+      <Flammability>0</Flammability>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <InjuryHealingFactor>2.5</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <thinkTreeMain>BRF_ScarletCerebralJellyfishThinkTree</thinkTreeMain>
+      <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodDef>Filth_Blood</bloodDef>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <trainability>None</trainability>
+      <fleshType>Fleshbeast</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.35</bleedRateFactor>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+	    <li Class="Luna_BRF.CompProperties_Floating">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+	    <li Class="Luna_BRF_VEFAssemblies.CompProperties_Floating" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+    </comps>
+  </ThingDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_ScarletCerebralJellyfishBase">
+    <defName>BRF_ScarletCerebralJellyfish</defName>
+    <label>Scarlet Cerebral Jellyfish</label>
+    <description>A grotesque aberrant flesh creature that appears to be jellyfish-like, but does not live in the water at all, instead floating in the air. The creature seems to have a penchant for probing its tentacles into the brains of its victims, injecting bizarre chemicals that contain microscopic archites and controlling their behavior.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MinimumContainmentStrength>110</MinimumContainmentStrength>
+    </statBases>
+    <uiIconPath>UI/Codexentries/BRF_ScarletCerebralJellyfish</uiIconPath>
+    <race>
+      <body>BRF_ScarletCerebralJellyfishBody</body>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHealthScale>6</baseHealthScale>
+      <lifeExpectancy>5000</lifeExpectancy>
+      <renderTree>BRF_ScarletCerebralJellyfishRenderTree</renderTree>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>BRF_MeleeHit_Flesh</soundWounded>
+          <soundDeath>BRF_Pawn_Flesh_Death</soundDeath>
+          <soundCall>BRF_Pawn_Flesh_Call</soundCall>
+          <soundAngry>BRF_Pawn_Flesh_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+    </race>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.21, 0, .21)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.21, 0, .21)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.21, 0, -.21)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.21, 0, -.21)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>50</baseEscapeIntervalMtbDays>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3.5</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+      <li>
+        <compClass>Luna_BRF.CompScarletCerebralJellyfish</compClass>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <chanceFactor>0.25</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>tentacles</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.4</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDisallowManhunterTarget">
+            <disallowFindPawnTargetManhunter>true</disallowFindPawnTargetManhunter>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_ScarletCerebralJellyfishThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <!-- Escaping-->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+        <!-- Do a queued job -->
+        <li Class="ThinkNode_QueuedJob" />
+		<!-- Ability -->
+        <li Class="ThinkNode_Priority">
+          <subNodes>
+            <li Class="ThinkNode_ConditionalHasAbility">
+		  		<ability>BRF_ScarletCerebralJellyfishBrainInsertion</ability>
+		  		<subNodes>
+			  		<li Class="Luna_BRF.JobGiver_JellyfishBrainInsertion">
+			    		<ability>BRF_ScarletCerebralJellyfishBrainInsertion</ability>
+			  		</li>
+				</subNodes>
+			</li>
+          </subNodes>
+        </li>
+        <!-- Mental state non critical -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>MentalStateNonCritical</treeDef>
+        </li>
+        <!-- Wait if drafted -->
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
+          <subNodes>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>DraftedOrder</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_MoveToStandable" />
+                <li Class="JobGiver_Orders" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+        <!-- Seek allowed area -->
+        <li Class="JobGiver_SeekAllowedArea" />
+        <li Class="JobGiver_SeekSafeTemperature">
+          <requiresInjury>false</requiresInjury>
+          <waitInSafeTemp>false</waitInSafeTemp>
+          <maxRadius>15</maxRadius>
+        </li>
+        <!-- Regular fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <!-- React to close melee threat -->
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Wander -->
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+          <canBashDoors>true</canBashDoors>
+          <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
+        </li>
+		    <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -54,6 +55,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comp\CompPlantableWithTerrainAffordance.cs" />
+    <Compile Include="Comp\CompProperties_PlantableWithTerrainAffordance.cs" />
+    <Compile Include="Entity\CompAbilityEffect_ScarletCerebralJellyfish.cs" />
+    <Compile Include="Entity\CompProperties_ScarletCerebralJellyfish.cs" />
+    <Compile Include="Entity\CompScarletCerebralJellyfish.cs" />
+    <Compile Include="Entity\IncidentWorker_CrimsonLivingFungiAssault.cs" />
+    <Compile Include="Entity\IncidentWorker_ScarletCerebralJellyfishAssault.cs" />
+    <Compile Include="Entity\JobGiver_JellyfishBrainInsertion.cs" />
+    <Compile Include="Hediff\ExtensionDef_ParasiticControlConfiguration.cs" />
+    <Compile Include="Hediff\Hediff_ParasiticControl.cs" />
+    <Compile Include="LunaEntityCodexEntryDefOf.cs" />
+    <Compile Include="Misc\MentalState_EntityCuseBerserk.cs" />
+    <Compile Include="Things\ExtensionDef_ExplosionCustomGasPost.cs" />
+    <Compile Include="Things\Projectile_ExplosionCustomGasPost.cs" />
+    <Compile Include="Cothy\CompGasProducer.cs" />
+    <Compile Include="Cothy\CompProperties_GasProducer.cs" />
+    <Compile Include="Misc\DamageWorker_AddInjuryAndStun.cs" />
+    <Compile Include="Misc\Gas_Clentaminator.cs" />
+    <Compile Include="Cothy\CompDraftable.cs" />
+    <Compile Include="Cothy\CompFloating.cs" />
+    <Compile Include="Cothy\CompProperties_Draftable.cs" />
+    <Compile Include="Cothy\CompProperties_Floating.cs" />
     <Compile Include="CreepJoiner\CompAbilityEffect_TransmuteFlesh.cs" />
     <Compile Include="CreepJoiner\CompProperties_TransmuteFlesh.cs" />
     <Compile Include="Cothy\CompAnimalProduct.cs" />
@@ -69,8 +92,13 @@
     <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssaultLittle.cs" />
     <Compile Include="Entity\IncidentWorker_BloodstainedTickParasiticableAssault.cs" />
     <Compile Include="Entity\JobGiver_BloodstainedTickParasitic.cs" />
+    <Compile Include="Misc\ExtensionDef_ClentaminatorList.cs" />
+    <Compile Include="Harmony\BRF_Patcher_VEFLike.cs" />
+    <Compile Include="LunaHashListCollectionClass.cs" />
+    <Compile Include="Misc\ThingsWeightListOption.cs" />
+    <Compile Include="Things\ExtensionDef_PlantPlusAdditionalLeavings.cs" />
     <Compile Include="Harmony\HarmonyPatchInit.cs" />
-    <Compile Include="Harmony\BRF_Patcher.cs" />
+    <Compile Include="Harmony\BRF_Patcher_Base.cs" />
     <Compile Include="Comp\CompProperties_InvisibleWatcher.cs" />
     <Compile Include="Entity\CompProperties_DeadChanceSplit.cs" />
     <Compile Include="Entity\LunaDeadChanceSplit.cs" />
@@ -91,6 +119,7 @@
     <Compile Include="LunaBRFBaseUtility.cs" />
     <Compile Include="LunaBRFHediffUtility.cs" />
     <Compile Include="Entity\ExtensionDef_LunaDisallowManhunterTarget.cs" />
+    <Compile Include="Things\PlantPlus.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonClumps.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonSwarms.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_SummonClumps.cs" />
@@ -119,6 +148,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cothy\WorkGiver_AnimalResource.cs" />
     <Compile Include="Misc\ThoughtWorker_HasFleshyBodyPart.cs" />
+    <Compile Include="Work\JobDriver_PlantSeed.cs" />
+    <Compile Include="Work\WorkGiver_PlantSeed.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

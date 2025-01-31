@@ -9,7 +9,7 @@
     <harmsHealth>true</harmsHealth>
     <hediff>ElectricalBurn</hediff>
     <armorCategory>Sharp</armorCategory>
-    <workerClass>DamageWorker_AddInjury</workerClass>
+    <workerClass>Luna_BRF.DamageWorker_AddInjuryAndStun</workerClass>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Electric</impactSoundType>
     <defaultDamage>50</defaultDamage>
@@ -21,6 +21,7 @@
     <corpseDamageFactor>0.25</corpseDamageFactor>
     <combatLogRules>Damage_Flame</combatLogRules>
     <scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+    <causeStun>true</causeStun>
   </DamageDef>
   
   <DamageDef ParentName="BRF_FleshPulse">
@@ -29,10 +30,10 @@
     <isExplosive>true</isExplosive>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
     <explosionColorEdge>(0.5, 0.25, 0.25, 0.8)</explosionColorEdge>
     <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
-    <soundExplosion>Explosion_EMP</soundExplosion>
+    <soundExplosion>Explosion_Stun</soundExplosion>
   </DamageDef>
 
   <DamageDef ParentName="Scratch">
@@ -71,10 +72,33 @@
     <hediff>AcidBurn</hediff>
     <scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <buildingDamageFactor>0.15</buildingDamageFactor>
+    <corpseDamageFactor>0.15</corpseDamageFactor>
     <additionalHediffs>
       <li>
         <hediff>BRF_FleshLacerated</hediff>
         <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Flame">
+    <defName>BRF_CrimsonSporeCut</defName>
+    <label>Crimson Spore Cut</label>
+    <deathMessage>{0} has been destroyed by the Crimson Spore.</deathMessage>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <armorCategory>Sharp</armorCategory>
+    <hediff>BRF_CrimsonSporeCut</hediff>
+    <scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <buildingDamageFactor>0.25</buildingDamageFactor>
+    <plantDamageFactor>0.1</plantDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>BRF_FleshLacerated</hediff>
+        <severityPerDamageDealt>0.05</severityPerDamageDealt>
         <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
       </li>
     </additionalHediffs>

@@ -1,15 +1,16 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using System;
 using Verse;
 using Verse.AI;
 
 namespace Luna_BRF
 {
+    //反隐
     public class BRF_HediffComp_Invisibility_Patcher
-	{
-		public static void ForcedVisiblePostfix(ref bool __result, HediffComp_Invisibility __instance)
+    {
+        [HarmonyPostfix]
+        public static void ForcedVisiblePostfix(ref bool __result, HediffComp_Invisibility __instance)
 		{
 			if (__instance.Pawn.health.hediffSet.HasHediff(LunaDefOf.BRF_InvisibleWatched))
 			{
@@ -17,6 +18,7 @@ namespace Luna_BRF
 			}
 		}
     }
+	//猎杀人类排除部分目标
 
     [HarmonyPatch(typeof(JobGiver_Manhunter), "FindPawnTarget")]
     public static class BRF_JobGiver_Manhunter_FindPawnTarget_Patcher
@@ -39,6 +41,7 @@ namespace Luna_BRF
             else { return pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_BloodstainedTickParasiticed")) != null; }
         }
     }
+	//根据工作速率调整燃料消耗
     [HarmonyPatch(typeof(CompRefuelable), nameof(CompRefuelable.ConsumeFuel))]
     public static class BRF_CompRefuelable_Patcher
     {

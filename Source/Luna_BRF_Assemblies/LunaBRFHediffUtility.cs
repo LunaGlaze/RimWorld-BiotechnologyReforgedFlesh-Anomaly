@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace Luna_BRF
@@ -13,7 +15,11 @@ namespace Luna_BRF
 			{
 				if (hediffs[i].def.countsAsAddedPartOrImplant)
 				{
-					if (hediffs[i].TryGetComp<HediffComp_FleshbeastEmerge>(out var comp0) || hediffs[i].TryGetComp<HediffComp_FleshbeastEmergeLittle>(out var comp1))
+                    if (hediffs[i].def.organicAddedBodypart || hediffs[i].def.tags.Contains("BRF_FleshReforge"))
+					{
+						num++;
+					}
+					else if (hediffs[i].TryGetComp<HediffComp_FleshbeastEmerge>(out var comp0) || hediffs[i].TryGetComp<HediffComp_FleshbeastEmergeLittle>(out var comp1))
 					{
 						num++;
 					}
@@ -31,6 +37,12 @@ namespace Luna_BRF
 				}
 			}
 			return num;
+		}
+		public static IEnumerable<BodyPartRecord> GetLungWithoutFleshReforgeBodyParts(Pawn pawn)
+		{
+			return from p in pawn.health.hediffSet.GetNotMissingParts()
+				   where p.def == BodyPartDefOf.Lung && !pawn.health.hediffSet.hediffs.Any((Hediff x) => x.Part == p && x.def.tags.Contains("BRF_FleshReforge"))
+				   select p;
 		}
 	}
 }

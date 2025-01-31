@@ -93,6 +93,7 @@
         </capacities>
         <power>25</power>
         <cooldownTime>1.75</cooldownTime>
+        <armorPenetration>0.6</armorPenetration>
       </li>
       <li>
         <label>edge</label>
@@ -101,6 +102,7 @@
         </capacities>
         <power>25</power>
         <cooldownTime>1.75</cooldownTime>
+        <armorPenetration>0.6</armorPenetration>
       </li>
     </tools>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -143,6 +145,7 @@
         </capacities>
         <power>25</power>
         <cooldownTime>1.75</cooldownTime>
+        <armorPenetration>0.6</armorPenetration>
         <extraMeleeDamages>
           <li>
             <def>Demolish</def>

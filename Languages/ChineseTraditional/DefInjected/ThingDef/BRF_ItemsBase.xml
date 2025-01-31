@@ -62,11 +62,4 @@
   <BRF_ElectrifiedSarcoma.description>一種帶有生物電效應的畸形腫瘤狀組織，是靜電囊體被暴力破壞後殘留下來的東西，經加工後可以製造出一些較好的肉體電氣裝置。</BRF_ElectrifiedSarcoma.description>
 
 
-  <!-- 猩紅鋼 -->
-
-  <BRF_ScarletFerrite.label>猩紅鋼</BRF_ScarletFerrite.label>
-  <BRF_ScarletFerrite.description>一種類似金屬纖維的奇異物質，同時具有有機和金屬特性。雖然與活鐵相似，但這種金屬也擅長與心靈能力有關的東西。不過，它的生物特性要明顯得多。這種金屬縈繞著一股血腥味，觸手狀的血管隨著它的呼吸慢慢蠕動……就好像它是活的一樣。</BRF_ScarletFerrite.description>
-  <BRF_ScarletFerrite.stuffProps.stuffAdjective>猩紅鋼</BRF_ScarletFerrite.stuffProps.stuffAdjective>
-
-
 </LanguageData>

@@ -82,10 +82,12 @@
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>(2.3,2.3)</drawSize>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <rect>(0.15, 0.15, 0.75, 0.75)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
     </graphicData>
     <uiIconScale>0.8</uiIconScale>

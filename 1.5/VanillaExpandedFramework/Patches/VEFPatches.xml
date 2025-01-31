@@ -26,5 +26,17 @@
             </li>
         </value>
     </Operation>
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[@Name="BRF_LimbGuard"]/comps/li[@Class="Luna_BRF.CompProperties_Draftable"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[@Name="BRF_CrimsonLivingFungiBase"]/comps/li[@Class="Luna_BRF.CompProperties_Floating"]</xpath>
+    </Operation>
+    <!--Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[defName="BRF_CrimsonLivingFungi"]/comps/li[@Class="Luna_BRF.CompProperties_GasProducer"]</xpath>
+    </Operation-->
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[@Name="BRF_ScarletCerebralJellyfishBase"]/comps/li[@Class="Luna_BRF.CompProperties_Floating"]</xpath>
+    </Operation>
 
 </Patch>

@@ -85,8 +85,8 @@ namespace Luna_BRF
 		}
 		public bool AllowTranTerrain(TerrainDef terrain)
 		{
-			List<TerrainDef> terrainDefs = null;
-			if (Props.allowTerrains == null)
+			List<TerrainDef> terrainDefs = new List<TerrainDef>();
+			if (Props.allowTerrains.NullOrEmpty())
             {
 				return false;
             }
@@ -136,7 +136,12 @@ namespace Luna_BRF
 						workingSpeedMultiplier -= 0.25f;
 					}
 					workingSpeedMultiplier = Mathf.Clamp(workingSpeedMultiplier, 0.01f, 10f);
-					this.nextTickEffect = (int)( (this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier );
+					this.nextTickEffect = (int)( (this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier +  Find.TickManager.TicksGame);
+					LunaSpawnerPawnWithFuel compSpawn = parent.GetComp<LunaSpawnerPawnWithFuel>();
+					if (compSpawn != null)
+                    {
+						compSpawn.nextPawnSpawnTick = (int)((compSpawn.nextPawnSpawnTick - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier + Find.TickManager.TicksGame);
+					}
 				},
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower")
 			};
@@ -146,7 +151,14 @@ namespace Luna_BRF
 				defaultDesc = "BRF_WorkingSpeedMultiplierReset_Desc".Translate(),
 				action = delegate
 				{
+					float oldSpeed = workingSpeedMultiplier;
 					workingSpeedMultiplier = 1f;
+					this.nextTickEffect = (int)((this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier + Find.TickManager.TicksGame);
+					LunaSpawnerPawnWithFuel compSpawn = parent.GetComp<LunaSpawnerPawnWithFuel>();
+					if (compSpawn != null)
+					{
+						compSpawn.nextPawnSpawnTick = (int)((compSpawn.nextPawnSpawnTick - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier + Find.TickManager.TicksGame);
+					}
 				},
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempReset")
 			};
@@ -181,7 +193,12 @@ namespace Luna_BRF
 						}
 					}
 					workingSpeedMultiplier = Mathf.Clamp(workingSpeedMultiplier, 0.01f, 10f);
-					this.nextTickEffect = (int)((this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier);
+					this.nextTickEffect = (int)((this.nextTickEffect - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier + Find.TickManager.TicksGame);
+					LunaSpawnerPawnWithFuel compSpawn = parent.GetComp<LunaSpawnerPawnWithFuel>();
+					if (compSpawn != null)
+					{
+						compSpawn.nextPawnSpawnTick = (int)((compSpawn.nextPawnSpawnTick - Find.TickManager.TicksGame) * oldSpeed / workingSpeedMultiplier + Find.TickManager.TicksGame);
+					}
 				},
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempRaise")
 			};

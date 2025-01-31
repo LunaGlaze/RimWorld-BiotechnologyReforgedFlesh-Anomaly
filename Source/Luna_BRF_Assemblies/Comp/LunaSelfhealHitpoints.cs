@@ -26,14 +26,12 @@ namespace Luna_BRF
 				return comp != null && comp.HasFuel;
 			}
 		}
-
+		public int minTickInterval => Math.Max(this.Props.ticksPerTimes,50);
 		public override void CompTick()
 		{
-			int i = Math.Min(this.Props.ticksPerHeal,50);
-			bool flag = parent.IsHashIntervalTick(i);
-			if (flag)
+			if (parent.IsHashIntervalTick(minTickInterval))
 			{
-				this.Tick(i);
+				this.Tick(minTickInterval);
 			}
 		}
 
@@ -54,14 +52,14 @@ namespace Luna_BRF
 				return;
 			}
 			this.ticksPassedSinceLastHeal += ticks;
-			if (this.ticksPassedSinceLastHeal >= this.Props.ticksPerHeal)
+			if (this.ticksPassedSinceLastHeal >= this.Props.ticksPerTimes)
 			{
 				this.ticksPassedSinceLastHeal = 0;
 				if (this.parent.HitPoints < this.parent.MaxHitPoints)
 				{
 					ThingWithComps parent = this.parent;
 					int hitPoints = parent.HitPoints;
-					parent.HitPoints = hitPoints + 1;
+					parent.HitPoints = Math.Min(hitPoints + this.Props.pointPerTimes, this.parent.MaxHitPoints);
 				}
 			}
 		}

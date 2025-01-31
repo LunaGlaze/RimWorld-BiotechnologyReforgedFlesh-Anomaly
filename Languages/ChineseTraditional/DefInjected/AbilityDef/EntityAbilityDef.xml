@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- BRF_PrimordialFleshBeast -->
+  <!-- 原始血肉獸 -->
 
   <BRF_Launch_PrimordialFleshBeast.label>發射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
+
+  <!-- 绯红活菌 -->
+
+  <BRF_Launch_CrimsonPus.label>緋紅濃液</BRF_Launch_CrimsonPus.label>
 
 
   <!-- 實體位移 -->
@@ -23,5 +27,9 @@
   <BRF_BloodstainedTickParasitic.label>汙血寄生</BRF_BloodstainedTickParasitic.label>
   <BRF_BloodstainedTickParasitic.description>鑽入蟲族的屍骸之中釋放扭曲的肉體合成的納米生物機械復活並狂化死去的蟲族。</BRF_BloodstainedTickParasitic.description>
 
+<!--腦姦-->
 
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>腦姦</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>什麼東西在受害者的腦子裡進行活塞運動，並注入怪異的物質……令人毛骨悚然……</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+  
 </LanguageData>

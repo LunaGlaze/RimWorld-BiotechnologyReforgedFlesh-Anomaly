@@ -322,4 +322,56 @@
     </skillRequirements>
   </RecipeDef>
 
+
+<!--绯红蕈幼苗-->
+  <RecipeDef ParentName="BRF_BioForgeRecipeBase">
+    <defName>Make_BRF_CrimsonAgarilux_Seed</defName>
+    <label>Breeding Crimson Agarilux Sapling</label>
+    <description>Breed Crimson Agarilux</description>
+    <jobString>Breeding Crimson Agarilux</jobString>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_CrimsonStem</li>
+        <li>BRF_RecastFleshCube</li>
+        <li>BRF_PurgatoryWarts</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <researchPrerequisite Inherit="False">BRF_BloodyAgriculture</researchPrerequisite>
+    <workAmount>25000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_CrimsonStem</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_RecastFleshCube</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_PurgatoryWarts</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_CrimsonAgarilux_Seed>1</BRF_CrimsonAgarilux_Seed>
+    </products>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
 </Defs>

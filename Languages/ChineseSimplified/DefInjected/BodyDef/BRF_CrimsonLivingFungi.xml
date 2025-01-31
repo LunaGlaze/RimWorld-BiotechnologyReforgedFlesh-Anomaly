@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LanguageData>
+  <BRF_CrimsonLivingFungiBody.label>绯红活菌</BRF_CrimsonLivingFungiBody.label>
+  
+  <BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Gastrovascular_Cavity.customLabel>循环腔室</BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Gastrovascular_Cavity.customLabel>
+  <BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.First_Tentacle.customLabel>第一触手</BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.First_Tentacle.customLabel>
+  <BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Second_Tentacle.customLabel>第二触手</BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Second_Tentacle.customLabel>
+  <BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Third_Tentacle.customLabel>第三触手</BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Third_Tentacle.customLabel>
+  <BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Fourth_Tentacle.customLabel>第四触手</BRF_CrimsonLivingFungiBody.corePart.MovingBodyFleshbeast.parts.Fourth_Tentacle.customLabel>
+  
+</LanguageData>

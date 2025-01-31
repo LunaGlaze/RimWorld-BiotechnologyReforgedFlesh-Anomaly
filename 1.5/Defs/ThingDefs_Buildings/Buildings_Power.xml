@@ -34,6 +34,11 @@
 			<drawSize>(1.5, 1.5)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
 			</damageData>
 		</graphicData>
     <descriptionHyperlinks>
@@ -154,7 +159,7 @@
       <li Class="CompProperties_Breakdownable"/>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>150</ticksPerHeal>
+        <ticksPerTimes>150</ticksPerTimes>
       </li>
 	  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
 		  	<interval>1500</interval>
@@ -181,10 +186,11 @@
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
@@ -225,7 +231,7 @@
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>6000</ticksPerHeal>
+        <ticksPerTimes>5000</ticksPerTimes>
       </li>
       <li Class="CompProperties_Explosive">
         <wickTicks>120</wickTicks>

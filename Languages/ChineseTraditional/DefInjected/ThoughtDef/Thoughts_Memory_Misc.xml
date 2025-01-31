@@ -2,10 +2,16 @@
 <LanguageData>
 
   <BRF_AteLivingMeat.stages.ate_living_meat.label>吃了活肉</BRF_AteLivingMeat.stages.ate_living_meat.label>
-  <BRF_AteLivingMeat.stages.ate_living_meat.description>它甚至在我的嘴裏和食道裏蠕動，還帶著血腥味。簡直太可怕了。</BRF_AteLivingMeat.stages.ate_living_meat.description>
+  <BRF_AteLivingMeat.stages.ate_living_meat.description>它甚至在我的嘴裡和食道裡蠕動，還帶著血腥味。簡直太可怕了。</BRF_AteLivingMeat.stages.ate_living_meat.description>
+
+  <BRF_AteRecastFleshCube.stages.ate_flesh_cube.label>食用血肉立方</BRF_AteRecastFleshCube.stages.ate_flesh_cube.label>
+  <BRF_AteRecastFleshCube.stages.ate_flesh_cube.description>這種褻瀆的東西從設計之初就不是給人食用的！</BRF_AteRecastFleshCube.stages.ate_flesh_cube.description>
 
   <BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.label>吃了觸手月餅</BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.label>
-  <BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.description>我不得不承認，這個怪異的東西的味道出乎意料地美味……要是它不會突然在我嘴裏蠕動就好了。</BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.description>
+  <BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.description>我不得不承認，這個怪異的東西的味道出乎意料地美味……要是它不會突然在我嘴裡蠕動就好了。</BRF_AteTentacleMooncake.stages.ate_tentacle_mooncake.description>
+
+  <BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.label>低等神經共生體</BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.label>
+  <BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.description>低等神經共生體的效果並不是很好。或者說，效果不錯，但副作用明顯——我的腦海中充滿了因為連結帶來的不適的念頭。</BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.description>
 
 
 </LanguageData>

@@ -31,4 +31,10 @@
   <BRF_Chewer_Frame.description>由血肉和下顎構成的可怖巨口可以使用它那無窮無盡的咀嚼本能來摧毀一切。</BRF_Chewer_Frame.description>
 
 
+  <!-- 猩紅祭壇 -->
+
+  <BRF_CrimsonAltar.label>猩紅生物祭壇</BRF_CrimsonAltar.label>
+  <BRF_CrimsonAltar.description>血、骨與肉形成了這樣一個畸形的祭壇。我們可以利用實體殘餘的力量來改變我們想要的東西。</BRF_CrimsonAltar.description>
+
+
 </LanguageData>

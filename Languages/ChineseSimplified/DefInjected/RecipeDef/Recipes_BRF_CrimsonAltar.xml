@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- 血腥皮革 -->
+
+  <BRF_WeavingLeatherBloody.label>编织血与肉之皮</BRF_WeavingLeatherBloody.label>
+  <BRF_WeavingLeatherBloody.description>编织血与肉之皮</BRF_WeavingLeatherBloody.description>
+  <BRF_WeavingLeatherBloody.jobString>编织血肉</BRF_WeavingLeatherBloody.jobString>
+
+  <!-- 中性胺 -->
+
+  <BRF_NeutroamineFormScarletamine.label>纯化中性胺</BRF_NeutroamineFormScarletamine.label>
+  <BRF_NeutroamineFormScarletamine.description>纯化猩红胺以复制中性胺</BRF_NeutroamineFormScarletamine.description>
+  <BRF_NeutroamineFormScarletamine.jobString>纯化中性胺</BRF_NeutroamineFormScarletamine.jobString>
+
+  <!-- 重塑先驱肉 -->
+
+  <BRF_AltarReforgedMeat_Harbinger.label>重构先驱之肉</BRF_AltarReforgedMeat_Harbinger.label>
+  <BRF_AltarReforgedMeat_Harbinger.description>将扭曲肉改造成某种也许可以食用的东西。</BRF_AltarReforgedMeat_Harbinger.description>
+  <BRF_AltarReforgedMeat_Harbinger.jobString>正在重构先驱之肉。</BRF_AltarReforgedMeat_Harbinger.jobString>
+
+</LanguageData>

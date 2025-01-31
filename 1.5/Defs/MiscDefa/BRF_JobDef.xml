@@ -7,4 +7,11 @@
 		<reportString>gathering animal resource from TargetA.</reportString>
   </JobDef>
 
+  <JobDef>
+    <defName>BRF_PlantSeed</defName>
+    <driverClass>Luna_BRF.JobDriver_PlantSeed</driverClass>
+    <reportString>planting TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
 </Defs>

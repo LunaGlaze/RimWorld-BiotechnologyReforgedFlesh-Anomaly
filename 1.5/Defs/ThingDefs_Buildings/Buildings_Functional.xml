@@ -87,7 +87,7 @@
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>600</ticksPerHeal>
+        <ticksPerTimes>600</ticksPerTimes>
       </li>
 	  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
 		<interval>6000</interval>
@@ -148,7 +148,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>250</ticksPerHeal>
+        <ticksPerTimes>250</ticksPerTimes>
       </li>
 		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
 		  	<interval>300</interval>

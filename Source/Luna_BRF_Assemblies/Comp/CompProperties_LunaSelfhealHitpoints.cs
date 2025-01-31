@@ -14,7 +14,9 @@ namespace Luna_BRF
 			this.compClass = typeof(LunaSelfhealHitpoints);
 		}
 
-		public int ticksPerHeal;
+		public int pointPerTimes = 1;
+
+		public int ticksPerTimes;
 
 		//ADD
 		public bool requiresFuel;

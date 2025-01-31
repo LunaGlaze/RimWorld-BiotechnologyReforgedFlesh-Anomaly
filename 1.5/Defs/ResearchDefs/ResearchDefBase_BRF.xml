@@ -177,6 +177,22 @@
 		</prerequisites>
     </ResearchProjectDef>
 
+<!--血腥农业-->
+    <ResearchProjectDef>
+		<defName>BRF_BloodyAgriculture</defName>
+    	<label>Bloody Agriculture</label>
+    	<description>Growing and utilizing flesh plants. Those crops of Adytum Paradise were brought beyond the void by flesh entities with the power of transmutation, allowing us to put them to use.</description>
+		<knowledgeCost>12</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+    		<li>BRF_HarbingerSeedlingResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
 <!--生物电力学-->
     <ResearchProjectDef>
 		<defName>BRF_FleshBioElectricityResearch</defName>
@@ -267,7 +283,7 @@
 		<defName>BRF_LimbGuardResearch</defName>
     	<label>Limb Guard</label>
     	<description>Like Clump, maybe we could make some of these limb-based entities ... but the friendly kind. With the analysis of those more ancient but more advanced organisations, it may no longer be delusional to have entities working and guarding for us.</description>
-		<knowledgeCost>5</knowledgeCost>
+		<knowledgeCost>7</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Medieval</techLevel>
@@ -293,6 +309,22 @@
     		<li>BRF_FleshShellBaseResearch</li>
 		</prerequisites>
     </ResearchProjectDef>
+<!--脑蛞蝓基础-->
+    <ResearchProjectDef>
+		<defName>BRF_LowerNeuralSymbiosis</defName>
+    	<label>Lower Neural Symbiosis</label>
+    	<description>As creepy as the Scarlet Cerebral Jellyfish's violation of its victims' brains may be, new research suggests that the Scarlet Cerebral Jellyfish is able to affect its victims' minds for more than just the bizarre chemicals that the wriggling tentacles inject into the brain.The tentacles of that blasphemous creature in fact have some neural structures that defy the laws of nature ...... They are able to take over some of the functions of the brain ...... \n\n If we are determined to mimic them ...... a limited replica of this neural structure to a Neural Symbiosis in the form of a mollusk that can connect to our spine and brainstem ...... a whole new symbiosis shaped by us I call it “Brain Slug”. \n\n Although they are still young and immature, I believe that the technology of remodeling flesh will bring them to perfection along with us.</description>
+		<knowledgeCost>10</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+    		<li>BRF_FleshBeastShellResearch</li>
+    		<li>BlissLobotomy</li>
+		</prerequisites>
+    </ResearchProjectDef>
 
 <!--召唤肢团-->
     <ResearchProjectDef>
@@ -311,12 +343,29 @@
 		</prerequisites>
     </ResearchProjectDef>
 
+<!--猩红祭坛-->
+    <ResearchProjectDef>
+		<defName>BRF_ScarletTransformation</defName>
+    	<label>Scarlet Transformation Technique</label>
+    	<description>We speculate that the monster resembling a type of fleshy fungus was born to transform the environment into the form expected by its creator. But obviously, this transformation is not so beneficial to us who have not yet ascended. So using another way to harness this power is a more reasonable choice. For example, using their remains and our flesh and blood to create an altar for transformation.</description>
+		<knowledgeCost>15</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>1.2</researchViewY>
+		<prerequisites>
+    		<li>BRF_ScarletForgeResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
 <!--绯红家装-->
     <ResearchProjectDef>
 		<defName>BRF_CrimsonFurnitureResearch</defName>
     	<label>Crimson Furniture</label>
     	<description>[Sorry, but this part of the development has been put on hold due to lack of art resources and capabilities.]</description>
-		<baseCost>1000</baseCost>
+		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
@@ -331,7 +380,7 @@
 		<defName>BRF_SpitterFleshwormResearch</defName>
     	<label>Spitter Fleshworm</label>
     	<description>Further research on fleshheart has yielded the technology to create spitter organs that belong to us. We've freed ourselves from the reliance on destructive analysis of those neural tissues. Using the coding in those tissues, we were able to construct a more worm-like organ of flesh and blood for our defence.</description>
-		<knowledgeCost>7</knowledgeCost>
+		<knowledgeCost>10</knowledgeCost>
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Medieval</techLevel>

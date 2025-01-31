@@ -3,5 +3,7 @@
 
   <BRF_AnimalResource.reportString>從TargetA收集動物資源。</BRF_AnimalResource.reportString>
 
+  <BRF_PlantSeed.reportString>正在種植TargetA。</BRF_PlantSeed.reportString>
+
 
 </LanguageData>

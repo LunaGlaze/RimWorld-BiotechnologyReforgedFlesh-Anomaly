@@ -131,11 +131,11 @@ namespace Luna_BRF
 			Hediff firstHediff = Pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_RapidRegeneration);
 			if (firstHediff != null && isflesh)
 			{
-				firstHediff.Severity += (bodySize/25) ;
+				firstHediff.Severity += (bodySize/2.5f) ;
             }else if (isflesh)
             {
 				Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, Pawn);
-				hediff.Severity = bodySize/25;
+				hediff.Severity = bodySize/2.5f;
 				Pawn.health.AddHediff(hediff);
 			}
 			if (Pawn.Drawer.renderer.CurAnimation == AnimationDefOf.DevourerDigesting)

@@ -16,7 +16,7 @@
   <BRF_FleshBrachiopodHediff.description>一种肉质、肌肉发达的触手，可以用来移动身体，但效果模样那么好。这些触手长在应该长腿的地方，但由于其灵活性，在某种程度上也可以当作手来使用。\n\n这只触手有自己的神经结构，将其移除可能招致危险。</BRF_FleshBrachiopodHediff.description>
   <BRF_FleshBrachiopodHediff.comps.0.letterLabel>血肉手术</BRF_FleshBrachiopodHediff.comps.0.letterLabel>
   <BRF_FleshBrachiopodHediff.comps.0.letterText>试图移除{PAWN_nameDef}身上血肉腕足的手术让这团扭曲的肉有了攻击性。它从{PAWN_nameDef}身上分离后变成了一只血肉兽！</BRF_FleshBrachiopodHediff.comps.0.letterText>
-  <BRF_FleshBrachiopodHediff.labelNoun>a 血肉腕足</BRF_FleshBrachiopodHediff.labelNoun>
+  <BRF_FleshBrachiopodHediff.labelNoun>血肉腕足</BRF_FleshBrachiopodHediff.labelNoun>
 
 
   <!-- 肾脏 -->

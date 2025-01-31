@@ -7,5 +7,6 @@
 		<li IfModActive="rim.job.world">1.5/Mods/RJW/Core</li>
 		<li IfModActive="anomaly.corpration">1.5/Mods/ACE</li>
 		<li IfModActive="automatic.bionicicons">1.5/Mods/Bionicicons</li>
+		<li IfModActive="ninedaylongbow.ChineseComprehensiveExpansion">1.5/Mods/ChineseComprehensiveExpansion</li>
 	</v1.5>
 </loadFolders>

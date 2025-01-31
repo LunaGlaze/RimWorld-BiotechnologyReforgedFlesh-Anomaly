@@ -33,10 +33,12 @@
     <isBad>false</isBad>
     <preventsDeath>true</preventsDeath>
     <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <initialSeverity>0.1</initialSeverity>
+    <maxSeverity>10</maxSeverity>
     <stages>
       <li>
         <minSeverity>0</minSeverity>
-        <regeneration>30000</regeneration>
+        <regeneration>50000</regeneration>
         <showRegenerationStat>false</showRegenerationStat>
         <statOffsets>
           <PainShockThreshold>10</PainShockThreshold>

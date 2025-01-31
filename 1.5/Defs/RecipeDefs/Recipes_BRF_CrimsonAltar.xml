@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="BRF_CrimsonAltarRecipeBase" Abstract="True">
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>BRF_CrimsonAltar</li>
+    </recipeUsers>
+    <researchPrerequisite>BRF_ScarletTransformation</researchPrerequisite>
+  </RecipeDef>
+<!-- 血腥皮革 -->
+  <RecipeDef Name="BRF_MakeLeatherBloodyBase" ParentName="BRF_CrimsonAltarRecipeBase" Abstract="True">
+    <description>Weaving leather of flesh and blood</description>
+    <jobString>Weaving flesh</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <thingDefs>
+        <li>Leather_Dread</li>
+        <li>Leather_Human</li>
+        <li>BRF_ScarletFerrite</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BRF_MakeLeatherBloodyBase">
+    <defName>BRF_WeavingLeatherBloody</defName>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Leather_Dread</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Leather_Human</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ScarletFerrite</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_Leather_Bloody>25</BRF_Leather_Bloody>
+    </products>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+<!-- 中性胺 -->
+  <RecipeDef ParentName="BRF_CrimsonAltarRecipeBase">
+    <defName>BRF_NeutroamineFormScarletamine</defName>
+    <label>Purified Neutroamine</label>
+    <description>Purified Scarletamine to replicate Neutroamine.</description>
+    <jobString>Purified Neutroamine.</jobString>
+    <workAmount>2000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_Scarletamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_GelatinousFlesh</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_BloodyHerbPack</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+        <li>BRF_ReforgedMeat_Harbinger</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>4</Neutroamine>
+    </products>
+  </RecipeDef>
+
+
+<!-- 重塑先驱肉 -->
+  <RecipeDef ParentName="BRF_CrimsonAltarRecipeBase">
+    <defName>BRF_AltarReforgedMeat_Harbinger</defName>
+    <label>reconstruct harbinger flesh</label>
+    <description>reconstruct twisted flesh into something may edible.</description>
+    <jobString>Reconstructing harbinger flesh.</jobString>
+    <workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Twisted</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+        <li>BRF_ReforgedMeat_Harbinger</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BRF_ReforgedMeat_Harbinger>10</BRF_ReforgedMeat_Harbinger>
+    </products>
+  </RecipeDef>
+
+</Defs>

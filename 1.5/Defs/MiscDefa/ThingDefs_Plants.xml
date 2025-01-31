@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--厄兆触须-->
 	<ThingDef ParentName="PlantBase">
+    	<thingClass>Luna_BRF.PlantPlus</thingClass>
 		<defName>BRF_HarbingerTentacles</defName>
 		<label>Harbinger Tentacles</label>
-		<description>A grotesque fleshy plant - or rather, a mass of twisted tentacles that grow like plants. Gruesome, but delicious and juicy.</description>
+		<description>A grotesque fleshy plant - or rather, a mass of twisted tentacles that grow like plants. Gruesome, but delicious and juicy. This unnatural crop is adapted to more extreme environments.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.5</Nutrition>
@@ -22,7 +24,7 @@
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<dieIfLeafless>false</dieIfLeafless>
 			<dieIfNoSunlight>false</dieIfNoSunlight>
-			<harvestMinGrowth>0.99</harvestMinGrowth>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BRF_ReforgedMeat_Harbinger</harvestedThingDef>
 			<neverBlightable>true</neverBlightable>
@@ -33,9 +35,416 @@
 			<topWindExposure>0.05</topWindExposure>
 			<growDays>7</growDays>
 			<visualSizeRange>0.8~1.75</visualSizeRange>
-			<wildOrder>2</wildOrder>
+			<wildOrder>0.25</wildOrder>
 			<purpose>Food</purpose>
 			<pollution>Any</pollution>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
 		</plant>
 	</ThingDef>
+<!--绯红蕈-->
+	<ThingDef ParentName="TreeBase">
+		<defName>BRF_CrimsonAgarilux</defName>
+		<label>Crimson Agarilux</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>A bizarre plant somewhere between flesh and a fungus. It seems to have originated from a modification by a twisted hyperintelligent archotech mind. This plant is capable of adapting to more extreme environments and produces some strange but useful biological material. It is said to be the Tree of Life from the Adytum Paradise.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BRF_CrimsonStem</ThingDef>
+			<ThingDef>BRF_RecastFleshCube</ThingDef>
+			<ThingDef>BRF_PurgatoryWarts</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+      		<Beauty>3</Beauty>
+      		<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/BRF_CrimsonAgarilux</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+    	<minifiedDef IsNull="True" />
+		<fillPercent>0.35</fillPercent>
+		<pathCost>130</pathCost>
+		<rotatable>false</rotatable>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>10</growDays>
+			<treeCategory>Full</treeCategory>
+			<harvestWork>500</harvestWork>
+			<harvestedThingDef>BRF_CrimsonStem</harvestedThingDef>
+			<harvestYield>21</harvestYield>
+			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<sowTags Inherit="False"/>
+			<sowResearchPrerequisites Inherit="False" />
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<wildOrder>1</wildOrder>
+      		<burnedThingDef IsNull="True" />
+      		<choppedThingDef IsNull="True" />
+      		<smashedThingDef IsNull="True" />
+      		<interferesWithRoof>false</interferesWithRoof>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+    	<comps>
+      		<li Class="CompProperties_SelfhealHitpoints">
+        		<ticksPerHeal>2000</ticksPerHeal> <!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+      		</li>
+      		<li Class="CompProperties_Glower">
+        		<glowRadius>3</glowRadius>
+        		<glowColor>(252,187,113,0)</glowColor>
+      		</li>
+    	</comps>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>40</extraDroppedCount>
+					</li>
+					<li>
+						<extraDroppedThing>BRF_PurgatoryWarts</extraDroppedThing>
+						<extraDroppedCount>7</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+	</ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_CrimsonAgarilux_Seed</defName>
+    <label>Crimson Agarilux seed</label>
+    <description>A hand-cultivated seedling of Crimson Agarilux. Planting it grows it into a Crimson Agarilux, a tree that fluoresces and produces flesh bio-material.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_CrimsonAgarilux</ThingDef>
+    </descriptionHyperlinks>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Beauty>0</Beauty>
+      <MarketValue>600</MarketValue>
+      <WorkToMake>750</WorkToMake>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Resource/Plant/BRF_CrimsonAgarilux_Seed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6, 0.6)</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_PlantableWithTerrainAffordance">
+        <plantDefToSpawn>BRF_CrimsonAgarilux</plantDefToSpawn>
+        <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+      </li>
+    </comps>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+<!--绯红樱-->
+	<ThingDef ParentName="TreeBase">
+		<defName>BRF_CrimsonSakura</defName>
+		<label>Crimson Sakura</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>A beautiful and peculiar plant with biological characteristics between flesh and fungi, but capable of producing a certain type of wooden material. The plant known as the sakura tree from Adytum Paradise is said to be a major landscape plant and source of wood in a great and free world.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BRF_CrimsonStem</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+      		<BeautyOutdoors>12</BeautyOutdoors>
+      		<Beauty>12</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/BRF_CrimsonSakura</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>20</growDays>
+			<harvestedThingDef>BRF_CrimsonStem</harvestedThingDef>
+			<harvestYield>27</harvestYield>
+			<visualSizeRange>1.5~2.75</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<sowResearchPrerequisites>
+				<li>BRF_BloodyAgriculture</li>
+			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li>FleshPlanter</li>
+			</sowTags>
+			<wildOrder>1</wildOrder>
+      		<burnedThingDef IsNull="True" />
+      		<choppedThingDef IsNull="True" />
+      		<smashedThingDef IsNull="True" />
+      		<interferesWithRoof>false</interferesWithRoof>
+      		<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>5</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+	</ThingDef>
+<!--绯红窥叶-->
+	<ThingDef ParentName="PlantBase">
+		<defName>BRF_CrimsonPeepingLeaves</defName>
+		<label>Crimson Peeping Leaves</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>It may be a herbaceous plant, but it likewise has some fleshy structures on it. Though that eye does not in common sense have a visual function, you still feel as if something is watching you.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<descriptionHyperlinks>
+			<ThingDef>BRF_RecastFleshCube</ThingDef>
+		</descriptionHyperlinks>
+		<selectable>true</selectable>
+		<graphicData>
+			<texPath>Plants/BRF_CrimsonPeepingLeaves</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growDays>2</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1~1.6</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<wildOrder>1.5</wildOrder>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BRF_BloodyAgriculture</li>
+			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li>FleshPlanter</li>
+			</sowTags>
+			<harvestMinGrowth>0.99</harvestMinGrowth>
+      		<harvestTag>Standard</harvestTag>
+      		<harvestedThingDef>BRF_RecastFleshCube</harvestedThingDef>
+      		<harvestYield>5</harvestYield>
+		</plant>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>5</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+	</ThingDef>
+<!--下界疣-->
+	<ThingDef ParentName="PlantBase">
+		<defName>BRF_PurgatoryWart</defName>
+		<label>Purgatory Wart</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>A strange plant that seems to come from the abyss, like juicy meat but grows like a fungus. This plant can be harvested and used as a simple herbal medicine or a strange biological material.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<descriptionHyperlinks>
+			<ThingDef>BRF_PurgatoryWarts</ThingDef>
+		</descriptionHyperlinks>
+		<selectable>true</selectable>
+		<graphicData>
+			<texPath>Plants/BRF_PurgatoryWart</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>10</growDays>
+			<harvestWork>800</harvestWork>
+			<sowMinSkill>8</sowMinSkill>
+			<visualSizeRange>0.75~1.25</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildOrder>0.25</wildOrder>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
+			<harvestedThingDef>BRF_PurgatoryWarts</harvestedThingDef>
+			<harvestTag>Standard</harvestTag>
+			<growMinGlow>0</growMinGlow>
+			<harvestYield>10</harvestYield>
+			<sowTags Inherit="False"/>
+			<sowResearchPrerequisites Inherit="False" />
+		</plant>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>1</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+	</ThingDef>
+<!--绯红菌索-->
+  	<ThingDef ParentName="PlantBase">
+    	<defName>BRF_CrimsonRoots</defName>
+		<label>Crimson Roots</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>A bloody grass like plant that seems to come from another world. It has a ground part similar to that of herbaceous plants, with a core like the roots of fungi and meat chunks buried underground. The good news is that this strange plant can be harvested just like regular hay.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Hay</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+      		<MaxHitPoints>85</MaxHitPoints>
+      		<Flammability>0</Flammability>
+      		<Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/BRF_CrimsonRoots</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growDays>7</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~0.8</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1.5</wildOrder>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BRF_BloodyAgriculture</li>
+			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li>FleshPlanter</li>
+			</sowTags>
+			<harvestWork>40</harvestWork>
+			<harvestMinGrowth>0.99</harvestMinGrowth>
+      		<harvestTag>Standard</harvestTag>
+      		<harvestedThingDef>Hay</harvestedThingDef>
+      		<harvestYield>18</harvestYield>
+      		<purpose>Food</purpose>
+		</plant>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>1</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+  </ThingDef>
+<!--沙糖桔-->
+  	<ThingDef ParentName="PlantBase">
+    	<defName>BRF_Plant_BloodyCitrusReticulata</defName>
+		<label>Crimson Roots</label>
+		<thingClass>Luna_BRF.PlantPlus</thingClass>
+		<description>A bloody modified plant that can produce delicious Bloody Citrus Reticulata fruit. Unfortunately, the shrub itself can only bear fruit once and will wither after harvesting, requiring replanting. \n\n Legend has it that in Adytum Paradise, people use it as a lucky snack to celebrate festivals and the arrival of the new year, symbolizing happiness.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BRF_BloodyCitrusReticulata</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+      		<MaxHitPoints>100</MaxHitPoints>
+      		<Flammability>0</Flammability>
+      		<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+     	 	<texPath>Plants/BRF_Plant_BloodyCitrusReticulata</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+      		<shadowData>
+        		<volume>(0.1, 0.2, 0.1)</volume>
+      		</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+      		<dieFromToxicFallout>False</dieFromToxicFallout>
+			<neverBlightable>true</neverBlightable>
+			<pollution>Any</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growDays>6</growDays>
+			<visualSizeRange>0.65~1.2</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1.5</wildOrder>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BRF_BloodyAgriculture</li>
+			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li>FleshPlanter</li>
+			</sowTags>
+			<harvestMinGrowth>0.99</harvestMinGrowth>
+      		<harvestTag>Standard</harvestTag>
+      		<harvestedThingDef>BRF_BloodyCitrusReticulata</harvestedThingDef>
+      		<harvestYield>4</harvestYield>
+      		<purpose>Food</purpose>
+		</plant>
+    	<modExtensions>
+        	<li Class="Luna_BRF.ExtensionDef_PlantPlusAdditionalLeavings">
+            	<extraDropped>
+					<li>
+						<extraDroppedThing>BRF_RecastFleshCube</extraDroppedThing>
+						<extraDroppedCount>3</extraDroppedCount>
+					</li>
+				</extraDropped>
+        	</li>
+    	</modExtensions>
+  </ThingDef>
 </Defs>

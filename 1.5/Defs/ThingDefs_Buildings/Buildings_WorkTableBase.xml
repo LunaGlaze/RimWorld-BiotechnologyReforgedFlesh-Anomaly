@@ -57,9 +57,9 @@
     </statBases>
     <selectable>true</selectable>
     <costList>
-      <Steel>100</Steel>
+      <Steel>50</Steel>
       <MedicineHerbal>10</MedicineHerbal>
-      <Meat_Human>150</Meat_Human>
+      <Meat_Human>75</Meat_Human>
     </costList>
     <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -71,7 +71,7 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelConsumptionRate>5</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
           <categories>
@@ -83,6 +83,7 @@
 		      </disallowedCategories>
         </fuelFilter>
         <initialFuelPercent>0.25</initialFuelPercent>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
       <li Class="CompProperties_Glower">
@@ -145,16 +146,17 @@
       <drawSize>(3.5,1.5)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
     </graphicData>
     <costList>
-      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
-	    <BRF_ReforgedMeat_Insect>50</BRF_ReforgedMeat_Insect>
-	    <Meat_Twisted>75</Meat_Twisted>
+      <BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
+	    <BRF_ReforgedMeat_Insect>25</BRF_ReforgedMeat_Insect>
+	    <Meat_Twisted>50</Meat_Twisted>
 	    <Bioferrite>15</Bioferrite>
 	    <BRF_LivingFlesh>3</BRF_LivingFlesh>
     </costList>
@@ -219,7 +221,7 @@
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costList>
-      <Meat_Twisted>60</Meat_Twisted>
+      <Meat_Twisted>50</Meat_Twisted>
 	    <BRF_GelatinousFlesh>15</BRF_GelatinousFlesh>
 	    <Jaw>4</Jaw>
 	    <BRF_LivingFlesh>1</BRF_LivingFlesh>
@@ -273,6 +275,90 @@
       <li>BRF_DestroyWeapon</li>
       <li>BRF_DestroyApparel</li>
       <li>BRF_DestroyDrugs</li>
+    </recipes>
+  </ThingDef>
+<!-- 猩红祭坛 -->
+  <ThingDef ParentName="BRF_BuildingWorkTableLiving">
+    <defName>BRF_CrimsonAltar</defName>
+    <label>Crimson Bio-Altar</label>
+    <description>Blood, bone, and flesh have formed such a deformed altar. We can use the residual power of entities here to transform what we want.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <uiIconPath>Buildings/WorkTable/BRF_CrimsonAltar/BRF_CrimsonAltar_south</uiIconPath>
+    <graphicData>
+      <texPath>Buildings/WorkTable/BRF_CrimsonAltar/BRF_CrimsonAltar</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.6,2.6)</drawSize>
+	    <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Corpse_BRF_CrimsonLivingFungi>1</Corpse_BRF_CrimsonLivingFungi>
+	    <BRF_LivingFlesh>5</BRF_LivingFlesh>
+	    <BRF_BoneFragment>10</BRF_BoneFragment>
+	    <BRF_ScarletFerrite>15</BRF_ScarletFerrite>
+	    <BRF_RecastFleshCube>25</BRF_RecastFleshCube>
+	    <BRF_GelatinousFlesh>25</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Harbinger>50</BRF_ReforgedMeat_Harbinger>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(2,2)</size>
+    <uiOrder>2520</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>BRF_NutritionalPaste</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>BRF_ScarletTransformation</li>
+    </researchPrerequisites>
+    <recipes>
+      <li MayRequire="trickity.seal.spirits">T_RendBio</li>
+      <li>BRF_ReforgedMeat_Human1</li>
+      <li>BRF_ReforgedMeat_Insect1</li>
+      <li>BRF_ShapingTwistedMeat</li>
+      <li>BRF_ShapingFleshCubes</li>
     </recipes>
   </ThingDef>
 

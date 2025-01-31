@@ -26,7 +26,7 @@
 	<building>
 		<turretTopDrawSize>2.7</turretTopDrawSize>
         <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        <destroySound>Pawn_Flesh_Death</destroySound>
+        <destroySound>BRF_Pawn_Flesh_Death</destroySound>
 	</building>
 	<placeWorkers>
 		<li>PlaceWorker_TurretTop</li>
@@ -56,6 +56,11 @@
       <drawSize>(1.5, 1.5)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
       <shadowData>
         <volume>(1.5,0.35,1.4)</volume>
@@ -87,7 +92,8 @@
     <comps>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>600</ticksPerHeal>
+        <ticksPerTimes>600</ticksPerTimes>
+        <pointPerTimes>3</pointPerTimes>
       </li>
         <li Class="CompProperties_Refuelable">
             <fuelLabel>Nutritional Paste</fuelLabel>
@@ -151,6 +157,11 @@
       <drawSize>(1.5, 1.5)</drawSize>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
       <shadowData>
         <volume>(1.5,0.35,1.4)</volume>
@@ -183,7 +194,8 @@
     <comps>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>550</ticksPerHeal>
+        <ticksPerTimes>550</ticksPerTimes>
+        <pointPerTimes>3</pointPerTimes>
       </li>
         <li Class="CompProperties_Refuelable">
             <fuelLabel>Nutritional Paste</fuelLabel>
@@ -206,7 +218,7 @@
     </comps>
   </ThingDef>
  <!--血肉喷吐蠕虫-->
-	<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="BaseArtilleryWeapon">
 		<defName>BRF_FleshSpitterWorm</defName>
 		<label>Flesh Spitter Worm</label>
 		<description>A flesh creature bred using fleshheart neural tissue coding. Its lower half is a lump of flesh linked to the ground of the fungus blanket, while the upper half is a giant worm-like structure. This flesh construct requires nourishment for maintenance and can spray acid over considerable distances to strike enemies.</description>

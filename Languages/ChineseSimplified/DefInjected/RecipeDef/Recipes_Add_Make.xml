@@ -112,6 +112,33 @@
   <Make_BRFMelee_BoneDagger.label>制造骨质匕首</Make_BRFMelee_BoneDagger.label>
   <Make_BRFMelee_BoneDagger.description>制造骨质匕首。</Make_BRFMelee_BoneDagger.description>
   <Make_BRFMelee_BoneDagger.jobString>正在制造骨质匕首。</Make_BRFMelee_BoneDagger.jobString>
+  
+  <!-- Recipe Users: BRF_BioForge -->
+
+  <Make_BRF_AnalogBrainSlugs.label>制造拟似脑蛞蝓</Make_BRF_AnalogBrainSlugs.label>
+  <Make_BRF_AnalogBrainSlugs.description>制造拟似脑蛞蝓。</Make_BRF_AnalogBrainSlugs.description>
+  <Make_BRF_AnalogBrainSlugs.jobString>正在制造拟似脑蛞蝓。</Make_BRF_AnalogBrainSlugs.jobString>
+  
+  <!-- Recipe Users: DrugLab, BRF_BioForge -->
+
+  <Make_BRF_CrimsonAgarilux_Seed.label>培育绯红蕈幼苗</Make_BRF_CrimsonAgarilux_Seed.label>
+  <Make_BRF_CrimsonAgarilux_Seed.description>培育绯红蕈幼苗</Make_BRF_CrimsonAgarilux_Seed.description>
+  <Make_BRF_CrimsonAgarilux_Seed.jobString>正在培育绯红蕈幼苗。</Make_BRF_CrimsonAgarilux_Seed.jobString>
+
+  <Make_BRF_BloodyHerbPack.label>制造血腥草药包</Make_BRF_BloodyHerbPack.label>
+  <Make_BRF_BloodyHerbPack.description>制造血腥草药包。</Make_BRF_BloodyHerbPack.description>
+  <Make_BRF_BloodyHerbPack.jobString>正在制造血腥草药包。</Make_BRF_BloodyHerbPack.jobString>
+  
+  <!-- Recipe Users: BRF_CrimsonAltar -->
+
+  <Make_BRF_Scarletamine.label>制造猩红胺</Make_BRF_Scarletamine.label>
+  <Make_BRF_Scarletamine.description>制造猩红胺。</Make_BRF_Scarletamine.description>
+  <Make_BRF_Scarletamine.jobString>正在制造猩红胺。</Make_BRF_Scarletamine.jobString>
+
+  <Make_BRF_MedicineRefiningFlesh.label>制造精炼血肉医药</Make_BRF_MedicineRefiningFlesh.label>
+  <Make_BRF_MedicineRefiningFlesh.description>制造精炼血肉医药。</Make_BRF_MedicineRefiningFlesh.description>
+  <Make_BRF_MedicineRefiningFlesh.jobString>正在制造精炼血肉医药。</Make_BRF_MedicineRefiningFlesh.jobString>
+
 
 
 </LanguageData>

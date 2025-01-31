@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef>
+        <defName>BRF_CrimsonSporeGas</defName>
+	    <thingClass>Luna_BRF.Gas_Clentaminator</thingClass>
+        <label>Crimson Spore Gas</label>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <drawSize>2.2</drawSize>
+            <color>(94,20,21,65)</color>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+        </graphicData>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+        <gas>
+            <expireSeconds>
+                <min>18</min>
+                <max>29</max>
+            </expireSeconds>
+            <rotationSpeed>10</rotationSpeed>
+        </gas>
+        <modExtensions>
+            <li Class="Luna_BRF.ExtensionDef_ClentaminatorList">
+                <blackListThingsBase>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+                    <li>Plant_TreeHarbinger</li>
+                    <li>BRF_HarbingerTentacles</li>
+                    <li>BRF_CrimsonAgarilux</li>
+                    <li>BRF_CrimsonSakura</li>
+                    <li>BRF_CrimsonPeepingLeaves</li>
+                    <li>BRF_CrimsonRoots</li>
+                    <li>BRF_PurgatoryWart</li>
+                    <li>BRF_Plant_BloodyCitrusReticulata</li>
+                    <li MayRequire="sarg.alphaanimals">AB_BloodBouquet</li>
+                </blackListThingsBase>
+                <isTreeLists>
+                    <BRF_CrimsonAgarilux>10</BRF_CrimsonAgarilux>
+                    <BRF_CrimsonSakura>9</BRF_CrimsonSakura>
+                    <AB_BloodBouquet MayRequire="sarg.alphaanimals">1</AB_BloodBouquet>
+                </isTreeLists>
+                <notTreeLists>
+                    <BRF_CrimsonPeepingLeaves>10</BRF_CrimsonPeepingLeaves>
+                    <BRF_CrimsonRoots>10</BRF_CrimsonRoots>
+                    <BRF_PurgatoryWart>3</BRF_PurgatoryWart>
+                    <BRF_Plant_BloodyCitrusReticulata>3</BRF_Plant_BloodyCitrusReticulata>
+                </notTreeLists>
+                <whiteListPawn>
+                    <li MayRequire="sarg.alphaanimals">AA_OcularJelly</li>
+                </whiteListPawn>
+                <pawnLists>
+                    <BRF_CrimsonLivingFungi>1</BRF_CrimsonLivingFungi>
+                </pawnLists>
+                <defaultFaction>Entities</defaultFaction>
+                <whiteListTerrain>
+                    <li>Flesh</li>
+                </whiteListTerrain>
+                <terrainToSet>BRF_FleshBlanket</terrainToSet>
+                <destroyGasTypes>
+                    <li MayRequire="sarg.alphaanimals">AA_OcularGas</li>
+                </destroyGasTypes>
+                <fleshTypeWithoutBRFLung>true</fleshTypeWithoutBRFLung>
+                <takeDamageFleshWithoutEntity>BRF_CrimsonSporeCut</takeDamageFleshWithoutEntity>
+                <hediffDefGiveMechanoid>BRF_CrimsonSporeMechanicalInterference</hediffDefGiveMechanoid>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

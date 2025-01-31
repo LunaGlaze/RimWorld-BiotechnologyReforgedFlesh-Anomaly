@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--血肉墙-->
+<!--基础血肉墙-->
 	<ThingDef ParentName="BuildingBase">
         <defName>BRF_FleshWall</defName>
         <label>Flesh Wall</label>
@@ -35,11 +35,10 @@
     	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
 		<costList>
 			<Meat_Twisted>5</Meat_Twisted>
-			<Bioferrite>1</Bioferrite>
 		</costList>
 		<statBases>
-			<MaxHitPoints>240</MaxHitPoints>
-			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToBuild>125</WorkToBuild>
 			<Flammability>0.6</Flammability>
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -62,6 +61,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<building>
 			<supportsWallAttachments>true</supportsWallAttachments>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
@@ -70,7 +70,91 @@
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
-<!--血肉门-->
+<!--强化血肉墙-->
+	<ThingDef ParentName="Wall">
+        <defName>BRF_FleshWallTeirTwo</defName>
+        <label>Flesh Wall</label>
+        <description>The twisted and reshaped flesh intertwines with other materials to form this living wall of flesh and blood. It throbs and shivers with horrible life.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+        <uiOrder>215</uiOrder>
+        <graphicData>
+		  <texPath>Buildings/Structure/Linked/BRF_FleshWallTeir2_Atlas</texPath> <!-- Placeholder -->
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerFiller</linkType>
+          <linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+				<li>Fleshmass</li>
+          </linkFlags>
+          <shaderType>CutoutComplex</shaderType>
+          <damageData>
+            <rect>(0.15, 0.15, 0.75, 0.75)</rect>
+            <scratches>
+              <li>Damage/FleshScratch1</li>
+              <li>Damage/FleshScratch2</li>
+              <li>Damage/FleshScratch3</li>
+            </scratches>
+          </damageData>
+        </graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/BRF_FleshWallTeir2_Icon</uiIconPath>
+		<uiIconPathsStuff IsNull="True" />
+    	<researchPrerequisites>
+    		<li>BRF_CrimsonFurnitureResearch</li>
+    	</researchPrerequisites>
+    	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<costList>
+			<BRF_RecastFleshCube>6</BRF_RecastFleshCube>
+			<Meat_Twisted>2</Meat_Twisted>
+		</costList>
+    	<stuffCategories>
+      		<li>BRF_LivingAlloy</li>
+    	</stuffCategories>
+    	<costStuffCount>5</costStuffCount>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>false </coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+    	<comps Inherit="False">
+      		<li Class="CompProperties_MeditationFocus">
+        		<statDef>MeditationFocusStrength</statDef>
+        		<focusTypes>
+          			<li>Minimal</li>
+          			<li>Void</li>
+        		</focusTypes>
+      		</li>
+    	</comps>
+	</ThingDef>
+<!--基础血肉门-->
 	<ThingDef ParentName="BuildingBase">
         <defName>BRF_FleshDoor</defName>
         <label>Flesh Door</label>
@@ -86,6 +170,11 @@
             <graphicClass>Graphic_Single</graphicClass>
             <damageData>
                 <enabled>false</enabled>
+        		<scratches>
+          			<li>Damage/FleshScratch1</li>
+          			<li>Damage/FleshScratch2</li>
+          			<li>Damage/FleshScratch3</li>
+        		</scratches>
             </damageData>
         </graphicData>
     	<uiIconPath>Buildings/Structure/Flesh/Door/FleshDoor_Icon</uiIconPath>
@@ -94,11 +183,10 @@
     	</researchPrerequisites>
 		<costList>
 			<Meat_Twisted>10</Meat_Twisted>
-			<Bioferrite>2</Bioferrite>
 		</costList>
         <statBases>
-            <MaxHitPoints>400</MaxHitPoints>
-			<WorkToBuild>850</WorkToBuild>
+            <MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
             <Flammability>0.6</Flammability>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -190,5 +278,70 @@
     <uiOrder>2000</uiOrder>
 	<designationCategory inherit ="False"/>
   </TerrainDef>
+<!--血肉种植格-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>BRF_FleshPlanter</defName>
+		<label>Flesh Planter Grid</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<description>A planting grid made from blood and flesh as fertilizer and soil. It is somewhat similar to hydroponics, but can only be used to grow flesh plants.</description>
+		<graphicData>
+			<texPath>Buildings/Structure/Linked/BRF_FleshPlanter_Atlas</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom3</li>
+			</linkFlags>
+			<damageData>
+        		<scratches>
+          			<li>Damage/FleshScratch1</li>
+          			<li>Damage/FleshScratch2</li>
+          			<li>Damage/FleshScratch3</li>
+        		</scratches>
+			</damageData>
+		</graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/BRF_FleshPlanter_MenuIcon</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(1,1)</size>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+			<Cleanliness>-4</Cleanliness>
+		</statBases>
+		<building>
+			<defaultPlantToGrow>BRF_CrimsonPeepingLeaves</defaultPlantToGrow>
+			<sowTag>FleshPlanter</sowTag>
+			<blueprintGraphicData>
+				<texPath>Buildings/Structure/Linked/BRF_FleshPlanter_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+			<BRF_RecastFleshCube>4</BRF_RecastFleshCube>
+			<Meat_Twisted>3</Meat_Twisted>
+			<BRF_CrimsonStem>2</BRF_CrimsonStem>
+			<BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
+		</costList>
+		<tickerType>Rare</tickerType>
+		<fertility>2.5</fertility>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<constructEffect>ConstructWood</constructEffect>
+		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    	<researchPrerequisites>
+      		<li>BRF_BloodyAgriculture</li>
+    	</researchPrerequisites>
+	</ThingDef>
 
 </Defs>

@@ -24,21 +24,21 @@ namespace Luna_BRF
 				{
 					if (Find.Anomaly.LevelDef.anomalyThreatTier <= 2)
 					{
-						parms.points = (defaultPawnGroupMakerParms.points += 250 + num);
+						parms.points = (defaultPawnGroupMakerParms.points += 350 + num);
 
 					}else if (Find.Anomaly.LevelDef.anomalyThreatTier <= 3)
 					{
-						parms.points = (defaultPawnGroupMakerParms.points += 500 + num);
+						parms.points = (defaultPawnGroupMakerParms.points += 700 + num);
 
 					}
 					else if (Find.Anomaly.LevelDef.anomalyThreatTier <= 4)
 					{
-						parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 2);
+						parms.points = (defaultPawnGroupMakerParms.points += (700 + num) * 2);
 
                     }
                     else
 					{
-						parms.points = (defaultPawnGroupMakerParms.points += (500 + num) * 4);
+						parms.points = (defaultPawnGroupMakerParms.points += (700 + num) * 4);
 					}
 				}
 			}
@@ -54,6 +54,7 @@ namespace Luna_BRF
 			}
 			//LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_GorehulkAssault(), parms.target as Map, list);
 			SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, list);
+			Find.EntityCodex.SetDiscovered(LunaEntityCodexEntryDefOf.BRF_Clump, ThingDef.Named("BRF_Clump"));
 			return true;
 		}
 	}

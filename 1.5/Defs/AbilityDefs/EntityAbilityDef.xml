@@ -22,12 +22,66 @@
       <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
     </graphicData>
     <projectile>
-      <damageAmountBase>14</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
     </projectile>
     <modExtensions>
         <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
             <addHediffChance>0.75</addHediffChance>
             <HediffDefToAdd>BRF_MalignantFleshActivation</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+ <!-- 绯红活菌 -->
+  <AbilityDef ParentName="SpikeLaunchBase">
+    <defName>BRF_Launch_CrimsonPus</defName>
+    <label>Crimson Pus</label>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <verbProperties>
+      <range>250</range>
+      <defaultProjectile>BRF_Proj_CrimsonPus</defaultProjectile>
+    </verbProperties>
+  </AbilityDef>
+ <!--绯红脓液-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>BRF_Proj_CrimsonPus</defName>
+    <label>Crimson Pus</label>
+    <thingClass>Luna_BRF.Projectile_ExplosionCustomGasPost</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single_AgeSecs</graphicClass>
+      <texPath>Things/Projectile/FleshmassSpitterProjectileSheet</texPath>
+			<color>(.8,0,0)</color>
+      <drawSize>(.6, .6)</drawSize>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <useGraphicClass>True</useGraphicClass>
+      <shadowSize>1</shadowSize>
+      <damageDef>BRF_CrimsonSporeCut</damageDef>
+      <spinRate>18</spinRate>
+      <damageAmountBase>25</damageAmountBase>
+      <speed>36</speed>
+      <arcHeightFactor>1</arcHeightFactor>
+      <explosionRadius>3.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundExplode>SpitterSpitLands</soundExplode>
+      <filth>Filth_BRF_PrimordialTwistedFlesh</filth>
+      <filthCount>1</filthCount>
+      <explosionEffect>Shell_AcidSpitImpact</explosionEffect>
+      <explosionEffectLifetimeTicks>60</explosionEffectLifetimeTicks>
+      <doExplosionVFX>false</doExplosionVFX>
+    </projectile>
+    <comps>
+        <li Class="CompProperties_ProjectileEffecter">
+          <effecterDef>Shell_AcidSpitStream</effecterDef>
+        </li>
+        <li Class="CompProperties_ProjectileEffecter">
+          <effecterDef>Shell_AcidSpitLaunched</effecterDef>
+        </li>
+    </comps>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_ExplosionCustomGasPost">
+          <postExplosionGasType>BRF_CrimsonSporeGas</postExplosionGasType>
+          <postExplosionGasRang>7</postExplosionGasRang>
         </li>
     </modExtensions>
   </ThingDef>
@@ -122,6 +176,38 @@
     </verbProperties>
     <comps>
       <li Class="Luna_BRF.CompProperties_BloodstainedTickParasitic" />
+    </comps>
+  </AbilityDef>
+
+<!--脑姦-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BRF_ScarletCerebralJellyfishBrainInsertion</defName>
+    <label>Jellyfish Brain Insertion</label>
+    <description>What's moving back and forth in the victim's brain and injecting weird substances at the same time ...... is simply horrifying.</description>
+    <iconPath>UI/Codexentries/BRF_ScarletCerebralJellyfish</iconPath>
+    <cooldownTicksRange>28800</cooldownTicksRange>
+	  <aiCanUse>true</aiCanUse>
+    <showPsycastEffects>false</showPsycastEffects>
+	  <showOnCharacterCard>false</showOnCharacterCard>
+    <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+    <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+    <warmupEffecter>RevenantHypnosis</warmupEffecter>
+    <warmupSound>AnomalyAbilityWarmup</warmupSound>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+	    <warmupTime>7.5</warmupTime>
+	    <range>9.9</range>
+      <requireLineOfSight>True</requireLineOfSight>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetHumans>true</canTargetHumans>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_ScarletCerebralJellyfish" />
     </comps>
   </AbilityDef>
 

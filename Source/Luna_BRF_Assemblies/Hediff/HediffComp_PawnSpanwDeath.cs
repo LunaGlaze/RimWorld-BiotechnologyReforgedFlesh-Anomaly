@@ -13,7 +13,7 @@ namespace Luna_BRF
 				spawnPawn();
 				if (ModsConfig.AnomalyActive && Props.codexEntry != null)
 				{
-					Find.EntityCodex.SetDiscovered(Props.codexEntry);
+					Find.EntityCodex.SetDiscovered(Props.codexEntry, Props.spanwPawnKind.race);
 				}
 				if (Props.filth != null)
 				{

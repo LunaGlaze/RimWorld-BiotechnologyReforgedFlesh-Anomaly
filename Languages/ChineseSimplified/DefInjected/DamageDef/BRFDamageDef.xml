@@ -16,5 +16,8 @@
   <BRF_ViralAcidBurn.label>病毒性酸烧伤</BRF_ViralAcidBurn.label>
   <BRF_ViralAcidBurn.deathMessage>{0}被烧死了。</BRF_ViralAcidBurn.deathMessage>
 
+  <BRF_CrimsonSporeCut.label>绯红孢子切割</BRF_CrimsonSporeCut.label>
+  <BRF_CrimsonSporeCut.deathMessage>{0}被绯红孢子摧毁了。</BRF_CrimsonSporeCut.deathMessage>
+
 
 </LanguageData>

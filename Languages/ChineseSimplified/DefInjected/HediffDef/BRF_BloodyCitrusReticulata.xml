@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_BloodyCitrusReticulataAddiction.label>血柑橘成瘾</BRF_BloodyCitrusReticulataAddiction.label>
+  <BRF_BloodyCitrusReticulataAddiction.description>长期过量的食用血柑橘已经造成了神经系统的适应。\n\n如果没有定期食用合适数量的血柑橘，戒断反应就会开始。长时间的戒断会迫使大脑适应并恢复到正常状态，从而戒除血柑橘成瘾。</BRF_BloodyCitrusReticulataAddiction.description>
+  <BRF_BloodyCitrusReticulataAddiction.stages.withdrawal.label>戒断</BRF_BloodyCitrusReticulataAddiction.stages.withdrawal.label>
+  
+  <BRF_BloodyCitrusReticulataHigh.label>血柑橘暖身</BRF_BloodyCitrusReticulataHigh.label>
+  <BRF_BloodyCitrusReticulataHigh.description>流淌在血液里的血柑橘化合物能让人感到心情愉悦。</BRF_BloodyCitrusReticulataHigh.description>
+  
+  <BRF_BloodyCitrusReticulataTolerance.label>血柑橘耐受</BRF_BloodyCitrusReticulataTolerance.label>
+  <BRF_BloodyCitrusReticulataTolerance.description>对血柑橘的长期耐受性。耐受性越严重，想达到和之前同样的效果所需要的血柑橘也就越多。</BRF_BloodyCitrusReticulataTolerance.description>
+  <BRF_BloodyCitrusReticulataTolerance.stages.small.label>弱</BRF_BloodyCitrusReticulataTolerance.stages.small.label>
+  <BRF_BloodyCitrusReticulataTolerance.stages.large.label>强</BRF_BloodyCitrusReticulataTolerance.stages.large.label>
+  <BRF_BloodyCitrusReticulataTolerance.stages.massive.label>严重</BRF_BloodyCitrusReticulataTolerance.stages.massive.label>
+  
+</LanguageData>

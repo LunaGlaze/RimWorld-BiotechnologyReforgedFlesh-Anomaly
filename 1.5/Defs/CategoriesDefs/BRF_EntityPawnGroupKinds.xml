@@ -11,4 +11,9 @@
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
 
+  <PawnGroupKindDef>
+    <defName>BRF_CrimsonLivingFungi</defName>
+    <workerClass>PawnGroupKindWorker_Normal</workerClass>
+  </PawnGroupKindDef>
+
 </Defs>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LanguageData>
+
+  <!-- 猩紅鋼 -->
+
+  <BRF_ScarletFerrite.label>猩紅鋼</BRF_ScarletFerrite.label>
+  <BRF_ScarletFerrite.description>一種類似金屬纖維的奇異物質，同時具有有機和金屬特性。雖然與活鐵相似，但這種金屬也擅長與心靈能力有關的東西。不過，它的生物特性要明顯得多。這種金屬縈繞著一股血腥味，觸手狀的血管隨著它的呼吸慢慢蠕動……就好像它是活的一樣。</BRF_ScarletFerrite.description>
+  <BRF_ScarletFerrite.stuffProps.stuffAdjective>猩紅鋼</BRF_ScarletFerrite.stuffProps.stuffAdjective>
+
+  <!-- 血肉立方 -->
+
+  <BRF_RecastFleshCube.label>血肉立方</BRF_RecastFleshCube.label>
+  <BRF_RecastFleshCube.description>又像動物的肉又像植物的果實。這種材料有時可以替代木頭，並以重塑的技術少量地生產。但它應該有更合適的用途與獲取途徑。</BRF_RecastFleshCube.description>
+  <BRF_RecastFleshCube.stuffProps.stuffAdjective>血肉立方</BRF_RecastFleshCube.stuffProps.stuffAdjective>
+
+  <!-- 緋紅菌柄 -->
+
+  <BRF_CrimsonStem.label>緋紅菌柄</BRF_CrimsonStem.label>
+  <BRF_CrimsonStem.description>一種介於植物和肉之間的特殊材料，是某種巨大肉質真菌的莖幹構成。其奇特的結構使其具有抗燃性，只有在受到特定影響的情況下才能用作燃料。</BRF_CrimsonStem.description>
+  <BRF_CrimsonStem.tools.Crimson_Stem.label>緋紅菌柄</BRF_CrimsonStem.tools.Crimson_Stem.label>
+  <BRF_CrimsonStem.stuffProps.stuffAdjective>猩紅鋼</BRF_CrimsonStem.stuffProps.stuffAdjective>
+
+  <!-- 血腥皮革 -->
+
+  <BRF_Leather_Bloody.label>血腥皮革</BRF_Leather_Bloody.label>
+  <BRF_Leather_Bloody.description>一種被重塑的類似皮革的製品，有著正常皮革與織物的特性和更強的性能。這種皮革散發出一種淡淡的和新鮮的血液類似的腥甜味。用這種皮革縫製的衣物能強化穿戴者的心靈。</BRF_Leather_Bloody.description>
+  <BRF_Leather_Bloody.tools.Crimson_Stem.label>血腥皮革</BRF_Leather_Bloody.tools.Crimson_Stem.label>
+  <BRF_Leather_Bloody.stuffProps.stuffAdjective>血腥皮革</BRF_Leather_Bloody.stuffProps.stuffAdjective>
+  
+</LanguageData>

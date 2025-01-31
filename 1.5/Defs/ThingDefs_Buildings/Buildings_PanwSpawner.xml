@@ -17,14 +17,19 @@
     <uiOrder>2900</uiOrder>
     <graphicData>
       <texPath>Buildings/PawnSpawner/BRF_FlsehMetapodLittle</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shadowData>
-			<volume>(0.3, 0.6, 0.3)</volume>
-			<offset>(0,0,-0.1)</offset>
-		</shadowData>
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			  <volume>(0.3, 0.6, 0.3)</volume>
+			  <offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		  <damageData>
+			  <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
+		  </damageData>
     </graphicData>
 	<thingClass>Building</thingClass>
 	<minifiedDef Inherit="False"/>
@@ -50,12 +55,12 @@
     <size>(1,1)</size>
     <building>
       <uninstallWork>2000</uninstallWork>
-      <destroySound>Pawn_Flesh_Death</destroySound>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
     </building>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
-        <ticksPerHeal>250</ticksPerHeal>
+        <ticksPerTimes>250</ticksPerTimes>
       </li>
     </comps>
   </ThingDef>
@@ -118,6 +123,11 @@
 		  </shadowData>
 		  <damageData>
 			  <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
 		  </damageData>
     </graphicData>
 	  <thingClass>Building</thingClass>
@@ -152,12 +162,12 @@
     <size>(2,2)</size>
     <building>
       <uninstallWork>4800</uninstallWork>
-      <destroySound>Pawn_Flesh_Death</destroySound>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
     </building>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
-        <ticksPerHeal>250</ticksPerHeal>
+        <ticksPerTimes>250</ticksPerTimes>
       </li>
       <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
         <spawnedPawn>BRF_MutationsRelicFlesh</spawnedPawn>

@@ -70,3 +70,4 @@ H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_As
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_Assemblies\obj\Release\Luna_BRF_Assemblies.csproj.CopyComplete
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_Assemblies\obj\Release\Luna_BRF_Assemblies.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_Assemblies\obj\Release\Luna_BRF_Assemblies.pdb
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_Assemblies\obj\Release\Luna_BRF_Assemblies.csproj.AssemblyReference.cache

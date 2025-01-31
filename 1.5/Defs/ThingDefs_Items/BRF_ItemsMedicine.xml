@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--下界疣-->
+  <ThingDef ParentName="MedicineBase">
+    <defName>BRF_PurgatoryWarts</defName>
+    <label>Purgatory Wart</label>
+    <description>A weird warty fleshy fungus. This strange crop can be used directly for medical purposes, and is somewhat less effective than herbal medicine. However, it is better suited for advanced medical use using anomaly flesh technology.</description>
+    <possessionCount>4</possessionCount>
+    <stackLimit>250</stackLimit>
+    <graphicData>
+      <texPath>Items/Resource/Plant/BRF_PurgatoryWart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>0</Flammability>
+      <MedicalPotency>0.30</MedicalPotency>
+      <MedicalQualityMax>0.50</MedicalQualityMax>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="Luna_BRF.CompProperties_PlantableWithTerrainAffordance">
+        <plantDefToSpawn>BRF_PurgatoryWart</plantDefToSpawn>
+        <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+      </li>
+    </comps>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+<!--血红草药包-->
+  <ThingDef ParentName="MedicineBase">
+    <defName>BRF_BloodyHerbPack</defName>
+    <label>Bloody Herb Pack</label>
+    <description>A primitive medicine smelling of blood, refined by Purgatory Wart, stronger than herbal medicine but perishable.</description>
+    <possessionCount>4</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineHerbal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(154,34,33)</color>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.3</Flammability>
+      <MedicalPotency>0.80</MedicalPotency>
+      <MedicalQualityMax>0.80</MedicalQualityMax>
+      <DeteriorationRate>6</DeteriorationRate>
+      <WorkToMake>600</WorkToMake>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <costList>
+      <BRF_PurgatoryWarts>30</BRF_PurgatoryWarts>
+      <BRF_ReforgedMeat_Harbinger>4</BRF_ReforgedMeat_Harbinger>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+      <researchPrerequisite>BRF_BloodyAgriculture</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+<!--猩红胺-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_Scarletamine</defName>
+    <label>Scarletamine</label>
+    <description>A weird chemical. It has no effect on its own, but like Neutroamine, it's necessary for synthesizing quite a few medical supplies in anomaly flesh technology.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/Neutroamine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+      <color>(154,34,33)</color>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <BRF_PurgatoryWarts>48</BRF_PurgatoryWarts>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>4</BRF_LivingFlesh>
+      <BRF_PrimordialTissueSample>3</BRF_PrimordialTissueSample>
+      <BRF_ScarletFerrite>1</BRF_ScarletFerrite>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>BRF_CrimsonAltar</li>
+      </recipeUsers>
+      <researchPrerequisite>BRF_ScarletTransformation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    <tradeability>None</tradeability>
+  </ThingDef>
+<!--精炼血肉医药-->
+  <ThingDef ParentName="MedicineBase">
+    <defName>BRF_MedicineRefiningFlesh</defName>
+    <label>Refining Flesh Medicine</label>
+    <description>A kit of anomaly flesh medical equipment. In addition to the most basic medications, this kit contains a number of bio-nanomachines and disposable bio-tools to aid in the healing process.</description>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineUltratech</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+      <color>(154,34,33)</color>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Mass>0.50</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.25</MedicalPotency>
+      <MedicalQualityMax>1.25</MedicalQualityMax>
+      <DeteriorationRate>1</DeteriorationRate>
+      <WorkToMake>800</WorkToMake>
+    </statBases>
+    <costList>
+      <BRF_BloodyHerbPack>1</BRF_BloodyHerbPack>
+      <BRF_Scarletamine>1</BRF_Scarletamine>
+      <BRF_ScarletFerrite>1</BRF_ScarletFerrite>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>BRF_CrimsonAltar</li>
+      </recipeUsers>
+      <researchPrerequisite>BRF_ScarletTransformation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>2000</displayPriority>
+    </recipeMaker>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+
+</Defs>

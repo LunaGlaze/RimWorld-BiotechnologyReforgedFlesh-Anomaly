@@ -38,5 +38,11 @@
     <label>Mutations Fresh Body</label>
     <parent>BRF_Things_FreshShell</parent>
   </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BRF_Things_FreshShell_NeuralSymbiosis</defName>
+    <label>Neural Symbiosis</label>
+    <parent>BRF_Things_FreshShell</parent>
+  </ThingCategoryDef>
 
 </Defs>

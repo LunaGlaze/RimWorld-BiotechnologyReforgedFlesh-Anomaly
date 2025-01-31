@@ -24,4 +24,8 @@
   <BRF_CompWorkingSpeedMultiplier>Current operating speed multiplier: </BRF_CompWorkingSpeedMultiplier>
   <BRF_CompWorkingSpeedTrulyFuelConsume>Actual fuel will last for </BRF_CompWorkingSpeedTrulyFuelConsume>
 
+  <BRF_LetterLabelScarletCerebralJellyfishRevealed>Scarlet Cerebral Jellyfish revealed</BRF_LetterLabelScarletCerebralJellyfishRevealed>
+  <BRF_LetterScarletCerebralJellyfishRevealed>A twisted flesh creature has appeared out of thin air!</BRF_LetterScarletCerebralJellyfishRevealed>
+  <BRF_MessageScarletCerebralJellyfishRevealed>A Scarlet Cerebral Jellyfish has appeared!</BRF_MessageScarletCerebralJellyfishRevealed>
+
 </Defs>

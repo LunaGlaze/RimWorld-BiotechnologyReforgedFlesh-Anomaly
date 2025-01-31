@@ -64,9 +64,9 @@
           <categories>
             <li>MeatRaw</li>
           </categories>
-		  <disallowedCategories>
-			   <li>BRF_Things_ReforgedMeat</li>
-		  </disallowedCategories>
+		    <disallowedCategories>
+			    <li>BRF_Things_ReforgedMeat</li>
+		    </disallowedCategories>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -85,7 +85,7 @@
         <noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
         <nextSpawnInspectStringKey>PeristalticFleshAssemblyCompleteIn</nextSpawnInspectStringKey>
         <nextSpawnInspectStringKeyDormant>MechAssemblyNextType</nextSpawnInspectStringKeyDormant>
-        <spawnSound>Pawn_Flesh_Call</spawnSound>
+        <spawnSound>BRF_Pawn_Flesh_Call</spawnSound>
         <showNextSpawnInInspect>true</showNextSpawnInInspect>
         <lordJob>LordJob_MechanoidsDefend</lordJob>
         <pawnSpawnIntervalDays>0.666</pawnSpawnIntervalDays>
@@ -93,7 +93,8 @@
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>15</ticksPerHeal>
+        <ticksPerTimes>50</ticksPerTimes>
+        <pointPerTimes>4</pointPerTimes>
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>8</heatPerSecond>
@@ -189,10 +190,11 @@
       <drawSize>(1.5,1.5)</drawSize>
 	    <shaderType>CutoutComplex</shaderType>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
     </graphicData>
     <uiIconScale>0.75</uiIconScale>
@@ -219,7 +221,7 @@
       <buildingTags>
         <li>Production</li>
       </buildingTags>
-      <destroySound>Pawn_Flesh_Death</destroySound>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
     </building>
     <thingCategories>
       <li>BuildingsProduction</li>
@@ -231,7 +233,8 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>5</ticksPerHeal>
+        <ticksPerTimes>50</ticksPerTimes>
+        <pointPerTimes>10</pointPerTimes>
       </li>
     </comps>
   </ThingDef>
@@ -309,10 +312,11 @@
       <drawSize>(1.5,1.5)</drawSize>
 	    <shaderType>CutoutComplex</shaderType>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
       </damageData>
     </graphicData>
     <uiIconScale>0.64</uiIconScale>
@@ -343,7 +347,7 @@
     <fillPercent>0.5</fillPercent>
     <building>
       <uninstallWork>2000</uninstallWork>
-      <destroySound>Pawn_Flesh_Death</destroySound>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
     </building>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -369,7 +373,8 @@
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>20</ticksPerHeal>
+        <ticksPerTimes>50</ticksPerTimes>
+        <pointPerTimes>2</pointPerTimes>
       </li>
 		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
 		  	<interval>500</interval>
@@ -406,6 +411,11 @@
 			<drawSize>(1.5, 1.5)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
 			</damageData>
     </graphicData>
 		<thingClass>Building</thingClass>
@@ -441,12 +451,12 @@
     <size>(1,1)</size>
     <building>
       <uninstallWork>2000</uninstallWork>
-      <destroySound>Pawn_Flesh_Death</destroySound>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
     </building>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
 	    <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelConsumptionRate>1.5</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -460,7 +470,7 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>
-        <ticksPerHeal>250</ticksPerHeal>
+        <ticksPerTimes>250</ticksPerTimes>
       </li>
 		  <li Class="Luna_BRF.CompProperties_LunaDamagedWhenUnfueled">
 		  	<interval>1000</interval>

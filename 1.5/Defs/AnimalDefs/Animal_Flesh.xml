@@ -241,10 +241,10 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>0.5</minAge>
-          <soundWounded>MeleeHit_Flesh</soundWounded>
-          <soundDeath>Pawn_Flesh_Death</soundDeath>
-          <soundCall>Pawn_Flesh_Call</soundCall>
-          <soundAngry>Pawn_Flesh_Angry</soundAngry>
+          <soundWounded>BRF_MeleeHit_Flesh</soundWounded>
+          <soundDeath>BRF_Pawn_Flesh_Death</soundDeath>
+          <soundCall>BRF_Pawn_Flesh_Call</soundCall>
+          <soundAngry>BRF_Pawn_Flesh_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

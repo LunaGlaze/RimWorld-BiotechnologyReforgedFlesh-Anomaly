@@ -212,12 +212,17 @@ namespace Luna_BRF
 		public void CalculateNextPawnSpawnTick(float delayTicks)
 		{
 			float num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, (float)this.spawnedPawns.Count);
+			int needTick = (int)delayTicks;
 			if (Find.Storyteller.difficulty.enemyReproductionRateFactor > 0f)
 			{
-				this.nextPawnSpawnTick = Find.TickManager.TicksGame + (int)(delayTicks / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
-				return;
+				needTick = (int)(delayTicks / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
 			}
-			this.nextPawnSpawnTick = Find.TickManager.TicksGame + (int)delayTicks;
+			LunaInfectedTerrainSpread compInfected = parent.GetComp<LunaInfectedTerrainSpread>();
+			if (compInfected != null)
+			{
+				needTick = (int)(needTick / compInfected.workingSpeedMultiplier);
+			}
+			this.nextPawnSpawnTick = Find.TickManager.TicksGame + needTick;
 		}
 
 		private void FilterOutUnspawnedPawns()

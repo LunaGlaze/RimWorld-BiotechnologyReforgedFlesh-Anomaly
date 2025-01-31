@@ -49,33 +49,30 @@ namespace Luna_BRF
 		}
 		public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
 		{
-			int num;
-			if (target.HasThing)
+			CompProperties_TransmuteFlesh.TFElementRatio ratio;
+			bool flag = target.HasThing && this.TryGetElementFor(target.Thing.def, out ratio);
+			if (!flag)
 			{
-				num = (TryGetElementFor(target.Thing.def, out var _) ? 1 : 0);
-				if (num != 0)
-				{
-					goto IL_0070;
-				}
+				Messages.Message(this.Props.failedMessage.Formatted(target.Thing.Label), target.Thing, MessageTypeDefOf.NeutralEvent, true);
 			}
-			else
-			{
-				num = 0;
-			}
-			Messages.Message(Props.failedMessage.Formatted(target.Thing.Label), target.Thing, MessageTypeDefOf.NeutralEvent);
-			goto IL_0070;
-			IL_0070:
-			return (byte)num != 0;
+			return flag;
 		}
-		private bool TryGetElementFor(ThingDef stuff, out CompProperties_TransmuteFlesh.TFElementRatio ratio)
+		private bool TryGetElementFor(ThingDef thing, out CompProperties_TransmuteFlesh.TFElementRatio ratio)
 		{
-            ratio = Props.elementRatios.FirstOrDefault((CompProperties_TransmuteFlesh.TFElementRatio x) => x.fixedSourceFilter.Allows(stuff));
+            ratio = Props.elementRatios.FirstOrDefault((CompProperties_TransmuteFlesh.TFElementRatio x) => x.fixedSourceFilter.Allows(thing));
+			if(ratio == null && thing.thingCategories?.Contains(ThingCategoryDef.Named("MeatRaw")) != false)
+            {
+				ratio = new CompProperties_TransmuteFlesh.TFElementRatio();
+				ratio.ratio = 1f;
+				ThingFilter thingFilter = ThingFilter.CreateOnlyEverStorableThingFilter();
+				ratio.fixedSourceFilter = thingFilter;
+			}
 			return ratio != null;
 		}
-		private ThingDef TryGetSpecialOutputFor(ThingDef stuff, out CompProperties_TransmuteFlesh.SpecialTransmuteList specialTransmute)
+		private ThingDef TryGetSpecialOutputFor(ThingDef thing, out CompProperties_TransmuteFlesh.SpecialTransmuteList specialTransmute)
 		{
-			specialTransmute = Props.specialTransmuteList.FirstOrDefault((CompProperties_TransmuteFlesh.SpecialTransmuteList x) => x.specialInput == stuff);
-			return specialTransmute.specialInput;
+			specialTransmute = Props.specialTransmuteList.FirstOrDefault((CompProperties_TransmuteFlesh.SpecialTransmuteList x) => x.specialInput == thing);
+			return specialTransmute != null ? specialTransmute.specialOutput : null;
 		}
 		public override bool AICanTargetNow(LocalTargetInfo target)
 		{

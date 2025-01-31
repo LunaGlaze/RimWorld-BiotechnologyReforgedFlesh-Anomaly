@@ -24,5 +24,9 @@
   <BRF_CompWorkingSpeedMultiplier>當前運行速度乘數：</BRF_CompWorkingSpeedMultiplier>
   <BRF_CompWorkingSpeedTrulyFuelConsume>實際燃料可使用情況：</BRF_CompWorkingSpeedTrulyFuelConsume>
 
+  <BRF_LetterLabelScarletCerebralJellyfishRevealed>猩紅腦蜇現身</BRF_LetterLabelScarletCerebralJellyfishRevealed>
+  <BRF_LetterScarletCerebralJellyfishRevealed>一隻扭曲可憎的血肉怪物突然憑空出現！</BRF_LetterScarletCerebralJellyfishRevealed>
+  <BRF_MessageScarletCerebralJellyfishRevealed>一隻猩紅腦蜇已現身！</BRF_MessageScarletCerebralJellyfishRevealed>
+
 
 </Defs>

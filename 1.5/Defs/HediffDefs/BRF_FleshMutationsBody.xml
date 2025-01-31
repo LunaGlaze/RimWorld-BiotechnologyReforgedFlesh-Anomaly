@@ -24,6 +24,12 @@
     </comps>
   </ThingDef>
 
+  <HediffDef ParentName="AddedMutationBase" Name="BRF_AddedBodyPartMutationBase" Abstract="True">
+    <tags>
+      <li>BRF_FleshReforge</li>
+    </tags>
+  </HediffDef>
+
 <!-- 手臂 -->
   <!--血肉触手-->
   <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
@@ -108,7 +114,7 @@
 
 <!-- 腿 -->
   <!--血肉拟足-->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshPseudoLegHediff</defName>
     <label>flesh pseudo-leg</label>
     <labelNoun>a flesh pseudo-leg</labelNoun>
@@ -172,7 +178,7 @@
 	<addsHediff>BRF_FleshPseudoLegHediff</addsHediff>
   </RecipeDef>
   <!--血肉腕足-->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshBrachiopodHediff</defName>
     <label>flesh brachiopod</label>
     <labelNoun>a flesh brachiopod</labelNoun>
@@ -325,7 +331,7 @@
   </RecipeDef>
 
 <!-- 肾脏 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassKidneyHediff</defName>
     <label>fleshmass kidney</label>
     <labelNoun>a fleshmass kidney</labelNoun>
@@ -397,7 +403,7 @@
   </RecipeDef>
   
 <!-- 肝脏 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassLiverHediff</defName>
     <label>fleshmass liver</label>
     <labelNoun>a fleshmass liver</labelNoun>
@@ -469,7 +475,7 @@
   </RecipeDef>
   
 <!-- 眼 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassEyeHediff</defName>
     <label>fleshmass eye</label>
     <labelNoun>a fleshmass eye</labelNoun>
@@ -534,7 +540,7 @@
   </RecipeDef>
 
 <!-- 耳 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassEarHediff</defName>
     <label>fleshmass ear</label>
     <labelNoun>a fleshmass ear</labelNoun>
@@ -599,7 +605,7 @@
   </RecipeDef>
 
 <!-- 鼻 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassNoseHediff</defName>
     <label>fleshmass nose</label>
     <labelNoun>a fleshmass Nose</labelNoun>
@@ -671,7 +677,7 @@
   </RecipeDef>
 
 <!-- 舌 -->
-  <HediffDef ParentName="AddedMutationBase">
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
     <defName>BRF_FleshmassTongueHediff</defName>
     <label>fleshmass tongue</label>
     <labelNoun>a fleshmass tongue</labelNoun>

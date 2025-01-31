@@ -391,4 +391,50 @@
     </products>
     <researchPrerequisite>BRF_ReforgedMeatHarbingerResearch</researchPrerequisite>
   </RecipeDef>
+
+<!--血肉立方-->
+  <RecipeDef>
+    <defName>BRF_ShapingFleshCubes</defName>
+    <label>shaping recast flesh cube</label>
+    <description>synthesize reforged meats and plants into some sort of bizarre cube-mounted object.</description>
+    <jobString>Shaping recast flesh cube.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+      <li>BRF_TwistedCrucible</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_RecastFleshCube>10</BRF_RecastFleshCube>
+    </products>
+    <researchPrerequisite>BRF_CrimsonFurnitureResearch</researchPrerequisite>
+  </RecipeDef>
 </Defs>

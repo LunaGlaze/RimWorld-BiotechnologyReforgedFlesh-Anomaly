@@ -6,7 +6,7 @@
  - 修复血肉温床生成bug/fix primordial flesh cradle
  - 修复酸液喷吐者血肉蠕虫弹药错误/fix spitter fleshworm
  [v0.1.3]
- - 修复恶心血肉活化bug/fix bug about Malignant Flesh Activation
+ - 修复恶性血肉活化bug/fix bug about Malignant Flesh Activation
  - 修复静电囊泡无法作为建筑材料的问题/fix Electrostatic Vesicle
  [v0.1.4]
  - 平衡性调整/balance adjustments
@@ -34,3 +34,18 @@
  - 调整部分纹理与灯光色调/Adjust some texture and light tones.
  - 为肢团能力添加捕食动物许可/Allows Clump ability to prey on animals.
  - 小幅度优化部分tick性能/Minor optimization of some tick performance.
+ [v0.2.7]
+ - 平衡性调整/balance adjustments
+ - 修复重塑血肉无法使用的bug/fix transmute flesh coulnd't use
+ [v0.3.0]
+ - 平衡性调整并加强原有实体的战斗力/Balance Adjustments and Entity Combat Strengthening.
+ - 更新血肉建筑的受损效果/Updated damage effects on flesh buildings.
+ - 修复部分实体图鉴中子项目无法发现的bug/Fix bugs where some entities cannot be discovered in the sub items of the entity codex.
+ - 修复血肉建筑工作速度调整器bug/Fix flesh buildings Work Speed Adjuster Tool Bugs.
+ - 小幅度优化部分原有tick性能/Minor optimization of some tick performance.
+ - 修正HarmonyPatch逻辑/Fix HarmonyPatch logic.
+ - 优化弗兰肯斯坦肢体守卫AI，并添加未安装VEF时的征召功能/Optimize Frankenstein Limb Guard AI and add conscription when VEF is not installed.
+ - 新实体绯红活菌与其带来的新的血肉类型植物/New entity Crimson Living Fungi and new flesh type plants from it.
+ - 基础血肉医药/Basic Flesh Medicine.
+ - 添加新的血肉材料/Add new flesh type material.
+ - 新实体猩红脑蜇与基础脑蛞蝓科技/New Entity Scarlet Cerebral Jellyfish with Basic Brain Slug Technology.

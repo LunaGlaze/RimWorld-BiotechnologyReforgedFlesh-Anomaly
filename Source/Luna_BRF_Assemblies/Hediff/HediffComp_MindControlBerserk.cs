@@ -11,7 +11,17 @@ namespace Luna_BRF
             base.CompPostTick(ref severityAdjustment);
             if (parent.pawn.IsHashIntervalTick(60))
             {
-                parent.pawn.mindState.mentalStateHandler.TryStartMentalState(Props.mentalStateDef);
+                if(parent.pawn.mindState.mentalStateHandler.CurStateDef == Props.mentalStateDef)
+                {
+                    if(parent.pawn.mindState.mentalStateHandler.CurState.forceRecoverAfterTicks < 128 && parent.pawn.mindState.mentalStateHandler.CurState.forceRecoverAfterTicks > -1)
+                    {
+                        parent.pawn.mindState.mentalStateHandler.CurState.forceRecoverAfterTicks = 5120;
+                    }
+                }
+                else
+                {
+                    parent.pawn.mindState.mentalStateHandler.TryStartMentalState(Props.mentalStateDef);
+                }
                 if (Props.factionDef != null)
                 {
                     Faction faction = Find.FactionManager.FirstFactionOfDef(Props.factionDef);
@@ -19,10 +29,6 @@ namespace Luna_BRF
                     {
                         parent.pawn.SetFaction(faction);
                     }
-                }
-                else
-                {
-                    parent.pawn.SetFaction(Faction.OfEntities);
                 }
             }
         }

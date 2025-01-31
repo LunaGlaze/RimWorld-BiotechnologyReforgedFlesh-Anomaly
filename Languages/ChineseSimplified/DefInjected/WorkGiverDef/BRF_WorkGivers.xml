@@ -17,5 +17,12 @@
   <BRF_AnimalResource.verb>从TargetA处收获动物产物。</BRF_AnimalResource.verb>
   <BRF_AnimalResource.gerund>正在从TargetA处收获动物产物。</BRF_AnimalResource.gerund>
 
+  <DoBills_BRF_CrimsonAltar.label>嬗变血与肉</DoBills_BRF_CrimsonAltar.label>
+  <DoBills_BRF_CrimsonAltar.verb>嬗变</DoBills_BRF_CrimsonAltar.verb>
+  <DoBills_BRF_CrimsonAltar.gerund>嬗变</DoBills_BRF_CrimsonAltar.gerund>
+
+  <BRF_PlantSeed.label>播撒种子</BRF_PlantSeed.label>
+  <BRF_PlantSeed.gerund>种植</BRF_PlantSeed.gerund>
+  <BRF_PlantSeed.verb>种植</BRF_PlantSeed.verb>
 
 </LanguageData>

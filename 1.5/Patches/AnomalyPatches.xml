@@ -93,6 +93,19 @@
 		<xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers</xpath>
 		<value>
             <li>
+                <kindDef>BRF_CrimsonLivingFungi</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BRF_CrimsonLivingFungi>1</BRF_CrimsonLivingFungi>
+                </options>
+            </li>
+		</value>
+	</Operation>
+    
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers</xpath>
+		<value>
+            <li>
                 <kindDef>BRF_BloodstainedTickParasiticable</kindDef>
                 <commonality>100</commonality>
                 <options>
@@ -149,6 +162,19 @@
                     <partEfficiency>1.03</partEfficiency>
                 </value>
         </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach" or defName="FleshTentacle" or defName="FleshWhip"]/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach" or defName="FleshTentacle" or defName="FleshWhip"]</xpath>
+                <value>
+                    <tags/>
+                </value>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/HediffDef[defName="FleshmassLung" or defName="FleshmassStomach" or defName="FleshTentacle" or defName="FleshWhip"]/tags</xpath>
+        <value><li>BRF_FleshReforge</li></value>
     </Operation>
     
     <Operation Class="PatchOperationAdd">

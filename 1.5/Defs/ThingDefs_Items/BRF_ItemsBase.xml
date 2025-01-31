@@ -8,7 +8,7 @@
     </graphicData>
     <statBases>
       <Flammability>0.85</Flammability>
-	  <DeteriorationRate>2</DeteriorationRate>
+	    <DeteriorationRate>1.25</DeteriorationRate>
       <MaxHitPoints>60</MaxHitPoints>
       <Mass>0.05</Mass>
     </statBases>
@@ -315,103 +315,6 @@
         </li>
       </outcomeDoers>
     </ingestible>
-  </ThingDef>
-
-<!--猩红钢-->
-  <ThingDef ParentName="ResourceBase">
-    <defName>BRF_ScarletFerrite</defName>
-    <label>Scarlet Ferrite</label>
-    <description>An exotic metal-like fibrous substance with both organic and metallic properties. While similar to Bioferrite, this metal also excels at something related to psychic abilities. However, its biological properties are much more pronounced. A smell of blood haunts this metal, and tentacle-like veins slowly wriggle ...... as it breathes as if it were alive.</description>
-    <tradeability>Sellable</tradeability>
-    <graphicData>
-      <texPath>Items/Resource/BRF_ScarletFerrite</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <genericMarketSellable>false</genericMarketSellable>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <useHitPoints>false</useHitPoints>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <statBases>
-      <MarketValue>0.75</MarketValue>
-      <Mass>0.25</Mass>
-      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0.5</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-        <li>Bioferrite</li>
-        <li>BRF_LivingAlloy</li>
-      </categories>
-      <appearance>Metal</appearance>
-      <commonality>0</commonality>
-      <allowedInStuffGeneration>false</allowedInStuffGeneration>
-      <constructEffect>ConstructMetal</constructEffect>
-      <color>(87, 30, 36)</color>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
-      <statOffsets>
-        <Beauty>0</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>2.5</MaxHitPoints>
-        <Flammability>0.5</Flammability>
-        <WorkToMake>3.2</WorkToMake>
-        <WorkToBuild>3.2</WorkToBuild>
-        <DoorOpenSpeed>0.9</DoorOpenSpeed>
-        <BedRestEffectiveness>0.95</BedRestEffectiveness>
-        <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
-      </statFactors>
-      <statFactorsQuality>
-        <li>
-          <stat>PsychicSensitivityFactor</stat>
-          <awful>1.06</awful>
-          <poor>1.08</poor>
-          <normal>1.1</normal>
-          <good>1.13</good>
-          <excellent>1.15</excellent>
-          <masterwork>1.17</masterwork>
-          <legendary>1.20</legendary>
-        </li>
-      </statFactorsQuality>
-      <statOffsetsQuality>
-        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
-          <stat>PsychicEntropyMaxOffset</stat>
-          <awful>4</awful>
-          <poor>6</poor>
-          <normal>8</normal>
-          <good>11</good>
-          <excellent>13</excellent>
-          <masterwork>15</masterwork>
-          <legendary>18</legendary>
-        </li>
-        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
-          <stat>PsychicEntropyRecoveryRateOffset</stat>
-          <awful>0.04</awful>
-          <poor>0.04</poor>
-          <normal>0.04</normal>
-          <good>0.04</good>
-          <excellent>0.04</excellent>
-          <masterwork>0.04</masterwork>
-          <legendary>0.04</legendary>
-        </li>
-      </statOffsetsQuality>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
 
 </Defs>

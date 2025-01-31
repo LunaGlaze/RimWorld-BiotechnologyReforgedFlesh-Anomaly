@@ -67,6 +67,12 @@
   <BRF_HarbingerSeedlingResearch.description>厄兆噬树种子是边缘世界的稀有贸易物品，很难找到这些幼苗来改造我们的农场。我们需要继续研究，找到制造……或培育厄兆噬树的更简便方法。</BRF_HarbingerSeedlingResearch.description>
 
 
+  <!-- 血腥农业 -->
+
+  <BRF_BloodyAgriculture.label>血腥农业</BRF_BloodyAgriculture.label>
+  <BRF_BloodyAgriculture.description>种植和利用血肉植物。那些来自内殿乐土的作物被具有转化之力的血肉实体带出虚空，让我们得以利用它们。</BRF_BloodyAgriculture.description>
+
+
   <!-- 生物电力学 -->
 
   <BRF_FleshBioElectricityResearch.label>血肉电力学</BRF_FleshBioElectricityResearch.label>
@@ -109,10 +115,22 @@
   <BRF_FleshBeastShellResearch.description>扭曲方尖碑中创造出噩梦般可怕的异常生物的未知能量是否比想象中更......古老？亦或者更原始？\n\n在肢团或者其他更古老、更先进的血肉兽体内似乎有者某种类似的东西... 抱歉，我不能描述它。但如果利用这种存在，我们也许能制造出那种经历畸变肢体，以更稳定的方式。</BRF_FleshBeastShellResearch.description>
 
 
+  <!-- 脑蛞蝓基础 -->
+
+  <BRF_LowerNeuralSymbiosis.label>低等神经共生体</BRF_LowerNeuralSymbiosis.label>
+  <BRF_LowerNeuralSymbiosis.description>猩红脑蜇侵犯受害者的大脑的行为虽然令人毛骨悚然，但最新的研究表明猩红脑蜇之所以能够影响受害者的心智，不仅仅是因为那些蠕动的触手向大脑内注射了怪异的化学物质。那个亵渎的生物的触手中事实上有着一些违背自然规律的神经结构……它们能够接替大脑的一部分功能…… \n\n如果我们决心模仿它们……将这种神经结构有限度地复刻到一种可以与我们的脊椎与脑干连结的软体动物形态的神经共生体上……一种全新的共生生物被我们塑造了出来，我叫它“脑蛞蝓”。 \n\n虽然它们还很稚嫩与不成熟，但我相信重塑血肉的技术会带着它们与我们一同步入完美。</BRF_LowerNeuralSymbiosis.description>
+
+
   <!-- 召唤肢团 -->
 
   <BRF_SummonClumpsResearch.label>召唤肢团</BRF_SummonClumpsResearch.label>
   <BRF_SummonClumpsResearch.description>那种原始、古老而高效的组织被证明是发展生物科技的高价值材料。比起巨坑中少之又少的原型体“原始血肉兽”，那种似乎是作为战斗单位的肢团似乎更容易被心灵脉冲吸引。\n\n 尽管乐土花园之外的守卫、肢体永恒之唯一、以及其他呢喃声……令人困惑而恐惧……\n\n“我们是选择收获自己的牲畜。我们为了生存而撕咬、抓挠与挣扎。我们互相进食彼此，为了避免自己被吃掉而死。我们繁衍后代，以便终有一天我们的孩子被吞食，就如同我们一样。”</BRF_SummonClumpsResearch.description>
+
+
+  <!-- 猩红祭坛 -->
+
+  <BRF_ScarletTransformation.label>猩红嬗变术</BRF_ScarletTransformation.label>
+  <BRF_ScarletTransformation.description>我们猜测那种疑似血肉真菌的怪物是为了将环境改造成其创造者期望的形态而诞生的。但显然，这种转化不是那么有利于还未飞升的我们。所以采用另一种方式来利用这种力量是更合理的选择。比如用它们的尸骸与我们的骨肉创造一个用于转变祭坛。</BRF_ScarletTransformation.description>
 
 
   <!-- 绯红家装 -->

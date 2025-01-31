@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_BloodSakuraCeramics.label>血櫻瓷</BRF_BloodSakuraCeramics.label>
+  <BRF_BloodSakuraCeramics.description>這種活材料繼承了軍用陶瓷和猩紅鋼的特點，既美觀又強大。</BRF_BloodSakuraCeramics.description>
+  <BRF_BloodSakuraCeramics.stuffProps.stuffAdjective>血櫻瓷</BRF_BloodSakuraCeramics.stuffProps.stuffAdjective>
+
+  <BRF_Unfinished_BloodSakuraCeramics.label>血櫻瓷（鍛造中）</BRF_Unfinished_BloodSakuraCeramics.label>
+  <BRF_Unfinished_BloodSakuraCeramics.description>正在鍛造中的血櫻瓷</BRF_Unfinished_BloodSakuraCeramics.description>
+
+  <BRF_BloodMumeSilk.label>血梅織</BRF_BloodMumeSilk.label>
+  <BRF_BloodMumeSilk.description>美麗的絲綢和血肉造物的完美結合，保留了血腥皮革的一些特徵的同時更進一步。</BRF_BloodMumeSilk.description>
+  <BRF_BloodMumeSilk.stuffProps.stuffAdjective>血梅織</BRF_BloodMumeSilk.stuffProps.stuffAdjective>
+
+</LanguageData>

@@ -16,15 +16,25 @@ namespace Luna_BRF
             float maxSeverity = Def.maxSeverity;
             if(severity >= maxSeverity)
             {
-                if (!Props.withoutMechanoid || (Props.withoutMechanoid && !base.Pawn.RaceProps.IsMechanoid) )
+                if(!Props.onlyMechanoid || (Props.onlyMechanoid && base.Pawn.RaceProps.IsMechanoid))
                 {
-                    ApplyDamage(base.Pawn, Props.damAmount);
-                    if (Props.addHediff && Props.hediffDefAdd != null)
+                    if (!Props.withoutMechanoid || (Props.withoutMechanoid && !base.Pawn.RaceProps.IsMechanoid))
                     {
-                        AddHediff(base.Pawn, Props.hediffDefAdd);
+                        ApplyDamage(base.Pawn, Props.damAmount);
+                        if (Props.addHediff && Props.hediffDefAdd != null)
+                        {
+                            AddHediff(base.Pawn, Props.hediffDefAdd);
+                        }
                     }
                 }
-                base.Pawn.health.RemoveHediff(parent);
+                if(Props.severityFeduce > 0f)
+                {
+                    parent.Severity -= Props.severityFeduce;
+                }
+                else
+                {
+                    base.Pawn.health.RemoveHediff(parent);
+                }
             }
         }
         public void AddHediff(Pawn Pawn , HediffDef hediffDef)
@@ -52,21 +62,21 @@ namespace Luna_BRF
                 }
                 else if (Props.customDamage || Props.isFleshPulse)
                 {
-                    List<DamageDef> damageDefs = null;
+                    List<DamageDef> damageDefs = new List<DamageDef>();
                     if (Props.customDamage)
                     {
-                        if (Props.damageDefsList != null) { Debug.LogError($"Hediff {parent}'s xml file is missing the damageDefsList in HediffComp_DamageWhenMaxSeverity."); }
+                        if (Props.damageDefsList.NullOrEmpty()) { Debug.LogError($"Hediff {parent}'s xml file is missing the damageDefsList in HediffComp_DamageWhenMaxSeverity."); }
                         else { damageDefs = Props.damageDefsList; }
                     }
                     if (Props.isFleshPulse)
                     {
                         damageDefs.Add(LunaDefOf.BRF_FleshPulse);
                     }
-                    GiveRandomDamage(panw, totalDamage, damageDefs);
+                    GiveRandomDamage(panw, totalDamage, damageDefs, Props.allowDestroysBrain);
                 }
             }
         }
-        public static void GiveRandomDamage(Pawn p, int totalDamage, List<DamageDef> damageDefs)
+        public static void GiveRandomDamage(Pawn p, int totalDamage, List<DamageDef> damageDefs, bool allowDestroysBrain)
         {
             if (p != null)
             {
@@ -79,10 +89,13 @@ namespace Luna_BRF
 
                 // 确保大脑不因伤害过高而直接损毁
                 BodyPartRecord brain = p.health.hediffSet.GetBrain();
-                if (brain != null)
+                if (!allowDestroysBrain)
                 {
-                    float maxBrainHealth = brain.def.GetMaxHealth(p);
-                    source = source.Where((BodyPartRecord x) => x != brain || p.health.hediffSet.GetPartHealth(x) >= maxBrainHealth * 0.5f + 1f);
+                    if (brain != null)
+                    {
+                        float maxBrainHealth = brain.def.GetMaxHealth(p);
+                        source = source.Where((BodyPartRecord x) => x != brain || p.health.hediffSet.GetPartHealth(x) >= maxBrainHealth * 0.5f + 1f);
+                    }
                 }
 
                 // 循环施加伤害，直到达到总伤害值或无可用部位
@@ -98,7 +111,7 @@ namespace Luna_BRF
                     {
                         num = Mathf.RoundToInt(minHealthOfPartsWeWantToAvoidDestroying - 0.5f);
                     }
-                    if (bodyPartRecord == brain && partHealth - (float)num < brain.def.GetMaxHealth(p) * 0.5f)
+                    if (!allowDestroysBrain && bodyPartRecord == brain && partHealth - (float)num < brain.def.GetMaxHealth(p) * 0.5f)
                     {
                         num = Mathf.Max(Mathf.RoundToInt(partHealth - brain.def.GetMaxHealth(p) * 0.5f), 1);
                     }
