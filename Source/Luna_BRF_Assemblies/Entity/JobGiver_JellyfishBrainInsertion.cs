@@ -7,14 +7,14 @@ using Verse.AI;
 
 namespace Luna_BRF
 {
-    class JobGiver_JellyfishBrainInsertion : JobGiver_AICastAbility
+    class JobGiver_JellyfishBrainInsertion : JobGiver_AICastAbilityWithBashDoors
 	{
 		protected override LocalTargetInfo GetTarget(Pawn pawn, Ability ability)
 		{
 			List<Pawn> pawns = new List<Pawn>();
 			foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 			{
-				if (item.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_ScarletCerebralJellyfishBrainInsertion")) == null && !item.AnimalOrWildMan() && item.health.hediffSet.GetBrain() != null && item.Faction != pawn.Faction && item.health.State != PawnHealthState.Down)
+				if (item.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_ScarletCerebralJellyfishBrainInsertion")) == null && !item.AnimalOrWildMan() && item.health.hediffSet.GetBrain() != null && item.Faction != pawn.Faction && item.health.State != PawnHealthState.Down && pawn.Map.reachability.CanReach(pawn.Position, item.SpawnedParentOrMe, PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)) )
 				{
 					pawns.Add(item);
 				}
@@ -25,7 +25,7 @@ namespace Luna_BRF
 				Pawn result = null;
 				foreach (Pawn item in pawns)
 				{
-					if (pawn.Position.InHorDistOf(item.Position, 25f) && (float)item.Position.DistanceToSquared(pawn.Position) < num && GenSight.LineOfSightToThing(pawn.Position, item, pawn.Map))
+					if (pawn.Position.InHorDistOf(item.Position, 25f) && (float)item.Position.DistanceToSquared(pawn.Position) < num && GenSight.LineOfSightToThing(pawn.Position, item, pawn.Map) )
 					{
 						num = item.Position.DistanceToSquared(pawn.Position);
 						result = item;

@@ -6,7 +6,7 @@ using Verse.AI;
 
 namespace Luna_BRF
 {
-    public class JobGiver_CorpseNecrophagist : JobGiver_AICastAbility
+    public class JobGiver_CorpseNecrophagist : JobGiver_AICastAbilityWithBashDoors
 	{
 		protected override LocalTargetInfo GetTarget(Pawn pawn, Ability ability)
 		{
@@ -21,11 +21,26 @@ namespace Luna_BRF
 				.Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.RaceProps.IsFlesh).ToList();
 			if(Rand.Bool && pawn.Map.mapPawns.AllPawnsSpawned != null)
 			{
+				List<Pawn> animal = new List<Pawn>();
 				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 				{
 					if (item.AnimalOrWildMan() && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction)
 					{
-						return new LocalTargetInfo(item);
+						animal.Add(item);
+					}
+				}
+				if (animal.Count > 0)
+				{
+					Thing closestValidAnimal = GenClosest.ClosestThing_Global_Reachable(
+						pawn.Position,
+						pawn.Map,
+						animal,
+						PathEndMode.OnCell,
+						TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)
+					);
+					if (closestValidAnimal != null)
+					{
+						return new LocalTargetInfo(closestValidAnimal);
 					}
 				}
 			}
@@ -36,7 +51,7 @@ namespace Luna_BRF
 					pawn.Map,
 					corpses,
 					PathEndMode.OnCell,
-					TraverseParms.For(pawn)
+					TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)
 				);
 				if (closestValidCorpse != null)
 				{
@@ -45,16 +60,19 @@ namespace Luna_BRF
 			}
 			if (pawn.Map.mapPawns.AllPawnsSpawned != null)
 			{
+				List<Pawn> animal = new List<Pawn>();
 				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 				{
-					if (item.health.State == PawnHealthState.Down && item.RaceProps.IsFlesh && item.Faction != ability.pawn.Faction)
+					if (item.AnimalOrWildMan() && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction &&
+						pawn.Map.reachability.CanReach(pawn.Position,item.SpawnedParentOrMe, PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)))
 					{
-						return new LocalTargetInfo(item);
+						animal.Add(item);
 					}
-					if (item.AnimalOrWildMan() && item.kindDef.combatPower <= 500 && item.Faction != ability.pawn.Faction)
-					{
-						return new LocalTargetInfo(item);
-					}
+				}
+				if (animal.Count > 0)
+				{
+					Pawn i = animal.RandomElement();
+					return new LocalTargetInfo(i);
 				}
 			}
 			return null;

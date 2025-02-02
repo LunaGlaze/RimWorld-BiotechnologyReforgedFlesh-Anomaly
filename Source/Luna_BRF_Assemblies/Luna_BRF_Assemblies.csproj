@@ -149,6 +149,7 @@
     <Compile Include="Cothy\WorkGiver_AnimalResource.cs" />
     <Compile Include="Misc\ThoughtWorker_HasFleshyBodyPart.cs" />
     <Compile Include="Work\JobDriver_PlantSeed.cs" />
+    <Compile Include="Work\JobGiver_AICastAbilityWithBashDoors.cs" />
     <Compile Include="Work\WorkGiver_PlantSeed.cs" />
   </ItemGroup>
   <ItemGroup />

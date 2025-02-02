@@ -49,3 +49,8 @@
  - 基础血肉医药/Basic Flesh Medicine.
  - 添加新的血肉材料/Add new flesh type material.
  - 新实体猩红脑蜇与基础脑蛞蝓科技/New Entity Scarlet Cerebral Jellyfish with Basic Brain Slug Technology.
+ [v0.3.1]
+ - 推迟绯红活菌最早出现天数，避免前期难度过高/Delay the earliest appearance of Crimson Living Fungi to avoid excessive difficulty in the early stage.
+ - 减少绯红窥叶的面板外额外产出/Reduce the extra output outside the panel of Crimson Peeping Leaves.
+ - 修复绯红活菌袭击xml配置错误解锁错误的实体的bug/Fix bug of Crimson Living Fungi Assault XML configuration error and unlocking incorrect entities.
+ - 修复部分实体能力会选取无法抵达的目标或无法提供门和栅栏追踪目标的bug/Fixed a bug that some entity's ability select unreachable targets or cannot provide tracking bash doors and fences.

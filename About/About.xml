@@ -3,7 +3,7 @@
 <name>MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged</name>
 <author>幽月琉璃Luna</author>
 <packageId>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</packageId>
-<modVersion>0.3.0</modVersion>
+<modVersion>0.3.1</modVersion>
 <modIconPath>Items/Resource/BRF_RecastFleshCube</modIconPath>
 <supportedVersions>
 	<li>1.5</li>
@@ -40,7 +40,7 @@ A bio-nutrient plumbing system based on the Vanilla Expanded Framework, and as m
 [*] 使用血肉科技制造的医疗用品。
 [*] Medical supplies manufactured using flesh technology.
 [*] And so on
-
+[/list]
 [h1]Projected|计划[/h1][list]
 [*] 与其他DLC的联动和支持。
 Linkage and support with other DLC.
@@ -58,7 +58,7 @@ Tynan's worldview has archotech mind in abundance in the rimworld, so I think su
 [*] 一些我的支持者希望我加入的适合这个mod主题的内容，如果我可以做到的话。
 What some of my backers would like me to include that fits the theme of this mod, if I can do it.
 [*] ......
-
+[/list]
 [h1]Caveat|警告[/h1][list]
 [*] 该模组仍然处于开发中，现行版本为测试版本，可能会存在较为频繁的改动与修复。为保证您的存档不因此损坏，建议积极进行备份。
 The module is still under development and the current version is a beta version, which may be subject to more frequent changes and fixes. To ensure that your archive is not corrupted, it is recommended that you actively back up your files.
@@ -66,12 +66,12 @@ The module is still under development and the current version is a beta version,
 Due to the lack of art resources, ability and funds, the textures of this mod come from sources including my personal drawing, using different AI-assisted production, modification of vanilla or other sources of textures and other sources, please understand that there are some problems with the degree of unity of quality and style.
 [*] 本模组发布前只在作者个人的游戏环境下测试，无法保证完全不存在bug和兼容性问题，如果遇到相关问题，建议及时进行反馈。但一些我不会游玩的mod恕我没有能力提供补丁与修复，例如Combat Extended、Humanoid Alien Races、Vanilla Psycast Expanded、Medieval Overhaul等。如果出现问题，我可能需要你们的帮助以解决。
 This mod is only tested in the author's personal gaming environment before release, and there is no guarantee that it is completely free of bugs and compatibility issues, so if you encounter any related problems, it is recommended that you provide feedback in a timely manner. However, some mods that I won't be playing forgive me for not being able to provide patches and fixes, such as Combat Extended, Humanoid Alien Races, Vanilla Psycast Expanded, Medieval Overhaul, and so on. If a problem arises, I may need your help to fix it.
-
+[/list]
 [h1]Language|支持语言[/h1][list]
 [*] English(fully support)
 [*] 简体中文（完全支持）
 [*] 繁體中文（完全支持）
-
+[/list]
 [h1]Links|连结[/h1][list]
 [*] [url=https://github.com/LunaGlaze/RimWorld-BiotechnologyReforgedFlesh-Anomaly] Github [/url]
 [*] [url=https://patreon.com/shiqiluna] Patreon [/url](I probably don't use it that often)

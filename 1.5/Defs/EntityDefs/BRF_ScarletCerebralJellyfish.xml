@@ -407,6 +407,7 @@
           <soundAngry>BRF_Pawn_Flesh_Angry</soundAngry>
         </li>
       </lifeStageAges>
+      <canOpenFactionlessDoors>true</canOpenFactionlessDoors>
     </race>
     <comps>
       <li Class="CompProperties_AttachPoints">

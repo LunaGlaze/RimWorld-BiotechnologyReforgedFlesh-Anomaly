@@ -49,8 +49,8 @@
     <letterLabel>Crimson Living Fungi Arrival</letterLabel>
     <letterText>A monstrous living fleshy fungus creature has visited the your colony. They simply left to their own devices, releasing a strange spore of unknown flesh and blood, fungus or nanomachines, to fulfill their duty of modifying the environment.</letterText>
     <letterDef>ThreatBig</letterDef>
-    <earliestDay>15</earliestDay>
-	  <codexEntry>BRF_Clump</codexEntry>
+    <earliestDay>30</earliestDay>
+	  <codexEntry>BRF_CrimsonLivingFungi</codexEntry>
   </IncidentDef>
 
   <IncidentDef ParentName="EntityAttackBase">
@@ -62,7 +62,7 @@
     <letterLabel>Strange Jellyfish</letterLabel>
     <letterText>Along with a psychic wave, something appears in your neighborhood. You vaguely see a floating jellyfish or jellyfish figure ...... and are clearly harbor evil designs.</letterText>
     <letterDef>ThreatSmall</letterDef>
-    <earliestDay>15</earliestDay>
+    <earliestDay>20</earliestDay>
 	  <codexEntry>BRF_ScarletCerebralJellyfish</codexEntry>
   </IncidentDef>
 
