@@ -76,18 +76,18 @@ namespace Luna_BRF
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            float num = parms.points;
+            float num = parms.points/2.5f;
             Pawn scarletCerebralJellyfish = PawnGenerator.GeneratePawn(PawnKindDef.Named("BRF_ScarletCerebralJellyfish"), Faction.OfEntities);
             //根据袭击点数与异象等级给予额外生命值
-            Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, scarletCerebralJellyfish);
-            hediff.Severity = Math.Max(num / 1000, 0.01f);
+            Hediff_RapidRegeneration hediff = (Hediff_RapidRegeneration)HediffMaker.MakeHediff(HediffDefOf.RapidRegeneration, scarletCerebralJellyfish);
             if (ModsConfig.AnomalyActive)
             {
                 if (Find.Anomaly.LevelDef.anomalyThreatTier > 1)
                 {
-                    hediff.Severity *= Find.Anomaly.LevelDef.anomalyThreatTier * 0.6f;
+                    num *= Find.Anomaly.LevelDef.anomalyThreatTier * 0.6f;
                 }
             }
+            hediff.SetHpCapacity(Math.Max(num, 100));
             scarletCerebralJellyfish.health.AddHediff(hediff);
             // 使用BurrowLikeSpawnParms寻找合适的生成位置
             if (!LargeBuildingCellFinder.TryFindCell(out IntVec3 spawnCell, map, BurrowLikeSpawnParms.ForThing(ThingDefOf.PitBurrow) ))

@@ -29,7 +29,8 @@ namespace Luna_BRF
 				}
 			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(defaultPawnGroupMakerParms).ToList();
-			if(list.Count >= 3)
+			float hpPoint = Math.Max((parms.points / 5) * (1 + (tier / 10)), 100);
+			if (list.Count >= 3)
             {
 				list.Clear();
 				int rand = Rand.Range(3, 4);
@@ -41,8 +42,8 @@ namespace Luna_BRF
 			}
 			foreach(Pawn item in list)
 			{
-				Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, item);
-				hediff.Severity = Math.Max(parms.points / 2500 * (1+(tier/10)), 0.01f);
+				Hediff_RapidRegeneration hediff = (Hediff_RapidRegeneration) HediffMaker.MakeHediff(HediffDefOf.RapidRegeneration, item);
+				hediff.SetHpCapacity(hpPoint);
 				item.health.AddHediff(hediff);
 			}
 			if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))

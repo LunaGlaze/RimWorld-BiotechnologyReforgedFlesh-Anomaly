@@ -41,4 +41,11 @@
 			<li>BRF_WetwareServoNodes</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraitDef[defName = "BodyPurist"]/conflictingTraits</xpath>
+		<value>
+			<li>BRF_Sarkicism</li>
+		</value>
+	</Operation>
 </Patch>

@@ -54,3 +54,7 @@
  - 减少绯红窥叶的面板外额外产出/Reduce the extra output outside the panel of Crimson Peeping Leaves.
  - 修复绯红活菌袭击xml配置错误解锁错误的实体的bug/Fix bug of Crimson Living Fungi Assault XML configuration error and unlocking incorrect entities.
  - 修复部分实体能力会选取无法抵达的目标或无法提供门和栅栏追踪目标的bug/Fixed a bug that some entity's ability select unreachable targets or cannot provide tracking bash doors and fences.
+ [v0.3.2]
+ - 下调了肢团的护甲穿透属性/Reduced the armor penetration attribute of the Clump.
+ - 修复了猩红脑蜇错误重复对机械体使用能力的bug；降低选定机械体为目标的概率，当目标随机为机械体时直接进行kill程序防止循环./Fixed bug of Crimson Sting error repeatedly affecting mechanical usage ability.
+ - 调整实体额外生命值生成方式/Adjust the method of generating additional health points for entities.

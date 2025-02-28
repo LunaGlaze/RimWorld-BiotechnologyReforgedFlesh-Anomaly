@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace Luna_BRF
@@ -43,6 +44,38 @@ namespace Luna_BRF
 			return from p in pawn.health.hediffSet.GetNotMissingParts()
 				   where p.def == BodyPartDefOf.Lung && !pawn.health.hediffSet.hediffs.Any((Hediff x) => x.Part == p && x.def.tags.Contains("BRF_FleshReforge"))
 				   select p;
+		}
+		public static float GetMinHealthOfPartsWeWantToAvoidDestroying(BodyPartRecord part, Pawn pawn)
+		{
+			float num = 999999f;
+			while (part != null)
+			{
+				if (ShouldRandomDamageAvoidDestroying(part, pawn))
+				{
+					num = Mathf.Min(num, pawn.health.hediffSet.GetPartHealth(part));
+				}
+				part = part.parent;
+			}
+			return num;
+		}
+		public static bool ShouldRandomDamageAvoidDestroying(BodyPartRecord part, Pawn pawn)
+		{
+			if (part == pawn.RaceProps.body.corePart)
+			{
+				return true;
+			}
+			if (part.def.tags.Any((BodyPartTagDef x) => x.vital))
+			{
+				return true;
+			}
+			for (int i = 0; i < part.parts.Count; i++)
+			{
+				if (ShouldRandomDamageAvoidDestroying(part.parts[i], pawn))
+				{
+					return true;
+				}
+			}
+			return false;
 		}
 	}
 }

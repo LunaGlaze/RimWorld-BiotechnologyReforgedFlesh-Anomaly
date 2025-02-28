@@ -47,6 +47,7 @@
   
   <HediffDef ParentName="AddedBodyPartBase" Name="BRF_AddedBodyPartNaturalBase" Abstract="True">
     <organicAddedBodypart>true</organicAddedBodypart>
+     <priceImpact>false</priceImpact>
     <tags>
       <li>BRF_FleshReforge</li>
     </tags>

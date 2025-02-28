@@ -3,13 +3,14 @@
 <name>MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged</name>
 <author>幽月琉璃Luna</author>
 <packageId>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</packageId>
-<modVersion>0.3.1</modVersion>
+<modVersion>0.3.2</modVersion>
 <modIconPath>Items/Resource/BRF_RecastFleshCube</modIconPath>
 <supportedVersions>
 	<li>1.5</li>
 </supportedVersions>
 <url>https://github.com/LunaGlaze/RimWorld-BiotechnologyReforgedFlesh-Anomaly</url>
 <description>
+[h1]Not A Minecraft Mod Reprovision !!![/h1]
 An in-development mod based on the Anomaly DLC that may contain elements of biopunk, meatcore, body modification, SCP, and other group weirdness creations.
 
 “当我带来死亡时，那些受害者的生命并没有逝去，它们只不过被重新组合成了全新的事物……感谢我的仁慈吧！它们的生命在我手中被重铸，从此获得了高贵的新生——那些卑劣的生命将成为我们的一部分，从此以我的名义继续在这个世界存活下去。”
@@ -76,6 +77,7 @@ This mod is only tested in the author's personal gaming environment before relea
 [*] [url=https://github.com/LunaGlaze/RimWorld-BiotechnologyReforgedFlesh-Anomaly] Github [/url]
 [*] [url=https://patreon.com/shiqiluna] Patreon [/url](I probably don't use it that often)
 [*] [url=https://ifdian.net/a/shiqiluna] 爱发电 [/url](Available to Chinese users)
+[/list]
 
 </description>
 	<modDependencies>

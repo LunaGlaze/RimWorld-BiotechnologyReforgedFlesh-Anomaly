@@ -159,7 +159,7 @@ namespace Luna_BRF
 				if (brain != null && defExtension.damageBrain)
 				{
 					float maxBrainHealth = brain.def.GetMaxHealth(pawn);
-					float minHealthOfPartsWeWantToAvoidDestroying = GetMinHealthOfPartsWeWantToAvoidDestroying(brain, pawn);
+					float minHealthOfPartsWeWantToAvoidDestroying = LunaBRFHediffUtility.GetMinHealthOfPartsWeWantToAvoidDestroying(brain, pawn);
 					int num = Mathf.Min(GenMath.RoundRandom(maxBrainHealth * Rand.Range(0.25f, 0.5f)), GenMath.RoundRandom(minHealthOfPartsWeWantToAvoidDestroying * Rand.Range(0.25f, 0.75f)));
 					if (num > 0)
 					{
@@ -188,38 +188,6 @@ namespace Luna_BRF
 				}
 			}
 			pawn.health.RemoveHediff(this);
-		}
-		private static float GetMinHealthOfPartsWeWantToAvoidDestroying(BodyPartRecord part, Pawn pawn)
-		{
-			float num = 999999f;
-			while (part != null)
-			{
-				if (ShouldRandomDamageAvoidDestroying(part, pawn))
-				{
-					num = Mathf.Min(num, pawn.health.hediffSet.GetPartHealth(part));
-				}
-				part = part.parent;
-			}
-			return num;
-		}
-		private static bool ShouldRandomDamageAvoidDestroying(BodyPartRecord part, Pawn pawn)
-		{
-			if (part == pawn.RaceProps.body.corePart)
-			{
-				return true;
-			}
-			if (part.def.tags.Any((BodyPartTagDef x) => x.vital))
-			{
-				return true;
-			}
-			for (int i = 0; i < part.parts.Count; i++)
-			{
-				if (ShouldRandomDamageAvoidDestroying(part.parts[i], pawn))
-				{
-					return true;
-				}
-			}
-			return false;
 		}
 	}
 }

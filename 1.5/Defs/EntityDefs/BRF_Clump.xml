@@ -506,7 +506,7 @@
         </capacities>
         <power>16</power>
         <cooldownTime>2</cooldownTime>
-        <armorPenetration>0.5</armorPenetration>
+        <armorPenetration>0.35</armorPenetration>
         <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
@@ -517,7 +517,7 @@
           <li>Blunt</li>
         </capacities>
         <power>18</power>
-        <armorPenetration>0.5</armorPenetration>
+        <armorPenetration>0.35</armorPenetration>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -529,7 +529,7 @@
           <li>Bite</li>
         </capacities>
         <power>30</power>
-        <armorPenetration>0.75</armorPenetration>
+        <armorPenetration>0.5</armorPenetration>
         <cooldownTime>2.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

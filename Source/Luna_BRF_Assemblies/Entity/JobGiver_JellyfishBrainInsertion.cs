@@ -25,7 +25,7 @@ namespace Luna_BRF
 				Pawn result = null;
 				foreach (Pawn item in pawns)
 				{
-					if (pawn.Position.InHorDistOf(item.Position, 25f) && (float)item.Position.DistanceToSquared(pawn.Position) < num && GenSight.LineOfSightToThing(pawn.Position, item, pawn.Map) )
+					if (pawn.Position.InHorDistOf(item.Position, 25f) && (float)item.Position.DistanceToSquared(pawn.Position) < num && GenSight.LineOfSightToThing(pawn.Position, item, pawn.Map) && pawn.RaceProps.IsFlesh)
 					{
 						num = item.Position.DistanceToSquared(pawn.Position);
 						result = item;
@@ -39,7 +39,6 @@ namespace Luna_BRF
 				int randIndex = rnd.Next(pawns.Count);
 				Pawn target = pawns[randIndex];
 				return new LocalTargetInfo(target);
-
 			}
 			return null;
 		}
