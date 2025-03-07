@@ -13,11 +13,11 @@ namespace Luna_BRF_VEFAssemblies
     [StaticConstructorOnStartup]
     public class LunaComPipSpawnRefuelable : CompRefuelable, IThingHolder
 	{
-		public CompProperties_PipSpawnRefuelable Props
+		public CompProperties_PipSpawnRefuelable iProps
 		{
 			get
 			{
-				return (CompProperties_PipSpawnRefuelable)this.props;
+				return (CompProperties_PipSpawnRefuelable)Props;
 			}
 		}
 		public LunaComPipSpawnRefuelable()
@@ -42,18 +42,18 @@ namespace Luna_BRF_VEFAssemblies
 		}
 		public override void CompTick()
 		{
-			if(this.compResource != null){
-				if(this.compResource.PipeNet.AvailableCapacity > 0)
+			if(compResource != null){
+				if(compResource.PipeNet.AvailableCapacity > 0)
                 {
 					base.CompTick();
-					bool flag = parent.IsHashIntervalTick(this.Props.spawnInterval);
+					bool flag = parent.IsHashIntervalTick(iProps.spawnInterval);
 					if (flag)
 					{
-						bool flag2 = base.Fuel > 0f && this.compResource != null;
+						bool flag2 = base.Fuel > 0f && compResource != null;
 						if (flag2)
 						{
-							int count = this.Props.spawnCount;
-							this.compResource.PipeNet.DistributeAmongStorage(count);
+							int count = iProps.spawnCount;
+							compResource.PipeNet.DistributeAmongStorage(count);
 						}
 					}
 				}

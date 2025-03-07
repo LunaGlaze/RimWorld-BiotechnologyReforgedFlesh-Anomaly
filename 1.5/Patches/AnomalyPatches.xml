@@ -202,4 +202,11 @@
         <value>4</value>
     </Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraitDef[defName = "BodyPurist"]/conflictingTraits</xpath>
+		<value>
+			<li>BRF_Sarkicism</li>
+		</value>
+	</Operation>
+
 </Patch>

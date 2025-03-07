@@ -3,7 +3,7 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.5/VanillaExpandedFramework</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.5/Mods/VanillaExpandedFramework</li>
 		<li IfModActive="rim.job.world">1.5/Mods/RJW/Core</li>
 		<li IfModActive="anomaly.corpration">1.5/Mods/ACE</li>
 		<li IfModActive="automatic.bionicicons">1.5/Mods/Bionicicons</li>
