@@ -32,7 +32,7 @@
     <label>Clump Assault</label>
     <workerClass>Luna_BRF.IncidentWorker_ClumpBaseAssault</workerClass>
     <baseChance>1.25</baseChance>
-    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Clump Assault</letterLabel>
     <letterText>Some hungry Clump has wandered into the vicinity of your colony. This monster of flesh and limb construction may destroy and devour everything in their sight.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -45,7 +45,7 @@
     <label>Crimson Living Fungi Arrival</label>
     <workerClass>Luna_BRF.IncidentWorker_CrimsonLivingFungiAssault</workerClass>
     <baseChance>1.00</baseChance>
-    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Crimson Living Fungi Arrival</letterLabel>
     <letterText>A monstrous living fleshy fungus creature has visited the your colony. They simply left to their own devices, releasing a strange spore of unknown flesh and blood, fungus or nanomachines, to fulfill their duty of modifying the environment.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -58,7 +58,7 @@
     <label>Strange Jellyfish Arrival</label>
     <workerClass>Luna_BRF.IncidentWorker_ScarletCerebralJellyfishAssault</workerClass>
     <baseChance>0.64</baseChance>
-    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Strange Jellyfish</letterLabel>
     <letterText>Along with a psychic wave, something appears in your neighborhood. You vaguely see a floating jellyfish or jellyfish figure ...... and are clearly harbor evil designs.</letterText>
     <letterDef>ThreatSmall</letterDef>

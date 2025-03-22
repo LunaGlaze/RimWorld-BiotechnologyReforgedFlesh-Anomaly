@@ -260,7 +260,7 @@
       </specialFiltersToAllow>
     </defaultIngredientFilter>
     <products>
-      <BRF_BoneFragment>25</BRF_BoneFragment>
+      <BRF_BoneFragment>27</BRF_BoneFragment>
       <BRF_NutritionalPaste>1</BRF_NutritionalPaste>
     </products>
     <displayPriority>500</displayPriority>
@@ -292,7 +292,7 @@
       </li>
     </ingredients>
     <products>
-      <BRF_GoreSpine>1</BRF_GoreSpine>
+      <BRF_GoreSpine>3</BRF_GoreSpine>
       <BRF_NutritionalPaste>1</BRF_NutritionalPaste>
     </products>
     <displayPriority>500</displayPriority>

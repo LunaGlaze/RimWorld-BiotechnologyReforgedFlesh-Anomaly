@@ -285,6 +285,8 @@
       <ComfyTemperatureMin>-140</ComfyTemperatureMin>
       <ComfyTemperatureMax>120</ComfyTemperatureMax>
       <Flammability>0.5</Flammability>
+	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">0.75</NecrotionResistance>
+	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">0.75</NecrotionEnvironmentResistance>
     </statBases>
     <race>
       <thinkTreeMain>Fleshbeast</thinkTreeMain>

@@ -64,6 +64,8 @@
       <PainShockThreshold>0.99</PainShockThreshold>
       <MinimumContainmentStrength>50</MinimumContainmentStrength>
       <LeatherAmount>0</LeatherAmount>
+	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionResistance>
+	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionEnvironmentResistance>
     </statBases>
     <tradeability>None</tradeability>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>

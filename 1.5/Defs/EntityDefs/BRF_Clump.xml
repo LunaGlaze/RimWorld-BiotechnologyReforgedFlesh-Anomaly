@@ -403,6 +403,8 @@
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>5</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>
+	  <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionResistance>
+	  <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionEnvironmentResistance>
     </statBases>
     <tradeability>None</tradeability>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
@@ -506,7 +508,7 @@
         </capacities>
         <power>16</power>
         <cooldownTime>2</cooldownTime>
-        <armorPenetration>0.35</armorPenetration>
+        <armorPenetration>0.25</armorPenetration>
         <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
@@ -517,7 +519,7 @@
           <li>Blunt</li>
         </capacities>
         <power>18</power>
-        <armorPenetration>0.35</armorPenetration>
+        <armorPenetration>0.25</armorPenetration>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -528,8 +530,8 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>30</power>
-        <armorPenetration>0.5</armorPenetration>
+        <power>27</power>
+        <armorPenetration>0.4</armorPenetration>
         <cooldownTime>2.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

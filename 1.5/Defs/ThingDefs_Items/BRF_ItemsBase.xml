@@ -40,9 +40,6 @@
       <specialThoughtDirect>AteRawFood</specialThoughtDirect>
       <preferability>RawTasty</preferability>
     </ingestible>
-    <thingCategories>
-      <li>BRF_Things_ReforgedMeat</li>
-    </thingCategories>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>5</daysToRotStart>
@@ -59,6 +56,10 @@
       <texPath>Items/Resource/ReforgedMeat/meat_human</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>BRF_Things_ReforgedMeat</li>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="BRF_ReforgedMeatBase">
     <defName>BRF_ReforgedMeat_Insect</defName>
@@ -67,6 +68,10 @@
       <texPath>Items/Resource/ReforgedMeat/meat_insect</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>BRF_Things_ReforgedMeat</li>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="BRF_ReforgedMeatBase">
     <defName>BRF_ReforgedMeat_Harbinger</defName>
@@ -75,6 +80,10 @@
       <texPath>Items/Resource/ReforgedMeat/twisted_meat</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>BRF_Things_ReforgedMeat</li>
+      <li>BRF_Things_LivingMaterial</li>
+    </thingCategories>
   </ThingDef>
 
 <!--鲜活肉块-->
@@ -116,9 +125,6 @@
       <Mass>0.1</Mass>
       <MarketValue>0.5</MarketValue>
     </statBases>
-    <thingCategories>
-      <li>BRF_Things_ReforgedMeat</li>
-    </thingCategories>
     <comps>
       <li Class="CompProperties_CompAnalyzableUnlockResearch">
         <analysisID>704266693</analysisID>
@@ -150,6 +156,7 @@
   <ThingDef Name="BRF_NutritionalPasteLike" Abstract="True" ParentName="BRF_BioResourceBaseBase">
     <thingCategories>
       <li>BRF_Things_LivingMaterial</li>
+      <li>AnimalProductRaw</li>
     </thingCategories>
     <socialPropernessMatters>true</socialPropernessMatters>
     <stackLimit>150</stackLimit>
@@ -232,6 +239,7 @@
     </graphicData>
     <thingCategories>
       <li>ResourcesRaw</li>
+      <li>BRF_Things_LivingMaterial</li>
     </thingCategories>
     <statBases>
       <Flammability>0.1</Flammability>
@@ -256,6 +264,7 @@
     </graphicData>
     <thingCategories>
       <li>ResourcesRaw</li>
+      <li>BRF_Things_LivingMaterial</li>
     </thingCategories>
     <statBases>
       <Flammability>0.1</Flammability>

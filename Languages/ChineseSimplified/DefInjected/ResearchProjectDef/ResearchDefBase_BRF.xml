@@ -88,7 +88,7 @@
   <!-- 血肉脉冲炮弹 -->
 
   <BRF_FleshPulseShellResearch.label>血肉脉冲炮弹</BRF_FleshPulseShellResearch.label>
-  <BRF_FleshPulseShellResearch.description>血肉是现代血肉兽灾害的万恶之源，通过对血肉心脏的研究，我确信那些令人不安的更原始的血肉组织是有效的。通过将这些组织与现任校长的神经块混合 我们可以得到一种生物炮弹 能够释放生物脉冲来烧灼目标。\n\n这种脉冲可以达到与分析所有神经块后得到的那种频率的电流相同的效果，让我们可以更快地摧毁血肉心脏。</BRF_FleshPulseShellResearch.description>
+  <BRF_FleshPulseShellResearch.description>血肉心脏是现代血肉兽灾害的万恶之源，通过对血肉心脏的研究，我确信那些令人不安的更原始的血肉组织是有效的。通过将这些组织与现任校长的神经块混合 我们可以得到一种生物炮弹 能够释放生物脉冲来烧灼目标。\n\n这种脉冲可以达到与分析所有神经块后得到的那种频率的电流相同的效果，让我们可以更快地摧毁血肉心脏。</BRF_FleshPulseShellResearch.description>
 
 
   <!-- 隐形窥探 -->
@@ -142,7 +142,7 @@
   <!-- 血肉喷吐者 -->
 
   <BRF_SpitterFleshwormResearch.label>血肉喷吐者</BRF_SpitterFleshwormResearch.label>
-  <BRF_SpitterFleshwormResearch.description>通过对现任校长的进一步研究，我们已经掌握了制造属于我们的喷吐器官的技术。我们已经摆脱了对那些神经组织进行破坏性分析的依赖。利用这些组织中的编码，我们能够构造出一种更像蠕虫的血肉器官，用于防御。</BRF_SpitterFleshwormResearch.description>
+  <BRF_SpitterFleshwormResearch.description>通过对血肉心脏的进一步研究，我们已经掌握了制造属于我们的喷吐器官的技术。我们已经摆脱了对那些神经组织进行破坏性分析的依赖。利用这些组织中的编码，我们能够构造出一种更像蠕虫的血肉器官，用于防御。</BRF_SpitterFleshwormResearch.description>
 
 
 </LanguageData>

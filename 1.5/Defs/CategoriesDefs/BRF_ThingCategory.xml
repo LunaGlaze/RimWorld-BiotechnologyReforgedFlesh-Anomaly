@@ -11,7 +11,7 @@
   <ThingCategoryDef>
     <defName>BRF_Things_LivingMaterial</defName>
     <label>Living Material</label>
-    <parent>AnimalProductRaw</parent>
+    <parent>ResourcesRaw</parent>
     <iconPath>Items/Resource/BRF_LivingFlesh</iconPath>
   </ThingCategoryDef>
 

@@ -287,6 +287,8 @@
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>4</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>
+	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionResistance>
+	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionEnvironmentResistance>
     </statBases>
     <tradeability>None</tradeability>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>

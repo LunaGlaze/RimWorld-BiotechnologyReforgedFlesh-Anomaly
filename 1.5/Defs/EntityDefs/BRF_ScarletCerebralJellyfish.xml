@@ -347,6 +347,8 @@
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>2.5</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>
+	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionResistance>
+	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionEnvironmentResistance>
     </statBases>
     <tradeability>None</tradeability>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
@@ -386,7 +388,7 @@
   <ThingDef ParentName="BRF_ScarletCerebralJellyfishBase">
     <defName>BRF_ScarletCerebralJellyfish</defName>
     <label>Scarlet Cerebral Jellyfish</label>
-    <description>A grotesque aberrant flesh creature that appears to be jellyfish-like, but does not live in the water at all, instead floating in the air. The creature seems to have a penchant for probing its tentacles into the brains of its victims, injecting bizarre chemicals that contain microscopic archites and controlling their behavior.</description>
+    <description>A grotesque aberrant flesh creature that appears to be jellyfish-like, but does not live in the water at all, instead floating in the air. The creature seems to have a penchant for probing its tentacles into the brains of its victims, injecting bizarre chemicals that contain microscopic archites with addictive nanomechanical drugs and controlling their behavior.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <MinimumContainmentStrength>110</MinimumContainmentStrength>

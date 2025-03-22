@@ -71,9 +71,17 @@
 
  [v0.3.2]
  - 下调了肢团的护甲穿透属性/Reduced the armor penetration attribute of the Clump.
- - 修复了猩红脑蜇错误重复对机械体使用能力的bug；降低选定机械体为目标的概率，当目标随机为机械体时直接进行kill程序防止循环./Fixed bug of Crimson Sting error repeatedly affecting mechanical usage ability.
+ - 修复了猩红脑蜇错误重复对机械体使用能力的bug；降低选定机械体为目标的概率，当目标随机为机械体时直接进行kill程序防止循环./Fixed bug of Scarlet Cerebral Jellyfish error repeatedly affecting mechanical usage ability.
  - 调整实体额外生命值生成方式/Adjust the method of generating additional health points for entities.
  - 降低实体额外生命值比例/Reduce the proportion of additional health points for entities.
  - 修复纯粹主义可以与欲肉教特性共存的bug/Fix bug that BodyPurist can coexist with Sarkicism Trait.
  - 调整文件夹结构/Adjust folder structure.
  - 规范VEF模块Net代码/Standardize the Net code of VEF module.
+
+ [v0.3.3]
+ - 修复部分语言文件文案错误/Fix some language file's wrong content.
+ - 当添加了殁骸尸军2时，为部分实体添加殁染抗性。/Provide Necrotion Resistance for some entities when adding The Army of Fetid Corps 1.5.
+ - 优化物品分类逻辑/Optimize the logic of item classification.
+ - 提升骨质遗骸类材料产出/Enhance the output of bone remains materials.
+ - 稍微下调了肢团的攻击能力/Slightly reduced the attack function of Clump.
+ - 优化猩红脑蜇索敌代码，不再对机械体使用能力/Optimize Scarlet Cerebral Jellyfish's enemy search code to no longer use the ability on mech.
