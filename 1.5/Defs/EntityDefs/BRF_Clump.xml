@@ -371,7 +371,7 @@
       <li>BRF_EntityNecrophagia</li>
       <li>BRF_EntityLongjump</li>
     </abilities>
-    <combatPower>350</combatPower>
+    <combatPower>500</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -421,7 +421,7 @@
       <foodType>None</foodType>
       <bloodDef>Filth_Blood</bloodDef>
       <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
-      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
       <trainability>None</trainability>
       <fleshType>Fleshbeast</fleshType>
       <isImmuneToInfections>true</isImmuneToInfections>
@@ -448,14 +448,14 @@
     <description>Clumps are hostile entities that resemble massive clumps of human limbs that flail about and extend in every direction. This monster has a slightly fleshbeast-like build with an endless hunger. They can move forward and jump by flinging their limbs quickly and hard in a twisted position, which allows them to catch up with their prey very quickly.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
-      <MinimumContainmentStrength>175</MinimumContainmentStrength>
+      <MinimumContainmentStrength>90</MinimumContainmentStrength>
     </statBases>
     <uiIconPath>Pawns/BRF_Clump/BRF_Clump_east</uiIconPath>
     <race>
       <body>BRF_ClumpBody</body>
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>3</baseHealthScale>
-      <lifeExpectancy>1500</lifeExpectancy>
+      <lifeExpectancy>1250</lifeExpectancy>
       <soundMoving>Pawn_Fleshbeast_Bulbfreak_Moving</soundMoving>
       <lifeStageAges>
         <li>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 身體定義 -->
+  <BRF_ThornbladeMaggotBody.label>軟體動物軀體</BRF_ThornbladeMaggotBody.label>
+  <BRF_ThornbladeMaggotBody.corePart.parts.left_lung.customLabel>左肺</BRF_ThornbladeMaggotBody.corePart.parts.left_lung.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.right_lung.customLabel>右肺</BRF_ThornbladeMaggotBody.corePart.parts.right_lung.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.left_kidney.customLabel>左腎</BRF_ThornbladeMaggotBody.corePart.parts.left_kidney.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.right_kidney.customLabel>右腎</BRF_ThornbladeMaggotBody.corePart.parts.right_kidney.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.left_whip_blade.customLabel>左鞭刃</BRF_ThornbladeMaggotBody.corePart.parts.left_whip_blade.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.right_whip_blade.customLabel>右鞭刃</BRF_ThornbladeMaggotBody.corePart.parts.right_whip_blade.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.Head.parts.left_eye.customLabel>左眼</BRF_ThornbladeMaggotBody.corePart.parts.Head.parts.left_eye.customLabel>
+  <BRF_ThornbladeMaggotBody.corePart.parts.Head.parts.right_eye.customLabel>右眼</BRF_ThornbladeMaggotBody.corePart.parts.Head.parts.right_eye.customLabel>
+
+
+</LanguageData>

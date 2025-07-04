@@ -5,9 +5,17 @@
 
   <BRF_Launch_PrimordialFleshBeast.label>发射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
 
+  <!-- 棘刃血蛆 -->
+
+  <BRF_Launch_ThornbladeMaggot.label>发射蛆虫毒牙</BRF_Launch_ThornbladeMaggot.label>
+
   <!-- 绯红活菌 -->
 
   <BRF_Launch_CrimsonPus.label>绯红脓液</BRF_Launch_CrimsonPus.label>
+
+  <!-- 原生先知 -->
+
+  <BRF_Launch_RawProphet.label>腥臭脓液</BRF_Launch_RawProphet.label>
 
   <!-- 实体位移 -->
 

@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BRF_FreshShellBodyPartBase" ParentName="BodyPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(203,101,102)</color>
+		</graphicData>
+	  <tickerType>Rare</tickerType>
+    <thingCategories>
+      <li>BRF_Things_FreshShell_Base</li>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+	  <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef Name="BRF_FreshShellBaseBodyPart" ParentName="BRF_FreshShellBodyPartBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <RecipeDef Name="BRF_SurgeryInstallBodyPartNaturalBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+  </RecipeDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase" Name="BRF_AddedBodyPartNaturalBase" Abstract="True">
+    <organicAddedBodypart>true</organicAddedBodypart>
+     <priceImpact>false</priceImpact>
+    <tags>
+      <li>BRF_FleshReforge</li>
+    </tags>
+  </HediffDef>
+
+<!-- 手臂 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeArm</defName>
+    <label>flesh-made arm</label>
+    <description>A remodeled arm, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseArm</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_BoneFragment>3</BRF_BoneFragment>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <BRF_FleshMadeHand>1</BRF_FleshMadeHand>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseArm</defName>
+    <label>install flesh-made arm</label>
+    <description>Install a flesh-made arm. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeArmHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeArmHediff</defName>
+    <label>flesh-made arm</label>
+    <labelNoun>a flesh-made arm</labelNoun>
+    <description>An installed flesh-made arm.</description>
+    <defaultInstallPart>Arm</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8.2</power> <!-- Same as natural fist -->
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>BRF_FleshMadeArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 手掌 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeHand</defName>
+    <label>flesh-made hand</label>
+    <description>A remodeled hand, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseHand</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <BRF_BoneFragment>2</BRF_BoneFragment>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseHand</defName>
+    <label>install flesh-made hand</label>
+    <description>Install a flesh-made hand. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made hand.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeHandHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeHandHediff</defName>
+    <label>flesh-made hand</label>
+    <labelNoun>a flesh-made hand</labelNoun>
+    <description>An installed flesh-made hand.</description>
+    <defaultInstallPart>Hand</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeHand</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8.2</power> <!-- Same as natural fist -->
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>BRF_FleshMadeHand</spawnThingOnRemoved>
+    <addedPartProps>
+    
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 手指 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeFinger</defName>
+    <label>flesh-made finger</label>
+    <description>A remodeled finger, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseFinger</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseFinger</defName>
+    <label>install flesh-made finger</label>
+    <description>Install a flesh-made finger. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made finger.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeFinger</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeFinger</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Finger</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeFingerHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeFingerHediff</defName>
+    <label>flesh-made finger</label>
+    <labelNoun>a flesh-made finger</labelNoun>
+    <description>An installed flesh-made finger.</description>
+    <defaultInstallPart>Finger</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeFinger</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeFinger</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 脚趾 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeToe</defName>
+    <label>flesh-made toe</label>
+    <description>A remodeled toe, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseToe</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseToe</defName>
+    <label>install flesh-made toe</label>
+    <description>Install a flesh-made toe. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made toe.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeToe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeToe</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Toe</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshMadeToeHediff</addsHediff>
+	
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeToeHediff</defName>
+    <label>flesh-made toe</label>
+    <labelNoun>a flesh-made toe</labelNoun>
+    <description>An installed flesh-made toe.</description>
+    <defaultInstallPart>Toe</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeToe</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeToe</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 脚掌 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeFoot</defName>
+    <label>flesh-made foot</label>
+    <description>A remodeled foot, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseFoot</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <BRF_BoneFragment>3</BRF_BoneFragment>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseFoot</defName>
+    <label>install flesh-made foot</label>
+    <description>Install a flesh-made foot. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made foot.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeFoot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeFoot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeFootHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeFootHediff</defName>
+    <label>flesh-made foot</label>
+    <labelNoun>a flesh-made foot</labelNoun>
+    <description>An installed flesh-made foot.</description>
+    <defaultInstallPart>Foot</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeFoot</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeFoot</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 腿 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeLeg</defName>
+    <label>flesh-made leg</label>
+    <description>A remodeled leg, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLeg</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_BoneFragment>3</BRF_BoneFragment>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+      <BRF_FleshMadeFoot>1</BRF_FleshMadeFoot>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseLeg</defName>
+    <label>install flesh-made leg</label>
+    <description>Install a flesh-made leg. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeLegHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeLegHediff</defName>
+    <label>flesh-made leg</label>
+    <labelNoun>a flesh-made leg</labelNoun>
+    <description>An installed flesh-made leg.</description>
+    <defaultInstallPart>Leg</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 心脏 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeHeart</defName>
+    <label>flesh-made heart</label>
+    <description>A remodeled heart, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>15</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>3</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseHeart</defName>
+    <label>install flesh-made heart</label>
+    <description>Install a flesh-made heart. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeHeartHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeHeartHediff</defName>
+    <label>flesh-made heart</label>
+    <labelNoun>a flesh-made heart</labelNoun>
+    <description>An installed flesh-made heart.</description>
+    <defaultInstallPart>Heart</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeHeart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 肺部 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeLung</defName>
+    <label>flesh-made lung</label>
+    <description>A remodeled lung, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLung</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>2</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseLung</defName>
+    <label>install flesh-made lung</label>
+    <description>Install a flesh-made lung. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeLungHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeLungHediff</defName>
+    <label>flesh-made lung</label>
+    <labelNoun>a flesh-made lung</labelNoun>
+    <description>An installed flesh-made lung.</description>
+    <preventsLungRot>true</preventsLungRot>
+    <defaultInstallPart>Lung</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeLung</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 肾脏 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeKidney</defName>
+    <label>flesh-made kidney</label>
+    <description>A remodeled kidney, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseKidney</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>2</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseKidney</defName>
+    <label>install flesh-made kidney</label>
+    <description>Install a flesh-made kidney. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeKidneyHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeKidneyHediff</defName>
+    <label>flesh-made kidney</label>
+    <labelNoun>a flesh-made kidney</labelNoun>
+    <description>An installed flesh-made kidney.</description>
+    <defaultInstallPart>Kidney</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+  
+<!-- 肝脏 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeLiver</defName>
+    <label>flesh-made liver</label>
+    <description>A remodeled liver, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseLiver</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>3</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseLiver</defName>
+    <label>install flesh-made liver</label>
+    <description>Install a flesh-made liver. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeLiverHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeLiverHediff</defName>
+    <label>flesh-made liver</label>
+    <labelNoun>a flesh-made liver</labelNoun>
+    <description>An installed flesh-made liver.</description>
+    <defaultInstallPart>Liver</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeLiver</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 眼 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeEye</defName>
+    <label>flesh-made eye</label>
+    <description>A remodeled eye, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseEye</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseEye</defName>
+    <label>install flesh-made eye</label>
+    <description>Install a flesh-made eye. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeEyeHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeEyeHediff</defName>
+    <label>flesh-made eye</label>
+    <labelNoun>a flesh-made eye</labelNoun>
+    <description>An installed flesh-made eye.</description>
+    <defaultInstallPart>Eye</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeEye</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeEye</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 耳朵 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeEar</defName>
+    <label>flesh-made ear</label>
+    <description>A remodeled ear, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseEar</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseEar</defName>
+    <label>install flesh-made ear</label>
+    <description>Install a flesh-made ear. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeEarHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeEarHediff</defName>
+    <label>flesh-made ear</label>
+    <labelNoun>a flesh-made ear</labelNoun>
+    <description>An installed flesh-made ear.</description>
+    <defaultInstallPart>Ear</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 鼻子 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeNose</defName>
+    <label>flesh-made nose</label>
+    <description>A remodeled nose, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseNose</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>3</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseNose</defName>
+    <label>install flesh-made nose</label>
+    <description>Install a flesh-made nose. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeNoseHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeNoseHediff</defName>
+    <label>flesh-made nose</label>
+    <labelNoun>a flesh-made nose</labelNoun>
+    <description>An installed flesh-made nose.</description>
+    <defaultInstallPart>Nose</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeNose</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 下颚 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeJaw</defName>
+    <label>flesh-made jaw</label>
+    <description>A remodeled jaw, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseJaw</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>4</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
+      <BRF_BoneFragment>1</BRF_BoneFragment>
+      <BRF_FleshMadeTongue>1</BRF_FleshMadeTongue>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseJaw</defName>
+    <label>install flesh-made jaw</label>
+    <description>Install a flesh-made jaw. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made jaw.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeJawHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeJawHediff</defName>
+    <label>flesh-made jaw</label>
+    <labelNoun>a flesh-made jaw</labelNoun>
+    <description>An installed flesh-made jaw.</description>
+    <defaultInstallPart>Jaw</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeJaw</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 胃部 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeStomach</defName>
+    <label>flesh-made stomach</label>
+    <description>A remodeled stomach, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseStomach</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>10</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>2</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseStomach</defName>
+    <label>install flesh-made stomach</label>
+    <description>Install a flesh-made stomach. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeStomachHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeStomachHediff</defName>
+    <label>flesh-made stomach</label>
+    <labelNoun>a flesh-made stomach</labelNoun>
+    <description>An installed flesh-made stomach.</description>
+    <defaultInstallPart>Stomach</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeStomach</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 舌头 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeTongue</defName>
+    <label>flesh-made tongue</label>
+    <description>A remodeled tongue, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseTongue</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>2</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>2</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseTongue</defName>
+    <label>install flesh-made tongue</label>
+    <description>Install a flesh-made tongue. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made tongue.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeTongue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeTongue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tongue</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeTongueHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeTongueHediff</defName>
+    <label>flesh-made tongue</label>
+    <labelNoun>a flesh-made tongue</labelNoun>
+    <description>An installed flesh-made tongue.</description>
+    <defaultInstallPart>Tongue</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeTongue</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeTongue</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+<!-- 脊柱 -->
+  <ThingDef ParentName="BRF_FreshShellBaseBodyPart">
+    <defName>BRF_FleshMadeSpine</defName>
+    <label>flesh-made spine</label>
+    <description>A remodeled spine, constructed using basic flesh materials. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallFleshBaseSpine</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_ReforgedMeat_Human>5</BRF_ReforgedMeat_Human>
+      <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+      <BRF_BoneFragment>5</BRF_BoneFragment>
+      <BRF_LivingFlesh>2</BRF_LivingFlesh>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshBaseSpine</defName>
+    <label>install flesh-made spine</label>
+    <description>Install a flesh-made spine. Using initially remodeled flesh and blood as a replacement for the native shell, it doesn't work much better, but we're well on our way to ascension.</description>
+    <jobString>Installing flesh-made spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshMadeSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshMadeSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+	  <addsHediff>BRF_FleshMadeSpineHediff</addsHediff>
+  </RecipeDef>
+  
+  <HediffDef ParentName="BRF_AddedBodyPartNaturalBase">
+    <defName>BRF_FleshMadeSpineHediff</defName>
+    <label>flesh-made spine</label>
+    <labelNoun>a flesh-made spine</labelNoun>
+    <description>An installed flesh-made spine.</description>
+    <defaultInstallPart>Spine</defaultInstallPart>
+    <descriptionHyperlinks><ThingDef>BRF_FleshMadeSpine</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_FleshMadeSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+</Defs>

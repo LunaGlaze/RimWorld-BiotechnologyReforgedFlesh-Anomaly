@@ -1,4 +1,4 @@
-﻿using AnimalBehaviours;
+﻿using VEF.AnimalBehaviours;
 using Verse;
 
 namespace Luna_BRF_VEFAssemblies
@@ -11,23 +11,23 @@ namespace Luna_BRF_VEFAssemblies
 		{
 			if (Props.isFloater)
 			{
-				AnimalCollectionClass.AddFloatingAnimalToList(parent);
+                StaticCollectionsClass.AddFloatingAnimalToList(parent);
 			}
             if (Props.canCrossWater)
 			{
-				AnimalCollectionClass.AddWaterstridingPawnToList(parent);
+                StaticCollectionsClass.AddWaterstridingPawnToList(parent);
 			}
 		}
 
-		public override void PostDeSpawn(Map map)
+		public override void PostDeSpawn(Map map, DestroyMode mode)
 		{
 			if (Props.isFloater)
 			{
-				AnimalCollectionClass.RemoveFloatingAnimalFromList(parent);
+				StaticCollectionsClass.RemoveFloatingAnimalFromList(parent);
 			}
 			if (Props.canCrossWater)
 			{
-				AnimalCollectionClass.RemoveWaterstridingPawnFromList(parent);
+				StaticCollectionsClass.RemoveWaterstridingPawnFromList(parent);
 			}
 		}
 
@@ -35,11 +35,11 @@ namespace Luna_BRF_VEFAssemblies
 		{
 			if (Props.isFloater)
 			{
-				AnimalCollectionClass.RemoveFloatingAnimalFromList(parent);
+				StaticCollectionsClass.RemoveFloatingAnimalFromList(parent);
 			}
 			if (Props.canCrossWater)
 			{
-				AnimalCollectionClass.RemoveWaterstridingPawnFromList(parent);
+				StaticCollectionsClass.RemoveWaterstridingPawnFromList(parent);
 			}
 		}
 	}

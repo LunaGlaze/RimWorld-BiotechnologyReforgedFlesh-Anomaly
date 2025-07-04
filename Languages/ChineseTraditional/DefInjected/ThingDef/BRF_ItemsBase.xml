@@ -62,4 +62,22 @@
   <BRF_ElectrifiedSarcoma.description>一種帶有生物電效應的畸形腫瘤狀組織，是靜電囊體被暴力破壞後殘留下來的東西，經加工後可以製造出一些較好的肉體電氣裝置。</BRF_ElectrifiedSarcoma.description>
 
 
+  <!-- 原生心星 -->
+
+  <BRF_RawHeartStart.label>原生心星</BRF_RawHeartStart.label>
+  <BRF_RawHeartStart.description>原生先知第一次死亡後掉落的怪異物體，看上去像是乾癟的猩紅色六角海星，但是用力去擠壓就會不斷地流出腥臭難忍的粘液。它肯定跟原生先知的存續沒有任何關係，因為原生先知不需要依靠它存活，也只有剛被召喚出來的時候攜帶者它。\n\n相比起某種核心，這種東西更像是被其嬗變之後的祭品；我們可以嘗試分析它來取得更多可怖的血肉知識。</BRF_RawHeartStart.description>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateDescString>分析原生心星</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateLabelString>分析...</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetter>通過分析原生心星，{PAWN_labelShort}獲得了研究{RESEARCH}所必要的知識。\n\n你的研究者現在可以使用研究臺開始學習如何實際應用這項科技。</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetterLabel>原生心星分析完畢：解鎖{RESEARCH}</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.guiLabelString>選擇分析者</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.inspectString>可由一名殖民者進行分析。</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.inspectString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.jobString>分析原生心星</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.jobString>
+
+  <!-- 緋紅超凡晶核 -->
+
+  <BRF_CrimsonArchocrystal.label>緋紅超凡晶核</BRF_CrimsonArchocrystal.label>
+  <BRF_CrimsonArchocrystal.description>一團生長在詭異而扭曲的肉塊上的超自然晶體。其內部蘊含著強大的靈能力量，在正確的情況下能夠誘發血肉的昇華。</BRF_CrimsonArchocrystal.description>
+
+
 </LanguageData>

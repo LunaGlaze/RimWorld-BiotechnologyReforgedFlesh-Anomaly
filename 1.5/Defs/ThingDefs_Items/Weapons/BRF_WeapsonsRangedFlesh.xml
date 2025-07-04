@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BRF_BaseWeaponFleshGun" Abstract="True" ParentName="BaseGunWithQuality">
+    <techLevel>Medieval</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <soundInteract>BRF_Pawn_Flesh_Call</soundInteract>
+    <!--thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories-->
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>BRF_FleshGun</li>
+    </weaponTags>
+    <relicChance>0</relicChance>
+	<!-- 配方 -->
+    <recipeMaker>
+    <!-- 工作速度 -->
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <!-- 制作时有加成的技能 -->
+      <workSkill>Crafting</workSkill>
+      <!-- 工作特效 -->
+      <effectWorking>Smith</effectWorking>
+      <!-- 工作音效 -->
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--一本：血肉发射器-->
+  <ThingDef ParentName="BRF_BaseWeaponFleshGun">
+    <defName>BRF_Ranged_FleshShooter</defName>
+    <label>Flesh Shooter</label>
+    <description>A strangely shaped piece of flesh that grows into a shape that is somewhat similar to a pistol but is actually completely unrelated. It can quickly burst out with powerful force and fire poisonous fangs at the target to attack, but the replenishment rate is relatively slow.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Ranged/BRF_FleshShooter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <BRF_GoreSpine>1</BRF_GoreSpine>
+      <BRF_BoneFragment>2</BRF_BoneFragment>
+      <BRF_LivingFlesh>3</BRF_LivingFlesh>
+      <BRF_ReforgedMeat_Insect>30</BRF_ReforgedMeat_Insect>
+    </costList>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>0.75</Mass>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>BRF_FleshShooterResearch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>52</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BRF_FleshShooter_Spike</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>0.25</warmupTime>
+        <range>25</range>
+        <soundCast>BRF_Pawn_Flesh_Call</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+    <defName>BRF_FleshShooter_Spike</defName>
+    <label>fangs spike</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>48</speed>
+      <damageDef>ToxicBite</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.1</addHediffChance>
+            <HediffDefToAdd>BRF_FleshLacerated</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--二本：血棘突刺者Bloodthorn Stinger-->
+  <ThingDef ParentName="BRF_BaseWeaponFleshGun">
+    <defName>BRF_Ranged_BloodthornStinger</defName>
+    <label>Bloodthorn Stinger</label>
+    <description>A strangely shaped piece of flesh that grows into a shape that is somewhat similar to a pistol but is actually completely unrelated. This weapon is based on the neural structure of a parasitic entity that can manipulate insect corpses. It maintains excellent activity through various reshaped flesh materials and can fire dangerous spikes at the command of the holder. \n\n Among similar models, this one has the most satisfactory performance, but its spikes have the highest chance of leaving behind flesh-lacerated viruses.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Ranged/BRF_BloodthornStinger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <Corpse_BRF_BloodstainedTick>1</Corpse_BRF_BloodstainedTick>
+      <BRF_Ranged_FleshShooter>1</BRF_Ranged_FleshShooter>
+      <BRF_GoreSpine>2</BRF_GoreSpine>
+      <BRF_Scarletamine>3</BRF_Scarletamine>
+      <BRF_BoneFragment>5</BRF_BoneFragment>
+      <BRF_LivingFlesh>7</BRF_LivingFlesh>
+      <BRF_ReforgedMeat_Insect>30</BRF_ReforgedMeat_Insect>
+    </costList>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.36</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>BRF_BloodthornFleshGunsResearch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>55</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BRF_BloodthornStinger_Spike</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <warmupTime>0.3</warmupTime>
+        <range>28.9</range>
+        <soundCast>BRF_Pawn_Flesh_Call</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+    <defName>BRF_BloodthornStinger_Spike</defName>
+    <label>Flesh Thorn</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>64</speed>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.75</addHediffChance>
+            <HediffDefToAdd>BRF_FleshLacerated</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--二本：血棘散射者Bloodthorn Scatterer-->
+  <ThingDef ParentName="BRF_BaseWeaponFleshGun">
+    <defName>BRF_Ranged_BloodthornScatterer</defName>
+    <label>Bloodthorn Scatterer</label>
+    <description>A strangely shaped piece of flesh that grows into a shape that is somewhat similar to a shotgun but is actually completely unrelated. This weapon is based on the neural structure of a parasitic entity that can manipulate insect corpses. It maintains excellent activity through various reshaped flesh materials and can fire dangerous spikes at the command of the holder. \n\n It fires the slowest spikes of its kind, has a moderate chance of leaving flesh-lacerated viruses, but can fire three spikes at a time.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Ranged/BRF_BloodthornScatterer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <Corpse_BRF_BloodstainedTick>1</Corpse_BRF_BloodstainedTick>
+      <BRF_Ranged_FleshShooter>1</BRF_Ranged_FleshShooter>
+      <BRF_GoreSpine>2</BRF_GoreSpine>
+      <BRF_Scarletamine>7</BRF_Scarletamine>
+      <BRF_BoneFragment>11</BRF_BoneFragment>
+      <BRF_LivingFlesh>16</BRF_LivingFlesh>
+      <BRF_ReforgedMeat_Insect>70</BRF_ReforgedMeat_Insect>
+    </costList>
+    <statBases>
+      <WorkToMake>31000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.82</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>BRF_BloodthornFleshGunsResearch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>55</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BRF_BloodthornScatterer_Spike</defaultProjectile>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <warmupTime>1.2</warmupTime>
+        <range>21.9</range>
+        <soundCast>BRF_Pawn_Flesh_Call</soundCast>
+        <soundCastTail>Flesh_Drop</soundCastTail>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+    <defName>BRF_BloodthornScatterer_Spike</defName>
+    <label>Flesh Thorns</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>58</speed>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.5</addHediffChance>
+            <HediffDefToAdd>BRF_FleshLacerated</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--二本：血棘恐吓者Bloodthorn Scarer-->
+  <ThingDef ParentName="BRF_BaseWeaponFleshGun">
+    <defName>BRF_Ranged_BloodthornScarer</defName>
+    <label>Bloodthorn Scarer</label>
+    <description>A strangely shaped piece of flesh that grows into a shape that is somewhat similar to a machine gun but is actually completely unrelated. This weapon is based on the neural structure of a parasitic entity that can manipulate insect corpses. It maintains excellent activity through various reshaped flesh materials and can fire dangerous spikes at the command of the holder. \n\n Among similar models, this one has the fastest spikes and the lowest chance of leaving flesh-lacerated viruses. However, it can fire four spikes at a time.</description>
+    <graphicData>
+      <texPath>Items/Equipment/Weapon/Ranged/BRF_BloodthornScarer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <Corpse_BRF_BloodstainedTick>1</Corpse_BRF_BloodstainedTick>
+      <BRF_Ranged_FleshShooter>1</BRF_Ranged_FleshShooter>
+      <BRF_GoreSpine>2</BRF_GoreSpine>
+      <BRF_Scarletamine>7</BRF_Scarletamine>
+      <BRF_BoneFragment>12</BRF_BoneFragment>
+      <BRF_LivingFlesh>17</BRF_LivingFlesh>
+      <BRF_ReforgedMeat_Insect>75</BRF_ReforgedMeat_Insect>
+    </costList>
+    <statBases>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.42</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>BRF_BloodthornFleshGunsResearch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>55</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BRF_BloodthornScarer_Spike</defaultProjectile>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <warmupTime>0.9</warmupTime>
+        <range>33.9</range>
+        <soundCast>BRF_Pawn_Flesh_Call</soundCast>
+        <soundCastTail>Flesh_Drop</soundCastTail>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <thingClass>Luna_BRF.Luna_HediffAddBullet</thingClass>
+    <defName>BRF_BloodthornScarer_Spike</defName>
+    <label>Flesh Thorns</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <speed>72</speed>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
+            <addHediffChance>0.25</addHediffChance>
+            <HediffDefToAdd>BRF_FleshLacerated</HediffDefToAdd>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

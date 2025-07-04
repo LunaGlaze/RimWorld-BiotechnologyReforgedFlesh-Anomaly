@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--基础血肉墙-->
+	<ThingDef ParentName="BuildingBase">
+        <defName>BRF_FleshWall</defName>
+        <label>Flesh Wall</label>
+        <description>A solid mass of twisted flesh that constructed by someone. It throbs and shivers with horrible life.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+        <uiOrder>210</uiOrder>
+        <graphicData>
+          <texPath>Things/Building/Linked/Fleshmass_Atlas</texPath> <!-- Placeholder -->
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerOverlay</linkType>
+          <linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+				<li>Fleshmass</li>
+          </linkFlags>
+          <cornerOverlayPath>Things/Building/Linked/FleshmassPiece</cornerOverlayPath>
+          <shaderType>CutoutComplex</shaderType>
+          <damageData>
+            <rect>(0.15, 0.15, 0.75, 0.75)</rect>
+            <scratches>
+              <li>Damage/FleshScratch1</li>
+              <li>Damage/FleshScratch2</li>
+              <li>Damage/FleshScratch3</li>
+            </scratches>
+          </damageData>
+        </graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/BRF_FleshWall_Icon</uiIconPath>
+    	<researchPrerequisites>
+    		<li>BRF_ShapingTwistedMeatResearch</li>
+    	</researchPrerequisites>
+    	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<costList>
+			<Meat_Twisted>5</Meat_Twisted>
+		</costList>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToBuild>125</WorkToBuild>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>false </coversFloor>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+<!--强化血肉墙-->
+	<ThingDef ParentName="Wall">
+        <defName>BRF_FleshWallTeirTwo</defName>
+        <label>Flesh Wall</label>
+        <description>The twisted and reshaped flesh intertwines with other materials to form this living wall of flesh and blood. It throbs and shivers with horrible life.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+        <uiOrder>215</uiOrder>
+        <graphicData>
+		  <texPath>Buildings/Structure/Linked/BRF_FleshWallTeir2_Atlas</texPath> <!-- Placeholder -->
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerFiller</linkType>
+          <linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+				<li>Fleshmass</li>
+          </linkFlags>
+          <shaderType>CutoutComplex</shaderType>
+          <damageData>
+            <rect>(0.15, 0.15, 0.75, 0.75)</rect>
+            <scratches>
+              <li>Damage/FleshScratch1</li>
+              <li>Damage/FleshScratch2</li>
+              <li>Damage/FleshScratch3</li>
+            </scratches>
+          </damageData>
+        </graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/BRF_FleshWallTeir2_Icon</uiIconPath>
+		<uiIconPathsStuff IsNull="True" />
+    	<researchPrerequisites>
+    		<li>BRF_CrimsonFurnitureResearch</li>
+    	</researchPrerequisites>
+    	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<costList>
+			<BRF_RecastFleshCube>6</BRF_RecastFleshCube>
+			<Meat_Twisted>2</Meat_Twisted>
+		</costList>
+    	<stuffCategories>
+      		<li>BRF_LivingAlloy</li>
+    	</stuffCategories>
+    	<costStuffCount>5</costStuffCount>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>false </coversFloor>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+    	<comps Inherit="False">
+      		<li Class="CompProperties_MeditationFocus">
+        		<statDef>MeditationFocusStrength</statDef>
+        		<focusTypes>
+          			<li>Minimal</li>
+          			<li>BRF_Flesh</li>
+        		</focusTypes>
+      		</li>
+    	</comps>
+	</ThingDef>
+<!--基础血肉门-->
+	<ThingDef ParentName="BuildingBase">
+        <defName>BRF_FleshDoor</defName>
+        <label>Flesh Door</label>
+        <description>A solid mass of twisted flesh that constructed by someone. It throbs and shivers with horrible life.</description>
+		<category>Building</category>
+		<thingClass>Building_Door</thingClass>
+        <altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+        <uiOrder>220</uiOrder>
+        <graphicData>
+            <texPath>Buildings/Structure/Flesh/Door/FleshDoor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+        		<scratches>
+          			<li>Damage/FleshScratch1</li>
+          			<li>Damage/FleshScratch2</li>
+          			<li>Damage/FleshScratch3</li>
+        		</scratches>
+            </damageData>
+        </graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/Door/FleshDoor_Icon</uiIconPath>
+    	<researchPrerequisites>
+    		<li>BRF_ShapingTwistedMeatResearch</li>
+    	</researchPrerequisites>
+		<costList>
+			<Meat_Twisted>10</Meat_Twisted>
+		</costList>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+            <Flammability>0.6</Flammability>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+    	<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+        <holdsRoof>true</holdsRoof>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <drawerType>RealtimeOnly</drawerType>
+        <building>
+            <isInert>true</isInert>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+            <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+            <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+            <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+            <blueprintClass>Blueprint_Door</blueprintClass>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Door/Door_Blueprint</texPath>
+            </blueprintGraphicData>
+            <ai_chillDestination>false</ai_chillDestination>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="CompProperties_Forbiddable">
+                <allowNonPlayer>true</allowNonPlayer>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+        </placeWorkers>
+	</ThingDef>
+<!--血肉地板-->
+	<TerrainDef ParentName="FloorBase">
+		<defName>BRF_FleshSurface</defName>
+		<label>Flesh Surface</label>
+		<description>A dense mat of organic flesh that clings loosely to the ground.</description>
+        <uiOrder>230</uiOrder>
+		<texturePath>Terrain/Surfaces/Flesh</texturePath> <!-- placeholder -->
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+    	<researchPrerequisites>
+    		<li>BRF_ShapingTwistedMeatResearch</li>
+    	</researchPrerequisites>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+		<statBases>
+			<WorkToBuild>120</WorkToBuild>
+			<Flammability>0.32</Flammability>
+			<CleaningTimeFactor>1.25</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Meat_Twisted>5</Meat_Twisted>
+		</costList>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+	</TerrainDef>
+<!--血肉菌毯-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>BRF_FleshBlanket</defName>
+    <label>Flesh Blanket</label>
+    <description>Scarlet meat-constructed ... blankets ... slimy, soft and juicy ...</description>
+    <texturePath>Buildings/Structure/Terrain/BRF_FleshBlanket</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>75</renderPrecedence>
+    <isPaintable>false</isPaintable>
+    <statBases>
+	  <FilthMultiplier>1.25</FilthMultiplier>
+      <CleaningTimeFactor>0.75</CleaningTimeFactor>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+	<fertility>0.05</fertility>
+    <uiOrder>2000</uiOrder>
+	<designationCategory inherit ="False"/>
+  </TerrainDef>
+<!--血肉菌毯地砖-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>BRF_FleshBlanket_Tile</defName>
+    <label>Flesh Blanket Tile</label>
+    <description>An artificial, modular Flesh Blanket that can smoothly link with the Flesh Network while avoiding unexpected stains during operation.</description>
+    <texturePath>Buildings/Structure/Terrain/BRF_FleshBlanket_Tile</texturePath>
+    <renderPrecedence>240</renderPrecedence>
+    <edgeType>Hard</edgeType>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <CleaningTimeFactor>0.75</CleaningTimeFactor>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <BRF_ScarletFerrite>2</BRF_ScarletFerrite>
+      <BRF_ReforgedMeat_Insect>4</BRF_ReforgedMeat_Insect>
+    </costList>
+    <uiOrder>2000</uiOrder>
+    <researchPrerequisites>
+        <li>BRF_EternalMotherTantraResearch</li>
+    </researchPrerequisites>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+  </TerrainDef>
+<!--猩红钢地砖-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>BRF_ScarletFerritePlateFloor</defName>
+    <label>Scarlet Ferrite Plate</label>
+    <description>A floor tile forged using Scarlet Ferrite and other living materials. It can take on the responsibilities of Flesh Blanket, with better performance but greater consumption. It's quick to clean and increases the containment strength of nearby holding platforms, and the psychic effects in it make it look good for no reason at all.</description>
+    <texturePath>Buildings/Structure/Terrain/BRF_ScarletFerritePlateFloor</texturePath>
+    <renderPrecedence>240</renderPrecedence>
+    <edgeType>Hard</edgeType>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+	  <Flammability>0</Flammability>
+      <ContainmentStrength>25</ContainmentStrength>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
+      <BRF_GelatinousFlesh>4</BRF_GelatinousFlesh>
+    </costList>
+    <uiOrder>2001</uiOrder>
+    <researchPrerequisites>
+        <li>BRF_EternalMotherTantraResearch</li>
+    </researchPrerequisites>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+  </TerrainDef>
+<!--血肉种植格-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>BRF_FleshPlanter</defName>
+		<label>Flesh Planter Grid</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<description>A planting grid made from blood and flesh as fertilizer and soil. It is somewhat similar to hydroponics, but can only be used to grow flesh plants.</description>
+		<graphicData>
+			<texPath>Buildings/Structure/Linked/BRF_FleshPlanter_Atlas</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom3</li>
+			</linkFlags>
+			<damageData>
+        		<scratches>
+          			<li>Damage/FleshScratch1</li>
+          			<li>Damage/FleshScratch2</li>
+          			<li>Damage/FleshScratch3</li>
+        		</scratches>
+			</damageData>
+		</graphicData>
+    	<uiIconPath>Buildings/Structure/Flesh/BRF_FleshPlanter_MenuIcon</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(1,1)</size>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+			<Cleanliness>-4</Cleanliness>
+		</statBases>
+		<building>
+			<defaultPlantToGrow>BRF_CrimsonPeepingLeaves</defaultPlantToGrow>
+			<sowTag>FleshPlanter</sowTag>
+			<blueprintGraphicData>
+				<texPath>Buildings/Structure/Linked/BRF_FleshPlanter_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<costList>
+			<BRF_RecastFleshCube>4</BRF_RecastFleshCube>
+			<Meat_Twisted>3</Meat_Twisted>
+			<BRF_CrimsonStem>2</BRF_CrimsonStem>
+			<BRF_GelatinousFlesh>1</BRF_GelatinousFlesh>
+		</costList>
+		<tickerType>Rare</tickerType>
+		<fertility>2.5</fertility>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<constructEffect>ConstructWood</constructEffect>
+		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+    	<researchPrerequisites>
+      		<li>BRF_BloodyAgriculture</li>
+    	</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

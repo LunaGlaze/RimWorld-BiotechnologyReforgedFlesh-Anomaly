@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 身体定义 -->
+
+  <BRF_RawProphetBody.label>原生先知</BRF_RawProphetBody.label>
+  <BRF_RawProphetBody.corePart.parts.left_lung.customLabel>左肺</BRF_RawProphetBody.corePart.parts.left_lung.customLabel>
+  <BRF_RawProphetBody.corePart.parts.right_lung.customLabel>右肺</BRF_RawProphetBody.corePart.parts.right_lung.customLabel>
+  <BRF_RawProphetBody.corePart.parts.left_kidney.customLabel>左肾</BRF_RawProphetBody.corePart.parts.left_kidney.customLabel>
+  <BRF_RawProphetBody.corePart.parts.right_kidney.customLabel>右肾</BRF_RawProphetBody.corePart.parts.right_kidney.customLabel>
+  <BRF_RawProphetBody.corePart.parts.first_shoulder.customLabel>第一肩</BRF_RawProphetBody.corePart.parts.first_shoulder.customLabel>
+  <BRF_RawProphetBody.corePart.parts.first_shoulder.parts.first_arm.customLabel>第一臂</BRF_RawProphetBody.corePart.parts.first_shoulder.parts.first_arm.customLabel>
+  <BRF_RawProphetBody.corePart.parts.second_shoulder.customLabel>第二肩</BRF_RawProphetBody.corePart.parts.second_shoulder.customLabel>
+  <BRF_RawProphetBody.corePart.parts.second_shoulder.parts.second_arm.customLabel>第二臂</BRF_RawProphetBody.corePart.parts.second_shoulder.parts.second_arm.customLabel>
+  <BRF_RawProphetBody.corePart.parts.third_shoulder.customLabel>第三肩</BRF_RawProphetBody.corePart.parts.third_shoulder.customLabel>
+  <BRF_RawProphetBody.corePart.parts.third_shoulder.parts.third_arm.customLabel>第三臂</BRF_RawProphetBody.corePart.parts.third_shoulder.parts.third_arm.customLabel>
+  <BRF_RawProphetBody.corePart.parts.first_leg.customLabel>第一腿</BRF_RawProphetBody.corePart.parts.first_leg.customLabel>
+  <BRF_RawProphetBody.corePart.parts.second_leg.customLabel>第二腿</BRF_RawProphetBody.corePart.parts.second_leg.customLabel>
+  <BRF_RawProphetBody.corePart.parts.third_leg.customLabel>第三腿</BRF_RawProphetBody.corePart.parts.third_leg.customLabel>
+
+
+</LanguageData>

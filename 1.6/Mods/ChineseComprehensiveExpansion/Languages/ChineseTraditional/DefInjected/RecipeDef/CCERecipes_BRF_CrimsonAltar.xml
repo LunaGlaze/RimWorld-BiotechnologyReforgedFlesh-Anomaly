@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_MakeBloodSakuraCeramics50.label>鍛造血櫻瓷×50</BRF_MakeBloodSakuraCeramics50.label>
+  <BRF_MakeBloodSakuraCeramics50.description>將猩紅鋼與軍用陶瓷結合成更美觀、強力的活體材料。</BRF_MakeBloodSakuraCeramics50.description>
+  <BRF_MakeBloodSakuraCeramics50.jobString>鍛造血櫻</BRF_MakeBloodSakuraCeramics50.jobString>
+
+  <BRF_MakeBloodSakuraCeramics200.label>鍛造血櫻瓷×200</BRF_MakeBloodSakuraCeramics200.label>
+  <BRF_MakeBloodSakuraCeramics200.description>將猩紅鋼與軍用陶瓷結合成更美觀、強力的活體材料。</BRF_MakeBloodSakuraCeramics200.description>
+  <BRF_MakeBloodSakuraCeramics200.jobString>鍛造血櫻</BRF_MakeBloodSakuraCeramics200.jobString>
+
+  <BRF_WeavingBloodMumeSilk15.label>編制血梅織x15</BRF_WeavingBloodMumeSilk15.label>
+  <BRF_WeavingBloodMumeSilk15.description>將絲綢與血腥皮革編織成更美觀、強力的活體材料。</BRF_WeavingBloodMumeSilk15.description>
+  <BRF_WeavingBloodMumeSilk15.jobString>織造血梅</BRF_WeavingBloodMumeSilk15.jobString>
+
+  <BRF_WeavingBloodMumeSilk60.label>編制血梅織x60</BRF_WeavingBloodMumeSilk60.label>
+  <BRF_WeavingBloodMumeSilk60.description>將絲綢與血腥皮革編織成更美觀、強力的活體材料。</BRF_WeavingBloodMumeSilk60.description>
+  <BRF_WeavingBloodMumeSilk60.jobString>織造血梅</BRF_WeavingBloodMumeSilk60.jobString>
+
+  <BRF_WeavingBloodMumeSilk120.label>編制血梅織x120</BRF_WeavingBloodMumeSilk120.label>
+  <BRF_WeavingBloodMumeSilk120.description>將絲綢與血腥皮革編織成更美觀、強力的活體材料。</BRF_WeavingBloodMumeSilk120.description>
+  <BRF_WeavingBloodMumeSilk120.jobString>織造血梅</BRF_WeavingBloodMumeSilk120.jobString>
+
+</LanguageData>

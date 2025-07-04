@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ManeuverDef>
+    <defName>BRF_FleshViruCut</defName>
+    <requiredCapacity>BRF_FleshViruCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>BRF_FleshViruCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <ManeuverDef>
+    <defName>BRF_FleshViruScratch</defName>
+    <requiredCapacity>BRF_FleshViruScratch</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>BRF_FleshViruScratch</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Scratch_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Scratch_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Scratch_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Scratch_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+</Defs>

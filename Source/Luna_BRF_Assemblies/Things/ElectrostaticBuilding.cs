@@ -14,7 +14,7 @@ namespace Luna_BRF
 				FleckMaker.Static(this.Position, this.Map, LunaDefOf.BlastEMP);
 			}
 		}
-		public override void Tick()
+		protected override void Tick()
 		{
 			base.Tick();
             if (this.IsHashIntervalTick(250))

@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <MessagePeristalticFleshAssembled>血肉溫床已孵化新的蠕動肉塊。</MessagePeristalticFleshAssembled>
-  <PeristalticFleshAssemblyCompleteIn>將在{1}內孵化出{0}。</PeristalticFleshAssemblyCompleteIn>
+  <BRF_MessagePeristalticFleshAssembled>血肉溫床已孵化新的蠕動肉塊。</BRF_MessagePeristalticFleshAssembled>
+  <BRF_PeristalticFleshAssemblyCompleteIn>將在{1}內孵化出{0}。</BRF_PeristalticFleshAssemblyCompleteIn>
 
   <BRF_MutationsRelicImplantsDesc>血肉突變仿生體生長中：</BRF_MutationsRelicImplantsDesc>
   
-  <NecrophagistEntityWhenDigestinng>正在消化：</NecrophagistEntityWhenDigestinng>
+  <BRF_NecrophagistEntityWhenDigestinng>正在消化：</BRF_NecrophagistEntityWhenDigestinng>
   
-  <SummonSwarmsFinishText>{0_nameDef}完成了{RITUAL_definite}儀式。蟲群很快就會抵達了。</SummonSwarmsFinishText>
+  <BRF_CrimsonProvocationCompletedText>{INVOKER_nameDef}完成了{RITUAL_definite}儀式，發出一道能夠吸引血肉實體的心靈脈衝。</BRF_CrimsonProvocationCompletedText>
   
-  <SummonClumpsFinishText>{0_nameDef}完成了{RITUAL_definite}儀式。飢餓的肢團正在趕來。</SummonClumpsFinishText>
+  <BRF_SummonSwarmsFinishText>{0_nameDef}完成了{RITUAL_definite}儀式。蟲群很快就會抵達了。</BRF_SummonSwarmsFinishText>
+  
+  <BRF_SummonClumpsFinishText>{0_nameDef}完成了{RITUAL_definite}儀式。飢餓的肢團正在趕來。</BRF_SummonClumpsFinishText>
+  
+  <BRF_RitualSacrificedFinishText>{INVOKER_nameDef}完成了{RITUAL_definite}儀式。{TARGET_nameDef}被作為祭品獻祭了，身軀與血肉都消失在了世界上。</BRF_RitualSacrificedFinishText>
+
+  <BRF_SummonFleshBossSucceeded>駭人且血腥的陰影浮現了！</BRF_SummonFleshBossSucceeded>
+  <BRF_SummonFleshBossFailed>一定是哪裡出現了什麼問題，犧牲被浪費了！</BRF_SummonFleshBossFailed>
+
+  <BRF_ExileRawProphetSucceeded>原生先知已被送往它處。</BRF_ExileRawProphetSucceeded>
+  <BRF_ExileRawProphetFailed>這裡沒有未束縛的原生先知，犧牲被浪費了！</BRF_ExileRawProphetFailed>
+
+  <BRF_AkulothRitualFinishText>{INVOKER_nameDef}成功地與神聖的白蟲達成了共生。</BRF_AkulothRitualFinishText>
+  
+  
+  <BRF_InitiationRitualBaseFinishText>{INVOKER_nameDef}完成了{RITUAL_definite}儀式。{TARGET_nameDef}成為了一名光榮的Orin。</BRF_InitiationRitualBaseFinishText>
+  <BRF_InitiationRitualCompleteText>{0_nameDef}成為了一名光榮的Orin。\n\n由於施法者的不成熟，該過程使{0_nameDef}大腦衰退，令{0_pronoun}在各種技能上失去總計{1}經驗。</BRF_InitiationRitualCompleteText>
+  
+
+  <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef}已經與神聖的白蟲達成了共生。</BRF_psychicRitualLeaveReason_HasAkuloth>
+  <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef}已經得到了血肉的啟迪。</BRF_psychicRitualLeaveReason_SarkicismTrait>
     
   <BRF_WorkingSpeedMultiplierReduced>降低工作速度</BRF_WorkingSpeedMultiplierReduced>
   <BRF_WorkingSpeedMultiplierReduced_Desc>降低工作速度乘數與實際燃料消耗速率。</BRF_WorkingSpeedMultiplierReduced_Desc>
@@ -27,6 +47,12 @@
   <BRF_LetterLabelScarletCerebralJellyfishRevealed>猩紅腦蜇現身</BRF_LetterLabelScarletCerebralJellyfishRevealed>
   <BRF_LetterScarletCerebralJellyfishRevealed>一隻扭曲可憎的血肉怪物突然憑空出現！</BRF_LetterScarletCerebralJellyfishRevealed>
   <BRF_MessageScarletCerebralJellyfishRevealed>一隻猩紅腦蜇已現身！</BRF_MessageScarletCerebralJellyfishRevealed>
+  
+  <BRF_Command_EquipWeapon>裝備武器</BRF_Command_EquipWeapon>
+  <BRF_Command_EquipWeaponDesc>將選定的武器裝備到使用者。不能裝備近戰武器或生物編碼武器。</BRF_Command_EquipWeaponDesc>
+  <BRF_Command_UnequipWeapon>卸下武器</BRF_Command_UnequipWeapon>
+  <BRF_Command_CancelReserveWeapon>取消裝備武器</BRF_Command_CancelReserveWeapon>
+  <BRF_Command_CancelReserveWeaponDesc>取消當前計劃的裝備武器。</BRF_Command_CancelReserveWeaponDesc>
 
 
 </Defs>

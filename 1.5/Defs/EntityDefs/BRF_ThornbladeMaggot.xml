@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_ThornbladeMaggot</defName>
+    <label>Thornblade Blood Maggot</label>
+    <category>Basic</category>
+    <useDescriptionFrom>BRF_ThornbladeMaggot</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_ThornbladeMaggot</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_ThornbladeMaggot</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_FleshShooterResearch</li>
+    </discoveredResearchProjects>
+    <provocationIncidents>
+      <li>BRF_ThornbladeMaggotSwarm</li>
+    </provocationIncidents>
+    <orderInCategory>251</orderInCategory>
+  </EntityCodexEntryDef>
+<!--身体定义-->
+	<BodyDef>
+		<defName>BRF_ThornbladeMaggotBody</defName>
+		<label>Thornblade Blood Maggot</label>
+		<corePart>
+			<def>MovingBodyFleshbeast</def>
+			<coverage>0.10</coverage>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Heart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FleshbeastSpike</def>
+					<customLabel>left whip blade</customLabel>
+					<coverage>0.08</coverage>
+                    <groups>
+                        <li>Arms</li>
+                        <li>LeftSpike</li>
+                    </groups>
+					<height>Middle</height>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>FleshbeastSpike</def>
+					<customLabel>right whip blade</customLabel>
+					<coverage>0.08</coverage>
+                    <groups>
+                        <li>Arms</li>
+                        <li>RightSpike</li>
+                    </groups>
+					<height>Middle</height>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.5</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>left eye</customLabel>
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>right eye</customLabel>
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>Nose</def>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>Jaw</def>
+							<coverage>0.1</coverage>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_ThornbladeMaggot</defName>
+    <label>Thornblade Blood Maggot</label>
+    <race>BRF_ThornbladeMaggot</race>
+    <abilities>
+      <li>BRF_Launch_ThornbladeMaggot</li>
+    </abilities>
+    <combatPower>75</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_ThornbladeMaggot/BRF_ThornbladeMaggot</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.75</drawSize>
+          <shadowData>
+            <volume>(0.15, 0.225, 0.15)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_ThornbladeMaggot/BRF_ThornbladeMaggot_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>0.75</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_BaseInsectEnitiy">
+    <defName>BRF_ThornbladeMaggot</defName>
+    <label>Thornblade Blood Maggot</label>
+    <description>A giant maggot that smells of blood. Although it has a body like a mollusk, it has characteristics that are obviously not normal maggots. They have two fairly sharp horny whip blades on their sides, and the horn-like fangs on their heads are not used for close combat, but can drive body tissue to shoot it a long distance, and can be replenished quickly. This entity does not move fast, but has a strong vitality. After death, it will explode into a pool of meat. It is more like a failed or underdeveloped experiment than a normal creation.</description>
+    <statBases>
+      <MoveSpeed>2</MoveSpeed>
+      <MeatAmount>0</MeatAmount>
+    </statBases>
+    <uiIconPath>Pawns/BRF_ThornbladeMaggot/BRF_ThornbladeMaggot_east</uiIconPath>
+    <race>
+      <thinkTreeMain>BRF_ThornbladeMaggotThinkTree</thinkTreeMain>
+      <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
+      <body>BRF_ThornbladeMaggotBody</body>
+      <baseBodySize>0.4</baseBodySize>
+      <lifeExpectancy>1</lifeExpectancy>
+      <wildness>0.9</wildness>
+      <baseHealthScale>3</baseHealthScale>
+      <hasGenders>false</hasGenders>
+      <deathAction Class="DeathActionProperties_Vanish">
+        <workerClass>DeathActionWorker_Vanish</workerClass>
+        <filth>Filth_TwistedFlesh</filth>
+        <filthCountRange>1~3</filthCountRange>
+        <meatExplosionSize>Small</meatExplosionSize>
+      </deathAction>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>15</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>true</getsColdContainmentBonus>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.38, 0, .38)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.38, 0, .38)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.38, 0, -.38)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.38, 0, -.38)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>2</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>1</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left whip blade</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftSpike</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right whip blade</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightSpike</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <killedLeavingsRanges>
+      <BRF_ReforgedMeat_Insect>3~8</BRF_ReforgedMeat_Insect>
+    </killedLeavingsRanges>
+  </ThingDef>
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_ThornbladeMaggotThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <!-- Escaping-->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_ThornbladeMaggot_PreMain</insertTag>
+        </li>
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Fire spikes at distant enemies -->
+        <li Class="JobGiver_AIAbilityFight">
+          <targetAcquireRadius>64</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <skipIfCantTargetNow>false</skipIfCantTargetNow>
+          <ability>BRF_Launch_ThornbladeMaggot</ability>
+          <allowTurrets>true</allowTurrets>
+          <needLOSToAcquireNonPawnTargets>true</needLOSToAcquireNonPawnTargets>
+        </li>
+        <!-- Regular fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>25</targetAcquireRadius>
+          <targetKeepRadius>36</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_ThornbladeMaggot_PreWander</insertTag>
+        </li>
+        <!-- Wander -->
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

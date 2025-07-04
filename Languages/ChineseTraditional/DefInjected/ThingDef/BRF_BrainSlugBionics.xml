@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-<!-- 拟似脑蛞蝓 -->
+<!-- 擬似腦蛞蝓 -->
 
-  <BRF_AnalogBrainSlugs.label>拟似脑蛞蝓</BRF_AnalogBrainSlugs.label>
-  <BRF_AnalogBrainSlugs.description>模仿黑暗实体制造的如同软体动物一样的活体肉块，其内部具有可以辅助思考与计算的神经结。</BRF_AnalogBrainSlugs.description>
+  <BRF_AnalogBrainSlugs.label>擬似腦蛞蝓</BRF_AnalogBrainSlugs.label>
+  <BRF_AnalogBrainSlugs.description>模仿黑暗實體制造的如同軟體動物一樣的活體肉塊，其內部具有可以輔助思考與計算的神經結。</BRF_AnalogBrainSlugs.description>
+
+<!-- 腦蛞蝓 -->
+
+  <BRF_BrainSlugs.label>腦蛞蝓</BRF_BrainSlugs.label>
+  <BRF_BrainSlugs.description>在血腥黑暗的超凡科技的幫助下，將一顆鮮活的大腦加工成不具備自主思想的、軟體動物一般的活肉塊。將其植入腦中可以輔助思考，甚至在大腦被摧毀後暫時代替其一部分功能。</BRF_BrainSlugs.description>
 
 
 </LanguageData>

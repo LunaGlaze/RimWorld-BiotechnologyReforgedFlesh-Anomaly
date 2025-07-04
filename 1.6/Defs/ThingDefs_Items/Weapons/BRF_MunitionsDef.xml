@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--血肉脉冲弹-->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>BRF_Shell_FleshPulse</defName>
+    <label>Pulse of Flesh Shell</label>
+    <description>A special projectile made from flesh and blood tissue and Flesh Heart's tissue. This ammo creates a bio-electrical pulse impact. However, it causes an electrical burn and at the same time simulates a universal pulse that disintegrates the Flesh Heart.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Items/Resource/Shell/BRF_Shell_FleshPulse</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <shaderType Inherit="False"/>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>BRF_FleshPulseExplosive</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>BRF_Bullet_Shell_FleshPulse</projectileWhenLoaded>
+    <costList>
+      <BRF_ScarletFerrite>15</BRF_ScarletFerrite>
+      <BRF_PrimordialTissueSample>2</BRF_PrimordialTissueSample>
+      <FleshmassNeuralLump>1</FleshmassNeuralLump>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>
+        <li>BRF_FleshPulseShellResearch</li>
+      </researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>BRF_BioForge</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BRF_Bullet_Shell_FleshPulse</defName>
+    <label>Pulse of Flesh Shell</label>
+    <graphicData>
+      <texPath>Items/Projectile/BRF_ShellFleshPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Luna_BRF.Luna_DestroyHeartBomb</thingClass>
+    <projectile>
+      <damageDef>BRF_FleshPulseExplosive</damageDef>
+      <speed>41</speed>
+      <explosionRadius>8.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDestroyHeartBomb">
+            <destroyHeartChance>1</destroyHeartChance>
+            <extraEMP>true</extraEMP>
+            <extraEMPDamage>10</extraEMPDamage>
+        </li>
+    </modExtensions>
+  </ThingDef>
+<!--血肉EMP弹-->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>BRF_Shell_FleshEMP</defName>
+    <label>Flesh EMP Shell</label>
+    <description>A special shell like Pulse of Flesh Shell. Unlike the prototype, this shell is directly adapted from the EMP shell. This shell is more of a shell with extra abilities than the dedicated shell for Flesh Heart, and it has a 10% chance of causing the affected Flesh Heart to start twitching.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Items/Resource/Shell/BRF_Shell_FleshEMP</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6.9</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>BRF_Bullet_Shell_FleshEMP</projectileWhenLoaded>
+    <costList>
+      <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
+      <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+      <Shell_EMP>1</Shell_EMP>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>
+        <li>BRF_FleshPulseShellResearch</li>
+      </researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>BioferriteShaper</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BRF_Bullet_Shell_FleshEMP</defName>
+    <label>Flesh EMP Shell</label>
+    <graphicData>
+      <texPath>Items/Projectile/BRF_ShellFleshPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Luna_BRF.Luna_DestroyHeartBomb</thingClass>
+    <projectile>
+      <damageDef>BRF_FleshPulseExplosive</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>41</speed>
+      <explosionRadius>8.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDestroyHeartBomb">
+            <destroyHeartChance>0.1</destroyHeartChance>
+            <extraEMP>true</extraEMP>
+            <extraEMPDamage>50</extraEMPDamage>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

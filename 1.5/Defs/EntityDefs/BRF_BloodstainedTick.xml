@@ -81,7 +81,7 @@
       <hasGenders>false</hasGenders>
       <foodType>None</foodType>
       <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
-      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
       <trainability>None</trainability>
       <isImmuneToInfections>true</isImmuneToInfections>
       <bleedRateFactor>0.5</bleedRateFactor>

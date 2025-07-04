@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 生物营养管道 -->
+
+  <BRF_NutritionalBiopipe.label>生物营养管道</BRF_NutritionalBiopipe.label>
+  <BRF_NutritionalBiopipe.description>用于传输营养糊剂的活体生物管道。</BRF_NutritionalBiopipe.description>
+  <BRF_NutritionalBiopipe_Blueprint.label>生物营养管道（蓝图）</BRF_NutritionalBiopipe_Blueprint.label>
+  <BRF_NutritionalBiopipe_Frame.label>生物营养管道（建造中）</BRF_NutritionalBiopipe_Frame.label>
+  <BRF_NutritionalBiopipe_Frame.description>用于传输营养糊剂的活体生物管道。</BRF_NutritionalBiopipe_Frame.description>
+
+  <BRF_UndergroundNutritionalBiopipe.label>隐藏生物营养管道</BRF_UndergroundNutritionalBiopipe.label>
+  <BRF_UndergroundNutritionalBiopipe.description>用于传输营养糊剂的活体生物管道。它就像毛细血管一样嵌入血肉菌毯之下，从而隐藏起来。</BRF_UndergroundNutritionalBiopipe.description>
+  <BRF_UndergroundNutritionalBiopipe_Blueprint.label>隐藏生物营养管道（蓝图）</BRF_UndergroundNutritionalBiopipe_Blueprint.label>
+  <BRF_UndergroundNutritionalBiopipe_Frame.label>隐藏生物营养管道（建造中）</BRF_UndergroundNutritionalBiopipe_Frame.label>
+  <BRF_UndergroundNutritionalBiopipe_Frame.description>用于传输营养糊剂的活体生物管道。它就像毛细血管一样嵌入血肉菌毯之下，从而隐藏起来。</BRF_UndergroundNutritionalBiopipe_Frame.description>
+
+
+  <!-- 专用消化器 -->
+
+  <BRF_DigesterIPipe.label>网络消化器</BRF_DigesterIPipe.label>
+  <BRF_DigesterIPipe.description>一个能把有机物消化成富含营养的粘稠液体的活机器……令人不安的是，它似乎对人类遗体情有独钟。这个装置专门用于生物营养管道网络。</BRF_DigesterIPipe.description>
+
+
+  <!-- 营养储囊 -->
+
+  <BRF_NutrientSac.label>营养储囊</BRF_NutrientSac.label>
+  <BRF_NutrientSac.description>一种血肉材质的储囊，为生物营养管道网络提供储存营养物质的能力，使其能够发挥作用。</BRF_NutrientSac.description>
+  <BRF_NutrientSac_Blueprint.label>营养储囊（蓝图）</BRF_NutrientSac_Blueprint.label>
+  <BRF_NutrientSac_Frame.label>营养储囊（建造中）</BRF_NutrientSac_Frame.label>
+  <BRF_NutrientSac_Frame.description>一种血肉材质的储囊，为生物营养管道网络提供储存营养物质的能力，使其能够发挥作用。</BRF_NutrientSac_Frame.description>
+
+
+  <!-- 出入口 -->
+
+  <BRF_NutritionalTap.label>营养排出口</BRF_NutritionalTap.label>
+  <BRF_NutritionalTap.description>一种奇异的储存装置，由生物的食道和舌头制成，与生物营养管道网络连接。刺激它可以让它吐出营养膏。</BRF_NutritionalTap.description>
+  <BRF_NutritionalTap_Blueprint.label>营养排出口（蓝图）</BRF_NutritionalTap_Blueprint.label>
+  <BRF_NutritionalTap_Blueprint_Install.label>营养排出口（蓝图）</BRF_NutritionalTap_Blueprint_Install.label>
+  <BRF_NutritionalTap_Frame.label>营养排出口（建造中）</BRF_NutritionalTap_Frame.label>
+  <BRF_NutritionalTap_Frame.description>一种奇异的储存装置，由生物的食道和舌头制成，与生物营养管道网络连接。刺激它可以让它吐出营养膏。</BRF_NutritionalTap_Frame.description>
+
+  <BRF_NutritionalDrain.label>营养排入口</BRF_NutritionalDrain.label>
+  <BRF_NutritionalDrain.description>一个与营养生物管道网络连接的活体口器。将营养糊剂喂食给这个设备可以为网络提供营养。</BRF_NutritionalDrain.description>
+  <BRF_NutritionalDrain_Blueprint.label>营养排入口（蓝图）</BRF_NutritionalDrain_Blueprint.label>
+  <BRF_NutritionalDrain_Blueprint_Install.label>营养排入口（蓝图）</BRF_NutritionalDrain_Blueprint_Install.label>
+  <BRF_NutritionalDrain_Frame.label>营养排入口（建造中）</BRF_NutritionalDrain_Frame.label>
+  <BRF_NutritionalDrain_Frame.description>一个与营养生物管道网络连接的活体口器。将营养糊剂喂食给这个设备可以为网络提供营养。</BRF_NutritionalDrain_Frame.description>
+
+
+  <!-- 阀门/管道隔膜 -->
+
+  <BRF_BioPipeDiaphragm.label>管道隔膜</BRF_BioPipeDiaphragm.label>
+  <BRF_BioPipeDiaphragm.description>一个生物阀门。用于控制营养糊剂是否通过。</BRF_BioPipeDiaphragm.description>
+  <BRF_BioPipeDiaphragm_Blueprint.label>管道隔膜（蓝图）</BRF_BioPipeDiaphragm_Blueprint.label>
+  <BRF_BioPipeDiaphragm_Frame.label>管道隔膜（建造中）</BRF_BioPipeDiaphragm_Frame.label>
+  <BRF_BioPipeDiaphragm_Frame.description>一个生物阀门。用于控制营养糊剂是否通过。</BRF_BioPipeDiaphragm_Frame.description>
+
+
+</LanguageData>

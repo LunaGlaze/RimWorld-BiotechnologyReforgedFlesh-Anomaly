@@ -45,4 +45,9 @@
   <BRF_ScarletCerebralJellyfishBrainInsertion.label>猩紅腦蜇插入</BRF_ScarletCerebralJellyfishBrainInsertion.label>
   <BRF_ScarletCerebralJellyfishBrainInsertion.description>猩紅腦蜇附身在受害者的頭部，並將觸手插入受害者的大腦。通過這種方式，該血肉實體將化學物質注入受害者的大腦，控制受害者的行為。</BRF_ScarletCerebralJellyfishBrainInsertion.description>
 
+  <BRF_RebirthPsycorpse_AngelsDescend.label>天使降臨</BRF_RebirthPsycorpse_AngelsDescend.label>
+  <BRF_RebirthPsycorpse_AngelsDescend.description>有什麼血腥而神聖的本質替代了某人……你不該看到它的……</BRF_RebirthPsycorpse_AngelsDescend.description>
+  <BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterLabel>血腥轉化</BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterLabel>
+  <BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterText>{PAWN_nameDef}突然變成了一個血腥的、扭曲的、怪異得神聖的人形。小心！誰知道它什麼時候變成這樣了！</BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterText>
+
 </LanguageData>

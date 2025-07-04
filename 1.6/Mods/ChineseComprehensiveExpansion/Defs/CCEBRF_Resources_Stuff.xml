@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--血樱瓷-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_BloodSakuraCeramics</defName>
+    <label>Blood Sakura Ceramics</label>
+    <description>Inheriting the characteristics of military ceramics and scarf ferrite, this living material is both beautiful and powerful.</description>
+    <tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>Items/Resource/ChineseComprehensiveExpansion/BRF_BloodSakuraCeramics</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(255,180,180)</color>
+    </graphicData>
+    <genericMarketSellable>false</genericMarketSellable>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Mass>0.35</Mass>
+      <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.35</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.95</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+        <li>Metallic</li>
+        <li>Bioferrite</li>
+        <li>BRF_LivingAlloy</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0</commonality>
+      <allowedInStuffGeneration>false</allowedInStuffGeneration>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(255,180,180)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statOffsets>
+        <Beauty>5</Beauty>
+        <Cleanliness>5</Cleanliness>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>3.2</MaxHitPoints>
+        <Beauty>2.2</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>3.2</WorkToMake>
+        <WorkToBuild>3.2</WorkToBuild>
+        <DoorOpenSpeed>0.9</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.06</awful>
+          <poor>1.08</poor>
+          <normal>1.1</normal>
+          <good>1.13</good>
+          <excellent>1.15</excellent>
+          <masterwork>1.17</masterwork>
+          <legendary>1.20</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>4</awful>
+          <poor>6</poor>
+          <normal>8</normal>
+          <good>11</good>
+          <excellent>13</excellent>
+          <masterwork>15</masterwork>
+          <legendary>18</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>BRF_Unfinished_BloodSakuraCeramics</defName>
+    <label>Blood Sakura Ceramics (in forging)</label>
+    <description>Blood Sakura Ceramics under forging</description>
+    <graphicData>
+      <color>(255,204,204)</color>
+      <texPath>material/UnFinished/MilitaryCeramics</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--血梅织-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BRF_BloodMumeSilk</defName>
+    <label>Blood Mume Silk</label>
+    <description>The perfect combination of beautiful silk and flesh creations, while retaining some of the characteristics of Bloody Leather, goes further.</description>
+    <genericMarketSellable>false</genericMarketSellable>
+    <graphicData>
+      <texPath>Items/Resource/ChineseComprehensiveExpansion/BRF_BloodMumeSilk</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(214,94,130)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.5</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Mass>0.02</Mass>
+      <Flammability>0</Flammability>
+      <StuffPower_Armor_Sharp>1.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.47</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>5.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>42</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stuffProps>
+      <color>(214,94,130)</color>
+      <categories>
+        <li>Fabric</li>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0</commonality>
+      <statFactors>
+        <Flammability>0</Flammability>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>4.5</Beauty>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.03</awful>
+          <poor>1.04</poor>
+          <normal>1.05</normal>
+          <good>1.06</good>
+          <excellent>1.07</excellent>
+          <masterwork>1.9</masterwork>
+          <legendary>1.12</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>2</awful>
+          <poor>3</poor>
+          <normal>4</normal>
+          <good>6</good>
+          <excellent>8</excellent>
+          <masterwork>10</masterwork>
+          <legendary>12</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

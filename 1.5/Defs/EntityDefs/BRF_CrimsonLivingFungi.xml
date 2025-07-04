@@ -305,7 +305,7 @@
       <foodType>None</foodType>
       <bloodDef>Filth_Blood</bloodDef>
       <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
-      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
       <trainability>None</trainability>
       <fleshType>Fleshbeast</fleshType>
       <isImmuneToInfections>true</isImmuneToInfections>
@@ -340,7 +340,7 @@
       <body>BRF_CrimsonLivingFungiBody</body>
       <baseBodySize>0.6</baseBodySize>
       <baseHealthScale>2</baseHealthScale>
-      <lifeExpectancy>5000</lifeExpectancy>
+      <lifeExpectancy>1000</lifeExpectancy>
       <renderTree>BRF_CrimsonLivingFungiRenderTree</renderTree>
       <lifeStageAges>
         <li>
@@ -383,7 +383,7 @@
         <requiresHoldingPlatform>true</requiresHoldingPlatform>
       </li>
       <li Class="CompProperties_ProducesBioferrite">
-        <bioferriteDensity>3</bioferriteDensity>
+        <bioferriteDensity>5</bioferriteDensity>
       </li>
       <li Class="Luna_BRF.CompProperties_GasProducer">
         <gasType>BRF_CrimsonSporeGas</gasType>

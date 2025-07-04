@@ -25,4 +25,8 @@
   <BRF_PlantSeed.gerund>种植</BRF_PlantSeed.gerund>
   <BRF_PlantSeed.verb>种植</BRF_PlantSeed.verb>
 
+  <BRF_Equip_PsycorpseGuard.label>为灵骸守卫装备武器</BRF_Equip_PsycorpseGuard.label>
+  <BRF_Equip_PsycorpseGuard.gerund>搬运至</BRF_Equip_PsycorpseGuard.gerund>
+  <BRF_Equip_PsycorpseGuard.verb>搬运</BRF_Equip_PsycorpseGuard.verb>
+
 </LanguageData>

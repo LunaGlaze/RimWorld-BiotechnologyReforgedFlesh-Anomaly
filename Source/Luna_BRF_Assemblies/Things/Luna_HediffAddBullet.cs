@@ -15,6 +15,10 @@ namespace Luna_BRF
                 float rand = Rand.Value;
                 if (rand <= Props.addHediffChance)
                 {
+                    if (Props.HediffDefIfMech != null && hitPawn.RaceProps.IsMechanoid)
+                    {
+                        AddHediff(hitPawn, Props.HediffDefIfMech);
+                    }
                     if (Props.HediffDefTransform != null)
                     {
                         Hediff HediffDefTransform = hitPawn.health?.hediffSet?.GetFirstHediffOfDef(Props.HediffDefTransform);

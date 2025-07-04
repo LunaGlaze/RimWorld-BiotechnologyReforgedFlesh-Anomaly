@@ -9,5 +9,7 @@ namespace Luna_BRF
 	{
 		public ThingDef postExplosionGasType;
 		public int postExplosionGasRang;
-	}
+        public bool extraEMP;
+        public int extraEMPDamage = 1;
+    }
 }

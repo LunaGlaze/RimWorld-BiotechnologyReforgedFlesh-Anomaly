@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_RawProphet</defName>
+    <label>Raw Prophet</label>
+    <category>Ultimate</category>
+    <useDescriptionFrom>BRF_RawProphet</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_RawProphet</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_RawProphet</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_ShepherdFleshResearch</li>
+      <li>BRF_NightTravelingTantraResearch</li>
+      <li>BRF_EternalMotherTantraResearch</li>
+      <li>BRF_WhiteWormTantraResearch</li>
+      <li>BRF_RedHarvestTantraResearch</li>
+    </discoveredResearchProjects>
+    <!--provocationIncidents>
+      <li></li>
+    </provocationIncidents-->
+    <orderInCategory>-250</orderInCategory>
+  </EntityCodexEntryDef>
+<!--身体定义-->
+<BodyDef>
+  <defName>BRF_RawProphetBody</defName>
+  <label>raw prophet</label>
+  <corePart>
+    <def>MovingBodyFleshbeast</def>
+    <height>Middle</height>
+    <depth>Outside</depth>
+    <groups>
+      <li>Torso</li>
+    </groups>
+    <parts>
+      <li><def>BRF_Cavity</def><coverage>0.025</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Stomach</def><coverage>0.025</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Heart</def><coverage>0.020</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Lung</def><customLabel>left lung</customLabel><coverage>0.025</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Lung</def><customLabel>right lung</customLabel><coverage>0.025</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Kidney</def><customLabel>left kidney</customLabel><coverage>0.017</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Kidney</def><customLabel>right kidney</customLabel><coverage>0.017</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      <li><def>Liver</def><coverage>0.025</coverage><depth>Inside</depth><groups><li>Torso</li></groups></li>
+      
+      <li>
+        <def>BRF_BigMouth</def>
+        <coverage>0.035</coverage>
+        <height>Top</height>
+        <groups>
+          <li>HeadAttackTool</li>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </groups>
+        <parts>
+          <li>
+            <def>Jaw</def>
+            <coverage>0.10</coverage>
+            <groups>
+              <li>Teeth</li>
+              <li>HeadAttackTool</li>
+            </groups>
+            <parts>
+              <li>
+                <def>Tongue</def>
+                <coverage>0.001</coverage>
+                <depth>Inside</depth>
+              </li>
+            </parts>
+          </li>
+        </parts>
+      </li>
+      
+      <li><def>Shoulder</def><customLabel>first shoulder</customLabel><coverage>0.05</coverage><groups><li>Shoulders</li></groups>
+        <parts><li><def>Tentacle</def><customLabel>first arm</customLabel><coverage>0.6</coverage><groups><li>Arms</li><li>LeftSpike</li></groups></li></parts>
+      </li>
+      <li><def>Shoulder</def><customLabel>second shoulder</customLabel><coverage>0.05</coverage><groups><li>Shoulders</li></groups>
+        <parts><li><def>Tentacle</def><customLabel>second arm</customLabel><coverage>0.6</coverage><groups><li>Arms</li><li>LeftSpike</li></groups></li></parts>
+      </li>
+      <li><def>Shoulder</def><customLabel>third shoulder</customLabel><coverage>0.05</coverage><groups><li>Shoulders</li></groups>
+        <parts><li><def>Tentacle</def><customLabel>third arm</customLabel><coverage>0.6</coverage><groups><li>Arms</li><li>LeftSpike</li></groups></li></parts>
+      </li>
+
+      <li><def>FleshbeastLeg</def><customLabel>first leg</customLabel><coverage>0.05</coverage><groups><li>Legs</li></groups></li>
+      <li><def>FleshbeastLeg</def><customLabel>second leg</customLabel><coverage>0.05</coverage><groups><li>Legs</li></groups></li>
+      <li><def>FleshbeastLeg</def><customLabel>third leg</customLabel><coverage>0.05</coverage><groups><li>Legs</li></groups></li>
+    </parts>
+  </corePart>
+</BodyDef>
+<!--触手渲染-->
+	<PawnRenderTreeDef>
+		<defName>BRF_RawProphetRenderTree</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_1</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_5</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Pawns/BRF_RawProphet/BRF_RawProphet_TheArm_6</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-8~8</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_RawProphet</defName>
+    <label>Raw Prophet</label>
+    <race>BRF_RawProphet</race>
+    <abilities>
+      <li>BRF_EntityLongjump</li>
+      <li>BRF_Launch_RawProphet</li>
+    </abilities>
+    <combatPower>800</combatPower>
+    <immuneToTraps>true</immuneToTraps>
+    <collidesWithPawns>false</collidesWithPawns>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_RawProphet/BRF_RawProphet_body</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_RawProphet/BRF_RawProphet_body</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2.5</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+      <li>
+        <def>BRF_ResurrectionLink</def>
+      </li>
+      <li>
+        <def>DeathRefusal</def>
+      </li>
+      <li>
+        <def>ShardHolder</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BasePawn" Name="BRF_RawProphetBase" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <Flammability>0</Flammability>
+      <ArmorRating_Heat>0.98</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.58</ArmorRating_Sharp>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionResistance>
+      <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <thinkTreeMain>BRF_ToolUser_RawProphet</thinkTreeMain>
+      <thinkTreeConstant>BRF_ToolUser_RebirthPsycorpse_Constant</thinkTreeConstant>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>BRF_ReforgedMeat_Harbinger</specificMeatDef>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodDef>Filth_Blood</bloodDef>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
+      <trainability>None</trainability>
+      <fleshType>Fleshbeast</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.25</bleedRateFactor>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+	    <li Class="Luna_BRF.CompProperties_Floating">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+	    <li Class="Luna_BRF_VEFAssemblies.CompProperties_Floating" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+      <li Class="Luna_BRF.CompProperties_DamageLimitation">
+        <maxSingleDamage>50</maxSingleDamage>
+        <maxEffeMultiplier>4</maxEffeMultiplier>
+      </li>
+    </comps>
+  </ThingDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_RawProphetBase">
+    <defName>BRF_RawProphet</defName>
+    <label>Raw Prophet</label>
+    <description>Sometimes it divides, sometimes it unites, sometimes she speaks words of warning, sometimes he advises on appetite. Its prophecies are confusion, their whispers confound.</description>
+    <statBases>
+      <MoveSpeed>7.5</MoveSpeed>
+      <MinimumContainmentStrength>150</MinimumContainmentStrength>
+      <InjuryHealingFactor>7.5</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+      <MeatAmount>50</MeatAmount>
+    </statBases>
+    <uiIconPath>UI/Codexentries/BRF_RawProphet</uiIconPath>
+    <race>
+      <body>BRF_RawProphetBody</body>
+      <baseBodySize>6</baseBodySize>
+      <baseHealthScale>12</baseHealthScale>
+      <lifeExpectancy>1500</lifeExpectancy>
+      <renderTree>BRF_RawProphetRenderTree</renderTree>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>BRF_MeleeHit_Flesh</soundWounded>
+          <soundDeath>BRF_Pawn_Flesh_Death</soundDeath>
+          <soundCall>BRF_Pawn_Flesh_Call</soundCall>
+          <soundAngry>BRF_Pawn_Flesh_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <canOpenFactionlessDoors>true</canOpenFactionlessDoors>
+    </race>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.48, 0, .48)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.48, 0, .48)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.48, 0, -.48)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.48, 0, -.48)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>20</baseEscapeIntervalMtbDays>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>12</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>5</bioferriteDensity>
+      </li>
+      <li>
+        <compClass>Luna_BRF.CompRawProphet</compClass>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>28</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDisallowManhunterTarget">
+            <disallowFindPawnTargetManhunter>true</disallowFindPawnTargetManhunter>
+        </li>
+    </modExtensions>
+  </ThingDef>
+
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_ToolUser_RawProphet</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Do a queued job -->
+        <li Class="ThinkNode_QueuedJob" />
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <li Class="JobGiver_WanderHerd">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+        </li> 
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_RawProphet_PreMain</insertTag>
+        </li>
+		    <!-- Wander -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+              <ticksBetweenWandersRange>180~720</ticksBetweenWandersRange>
+              <wanderRadius>6</wanderRadius>
+              <canBashDoors>true</canBashDoors>
+              <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
+            </li>
+          </subNodes>
+        </li>
+		    <!-- Fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_RawProphett_PreWander</insertTag>
+        </li>
+		    <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

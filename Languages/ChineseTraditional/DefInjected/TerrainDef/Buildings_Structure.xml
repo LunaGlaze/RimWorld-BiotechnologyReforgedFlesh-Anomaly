@@ -13,4 +13,16 @@
   <BRF_FleshBlanket.description>猩紅的血肉……菌毯……粘膩，柔軟，多汁……</BRF_FleshBlanket.description>
 
 
+  <!-- 血肉菌毯地磚 -->
+
+  <BRF_FleshBlanket_Tile.label>血肉菌毯地磚</BRF_FleshBlanket_Tile.label>
+  <BRF_FleshBlanket_Tile.description>一種人造的模塊化血肉菌毯，能夠順利與血肉網絡鏈接，同時避免工作時產生超出預期的汙漬。</BRF_FleshBlanket_Tile.description>
+
+
+  <!-- 猩紅鋼地磚 -->
+
+  <BRF_ScarletFerritePlateFloor.label>猩紅鋼地磚</BRF_ScarletFerritePlateFloor.label>
+  <BRF_ScarletFerritePlateFloor.description>使用猩紅鋼與其他活體材料鍛造的地磚，它能夠承擔血肉菌毯的職責，性能更佳，但消耗更大。它可以快速清潔並增加附近收容平臺的遏制強度，並且其中的靈能效果使它毫無理由地讓人覺得很好看。</BRF_ScarletFerritePlateFloor.description>
+
+
 </LanguageData>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="BRF_BuildingPanwSpawnerBase" Abstract="True" ParentName="BRF_BuildingSpawnerBase">
+    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+  </ThingDef>
+  <DesignatorDropdownGroupDef>
+  	<defName>BRF_FlsehMetapod</defName>
+  	<label>Flseh Metapod</label>
+  </DesignatorDropdownGroupDef>
+<!-- 肢体守卫 -->
+  <ThingDef ParentName="BRF_BuildingPanwSpawnerBase" Abstract="True" Name="BRF_LimbGuardSpawnerPod">
+    <description>This lump of flesh is harbouring some kind of life.</description>
+	  <designatorDropdown>BRF_FlsehMetapod</designatorDropdown>
+    <researchPrerequisites>
+      <li>BRF_LimbGuardResearch</li>
+    </researchPrerequisites>
+    <uiOrder>2900</uiOrder>
+    <graphicData>
+      <texPath>Buildings/PawnSpawner/BRF_FlsehMetapodLittle</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			  <volume>(0.3, 0.6, 0.3)</volume>
+			  <offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		  <damageData>
+			  <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
+		  </damageData>
+    </graphicData>
+	<thingClass>Building</thingClass>
+	<minifiedDef Inherit="False"/>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<uiIconScale>0.6</uiIconScale>
+	<uiIconOffset>(0, 0.1)</uiIconOffset>
+	<selectable>true</selectable>
+	<fillPercent>0.30</fillPercent>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	<rotatable>false</rotatable>
+	<tickerType>Normal</tickerType>
+	<statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Mass>4</Mass>
+		<Flammability>1.0</Flammability>
+		<MarketValue>25</MarketValue>
+		<WorkToBuild>2500</WorkToBuild>
+	</statBases>
+    <castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+    <size>(1,1)</size>
+    <building>
+      <uninstallWork>2000</uninstallWork>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
+    </building>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <ticksPerTimes>250</ticksPerTimes>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BRF_LimbGuardSpawnerPod">
+    <defName>BRF_FrankensteinHandPod</defName>
+    <label>Frankenstein's Pod (Hand)</label>
+    <description>This lump of flesh is harbouring some kind of life.</description>
+    <descriptionHyperlinks><ThingDef>BRF_FrankensteinHand</ThingDef></descriptionHyperlinks>
+    <costList>
+	    <Meat_Twisted>50</Meat_Twisted>
+	    <BRF_LivingFlesh>5</BRF_LivingFlesh>
+	    <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+	    <Hand>1</Hand>
+    </costList>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
+        <spawnedPawn>BRF_FrankensteinHand</spawnedPawn>
+        <primordialFleshSpawer>true</primordialFleshSpawer>
+        <hatcherDaystoSpawn>1</hatcherDaystoSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BRF_LimbGuardSpawnerPod">
+    <defName>BRF_FrankensteinFootPod</defName>
+    <label>Frankenstein's Pod (Foot)</label>
+    <description>This lump of flesh is harbouring some kind of life.</description>
+    <descriptionHyperlinks><ThingDef>BRF_FrankensteinFoot</ThingDef></descriptionHyperlinks>
+    <costList>
+	    <Meat_Twisted>50</Meat_Twisted>
+	    <BRF_LivingFlesh>5</BRF_LivingFlesh>
+	    <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+	    <Foot>1</Foot>
+    </costList>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
+        <spawnedPawn>BRF_FrankensteinFoot</spawnedPawn>
+        <primordialFleshSpawer>true</primordialFleshSpawer>
+        <hatcherDaystoSpawn>1</hatcherDaystoSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+<!-- 畸变肉块 -->
+  <ThingDef ParentName="BRF_BuildingPanwSpawnerBase">
+    <defName>BRF_MutationsRelicPod</defName>
+    <label>Mutations Relic's Pod</label>
+    <description>This lump of flesh is harbouring some kind of life.</description>
+    <descriptionHyperlinks><ThingDef>BRF_MutationsRelicFlesh</ThingDef></descriptionHyperlinks>
+	  <designatorDropdown>BRF_FlsehMetapod</designatorDropdown>
+    <researchPrerequisites>
+      <li>BRF_FleshBeastShellResearch</li>
+    </researchPrerequisites>
+    <uiOrder>2900</uiOrder>
+    <graphicData>
+      <texPath>Buildings/PawnSpawner/BRF_FlsehMetapod</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+		  <shadowData>
+			  <volume>(0.3, 0.6, 0.3)</volume>
+			  <offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		  <damageData>
+			  <rect>(0.2,0.2,0.6,0.6)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
+		  </damageData>
+    </graphicData>
+	  <thingClass>Building</thingClass>
+	  <minifiedDef Inherit="False"/>
+	  <altitudeLayer>Building</altitudeLayer>
+	  <passability>PassThroughOnly</passability>
+	  <uiIconScale>1.5</uiIconScale>
+	  <uiIconOffset>(0, 0.1)</uiIconOffset>
+	  <selectable>true</selectable>
+	  <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	  <rotatable>false</rotatable>
+	  <tickerType>Normal</tickerType>
+	  <statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Mass>4</Mass>
+		  <Flammability>1.0</Flammability>
+		  <MarketValue>25</MarketValue>
+		  <WorkToBuild>2500</WorkToBuild>
+	  </statBases>
+    <costList>
+	    <Meat_Twisted>100</Meat_Twisted>
+	    <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+	    <BRF_ReforgedMeat_Harbinger>75</BRF_ReforgedMeat_Harbinger>
+	    <BRF_GelatinousFlesh>50</BRF_GelatinousFlesh>
+	    <BRF_LivingFlesh>25</BRF_LivingFlesh>
+	    <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
+	    <Corpse_BRF_Clump>1</Corpse_BRF_Clump>
+    </costList>
+    <castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+    <size>(2,2)</size>
+    <building>
+      <uninstallWork>4800</uninstallWork>
+      <destroySound>BRF_Pawn_Flesh_Death</destroySound>
+    </building>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
+        <ticksPerTimes>250</ticksPerTimes>
+      </li>
+      <li Class="Luna_BRF.CompProperties_SpawnerPawnPod">
+        <spawnedPawn>BRF_MutationsRelicFlesh</spawnedPawn>
+        <primordialFleshSpawer>true</primordialFleshSpawer>
+        <hatcherDaystoSpawn>7</hatcherDaystoSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -11,5 +11,6 @@ namespace Luna_BRF
         public HediffDef HediffDefToAdd;
         public HediffDef NeedHediffDef;
         public HediffDef HediffDefTransform;
+        public HediffDef HediffDefIfMech;
     }
 }

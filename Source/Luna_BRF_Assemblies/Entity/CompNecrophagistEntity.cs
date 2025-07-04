@@ -57,7 +57,7 @@ namespace Luna_BRF
 			{
 				ticksDigesting++;
 			}
-			innerContainer.ThingOwnerTick(removeIfDestroyed: false);
+			innerContainer.DoTick();
 			if (Digesting && DigestingPawn != null && DigestingPawn.Dead)
 			{
 				CompleteDigestion();
@@ -128,16 +128,11 @@ namespace Luna_BRF
 			{
 				DigestingThing.Destroy();
 			}
-			Hediff firstHediff = Pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_RapidRegeneration);
-			if (firstHediff != null && isflesh)
+			if (isflesh)
 			{
-				firstHediff.Severity += (bodySize/2.5f) ;
-            }else if (isflesh)
-            {
-				Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, Pawn);
-				hediff.Severity = bodySize/2.5f;
-				Pawn.health.AddHediff(hediff);
-			}
+				LunaBRFHediffUtility.AddPointRapidRegeneration(Pawn, bodySize * 40);
+
+            }
 			if (Pawn.Drawer.renderer.CurAnimation == AnimationDefOf.DevourerDigesting)
 			{
 				Pawn.Drawer.renderer.SetAnimation(null);
@@ -149,9 +144,9 @@ namespace Luna_BRF
 			innerContainer.TryDropAll(Pawn.PositionHeld, Pawn.MapHeld, ThingPlaceMode.Direct);
 			Pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
 		}
-		public override void Notify_Killed(Map prevMap, DamageInfo? _ = null)
+		public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
 		{
-			base.Notify_Killed(prevMap, _);
+			base.Notify_Killed(prevMap, dinfo);
 			innerContainer.TryDropAll(Pawn.PositionHeld, Pawn.MapHeld, ThingPlaceMode.Direct);
 		}
 		public override void PostExposeData()
@@ -169,7 +164,7 @@ namespace Luna_BRF
 				if (digestingThing != null)
 				{
 					string contentName = digestingThing.LabelCap;
-					return $"{baseString}\n {"NecrophagistEntityWhenDigestinng".Translate()} : {contentName}";
+					return $"{baseString}\n {"BRF_NecrophagistEntityWhenDigestinng".Translate()} : {contentName}";
 				}
 			}
 			return baseString;

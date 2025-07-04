@@ -18,7 +18,7 @@ namespace Luna_BRF
 			}
 		}
 
-		public override void PostDeSpawn(Map map)
+		public override void PostDeSpawn(Map map, DestroyMode mode)
 		{
 			if (Props.isFloater)
 			{

@@ -38,5 +38,11 @@
     <Operation Class="PatchOperationRemove">
 		  <xpath>/Defs/ThingDef[@Name="BRF_ScarletCerebralJellyfishBase"]/comps/li[@Class="Luna_BRF.CompProperties_Floating"]</xpath>
     </Operation>
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[@Name="BRF_RawProphetBase"]/comps/li[@Class="Luna_BRF.CompProperties_Floating"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+		  <xpath>/Defs/ThingDef[defName="BRF_RebirthPsycorpse"]/comps/li[@Class="Luna_BRF.CompProperties_Floating"]</xpath>
+    </Operation>
 
 </Patch>

@@ -23,7 +23,6 @@ H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VE
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.ImageConversionModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.ScreenCaptureModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UI.dll
-H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\VFECore.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.DSPGraphModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.AndroidJNIModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.AccessibilityModule.dll
@@ -48,7 +47,6 @@ H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VE
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.JSONSerializeModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.LocalizationModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityWebRequestModule.dll
-H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UNETModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityWebRequestAudioModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityWebRequestTextureModule.dll
@@ -59,7 +57,6 @@ H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VE
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.SpriteMaskModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.StreamingModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.TerrainPhysicsModule.dll
-H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.TextCoreModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.SpriteShapeModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UIElementsModule.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.VehiclesModule.dll
@@ -71,6 +68,21 @@ H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VE
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\KCSG.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF_VEFAssemblies.csproj.AssemblyReference.cache
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF_VEFAssemblies.csproj.CoreCompileInputs.cache
-H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF_VEFAssemblies.csproj.CopyComplete
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF_VEFAssemblies.dll
 H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF_VEFAssemblies.pdb
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\obj\Release\Luna_BRF.7B75BEB5.Up2Date
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\VEF.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\Unity.Collections.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\netstandard.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\0Harmony.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityCurlModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.ContentLoadModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.PropertiesModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.TLSModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.UnityAnalyticsCommonModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.NVIDIAModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.VirtualTexturingModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.TextCoreFontEngineModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\UnityEngine.TextCoreTextEngineModule.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\0PrepatcherAPI.dll
+H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\Source\Luna_BRF_VEFAssemblies\bin\Release\Unity.Collections.LowLevel.ILSupport.dll

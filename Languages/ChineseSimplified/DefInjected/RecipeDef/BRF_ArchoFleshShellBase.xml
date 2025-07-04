@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <BRF_InstallRebirthFleshEar.label>安装重生血肉耳</BRF_InstallRebirthFleshEar.label>
+  <BRF_InstallRebirthFleshEar.description>安装重生血肉耳。</BRF_InstallRebirthFleshEar.description>
+  <BRF_InstallRebirthFleshEar.jobString>正在安装重生血肉耳。</BRF_InstallRebirthFleshEar.jobString>
+  
+  <BRF_InstallRebirthFleshHeart.label>安装重生血肉心脏</BRF_InstallRebirthFleshHeart.label>
+  <BRF_InstallRebirthFleshHeart.description>安装重生血肉心脏。</BRF_InstallRebirthFleshHeart.description>
+  <BRF_InstallRebirthFleshHeart.jobString>正在安装重生血肉心脏。</BRF_InstallRebirthFleshHeart.jobString>
+  
+  <BRF_InstallRebirthFleshKidney.label>安装重生血肉肾</BRF_InstallRebirthFleshKidney.label>
+  <BRF_InstallRebirthFleshKidney.description>安装重生血肉肾。</BRF_InstallRebirthFleshKidney.description>
+  <BRF_InstallRebirthFleshKidney.jobString>正在安装重生血肉肾。</BRF_InstallRebirthFleshKidney.jobString>
+  
+  <BRF_InstallRebirthFleshLiver.label>安装重生血肉肝</BRF_InstallRebirthFleshLiver.label>
+  <BRF_InstallRebirthFleshLiver.description>安装重生血肉肝。</BRF_InstallRebirthFleshLiver.description>
+  <BRF_InstallRebirthFleshLiver.jobString>正在安装重生血肉肝。</BRF_InstallRebirthFleshLiver.jobString>
+  
+  <BRF_InstallRebirthFleshLung.label>安装重生血肉肺</BRF_InstallRebirthFleshLung.label>
+  <BRF_InstallRebirthFleshLung.description>安装重生血肉肺。</BRF_InstallRebirthFleshLung.description>
+  <BRF_InstallRebirthFleshLung.jobString>正在安装重生血肉肺。</BRF_InstallRebirthFleshLung.jobString>
+  
+  <BRF_InstallRebirthFleshNose.label>安装重生血肉鼻</BRF_InstallRebirthFleshNose.label>
+  <BRF_InstallRebirthFleshNose.description>安装重生血肉鼻。</BRF_InstallRebirthFleshNose.description>
+  <BRF_InstallRebirthFleshNose.jobString>正在安装重生血肉鼻。</BRF_InstallRebirthFleshNose.jobString>
+  
+  <BRF_InstallRebirthFleshStomach.label>安装重生血肉胃</BRF_InstallRebirthFleshStomach.label>
+  <BRF_InstallRebirthFleshStomach.description>安装重生血肉胃。</BRF_InstallRebirthFleshStomach.description>
+  <BRF_InstallRebirthFleshStomach.jobString>正在安装重生血肉胃。</BRF_InstallRebirthFleshStomach.jobString>
+
+  <BRF_InstallRebirthFleshEye.label>安装重生血肉眼</BRF_InstallRebirthFleshEye.label>
+  <BRF_InstallRebirthFleshEye.description>安装一个重生血肉眼。</BRF_InstallRebirthFleshEye.description>
+  <BRF_InstallRebirthFleshEye.jobString>正在安装重生血肉眼。</BRF_InstallRebirthFleshEye.jobString>
+
+  <BRF_InstallRebirthFleshArm.label>安装重生血肉臂</BRF_InstallRebirthFleshArm.label>
+  <BRF_InstallRebirthFleshArm.description>安装一个重生血肉臂。</BRF_InstallRebirthFleshArm.description>
+  <BRF_InstallRebirthFleshArm.jobString>正在安装重生血肉臂。</BRF_InstallRebirthFleshArm.jobString>
+
+  <BRF_InstallRebirthFleshLeg.label>安装重生血肉腿</BRF_InstallRebirthFleshLeg.label>
+  <BRF_InstallRebirthFleshLeg.description>安装一个重生血肉腿。</BRF_InstallRebirthFleshLeg.description>
+  <BRF_InstallRebirthFleshLeg.jobString>正在安装重生血肉腿。</BRF_InstallRebirthFleshLeg.jobString>
+  
+  <BRF_InstallReforgedFlesStomach.label>安装重生血肉胃</BRF_InstallReforgedFlesStomach.label>
+  <BRF_InstallReforgedFlesStomach.description>安装重生血肉胃。</BRF_InstallReforgedFlesStomach.description>
+  <BRF_InstallReforgedFlesStomach.jobString>正在安装重生血肉胃。</BRF_InstallReforgedFlesStomach.jobString>
+
+  <BRF_InstallRebirthFleshSpine.label>安装重生血肉脊椎</BRF_InstallRebirthFleshSpine.label>
+  <BRF_InstallRebirthFleshSpine.description>安装重生血肉脊椎。</BRF_InstallRebirthFleshSpine.description>
+  <BRF_InstallRebirthFleshSpine.jobString>正在安装重生血肉脊椎</BRF_InstallRebirthFleshSpine.jobString>
+
+
+</LanguageData>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace Luna_BRF
 {
@@ -26,6 +27,18 @@ namespace Luna_BRF
                 }
             }
             base.Explode();
+            if (Props.extraEMP)
+            {
+                Thing instigator = launcher;
+                GenExplosion.DoExplosion(
+                    center: base.Position,
+                    map: base.Map,
+                    radius: def.projectile.explosionRadius,
+                    damType: DamageDefOf.EMP,
+                    instigator: instigator,
+                    damAmount: Props.extraEMPDamage,
+                    armorPenetration: 1f);
+            }
         }
     }
 }

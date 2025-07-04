@@ -91,7 +91,7 @@ namespace Luna_BRF
 			{
 				return false;
 			}
-			if (pawn.IsNonMutantAnimal)
+			if (pawn.IsAnimal)
 			{
 				return false;
 			}

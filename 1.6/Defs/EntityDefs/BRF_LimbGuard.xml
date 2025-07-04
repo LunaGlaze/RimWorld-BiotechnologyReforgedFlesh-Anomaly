@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--身体定义-->
+  <BodyPartDef>
+    <defName>BRF_FingerTentacle</defName>
+    <label>finger</label>
+    <hitPoints>30</hitPoints>
+    <tags>
+      <li>ManipulationLimbCore</li>
+      <li>MovingLimbCore</li>
+    </tags>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+  </BodyPartDef>
+
+	<BodyDef>
+		<defName>BRF_LimbGuard</defName>
+		<label>limb guard</label>
+		<corePart>
+			<def>MovingBodyFleshbeast</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Torso</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Spine</def>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+					<parts>
+						<li>
+							<def>FleshbeastSpike</def>
+							<customLabel>back spike</customLabel>
+							<coverage>0.77</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>MiddleSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>BRF_FingerTentacle</def>
+					<customLabel>thumb finger</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Arms</li>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>BRF_FingerTentacle</def>
+					<customLabel>index finger</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Arms</li>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>BRF_FingerTentacle</def>
+					<customLabel>middle finger</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Arms</li>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>BRF_FingerTentacle</def>
+					<customLabel>ring finger</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Arms</li>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>BRF_FingerTentacle</def>
+					<customLabel>little finger</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Arms</li>
+						<li>Legs</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BasePawn" Name="BRF_LimbGuard" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-140</ComfyTemperatureMin>
+      <ComfyTemperatureMax>120</ComfyTemperatureMax>
+      <Flammability>0.5</Flammability>
+      <MeatAmount>40</MeatAmount>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <InjuryHealingFactor>2</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+      <MinimumContainmentStrength>50</MinimumContainmentStrength>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <thinkTreeMain>BRF_LimbGuardThinkTree</thinkTreeMain>
+      <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
+      <body>BRF_LimbGuard</body>
+      <baseBodySize>0.75</baseBodySize>
+      <lifeExpectancy>500</lifeExpectancy>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodDef>Filth_Blood</bloodDef>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
+      <trainability>None</trainability>
+      <fleshType>Fleshbeast</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.5</bleedRateFactor>
+      <hediffGiverSets>
+        <li>Fleshbeast</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+        </li>
+      </lifeStageAges>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>true</getsColdContainmentBonus>
+      </li>
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringEmergence</compClass>
+        <inspectString>Emerged from {SOURCEPAWN_labelShort}.</inspectString>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.35, 0, .35)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.35, 0, .35)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.35, 0, -.35)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.35, 0, -.35)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>2</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+			<li Class="Luna_BRF.CompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+			<li Class="VEF.AnimalBehaviours.CompProperties_Draftable" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+    </comps>
+  </ThingDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_FrankensteinHand</defName>
+    <label>Frankenstein's Hand</label>
+    <race>BRF_FrankensteinHand</race>
+    <combatPower>35</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_LimbGuard/LimbGuard_hand</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_LimbGuard/LimbGuard_hand_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>DeathRefusal</def>
+      </li>
+      <li>
+        <def>BRF_ResurrectionLink</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_FrankensteinFoot</defName>
+    <label>Frankenstein's Foot</label>
+    <race>BRF_FrankensteinFoot</race>
+    <abilities>
+      <li>BRF_EntityLongjump</li>
+    </abilities>
+    <combatPower>35</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_LimbGuard/LimbGuard_foot</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_LimbGuard/LimbGuard_foot_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>DeathRefusal</def>
+      </li>
+      <li>
+        <def>BRF_ResurrectionLink</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_LimbGuard">
+    <defName>BRF_FrankensteinHand</defName>
+    <label>Frankenstein's Hand</label>
+    <description>A severed hand at your command.</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>
+    </statBases>
+    <uiIconPath>Pawns/BRF_LimbGuard/LimbGuard_hand_east</uiIconPath>
+    <race>
+      <baseHealthScale>1</baseHealthScale>
+    </race>
+    <comps>
+    </comps>
+    <tools>
+      <li>
+        <label>fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+        <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>claw</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>hit</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BRF_LimbGuard">
+    <defName>BRF_FrankensteinFoot</defName>
+    <label>Frankenstein's Foot</label>
+    <description>A broken foot at your command.</description>
+    <statBases>
+      <MoveSpeed>2</MoveSpeed>
+    </statBases>
+    <uiIconPath>Pawns/BRF_LimbGuard/LimbGuard_foot_east</uiIconPath>
+    <race>
+      <baseHealthScale>2.5</baseHealthScale>
+    </race>
+    <comps>
+    </comps>
+    <tools>
+      <li>
+        <label>fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>claw</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <armorPenetration>0.15</armorPenetration>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>hit</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.15</armorPenetration>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_LimbGuardThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Escaping-->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+        <!-- Do a queued job -->
+        <li Class="ThinkNode_QueuedJob" />
+        <!-- Mental state non critical -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>MentalStateNonCritical</treeDef>
+        </li>
+        <!-- Wait if drafted -->
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
+          <subNodes>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>DraftedOrder</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_MoveToStandable" />
+                <li Class="JobGiver_Orders" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <!-- Seek allowed area -->
+        <li Class="JobGiver_SeekAllowedArea" />
+        <li Class="JobGiver_SeekSafeTemperature">
+          <requiresInjury>false</requiresInjury>
+          <waitInSafeTemp>false</waitInSafeTemp>
+          <maxRadius>15</maxRadius>
+        </li>
+        <!-- Regular fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <!-- React to close melee threat -->
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Wander -->
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+          <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
+        </li>
+		    <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

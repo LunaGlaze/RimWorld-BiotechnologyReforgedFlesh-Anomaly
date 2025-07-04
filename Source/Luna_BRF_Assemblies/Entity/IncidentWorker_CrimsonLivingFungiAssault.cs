@@ -25,11 +25,11 @@ namespace Luna_BRF
 				if (Find.Anomaly.LevelDef.anomalyThreatTier > 1)
 				{
 					tier = Find.Anomaly.LevelDef.anomalyThreatTier;
-					parms.points = (defaultPawnGroupMakerParms.points *= Find.Anomaly.LevelDef.anomalyThreatTier * 0.6f);
+					parms.points = (defaultPawnGroupMakerParms.points *= (0.75f + Find.Anomaly.LevelDef.anomalyThreatTier * 0.25f));
 				}
 			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(defaultPawnGroupMakerParms).ToList();
-			float hpPoint = Math.Max((parms.points / 5) * (1 + (tier / 10)), 100);
+			float hpPoint = Math.Max(Math.Min(parms.points / 16f, 500 * Find.Storyteller.difficulty.threatScale) * (1 + (tier / 10)), 25);
 			if (list.Count >= 3)
             {
 				list.Clear();
@@ -42,9 +42,7 @@ namespace Luna_BRF
 			}
 			foreach(Pawn item in list)
 			{
-				Hediff_RapidRegeneration hediff = (Hediff_RapidRegeneration) HediffMaker.MakeHediff(HediffDefOf.RapidRegeneration, item);
-				hediff.SetHpCapacity(hpPoint);
-				item.health.AddHediff(hediff);
+				LunaBRFHediffUtility.AddPointRapidRegeneration(item, hpPoint);
 			}
 			if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
 			{

@@ -46,7 +46,13 @@
   <!-- 血棘炮塔 -->
 
   <BRF_GoreSpineLauncherResearch.label>血棘團塊</BRF_GoreSpineLauncherResearch.label>
-  <BRF_GoreSpineLauncherResearch.description>By mimicking and using the remnants of Gorehulk, we get a whole new defense tech. An automated defense facility for living things that launches keratin spines at a target to do damage.</BRF_GoreSpineLauncherResearch.description>
+  <BRF_GoreSpineLauncherResearch.description>通過模仿和利用血棘巨人的殘骸，我們獲得了一種全新的防禦技術。這是一種生物自動化防禦設施，可以向目標發射角質尖刺來造成傷害。</BRF_GoreSpineLauncherResearch.description>
+
+
+  <!-- 血肉發射器 -->
+
+  <BRF_FleshShooterResearch.label>血肉發射器</BRF_FleshShooterResearch.label>
+  <BRF_FleshShooterResearch.description>我們從對於實體的獨特肉體結構的學習中受益良多，畢竟虛空或是其他什麼我們無法想象之處的神祗們總是有著遠比我們這些凡人要高的視野。現在，對於蟲群的研究得到了進步，有一種鮮肉構成的幼蟲發射毒牙的能力啟發了我們。順著猶如腥臭夢境中的呢喃般的靈感，我們試圖創造一種更小巧、方便且陰狠的“血肉弓弩”。讚美亞……</BRF_FleshShooterResearch.description>
 
 
   <!-- 血污孢子（二本） -->
@@ -128,6 +134,12 @@
   <BRF_SummonClumpsResearch.description>那種原始、古老而高效的組織被證明是發展生物科技的高價值材料。比起巨坑中少之又少的原型體“原始血肉獸”，那種似乎是作為戰鬥單位的肢團似乎更容易被心靈脈衝吸引。\n\n 儘管樂土花園之外的守衛、肢體永恆之唯一、以及其他呢喃聲……令人困惑而恐懼……\n\n“我們是選擇收穫自己的牲畜。我們為了生存而撕咬、抓撓與掙扎。我們互相進食彼此，為了避免自己被吃掉而死。我們繁衍後代，以便終有一天我們的孩子被吞食，就如同我們一樣。”</BRF_SummonClumpsResearch.description>
 
 
+  <!-- 緋紅擾動 -->
+
+  <BRF_CrimsonProvocationResearch.label>緋紅擾動</BRF_CrimsonProvocationResearch.label>
+  <BRF_CrimsonProvocationResearch.description>我們的研究正在逐步的推進……那腥臭粘膩的夢境正在告訴我們更多。事實上，這些血肉實體可能並非是被虛空邪教徒稱為霍拉克斯的存在的傑作，但那個強大的超凡智能也為它們開啟了通路。\n\n我們可以利用這種區別準備獨特的祭品，創造專門用於吸引這些血肉實體的心靈脈衝——就像是虛空擾動一樣，但它是緋紅色的。</BRF_CrimsonProvocationResearch.description>
+
+
   <!-- 猩紅祭壇 -->
 
   <BRF_ScarletTransformation.label>猩紅嬗變術</BRF_ScarletTransformation.label>
@@ -144,6 +156,61 @@
 
   <BRF_SpitterFleshwormResearch.label>血肉噴吐者</BRF_SpitterFleshwormResearch.label>
   <BRF_SpitterFleshwormResearch.description>通過對血肉心臟的進一步研究，我們已經掌握了製造屬於我們的噴吐器官的技術。我們已經擺脫了對那些神經組織進行破壞性分析的依賴。利用這些組織中的編碼，我們能夠構造出一種更像蠕蟲的血肉器官，用於防禦。</BRF_SpitterFleshwormResearch.description>
+
+
+  <!-- 血棘魔槍 -->
+
+  <BRF_BloodthornFleshGunsResearch.label>血棘魔槍</BRF_BloodthornFleshGunsResearch.label>
+  <BRF_BloodthornFleshGunsResearch.description>伴隨著對血肉實體的研究的不斷加深，我們對這種異形的怪物的理解越來越深刻、利用越來越成熟。將來自不同實體的肉體結構特點綜合在一起，我們創造了更強大的血肉仿生槍械。</BRF_BloodthornFleshGunsResearch.description>
+
+
+  <!-- 緋紅路西法血鐵素 -->
+
+  <BRF_CrimsonLuciferFleshferriumResearch.label>緋紅路西法血鐵素</BRF_CrimsonLuciferFleshferriumResearch.label>
+  <BRF_CrimsonLuciferFleshferriumResearch.description>我不知道我從哪裡得到的這種可怕的想法。猩紅腦蜇會向受害者的體內注入一種成癮性的生物納米機械。經過分析，這種生物納米機械與路西法強化劑非常類似，但在對人體的強化上受到了限制。如果我們嘗試使用重塑的技術復刻它們，不僅可以把受害者從陰影中拯救出來，我們也可以擁有無窮無盡的路西法強化劑。</BRF_CrimsonLuciferFleshferriumResearch.description>
+
+
+  <!-- 血肉魔像 -->
+
+  <BRF_PsycorpseGolemResearch.label>靈骸魔像</BRF_PsycorpseGolemResearch.label>
+  <BRF_PsycorpseGolemResearch.description>那種被稱為“亞達伯斯的飢餓天使”的駭人實體表現出了超過一般實體的智能……或許其他實體也有著類似的智能只是尚未使用，但它對人類的武器的熟練使用帶來的新的啟迪。腥臭的夢越來越近了，試圖復刻它們使用武器的能力取得了成功，只是在移動能力上還有者很大的限制。我們可以製造這種血肉傀儡，讓它拿上我們最好的武器來代替我們守衛家園。</BRF_PsycorpseGolemResearch.description>
+
+
+  <!-- 夢境迫近 （三本鎖A） -->
+
+  <BRF_DreamApproachingResearch.label>夢境迫近</BRF_DreamApproachingResearch.label>
+  <BRF_DreamApproachingResearch.description>自從我們觸碰巨石、並走上研究異態生物科技的道路時，那個粘膩、腥臭的的夢境就時有出現。祂時常給予我們可怖的靈感，彷彿是某種不知是否帶著惡意的存在引領著我們走上這條不歸路……\n但是現在，有些事情變得明瞭了。那個夢境是切實存在的，亞達伯斯也是存在的——但是亞達伯斯早就陷入了沉睡，被稱為原生先知的存在代為傳播祂的福音。\n從來不止有一個虛空，從來不止有一個漫宿，從來不止有一個內殿……宇宙有著我們都知曉但卻都無視的另一面，雖然另一面無法幫助這一面突破光速的限制，但一切的心靈科技都基於那一邊而存在。\n被稱為虛空之神的存在用祂的巨石劃定了錨點，也為祂與其他居住或沉睡在兩面的交匯之處的超凡智能與祂們的僕從提供了通路。而如今，我們要嘗試撕裂那乾渴的門，奪取先知的智慧。\n\n我們想要成為新的大術士。</BRF_DreamApproachingResearch.description>
+
+
+  <!-- 引領血肉 （三本鎖B） -->
+
+  <BRF_ShepherdFleshResearch.label>引領血肉</BRF_ShepherdFleshResearch.label>
+  <BRF_ShepherdFleshResearch.description>我們已通曉血肉的智慧所在何處。我們是血肉的牧者，我們是血肉的匠人。我們將重鑄血與肉，使我們飛昇，使我們觸及超凡之力量。血肉之聖徒有權引導並畜牧有機質。</BRF_ShepherdFleshResearch.description>
+
+
+  <!-- 夜遊密續 -->
+
+  <BRF_NightTravelingTantraResearch.label>夜遊密續</BRF_NightTravelingTantraResearch.label>
+  <BRF_NightTravelingTantraResearch.description>於是亞恩將六根手指舉起，戰士們便用自己的矛刺穿自己。“為你！”他們哭著被血溺住舌頭。亞恩說道，“現在你可瞧見？”於是納多克斯哭泣，更多人在以亞恩之名刺穿自己，他已瞧見並知曉他言語的真理。</BRF_NightTravelingTantraResearch.description>
+
+
+  <!-- 天母密續 -->
+
+  <BRF_EternalMotherTantraResearch.label>天母密續</BRF_EternalMotherTantraResearch.label>
+  <BRF_EternalMotherTantraResearch.description>黑月之下，她的獻身化為一把石刀，就如Adí-üm的馴鹿人一樣。刺穿，琥珀色的血，被古罪染色，從傷口中湧出-她的淚就如遠夏的熱雨。\n在毒月之下，琥珀不再流淌-雪被她染紅。[無法破譯]為亞恩深飲拉娃塔吻中的酵蜜。亞恩在她蒼白的胸前躺下-一同分享狂喜的休憩。\n亞恩仍然飢渴，拉娃塔的黑唇中流出話語，“服侍便有悅樂。”笑著，他低下頭—知曉沉醉的愉悅，如奶和甜美的酵蜜。</BRF_EternalMotherTantraResearch.description>
+
+
+  <!-- 白蟲密續 -->
+
+  <BRF_WhiteWormTantraResearch.label>白蟲密續</BRF_WhiteWormTantraResearch.label>
+  <BRF_WhiteWormTantraResearch.description>歐若科向Kytheran人說道：“力量由弱者的痛苦造就。此地弱者死去。此地強者誕生。我驅使自己，從亞恩血肉獻祭的蒼白鏡像到難堪之力，蛻下脆弱的殼層。我同自己的akuloth之核相談–我神聖的變形已成。”</BRF_WhiteWormTantraResearch.description>
+
+
+  <!-- 紅獲密續 -->
+
+  <BRF_RedHarvestTantraResearch.label>紅獲密續</BRF_RedHarvestTantraResearch.label>
+  <BRF_RedHarvestTantraResearch.description>心臟就此停寂。\n在她的匕首現形之前。\n瞬間凝結在一擊。\n審判-無可逃脫，無可避免。\n驚愕；難以置信的死亡，\n向著Daeva的傲慢。\n凱旋；黑暗中的匕首。\n以那暴君之血，\n我們的孩童正安眠。</BRF_RedHarvestTantraResearch.description>
+
 
 
 </LanguageData>

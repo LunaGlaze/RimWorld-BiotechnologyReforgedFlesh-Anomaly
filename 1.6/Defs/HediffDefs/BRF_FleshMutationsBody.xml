@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--基础物品类型-->
+  <ThingDef Name="BRF_FleshMutationsBodyPartThings" ParentName="BodyPartBase" Abstract="True">
+	<graphicData>
+		<texPath>Things/Item/Health/HealthItem</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.80</drawSize>
+		<color>(205,85,85)</color>
+	  </graphicData>
+	  <tickerType>Rare</tickerType>
+    <thingCategories>
+      <li>BRF_Things_FreshShell_Mutations</li>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+	  <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedMutationBase" Name="BRF_AddedBodyPartMutationBase" Abstract="True">
+    <tags>
+      <li>BRF_FleshReforge</li>
+    </tags>
+  </HediffDef>
+
+<!-- 手臂 -->
+  <!--血肉触手-->
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshTentacle</defName>
+    <label>Flesh Tentacle</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshTentacle</RecipeDef>
+        <HediffDef>Tentacle</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshTentacle</defName>
+    <label>install flesh tentacle</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a fleshy, muscled tentacle resembling a partial transformation into a fleshbeast.</description>
+    <jobString>Installing flesh tentacle.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshTentacle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshTentacle</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>Tentacle</addsHediff>
+  </RecipeDef>
+  <!--血肉触鞭-->
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshWhip</defName>
+    <label>Flesh Whip</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshWhip</RecipeDef>
+        <HediffDef>FleshWhip</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshWhip</defName>
+    <label>install flesh whip</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a fleshy, muscled tentacle with a blade at the end. The flesh whip makes an excellent melee weapon.</description>
+    <jobString>Installing flesh whip.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshWhip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshWhip</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>FleshWhip</addsHediff>
+  </RecipeDef>
+
+<!-- 腿 -->
+  <!--血肉拟足-->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshPseudoLegHediff</defName>
+    <label>flesh pseudo-leg</label>
+    <labelNoun>a flesh pseudo-leg</labelNoun>
+    <description>A fleshy, muscled tentacle mimicked into a leg-like organ.\n\nIt has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Leg</defaultInstallPart>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.20</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_FleshbeastEmerge">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s flesh pseudo-leg has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshPseudoLeg</defName>
+    <label>Flesh Pseudo-Leg</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFlesPseudoLeg</RecipeDef>
+        <HediffDef>BRF_FleshPseudoLegHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFlesPseudoLeg</defName>
+    <label>install flesh pseudo-leg</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a fleshy, muscled tentacle mimicked into a leg-like organ.</description>
+    <jobString>Installing flesh pseudo-leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshPseudoLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshPseudoLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshPseudoLegHediff</addsHediff>
+  </RecipeDef>
+  <!--血肉腕足-->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshBrachiopodHediff</defName>
+    <label>flesh brachiopod</label>
+    <labelNoun>a flesh brachiopod</labelNoun>
+    <description>A fleshy, muscled tentacle that can be used to move the body, but not that well. These tentacles grow where the legs should be, but can also be used as hands to some extent due to their flexibility. \n\nIt has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Leg</defaultInstallPart>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_FleshbeastEmerge">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s brachiopod has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshBrachiopod</defName>
+    <label>Flesh Brachiopod</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFlesBrachiopod</RecipeDef>
+        <HediffDef>BRF_FleshBrachiopodHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFlesBrachiopod</defName>
+    <label>install flesh brachiopod</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a fleshy, muscled tentacle that can be used to move the body, but not that well. These tentacles grow where the legs should be, but can also be used as hands to some extent due to their flexibility.</description>
+    <jobString>Installing flesh brachiopod.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshBrachiopod</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshBrachiopod</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshBrachiopodHediff</addsHediff>
+  </RecipeDef>
+
+<!-- 肺部 -->
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassLung</defName>
+    <label>Fleshmass Lung</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassLung</RecipeDef>
+        <HediffDef>FleshmassLung</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassLung</defName>
+    <label>install fleshmass lung</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh. The tissue constantly regrows and replaces itself, making it immune to effects like lung rot and asthma.</description>
+    <jobString>Installing fleshmass lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>FleshmassLung</addsHediff>
+  </RecipeDef>
+
+<!-- 胃部 -->
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassStomach</defName>
+    <label>Fleshmass Stomach</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassStomach</RecipeDef>
+        <HediffDef>FleshmassStomach</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassStomach</defName>
+    <label>install fleshmass stomach</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh. The harsh acid it produces is painful, but strong enough to prevent most food poisoning.</description>
+    <jobString>Installing fleshmass stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>FleshmassStomach</addsHediff>
+  </RecipeDef>
+
+<!-- 肾脏 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassKidneyHediff</defName>
+    <label>fleshmass kidney</label>
+    <labelNoun>a fleshmass kidney</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The tissue secretes a special fluid into your circulatory system that somewhat enhances your ability to fight off diseases. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Kidney</defaultInstallPart>
+    <stages>
+      <li>
+        <painOffset>0.06</painOffset>
+        <statOffsets>
+          <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.01</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_FleshbeastEmerge">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass kidney has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassKidney</defName>
+    <label>Fleshmass Kidney</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassKidney</RecipeDef>
+        <HediffDef>BRF_FleshmassKidneyHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassKidney</defName>
+    <label>install fleshmass kidney</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.  The tissue secretes a special fluid into your circulatory system that somewhat enhances your ability to fight off diseases.</description>
+    <jobString>Installing fleshmass kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassKidneyHediff</addsHediff>
+  </RecipeDef>
+  
+<!-- 肝脏 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassLiverHediff</defName>
+    <label>fleshmass liver</label>
+    <labelNoun>a fleshmass liver</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The growing tissue has an outstanding filtering ability and can be somewhat purified of toxins that enter the bloodstream. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Liver</defaultInstallPart>
+    <stages>
+      <li>
+        <painOffset>0.06</painOffset>
+        <statOffsets>
+          <ToxicResistance>0.3</ToxicResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.01</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_FleshbeastEmerge">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass liver has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassLiver</defName>
+    <label>Fleshmass Liver</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassLiver</RecipeDef>
+        <HediffDef>BRF_FleshmassLiverHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassLiver</defName>
+    <label>install fleshmass liver</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.  The growing tissue has an outstanding filtering ability and can be somewhat purified of toxins that enter the bloodstream.</description>
+    <jobString>Installing fleshmass liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassLiverHediff</addsHediff>
+  </RecipeDef>
+  
+<!-- 眼 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassEyeHediff</defName>
+    <label>fleshmass eye</label>
+    <labelNoun>a fleshmass eye</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The tissue has excellent light sensitivity and is capable of performing the duties of an eyeball. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Eye</defaultInstallPart>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.20</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass eye has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassEye</defName>
+    <label>Fleshmass Eye</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassEye</RecipeDef>
+        <HediffDef>BRF_FleshmassEyeHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassEye</defName>
+    <label>install fleshmass eye</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.</description>
+    <jobString>Installing fleshmass eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassEyeHediff</addsHediff>
+  </RecipeDef>
+
+<!-- 耳 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassEarHediff</defName>
+    <label>fleshmass ear</label>
+    <labelNoun>a fleshmass ear</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The tissue has a keen sense of sound and is more than adequate for use as an ear. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Ear</defaultInstallPart>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.20</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass ear has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassEar</defName>
+    <label>Fleshmass Ear</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassEar</RecipeDef>
+        <HediffDef>BRF_FleshmassEarHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassEar</defName>
+    <label>install fleshmass ear</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.</description>
+    <jobString>Installing fleshmass ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassEarHediff</addsHediff>
+  </RecipeDef>
+
+<!-- 鼻 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassNoseHediff</defName>
+    <label>fleshmass nose</label>
+    <labelNoun>a fleshmass Nose</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The tissue is effective in filtering harmful substances from the air. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Nose</defaultInstallPart>
+    <stages>
+      <li>
+        <painOffset>0.02</painOffset>
+        <statOffsets>
+          <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.3</ToxicEnvironmentResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.01</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass nose has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassNose</defName>
+    <label>Fleshmass Nose</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassNose</RecipeDef>
+        <HediffDef>BRF_FleshmassNoseHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassNose</defName>
+    <label>install fleshmass nose</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.</description>
+    <jobString>Installing fleshmass nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassNoseHediff</addsHediff>
+  </RecipeDef>
+
+<!-- 舌 -->
+  <HediffDef ParentName="BRF_AddedBodyPartMutationBase">
+    <defName>BRF_FleshmassTongueHediff</defName>
+    <label>fleshmass tongue</label>
+    <labelNoun>a fleshmass tongue</labelNoun>
+    <description>A cancerous mass of semi-sentient flesh. The tissue has a sensitive perception of taste signals and is helpful in cooking to some extent. \n\nThe organ has its own neural structures and may become dangerous if removed.</description>
+    <defaultInstallPart>Tongue</defaultInstallPart>
+    <stages>
+      <li>
+        <painOffset>0.02</painOffset>
+        <statOffsets>
+          <CookSpeed>5</CookSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.01</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.03</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="Luna_BRF.HediffCompProperties_FleshbeastEmergeLittle">
+        <letterLabel>Fleshmass operation</letterLabel>
+        <letterText>Attempting to remove {PAWN_nameDef}'s fleshmass tongue has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+      </li>
+    </comps>
+  </HediffDef>
+  <ThingDef ParentName="BRF_FleshMutationsBodyPartThings">
+    <defName>BRF_FleshmassTongue</defName>
+    <label>Fleshmass Tongue</label>
+    <description>A mass of immature flesh with separate nerves with a fleshbeast-like structure. It can be assembled on body to activate it and complete its final stage of development.</description>
+    <descriptionHyperlinks>
+        <RecipeDef>BRF_InstallFleshmassTongue</RecipeDef>
+        <HediffDef>BRF_FleshmassTongueHediff</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallFleshmassTongue</defName>
+    <label>install fleshmass tongue</label>
+    <description>Install a mass of immature flesh with separate nerves with a fleshbeast-like structure. It will be activated to complete its final development. And eventually turn into a cancerous mass of semi-sentient flesh.</description>
+    <jobString>Installing fleshmass tongue.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_FleshmassTongue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_FleshmassTongue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tongue</li>
+    </appliedOnFixedBodyParts>
+	<addsHediff>BRF_FleshmassTongueHediff</addsHediff>
+  </RecipeDef>
+
+</Defs>

@@ -9,5 +9,10 @@
   <BRF_AnalogBrainSlugs.comps.0.letterText>试图移除{PAWN_nameDef}身上拟似脑蛞蝓的手术让这团扭曲的肉有了攻击性。它从{PAWN_nameDef}身上分离后变成了一只血肉兽！</BRF_AnalogBrainSlugs.comps.0.letterText>
   <BRF_AnalogBrainSlugs.labelNoun>拟似脑蛞蝓</BRF_AnalogBrainSlugs.labelNoun>
 
+<!-- 拟似脑蛞蝓 -->
+
+  <BRF_BrainSlugs.label>脑蛞蝓</BRF_BrainSlugs.label>
+  <BRF_BrainSlugs.description>在血腥黑暗的超凡科技的帮助下，将一颗鲜活的大脑加工成不具备自主思想的、软体动物一般的活肉块。它可以辅助思考，甚至在大脑被摧毁后暂时代替其一部分功能。\n如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_BrainSlugs.description>
+
 
 </LanguageData>

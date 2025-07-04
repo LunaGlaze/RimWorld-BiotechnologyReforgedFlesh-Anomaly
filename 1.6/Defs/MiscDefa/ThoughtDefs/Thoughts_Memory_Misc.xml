@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BRF_AteLivingMeat</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+    <nullifyingHediffs>
+      <li>Inhumanized</li>
+    </nullifyingHediffs>
+    <stages>
+      <li>
+        <label>ate living meat</label>
+        <description>It was even writhing in my mouth and oesophagus with the taste of blood. It was simply horrible.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BRF_AteRecastFleshCube</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+    <nullifyingHediffs>
+      <li>Inhumanized</li>
+    </nullifyingHediffs>
+    <stages>
+      <li>
+        <label>ate flesh cube</label>
+        <description>This blasphemy was never designed from the beginning to be eaten by humans!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BRF_AteTentacleMooncake</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate tentacle mooncake</label>
+        <description>I have to admit this weird thing tastes unexpectedly delicious... If only it wouldn't suddenly squirm in my mouth.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BRF_AnalogBrainSlugsAffect</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BRF_AnalogBrainSlugs</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Lower Neural Symbiosis</label>
+        <description>Lower Neural Symbiosis is not very effective, or so it seems that it worked well but the side effects were noticeable. my mind was filled with thoughts of discomfort due to the connection.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

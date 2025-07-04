@@ -37,8 +37,9 @@
     <Reference Include="Luna_BRF_Assemblies">
       <HintPath>..\..\1.5\Assemblies\Luna_BRF_Assemblies.dll</HintPath>
     </Reference>
-    <Reference Include="PipeSystem">
-      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\PipeSystem.dll</HintPath>
+    <Reference Include="PipeSystem, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\PipeSystem.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,9 +55,8 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="VFECore, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+    <Reference Include="VEF">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

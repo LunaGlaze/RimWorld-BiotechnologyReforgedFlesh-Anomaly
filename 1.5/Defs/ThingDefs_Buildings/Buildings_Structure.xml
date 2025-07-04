@@ -149,7 +149,7 @@
         		<statDef>MeditationFocusStrength</statDef>
         		<focusTypes>
           			<li>Minimal</li>
-          			<li>Void</li>
+          			<li>BRF_Flesh</li>
         		</focusTypes>
       		</li>
     	</comps>
@@ -264,7 +264,6 @@
     <isPaintable>false</isPaintable>
     <statBases>
 	  <FilthMultiplier>1.25</FilthMultiplier>
-      <WorkToBuild>1200</WorkToBuild>
       <CleaningTimeFactor>0.75</CleaningTimeFactor>
 	  <Flammability>0</Flammability>
     </statBases>
@@ -277,6 +276,69 @@
 	<fertility>0.05</fertility>
     <uiOrder>2000</uiOrder>
 	<designationCategory inherit ="False"/>
+  </TerrainDef>
+<!--血肉菌毯地砖-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>BRF_FleshBlanket_Tile</defName>
+    <label>Flesh Blanket Tile</label>
+    <description>An artificial, modular Flesh Blanket that can smoothly link with the Flesh Network while avoiding unexpected stains during operation.</description>
+    <texturePath>Buildings/Structure/Terrain/BRF_FleshBlanket_Tile</texturePath>
+    <renderPrecedence>240</renderPrecedence>
+    <edgeType>Hard</edgeType>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <CleaningTimeFactor>0.75</CleaningTimeFactor>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <BRF_ScarletFerrite>2</BRF_ScarletFerrite>
+      <BRF_ReforgedMeat_Insect>4</BRF_ReforgedMeat_Insect>
+    </costList>
+    <uiOrder>2000</uiOrder>
+    <researchPrerequisites>
+        <li>BRF_EternalMotherTantraResearch</li>
+    </researchPrerequisites>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
+  </TerrainDef>
+<!--猩红钢地砖-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>BRF_ScarletFerritePlateFloor</defName>
+    <label>Scarlet Ferrite Plate</label>
+    <description>A floor tile forged using Scarlet Ferrite and other living materials. It can take on the responsibilities of Flesh Blanket, with better performance but greater consumption. It's quick to clean and increases the containment strength of nearby holding platforms, and the psychic effects in it make it look good for no reason at all.</description>
+    <texturePath>Buildings/Structure/Terrain/BRF_ScarletFerritePlateFloor</texturePath>
+    <renderPrecedence>240</renderPrecedence>
+    <edgeType>Hard</edgeType>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+	  <Flammability>0</Flammability>
+      <ContainmentStrength>25</ContainmentStrength>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
+      <BRF_GelatinousFlesh>4</BRF_GelatinousFlesh>
+    </costList>
+    <uiOrder>2001</uiOrder>
+    <researchPrerequisites>
+        <li>BRF_EternalMotherTantraResearch</li>
+    </researchPrerequisites>
+    <designationCategory>BRF_LivingFleshyBuilding</designationCategory>
   </TerrainDef>
 <!--血肉种植格-->
 	<ThingDef ParentName="BuildingBase">

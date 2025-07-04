@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_RebirthPsycorpse</defName>
+    <label>Rebirth Psycorpse</label>
+    <category>Advanced</category>
+    <useDescriptionFrom>BRF_RebirthPsycorpse</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_RebirthPsycorpse</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_RebirthPsycorpse</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_PsycorpseGolemResearch</li>
+      <li>BRF_DreamApproachingResearch</li>
+    </discoveredResearchProjects>
+    <provocationIncidents>
+      <li>BRF_CreepJoiner_RebirthPsycorpse</li>
+    </provocationIncidents>
+    <orderInCategory>2450</orderInCategory>
+  </EntityCodexEntryDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BaseFleshbeast" Name="BRF_RebirthPsycorpse" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <Flammability>0</Flammability>
+      <ArmorRating_Heat>0.28</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionResistance>
+	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+    <race>
+      <thinkTreeMain>BRF_ToolUser_RebirthPsycorpse</thinkTreeMain>
+      <thinkTreeConstant>BRF_ToolUser_RebirthPsycorpse_Constant</thinkTreeConstant>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.25</bleedRateFactor>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget" Inherit="False">
+        <baseEscapeIntervalMtbDays>25</baseEscapeIntervalMtbDays>
+      </li>
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringEmergence</compClass>
+        <inspectString>Emerged from {SOURCEPAWN_labelShort}.</inspectString>
+      </li>
+      <li Class="Luna_BRF.CompProperties_DamageLimitation" />
+    </comps>
+  </ThingDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_RebirthPsycorpse</defName>
+    <label>Rebirth Psycorpse</label>
+    <race>BRF_RebirthPsycorpse</race>
+    <destroyGearOnDrop>false</destroyGearOnDrop>
+    <canStrip>true</canStrip>
+    <abilities>
+      <li>BRF_EntityLongjump</li>
+    </abilities>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_RebirthPsycorpse/BRF_RebirthPsycorpse</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_RebirthPsycorpse/BRF_RebirthPsycorpse_south</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+      <li>
+        <def>BRF_ResurrectionLink</def>
+      </li>
+      <li>
+        <def>ShardHolder</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_RebirthPsycorpse">
+    <defName>BRF_RebirthPsycorpse</defName>
+    <label>Rebirth Psycorpse</label>
+    <description>It should have been many corpses that had long been dead, but the twisted flesh tentacles had hollowed out its interior and stitched up its remains... They were reborn, and the twisted spiritual power gave them the ability to disguise and terrifying wisdom. They were resurrected psycorpse, but some fanatical flesh cultists would call them... "Hungry Angels of Yaldaboth"...</description>
+    <statBases>
+      <MoveSpeed>6</MoveSpeed>
+      <MinimumContainmentStrength>105</MinimumContainmentStrength>
+      <InjuryHealingFactor>5</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+      <MeatAmount>80</MeatAmount>
+      <LeatherAmount>40</LeatherAmount>
+    </statBases>
+    <uiIconPath>Pawns/BRF_RebirthPsycorpse/BRF_RebirthPsycorpse_south</uiIconPath>
+    <race>
+      <body>Human</body>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>7.5</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <leatherDef>BRF_Leather_Bloody</leatherDef>
+      <specificMeatDef>BRF_ReforgedMeat_Human</specificMeatDef>
+      <lifeExpectancy>1250</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Gorehulk_Wounded</soundWounded>
+          <soundDeath>Pawn_Gorehulk_Death</soundDeath>
+          <soundCall>Pawn_Gorehulk_Call</soundCall>
+			    <soundAngry>Pawn_Ghoul_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <canBecomeShambler>false</canBecomeShambler>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+    </race>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.4, 0, .4)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.4, 0, .5)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.3, 0, -.6)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.2, 0, -.7)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>5</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>7</bioferriteDensity>
+      </li>
+	    <li Class="Luna_BRF.CompProperties_WeaponDropManage"/>
+	    <li Class="Luna_BRF.CompProperties_Floating">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+	    <li Class="Luna_BRF_VEFAssemblies.CompProperties_Floating" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	  	  <canCrossWater>true</canCrossWater>
+	    </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left tentacle fist</label>
+        <labelNoLocation>tentacle fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24.6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+            <li>
+              <def>BRF_FleshViruScratch</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right tentacle fist</label>
+        <labelNoLocation>tentacle fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24.6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+            <li>
+              <def>BRF_FleshViruScratch</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>24.6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>BRF_FleshViruScratch</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_ToolUser_RebirthPsycorpse</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <li Class="JobGiver_WanderHerd">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+        </li>       
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_RebirthPsycorpse_PreMain</insertTag>
+        </li>
+		<!-- Wander -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+              <ticksBetweenWandersRange>180~720</ticksBetweenWandersRange>
+              <wanderRadius>6</wanderRadius>
+              <canBashDoors>true</canBashDoors>
+              <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
+            </li>
+          </subNodes>
+        </li>
+		<!-- Fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Insertion hook for modders -->
+        <li Class="ThinkNode_SubtreesByTag">
+          <insertTag>BRF_RebirthPsycorpse_PreWander</insertTag>
+        </li>
+		    <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+  <ThinkTreeDef>
+    <defName>BRF_ToolUser_RebirthPsycorpse_Constant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+		    <li Class="ThinkNode_ConditionalCanDoLordJobNow">
+          <subNodes>
+            <!-- Lord directives -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>LordDutyConstant</treeDef>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+          <subNodes>
+            <li Class="JobGiver_AIFightEnemies">
+              <targetAcquireRadius>65</targetAcquireRadius>
+              <targetKeepRadius>72</targetKeepRadius>
+            </li>
+            <li Class="JobGiver_AITrashColonyClose" />
+            <li Class="JobGiver_AITrashBuildingsDistant" />
+            <li Class="JobGiver_AIGotoNearestHostile" />
+            <li Class="JobGiver_AITrashBuildingsDistant">
+              <attackAllInert>true</attackAllInert>
+            </li>
+            <li Class="JobGiver_WanderAnywhere" />
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

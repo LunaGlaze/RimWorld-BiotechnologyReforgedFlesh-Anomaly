@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ======================== Base ======================== -->
+  <!--振动感知器-->
+    <BodyPartDef>
+        <defName>BRF_Vibration_Sensor</defName>
+        <label>Vibration Sensor</label>
+        <hitPoints>15</hitPoints>
+        <permanentInjuryChanceFactor>20</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>true</skinCovered>
+        <socketed>false</socketed>
+        <beautyRelated>false</beautyRelated>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+    </BodyPartDef>
+  <!--肉腔-->
+	  <BodyPartDef>
+		  <defName>BRF_Cavity</defName>
+		  <label>Flesh Cavity</label>
+	  	<hitPoints>66</hitPoints>
+	  	<frostbiteVulnerability>0.7</frostbiteVulnerability>
+	  	<skinCovered>false</skinCovered>
+	  </BodyPartDef>
+  <!--口器-->
+    <BodyPartDef>
+        <defName>BRF_Mouthparts</defName>
+        <label>Mouthparts</label>
+        <hitPoints>10</hitPoints>
+        <frostbiteVulnerability>0.8</frostbiteVulnerability>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>EatingSource</li>
+        </tags>
+    </BodyPartDef>
+
+ <!--身体构造-->
+  <BodyDef>
+    <defName>BRF_FleshBase</defName>
+    <label>fleshblock-like</label>
+    <corePart>
+      <def>Body</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Heart</def>
+          <coverage>0.020</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>BRF_Cavity</def>
+          <coverage>0.080</coverage>
+          <depth>Outside</depth>
+          <height>Top</height>
+          <groups>
+            <li>Torso</li>
+          </groups>
+          <parts>
+            <li>
+              <def>FleshbeastHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>first eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>secondly eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>tertiary eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>BRF_Vibration_Sensor</def>
+                  <coverage>0.01</coverage>
+                </li>
+                <li>
+                  <def>BRF_Mouthparts</def>
+                  <coverage>0.10</coverage>
+                  <groups>
+                    <li>Teeth</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>first shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>secondly shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>tertiary shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+        </li>
+        <li>
+          <def>FleshbeastLeg</def>
+          <customLabel>first tentacle</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>FleshbeastLeg</def>
+          <customLabel>secondly tentacle</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>FleshbeastLeg</def>
+          <customLabel>tertiary tentacle</customLabel>
+          <coverage>0.1</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+<!-- ======================== living flesh ======================== -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BRF_PeristalticFleshBlob</defName>
+    <label>peristaltic flesh blob</label>
+    <devNote>misc</devNote>
+    <tradeability>None</tradeability>
+    <description>A twisted and wriggling pool of living flesh.</description>
+    <descriptionHyperlinks><ThingDef>BRF_LivingFlesh</ThingDef></descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>1.2</MoveSpeed>
+      <MarketValue>0</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMax>80</ComfyTemperatureMax>
+      <Wildness>0.5</Wildness>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>BRF_FleshBase</body>
+      <predator>true</predator>
+      <maxPreyBodySize>0.25</maxPreyBodySize>
+      <baseBodySize>0.67</baseBodySize>
+      <baseHungerRate>0.09</baseHungerRate>
+      <baseHealthScale>0.6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <petness>0.05</petness>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>200</lifeExpectancy>
+      <trainability>Advanced</trainability>
+      <disableAreaControl>false</disableAreaControl>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.75</minAge>
+          <soundWounded>BRF_MeleeHit_Flesh</soundWounded>
+          <soundDeath>BRF_Pawn_Flesh_Death</soundDeath>
+          <soundCall>BRF_Pawn_Flesh_Call</soundCall>
+          <soundAngry>BRF_Pawn_Flesh_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+      <deathAction Class="DeathActionProperties_Vanish">
+        <workerClass>DeathActionWorker_Vanish</workerClass>
+        <filth>Filth_TwistedFlesh</filth>
+        <filthCountRange>1</filthCountRange>
+        <meatExplosionSize>Small</meatExplosionSize>
+      </deathAction>
+    </race>
+	  <butcherProducts>
+		  <BRF_LivingFlesh>1</BRF_LivingFlesh>
+    </butcherProducts>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+    <comps>
+	    <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		    <gender>Male</gender>
+	    </li>
+	    <li Class="Luna_BRF.CompProperties_DropButcherProductsDead">
+		    <specialDropWithSize>BRF_LivingFlesh</specialDropWithSize>
+		    <minBodySize>0.13</minBodySize>
+		    <perBodySize>0.09</perBodySize>
+	    </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BRF_PeristalticFleshBlob</defName>
+    <label>peristaltic flesh blob</label>
+    <race>BRF_PeristalticFleshBlob</race>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <canArriveManhunter>false</canArriveManhunter>
+    <combatPower>35</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/PeristalticFleshBlob/PeristalticFleshBlob</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/PeristalticFleshBlob/PeristalticFleshBlob</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/PeristalticFleshBlob/PeristalticFleshBlob</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.6</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <rjw.RaceGroupDef MayRequire="rim.job.world">
+		<defName>BRF_PeristalticFleshBlob</defName>
+		<raceNames>
+			<li>BRF_PeristalticFleshBlob</li>
+		</raceNames>
+		<anuses>
+		</anuses>
+		<femaleBreasts>
+		</femaleBreasts>
+		<femaleGenitals>
+			<li>DemonTentaclePenis</li>
+		</femaleGenitals>
+		<maleBreasts>
+		</maleBreasts>
+		<maleGenitals>
+			<li>DemonTentaclePenis</li>
+		</maleGenitals>
+		<tags>
+			<li>Skin</li>
+			<li>animal</li>
+		</tags>
+		<hasSingleGender>true</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+		<oviPregnancy>false</oviPregnancy>
+		<ImplantEggs>false</ImplantEggs>
+  </rjw.RaceGroupDef>
+
+</Defs>

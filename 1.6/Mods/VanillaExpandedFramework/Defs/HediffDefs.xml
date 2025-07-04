@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>BRF_FloatingWithWaterstriding</defName>
+        <label>Floating With Waterstriding</label>
+        <description>Permission to fly and cross waters.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <duplicationAllowed>false</duplicationAllowed>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Waterstriding"/>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>BRF_Waterstriding</defName>
+        <label>Waterstriding</label>
+        <description>Permission to cross waters.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <duplicationAllowed>false</duplicationAllowed>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Waterstriding"/>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

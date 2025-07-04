@@ -5,9 +5,8 @@
 
   <BRF_GoreSpine_FleshMass.label>血棘團塊</BRF_GoreSpine_FleshMass.label>
   <BRF_GoreSpine_FleshMass.description>一種自律生物防禦設施，能向目標發射骨刺造成傷害。在缺乏營養的情況下，這團肉會迅速腐爛。</BRF_GoreSpine_FleshMass.description>
-  <BRF_GoreSpine_FleshMass_Blueprint.label>血棘團塊（藍圖）</BRF_GoreSpine_FleshMass_Blueprint.label>
-  <BRF_GoreSpine_FleshMass_Frame.label>血棘團塊（建造中）</BRF_GoreSpine_FleshMass_Frame.label>
-  <BRF_GoreSpine_FleshMass_Frame.description>一種自律生物防禦設施，能向目標發射骨刺造成傷害。在缺乏營養的情況下，這團肉會迅速腐爛。</BRF_GoreSpine_FleshMass_Frame.description>
+  <BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelGizmoLabel>營養糊劑</BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelLabel>營養糊劑</BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelLabel>
 
 
   <!-- 血棘發射器 -->
@@ -20,9 +19,8 @@
 
   <BRF_SpitterFleshworm.label>噴吐者血肉蠕蟲</BRF_SpitterFleshworm.label>
   <BRF_SpitterFleshworm.description>一種利用血肉心臟神經組織編碼培育出來的肉體生物。它的下半並非是一個與菌毯地面相連的肉塊，上半並非則是一個巨大的蠕蟲狀結構。這種血肉造物需要營養來維持，並能消耗少量營養向相當遠的地方噴射酸液來攻擊敵人。</BRF_SpitterFleshworm.description>
-  <BRF_SpitterFleshworm_Blueprint.label>噴吐者血肉蠕蟲（藍圖）</BRF_SpitterFleshworm_Blueprint.label>
-  <BRF_SpitterFleshworm_Frame.label>噴吐者血肉蠕蟲（建造中）</BRF_SpitterFleshworm_Frame.label>
-  <BRF_SpitterFleshworm_Frame.description>一種利用血肉心臟神經組織編碼培育出來的肉體生物。它的下半並非是一個與菌毯地面相連的肉塊，上半並非則是一個巨大的蠕蟲狀結構。這種血肉造物需要營養來維持，並能消耗少量營養向相當遠的地方噴射酸液來攻擊敵人。</BRF_SpitterFleshworm_Frame.description>
+  <BRF_SpitterFleshworm.comps.CompRefuelable.fuelGizmoLabel>營養糊劑</BRF_SpitterFleshworm.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_SpitterFleshworm.comps.CompRefuelable.fuelLabel>營養糊劑</BRF_SpitterFleshworm.comps.CompRefuelable.fuelLabel>
 
 
   <!-- 血肉噴吐蠕蟲 -->
@@ -31,9 +29,16 @@
   <BRF_FleshSpitterWorm.description>一種利用血肉心臟神經組織編碼培育出來的肉體生物。它的下半並非是一個與菌毯地面相連的肉塊，上半並非則是一個巨大的蠕蟲狀結構。這種血肉造物需要營養來維持，並能消耗少量營養向相當遠的地方噴射酸液來攻擊敵人。</BRF_FleshSpitterWorm.description>
 
 
-  <!-- 酸性涎液 -->
+  <!-- 腐蝕酸液 -->
 
   <BRF_ProjShell_AcidSpit.label>酸性涎液</BRF_ProjShell_AcidSpit.label>
 
+
+  <!-- 靈骸守衛 -->
+
+  <BRF_PsycorpseGuard.label>靈骸守衛</BRF_PsycorpseGuard.label>
+  <BRF_PsycorpseGuard.description>一尊血肉鑄造的屍體魔像，它需要營養來維生。這具血肉魔像看上去十分可怖，但它有著微弱的靈能效應與足以支撐它學會使用遠程武器的低等智能，能夠忠誠地幫助你守衛你都基地。</BRF_PsycorpseGuard.description>
+  <BRF_PsycorpseGuard.comps.CompRefuelable.fuelGizmoLabel>營養糊劑</BRF_PsycorpseGuard.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_PsycorpseGuard.comps.CompRefuelable.fuelLabel>營養糊劑</BRF_PsycorpseGuard.comps.CompRefuelable.fuelLabel>
 
 </LanguageData>

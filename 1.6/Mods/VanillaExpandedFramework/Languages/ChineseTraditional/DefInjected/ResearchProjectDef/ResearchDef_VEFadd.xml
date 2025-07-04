@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+   <!-- 營養管道 -->
+
+   <BRF_FleshNutrientPipelineResearch.label>血肉營養管道系統</BRF_FleshNutrientPipelineResearch.label>
+   <BRF_FleshNutrientPipelineResearch.description>一個管道系統，使用生物管道在系統內輸送營養糊劑，並為活體生物機械提供燃料。管道系統的建造必須在血肉菌毯上進行。</BRF_FleshNutrientPipelineResearch.description>
+
+
+</LanguageData>

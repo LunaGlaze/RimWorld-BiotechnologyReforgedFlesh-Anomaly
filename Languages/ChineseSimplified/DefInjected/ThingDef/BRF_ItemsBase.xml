@@ -59,9 +59,22 @@
   <BRF_ElectrifiedSarcoma.label>带电肉瘤</BRF_ElectrifiedSarcoma.label>
   <BRF_ElectrifiedSarcoma.description>一种携带生物电效应的畸形瘤状组织，是暴力摧毁静电囊泡之后遗留的事物，可以被用于加工创造一些更好的血肉电力设备。</BRF_ElectrifiedSarcoma.description>
 
-  <!-- 下界疣 -->
 
-  <BRF_PurgatoryWarts.label>炼狱疣</BRF_PurgatoryWarts.label>
-  <BRF_PurgatoryWarts.description>一种怪异的疣状肉质真菌。这种奇特的作物可以直接用以医疗，比起草药的效果更差一些。但它更适合使用异常血肉技术制成进阶的医疗用品。</BRF_PurgatoryWarts.description>
+  <!-- 原生心星 -->
+
+  <BRF_RawHeartStart.label>原生心星</BRF_RawHeartStart.label>
+  <BRF_RawHeartStart.description>原生先知第一次死亡后掉落的怪异物体，看上去像是干瘪的猩红色六角海星，但是用力去挤压就会不断地流出腥臭难忍的粘液。它肯定跟原生先知的存续没有任何关系，因为原生先知不需要依靠它存活，也只有刚被召唤出来的时候携带者它。\n\n相比起某种核心，这种东西更像是被其嬗变之后的祭品；我们可以尝试分析它来取得更多可怖的血肉知识。</BRF_RawHeartStart.description>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateDescString>分析原生心星</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateLabelString>分析...</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetter>通过分析原生心星，{PAWN_labelShort}获得了研究{RESEARCH}所必要的知识。\n\n你的研究者现在可以使用研究台开始学习如何实际应用这项科技。</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetterLabel>原生心星分析完毕：解锁{RESEARCH}</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.guiLabelString>选择分析者</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.inspectString>可由一名殖民者进行分析。</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.inspectString>
+  <BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.jobString>分析原生心星</BRF_RawHeartStart.comps.CompAnalyzableUnlockResearch.jobString>
+
+  <!-- 绯红超凡晶核 -->
+
+  <BRF_CrimsonArchocrystal.label>绯红超凡晶核</BRF_CrimsonArchocrystal.label>
+  <BRF_CrimsonArchocrystal.description>一团生长在诡异而扭曲的肉块上的超自然晶体。其内部蕴含着强大的灵能力量，在正确的情况下能够诱发血肉的升华。</BRF_CrimsonArchocrystal.description>
 
 </LanguageData>

@@ -11,7 +11,7 @@ namespace Luna_BRF
 
 		public override void Generate(Map map, GenStepParams parms)
 		{
-			Thing pitGateExit = map.listerThings.ThingsOfDef(ThingDefOf.PitGateExit).FirstOrDefault();
+			Thing pitGateExit = map.listerThings.ThingsOfDef(ThingDef.Named("PitGateExit")).FirstOrDefault();
 			Pawn dreadmeld = map.mapPawns.AllPawnsSpawned.FirstOrDefault((Pawn p) => p.kindDef == PawnKindDefOf.Dreadmeld);
 			int randomInRange = PrimordialFleshBeastPointCountRange.RandomInRange + anomalyNum;
 			List<IntVec3> interestPoints = new List<IntVec3>();

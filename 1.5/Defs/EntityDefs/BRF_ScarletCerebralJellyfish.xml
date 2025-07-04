@@ -13,6 +13,7 @@
     </linkedThings>
     <discoveredResearchProjects>
       <li>BRF_LowerNeuralSymbiosis</li>
+      <li>BRF_CrimsonLuciferFleshferriumResearch</li>
     </discoveredResearchProjects>
     <provocationIncidents>
       <li>BRF_ScarletCerebralJellyfishAssault</li>
@@ -365,7 +366,7 @@
       <foodType>None</foodType>
       <bloodDef>Filth_Blood</bloodDef>
       <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
-      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
       <trainability>None</trainability>
       <fleshType>Fleshbeast</fleshType>
       <isImmuneToInfections>true</isImmuneToInfections>
@@ -391,14 +392,14 @@
     <description>A grotesque aberrant flesh creature that appears to be jellyfish-like, but does not live in the water at all, instead floating in the air. The creature seems to have a penchant for probing its tentacles into the brains of its victims, injecting bizarre chemicals that contain microscopic archites with addictive nanomechanical drugs and controlling their behavior.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
-      <MinimumContainmentStrength>110</MinimumContainmentStrength>
+      <MinimumContainmentStrength>85</MinimumContainmentStrength>
     </statBases>
     <uiIconPath>UI/Codexentries/BRF_ScarletCerebralJellyfish</uiIconPath>
     <race>
       <body>BRF_ScarletCerebralJellyfishBody</body>
       <baseBodySize>0.6</baseBodySize>
-      <baseHealthScale>6</baseHealthScale>
-      <lifeExpectancy>5000</lifeExpectancy>
+      <baseHealthScale>4.5</baseHealthScale>
+      <lifeExpectancy>1000</lifeExpectancy>
       <renderTree>BRF_ScarletCerebralJellyfishRenderTree</renderTree>
       <lifeStageAges>
         <li>
@@ -443,7 +444,7 @@
         <requiresHoldingPlatform>true</requiresHoldingPlatform>
       </li>
       <li Class="CompProperties_ProducesBioferrite">
-        <bioferriteDensity>2</bioferriteDensity>
+        <bioferriteDensity>3.5</bioferriteDensity>
       </li>
       <li>
         <compClass>Luna_BRF.CompScarletCerebralJellyfish</compClass>

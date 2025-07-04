@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="ImplantHediffBase" Name="BRF_AddArchoFleshImplantHediffBase" Abstract="True">
+        <tags>
+            <li>BRF_FleshReforge</li>
+            <li>BRF_ArchoRebirth</li>
+        </tags>
+    </HediffDef>
+    <HediffDef ParentName="BRF_AddedBodyPartMutationBase" Name="BRF_AddArchoFleshBodyPartHediffBase" Abstract="True">
+        <tags>
+            <li>BRF_ArchoRebirth</li>
+        </tags>
+    </HediffDef>
+    <HediffDef ParentName="BRF_AddArchoFleshBodyPartHediffBase" Name="BRF_ArchoRebirthBodyPartHediff" Abstract="True">
+		    <defaultLabelColor>(255,78,80)</defaultLabelColor>
+        <comps>
+            <li Class="Luna_BRF.HediffCompProperties_InfectionsWithoutAkuloth"/>
+        </comps>
+    </HediffDef>
+    
+<!--神圣的白虫-->
+
+  <ThingDef ParentName="BodyPartBase">
+    <defName>BRF_Akuloth_Bionic</defName>
+    <label>Akuloth</label>
+    <description>A type of symbiotic organisms that act as a secondary immune system, protecting the host against disease as well as greatly increasing their regenerative abilities. These symbiotic organisms cannot be easily installed by mortal medical skills, but require a certain bloody ritual to achieve symbiosis.</description>
+	<graphicData>
+	    <texPath>Items/Bionic/BRF_Akuloth_Bionic</texPath>
+	    <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.80</drawSize>
+	</graphicData>
+    <descriptionHyperlinks>
+        <HediffDef>BRF_Akuloth</HediffDef>
+    </descriptionHyperlinks>
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+      <li>BRF_Things_FreshShell_ArchoRebirth</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_CrimsonAltar</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+        <Intellectual>8</Intellectual>
+        <Medicine>6</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>BRF_WhiteWormTantraResearch</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>1</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	  <tradeability>None</tradeability>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <Corpse_BRF_BloodstainedTick>1</Corpse_BRF_BloodstainedTick>
+      <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
+      <BRF_ScarletFerrite>6</BRF_ScarletFerrite>
+      <BRF_LivingFlesh>25</BRF_LivingFlesh>
+      <BRF_GelatinousFlesh>50</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Insect>75</BRF_ReforgedMeat_Insect>
+    </costList>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+
+  <HediffDef ParentName="BRF_AddedNeuralSymbiosisPartBase">
+    <defName>BRF_Akuloth</defName>
+    <hediffClass>Luna_BRF.Hediff_Akuloth</hediffClass>
+    <label>Akuloth</label>
+    <description>A type of symbiotic organisms that act as a secondary immune system, protecting the host against disease as well as greatly increasing their regenerative abilities. It prevents deadly infections caused by the archotech flesh bionic, and periodically reduces the severity of existing diseases.</description>
+    <descriptionHyperlinks><ThingDef>BRF_Akuloth_Bionic</ThingDef></descriptionHyperlinks>
+    <defaultInstallPart>Heart</defaultInstallPart>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <isBad>false</isBad>
+    <duplicationAllowed>false</duplicationAllowed>
+    <stages>
+      <li>
+        <painOffset>-0.06</painOffset>
+        <partEfficiencyOffset>0.25</partEfficiencyOffset>
+        <regeneration>50</regeneration>
+        <statOffsets>
+          <ImmunityGainSpeed>0.75</ImmunityGainSpeed>
+          <InjuryHealingFactor>0.2</InjuryHealingFactor>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.1</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--重生系列（基础超凡仿生体）-->
+
+	<ThingDef Name="BRF_ArchoRebirthBodyPartBase" ParentName="BodyPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(229,63,61)</color>
+		</graphicData>
+        <descriptionHyperlinks>
+            <HediffDef>BRF_Akuloth</HediffDef>
+        </descriptionHyperlinks>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>BodyPartsNatural</li>
+      <li>BRF_Things_FreshShell_ArchoRebirth</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>0.0</DeteriorationRate>
+      <WorkToMake>7500</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+    <techLevel>Archotech</techLevel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>BRF_CrimsonAltar</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+        <Intellectual>6</Intellectual>
+        <Medicine>4</Medicine>
+      </skillRequirements>
+      <researchPrerequisite>BRF_RedHarvestTantraResearch</researchPrerequisite>
+    </recipeMaker>
+	</ThingDef>
+	
+  <!-- 心 -->
+  
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthHeart</defName>
+    <label>rebirth flesh heart</label>
+    <labelNoun>an rebirth flesh heart</labelNoun>
+    <description>An installed rebirth flesh heart. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthHeart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <partEfficiencyOffset>0.25</partEfficiencyOffset>
+        <totalBleedFactor>0.5</totalBleedFactor>
+        <naturalHealingFactor>2</naturalHealingFactor>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+        </statOffsets>
+    	<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.05</offset>
+				</li>
+			</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthHeart</defName>
+    <label>rebirth flesh heart</label>
+    <description>Heart made of reborn flesh and dark archotech shard. Not only does it not beat so fast that it is unbearable, it also allows the implantee to perform intense exercise at superhuman levels for a long time. It can also manipulate the body's blood circulation system in a way that not only allows more blood to flow to the brain faster to increase consciousness, but also allows blood with more platelets and clotting factors to flow to the wound, thereby increasing the speed of self-healing. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshHeart</defName>
+    <label>install rebirth flesh heart</label>
+    <description>Install an rebirth flesh heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthHeart</ThingDef>
+      <HediffDef>BRF_ArchoRebirthHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthHeart</addsHediff>
+  </RecipeDef>
+
+  <!-- 肺 -->
+  
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthLung</defName>
+    <label>rebirth flesh lung</label>
+    <labelNoun>an rebirth flesh lung</labelNoun>
+    <description>An installed rebirth flesh lung. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <preventsLungRot>true</preventsLungRot>
+    <descriptionHyperlinks>
+    <ThingDef>BRF_ArchoRebirthLung</ThingDef>
+    <HediffDef>LungRot</HediffDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+          <ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+        </statOffsets>
+      	<capMods>
+				<li>
+					<capacity>Breathing</capacity>
+					<offset>0.05</offset>
+				</li>
+			  </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthLung</defName>
+    <label>rebirth flesh lung</label>
+    <description>Lung made of reborn flesh and dark archotech shard. It can extract a tiny amount of oxygen from the planet's exosphere where life cannot survive, and can also completely filter out corrosive gases that are harmful to the human body (not affected by lung plague and acid mist). The implanted person not only gains strong immunity, but can also walk freely under toxic dust for a long time. A reborn flesh lung can even approach the function of two normal human lungs. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshLung</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>65</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshLung</defName>
+    <label>install rebirth flesh lung</label>
+    <description>Install an rebirth flesh lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthLung</ThingDef>
+      <HediffDef>BRF_ArchoRebirthLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthLung</addsHediff>
+  </RecipeDef>
+
+  <!-- 肾 -->
+  
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthKidney</defName>
+    <label>rebirth flesh kidney</label>
+    <labelNoun>an rebirth flesh kidney</labelNoun>
+    <description>An installed rebirth flesh kidney. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+          <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+          <ToxicResistance>0.30</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthKidney</defName>
+    <label>rebirth flesh kidney</label>
+    <description> made of reborn flesh and dark archotech shard. It can powerfully and quickly filter out toxins, radioactive substances and various pathogens in the human body, greatly enhancing the recipient's resistance to toxins. One rebirth flesh kidney can even approach the function of two normal human kidneys. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshKidney</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>0.25</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>65</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshKidney</defName>
+    <label>install rebirth flesh kidney</label>
+    <description>Install an rebirth flesh kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthKidney</ThingDef>
+      <HediffDef>BRF_ArchoRebirthKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthKidney</addsHediff>
+  </RecipeDef>
+
+  <!-- 肝 -->
+  
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthLiver</defName>
+    <label>rebirth flesh liver</label>
+    <labelNoun>an rebirth flesh liver</labelNoun>
+    <description>An installed rebirth flesh liver. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthLiver</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+          <ToxicResistance>0.40</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthLiver</defName>
+    <label>rebirth flesh liver</label>
+    <description> made of reborn flesh and dark archotech shard. It can quickly dissolve any kind of chemical toxins and neutralize radioactive substances through physical reactions that humans have not yet known. When combined with the reborn flesh kidney, it can make the implanter completely immune to the negative effects of toxins. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshLiver</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.25</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshLiver</defName>
+    <label>install rebirth flesh liver</label>
+    <description>Install an rebirth flesh liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthLiver</ThingDef>
+      <HediffDef>BRF_ArchoRebirthLiver</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthLiver</addsHediff>
+  </RecipeDef>
+
+  <!-- 眼 -->
+  
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthEye</defName>
+    <label>rebirth flesh eye</label>
+    <labelNoun>an rebirth flesh eye</labelNoun>
+    <description>An installed rebirth flesh eye. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthEye</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthEye</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+        <!-- MaxHitPoints>15</MaxHitPoints -->
+        <AimingDelayFactor>-0.10</AimingDelayFactor>
+        <MeleeHitChance>2</MeleeHitChance>
+        <MeleeDodgeChance>2</MeleeDodgeChance>
+        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        </statOffsets>
+        <capMods>
+		    <li>
+				  <capacity>Sight</capacity>
+				  <offset>0.25</offset>
+			  </li>
+		    </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthEye</defName>
+    <label>rebirth flesh eye</label>
+    <description>Eyes made of reborn flesh and dark archotech shard. It can greatly improve the vision of the implanter. The trajectory of things moving will become slow in the eyes of the implanter, and the ability to adjust to near and far will also be greatly improved. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and tries to defend yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshEye</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>0.25</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshEye</defName>
+    <label>install rebirth flesh eye</label>
+    <description>Install an rebirth flesh eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthEye</ThingDef>
+      <HediffDef>BRF_ArchoRebirthEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthEye</addsHediff>
+  </RecipeDef>
+
+  <!-- 手 -->
+	
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthArm</defName>
+    <label>rebirth flesh arm</label>
+    <labelNoun>an rebirth flesh arm</labelNoun>
+    <description>An installed rebirth flesh arm. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>18</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>BRF_ArchoRebirthArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>30</MaxHitPoints -->
+          <WorkSpeedGlobal>0.075</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+		    <li>
+				  <capacity>Manipulation</capacity>
+				  <offset>0.1</offset>
+			  </li>
+		    </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthArm</defName>
+    <label>rebirth flesh arm</label>
+    <description> made of reborn flesh and dark archotech shard. It's strong enough to crush a thick hardwood branch in your hand, and strong enough to write a sonnet on a grain of rice. It looks exactly like normal muscle, but is more difficult to damage than plastic once implanted in the body. Even if it is damaged, it will repair itself over time. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshArm</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>100</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshArm</defName>
+    <label>install rebirth flesh arm</label>
+    <description>Install an rebirth flesh arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthArm</ThingDef>
+      <HediffDef>BRF_ArchoRebirthArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthArm</addsHediff>
+  </RecipeDef>
+
+  <!-- 脚 -->
+	
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthLeg</defName>
+    <label>rebirth flesh leg</label>
+    <labelNoun>an rebirth flesh leg</labelNoun>
+    <description>An installed rebirth flesh leg. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>0.35</MoveSpeed>
+          <!-- MaxHitPoints>30</MaxHitPoints -->
+        </statOffsets>
+			</li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthLeg</defName>
+    <label>rebirth flesh leg</label>
+    <description> made of reborn flesh and dark archotech shard. It looks exactly like normal muscle, but a pair of these legs can allow a person to move as fast as a decent car, and once implanted in the body it is harder to damage than plastic. Even if it is damaged, it will repair itself over time. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshLeg</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>7</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>100</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshLeg</defName>
+    <label>install rebirth flesh leg</label>
+    <description>Install an rebirth flesh leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthLeg</ThingDef>
+      <HediffDef>BRF_ArchoRebirthLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthLeg</addsHediff>
+  </RecipeDef>
+
+  <!-- 耳 -->
+
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthEar</defName>
+    <label>rebirth flesh ear</label>
+    <labelNoun>an rebirth flesh ear</labelNoun>
+    <description>An installed rebirth flesh ear. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthEar</ThingDef></descriptionHyperlinks>
+    <stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+          <PawnBeauty>0.5</PawnBeauty>
+          <NegotiationAbility>0.05</NegotiationAbility>
+          <TradePriceImprovement>0.01</TradePriceImprovement>
+          <SocialImpact>0.05</SocialImpact>
+        </statOffsets>
+        <capMods>
+		    <li>
+				  <capacity>Hearing</capacity>
+				  <offset>0.25</offset>
+			  </li>
+		    </capMods>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>BRF_ArchoRebirthEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthEar</defName>
+    <label>rebirth flesh ear</label>
+    <description> made of reborn flesh and dark archotech shard. The outer ear can be freely shaped according to the wishes of the implanter. It can hear tiny sounds like a mosquito's heartbeat, and can also accurately filter out key words in a small room full of people. Through the internal archo biological sound wave analysis structure, it can analyze the sounds made by animals to perceive the vague emotions of the target, which can be used for socializing and also assist in animal training. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshEar</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases> 
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshEar</defName>
+    <label>install rebirth flesh ear</label>
+    <description>Install an rebirth flesh ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthEar</ThingDef>
+      <HediffDef>BRF_ArchoRebirthEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthEar</addsHediff>
+  </RecipeDef>
+
+  <!-- 鼻 -->
+
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthNose</defName>
+    <label>rebirth flesh nose</label>
+    <labelNoun>an rebirth flesh nose</labelNoun>
+    <description>An installed rebirth flesh nose. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthNose</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <!-- MaxHitPoints>15</MaxHitPoints -->
+          <PawnBeauty>1</PawnBeauty>
+          <ForagedNutritionPerDay>3</ForagedNutritionPerDay>
+          <ToxicEnvironmentResistance>0.15</ToxicEnvironmentResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthNose</defName>
+    <label>rebirth flesh nose</label>
+    <description> made of reborn flesh and dark archotech shard. It can be freely shaped to suit the viewer's aesthetic taste. Its sensitivity is stronger than that of the best genetically engineered hounds, greatly enhancing the implanter's sense of smell, allowing it to distinguish various flavors and tiny scents (which is helpful for finding rare ingredients in the wild). \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallRebirthFleshNose</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>850</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallRebirthFleshNose</defName>
+    <label>install rebirth flesh nose</label>
+    <description>Install an rebirth flesh nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthNose</ThingDef>
+      <HediffDef>BRF_ArchoRebirthNose</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthNose</addsHediff>
+  </RecipeDef>
+
+  <!-- 胃 -->
+
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthStomach</defName>
+    <label>rebirth flesh stomach</label>
+    <labelNoun>an rebirth flesh stomach</labelNoun>
+    <description>An installed rebirth flesh stomach. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthStomach</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	  <stages>
+      <li>
+        <hungerRateFactor>0.25</hungerRateFactor>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <statOffsets>
+        <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">0.8</RawNutritionFactor>
+        </statOffsets>
+        <capMods>
+		    <li>
+				  <capacity>Metabolism</capacity>
+				  <offset>0.25</offset>
+			  </li>
+		    </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthStomach</defName>
+    <label>rebirth flesh stomach</label>
+    <description> made of reborn flesh and dark archotech shard. It has extremely powerful digestive abilities and can effectively break down all nutrients in food. It can not only increase the energy acquisition rate and thus reduce hunger, but the gastric acid it produces is dozens of times stronger than a normal stomach, even stronger than scavengers, making it completely immune to any food poisoning. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallReforgedFleshStomach</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3250</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallReforgedFleshStomach</defName>
+    <label>install rebirth flesh stomach</label>
+    <description>Install an rebirth flesh stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthStomach</ThingDef>
+      <HediffDef>BRF_ArchoRebirthStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthStomach</addsHediff>
+  </RecipeDef>
+
+  <!-- 脊柱 -->
+
+  <HediffDef ParentName="BRF_ArchoRebirthBodyPartHediff">
+    <defName>BRF_ArchoRebirthSpine</defName>
+    <label>rebirth flesh spine</label>
+    <labelNoun>an rebirth flesh spine</labelNoun>
+    <description>An installed rebirth flesh spine. If implanted without Akuloth, the recipient will continue to suffer the backlash of the infection.</description>
+    <descriptionHyperlinks><ThingDef>BRF_ArchoRebirthSpine</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BRF_ArchoRebirthSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+		<statOffsets>
+            <!-- MaxHitPoints>15</MaxHitPoints -->
+			<CarryingCapacity>+50</CarryingCapacity>
+		</statOffsets>
+    <statFactors>
+      <CarryingCapacity>1.25</CarryingCapacity>
+    </statFactors>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.20</offset>
+			</li>
+		</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BRF_ArchoRebirthBodyPartBase">
+    <defName>BRF_ArchoRebirthSpine</defName>
+    <label>rebirth flesh spine</label>
+    <description> made of reborn flesh and dark archotech shard. Its amazing flexibility would make a cat jealous, and when it is straightened, it is strong enough to support a small car. Its significant enhancement of central muscle strength also indirectly improves the operating ability of the implant recipient. \n You are not a hypocrite who kills hundreds of people for their rotten bodies and then tries to justify yourself afterwards, right?</description>
+    <descriptionHyperlinks><RecipeDef>BRF_InstallReforgedFleshSpine</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <costList>
+      <BRF_CrimsonArchocrystal>1</BRF_CrimsonArchocrystal>
+      <BRF_GelatinousFlesh>10</BRF_GelatinousFlesh>
+      <BRF_BoneFragment>15</BRF_BoneFragment>
+      <BRF_ReforgedMeat_Human>50</BRF_ReforgedMeat_Human>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+    <defName>BRF_InstallReforgedFleshSpine</defName>
+    <label>install rebirth flesh spine</label>
+    <description>Install an rebirth flesh spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_ArchoRebirthSpine</ThingDef>
+      <HediffDef>BRF_ArchoRebirthSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing rebirth flesh spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ArchoRebirthSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BRF_ArchoRebirthSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BRF_ArchoRebirthSpine</addsHediff>
+  </RecipeDef>
+
+
+</Defs>

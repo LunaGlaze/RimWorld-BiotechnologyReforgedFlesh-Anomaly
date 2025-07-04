@@ -85,3 +85,36 @@
  - 提升骨质遗骸类材料产出/Enhance the output of bone remains materials.
  - 稍微下调了肢团的攻击能力/Slightly reduced the attack function of Clump.
  - 优化猩红脑蜇索敌代码，不再对机械体使用能力/Optimize Scarlet Cerebral Jellyfish's enemy search code to no longer use the ability on mech.
+
+ [v0.4.0]
+ - 重绘部分旧版纹理。/Repainted some old textures.
+ - 修复了部分贴图错误。/Fixed some texture errors.
+ - 规范语言文件Key前缀。/Standard language file Key prefix.
+ - 为蠕动肉块添加可训练性，并提升其生命、体型与生长周期等属性，降低占用点数。/Add trainability to the peristaltic flesh blob and enhance its attributes such as lifespan, body size, and growth cycle to reduce combat power consumption.
+ - 修复血肉温床直接生成成年蠕动肉块的bug。/Fixed the bug where Primordial Flesh Crash directly generates adult Peristaltic Flesh Blob.
+ - 修改蠕动肉块产物逻辑，由屠宰变为死亡掉落，并根据当前体型可获得更多鲜活肉块。/Modify the peristaltic flesh blob product logic from slaughter to drop upon death, and obtain more living flesh based on current body size.
+ - 提升肢团占用的袭击点数。/Increase the attack points occupied by Clump.
+ - 修复了肢团恢复能力的判断函数中小数点位置错误的bug。/Fixed the bug that the decimal point position was wrong in the judgment function of Clump's recovery ability.
+ - 修复血肉立方无法制作的问题。/Fix bug that Recast Flesh Cube couldn't craft.
+ - 调整部分需要食物作为燃料的建筑可用燃料列表，禁止部分高价值食物被作为燃料消耗。/Adjusted the available fuel list for some buildings that require food as fuel, prohibiting some high-value food from being consumed as fuel.
+ - 修复模组内特殊武器可能错误地出现在遗迹战利品列表的bug。/Fixed a bug where special weapons in the mod could incorrectly appear in the list of loot in the ruins.
+ - 修改部分研究科技等级与所需点数。/Modified some research's techLevel and required points.
+ - 为肢体守卫添加复活能力。/Added resurrection ability to (Frankenstein's) Limb Guard.
+ - 大幅减少了绯红活菌与猩红脑蜇的额外再生点数。/Significantly reduced the amount of additional regeneration points for Crimson Living Fungi and Scarlet Cerebral Jellyfish.
+ - 添加了一个新的仪式专门用以召唤本mod内的袭击。/Added a new ritual specifically for summoning raids within this mod.
+ - 添加新实体血藤行尸。/Added new entity Bloodvine Zombie.
+ - 添加新实体棘刃血蛆。/Added new entity Thornblade Blood Maggot.
+ - 添加新科技血肉发射器。/Added new tech Flesh Shooter.
+ - 添加新高级血肉枪械。/Added new advanced flesh guns.
+ - 添加新实体重生灵骸。/Added new entity Rebirth Psycorpse.
+ - 添加新科技灵骸魔像与可自行装备武器的防御塔。/Added new tech Psycorpse Golem and defense towers that can equip their own weapons.
+ - 添加新实体原生先知与相关科技。/Added new entity Raw Prophet and some tech about it.
+ - 完成超凡科技基本框架。/Finish the base framework of Archotech Research Project.
+ - 添加神圣的白虫与基础超凡血肉仿生体。/Added Holy White Worm (Akuloth) and Basic Archotech Flesh Bionics.
+ - 添加高级脑蛞蝓仿生体。/Added Advanced Brain Slug Bionics.
+ - 添加新的冥想类型“血肉”。/Added new meditation focus type of Flesh.
+ - 添加新仪式“启迪仪式”以获取欲肉教特质。/Added new Psychic Ritual to gain Sarkicism trait.
+ - 添加可以自行铺设的血肉菌毯。/Added new type of Flesh Blanket, which can lay down by self.
+ - 更新至1.6。/Update to 1.6.
+ - 为部分实体添加真空抗性（仅1.6）/Added VacuumResistance to some enitities (Only 1.6).
+ - 1.5版本后续更新将不再维护。/Version 1.5 will no longer be maintained in subsequent updates.

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--血肉科技魔鬼素-->
+  <ThingDef ParentName="DrugPillBase">
+    <defName>BRF_CrimsonLuciferFleshferrium</defName>
+    <label>Crimson Lucifer Fleshferrium</label>
+    <description>These scarlet, ominous pills have a similar effect to the luciferium at legendary. They are recast from the remains of flesh and blood entities through multiple processes with an organic metal-like fibrous substance.\n\n Contained within them are a large number of nanobots created using technology from a flesh hyperintelligent archotech mind that dramatically improve the body's functioning in all respects. Over time, it can even heal old scarred-over wounds or brain damage, though it cannot regenerate lost limbs. Unfortunately, without the moderating effects of regular doses every five or six days, the mechanites lose cohesion, causing continuous berserk rages and, eventually, death.\n\n Fortunately, although it causes malignant flesh activation, it can be used interchangeably with luciferium to delay the final countdown.</description>
+    <descriptionHyperlinks>
+      <HediffDef>LuciferiumHigh</HediffDef>
+      <HediffDef>LuciferiumAddiction</HediffDef>
+      <HediffDef>BRF_MalignantFleshActivation</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Luciferium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(154,34,33)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>70</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LuciferiumHigh</hediffDef>
+          <severity>1.00</severity>
+          <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BRF_MalignantFleshActivation</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Luciferium</chemical>
+        <addictiveness>1.00</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1010</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+    <costList>
+      <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+      <BRF_Scarletamine>2</BRF_Scarletamine>
+      <BRF_MedicineRefiningFlesh>4</BRF_MedicineRefiningFlesh>
+      <BRF_ReforgedMeat_Harbinger>5</BRF_ReforgedMeat_Harbinger>
+      <BRF_GelatinousFlesh>6</BRF_GelatinousFlesh>
+      <BRF_LivingFlesh>7</BRF_LivingFlesh>
+      <BRF_ScarletFerrite>8</BRF_ScarletFerrite>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>BRF_CrimsonAltar</li>
+      </recipeUsers>
+      <researchPrerequisite>BRF_CrimsonLuciferFleshferriumResearch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+        <Intellectual>14</Intellectual>
+      </skillRequirements>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <displayPriority>5000</displayPriority>
+    </recipeMaker>
+    <tradeability>None</tradeability>
+  </ThingDef>
+
+</Defs>

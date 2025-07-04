@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_BRF_PrimordialTwistedFlesh</defName>
+    <label>Primordial Twisted Flesh</label>
+    <statBases>
+      <Beauty>-50</Beauty>
+      <Cleanliness>-20</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Items/Filth/BRF_PrimordialTwistedFlesh</texPath>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>10~15</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>80</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+  </ThingDef>
+
+</Defs>

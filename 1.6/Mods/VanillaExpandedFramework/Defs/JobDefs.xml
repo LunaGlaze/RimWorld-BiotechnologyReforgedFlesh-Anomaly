@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>BRF_RefuelDigesterIPipe</defName>
+		<driverClass>Luna_BRF_VEFAssemblies.JobDriver_RefuelDigesterIPipe</driverClass>
+		<reportString>refueling TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>BRF_RefuelDigesterIPipe_Atomic</defName>
+		<driverClass>Luna_BRF_VEFAssemblies.JobDriver_RefuelDigesterIPipeAtomic</driverClass>
+		<reportString>refueling TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+</Defs>

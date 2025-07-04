@@ -5,9 +5,8 @@
 
   <BRF_GoreSpine_FleshMass.label>血棘团块</BRF_GoreSpine_FleshMass.label>
   <BRF_GoreSpine_FleshMass.description>一种自律生物防御设施，能向目标发射骨刺造成伤害。在缺乏营养的情况下，这团肉会迅速腐烂。</BRF_GoreSpine_FleshMass.description>
-  <BRF_GoreSpine_FleshMass_Blueprint.label>血棘团块（蓝图）</BRF_GoreSpine_FleshMass_Blueprint.label>
-  <BRF_GoreSpine_FleshMass_Frame.label>血棘团块（建造中）</BRF_GoreSpine_FleshMass_Frame.label>
-  <BRF_GoreSpine_FleshMass_Frame.description>一种自律生物防御设施，能向目标发射骨刺造成伤害。在缺乏营养的情况下，这团肉会迅速腐烂。</BRF_GoreSpine_FleshMass_Frame.description>
+  <BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelGizmoLabel>营养糊剂</BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelLabel>营养糊剂</BRF_GoreSpine_FleshMass.comps.CompRefuelable.fuelLabel>
 
 
   <!-- 血棘发射器 -->
@@ -20,9 +19,8 @@
 
   <BRF_SpitterFleshworm.label>喷吐者血肉蠕虫</BRF_SpitterFleshworm.label>
   <BRF_SpitterFleshworm.description>一种利用血肉心脏神经组织编码培育出来的肉体生物。它的下半并非是一个与菌毯地面相连的肉块，上半并非则是一个巨大的蠕虫状结构。这种血肉造物需要营养来维持，并能消耗少量营养向相当远的地方喷射酸液来攻击敌人。</BRF_SpitterFleshworm.description>
-  <BRF_SpitterFleshworm_Blueprint.label>喷吐者血肉蠕虫（蓝图）</BRF_SpitterFleshworm_Blueprint.label>
-  <BRF_SpitterFleshworm_Frame.label>喷吐者血肉蠕虫（建造中）</BRF_SpitterFleshworm_Frame.label>
-  <BRF_SpitterFleshworm_Frame.description>一种利用血肉心脏神经组织编码培育出来的肉体生物。它的下半并非是一个与菌毯地面相连的肉块，上半并非则是一个巨大的蠕虫状结构。这种血肉造物需要营养来维持，并能消耗少量营养向相当远的地方喷射酸液来攻击敌人。</BRF_SpitterFleshworm_Frame.description>
+  <BRF_SpitterFleshworm.comps.CompRefuelable.fuelGizmoLabel>营养糊剂</BRF_SpitterFleshworm.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_SpitterFleshworm.comps.CompRefuelable.fuelLabel>营养糊剂</BRF_SpitterFleshworm.comps.CompRefuelable.fuelLabel>
 
 
   <!-- 血肉喷吐蠕虫 -->
@@ -35,5 +33,12 @@
 
   <BRF_ProjShell_AcidSpit.label>酸性涎液</BRF_ProjShell_AcidSpit.label>
 
+
+  <!-- 灵骸守卫 -->
+
+  <BRF_PsycorpseGuard.label>灵骸守卫</BRF_PsycorpseGuard.label>
+  <BRF_PsycorpseGuard.description>一尊血肉铸造的尸体魔像，它需要营养来维生。这具血肉魔像看上去十分可怖，但它有着微弱的灵能效应与足以支撑它学会使用远程武器的低等智能，能够忠诚地帮助你守卫你都基地。</BRF_PsycorpseGuard.description>
+  <BRF_PsycorpseGuard.comps.CompRefuelable.fuelGizmoLabel>营养糊剂</BRF_PsycorpseGuard.comps.CompRefuelable.fuelGizmoLabel>
+  <BRF_PsycorpseGuard.comps.CompRefuelable.fuelLabel>营养糊剂</BRF_PsycorpseGuard.comps.CompRefuelable.fuelLabel>
 
 </LanguageData>

@@ -12,7 +12,7 @@ namespace Luna_BRF
 
         private int tickerMax = 256;
 		public ExtensionDef_ClentaminatorList defExtension => this.def.GetModExtension<ExtensionDef_ClentaminatorList>();
-		public override void Tick()
+		protected override void Tick()
 		{
 			base.Tick();
 			if(defExtension != null)
@@ -83,7 +83,7 @@ namespace Luna_BRF
 											pawn1.Strip(false);
 											pawn1.Destroy();
 										}
-										else if (pawn1.RaceProps.IsFlesh && !pawn1.kindDef.IsFleshBeast() && !pawn1.RaceProps.IsAnomalyEntity && (!pawn1.IsMutant || !pawn1.mutant.Def.isImmuneToInfections)) {
+										else if (pawn1.RaceProps.IsFlesh && !pawn1.kindDef.IsFleshBeast() && !pawn1.RaceProps.IsAnomalyEntity && !pawn1.IsShambler && !pawn1.mutant.Def.isImmuneToInfections) {
 											IEnumerable<BodyPartRecord> lungList = LunaBRFHediffUtility.GetLungWithoutFleshReforgeBodyParts(pawn1);
 											if (!defExtension.fleshTypeWithoutBRFLung || (defExtension.fleshTypeWithoutBRFLung && !lungList.EnumerableNullOrEmpty()))
                                             {
@@ -101,7 +101,7 @@ namespace Luna_BRF
 										{
 											if (defExtension.hediffDefGiveMechanoid != null)
 											{
-												HealthUtility.AdjustSeverity(pawn1, defExtension.hediffDefGiveMechanoid, 0.0075f);
+												HealthUtility.AdjustSeverity(pawn1, defExtension.hediffDefGiveMechanoid, 0.01f);
 											}
 											if (defExtension.takeDamageFleshWithoutEntity != null)
 											{

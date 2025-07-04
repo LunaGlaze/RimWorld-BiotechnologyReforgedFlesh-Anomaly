@@ -14,6 +14,14 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>BRF_Flesh</li>
+        </focusTypes>
+      </li>
+    </comps>
   </ThingDef>
 <!--血肉监视者-->
   <ThingDef ParentName="BRF_BuildingFunctionallBase">

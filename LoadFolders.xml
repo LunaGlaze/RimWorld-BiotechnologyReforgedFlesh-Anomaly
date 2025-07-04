@@ -9,4 +9,11 @@
 		<li IfModActive="automatic.bionicicons">1.5/Mods/Bionicicons</li>
 		<li IfModActive="ninedaylongbow.ChineseComprehensiveExpansion">1.5/Mods/ChineseComprehensiveExpansion</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.6/Mods/VanillaExpandedFramework</li>
+		<li IfModActive="automatic.bionicicons">1.6/Mods/Bionicicons</li>
+		<li IfModActive="ninedaylongbow.ChineseComprehensiveExpansion">1.6/Mods/ChineseComprehensiveExpansion</li>
+	</v1.6>
 </loadFolders>

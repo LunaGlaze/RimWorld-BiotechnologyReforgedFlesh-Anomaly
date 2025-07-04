@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--实体类型-->
+  <EntityCodexEntryDef>
+    <defName>BRF_Clump</defName>
+    <label>Clump</label>
+    <category>Advanced</category>
+    <useDescriptionFrom>BRF_Clump</useDescriptionFrom>
+    <uiIconPath>UI/Codexentries/BRF_Clump</uiIconPath>
+    <discoveryType>Unfog</discoveryType>
+    <linkedThings>
+      <li>BRF_Clump</li>
+    </linkedThings>
+    <discoveredResearchProjects>
+      <li>BRF_LimbGuardResearch</li>
+      <li>BRF_SummonClumpsResearch</li>
+    </discoveredResearchProjects>
+    <provocationIncidents>
+      <li>BRF_ClumpAssault</li>
+    </provocationIncidents>
+    <orderInCategory>2420</orderInCategory>
+  </EntityCodexEntryDef>
+<!--身体定义-->
+	<BodyPartDef>
+		<defName>BRF_BigMouth</defName>
+		<label>Big Mouth</label>
+		<hitPoints>75</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyDef>
+		<defName>BRF_ClumpBody</defName>
+		<label>clump</label>
+		<corePart>
+			<def>Torso</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Torso</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Spine</def>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+					<parts>
+						<li>
+							<def>FleshbeastSpike</def>
+							<customLabel>back spike</customLabel>
+							<coverage>0.77</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>MiddleSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.020</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.017</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.017</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.025</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>
+					<def>Neck</def>
+					<coverage>0.075</coverage>
+					<height>Top</height>
+					<groups>
+						<li>Neck</li>
+					</groups>
+					<parts>
+						<li>
+							<def>FleshbeastHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.18</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>UpperHead</li>
+										<li>Eyes</li>
+										<li>FullHead</li>
+									</groups>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.8</coverage>
+											<groups>
+												<li>UpperHead</li>
+												<li>Eyes</li>
+												<li>FullHead</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>BRF_BigMouth</def>
+									<coverage>0.75</coverage>
+									<height>Top</height>
+									<groups>
+										<li>HeadAttackTool</li>
+										<li>UpperHead</li>
+										<li>FullHead</li>
+									</groups>
+									<parts>
+										<li>
+											<def>Jaw</def>
+											<coverage>0.10</coverage>
+											<groups>
+												<li>Teeth</li>
+												<li>HeadAttackTool</li>
+											</groups>
+											<parts>
+												<li>
+													<def>Tongue</def>
+													<coverage>0.001</coverage>
+													<depth>Inside</depth>
+												</li>
+											</parts>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>first left shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>first left arm</customLabel>
+							<coverage>0.6</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>LeftSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>first right shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>first right arm</customLabel>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>RightSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>second left shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>second left arm</customLabel>
+							<coverage>0.6</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>LeftSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>second right shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>second right arm</customLabel>
+							<coverage>0.7</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>RightSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>third left shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>third left arm</customLabel>
+							<coverage>0.6</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>LeftSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>third right shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Shoulders</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tentacle</def>
+							<customLabel>third right arm</customLabel>
+							<coverage>0.55</coverage>
+							<groups>
+								<li>Arms</li>
+								<li>RightSpike</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>first left leg</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>first right leg</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>second left leg</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>second right leg</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>third left leg</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+				<li>
+					<def>FleshbeastLeg</def>
+					<customLabel>third right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Legs</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<!--物种PawnKindDef-->
+  <PawnKindDef ParentName="BaseFleshbeastKind">
+    <defName>BRF_Clump</defName>
+    <label>Clump</label>
+    <race>BRF_Clump</race>
+    <abilities>
+      <li>BRF_EntityNecrophagia</li>
+      <li>BRF_EntityLongjump</li>
+    </abilities>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/BRF_Clump/BRF_Clump</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Pawns/BRF_Clump/BRF_Clump_east</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>BRF_ScarletFever</def>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+<!--默认物种Things-->
+  <ThingDef ParentName="BasePawn" Name="BRF_ClumpBase" Abstract="True">
+    <statBases>
+      <ComfyTemperatureMin>-140</ComfyTemperatureMin>
+      <ComfyTemperatureMax>120</ComfyTemperatureMax>
+      <Flammability>0.5</Flammability>
+      <MeatAmount>120</MeatAmount>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <InjuryHealingFactor>5</InjuryHealingFactor>
+      <PainShockThreshold>0.99</PainShockThreshold>
+	  <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionResistance>
+	  <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2</NecrotionEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <thinkTreeMain>BRF_ClumpThinkTree</thinkTreeMain>
+      <thinkTreeConstant>BRF_ClumpThinkTreeConstant</thinkTreeConstant>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>true</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodDef>Filth_Blood</bloodDef>
+      <bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+      <soundMeleeDodge>BRF_MeleeHit_Flesh</soundMeleeDodge>
+      <trainability>None</trainability>
+      <fleshType>Fleshbeast</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.35</bleedRateFactor>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>25</baseEscapeIntervalMtbDays>
+      </li>
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringEmergence</compClass>
+        <inspectString>Emerged from {SOURCEPAWN_labelShort}.</inspectString>
+      </li>
+    </comps>
+  </ThingDef>
+<!--物种ThingsDef-->
+  <ThingDef ParentName="BRF_ClumpBase">
+    <defName>BRF_Clump</defName>
+    <label>Clump</label>
+    <description>Clumps are hostile entities that resemble massive clumps of human limbs that flail about and extend in every direction. This monster has a slightly fleshbeast-like build with an endless hunger. They can move forward and jump by flinging their limbs quickly and hard in a twisted position, which allows them to catch up with their prey very quickly.</description>
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MinimumContainmentStrength>90</MinimumContainmentStrength>
+    </statBases>
+    <uiIconPath>Pawns/BRF_Clump/BRF_Clump_east</uiIconPath>
+    <race>
+      <body>BRF_ClumpBody</body>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>3</baseHealthScale>
+      <lifeExpectancy>1250</lifeExpectancy>
+      <soundMoving>Pawn_Fleshbeast_Bulbfreak_Moving</soundMoving>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Bulbfreak_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Bulbfreak_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Bulbfreak_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <canOpenFactionlessDoors>true</canOpenFactionlessDoors>
+    </race>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.50, 0, .65)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li> 
+            <offset>(.50, 0, .65)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li> 
+            <offset>(.65, 0, -.65)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.65, 0, -.65)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3.5</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+	  <li Class="Luna_BRF.CompProperties_NecrophagistEntity"/>
+    </comps>
+    <tools>
+      <li>
+        <label>fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>27</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <killedLeavings>
+      <BRF_PrimordialTissueSample>1</BRF_PrimordialTissueSample>
+    </killedLeavings>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_LunaDisallowManhunterTarget">
+            <disallowFindPawnTargetManhunter>true</disallowFindPawnTargetManhunter>
+        </li>
+    </modExtensions>
+  </ThingDef>
+<!--PawnAI树-->
+  <ThinkTreeDef>
+    <defName>BRF_ClumpThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <!-- Lord directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <!-- Escaping-->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+		<li Class="ThinkNode_ConditionalHasAbility">
+		  <ability>BRF_EntityNecrophagia</ability>
+		  	<subNodes>
+			  <li Class="Luna_BRF.JobGiver_CorpseNecrophagist">
+			    <ability>BRF_EntityNecrophagia</ability>
+			  </li>
+			</subNodes>
+        </li>
+        <li Class="JobGiver_ReactToCloseMeleeThreat">
+          <maxDistance>2.9</maxDistance>
+        </li>
+        <!-- Regular fight -->
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <!-- Wander -->
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+          <canBashDoors>true</canBashDoors>
+          <expireOnNearbyEnemy>true</expireOnNearbyEnemy>
+        </li>
+		<li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+  <ThinkTreeDef>
+    <defName>BRF_ClumpThinkTreeConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <li Class="ThinkNode_ConditionalCanDoLordJobNow">
+          <subNodes>
+            <!-- Lord directives -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>LordDutyConstant</treeDef>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

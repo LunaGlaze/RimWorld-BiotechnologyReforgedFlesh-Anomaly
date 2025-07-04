@@ -18,7 +18,7 @@ namespace Luna_BRF
                 }
             }
 			List<Thing> corpses = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse)
-				.Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.RaceProps.IsFlesh).ToList();
+				.Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.RaceProps.IsFlesh && corpse.InnerPawn.def.defName != "BRF_RawProphet").ToList();
 			if(Rand.Bool && pawn.Map.mapPawns.AllPawnsSpawned != null)
 			{
 				List<Pawn> animal = new List<Pawn>();

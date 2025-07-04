@@ -38,7 +38,7 @@ namespace Luna_BRF
             incidentParms.forced = true;
             Find.Storyteller.incidentQueue.Add(LunaDefOf.BRF_ClumpAssault, Find.TickManager.TicksGame + AnimalsDelayTicks.RandomInRange, incidentParms);
             LetterDef textLetterDef = LetterDefOf.NeutralEvent;
-            TaggedString text = "SummonClumpsFinishText".Translate(invoker, psychicRitual.def.Named("RITUAL"));
+            TaggedString text = "BRF_SummonClumpsFinishText".Translate(invoker, psychicRitual.def.Named("RITUAL"));
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label), text, textLetterDef);
         }
         public override void ExposeData()

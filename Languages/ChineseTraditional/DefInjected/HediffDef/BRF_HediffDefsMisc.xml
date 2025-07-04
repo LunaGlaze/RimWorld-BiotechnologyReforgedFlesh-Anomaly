@@ -7,5 +7,8 @@
   <BRF_RapidRegeneration.label>高速再生</BRF_RapidRegeneration.label>
   <BRF_RapidRegeneration.description>這個生物體內蘊含著驚人的愈療能量。若不加以限制，它便能使身體高速再生直至能量耗盡。</BRF_RapidRegeneration.description>
 
+  <BRF_ResurrectionLink.label>血肉蘇生連結</BRF_ResurrectionLink.label>
+  <BRF_ResurrectionLink.description>這個實體以某種方式通過或是欺瞞了遠方某個血肉超凡節點的認證系統以得到了鏈接。這個鏈接會在該實體失去復活能力後的一段時間內通過遠程心靈場向其灌輸死亡迴避。</BRF_ResurrectionLink.description>
+
 
 </LanguageData>

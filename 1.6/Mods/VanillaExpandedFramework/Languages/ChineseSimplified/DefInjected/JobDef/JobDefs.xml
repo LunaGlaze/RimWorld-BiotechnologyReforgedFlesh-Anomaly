@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- EN: refueling TargetA. -->
+  <BRF_RefuelDigesterIPipe.reportString>給TargetA加燃料。</BRF_RefuelDigesterIPipe.reportString>
+  
+  <!-- EN: refueling TargetA. -->
+  <BRF_RefuelDigesterIPipe_Atomic.reportString>正在給TargetA加燃料。</BRF_RefuelDigesterIPipe_Atomic.reportString>
+
+</Defs>

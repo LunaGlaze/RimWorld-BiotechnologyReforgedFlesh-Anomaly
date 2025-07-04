@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--外来者能力-->
+ <!--血肉嬗变-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BRF_TransmuteFlesh</defName>
+    <label>transmute flesh</label>
+    <description>Use a bizarre psychic field to completely transform a piece of meat that has lost its full life but is still fresh. The affected meat is transformed into the corresponding reconstituted flesh, or into one of human or twisted meat.</description>
+    <iconPath>UI/Abilities/BRF_TransmuteFlesh</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange> <!-- 10 hours -->
+    <showPsycastEffects>false</showPsycastEffects>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+    <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+    <warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+    <warmupSound>AnomalyAbilityWarmup</warmupSound>
+    <useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <warmupTime>2</warmupTime>
+      <range>-1</range>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetItems>true</canTargetItems>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Luna_BRF.CompProperties_TransmuteFlesh">
+        <failedMessage>Must target raw meat without reconstituted flesh.</failedMessage>
+        <elementRatios>
+          <li>
+            <fixedSourceFilter>
+                <categories>
+                    <li>MeatRaw</li>
+                </categories>
+                <disallowedCategories>
+                    <li>BRF_Things_ReforgedMeat</li>
+                </disallowedCategories>
+            </fixedSourceFilter>
+            <ratio>1</ratio>
+          </li>
+        </elementRatios>
+        <specialTransmuteList>
+            <li>
+                <specialInput>Meat_Human</specialInput>
+                <specialOutput>BRF_ReforgedMeat_Human</specialOutput>
+            </li>
+            <li>
+                <specialInput>Meat_Megaspider</specialInput>
+                <specialOutput>BRF_ReforgedMeat_Insect</specialOutput>
+            </li>
+            <li>
+                <specialInput>Meat_Twisted</specialInput>
+                <specialOutput>BRF_ReforgedMeat_Harbinger</specialOutput>
+            </li>
+        </specialTransmuteList>
+        <outcomeItems>
+          <li>Meat_Human</li>
+          <li>Meat_Twisted</li>
+        </outcomeItems>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+</Defs>
