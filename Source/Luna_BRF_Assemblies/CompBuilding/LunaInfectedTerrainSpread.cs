@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -34,15 +33,10 @@ namespace Luna_BRF
 					this.nextTickEffect = this.NextTickEffect;
 				}
 				if (Find.TickManager.TicksGame >= this.nextTickEffect)
-				{
-					List<IntVec3> cells = this.GetCells();
-					IntVec3 cell;
-					if (this.TryGetCell(cells, out cell))
-					{
-						this.DoEffect(cell);
-					}
-					this.nextTickEffect = this.NextTickEffect;
-					return;
+                {
+                    this.nextTickEffect = this.NextTickEffect;
+                    Convert();
+                    return;
 				}
 			}
 			else
@@ -60,30 +54,90 @@ namespace Luna_BRF
 		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
 			base.PostSpawnSetup(respawningAfterLoad);
-			if (!respawningAfterLoad)
+			if (!respawningAfterLoad && TerrainValidator(parent.Position.GetTerrain(parent.Map)))
 			{
-				this.parent.Map.terrainGrid.SetTerrain(this.parent.Position, this.Props.terrainToSet);
+				parent.Map.terrainGrid.SetTerrain(parent.Position, ConvertTerrainSet(parent.Position.GetTerrain(parent.Map)));
 			}
 			this.compFuel = this.parent.GetComp<CompRefuelable>();
-		}
-		protected bool CellValidator(IntVec3 cell)
-		{
-			TerrainDef terrain = cell.GetTerrain(this.parent.Map);
-			if (terrain != null && terrain != this.Props.terrainToSet && 
-				((this.Props.requiredTerrain == null && (LunaInfectedTerrainSpread.TerrainValidator(terrain) || AllowTranTerrain(terrain) )) || this.Props.requiredTerrain == terrain))
+        }
+        private bool TryGetCellToCovert(out IntVec3 cell)
+        {
+            int num = GenRadial.NumCellsInRadius(Props.radius);
+            Map map = parent.Map;
+            for (int i = 0; i < num; i++)
+            {
+                cell = parent.Position + GenRadial.RadialPattern[i];
+                if (CanEverConvertCell(cell, map, Props.setConvertTerrainDef))
+                {
+                    return true;
+                }
+            }
+            cell = IntVec3.Invalid;
+            return false;
+        }
+        public bool CanEverConvertCell(IntVec3 cell, Map map, TerrainDef skip = null)
+        {
+			if (!CellValidator(cell, map))
 			{
-				Building edifice = cell.GetEdifice(this.parent.Map);
-				return edifice == null || (!edifice.def.building.isNaturalRock && !edifice.def.building.isResourceRock);
+				return false;
 			}
-			return false;
-		}
-		public static bool TerrainValidator(TerrainDef terrain)
+            TerrainDef terrain = cell.GetTerrain(map);
+            return TerrainValidator(terrain,skip);
+        }
+        protected bool CellValidator(IntVec3 cell, Map map)
+        {
+            if (!cell.InBounds(map))
+            {
+                return false;
+            }
+            Building edifice = cell.GetEdifice(map);
+            if (edifice != null && !edifice.def.building.isNaturalRock && !edifice.def.building.isResourceRock)
+            {
+                return false;
+            }
+			return true;
+        }
+		public bool TerrainValidator(TerrainDef terrain, TerrainDef skip = null)
 		{
-			return !terrain.IsWater && !terrain.layerable && 
-				(terrain.natural || (terrain.affordances != null && (terrain.affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) || 
-				terrain.affordances.Contains(LunaDefOf.Diggable)))) && !terrain.HasTag("Road");
+			if (AllowTranTerrain(terrain))
+			{
+				return true;
+			}
+			if(Props.specialConvertTerrainDefs != null)
+            {
+                CompProperties_LunaInfectedTerrainSpread.SpecialConvertTerrainDefSet specialConvertTerrainDefSet;
+                if (SpecialConvertTerrainValidator(terrain, out specialConvertTerrainDefSet))
+				{
+					return true;
+				}
+            }
+            if (terrain.IsWater && terrain.layerable)
+            {
+                return false;
+            }
+            if (!terrain.canEverTerraform)
+            {
+                return false;
+            }
+            if (skip != null && terrain == skip)
+            {
+                return false;
+            }
+            if (terrain.passability == Traversability.Impassable)
+            {
+                return false;
+            }
+            if (!terrain.affordances.Contains(TerrainAffordanceDefOf.Light))
+            {
+                return false;
+            }
+            if (terrain.isFoundation || terrain.HasTag("Road") || terrain.HasTag("Substructure"))
+            {
+                return false;
+            }
+            return true;
 		}
-		public bool AllowTranTerrain(TerrainDef terrain)
+        public bool AllowTranTerrain(TerrainDef terrain)
 		{
 			List<TerrainDef> terrainDefs = new List<TerrainDef>();
 			if (Props.allowTerrains.NullOrEmpty())
@@ -95,25 +149,33 @@ namespace Luna_BRF
 				terrainDefs = Props.allowTerrains;
 				return terrainDefs.Contains(terrain);
 			}
-		}
-		protected List<IntVec3> GetCells()
-		{
-			return (from cell in GenRadial.RadialCellsAround(this.parent.Position, this.Props.radius, true)
-					where cell.InBounds(this.parent.Map) && this.CellValidator(cell)
-					select cell).ToList<IntVec3>();
-		}
-		protected bool TryGetCell(List<IntVec3> cells, out IntVec3 cell)
-		{
-			cell = (from x in cells
-					orderby x.DistanceTo(this.parent.Position)
-					select x).FirstOrDefault<IntVec3>();
-			return cell != default(IntVec3);
-		}
-		protected void DoEffect(IntVec3 cell)
-		{
-			this.parent.Map.terrainGrid.SetTerrain(cell, this.Props.terrainToSet);
-		}
-		public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        }
+        public TerrainDef ConvertTerrainSet(TerrainDef terrain)
+        {
+			CompProperties_LunaInfectedTerrainSpread.SpecialConvertTerrainDefSet specialConvertTerrainDefSet;
+            if (SpecialConvertTerrainValidator(terrain, out specialConvertTerrainDefSet))
+			{
+				return specialConvertTerrainDefSet.convertTerrainDef;
+            }
+            return Props.setConvertTerrainDef;
+        }
+        public bool SpecialConvertTerrainValidator(TerrainDef terrain, out CompProperties_LunaInfectedTerrainSpread.SpecialConvertTerrainDefSet specialConvertTerrainDefSet)
+        {
+            specialConvertTerrainDefSet = null;
+            if (Props.specialConvertTerrainDefs != null)
+            {
+                specialConvertTerrainDefSet = Props.specialConvertTerrainDefs.FirstOrDefault((CompProperties_LunaInfectedTerrainSpread.SpecialConvertTerrainDefSet x) => x.requiredTerrainDef == terrain);
+            }
+			return specialConvertTerrainDefSet != null;
+        }
+        private void Convert()
+        {
+            if (TryGetCellToCovert(out var cell))
+            {
+                parent.Map.terrainGrid.SetTerrain(cell, ConvertTerrainSet(cell.GetTerrain(parent.Map)));
+            }
+        }
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
 			foreach (Gizmo item in base.CompGetGizmosExtra())
 			{
@@ -202,8 +264,17 @@ namespace Luna_BRF
 				},
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/TempRaise")
 			};
-		}
-		public override void PostPostMake()
+            if (DebugSettings.ShowDevGizmos)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Convert",
+                    action = Convert,
+                    Disabled = !Active
+                };
+            }
+        }
+        public override void PostPostMake()
 		{
 			workingSpeedMultiplier = Props.baseWorkingSpeedMultiplier;
 		}

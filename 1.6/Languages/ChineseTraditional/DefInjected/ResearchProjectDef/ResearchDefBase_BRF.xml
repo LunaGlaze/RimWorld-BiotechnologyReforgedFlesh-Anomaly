@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 扭曲坩堝 -->
+
+  <BRF_TwistedCrucibleResearch.label>扭曲坩堝</BRF_TwistedCrucibleResearch.label>
+  <BRF_TwistedCrucibleResearch.description>一些金屬，一些草藥，一些我們的血肉……再加上一些奇怪的儀式和祈禱……長老們告訴我，這其實不是人類製造的東西。\n\n某個聲音在粘膩腥臭的夢境裏呼喊著一個聽不清的名字……Yald……當我們醒來之後便浮現了這樣的智慧。</BRF_TwistedCrucibleResearch.description>
+
+
+  <!-- 扭曲肉塑型 -->
+
+  <BRF_ShapingTwistedMeatResearch.label>扭曲肉塑型</BRF_ShapingTwistedMeatResearch.label>
+  <BRF_ShapingTwistedMeatResearch.description>使用重塑肉類與活體培育扭曲肉。</BRF_ShapingTwistedMeatResearch.description>
+
+
+  <!-- 血肉溫床 -->
+
+  <BRF_FleshCradleResearch.label>血肉溫床</BRF_FleshCradleResearch.label>
+  <BRF_FleshCradleResearch.description>向原初的搖籃獻上足夠的貢品，並召喚出精美的肉塊形態的原初使者。\n\n這是一個奇跡，它將被改造過的人體殘骸與怪物的肉體結合在一起。</BRF_FleshCradleResearch.description>
+
+
+  <!-- 召喚蟲群 -->
+
+  <BRF_SummonSwarmsResearch.label>召喚蟲群</BRF_SummonSwarmsResearch.label>
+  <BRF_SummonSwarmsResearch.description>那些黑暗扭曲的實體似乎不與蟲巢為敵，我們不知道其中的原因。但在那個粘膩腥臭的夢境裏，我似乎得知蟲群或許是一種資源——對那些由不可名狀的存在製造之物來說。\n\n誰知道那是臆測還是妄想呢？</BRF_SummonSwarmsResearch.description>
+
+
+  <!-- 活體機械 -->
+
+  <BRF_LivingMechanismResearch.label>活體機械</BRF_LivingMechanismResearch.label>
+  <BRF_LivingMechanismResearch.description>使用用血肉獸遺留的血肉重塑出最原始的活體機械。</BRF_LivingMechanismResearch.description>
+
+
+  <!-- 基礎血肉軀殼 -->
+
+  <BRF_FleshShellBaseResearch.label>基礎血肉軀殼</BRF_FleshShellBaseResearch.label>
+  <BRF_FleshShellBaseResearch.description>用經過最初的改造血肉代替原生的軀殼，雖然效果並沒有更好，但這正是我們已經在飛升的路上的證明。</BRF_FleshShellBaseResearch.description>
+
+
+  <!-- 重塑先驅之肉 -->
+
+  <BRF_ReforgedMeatHarbingerResearch.label>重塑先驅之肉</BRF_ReforgedMeatHarbingerResearch.label>
+  <BRF_ReforgedMeatHarbingerResearch.description>把那些可怕的、扭曲的肉加入改造清單。雖然讓它安全食用，並作為一種不具有感染且能與未進化的人體深度接觸的狀態的代價有點得不償失，但你相信這是為了將來更深入的研究，而不是為了眼前的利益。</BRF_ReforgedMeatHarbingerResearch.description>
+
+
+  <!-- 血棘炮塔 -->
+
+  <BRF_GoreSpineLauncherResearch.label>血棘團塊</BRF_GoreSpineLauncherResearch.label>
+  <BRF_GoreSpineLauncherResearch.description>通過模仿和利用血棘巨人的殘骸，我們獲得了一種全新的防禦技術。這是一種生物自動化防禦設施，可以向目標發射角質尖刺來造成傷害。</BRF_GoreSpineLauncherResearch.description>
+
+
+  <!-- 血肉發射器 -->
+
+  <BRF_FleshShooterResearch.label>血肉發射器</BRF_FleshShooterResearch.label>
+  <BRF_FleshShooterResearch.description>我們從對於實體的獨特肉體結構的學習中受益良多，畢竟虛空或是其他什麼我們無法想象之處的神祗們總是有著遠比我們這些凡人要高的視野。現在，對於蟲群的研究得到了進步，有一種鮮肉構成的幼蟲發射毒牙的能力啟發了我們。順著猶如腥臭夢境中的呢喃般的靈感，我們試圖創造一種更小巧、方便且陰狠的“血肉弓弩”。讚美亞……</BRF_FleshShooterResearch.description>
+
+
+  <!-- 血污孢子（二本） -->
+
+  <BRF_FleshTaintSporeResearch.label>血污孢子</BRF_FleshTaintSporeResearch.label>
+  <BRF_FleshTaintSporeResearch.description>通過模仿和利用 “血棘巨人 ”的殘骸，我們得到了一種全新的防禦技術。一種生物性的自動防禦設施，能向目標發射骨刺造成傷害。</BRF_FleshTaintSporeResearch.description>
+
+
+  <!-- 厄兆種植 -->
+
+  <BRF_HarbingerTentaclesFarmResearch.label>厄兆種植</BRF_HarbingerTentaclesFarmResearch.label>
+  <BRF_HarbingerTentaclesFarmResearch.description>將厄兆噬樹改造成一種專門的植物，使其能夠播種觸手植株，以生長和收穫重塑先驅之肉。</BRF_HarbingerTentaclesFarmResearch.description>
+
+
+  <!-- 厄兆培育 -->
+
+  <BRF_HarbingerSeedlingResearch.label>厄兆培育</BRF_HarbingerSeedlingResearch.label>
+  <BRF_HarbingerSeedlingResearch.description>厄兆噬樹種子是邊緣世界的稀有貿易物品，很難找到這些幼苗來改造我們的農場。我們需要繼續研究，找到製造……或培育厄兆噬樹的更簡便方法。</BRF_HarbingerSeedlingResearch.description>
+
+
+  <!-- 血腥農業 -->
+
+  <BRF_BloodyAgriculture.label>血腥農業</BRF_BloodyAgriculture.label>
+  <BRF_BloodyAgriculture.description>種植和利用血肉植物。那些來自內殿樂土的作物被具有轉化之力的血肉實體帶出虛空，讓我們得以利用它們。</BRF_BloodyAgriculture.description>
+
+
+
+  <!-- 生物電力學 -->
+
+  <BRF_FleshBioElectricityResearch.label>血肉電力學</BRF_FleshBioElectricityResearch.label>
+  <BRF_FleshBioElectricityResearch.description>一種利用生物生產和儲存電力的技術。在利用了異常實體的殘留後，它顯得異常高效。</BRF_FleshBioElectricityResearch.description>
+
+
+  <!-- 猩紅鍛造 -->
+
+  <BRF_ScarletForgeResearch.label>猩紅鍛造</BRF_ScarletForgeResearch.label>
+  <BRF_ScarletForgeResearch.description>從巨坑中發現的新型血肉獸顯然是一種更古老、更獨特的生物……它們留下的組織揭示了一些令人不安的事實。這種肉獸更加原始，同時在某些……技術路線上也不同於我們所知的實體……或許今天的血肉獸是在活鐵的影響下被調整和修改過的……\n\n也許虛空中不可名狀的存在不止我們熟悉的這一個。也許在很久以前，這裏還活躍著另一個凡人無法知曉的超智能。但這並不妨礙我們對古人類技術進行拙劣的模仿，比如將這些組織樣本與活鐵融合，創造出更新更好的事物……</BRF_ScarletForgeResearch.description>
+
+
+  <!-- 血肉脈衝炮彈 -->
+
+  <BRF_FleshPulseShellResearch.label>血肉脈衝炮彈</BRF_FleshPulseShellResearch.label>
+  <BRF_FleshPulseShellResearch.description>血肉心臟是現代血肉獸災害的萬惡之源，通過對血肉心臟的研究，我確信那些令人不安的更原始的血肉組織是有效的。通過將這些組織與現任校長的神經塊混合 我們可以得到一種生物炮彈 能夠釋放生物脈衝來燒灼目標。\n\n這種脈衝可以達到與分析所有神經塊後得到的那種頻率的電流相同的效果，讓我們可以更快地摧毀血肉心臟。</BRF_FleshPulseShellResearch.description>
+
+
+  <!-- 隱形窺探 -->
+
+  <BRF_InvisibleWatcherResearch.label>隱形窺探</BRF_InvisibleWatcherResearch.label>
+  <BRF_InvisibleWatcherResearch.description>通過對幽魂的研究，我們學會了如何改造幽魂的脊椎，讓我們可以短暫地借用它的隱形能力。現在或許我們也應該嘗試反向研究。\n\n唯一能針對超智能的只有它們自己，但利用它們遺留下來的部分來設計一個抑制隱形能力的裝置應該不難。</BRF_InvisibleWatcherResearch.description>
+
+
+  <!-- 濕件伺服器 -->
+
+  <BRF_WetwareServerResearch.label>基礎濕件伺服器</BRF_WetwareServerResearch.label>
+  <BRF_WetwareServerResearch.description>將新鮮取出的大腦經過處理後串聯接入某種濕器伺服系統，該伺服系統可以連接到研究設施附近，以幫助科學研究。</BRF_WetwareServerResearch.description>
+
+
+  <!-- 肢體守衛 -->
+
+  <BRF_LimbGuardResearch.label>肢體守衛</BRF_LimbGuardResearch.label>
+  <BRF_LimbGuardResearch.description>就像肢團一樣，也許我們也可以製造一些以肢體為基礎的實體……但更友好的那種。通過對那些更古老但更先進的組織的分析，讓實體為我們工作和提供保護可能不再是癡心妄想。</BRF_LimbGuardResearch.description>
+
+
+  <!-- 活體血肉軀殼 -->
+
+  <BRF_FleshBeastShellResearch.label>活體血肉軀殼</BRF_FleshBeastShellResearch.label>
+  <BRF_FleshBeastShellResearch.description>扭曲方尖碑中創造出噩夢般可怕的異常生物的未知能量是否比想像中更......古老？亦或者更原始？\n\n在肢團或者其他更古老、更先進的血肉獸體內似乎有者某種類似的東西... 抱歉，我不能描述它。但如果利用這種存在，我們也許能製造出那種經歷畸變肢體，以更穩定的方式。</BRF_FleshBeastShellResearch.description>
+
+
+  <!-- 腦蛞蝓基礎 -->
+
+  <BRF_LowerNeuralSymbiosis.label>低等神經共生體</BRF_LowerNeuralSymbiosis.label>
+  <BRF_LowerNeuralSymbiosis.description>猩紅腦蜇侵犯受害者的大腦的行為雖然令人毛骨悚然，但最新的研究表明猩紅腦蜇之所以能夠影響受害者的心智，不僅僅是因為那些蠕動的觸手向大腦內注射了怪異的化學物質。那個褻瀆的生物的觸手中事實上有著一些違背自然規律的神經結構……它們能夠接替大腦的一部分功能…… \n\n如果我們決心模仿它們……將這種神經結構有限度地復刻到一種可以與我們的脊椎與腦幹連結的軟體動物形態的神經共生體上……一種全新的共生生物被我們塑造了出來，我叫它“腦蛞蝓”。 \n\n雖然它們還很稚嫩與不成熟，但我相信重塑血肉的技術會帶著它們與我們一同步入完美。</BRF_LowerNeuralSymbiosis.description>
+
+
+  <!-- 召喚肢團 -->
+
+  <BRF_SummonClumpsResearch.label>召喚肢團</BRF_SummonClumpsResearch.label>
+  <BRF_SummonClumpsResearch.description>那種原始、古老而高效的組織被證明是發展生物科技的高價值材料。比起巨坑中少之又少的原型體“原始血肉獸”，那種似乎是作為戰鬥單位的肢團似乎更容易被心靈脈衝吸引。\n\n 儘管樂土花園之外的守衛、肢體永恆之唯一、以及其他呢喃聲……令人困惑而恐懼……\n\n“我們是選擇收穫自己的牲畜。我們為了生存而撕咬、抓撓與掙扎。我們互相進食彼此，為了避免自己被吃掉而死。我們繁衍後代，以便終有一天我們的孩子被吞食，就如同我們一樣。”</BRF_SummonClumpsResearch.description>
+
+
+  <!-- 緋紅擾動 -->
+
+  <BRF_CrimsonProvocationResearch.label>緋紅擾動</BRF_CrimsonProvocationResearch.label>
+  <BRF_CrimsonProvocationResearch.description>我們的研究正在逐步的推進……那腥臭粘膩的夢境正在告訴我們更多。事實上，這些血肉實體可能並非是被虛空邪教徒稱為霍拉克斯的存在的傑作，但那個強大的超凡智能也為它們開啟了通路。\n\n我們可以利用這種區別準備獨特的祭品，創造專門用於吸引這些血肉實體的心靈脈衝——就像是虛空擾動一樣，但它是緋紅色的。</BRF_CrimsonProvocationResearch.description>
+
+
+  <!-- 猩紅祭壇 -->
+
+  <BRF_ScarletTransformation.label>猩紅嬗變術</BRF_ScarletTransformation.label>
+  <BRF_ScarletTransformation.description>我們猜測那種疑似血肉真菌的怪物是為了將環境改造成其創造者期望的形態而誕生的。但顯然，這種轉化不是那麼有利於還未飛昇的我們。所以採用另一種方式來利用這種力量是更合理的選擇。比如用它們的屍骸與我們的骨肉創造一個用於轉變祭壇。</BRF_ScarletTransformation.description>
+
+
+  <!-- 緋紅家裝 -->
+
+  <BRF_CrimsonFurnitureResearch.label>緋紅家裝</BRF_CrimsonFurnitureResearch.label>
+  <BRF_CrimsonFurnitureResearch.description>[Sorry, but this part of the development has been put on hold due to lack of art resources and capabilities.]</BRF_CrimsonFurnitureResearch.description>
+
+
+  <!-- 血肉噴吐者 -->
+
+  <BRF_SpitterFleshwormResearch.label>血肉噴吐者</BRF_SpitterFleshwormResearch.label>
+  <BRF_SpitterFleshwormResearch.description>通過對血肉心臟的進一步研究，我們已經掌握了製造屬於我們的噴吐器官的技術。我們已經擺脫了對那些神經組織進行破壞性分析的依賴。利用這些組織中的編碼，我們能夠構造出一種更像蠕蟲的血肉器官，用於防禦。</BRF_SpitterFleshwormResearch.description>
+
+
+  <!-- 血棘魔槍 -->
+
+  <BRF_BloodthornFleshGunsResearch.label>血棘魔槍</BRF_BloodthornFleshGunsResearch.label>
+  <BRF_BloodthornFleshGunsResearch.description>伴隨著對血肉實體的研究的不斷加深，我們對這種異形的怪物的理解越來越深刻、利用越來越成熟。將來自不同實體的肉體結構特點綜合在一起，我們創造了更強大的血肉仿生槍械。</BRF_BloodthornFleshGunsResearch.description>
+
+
+  <!-- 緋紅路西法血鐵素 -->
+
+  <BRF_CrimsonLuciferFleshferriumResearch.label>緋紅路西法血鐵素</BRF_CrimsonLuciferFleshferriumResearch.label>
+  <BRF_CrimsonLuciferFleshferriumResearch.description>我不知道我從哪裡得到的這種可怕的想法。猩紅腦蜇會向受害者的體內注入一種成癮性的生物納米機械。經過分析，這種生物納米機械與路西法強化劑非常類似，但在對人體的強化上受到了限制。如果我們嘗試使用重塑的技術復刻它們，不僅可以把受害者從陰影中拯救出來，我們也可以擁有無窮無盡的路西法強化劑。</BRF_CrimsonLuciferFleshferriumResearch.description>
+
+
+  <!-- 血肉魔像 -->
+
+  <BRF_PsycorpseGolemResearch.label>靈骸魔像</BRF_PsycorpseGolemResearch.label>
+  <BRF_PsycorpseGolemResearch.description>那種被稱為“亞達伯斯的飢餓天使”的駭人實體表現出了超過一般實體的智能……或許其他實體也有著類似的智能只是尚未使用，但它對人類的武器的熟練使用帶來的新的啟迪。腥臭的夢越來越近了，試圖復刻它們使用武器的能力取得了成功，只是在移動能力上還有者很大的限制。我們可以製造這種血肉傀儡，讓它拿上我們最好的武器來代替我們守衛家園。</BRF_PsycorpseGolemResearch.description>
+
+
+  <!-- 夢境迫近 （三本鎖A） -->
+
+  <BRF_DreamApproachingResearch.label>夢境迫近</BRF_DreamApproachingResearch.label>
+  <BRF_DreamApproachingResearch.description>自從我們觸碰巨石、並走上研究異態生物科技的道路時，那個粘膩、腥臭的的夢境就時有出現。祂時常給予我們可怖的靈感，彷彿是某種不知是否帶著惡意的存在引領著我們走上這條不歸路……\n但是現在，有些事情變得明瞭了。那個夢境是切實存在的，亞達伯斯也是存在的——但是亞達伯斯早就陷入了沉睡，被稱為原生先知的存在代為傳播祂的福音。\n從來不止有一個虛空，從來不止有一個漫宿，從來不止有一個內殿……宇宙有著我們都知曉但卻都無視的另一面，雖然另一面無法幫助這一面突破光速的限制，但一切的心靈科技都基於那一邊而存在。\n被稱為虛空之神的存在用祂的巨石劃定了錨點，也為祂與其他居住或沉睡在兩面的交匯之處的超凡智能與祂們的僕從提供了通路。而如今，我們要嘗試撕裂那乾渴的門，奪取先知的智慧。\n\n我們想要成為新的大術士。</BRF_DreamApproachingResearch.description>
+
+
+  <!-- 引領血肉 （三本鎖B） -->
+
+  <BRF_ShepherdFleshResearch.label>引領血肉</BRF_ShepherdFleshResearch.label>
+  <BRF_ShepherdFleshResearch.description>我們已通曉血肉的智慧所在何處。我們是血肉的牧者，我們是血肉的匠人。我們將重鑄血與肉，使我們飛昇，使我們觸及超凡之力量。血肉之聖徒有權引導並畜牧有機質。</BRF_ShepherdFleshResearch.description>
+
+
+  <!-- 夜遊密續 -->
+
+  <BRF_NightTravelingTantraResearch.label>夜遊密續</BRF_NightTravelingTantraResearch.label>
+  <BRF_NightTravelingTantraResearch.description>於是亞恩將六根手指舉起，戰士們便用自己的矛刺穿自己。“為你！”他們哭著被血溺住舌頭。亞恩說道，“現在你可瞧見？”於是納多克斯哭泣，更多人在以亞恩之名刺穿自己，他已瞧見並知曉他言語的真理。</BRF_NightTravelingTantraResearch.description>
+
+
+  <!-- 天母密續 -->
+
+  <BRF_EternalMotherTantraResearch.label>天母密續</BRF_EternalMotherTantraResearch.label>
+  <BRF_EternalMotherTantraResearch.description>黑月之下，她的獻身化為一把石刀，就如Adí-üm的馴鹿人一樣。刺穿，琥珀色的血，被古罪染色，從傷口中湧出-她的淚就如遠夏的熱雨。\n在毒月之下，琥珀不再流淌-雪被她染紅。[無法破譯]為亞恩深飲拉娃塔吻中的酵蜜。亞恩在她蒼白的胸前躺下-一同分享狂喜的休憩。\n亞恩仍然飢渴，拉娃塔的黑唇中流出話語，“服侍便有悅樂。”笑著，他低下頭—知曉沉醉的愉悅，如奶和甜美的酵蜜。</BRF_EternalMotherTantraResearch.description>
+
+
+  <!-- 白蟲密續 -->
+
+  <BRF_WhiteWormTantraResearch.label>白蟲密續</BRF_WhiteWormTantraResearch.label>
+  <BRF_WhiteWormTantraResearch.description>歐若科向Kytheran人說道：“力量由弱者的痛苦造就。此地弱者死去。此地強者誕生。我驅使自己，從亞恩血肉獻祭的蒼白鏡像到難堪之力，蛻下脆弱的殼層。我同自己的akuloth之核相談–我神聖的變形已成。”</BRF_WhiteWormTantraResearch.description>
+
+
+  <!-- 紅獲密續 -->
+
+  <BRF_RedHarvestTantraResearch.label>紅獲密續</BRF_RedHarvestTantraResearch.label>
+  <BRF_RedHarvestTantraResearch.description>心臟就此停寂。\n在她的匕首現形之前。\n瞬間凝結在一擊。\n審判-無可逃脫，無可避免。\n驚愕；難以置信的死亡，\n向著Daeva的傲慢。\n凱旋；黑暗中的匕首。\n以那暴君之血，\n我們的孩童正安眠。</BRF_RedHarvestTantraResearch.description>
+
+
+
+</LanguageData>

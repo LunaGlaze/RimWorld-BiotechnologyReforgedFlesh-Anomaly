@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_Make_TentacleMooncake.label>製作觸手月餅</BRF_Make_TentacleMooncake.label>
+  <BRF_Make_TentacleMooncake.description>製作可怕又美味的節日美食。</BRF_Make_TentacleMooncake.description>
+  <BRF_Make_TentacleMooncake.jobString>正在製作觸手月餅。</BRF_Make_TentacleMooncake.jobString>
+
+  <BRF_Make_TentacleMooncake4.label>製作觸手月餅×4</BRF_Make_TentacleMooncake4.label>
+  <BRF_Make_TentacleMooncake4.description>製作4個可怕又美味的節日美食。</BRF_Make_TentacleMooncake4.description>
+  <BRF_Make_TentacleMooncake4.jobString>正在製作觸手月餅。</BRF_Make_TentacleMooncake4.jobString>
+
+  <BRF_Make_TentacleMooncake10.label>製作觸手月餅×10</BRF_Make_TentacleMooncake10.label>
+  <BRF_Make_TentacleMooncake10.description>製作10個可怕又美味的節日美食。</BRF_Make_TentacleMooncake10.description>
+  <BRF_Make_TentacleMooncake10.jobString>正在製作觸手月餅。</BRF_Make_TentacleMooncake10.jobString>
+
+  <BRF_Make_TentacleMooncake20.label>製作觸手月餅×20</BRF_Make_TentacleMooncake20.label>
+  <BRF_Make_TentacleMooncake20.description>製作20個可怕又美味的節日美食。</BRF_Make_TentacleMooncake20.description>
+  <BRF_Make_TentacleMooncake20.jobString>正在製作觸手月餅。</BRF_Make_TentacleMooncake20.jobString>
+
+
+</LanguageData>

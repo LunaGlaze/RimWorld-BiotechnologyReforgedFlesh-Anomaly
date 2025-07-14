@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_BloodvineZombie.label>血藤行屍</BRF_BloodvineZombie.label>
+  <BRF_BloodvineZombie.description>一種似乎死去卻未完全死去的怪異屍體，有著類似人類但更為扭曲的身體。這種實體的身上纏繞著緩慢搏動著的如同藤蔓一樣的血肉觸手，這些觸手已經幾乎嵌入了它們的軀幹之中，似乎正是這些觸手維持了屍體的活動。</BRF_BloodvineZombie.description>
+  <BRF_BloodvineZombie.tools.left_fist.label>左拳</BRF_BloodvineZombie.tools.left_fist.label>
+  <BRF_BloodvineZombie.tools.left_fist.labelNoLocation>拳</BRF_BloodvineZombie.tools.left_fist.labelNoLocation>
+  <BRF_BloodvineZombie.tools.right_fist.label>右拳</BRF_BloodvineZombie.tools.right_fist.label>
+  <BRF_BloodvineZombie.tools.right_fist.labelNoLocation>拳</BRF_BloodvineZombie.tools.right_fist.labelNoLocation>
+  <BRF_BloodvineZombie.tools.teeth.label>牙齒</BRF_BloodvineZombie.tools.teeth.label>
+  <BRF_BloodvineZombie.tools.head.label>頭</BRF_BloodvineZombie.tools.head.label>
+
+
+</LanguageData>

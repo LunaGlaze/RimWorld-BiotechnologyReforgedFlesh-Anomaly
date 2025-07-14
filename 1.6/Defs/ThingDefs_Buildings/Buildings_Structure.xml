@@ -141,6 +141,7 @@
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<paintable>true</paintable>
+      		<isAirtight>true</isAirtight>
 		</building>
     	<comps Inherit="False">
       		<li Class="CompProperties_MeditationFocus">
@@ -251,6 +252,11 @@
 		</affordances>
 		<fertility>0</fertility>
 	</TerrainDef>
+<!--血肉菌毯类-->
+  <DesignatorDropdownGroupDef>
+  	<defName>BRF_FleshBlanketGroup</defName>
+  	<label>Flesh Blanket</label>
+  </DesignatorDropdownGroupDef>
 <!--血肉菌毯-->
   <TerrainDef ParentName="FloorBase">
     <defName>BRF_FleshBlanket</defName>
@@ -272,13 +278,58 @@
 	  <li>BRF_FleshBlanket</li>
     </affordances>
 	<fertility>0.05</fertility>
-    <uiOrder>2000</uiOrder>
-	<designationCategory inherit ="False"/>
+	<designationCategory IsNull="True" />
   </TerrainDef>
+<!--血肉菌毯：飞船-->
+  <!--TerrainDef ParentName="FloorBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BRF_FleshBlanket_Substructure</defName>
+    <label>Flesh-stained Gravship Substructure</label>
+    <description>A gravship substructure covered in a layer of organic protoplasm, like a layer of flesh growing on top. This Flesh Blanket-infected lightweight truss structure has the same functions as a gravship substructure, but can also act as a flesh blanket, linking biomechanical networks.</description>
+    <descriptionHyperlinks>
+		<ThingDef>BRF_FleshTaintSpore</ThingDef>
+		<TerrainDef>Substructure</TerrainDef>
+	</descriptionHyperlinks>
+    <texturePath>Buildings/Structure/Terrain/BRF_FleshBlanket_Substructure</texturePath>
+    <fertility>0</fertility>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>399</renderPrecedence>
+    <constructEffect>ConstructMetal</constructEffect>
+	<designationCategory IsNull="True" />
+    <isPaintable>true</isPaintable>
+    <isFoundation>true</isFoundation>
+    <preventCraters>true</preventCraters>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0</Flammability>
+      <CleaningTimeFactor>0.75</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <GravlitePanel>1</GravlitePanel>
+      <Steel>4</Steel>
+    </costList>
+    <requireInspectedGravEngine>true</requireInspectedGravEngine>
+    <terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <tags>
+      <li>Substructure</li>
+    </tags>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Walkable</li>
+	  <li>BRF_FleshBlanket</li>
+    </affordances>
+    <placeWorkers>
+      <li>PlaceWorker_InSubstructureFootprint</li>
+      <li>PlaceWorker_BuildingsValidOverSubstructure</li>
+    </placeWorkers>
+  </TerrainDef-->
 <!--血肉菌毯地砖-->
   <TerrainDef ParentName="FloorBase">
     <defName>BRF_FleshBlanket_Tile</defName>
     <label>Flesh Blanket Tile</label>
+	<designatorDropdown>BRF_FleshBlanketGroup</designatorDropdown>
     <description>An artificial, modular Flesh Blanket that can smoothly link with the Flesh Network while avoiding unexpected stains during operation.</description>
     <texturePath>Buildings/Structure/Terrain/BRF_FleshBlanket_Tile</texturePath>
     <renderPrecedence>240</renderPrecedence>
@@ -292,6 +343,7 @@
       <li>Light</li>
       <li>Medium</li>
       <li>Heavy</li>
+      <li>Walkable</li>
 	  <li>BRF_FleshBlanket</li>
     </affordances>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -309,6 +361,7 @@
   <TerrainDef ParentName="FloorBase">
     <defName>BRF_ScarletFerritePlateFloor</defName>
     <label>Scarlet Ferrite Plate</label>
+	<designatorDropdown>BRF_FleshBlanketGroup</designatorDropdown>
     <description>A floor tile forged using Scarlet Ferrite and other living materials. It can take on the responsibilities of Flesh Blanket, with better performance but greater consumption. It's quick to clean and increases the containment strength of nearby holding platforms, and the psychic effects in it make it look good for no reason at all.</description>
     <texturePath>Buildings/Structure/Terrain/BRF_ScarletFerritePlateFloor</texturePath>
     <renderPrecedence>240</renderPrecedence>
@@ -325,6 +378,7 @@
       <li>Light</li>
       <li>Medium</li>
       <li>Heavy</li>
+      <li>Walkable</li>
 	  <li>BRF_FleshBlanket</li>
     </affordances>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

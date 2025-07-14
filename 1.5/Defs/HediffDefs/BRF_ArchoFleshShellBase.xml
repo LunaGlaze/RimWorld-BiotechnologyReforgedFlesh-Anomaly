@@ -70,7 +70,7 @@
     <techLevel>Archotech</techLevel>
   </ThingDef>
 
-  <HediffDef ParentName="BRF_AddedNeuralSymbiosisPartBase">
+  <HediffDef ParentName="BRF_AddArchoFleshImplantHediffBase">
     <defName>BRF_Akuloth</defName>
     <hediffClass>Luna_BRF.Hediff_Akuloth</hediffClass>
     <label>Akuloth</label>

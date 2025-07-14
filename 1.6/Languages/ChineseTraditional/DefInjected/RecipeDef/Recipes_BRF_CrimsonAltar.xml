@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- 血腥皮革 -->
+
+  <BRF_WeavingLeatherBloody.label>編織血與肉之皮</BRF_WeavingLeatherBloody.label>
+  <BRF_WeavingLeatherBloody.description>編織血與肉之皮</BRF_WeavingLeatherBloody.description>
+  <BRF_WeavingLeatherBloody.jobString>編織血肉</BRF_WeavingLeatherBloody.jobString>
+
+  <!-- 中性胺 -->
+
+  <BRF_NeutroamineFormScarletamine.label>純化中性胺</BRF_NeutroamineFormScarletamine.label>
+  <BRF_NeutroamineFormScarletamine.description>純化猩紅胺以複製中性胺</BRF_NeutroamineFormScarletamine.description>
+  <BRF_NeutroamineFormScarletamine.jobString>純化中性胺</BRF_NeutroamineFormScarletamine.jobString>
+
+  <!-- 重塑先驅肉 -->
+
+  <BRF_AltarReforgedMeat_Harbinger.label>重構先驅之肉</BRF_AltarReforgedMeat_Harbinger.label>
+  <BRF_AltarReforgedMeat_Harbinger.description>將扭曲肉改造成某種也許可以食用的東西。</BRF_AltarReforgedMeat_Harbinger.description>
+  <BRF_AltarReforgedMeat_Harbinger.jobString>正在重構先驅之肉。</BRF_AltarReforgedMeat_Harbinger.jobString>
+
+<!-- 重塑肉to營養糊劑 -->
+  <BRF_ReforgedMeat_Human_To_NutritionalPaste.label>血肉一統原理：營養糊劑α</BRF_ReforgedMeat_Human_To_NutritionalPaste.label>
+  <BRF_ReforgedMeat_Human_To_NutritionalPaste.description>純化重塑人肉為純粹的營養糊劑。</BRF_ReforgedMeat_Human_To_NutritionalPaste.description>
+  <BRF_ReforgedMeat_Human_To_NutritionalPaste.jobString>純化重塑肉類</BRF_ReforgedMeat_Human_To_NutritionalPaste.jobString>
+  <BRF_ReforgedMeat_Insect_To_NutritionalPaste.label>血肉一統原理：營養糊劑β</BRF_ReforgedMeat_Insect_To_NutritionalPaste.label>
+  <BRF_ReforgedMeat_Insect_To_NutritionalPaste.description>純化重塑蟲肉為純粹的營養糊劑。</BRF_ReforgedMeat_Insect_To_NutritionalPaste.description>
+  <BRF_ReforgedMeat_Insect_To_NutritionalPaste.jobString>純化重塑肉類</BRF_ReforgedMeat_Insect_To_NutritionalPaste.jobString>
+  <BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.label>血肉一統原理：營養糊劑γ</BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.label>
+  <BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.description>純化重塑先驅肉為純粹的營養糊劑。</BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.description>
+  <BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.jobString>純化重塑肉類</BRF_ReforgedMeat_Harbinger_To_NutritionalPaste.jobString>
+<!-- 營養糊劑to重塑肉 -->
+  <BRF_NutritionalPaste_To_ReforgedMeat_Human.label>血肉一統原理：重塑人肉</BRF_NutritionalPaste_To_ReforgedMeat_Human.label>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Human.description>分化營養糊劑，鑄造重塑人肉。</BRF_NutritionalPaste_To_ReforgedMeat_Human.description>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Human.jobString>分化營養糊劑</BRF_NutritionalPaste_To_ReforgedMeat_Human.jobString>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Insect.label>血肉一統原理：重塑蟲肉</BRF_NutritionalPaste_To_ReforgedMeat_Insect.label>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Insect.description>分化營養糊劑，鑄造重塑蟲肉。</BRF_NutritionalPaste_To_ReforgedMeat_Insect.description>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Insect.jobString>分化營養糊劑</BRF_NutritionalPaste_To_ReforgedMeat_Insect.jobString>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.label>血肉一統原理：重塑先驅肉</BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.label>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.description>分化營養糊劑，鑄造重塑先驅肉。</BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.description>
+  <BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.jobString>分化營養糊劑</BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.jobString>
+
+
+</LanguageData>

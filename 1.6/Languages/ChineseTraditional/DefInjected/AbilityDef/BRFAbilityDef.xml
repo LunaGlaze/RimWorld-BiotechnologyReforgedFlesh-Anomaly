@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!--外來者能力-->
+ <!--血肉嬗變-->
+  <BRF_TransmuteFlesh.label>血肉嬗變</BRF_TransmuteFlesh.label>
+  <BRF_TransmuteFlesh.description>使用詭異的心靈場徹底改變一塊失去完整生命但仍然新鮮的肉類。受影響的肉類會被轉化為對應的重塑肉類，亦或者變為人肉或扭曲肉中的一種。</BRF_TransmuteFlesh.description>
+  <BRF_TransmuteFlesh.comps.Luna_BRF.CompProperties_TransmuteFlesh.failedMessage>僅對重塑肉類之外的生肉有效。</BRF_TransmuteFlesh.comps.Luna_BRF.CompProperties_TransmuteFlesh.failedMessage>
+
+</LanguageData>

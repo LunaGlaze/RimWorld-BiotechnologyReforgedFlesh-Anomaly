@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- living flesh -->
+
+  <BRF_PeristalticFleshBlob.label>蠕动肉块</BRF_PeristalticFleshBlob.label>
+  <BRF_PeristalticFleshBlob.description>一滩扭曲蠕动的活体肉块。</BRF_PeristalticFleshBlob.description>
+  <BRF_PeristalticFleshBlob.tools.head.label>头</BRF_PeristalticFleshBlob.tools.head.label>
+  <!-- No Leather: Butcher Products -->
+  <BRF_PeristalticFleshBlob_Corpse.label>蠕动肉块尸体</BRF_PeristalticFleshBlob_Corpse.label>
+  <BRF_PeristalticFleshBlob_Corpse.description>蠕动肉块尸体</BRF_PeristalticFleshBlob_Corpse.description>
+
+
+</LanguageData>

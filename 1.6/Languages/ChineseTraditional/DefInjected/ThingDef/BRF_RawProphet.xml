@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_RawProphet.label>原生先知</BRF_RawProphet.label>
+  <BRF_RawProphet.description>時而分散，時而聚集，她時而預言災難，他時而宣揚食慾。它的預言讓人困惑，它們的低語致人混淆。</BRF_RawProphet.description>
+  <BRF_RawProphet.tools.fist.label>拳</BRF_RawProphet.tools.fist.label>
+  <BRF_RawProphet.tools.fist.labelNoLocation>拳</BRF_RawProphet.tools.fist.labelNoLocation>
+  <BRF_RawProphet.tools.leg.label>腳</BRF_RawProphet.tools.leg.label>
+  <BRF_RawProphet.tools.leg.labelNoLocation>腳</BRF_RawProphet.tools.leg.labelNoLocation>
+  <BRF_RawProphet.tools.teeth.label>牙齒</BRF_RawProphet.tools.teeth.label>
+
+
+</LanguageData>

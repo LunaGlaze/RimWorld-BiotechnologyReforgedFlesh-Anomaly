@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物种ThingsDef -->
+
+  <BRF_RebirthPsycorpse.label>重生灵骸</BRF_RebirthPsycorpse.label>
+  <BRF_RebirthPsycorpse.description>它本应是许多具早已死去的尸骸，但扭曲的血肉触手蛀空了它的内在，缝合了它们的残骸……它们获得了重生，扭曲的灵能力给予了它们伪装的能力与可怖的智慧。它们是苏生的灵骸，但某些狂热的血肉教徒会称之为……“亚达伯斯的饥饿天使”……</BRF_RebirthPsycorpse.description>
+  <BRF_RebirthPsycorpse.tools.left_tentacle_fist.label>左触手拳</BRF_RebirthPsycorpse.tools.left_tentacle_fist.label>
+  <BRF_RebirthPsycorpse.tools.left_tentacle_fist.labelNoLocation>触手拳</BRF_RebirthPsycorpse.tools.left_tentacle_fist.labelNoLocation>
+  <BRF_RebirthPsycorpse.tools.right_tentacle_fist.label>右触手拳</BRF_RebirthPsycorpse.tools.right_tentacle_fist.label>
+  <BRF_RebirthPsycorpse.tools.right_tentacle_fist.labelNoLocation>触手拳</BRF_RebirthPsycorpse.tools.right_tentacle_fist.labelNoLocation>
+  <BRF_RebirthPsycorpse.tools.teeth.label>牙齿</BRF_RebirthPsycorpse.tools.teeth.label>
+  <BRF_RebirthPsycorpse.tools.head.label>头</BRF_RebirthPsycorpse.tools.head.label>
+
+
+</LanguageData>

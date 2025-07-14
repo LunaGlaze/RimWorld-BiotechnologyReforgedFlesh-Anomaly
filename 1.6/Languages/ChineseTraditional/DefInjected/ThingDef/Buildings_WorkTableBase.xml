@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 扭曲坩堝 -->
+
+  <BRF_TwistedCrucible.label>扭曲坩堝</BRF_TwistedCrucible.label>
+  <BRF_TwistedCrucible.description>一個裝滿了怪異的肉質觸手的大鍋，可以用於進行某些本不應該發生的轉化。</BRF_TwistedCrucible.description>
+  <BRF_TwistedCrucible_Blueprint.label>扭曲坩堝（藍圖）</BRF_TwistedCrucible_Blueprint.label>
+  <BRF_TwistedCrucible_Blueprint_Install.label>扭曲坩堝（藍圖）</BRF_TwistedCrucible_Blueprint_Install.label>
+  <BRF_TwistedCrucible_Frame.label>扭曲坩堝（建造中）</BRF_TwistedCrucible_Frame.label>
+  <BRF_TwistedCrucible_Frame.description>一個裝滿了怪異的肉質觸手的大鍋，可以用於進行某些本不應該發生的轉化。</BRF_TwistedCrucible_Frame.description>
+
+
+  <!-- 生物鍛爐 -->
+
+  <BRF_BioForge.label>生物鍛爐</BRF_BioForge.label>
+  <BRF_BioForge.description>現在，你們已經開始瞭解血與肉的智慧。這個有生命的工作臺可以將生物材料重新鍛造成更完美的形態。</BRF_BioForge.description>
+  <BRF_BioForge_Blueprint.label>生物鍛爐（藍圖）</BRF_BioForge_Blueprint.label>
+  <BRF_BioForge_Blueprint_Install.label>生物鍛爐（藍圖）</BRF_BioForge_Blueprint_Install.label>
+  <BRF_BioForge_Frame.label>生物鍛爐（建造中）</BRF_BioForge_Frame.label>
+  <BRF_BioForge_Frame.description>現在，你們已經開始瞭解血與肉的智慧。這個有生命的工作臺可以將生物材料重新鍛造成更完美的形態。</BRF_BioForge_Frame.description>
+
+
+  <!-- 咀嚼器 -->
+
+  <BRF_Chewer.label>咀嚼器</BRF_Chewer.label>
+  <BRF_Chewer.description>由血肉和下顎構成的可怖巨口可以使用它那無窮無盡的咀嚼本能來摧毀一切。</BRF_Chewer.description>
+  <BRF_Chewer_Blueprint.label>咀嚼器（藍圖）</BRF_Chewer_Blueprint.label>
+  <BRF_Chewer_Blueprint_Install.label>咀嚼器（藍圖）</BRF_Chewer_Blueprint_Install.label>
+  <BRF_Chewer_Frame.label>咀嚼器（建造中）</BRF_Chewer_Frame.label>
+  <BRF_Chewer_Frame.description>由血肉和下顎構成的可怖巨口可以使用它那無窮無盡的咀嚼本能來摧毀一切。</BRF_Chewer_Frame.description>
+
+
+  <!-- 猩紅祭壇 -->
+
+  <BRF_CrimsonAltar.label>猩紅生物祭壇</BRF_CrimsonAltar.label>
+  <BRF_CrimsonAltar.description>血、骨與肉形成了這樣一個畸形的祭壇。我們可以利用實體殘餘的力量來改變我們想要的東西。</BRF_CrimsonAltar.description>
+
+
+</LanguageData>

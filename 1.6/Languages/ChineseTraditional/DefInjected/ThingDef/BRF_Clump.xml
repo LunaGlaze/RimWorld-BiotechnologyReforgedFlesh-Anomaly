@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_Clump.label>肢團</BRF_Clump.label>
+  <BRF_Clump.description>肢團是一種敵對實體，它就像一團團巨大的人類肢體，向各個方向伸展。這種怪物的身體結構與有些類似血肉獸，並且有著無盡的饑餓感。它們能以扭曲的姿勢快速用力甩動肢體向前移動和跳躍，這使它們能很快追上獵物。</BRF_Clump.description>
+  <BRF_Clump.tools.fist.label>拳</BRF_Clump.tools.fist.label>
+  <BRF_Clump.tools.leg.label>腿</BRF_Clump.tools.leg.label>
+  <BRF_Clump.tools.teeth.label>牙齒</BRF_Clump.tools.teeth.label>
+  <BRF_Clump_Corpse.label>肢團屍體</BRF_Clump_Corpse.label>
+  <BRF_Clump_Corpse.description>肢團屍體</BRF_Clump_Corpse.description>
+
+
+</LanguageData>

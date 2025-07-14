@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_MiniFleshBeast.label>迷你血肉獸</BRF_MiniFleshBeast.label>
+  <BRF_MiniFleshBeast.description>一種特別小的血肉獸，形成原因不明。它們沒有鋒利的爪子，但行動異常迅速。有人認為它最終會變成獨爪獸，但誰知道呢？</BRF_MiniFleshBeast.description>
+  <BRF_MiniFleshBeast.tools.head.label>頭鎚</BRF_MiniFleshBeast.tools.head.label>
+
+
+</LanguageData>

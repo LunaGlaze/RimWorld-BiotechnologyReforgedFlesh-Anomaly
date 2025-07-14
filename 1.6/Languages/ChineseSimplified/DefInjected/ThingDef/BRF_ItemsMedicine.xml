@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 下界疣 -->
+
+  <BRF_PurgatoryWarts.label>炼狱疣</BRF_PurgatoryWarts.label>
+  <BRF_PurgatoryWarts.description>一种怪异的疣状肉质真菌。这种奇特的作物可以直接用以医疗，比起草药的效果更差一些。但它更适合使用异常血肉技术制成进阶的医疗用品。</BRF_PurgatoryWarts.description>
+
+  <!-- 血红草药包 -->
+
+  <BRF_BloodyHerbPack.label>血腥草药包</BRF_BloodyHerbPack.label>
+  <BRF_BloodyHerbPack.description>一种散发着血腥味的原始医药，由炼狱疣精炼得来，效果强于一般的草药，但容易腐烂。</BRF_BloodyHerbPack.description>
+
+  <!-- 猩红胺 -->
+
+  <BRF_Scarletamine.label>猩红胺</BRF_Scarletamine.label>
+  <BRF_Scarletamine.description>一种奇怪的化学物质。它本身没有任何作用，但和中性胺一样，是异常血肉科技中合成许多医疗用品的必需品。</BRF_Scarletamine.description>
+
+  <!-- 精炼血肉医药 -->
+
+  <BRF_MedicineRefiningFlesh.label>精炼血肉医药</BRF_MedicineRefiningFlesh.label>
+  <BRF_MedicineRefiningFlesh.description>异常血肉医疗设备包。除了最基本的药物外，这套装备还包括一些生物纳米机械和一次性生物工具，以帮助治疗过程。</BRF_MedicineRefiningFlesh.description>
+
+</LanguageData>

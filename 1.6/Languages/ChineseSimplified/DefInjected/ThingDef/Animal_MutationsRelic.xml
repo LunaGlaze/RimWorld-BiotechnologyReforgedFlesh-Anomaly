@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物种ThingDef -->
+
+  <BRF_MutationsRelicFlesh.label>畸变肉块</BRF_MutationsRelicFlesh.label>
+  <BRF_MutationsRelicFlesh.description>蠕动、不断增殖、癌变的肉团。它既贪婪又肮脏，不断增殖着犹如血肉兽的雏形异常组织。如果能对肉块进行适当分割，或许可以将其移植到人体中……</BRF_MutationsRelicFlesh.description>
+  <BRF_MutationsRelicFlesh.tools.tentacle-0.label>触手</BRF_MutationsRelicFlesh.tools.tentacle-0.label>
+  <BRF_MutationsRelicFlesh.tools.tentacle-1.label>触手</BRF_MutationsRelicFlesh.tools.tentacle-1.label>
+  <BRF_MutationsRelicFlesh.tools.tentacle-2.label>触手</BRF_MutationsRelicFlesh.tools.tentacle-2.label>
+  <!-- Leather Amount: 0 -->
+  <BRF_MutationsRelicFlesh_Corpse.label>畸变肉块尸体</BRF_MutationsRelicFlesh_Corpse.label>
+  <BRF_MutationsRelicFlesh_Corpse.description>畸变肉块尸体</BRF_MutationsRelicFlesh_Corpse.description>
+
+
+</LanguageData>

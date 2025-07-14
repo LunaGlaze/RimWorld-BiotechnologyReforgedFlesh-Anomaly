@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BRF_MessagePeristalticFleshAssembled>The primordial flesh cradle has hatched new peristaltic flesh blob.</BRF_MessagePeristalticFleshAssembled>
+  <BRF_PeristalticFleshAssemblyCompleteIn>will incubate {0} within {1}.</BRF_PeristalticFleshAssemblyCompleteIn>
+
+  <BRF_MutationsRelicImplantsDesc>Flesh mutant bionts growing: </BRF_MutationsRelicImplantsDesc>
+  
+  <BRF_NecrophagistEntityWhenDigestinng>It's being digested: </BRF_NecrophagistEntityWhenDigestinng>
+  
+  <BRF_CrimsonProvocationCompletedText>{INVOKER_nameDef} has finished performing {RITUAL_definite} ritual, sending out a psychic pulse that will attract flesh entities.</BRF_CrimsonProvocationCompletedText>
+  
+  <BRF_SummonSwarmsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The swarms will be here soon.</BRF_SummonSwarmsFinishText>
+  
+  <BRF_SummonClumpsFinishText>{0_nameDef} has completed {RITUAL_definite} ritual. The hungry Clumps are on their way.</BRF_SummonClumpsFinishText>
+  
+  <BRF_RitualSacrificedFinishText>{INVOKER_nameDef} has completed {RITUAL_definite} ritual. {TARGET_nameDef} was sacrificed, body and flesh vanished from the world.</BRF_RitualSacrificedFinishText>
+
+  <BRF_SummonFleshBossSucceeded>A terrifying and bloody shadow emerges!</BRF_SummonFleshBossSucceeded>
+  <BRF_SummonFleshBossFailed>Something must have gone wrong somewhere and the sacrifice was wasted!</BRF_SummonFleshBossFailed>
+
+  <BRF_ExileRawProphetSucceeded>The Raw Prophet had been sent to other place.</BRF_ExileRawProphetSucceeded>
+  <BRF_ExileRawProphetFailed>There has not any Raw Prophet and the sacrifice was wasted!</BRF_ExileRawProphetFailed>
+
+  <BRF_AkulothRitualFinishText>{INVOKER_nameDef} successfully achieve symbiosis with the akuloth.</BRF_AkulothRitualFinishText>
+  <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has been symbiosis with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>
+  
+  
+  <BRF_InitiationRitualBaseFinishText>{INVOKER_nameDef} has completed {RITUAL_definite} ritual. {TARGET_nameDef} has became a glorious Orin.</BRF_InitiationRitualBaseFinishText>
+  <BRF_InitiationRitualCompleteText>{0_nameDef} has became a glorious Orin. \n\nDue to the immaturity of the caster, the process has atrophied {0_nameDef}'s brain, causing {0_objective} to lose a total of {1} XP in {0_possessive} skills.</BRF_InitiationRitualCompleteText>
+
+  <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has symbiosied with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>
+  <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef} has got the initiation of flesh.</BRF_psychicRitualLeaveReason_SarkicismTrait>
+
+  <BRF_WorkingSpeedMultiplierReduced>Reduce Working Speed</BRF_WorkingSpeedMultiplierReduced>
+  <BRF_WorkingSpeedMultiplierReduced_Desc>Reduce working speed multiplier and actual fuel consumption multiplier.</BRF_WorkingSpeedMultiplierReduced_Desc>
+  
+  <BRF_WorkingSpeedMultiplierReset>Reset Working Speed</BRF_WorkingSpeedMultiplierReset>
+  <BRF_WorkingSpeedMultiplierReset_Desc>Reset working speed multiplier and actual fuel consumption multiplier to 100%.</BRF_WorkingSpeedMultiplierReset_Desc>
+  
+  <BRF_WorkingSpeedMultiplierAdded>Add Working Speed</BRF_WorkingSpeedMultiplierAdded>
+  <BRF_WorkingSpeedMultiplierAdded_Desc>Add working speed multiplier and actual fuel consumption multiplier.</BRF_WorkingSpeedMultiplierAdded_Desc>
+
+  <BRF_CompWorkingSpeedMultiplier>Current operating speed multiplier: </BRF_CompWorkingSpeedMultiplier>
+  <BRF_CompWorkingSpeedTrulyFuelConsume>Actual fuel will last for </BRF_CompWorkingSpeedTrulyFuelConsume>
+
+  <BRF_LetterLabelScarletCerebralJellyfishRevealed>Scarlet Cerebral Jellyfish revealed</BRF_LetterLabelScarletCerebralJellyfishRevealed>
+  <BRF_LetterScarletCerebralJellyfishRevealed>A twisted flesh creature has appeared out of thin air!</BRF_LetterScarletCerebralJellyfishRevealed>
+  <BRF_MessageScarletCerebralJellyfishRevealed>A Scarlet Cerebral Jellyfish has appeared!</BRF_MessageScarletCerebralJellyfishRevealed>
+  
+  <BRF_Command_EquipWeapon>Equip Weapon</BRF_Command_EquipWeapon>
+  <BRF_Command_EquipWeaponDesc>Equips the selected weapon to the gunholder. Melee weapons or biocoded weapons cannot be equipped.</BRF_Command_EquipWeaponDesc>
+  <BRF_Command_UnequipWeapon>Unequip Weapon</BRF_Command_UnequipWeapon>
+  <BRF_Command_CancelReserveWeapon>Cancel Weapon Equip</BRF_Command_CancelReserveWeapon>
+  <BRF_Command_CancelReserveWeaponDesc>Cancels the currently reserved weapon equip.</BRF_Command_CancelReserveWeaponDesc>
+
+</Defs>

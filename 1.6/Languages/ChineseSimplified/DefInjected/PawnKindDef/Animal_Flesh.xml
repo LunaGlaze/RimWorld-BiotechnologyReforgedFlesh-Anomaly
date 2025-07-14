@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- living flesh -->
+
+  <BRF_PeristalticFleshBlob.label>蠕动肉块</BRF_PeristalticFleshBlob.label>
+  <BRF_PeristalticFleshBlob.labelPlural>蠕动肉块</BRF_PeristalticFleshBlob.labelPlural>
+  <BRF_PeristalticFleshBlob.lifeStages.0.label>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.label>
+  <BRF_PeristalticFleshBlob.lifeStages.0.labelPlural>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.labelPlural>
+  <BRF_PeristalticFleshBlob.lifeStages.0.labelMale>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.labelMale>
+  <BRF_PeristalticFleshBlob.lifeStages.0.labelMalePlural>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.labelMalePlural>
+  <BRF_PeristalticFleshBlob.lifeStages.0.labelFemale>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.labelFemale>
+  <BRF_PeristalticFleshBlob.lifeStages.0.labelFemalePlural>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.0.labelFemalePlural>
+  <BRF_PeristalticFleshBlob.lifeStages.1.label>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.label>
+  <BRF_PeristalticFleshBlob.lifeStages.1.labelPlural>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.labelPlural>
+  <BRF_PeristalticFleshBlob.lifeStages.1.labelMale>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.labelMale>
+  <BRF_PeristalticFleshBlob.lifeStages.1.labelMalePlural>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.labelMalePlural>
+  <BRF_PeristalticFleshBlob.lifeStages.1.labelFemale>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.labelFemale>
+  <BRF_PeristalticFleshBlob.lifeStages.1.labelFemalePlural>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.1.labelFemalePlural>
+  <BRF_PeristalticFleshBlob.lifeStages.2.label>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.label>
+  <BRF_PeristalticFleshBlob.lifeStages.2.labelPlural>蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.labelPlural>
+  <BRF_PeristalticFleshBlob.lifeStages.2.labelMale>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.labelMale>
+  <BRF_PeristalticFleshBlob.lifeStages.2.labelMalePlural>雄性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.labelMalePlural>
+  <BRF_PeristalticFleshBlob.lifeStages.2.labelFemale>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.labelFemale>
+  <BRF_PeristalticFleshBlob.lifeStages.2.labelFemalePlural>雌性蠕动肉块</BRF_PeristalticFleshBlob.lifeStages.2.labelFemalePlural>
+  <BRF_PeristalticFleshBlob.labelMale>雄性蠕动肉块</BRF_PeristalticFleshBlob.labelMale>
+  <BRF_PeristalticFleshBlob.labelMalePlural>雄性蠕动肉块</BRF_PeristalticFleshBlob.labelMalePlural>
+  <BRF_PeristalticFleshBlob.labelFemale>雌性蠕动肉块</BRF_PeristalticFleshBlob.labelFemale>
+  <BRF_PeristalticFleshBlob.labelFemalePlural>雌性蠕动肉块</BRF_PeristalticFleshBlob.labelFemalePlural>
+
+
+</LanguageData>

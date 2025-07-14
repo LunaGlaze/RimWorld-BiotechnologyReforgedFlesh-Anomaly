@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_ScarletFever.label>猩紅狂熱</BRF_ScarletFever.label>
+  <BRF_ScarletFever.description>那些更原始但更高效的血肉怪獸總是伴隨著這種扭曲的狂熱出現。牠們不怕疼痛，牠們所向披靡。</BRF_ScarletFever.description>
+
+  <BRF_BloodstainedTickParasiticed.label>汙血寄生</BRF_BloodstainedTickParasiticed.label>
+  <BRF_BloodstainedTickParasiticed.description>這個生物的體內存在一種寄生性的實體，該實體合成的生物納米機械在強化宿主的同時與一個遙遠的超凡智能引擎達成通訊，扭曲了宿主的意志。</BRF_BloodstainedTickParasiticed.description>
+
+
+  <BRF_MalignantFleshActivation.label>惡性血肉活化</BRF_MalignantFleshActivation.label>
+  <BRF_MalignantFleshActivation.description>一種通過怪異的血肉獸攻擊傳播的具有靈能效應的感染。雖然它能讓受感染者在短時間內變得更強大，但也會導致疼痛感驟增，並可能導致某些原本難以發生的惡性實體效應。</BRF_MalignantFleshActivation.description>
+  <BRF_MalignantFleshActivation.stages.0.label>輕微</BRF_MalignantFleshActivation.stages.0.label>
+  <BRF_MalignantFleshActivation.stages.1.label>輕微</BRF_MalignantFleshActivation.stages.1.label>
+  <BRF_MalignantFleshActivation.stages.2.label>嚴重</BRF_MalignantFleshActivation.stages.2.label>
+  <BRF_MalignantFleshActivation.stages.3.label>嚴重</BRF_MalignantFleshActivation.stages.3.label>
+  <BRF_MalignantFleshActivation.stages.4.label>極度</BRF_MalignantFleshActivation.stages.4.label>
+  <BRF_MalignantFleshActivation.stages.5.label>極度</BRF_MalignantFleshActivation.stages.5.label>
+
+  <BRF_FleshLacerated.label>血肉撕裂</BRF_FleshLacerated.label>
+  <BRF_FleshLacerated.description>一種生物病毒增生物潛伏在目標體內，如果目標不是機械體，最終可能會皮開肉綻。</BRF_FleshLacerated.description>
+  <BRF_FleshLacerated.stages.0.label>輕微</BRF_FleshLacerated.stages.0.label>
+  <BRF_FleshLacerated.stages.1.label>嚴重</BRF_FleshLacerated.stages.1.label>
+  <BRF_FleshLacerated.stages.2.label>極度</BRF_FleshLacerated.stages.2.label>
+  <BRF_FleshLacerated.stages.3.label>極度</BRF_FleshLacerated.stages.3.label>
+
+  <BRF_FIeshLacerated.label>血肉撕裂</BRF_FIeshLacerated.label>
+  <BRF_FIeshLacerated.description>一種生物病毒增生物潛伏在目標體內，如果目標不是機械體，最終可能會皮開肉綻。</BRF_FIeshLacerated.description>
+  <BRF_FIeshLacerated.stages.0.label>輕微</BRF_FIeshLacerated.stages.0.label>
+  <BRF_FIeshLacerated.stages.1.label>嚴重</BRF_FIeshLacerated.stages.1.label>
+  <BRF_FIeshLacerated.stages.2.label>極度</BRF_FIeshLacerated.stages.2.label>
+  <BRF_FIeshLacerated.stages.3.label>極度</BRF_FIeshLacerated.stages.3.label>
+
+  <BRF_CrimsonSporeMechanicalInterference.label>緋紅孢子機械幹擾</BRF_CrimsonSporeMechanicalInterference.label>
+  <BRF_CrimsonSporeMechanicalInterference.description>一種含有超凡微械的孢子進入目標內部。這種孢子旨在使植物和地形轉變為更合適的形態，而不是針對生物或機械。然而，在它的影響下，機械會迅速過熱乃至自毀。</BRF_CrimsonSporeMechanicalInterference.description>
+  <BRF_CrimsonSporeMechanicalInterference.stages.0.label>輕微</BRF_CrimsonSporeMechanicalInterference.stages.0.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.1.label>嚴重</BRF_CrimsonSporeMechanicalInterference.stages.1.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.2.label>極度</BRF_CrimsonSporeMechanicalInterference.stages.2.label>
+  <BRF_CrimsonSporeMechanicalInterference.stages.3.label>極度</BRF_CrimsonSporeMechanicalInterference.stages.3.label>
+
+  <BRF_CrimsonSporeCut.label>緋紅孢子切割</BRF_CrimsonSporeCut.label>
+  <BRF_CrimsonSporeCut.description>一種人類無法理解的介於血肉、真菌和納米機械之間的畸形孢子對機體造成了破壞。</BRF_CrimsonSporeCut.description>
+
+
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>猩紅腦蜇插入</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>猩紅腦蜇附身在受害者的頭部，並將觸手插入受害者的大腦。通過這種方式，該血肉實體將化學物質注入受害者的大腦，控制受害者的行為。</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+
+  <BRF_RebirthPsycorpse_AngelsDescend.label>天使降臨</BRF_RebirthPsycorpse_AngelsDescend.label>
+  <BRF_RebirthPsycorpse_AngelsDescend.description>有什麼血腥而神聖的本質替代了某人……你不該看到它的……</BRF_RebirthPsycorpse_AngelsDescend.description>
+  <BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterLabel>血腥轉化</BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterLabel>
+  <BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterText>{PAWN_nameDef}突然變成了一個血腥的、扭曲的、怪異得神聖的人形。小心！誰知道它什麼時候變成這樣了！</BRF_RebirthPsycorpse_AngelsDescend.comps.0.letterText>
+
+</LanguageData>

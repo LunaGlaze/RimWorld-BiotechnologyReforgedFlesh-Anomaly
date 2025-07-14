@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 肢体守卫 -->
+
+  <BRF_FrankensteinHandPod.label>弗兰肯斯坦之茧（手）</BRF_FrankensteinHandPod.label>
+  <BRF_FrankensteinHandPod.description>这团肉块蕴藏着某种生命。</BRF_FrankensteinHandPod.description>
+  <BRF_FrankensteinHandPod_Blueprint.label>弗兰肯斯坦之茧（手）（蓝图）</BRF_FrankensteinHandPod_Blueprint.label>
+  <BRF_FrankensteinHandPod_Frame.label>弗兰肯斯坦之茧（手）（建造中）</BRF_FrankensteinHandPod_Frame.label>
+  <BRF_FrankensteinHandPod_Frame.description>这团肉块蕴藏着某种生命。</BRF_FrankensteinHandPod_Frame.description>
+
+  <BRF_FrankensteinFootPod.label>弗兰肯斯坦之茧（足）</BRF_FrankensteinFootPod.label>
+  <BRF_FrankensteinFootPod.description>这团肉块蕴藏着某种生命。</BRF_FrankensteinFootPod.description>
+  <BRF_FrankensteinFootPod_Blueprint.label>弗兰肯斯坦之茧（足）（蓝图）</BRF_FrankensteinFootPod_Blueprint.label>
+  <BRF_FrankensteinFootPod_Frame.label>弗兰肯斯坦之茧（足）（建造中）</BRF_FrankensteinFootPod_Frame.label>
+  <BRF_FrankensteinFootPod_Frame.description>这团肉块蕴藏着某种生命。</BRF_FrankensteinFootPod_Frame.description>
+
+
+  <!-- 畸变肉块 -->
+
+  <BRF_MutationsRelicPod.label>畸变遗物之茧</BRF_MutationsRelicPod.label>
+  <BRF_MutationsRelicPod.description>这团肉块蕴藏着某种生命。</BRF_MutationsRelicPod.description>
+  <BRF_MutationsRelicPod_Blueprint.label>畸变遗物之茧（蓝图）</BRF_MutationsRelicPod_Blueprint.label>
+  <BRF_MutationsRelicPod_Frame.label>畸变遗物之茧（建造中）</BRF_MutationsRelicPod_Frame.label>
+  <BRF_MutationsRelicPod_Frame.description>这团肉块蕴藏着某种生命。</BRF_MutationsRelicPod_Frame.description>
+
+
+</LanguageData>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_HarbingerTentacles.label>厄兆觸鬚</BRF_HarbingerTentacles.label>
+  <BRF_HarbingerTentacles.description>一種怪異的肉質植物——或者說，是一大堆像植物一樣生長的扭曲觸手。令人毛骨悚然，但美味多汁。這種非自然的作物能適應更極端的環境。</BRF_HarbingerTentacles.description>
+
+  <BRF_CrimsonAgarilux.label>緋紅蕈</BRF_CrimsonAgarilux.label>
+  <BRF_CrimsonAgarilux.description>一種介於血肉與真菌之間的植物，似乎源自於某個詭異的超凡智能的改造。這種植物能夠適應較為極端的環境，並能產出一些奇特但有用的生物素材。據說這是來自內殿樂土的生命之樹。</BRF_CrimsonAgarilux.description>
+
+  <BRF_CrimsonAgarilux_Seed.label>緋紅蕈種子</BRF_CrimsonAgarilux_Seed.label>
+  <BRF_CrimsonAgarilux_Seed.description>一個人工培育的緋紅蕈的幼苗。將其種植可以成長為緋紅蕈，一種發出熒光併產出血肉材料的樹。</BRF_CrimsonAgarilux_Seed.description>
+
+  <BRF_CrimsonSakura.label>緋紅櫻</BRF_CrimsonSakura.label>
+  <BRF_CrimsonSakura.description>一種美麗而怪異的植物，其生物性徵介於血肉和真菌之間，但卻能產出某種木製材料。傳這種被稱為內殿樂土的櫻花樹的植物是一個偉大而自由的世界的主要景觀植物和木材來源。</BRF_CrimsonSakura.description>
+
+  <BRF_CrimsonPeepingLeaves.label>緋紅窺葉</BRF_CrimsonPeepingLeaves.label>
+  <BRF_CrimsonPeepingLeaves.description>也許是一種草本植物，但其身上同樣也具有一些肉質的結構。雖然那顆眼睛在常理上並不具有視覺功能，但你還是感覺到似乎有什麼東西注視著你。</BRF_CrimsonPeepingLeaves.description>
+
+  <BRF_PurgatoryWart.label>煉獄疣</BRF_PurgatoryWart.label>
+  <BRF_PurgatoryWart.description>一種彷彿來自深淵的怪異植物，如同鮮嫩多汁的肉卻像真菌一樣生長。這種植物在收穫之後可以作為一種簡易的草藥，亦或者一種怪異的生物材料。</BRF_PurgatoryWart.description>
+
+  <BRF_CrimsonRoots.label>緋紅蕈根</BRF_CrimsonRoots.label>
+  <BRF_CrimsonRoots.description>一種彷彿來自異世界而血腥的類草植物。它有著類似草本植物的地面部分，如同真菌的根部和埋在地下的肉塊一樣的核心。好消息是，這種怪異的植物可以像普通的乾草一樣收穫。</BRF_CrimsonRoots.description>
+
+  <BRF_Plant_BloodyCitrusReticulata.label>血柑橘</BRF_Plant_BloodyCitrusReticulata.label>
+  <BRF_Plant_BloodyCitrusReticulata.description>一種血腥的改造植物，能夠結出美味的血柑橘果實。可惜的是其灌木本體只能結果一次，收穫後就會枯萎，需要重新種植。傳說在內殿樂土，人們將其作為慶祝節日和新的一年到來的意味著幸福的吉利小零食。</BRF_Plant_BloodyCitrusReticulata.description>
+
+
+</LanguageData>

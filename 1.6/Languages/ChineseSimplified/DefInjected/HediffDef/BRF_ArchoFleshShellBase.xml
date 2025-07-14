@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_Akuloth.label>神圣的白虫</BRF_Akuloth.label>
+  <BRF_Akuloth.description>一种共生生物，能够充当第二免疫系统，保护宿主免受疾病侵害，并大幅提升其再生能力。它能预防由超凡血肉仿生体引起的致命感染，并定期降低现有疾病的严重程度。</BRF_Akuloth.description>
+
+  <BRF_ArchoRebirthHeart.label>重生血肉心</BRF_ArchoRebirthHeart.label>
+  <BRF_ArchoRebirthHeart.description>一个已安装的重生血肉心。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthHeart.description>
+  <BRF_ArchoRebirthHeart.labelNoun>重生血肉心</BRF_ArchoRebirthHeart.labelNoun>
+
+  <BRF_ArchoRebirthLung.label>重生血肉肺</BRF_ArchoRebirthLung.label>
+  <BRF_ArchoRebirthLung.description>一个已安装的重生血肉肺。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthLung.description>
+  <BRF_ArchoRebirthLung.labelNoun>重生血肉肺</BRF_ArchoRebirthLung.labelNoun>
+
+  <BRF_ArchoRebirthKidney.label>重生血肉肾</BRF_ArchoRebirthKidney.label>
+  <BRF_ArchoRebirthKidney.description>一个已安装的重生血肉肾。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthKidney.description>
+  <BRF_ArchoRebirthKidney.labelNoun>重生血肉肾</BRF_ArchoRebirthKidney.labelNoun>
+
+  <BRF_ArchoRebirthLiver.label>重生血肉肝</BRF_ArchoRebirthLiver.label>
+  <BRF_ArchoRebirthLiver.description>一个已安装的重生血肉肝。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthLiver.description>
+  <BRF_ArchoRebirthLiver.labelNoun>重生血肉肝</BRF_ArchoRebirthLiver.labelNoun>
+
+  <BRF_ArchoRebirthEye.label>重生血肉眼</BRF_ArchoRebirthEye.label>
+  <BRF_ArchoRebirthEye.description>一个已安装的重生血肉眼。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthEye.description>
+  <BRF_ArchoRebirthEye.labelNoun>重生血肉眼</BRF_ArchoRebirthEye.labelNoun>
+
+  <BRF_ArchoRebirthArm.label>重生血肉臂</BRF_ArchoRebirthArm.label>
+  <BRF_ArchoRebirthArm.description>一个已安装的重生血肉臂。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthArm.description>
+  <BRF_ArchoRebirthArm.comps.0.tools.0.label>拳</BRF_ArchoRebirthArm.comps.0.tools.0.label>
+  <BRF_ArchoRebirthArm.labelNoun>重生血肉臂</BRF_ArchoRebirthArm.labelNoun>
+
+  <BRF_ArchoRebirthLeg.label>重生血肉腿</BRF_ArchoRebirthLeg.label>
+  <BRF_ArchoRebirthLeg.description>一个已安装的重生血肉腿。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthLeg.description>
+  <BRF_ArchoRebirthLeg.labelNoun>重生血肉腿</BRF_ArchoRebirthLeg.labelNoun>
+  
+  <BRF_ArchoRebirthEar.label>重生血肉耳</BRF_ArchoRebirthEar.label>
+  <BRF_ArchoRebirthEar.description>一个已安装的重生血肉耳。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthEar.description>
+  <BRF_ArchoRebirthEar.labelNoun>重生血肉耳</BRF_ArchoRebirthEar.labelNoun>
+
+  <BRF_ArchoRebirthNose.label>重生血肉鼻</BRF_ArchoRebirthNose.label>
+  <BRF_ArchoRebirthNose.description>一个已安装的重生血肉鼻。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthNose.description>
+  <BRF_ArchoRebirthNose.labelNoun>重生血肉鼻</BRF_ArchoRebirthNose.labelNoun>
+  
+  <BRF_ArchoRebirthStomach.label>重生血肉胃</BRF_ArchoRebirthStomach.label>
+  <BRF_ArchoRebirthStomach.description>一个已安装的重生血肉胃。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthStomach.description>
+  <BRF_ArchoRebirthStomach.labelNoun>重生血肉胃</BRF_ArchoRebirthStomach.labelNoun>
+
+  <BRF_ArchoRebirthSpine.label>重生血肉脊椎</BRF_ArchoRebirthSpine.label>
+  <BRF_ArchoRebirthSpine.description>一个已安装的重生血肉脊椎。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthSpine.description>
+  <BRF_ArchoRebirthSpine.labelNoun>重生血肉脊椎</BRF_ArchoRebirthSpine.labelNoun>
+
+</LanguageData>

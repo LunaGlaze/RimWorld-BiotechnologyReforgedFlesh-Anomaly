@@ -12,19 +12,24 @@ namespace Luna_BRF
 		public CompProperties_LunaInfectedTerrainSpread()
 		{
 			this.compClass = typeof(LunaInfectedTerrainSpread);
-		}
+        }
+        public class SpecialConvertTerrainDefSet
+        {
+            public TerrainDef requiredTerrainDef;
+            public TerrainDef convertTerrainDef;
+        }
 
-		public float radius;
+        public float radius;
 
 		public IntRange spawnTickRate;
 
-		public TerrainDef requiredTerrain;
-
-		public TerrainDef terrainToSet;
+		public TerrainDef setConvertTerrainDef;
 
 		public float baseWorkingSpeedMultiplier = 1f;
 
 		public List<TerrainDef> allowTerrains = null;
 
-	}
+        public List<SpecialConvertTerrainDefSet> specialConvertTerrainDefs = new List<SpecialConvertTerrainDefSet>();
+
+    }
 }

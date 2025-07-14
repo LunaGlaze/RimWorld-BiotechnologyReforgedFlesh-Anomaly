@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_InvisibleWatched.label>隐形窥探</BRF_InvisibleWatched.label>
+  <BRF_InvisibleWatched.description>如果该生物被另一个具有心灵效果的生物构造机械观测到，它的隐形能力就会失效。</BRF_InvisibleWatched.description>
+
+  <BRF_RapidRegeneration.label>高速再生</BRF_RapidRegeneration.label>
+  <BRF_RapidRegeneration.description>这个生物体内蕴含着惊人的愈疗能量。若不加以限制，它便能使身体高速再生直至能量耗尽。</BRF_RapidRegeneration.description>
+
+  <BRF_ResurrectionLink.label>血肉苏生连结</BRF_ResurrectionLink.label>
+  <BRF_ResurrectionLink.description>这个实体以某种方式通过或是欺瞒了远方某个血肉超凡节点的认证系统以得到了链接。这个链接会在该实体失去复活能力后的一段时间内通过远程心灵场向其灌输死亡回避。</BRF_ResurrectionLink.description>
+
+
+</LanguageData>

@@ -147,7 +147,7 @@
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.48</AccuracyMedium>
       <AccuracyLong>0.36</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>BRF_BloodthornFleshGunsResearch</researchPrerequisite>
@@ -193,8 +193,8 @@
     <projectile>
       <speed>64</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>17</damageAmountBase>
-      <stoppingPower>1</stoppingPower>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
     </projectile>
     <modExtensions>
         <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">
@@ -228,8 +228,8 @@
     <statBases>
       <WorkToMake>31000</WorkToMake>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.82</AccuracyTouch>
-      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.72</AccuracyMedium>
       <AccuracyLong>0.55</AccuracyLong>
       <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
@@ -280,7 +280,7 @@
     <projectile>
       <speed>58</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>23</damageAmountBase>
+      <damageAmountBase>24</damageAmountBase>
       <stoppingPower>3</stoppingPower>
     </projectile>
     <modExtensions>
@@ -315,10 +315,10 @@
     <statBases>
       <WorkToMake>24000</WorkToMake>
       <Mass>3.5</Mass>
-      <AccuracyTouch>0.88</AccuracyTouch>
-      <AccuracyShort>0.64</AccuracyShort>
-      <AccuracyMedium>0.48</AccuracyMedium>
-      <AccuracyLong>0.42</AccuracyLong>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
@@ -335,7 +335,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>BRF_BloodthornScarer_Spike</defaultProjectile>
         <burstShotCount>4</burstShotCount>
-        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <warmupTime>0.9</warmupTime>
         <range>33.9</range>
         <soundCast>BRF_Pawn_Flesh_Call</soundCast>
@@ -367,8 +367,8 @@
     <projectile>
       <speed>72</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>16</damageAmountBase>
-      <stoppingPower>0.5</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
     </projectile>
     <modExtensions>
         <li Class="Luna_BRF.ExtensionDef_LunaHediffAddBullet">

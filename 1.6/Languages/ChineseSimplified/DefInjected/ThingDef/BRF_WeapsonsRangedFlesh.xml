@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_Ranged_FleshShooter.label>血肉发射器</BRF_Ranged_FleshShooter.label>
+  <BRF_Ranged_FleshShooter.description>造型怪异的肉块，生长成了与手枪有些相似但事实上完全无关的形状。它能够迅速爆发出强大的力量向目标发射出有毒的尖牙进行攻击，但补充的速度比较慢。</BRF_Ranged_FleshShooter.description>
+  <BRF_Ranged_FleshShooter.tools.limb.label>柄</BRF_Ranged_FleshShooter.tools.limb.label>
+  <BRF_FleshShooter_Spike.label>有毒尖牙</BRF_FleshShooter_Spike.label>
+
+  <BRF_Ranged_BloodthornStinger.label>血棘突刺者</BRF_Ranged_BloodthornStinger.label>
+  <BRF_Ranged_BloodthornStinger.description>造型怪异的肉块，生长成了与手枪有些相似但事实上完全无关的形状。这种武器以某种能够操纵虫族尸体的寄生实体的神经结构为核心，通过各种重塑肉体材料维持了优秀的活性，可以听从持有者的指令射出危险的尖刺。\n\n在类似的型号中，这一款的性能最中规中矩，但尖刺留下撕裂血肉的病毒的几率最高。</BRF_Ranged_BloodthornStinger.description>
+  <BRF_Ranged_BloodthornStinger.tools.limb.label>柄</BRF_Ranged_BloodthornStinger.tools.limb.label>
+  <BRF_BloodthornStinger_Spike.label>血肉棘刺</BRF_BloodthornStinger_Spike.label>
+
+  <BRF_Ranged_BloodthornScatterer.label>血棘散射者</BRF_Ranged_BloodthornScatterer.label>
+  <BRF_Ranged_BloodthornScatterer.description>造型怪异的肉块，生长成了与霰弹枪有些相似但事实上完全无关的形状。这种武器以某种能够操纵虫族尸体的寄生实体的神经结构为核心，通过各种重塑肉体材料维持了优秀的活性，可以听从持有者的指令射出危险的尖刺。\n\n它发射的尖刺是类似的型号中最慢的，有一般几率留下撕裂血肉的病毒，但一次可以发射三根尖刺。</BRF_Ranged_BloodthornScatterer.description>
+  <BRF_Ranged_BloodthornScatterer.tools.limb.label>柄</BRF_Ranged_BloodthornScatterer.tools.limb.label>
+  <BRF_BloodthornScatterer_Spike.label>血肉棘刺</BRF_BloodthornScatterer_Spike.label>
+
+  <BRF_Ranged_BloodthornScarer.label>血棘恐吓者</BRF_Ranged_BloodthornScarer.label>
+  <BRF_Ranged_BloodthornScarer.description>造型怪异的肉块，生长成了与冲锋枪有些相似但事实上完全无关的形状。这种武器以某种能够操纵虫族尸体的寄生实体的神经结构为核心，通过各种重塑肉体材料维持了优秀的活性，可以听从持有者的指令射出危险的尖刺。\n\n在类似的型号中，这一款发射的尖刺有着最快的速度与最低的留下撕裂血肉的病毒的概率，但一次可以发射四根尖刺。</BRF_Ranged_BloodthornScarer.description>
+  <BRF_Ranged_BloodthornScarer.tools.limb.label>柄</BRF_Ranged_BloodthornScarer.tools.limb.label>
+  <BRF_BloodthornScarer_Spike.label>血肉棘刺</BRF_BloodthornScarer_Spike.label>
+
+
+</LanguageData>

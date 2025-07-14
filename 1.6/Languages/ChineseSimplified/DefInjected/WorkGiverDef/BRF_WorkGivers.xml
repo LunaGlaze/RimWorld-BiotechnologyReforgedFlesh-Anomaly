@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DoBills_TwistedCrucible_BRF.label>在扭曲的坩埚种亵渎血肉</DoBills_TwistedCrucible_BRF.label>
+  <DoBills_TwistedCrucible_BRF.verb>亵渎血肉</DoBills_TwistedCrucible_BRF.verb>
+  <DoBills_TwistedCrucible_BRF.gerund>亵渎血肉于</DoBills_TwistedCrucible_BRF.gerund>
+
+  <DoBills_BRF_BioForge.label>重铸新生命</DoBills_BRF_BioForge.label>
+  <DoBills_BRF_BioForge.verb>重铸</DoBills_BRF_BioForge.verb>
+  <DoBills_BRF_BioForge.gerund>重铸</DoBills_BRF_BioForge.gerund>
+
+  <DoBills_BRF_Chewer.label>提供咀嚼之物</DoBills_BRF_Chewer.label>
+  <DoBills_BRF_Chewer.verb>咀嚼</DoBills_BRF_Chewer.verb>
+  <DoBills_BRF_Chewer.gerund>咀嚼</DoBills_BRF_Chewer.gerund>
+
+  <BRF_AnimalResource.label>收获动物产物</BRF_AnimalResource.label>
+  <BRF_AnimalResource.verb>从TargetA处收获动物产物。</BRF_AnimalResource.verb>
+  <BRF_AnimalResource.gerund>正在从TargetA处收获动物产物。</BRF_AnimalResource.gerund>
+
+  <DoBills_BRF_CrimsonAltar.label>嬗变血与肉</DoBills_BRF_CrimsonAltar.label>
+  <DoBills_BRF_CrimsonAltar.verb>嬗变</DoBills_BRF_CrimsonAltar.verb>
+  <DoBills_BRF_CrimsonAltar.gerund>嬗变</DoBills_BRF_CrimsonAltar.gerund>
+
+  <BRF_PlantSeed.label>播撒种子</BRF_PlantSeed.label>
+  <BRF_PlantSeed.gerund>种植</BRF_PlantSeed.gerund>
+  <BRF_PlantSeed.verb>种植</BRF_PlantSeed.verb>
+
+  <BRF_Equip_PsycorpseGuard.label>为灵骸守卫装备武器</BRF_Equip_PsycorpseGuard.label>
+  <BRF_Equip_PsycorpseGuard.gerund>搬运至</BRF_Equip_PsycorpseGuard.gerund>
+  <BRF_Equip_PsycorpseGuard.verb>搬运</BRF_Equip_PsycorpseGuard.verb>
+
+</LanguageData>

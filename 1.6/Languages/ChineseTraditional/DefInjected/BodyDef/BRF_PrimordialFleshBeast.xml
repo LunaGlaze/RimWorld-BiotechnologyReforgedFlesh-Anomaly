@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 身體參數BodyDef -->
+
+  <BRF_PrimordialFleshBeast.label>原始血肉獸</BRF_PrimordialFleshBeast.label>
+  <BRF_PrimordialFleshBeast.corePart.parts.0.parts.0.customLabel>背部巨觸手</BRF_PrimordialFleshBeast.corePart.parts.0.parts.0.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.3.customLabel>左肺</BRF_PrimordialFleshBeast.corePart.parts.3.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.4.customLabel>右肺</BRF_PrimordialFleshBeast.corePart.parts.4.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.5.customLabel>左腎</BRF_PrimordialFleshBeast.corePart.parts.5.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.6.customLabel>右腎</BRF_PrimordialFleshBeast.corePart.parts.6.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.8.parts.0.parts.1.customLabel>左眼</BRF_PrimordialFleshBeast.corePart.parts.8.parts.0.parts.1.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.8.parts.0.parts.2.customLabel>右眼</BRF_PrimordialFleshBeast.corePart.parts.8.parts.0.parts.2.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.9.customLabel>左肩</BRF_PrimordialFleshBeast.corePart.parts.9.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.10.customLabel>右肩</BRF_PrimordialFleshBeast.corePart.parts.10.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.11.customLabel>左觸手</BRF_PrimordialFleshBeast.corePart.parts.11.customLabel>
+  <BRF_PrimordialFleshBeast.corePart.parts.12.customLabel>右觸手</BRF_PrimordialFleshBeast.corePart.parts.12.customLabel>
+
+
+</LanguageData>

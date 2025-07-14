@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物种PawnKindDef -->
+
+  <BRF_MiniFleshBeast.label>迷你血肉兽</BRF_MiniFleshBeast.label>
+  <BRF_MiniFleshBeast.labelPlural>迷你血肉兽</BRF_MiniFleshBeast.labelPlural>
+  <BRF_MiniFleshBeast.labelMale>雄性迷你血肉兽</BRF_MiniFleshBeast.labelMale>
+  <BRF_MiniFleshBeast.labelMalePlural>雄性迷你血肉兽</BRF_MiniFleshBeast.labelMalePlural>
+  <BRF_MiniFleshBeast.labelFemale>雌性迷你血肉兽</BRF_MiniFleshBeast.labelFemale>
+  <BRF_MiniFleshBeast.labelFemalePlural>雌性迷你血肉兽</BRF_MiniFleshBeast.labelFemalePlural>
+
+
+</LanguageData>

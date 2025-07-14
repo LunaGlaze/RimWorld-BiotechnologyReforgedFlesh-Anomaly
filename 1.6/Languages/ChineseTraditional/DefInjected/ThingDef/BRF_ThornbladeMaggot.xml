@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- 物種ThingsDef -->
+
+  <BRF_ThornbladeMaggot.label>棘刃血蛆</BRF_ThornbladeMaggot.label>
+  <BRF_ThornbladeMaggot.description>一種散發著血的腥味的巨型蛆蟲，雖然有著軟體動物一般的身體，但卻有著明顯不屬於正常蛆蟲的特徵。它們的身側有著兩個還算鋒利的角質鞭刃，而頭頂那個形似尖角的毒牙卻並非用以近身作戰，而是能夠驅動身體組織將其射出很遠的距離，並且能夠很快地補充。這種實體移動速度不快，但生命力頑強，死後會爆裂為一灘肉塊，比起正常的造物更像是某種失敗或是未發育完全的實驗品。</BRF_ThornbladeMaggot.description>
+  <BRF_ThornbladeMaggot.tools.left_whip_blade.label>左鞭刃</BRF_ThornbladeMaggot.tools.left_whip_blade.label>
+  <BRF_ThornbladeMaggot.tools.right_whip_blade.label>右鞭刃</BRF_ThornbladeMaggot.tools.right_whip_blade.label>
+  <BRF_ThornbladeMaggot.tools.head.label>頭</BRF_ThornbladeMaggot.tools.head.label>
+
+
+</LanguageData>

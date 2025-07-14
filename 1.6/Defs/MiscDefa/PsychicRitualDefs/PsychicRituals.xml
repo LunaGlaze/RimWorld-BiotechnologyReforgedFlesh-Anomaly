@@ -9,6 +9,9 @@
     <outcomeDescription>With the current quality, there's a {0} chance the invoker will receive dark psychic shock.</outcomeDescription>
     <researchPrerequisite>BRF_CrimsonProvocationResearch</researchPrerequisite>
     <hoursUntilOutcome>2</hoursUntilOutcome>
+    <layerWhitelist>
+      <li>Surface</li>
+    </layerWhitelist>
     <requiredOffering>
       <filter>
         <thingDefs>
@@ -17,6 +20,7 @@
       </filter>
       <count>35</count>
     </requiredOffering>
+    <castableOnPocketMaps>false</castableOnPocketMaps>
     <cooldownHours>180</cooldownHours>
     <psychicShockChanceFromQualityCurve>
       <points>
@@ -80,6 +84,10 @@
     <researchPrerequisite>BRF_SummonSwarmsResearch</researchPrerequisite>
     <outcomeDescription>The higher the ritual quality, the more swarms that will be summoned.</outcomeDescription>
     <hoursUntilOutcome>2</hoursUntilOutcome>
+    <castableOnPocketMaps>false</castableOnPocketMaps>
+    <layerWhitelist>
+      <li>Surface</li>
+    </layerWhitelist>
     <combatPointMultiplierFromQualityRange>0.5~2.5</combatPointMultiplierFromQualityRange>
     <requiredOffering>
       <filter>
@@ -100,6 +108,10 @@
     <researchPrerequisite>BRF_SummonClumpsResearch</researchPrerequisite>
     <outcomeDescription>The higher the ritual quality, the more Clumps that will be summoned.</outcomeDescription>
     <hoursUntilOutcome>4</hoursUntilOutcome>
+    <castableOnPocketMaps>false</castableOnPocketMaps>
+    <layerWhitelist>
+      <li>Surface</li>
+    </layerWhitelist>
     <combatPointMultiplierFromQualityRange>0.5~2.5</combatPointMultiplierFromQualityRange>
     <requiredOffering>
       <filter>

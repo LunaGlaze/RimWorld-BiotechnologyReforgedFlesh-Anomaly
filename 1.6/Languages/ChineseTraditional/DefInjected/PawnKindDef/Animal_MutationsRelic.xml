@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種PawnKindDef -->
+
+  <BRF_MutationsRelicFlesh.label>畸變肉塊</BRF_MutationsRelicFlesh.label>
+  <BRF_MutationsRelicFlesh.labelPlural>畸變肉塊</BRF_MutationsRelicFlesh.labelPlural>
+  <BRF_MutationsRelicFlesh.lifeStages.0.label>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.0.label>
+  <BRF_MutationsRelicFlesh.lifeStages.0.labelPlural>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.0.labelPlural>
+  <BRF_MutationsRelicFlesh.lifeStages.1.label>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.1.label>
+  <BRF_MutationsRelicFlesh.lifeStages.1.labelPlural>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.1.labelPlural>
+  <BRF_MutationsRelicFlesh.lifeStages.2.label>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.2.label>
+  <BRF_MutationsRelicFlesh.lifeStages.2.labelPlural>畸變肉塊</BRF_MutationsRelicFlesh.lifeStages.2.labelPlural>
+
+
+</LanguageData>

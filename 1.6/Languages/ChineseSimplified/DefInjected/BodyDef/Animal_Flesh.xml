@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 身体构造 -->
+
+  <BRF_FleshBase.label>拟似肉块</BRF_FleshBase.label>
+  <BRF_FleshBase.corePart.parts.2.parts.0.parts.0.customLabel>第一只眼</BRF_FleshBase.corePart.parts.2.parts.0.parts.0.customLabel>
+  <BRF_FleshBase.corePart.parts.2.parts.0.parts.1.customLabel>第二只眼</BRF_FleshBase.corePart.parts.2.parts.0.parts.1.customLabel>
+  <BRF_FleshBase.corePart.parts.2.parts.0.parts.2.customLabel>第三只眼</BRF_FleshBase.corePart.parts.2.parts.0.parts.2.customLabel>
+  <BRF_FleshBase.corePart.parts.3.customLabel>第一肩</BRF_FleshBase.corePart.parts.3.customLabel>
+  <BRF_FleshBase.corePart.parts.4.customLabel>第二肩</BRF_FleshBase.corePart.parts.4.customLabel>
+  <BRF_FleshBase.corePart.parts.5.customLabel>第三肩</BRF_FleshBase.corePart.parts.5.customLabel>
+  <BRF_FleshBase.corePart.parts.6.customLabel>第一触手</BRF_FleshBase.corePart.parts.6.customLabel>
+  <BRF_FleshBase.corePart.parts.7.customLabel>第二触手</BRF_FleshBase.corePart.parts.7.customLabel>
+  <BRF_FleshBase.corePart.parts.8.customLabel>第四触手</BRF_FleshBase.corePart.parts.8.customLabel>
+
+
+</LanguageData>

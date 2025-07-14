@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_BloodstainedParasiticedInsectAssault.label>被寄生的蟲群</BRF_BloodstainedParasiticedInsectAssault.label>
+  <BRF_BloodstainedParasiticedInsectAssault.letterText>一些被實體寄生的蟲群來到了你的殖民地，它們已經因實體的寄生而發狂！</BRF_BloodstainedParasiticedInsectAssault.letterText>
+  <BRF_BloodstainedParasiticedInsectAssault.letterLabel>被寄生的蟲群</BRF_BloodstainedParasiticedInsectAssault.letterLabel>
+
+  <BRF_BloodvineZombieSwarm.label>血藤行屍獵群</BRF_BloodvineZombieSwarm.label>
+  <BRF_BloodvineZombieSwarm.letterText>一大群血藤行屍遊蕩到了你的殖民地附近。它們充滿攻擊的慾望，並試圖摧毀守護你殖民地的一切！</BRF_BloodvineZombieSwarm.letterText>
+  <BRF_BloodvineZombieSwarm.letterLabel>血藤行屍獵群</BRF_BloodvineZombieSwarm.letterLabel>
+
+  <BRF_LittleBloodstainedParasiticedInsectAssault.label>被寄生的蟲群</BRF_LittleBloodstainedParasiticedInsectAssault.label>
+  <BRF_LittleBloodstainedParasiticedInsectAssault.letterText>一些被實體寄生的蟲群來到了你的殖民地，它們已經因實體的寄生而發狂！</BRF_LittleBloodstainedParasiticedInsectAssault.letterText>
+  <BRF_LittleBloodstainedParasiticedInsectAssault.letterLabel>被寄生的蟲群</BRF_LittleBloodstainedParasiticedInsectAssault.letterLabel>
+
+  <BRF_ClumpAssault.label>肢團襲擊</BRF_ClumpAssault.label>
+  <BRF_ClumpAssault.letterText>一群饑餓的肢團闖入了你們的殖民地附近。這種肉體和肢體構造的怪物可能會摧毀和吞噬它們所看到的一切。</BRF_ClumpAssault.letterText>
+  <BRF_ClumpAssault.letterLabel>肢團襲擊</BRF_ClumpAssault.letterLabel>
+
+  <BRF_CrimsonLivingFungiAssault.label>緋紅活菌抵達</BRF_CrimsonLivingFungiAssault.label>
+  <BRF_CrimsonLivingFungiAssault.letterText>一種怪異的活體血肉真菌生物到訪了你都殖民地。它們只是自顧地釋放著一種不知道是血肉還是真菌亦或者納米機械的怪異孢子，履行著它們改造環境的職責。</BRF_CrimsonLivingFungiAssault.letterText>
+  <BRF_CrimsonLivingFungiAssault.letterLabel>緋紅活菌抵達</BRF_CrimsonLivingFungiAssault.letterLabel>
+
+  <BRF_ScarletCerebralJellyfishAssault.label>怪異海蜇出現</BRF_ScarletCerebralJellyfishAssault.label>
+  <BRF_ScarletCerebralJellyfishAssault.letterText>伴隨著一陣心靈波動，有什麼東西出現在了你的附近。你隱約看見一個漂浮在空中的水母或是海蜇的身影……並且明顯不懷好意。
+</BRF_ScarletCerebralJellyfishAssault.letterText>
+  <BRF_ScarletCerebralJellyfishAssault.letterLabel>怪異海蜇</BRF_ScarletCerebralJellyfishAssault.letterLabel>
+
+</LanguageData>

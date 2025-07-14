@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉擬足 -->
+
+  <BRF_FleshPseudoLegHediff.label>血肉擬足</BRF_FleshPseudoLegHediff.label>
+  <BRF_FleshPseudoLegHediff.description>強健發達的血肉觸手擬態而成的類腿器官。\n\n這只觸手有自己的神經結構，將其移除可能招致危險。</BRF_FleshPseudoLegHediff.description>
+  <BRF_FleshPseudoLegHediff.comps.0.letterLabel>血肉手術</BRF_FleshPseudoLegHediff.comps.0.letterLabel>
+  <BRF_FleshPseudoLegHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉擬足的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshPseudoLegHediff.comps.0.letterText>
+  <BRF_FleshPseudoLegHediff.labelNoun>血肉擬足</BRF_FleshPseudoLegHediff.labelNoun>
+
+
+  <!-- 血肉腕足 -->
+
+  <BRF_FleshBrachiopodHediff.label>血肉腕足</BRF_FleshBrachiopodHediff.label>
+  <BRF_FleshBrachiopodHediff.description>一種肉質、肌肉發達的觸手，可以用來移動身體，但效果模樣那麼好。這些觸手長在應該長腿的地方，但由於其靈活性，在某種程度上也可以當作手來使用。\n\n這只觸手有自己的神經結構，將其移除可能招致危險。</BRF_FleshBrachiopodHediff.description>
+  <BRF_FleshBrachiopodHediff.comps.0.letterLabel>血肉手術</BRF_FleshBrachiopodHediff.comps.0.letterLabel>
+  <BRF_FleshBrachiopodHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉腕足的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshBrachiopodHediff.comps.0.letterText>
+  <BRF_FleshBrachiopodHediff.labelNoun>a 血肉腕足</BRF_FleshBrachiopodHediff.labelNoun>
+
+
+  <!-- 腎臟 -->
+
+  <BRF_FleshmassKidneyHediff.label>血肉腎</BRF_FleshmassKidneyHediff.label>
+  <BRF_FleshmassKidneyHediff.description>一團癌變一樣具有不完全知覺的血肉器官。這種組織會分泌一種特殊的液體進入你的循環系統，在一定程度上增強你的抗病能力。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassKidneyHediff.description>
+  <BRF_FleshmassKidneyHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassKidneyHediff.comps.0.letterLabel>
+  <BRF_FleshmassKidneyHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉腎的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassKidneyHediff.comps.0.letterText>
+  <BRF_FleshmassKidneyHediff.labelNoun>血肉腎</BRF_FleshmassKidneyHediff.labelNoun>
+
+
+  <!-- 肝臟 -->
+
+  <BRF_FleshmassLiverHediff.label>血肉肝</BRF_FleshmassLiverHediff.label>
+  <BRF_FleshmassLiverHediff.description>一團癌變一樣具有不完全知覺的血肉器官。這些扭曲生長組織具有出色的過濾能力，可以在一定程度上淨化進入血液的毒素。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassLiverHediff.description>
+  <BRF_FleshmassLiverHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassLiverHediff.comps.0.letterLabel>
+  <BRF_FleshmassLiverHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉肝的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassLiverHediff.comps.0.letterText>
+  <BRF_FleshmassLiverHediff.labelNoun>血肉肝</BRF_FleshmassLiverHediff.labelNoun>
+
+
+  <!-- 眼 -->
+
+  <BRF_FleshmassEyeHediff.label>血肉眼</BRF_FleshmassEyeHediff.label>
+  <BRF_FleshmassEyeHediff.description>一團癌變一樣具有不完全知覺的血肉器官。這種組織對光線具有極強的敏感性，能夠履行眼球的職責。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassEyeHediff.description>
+  <BRF_FleshmassEyeHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassEyeHediff.comps.0.letterLabel>
+  <BRF_FleshmassEyeHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉眼的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassEyeHediff.comps.0.letterText>
+  <BRF_FleshmassEyeHediff.labelNoun>血肉眼</BRF_FleshmassEyeHediff.labelNoun>
+
+
+  <!-- 耳 -->
+
+  <BRF_FleshmassEarHediff.label>血肉耳</BRF_FleshmassEarHediff.label>
+  <BRF_FleshmassEarHediff.description>一團癌變一樣具有不完全知覺的血肉器官。該組織對聲音有敏銳的感知能力，作為耳朵使用綽綽有餘。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassEarHediff.description>
+  <BRF_FleshmassEarHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassEarHediff.comps.0.letterLabel>
+  <BRF_FleshmassEarHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉耳的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassEarHediff.comps.0.letterText>
+  <BRF_FleshmassEarHediff.labelNoun>血肉耳</BRF_FleshmassEarHediff.labelNoun>
+
+
+  <!-- 鼻 -->
+
+  <BRF_FleshmassNoseHediff.label>血肉鼻</BRF_FleshmassNoseHediff.label>
+  <BRF_FleshmassNoseHediff.description>一團癌變一樣具有不完全知覺的血肉器官。這種組織能有效過濾空氣中的有害物質。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassNoseHediff.description>
+  <BRF_FleshmassNoseHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassNoseHediff.comps.0.letterLabel>
+  <BRF_FleshmassNoseHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉鼻的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassNoseHediff.comps.0.letterText>
+  <BRF_FleshmassNoseHediff.labelNoun>血肉鼻</BRF_FleshmassNoseHediff.labelNoun>
+
+
+  <!-- 舌 -->
+
+  <BRF_FleshmassTongueHediff.label>血肉舌</BRF_FleshmassTongueHediff.label>
+  <BRF_FleshmassTongueHediff.description>一團癌變一樣具有不完全知覺的血肉器官。該組織對味覺信號有敏感的感知能力，在一定程度上有助於烹飪。\n\n這個器官有自己的神經結構，將其移除可能招致危險。</BRF_FleshmassTongueHediff.description>
+  <BRF_FleshmassTongueHediff.comps.0.letterLabel>血肉手術</BRF_FleshmassTongueHediff.comps.0.letterLabel>
+  <BRF_FleshmassTongueHediff.comps.0.letterText>試圖移除{PAWN_nameDef}身上血肉舌的手術讓這團扭曲的肉有了攻擊性。它從{PAWN_nameDef}身上分離後變成了一只血肉獸！</BRF_FleshmassTongueHediff.comps.0.letterText>
+  <BRF_FleshmassTongueHediff.labelNoun>血肉舌</BRF_FleshmassTongueHediff.labelNoun>
+
+
+</LanguageData>

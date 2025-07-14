@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_OrinTransmuteFlesh.label>血肉学者</BRF_OrinTransmuteFlesh.label>
+  <BRF_OrinTransmuteFlesh.letterExtra>{PAWN_nameDef}声称自己从侍奉血肉的异教中取得了禁忌的知识。{PAWN_pronoun}可利用未知的超凡科技，将血肉重塑为更合适的形态。</BRF_OrinTransmuteFlesh.letterExtra>
+  
+  <BRF_OrinFleshyModder.label>血肉改造者</BRF_OrinFleshyModder.label>
+  <BRF_OrinFleshyModder.letterExtra>{PAWN_nameDef}声称自己从侍奉血肉的异教中受到了深度的生物改造。{PAWN_pronoun}以这些肉体改造为荣，并相信可以通过这些改造和自身能力帮助我们的殖民地。</BRF_OrinFleshyModder.letterExtra>
+  
+</LanguageData>

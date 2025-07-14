@@ -16,7 +16,7 @@ namespace Luna_BRF
 			{
 				if (hediffs[i].def.countsAsAddedPartOrImplant)
 				{
-                    if (hediffs[i].def.organicAddedBodypart || hediffs[i].def.tags.Contains("BRF_FleshReforge"))
+                    if (hediffs[i].def.organicAddedBodypart || hediffs[i].def.tags.NotNullAndContains("BRF_FleshReforge"))
 					{
 						num++;
 					}

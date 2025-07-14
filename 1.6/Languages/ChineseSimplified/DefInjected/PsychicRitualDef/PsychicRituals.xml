@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_CrimsonProvocation.label>绯红扰动</BRF_CrimsonProvocation.label>
+  <BRF_CrimsonProvocation.description>利用血肉实体与其他实体的区别准备独特的祭品，创造专门用于吸引这些血肉实体的心灵脉冲——就像是虚空扰动一样，但它是绯红色的。</BRF_CrimsonProvocation.description>
+  <BRF_CrimsonProvocation.outcomeDescription>以当前仪式质量，发起者有{0}的几率陷入暗黑心灵冲击状态。</BRF_CrimsonProvocation.outcomeDescription>
+  
+  <BRF_SummonSwarms.label>吸引实体虫群</BRF_SummonSwarms.label>
+  <BRF_SummonSwarms.description>使用特殊的肉做诱饵引发一种能够吸引特殊状态下的昆虫的脉冲。从理论上讲，这种仪式并不是为人类设计的，其效果可能会让人有些不安。</BRF_SummonSwarms.description>
+  <BRF_SummonSwarms.outcomeDescription>仪式质量越高，吸引的虫群数量越多。</BRF_SummonSwarms.outcomeDescription>
+  
+  <BRF_SummonClumps.label>吸引肢团</BRF_SummonClumps.label>
+  <BRF_SummonClumps.description>发射心灵脉冲，将远处的一群肢团引向你所在的区域。这些肢团会在一段时间后带着饥饿抵达，建议你为它们准备好尸体作为食物，亦或者做好将它们化作尸体的准备。</BRF_SummonClumps.description>
+  <BRF_SummonClumps.outcomeDescription>仪式质量越高，吸引的虫群数量越多。</BRF_SummonClumps.outcomeDescription>
+  
+  <BRF_SummonRawProphet.label>饥渴之门</BRF_SummonRawProphet.label>
+  <BRF_SummonRawProphet.description>以如下的步骤进行操作，我们可以召唤出那种腥臭粘腻的先知。首先献上以血锻造的钢创造灵能的脉冲；然后杀害无辜的祭品以它的死亡与血肉取悦干渴的门扉；最后将心灵脉冲引导至距离仪式地点最近的血肉核心之中，摧毁它以置换出那个怪物——它会在仪式的中央出现，这很危险，但我们可以短暂束缚住它以争取为数不多的准备时间。</BRF_SummonRawProphet.description>
+  <BRF_SummonRawProphet.outcomeDescription>以当前仪式质量，我们能够束缚原生先知{0}秒。</BRF_SummonRawProphet.outcomeDescription>
+  
+  <BRF_ExileRawProphet.label>放逐先知</BRF_ExileRawProphet.label>
+  <BRF_ExileRawProphet.description>与召唤原生先知相同，我们可以献祭一名受害者再次打开那扇饥渴之门，将未被收容的原生先知放逐回那片可怖的空间。这次需要的祭品更少，并且如果我们已经对它造成了足够的伤害，它将不会带走那个尚未掉落的怪异之物。</BRF_ExileRawProphet.description>
+  <BRF_ExileRawProphet.outcomeDescription>以当前仪式质量，发起者有{0}的几率陷入暗黑心灵冲击状态。</BRF_ExileRawProphet.outcomeDescription>
+  
+  <BRF_AkulothRitual.label>神圣的白虫</BRF_AkulothRitual.label>
+  <BRF_AkulothRitual.description>通过血腥的仪式将受害者献祭，以便仪式主持者能够成功与神圣的白虫达成共生。</BRF_AkulothRitual.description>
+  
+  <BRF_InitiationRitual.label>启迪仪式</BRF_InitiationRitual.label>
+  <BRF_InitiationRitual.description>给予仪式的目标血肉的启迪，使其成为一名光荣的Orin。</BRF_InitiationRitual.description>
+  <BRF_InitiationRitual.outcomeDescription>目标将获得“Orin”特质。\n\n以当前仪式质量，若发起者并非血肉之圣徒，目标的所有技能将降低{0}。</BRF_InitiationRitual.outcomeDescription>
+
+</LanguageData>

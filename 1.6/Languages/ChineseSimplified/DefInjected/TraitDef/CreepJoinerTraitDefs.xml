@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LanguageData>
+
+  <BRF_Sarkicism.degreeDatas.Orin.label>奥林</BRF_Sarkicism.degreeDatas.Orin.label>
+  <BRF_Sarkicism.degreeDatas.Orin.description>{PAWN_nameDef}没有σάρξ之血，但似乎曾侍奉血肉的异教。{PAWN_pronoun}认为孱弱的人体备受限制，渴望得到lihakut'ak的血肉改造来强化自身。</BRF_Sarkicism.degreeDatas.Orin.description>
+  <BRF_Sarkicism.degreeDatas.Zend.label>赞德</BRF_Sarkicism.degreeDatas.Zend.label>
+  <BRF_Sarkicism.degreeDatas.Zend.description>{PAWN_nameDef}已经掌握了从σάρξ之血中汲取力量的知识。{PAWN_pronoun}认为孱弱的人体备受限制，渴望得到lihakut'ak的血肉改造来强化自身。</BRF_Sarkicism.degreeDatas.Zend.description>
+  <BRF_Sarkicism.degreeDatas.Võlutaar.label>沃鲁塔尔</BRF_Sarkicism.degreeDatas.Võlutaar.label>
+  <BRF_Sarkicism.degreeDatas.Võlutaar.description>{PAWN_nameDef}是σάρξ之血的智者。{PAWN_pronoun}认为孱弱的人体备受限制，渴望得到lihakut'ak的血肉改造来强化自身。</BRF_Sarkicism.degreeDatas.Võlutaar.description>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <BRF_RitualRoleVictim.label>受害者</BRF_RitualRoleVictim.label>
+  <BRF_RitualRoleVictim.description>作为仪式的祭品，无论仪式是否成功，这个不幸的家伙都将不复存在。</BRF_RitualRoleVictim.description>
+
+  <BRF_AkulothRecipient.label>植入者</BRF_AkulothRecipient.label>
+
+  <BRF_TheInspiredTarget.label>受启迪者</BRF_TheInspiredTarget.label>
+
+</LanguageData>

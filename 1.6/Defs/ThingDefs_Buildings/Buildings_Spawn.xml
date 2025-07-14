@@ -38,7 +38,7 @@
       <drawSize>(3,3)</drawSize>
     </graphicData>
     <uiOrder>110</uiOrder>
-	<researchPrerequisites>
+  	<researchPrerequisites>
       <li>BRF_FleshCradleResearch</li>
     </researchPrerequisites>
     <uiIconScale>0.75</uiIconScale>
@@ -120,7 +120,7 @@
       </li>
 			<li Class="Luna_BRF.CompProperties_LunaInfectedTerrainSpread">
 				<radius>7.8</radius>
-				<terrainToSet>Flesh</terrainToSet>
+				<setConvertTerrainDef>Flesh</setConvertTerrainDef>
 				<spawnTickRate>30000</spawnTickRate>
 			</li>
     </comps>
@@ -189,7 +189,7 @@
         <damageDef>ArrowHighVelocity</damageDef>
         <multiplier>0.2</multiplier>
       </li>
-    </damageMultipliers>
+  </damageMultipliers>
   </ThingDef>
   
 <!-- 消化器 -->
@@ -200,7 +200,6 @@
       <texPath>Buildings/WorkTable/BRF_Digester</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.4,1.4)</drawSize>
-	    <shaderType>CutoutComplex</shaderType>
       <damageData>
         <scratches>
           <li>Damage/FleshScratch1</li>
@@ -209,6 +208,7 @@
         </scratches>
       </damageData>
     </graphicData>
+		<rotatable>false</rotatable>
     <uiIconScale>0.75</uiIconScale>
     <castEdgeShadows>false</castEdgeShadows>
     <canOverlapZones>false</canOverlapZones>
@@ -397,11 +397,18 @@
 		  </li>
 			<li Class="Luna_BRF.CompProperties_LunaInfectedTerrainSpread">
 				<radius>12.9</radius>
-				<terrainToSet>BRF_FleshBlanket</terrainToSet>
+				<setConvertTerrainDef>BRF_FleshBlanket</setConvertTerrainDef>
 				<spawnTickRate>7500</spawnTickRate>
 				<allowTerrains>
           <li>Flesh</li>
+          <li>BRF_FleshSurface</li>
         </allowTerrains>
+				<!--specialConvertTerrainDefs>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">
+            <requiredTerrainDef>Substructure</requiredTerrainDef>
+            <convertTerrainDef>BRF_FleshBlanket_Substructure</convertTerrainDef>
+          </li>
+        </specialConvertTerrainDefs-->
 			</li>
     </comps>
   </ThingDef>

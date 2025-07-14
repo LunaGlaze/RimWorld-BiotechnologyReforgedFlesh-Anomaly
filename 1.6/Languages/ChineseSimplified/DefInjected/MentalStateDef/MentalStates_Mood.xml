@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_EntityCuseBerserk.label>狂暴</BRF_EntityCuseBerserk.label>
+  <BRF_EntityCuseBerserk.baseInspectLine>精神状态: 狂暴</BRF_EntityCuseBerserk.baseInspectLine>
+  <BRF_EntityCuseBerserk.beginLetter>{0}已经变得狂暴！\n\n[PAWN_pronoun]会袭击任何[PAWN_pronoun]看见的人。</BRF_EntityCuseBerserk.beginLetter>
+  <BRF_EntityCuseBerserk.beginLetterLabel>狂暴</BRF_EntityCuseBerserk.beginLetterLabel>
+  <BRF_EntityCuseBerserk.recoveryMessage>{0}不再狂暴了。</BRF_EntityCuseBerserk.recoveryMessage>
+  
+</LanguageData>

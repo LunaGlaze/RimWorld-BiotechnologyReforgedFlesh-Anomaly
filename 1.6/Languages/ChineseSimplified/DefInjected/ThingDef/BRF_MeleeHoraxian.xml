@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BRF_CrimsonButcher.label>绯红屠杀者</BRF_CrimsonButcher.label>
+  <BRF_CrimsonButcher.description>活体合金刀刃上携带生物病毒可以令敌人皮开肉绽。这把有生命的屠刀渴望着杀戮。</BRF_CrimsonButcher.description>
+  <BRF_CrimsonButcher.tools.handle.label>握柄</BRF_CrimsonButcher.tools.handle.label>
+  <BRF_CrimsonButcher.tools.point.label>刀尖</BRF_CrimsonButcher.tools.point.label>
+  <BRF_CrimsonButcher.tools.edge.label>刀刃</BRF_CrimsonButcher.tools.edge.label>
+
+  <BRF_CrimsonDecimator.label>绯红斩首者</BRF_CrimsonDecimator.label>
+  <BRF_CrimsonDecimator.description>活体合金刀刃上携带生物病毒可以令敌人皮开肉绽。T这把会呼吸的斧头的唯一使命就是破门而入，砍下某人的脑袋。</BRF_CrimsonDecimator.description>
+  <BRF_CrimsonDecimator.tools.handle.label>握柄</BRF_CrimsonDecimator.tools.handle.label>
+  <BRF_CrimsonDecimator.tools.edge.label>斧刃</BRF_CrimsonDecimator.tools.edge.label>
+
+
+</LanguageData>

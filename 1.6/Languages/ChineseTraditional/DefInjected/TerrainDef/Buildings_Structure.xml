@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉地板 -->
+
+  <BRF_FleshSurface.label>血肉地板</BRF_FleshSurface.label>
+  <BRF_FleshSurface.description>一團密密麻麻的有機血肉，鬆鬆散散地附著在地面上。</BRF_FleshSurface.description>
+
+
+  <!-- 血肉菌毯 -->
+
+  <BRF_FleshBlanket.label>血肉菌毯</BRF_FleshBlanket.label>
+  <BRF_FleshBlanket.description>猩紅的血肉……菌毯……粘膩，柔軟，多汁……</BRF_FleshBlanket.description>
+
+
+  <!-- 血肉菌毯：飛船 -->
+
+  <BRF_FleshBlanket_Substructure.label>血肉寄染逆重飛船基架</BRF_FleshBlanket_Substructure.label>
+  <BRF_FleshBlanket_Substructure.description>一種被有機原生質層覆蓋的逆重飛船基架，就像是一層肉生長在上面一樣。該種被血肉菌毯寄染的輕質桁架結構具有與逆重飛船基架相同的功能，但在此基礎上還可以承擔血肉菌毯的作用，鏈接生物機械網路。</BRF_FleshBlanket_Substructure.description>
+
+
+  <!-- 血肉菌毯地磚 -->
+
+  <BRF_FleshBlanket_Tile.label>血肉菌毯地磚</BRF_FleshBlanket_Tile.label>
+  <BRF_FleshBlanket_Tile.description>一種人造的模塊化血肉菌毯，能夠順利與血肉網絡鏈接，同時避免工作時產生超出預期的汙漬。</BRF_FleshBlanket_Tile.description>
+
+
+  <!-- 猩紅鋼地磚 -->
+
+  <BRF_ScarletFerritePlateFloor.label>猩紅鋼地磚</BRF_ScarletFerritePlateFloor.label>
+  <BRF_ScarletFerritePlateFloor.description>使用猩紅鋼與其他活體材料鍛造的地磚，它能夠承擔血肉菌毯的職責，性能更佳，但消耗更大。它可以快速清潔並增加附近收容平臺的遏制強度，並且其中的靈能效果使它毫無理由地讓人覺得很好看。</BRF_ScarletFerritePlateFloor.description>
+
+
+</LanguageData>

@@ -118,3 +118,12 @@
  - 更新至1.6。/Update to 1.6.
  - 为部分实体添加真空抗性（仅1.6）/Added VacuumResistance to some enitities (Only 1.6).
  - 1.5版本后续更新将不再维护。/Version 1.5 will no longer be maintained in subsequent updates.
+
+ [v0.4.1]
+ - 删除扭曲坩埚错误的冥想类型。/Delete the wrong Meditation Focus type of Twisted Crucible.
+ - 补充部分翻译文本缺失。/Supplement some missing translated texts.
+ - 修正语言文件结构。/Corrected language file structure.
+ - 根据RimWorld - Odyssey DLC的数据重新强化与平衡血肉枪械。/Strengthened and rebalanced the flesh guns according to the numerical levels of the RimWorld - Odyssey DLC.
+ - 修复CountAddedAndImplantedPartsFlesh中的空引用错误。/Fix NullReferenceException at CountAddedAndImplantedPartsFlesh.
+ - 重构地形转化代码使其支持RimWorld - Odyssey DLC。/Refactored terrain convert code to support the RimWorld - Odyssey DLC.
+ - 阻止一些不适合的心灵仪式在太空层使用。/Prevent some inappropriate psychic rituals from being used in the space layer.

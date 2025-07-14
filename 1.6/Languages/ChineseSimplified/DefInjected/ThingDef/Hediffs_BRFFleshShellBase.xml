@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 手臂 -->
+
+  <BRF_FleshMadeArm.label>肉质手臂</BRF_FleshMadeArm.label>
+  <BRF_FleshMadeArm.description>用基本血肉材料打造的重塑手臂。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeArm.description>
+
+
+  <!-- 手掌 -->
+
+  <BRF_FleshMadeHand.label>肉质手掌</BRF_FleshMadeHand.label>
+  <BRF_FleshMadeHand.description>用基本血肉材料打造的重塑手掌。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeHand.description>
+
+
+  <!-- 手指 -->
+
+  <BRF_FleshMadeFinger.label>肉质手指</BRF_FleshMadeFinger.label>
+  <BRF_FleshMadeFinger.description>用基本血肉材料打造的重塑手指。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeFinger.description>
+
+
+  <!-- 脚趾 -->
+
+  <BRF_FleshMadeToe.label>肉质脚趾</BRF_FleshMadeToe.label>
+  <BRF_FleshMadeToe.description>用基本血肉材料打造的重塑脚趾。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeToe.description>
+
+
+  <!-- 脚掌 -->
+
+  <BRF_FleshMadeFoot.label>肉质脚掌</BRF_FleshMadeFoot.label>
+  <BRF_FleshMadeFoot.description>用基本血肉材料打造的重塑脚掌。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeFoot.description>
+
+
+  <!-- 腿 -->
+
+  <BRF_FleshMadeLeg.label>肉质腿</BRF_FleshMadeLeg.label>
+  <BRF_FleshMadeLeg.description>用基本血肉材料打造的重塑腿。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeLeg.description>
+
+
+  <!-- 心脏 -->
+
+  <BRF_FleshMadeHeart.label>肉质心脏</BRF_FleshMadeHeart.label>
+  <BRF_FleshMadeHeart.description>用基本血肉材料打造的重塑心脏。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeHeart.description>
+
+
+  <!-- 肺部 -->
+
+  <BRF_FleshMadeLung.label>肉质肺</BRF_FleshMadeLung.label>
+  <BRF_FleshMadeLung.description>用基本血肉材料打造的重塑肺。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeLung.description>
+
+
+  <!-- 肾脏 -->
+
+  <BRF_FleshMadeKidney.label>肉质肾</BRF_FleshMadeKidney.label>
+  <BRF_FleshMadeKidney.description>用基本血肉材料打造的重塑肾。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeKidney.description>
+
+
+  <!-- 肝脏 -->
+
+  <BRF_FleshMadeLiver.label>肉质肝</BRF_FleshMadeLiver.label>
+  <BRF_FleshMadeLiver.description>用基本血肉材料打造的重塑肝。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeLiver.description>
+
+
+  <!-- 眼 -->
+
+  <BRF_FleshMadeEye.label>肉质眼</BRF_FleshMadeEye.label>
+  <BRF_FleshMadeEye.description>用基本血肉材料打造的重塑眼。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeEye.description>
+
+
+  <!-- 耳朵 -->
+
+  <BRF_FleshMadeEar.label>肉质耳</BRF_FleshMadeEar.label>
+  <BRF_FleshMadeEar.description>用基本血肉材料打造的重塑耳。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeEar.description>
+
+
+  <!-- 鼻子 -->
+
+  <BRF_FleshMadeNose.label>肉质鼻</BRF_FleshMadeNose.label>
+  <BRF_FleshMadeNose.description>用基本血肉材料打造的重塑鼻。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeNose.description>
+
+
+  <!-- 下颚 -->
+
+  <BRF_FleshMadeJaw.label>肉质下颚</BRF_FleshMadeJaw.label>
+  <BRF_FleshMadeJaw.description>用基本血肉材料打造的重塑下颚。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeJaw.description>
+
+
+  <!-- 胃部 -->
+
+  <BRF_FleshMadeStomach.label>肉质胃</BRF_FleshMadeStomach.label>
+  <BRF_FleshMadeStomach.description>用基本血肉材料打造的重塑胃。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeStomach.description>
+
+
+  <!-- 舌头 -->
+
+  <BRF_FleshMadeTongue.label>肉质舌</BRF_FleshMadeTongue.label>
+  <BRF_FleshMadeTongue.description>用基本血肉材料打造的重塑舌。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeTongue.description>
+
+
+  <!-- 脊柱 -->
+
+  <BRF_FleshMadeSpine.label>肉质脊柱</BRF_FleshMadeSpine.label>
+  <BRF_FleshMadeSpine.description>用基本血肉材料打造的重塑脊柱。用经过最初的改造血肉代替原生的躯壳，虽然效果也没好上多少，但这正是我们已经在飞升的路上的证明。</BRF_FleshMadeSpine.description>
+
+
+</LanguageData>

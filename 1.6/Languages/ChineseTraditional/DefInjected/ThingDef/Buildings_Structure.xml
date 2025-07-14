@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉牆 -->
+
+  <BRF_FleshWall.label>血肉牆</BRF_FleshWall.label>
+  <BRF_FleshWall.description>由某人建造的一團堅固的扭曲肉。它因自身可怖的生命力而蠕動、顫抖。</BRF_FleshWall.description>
+  <BRF_FleshWall_Blueprint.label>血肉牆（藍圖）</BRF_FleshWall_Blueprint.label>
+  <BRF_FleshWall_Frame.label>血肉牆（建造中）</BRF_FleshWall_Frame.label>
+  <BRF_FleshWall_Frame.description>由某人建造的一團堅固的扭曲肉。它因自身可怖的生命力而蠕動、顫抖。</BRF_FleshWall_Frame.description>
+
+  <!-- 強化血肉牆 -->
+
+  <BRF_FleshWallTeirTwo.label>血肉牆</BRF_FleshWallTeirTwo.label>
+  <BRF_FleshWallTeirTwo.description>扭曲和重塑的肉與其他材料交織在一起，形成了這道血肉之牆。它因自身可怖的生命力而蠕動、顫抖。</BRF_FleshWallTeirTwo.description>
+
+
+  <!-- 血肉門 -->
+
+  <BRF_FleshDoor.label>血肉門</BRF_FleshDoor.label>
+  <BRF_FleshDoor.description>由某人建造的一團堅固的扭曲肉。它因自身可怖的生命力而蠕動、顫抖。</BRF_FleshDoor.description>
+  <BRF_FleshDoor_Blueprint.label>血肉門（藍圖）</BRF_FleshDoor_Blueprint.label>
+  <BRF_FleshDoor_Frame.label>血肉門（建造中）</BRF_FleshDoor_Frame.label>
+  <BRF_FleshDoor_Frame.description>由某人建造的一團堅固的扭曲肉。它因自身可怖的生命力而蠕動、顫抖。</BRF_FleshDoor_Frame.description>
+
+
+  <!-- 血肉種植格 -->
+
+  <BRF_FleshPlanter.label>血肉種植格</BRF_FleshPlanter.label>
+  <BRF_FleshPlanter.description>用血肉作為肥料和土壤製成的種植網格。它與水栽培有些類似，但只能用於種植血肉植物。</BRF_FleshPlanter.description>
+
+
+</LanguageData>

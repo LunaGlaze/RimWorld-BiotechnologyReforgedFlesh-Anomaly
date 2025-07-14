@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 再造人肉 -->
+
+  <BRF_ReforgedMeat_Human1.label>重构少量人肉</BRF_ReforgedMeat_Human1.label>
+  <BRF_ReforgedMeat_Human1.description>将人肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Human1.description>
+  <BRF_ReforgedMeat_Human1.jobString>正在重构人肉。</BRF_ReforgedMeat_Human1.jobString>
+
+  <BRF_ReforgedMeat_Human2.label>重构一些人肉</BRF_ReforgedMeat_Human2.label>
+  <BRF_ReforgedMeat_Human2.description>将人肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Human2.description>
+  <BRF_ReforgedMeat_Human2.jobString>正在重构人肉。</BRF_ReforgedMeat_Human2.jobString>
+
+  <BRF_ReforgedMeat_Human3.label>重构大量人肉</BRF_ReforgedMeat_Human3.label>
+  <BRF_ReforgedMeat_Human3.description>将人肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Human3.description>
+  <BRF_ReforgedMeat_Human3.jobString>正在重构人肉。</BRF_ReforgedMeat_Human3.jobString>
+
+
+  <!-- 再造虫肉 -->
+
+  <BRF_ReforgedMeat_Insect1.label>重构少量虫肉</BRF_ReforgedMeat_Insect1.label>
+  <BRF_ReforgedMeat_Insect1.description>将虫肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Insect1.description>
+  <BRF_ReforgedMeat_Insect1.jobString>正在重构虫肉。</BRF_ReforgedMeat_Insect1.jobString>
+
+  <BRF_ReforgedMeat_Insect2.label>重构一些虫肉</BRF_ReforgedMeat_Insect2.label>
+  <BRF_ReforgedMeat_Insect2.description>将虫肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Insect2.description>
+  <BRF_ReforgedMeat_Insect2.jobString>正在重构虫肉。</BRF_ReforgedMeat_Insect2.jobString>
+
+  <BRF_ReforgedMeat_Insect3.label>重构大量虫肉</BRF_ReforgedMeat_Insect3.label>
+  <BRF_ReforgedMeat_Insect3.description>将虫肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Insect3.description>
+  <BRF_ReforgedMeat_Insect3.jobString>正在重构虫肉。</BRF_ReforgedMeat_Insect3.jobString>
+
+
+  <!-- 制造扭曲肉 -->
+
+  <BRF_ShapingTwistedMeat.label>塑造扭曲肉</BRF_ShapingTwistedMeat.label>
+  <BRF_ShapingTwistedMeat.description>使用重塑肉类与活体培育扭曲肉。</BRF_ShapingTwistedMeat.description>
+  <BRF_ShapingTwistedMeat.jobString>正在塑造扭曲肉。</BRF_ShapingTwistedMeat.jobString>
+
+
+  <!-- 重塑先驱肉 -->
+
+  <BRF_ReforgedMeat_Harbinger1.label>重构少量先驱之肉</BRF_ReforgedMeat_Harbinger1.label>
+  <BRF_ReforgedMeat_Harbinger1.description>将扭曲肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Harbinger1.description>
+  <BRF_ReforgedMeat_Harbinger1.jobString>正在重构先驱之肉。</BRF_ReforgedMeat_Harbinger1.jobString>
+
+  <BRF_ReforgedMeat_Harbinger2.label>重构一些先驱之肉</BRF_ReforgedMeat_Harbinger2.label>
+  <BRF_ReforgedMeat_Harbinger2.description>将扭曲肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Harbinger2.description>
+  <BRF_ReforgedMeat_Harbinger2.jobString>正在重构先驱之肉。</BRF_ReforgedMeat_Harbinger2.jobString>
+
+  <BRF_ReforgedMeat_Harbinger3.label>重构大量先驱之肉</BRF_ReforgedMeat_Harbinger3.label>
+  <BRF_ReforgedMeat_Harbinger3.description>将扭曲肉改造成某种也许可以食用的东西。</BRF_ReforgedMeat_Harbinger3.description>
+  <BRF_ReforgedMeat_Harbinger3.jobString>正在重构先驱之肉。</BRF_ReforgedMeat_Harbinger3.jobString>
+
+
+  <!-- 血肉立方 -->
+
+  <BRF_ShapingFleshCubes.label>塑造血肉立方</BRF_ShapingFleshCubes.label>
+  <BRF_ShapingFleshCubes.description>将重塑肉类和植物材料合成某种奇异的立方体。</BRF_ShapingFleshCubes.description>
+  <BRF_ShapingFleshCubes.jobString>塑造血肉立方。</BRF_ShapingFleshCubes.jobString>
+
+
+</LanguageData>

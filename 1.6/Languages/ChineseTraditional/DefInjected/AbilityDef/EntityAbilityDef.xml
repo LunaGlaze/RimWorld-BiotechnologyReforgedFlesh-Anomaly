@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 原始血肉獸 -->
+
+  <BRF_Launch_PrimordialFleshBeast.label>發射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
+
+  <!-- 棘刃血蛆 -->
+
+  <BRF_Launch_ThornbladeMaggot.label>發射蛆蟲毒牙</BRF_Launch_ThornbladeMaggot.label>
+
+  <!-- 绯红活菌 -->
+
+  <BRF_Launch_CrimsonPus.label>緋紅濃液</BRF_Launch_CrimsonPus.label>
+
+  <!-- 原生先知 -->
+
+  <BRF_Launch_RawProphet.label>腥臭膿液</BRF_Launch_RawProphet.label>
+
+
+  <!-- 實體位移 -->
+
+  <BRF_EntityLongjump.label>實體長躍</BRF_EntityLongjump.label>
+  <BRF_EntityLongjump.description>利用這個實體強大的跳躍能力，跳到遙遠的地方。</BRF_EntityLongjump.description>
+  <BRF_EntityLongjump.verbProperties.label>跳躍</BRF_EntityLongjump.verbProperties.label>
+
+
+  <!-- 進食屍體 -->
+
+  <BRF_EntityNecrophagia.label>實體噬屍</BRF_EntityNecrophagia.label>
+  <BRF_EntityNecrophagia.description>這個實體有吞噬屍體的能力。</BRF_EntityNecrophagia.description>
+
+<!--蟲族寄生蟲-->
+
+  <BRF_BloodstainedTickParasitic.label>汙血寄生</BRF_BloodstainedTickParasitic.label>
+  <BRF_BloodstainedTickParasitic.description>鑽入蟲族的屍骸之中釋放扭曲的肉體合成的納米生物機械復活並狂化死去的蟲族。</BRF_BloodstainedTickParasitic.description>
+
+<!--腦姦-->
+
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>腦姦</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>什麼東西在受害者的腦子裡進行活塞運動，並注入怪異的物質……令人毛骨悚然……</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+  
+</LanguageData>

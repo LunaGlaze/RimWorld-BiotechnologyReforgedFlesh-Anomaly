@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- BRF_PrimordialFleshBeast -->
+
+  <BRF_PrimordialSpike.label>原初骨刺</BRF_PrimordialSpike.label>
+
+  <!-- 棘刃血蛆 -->
+
+  <BRF_ThornbladeMaggot_Spike.label>蛆蟲毒牙</BRF_ThornbladeMaggot_Spike.label>
+
+  <!-- 绯红脓液 -->
+
+  <BRF_Proj_CrimsonPus.label>绯红脓液</BRF_Proj_CrimsonPus.label>
+
+  <!-- 恶臭脓液 -->
+
+  <BRF_Proj_FoulSmellingPus.label>恶臭脓液</BRF_Proj_FoulSmellingPus.label>
+
+
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物種PawnKindDef -->
+
+  <BRF_PrimordialFleshBeast.label>原始血肉獸</BRF_PrimordialFleshBeast.label>
+  <BRF_PrimordialFleshBeast.labelPlural>原始血肉獸</BRF_PrimordialFleshBeast.labelPlural>
+  <BRF_PrimordialFleshBeast.labelMale>雄性原始血肉獸</BRF_PrimordialFleshBeast.labelMale>
+  <BRF_PrimordialFleshBeast.labelMalePlural>雄性原始血肉獸</BRF_PrimordialFleshBeast.labelMalePlural>
+  <BRF_PrimordialFleshBeast.labelFemale>雌性原始血肉獸</BRF_PrimordialFleshBeast.labelFemale>
+  <BRF_PrimordialFleshBeast.labelFemalePlural>雌性原始血肉獸</BRF_PrimordialFleshBeast.labelFemalePlural>
+
+
+</LanguageData>

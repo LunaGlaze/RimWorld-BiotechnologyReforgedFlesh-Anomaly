@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 物种ThingsDef -->
+
+  <BRF_FrankensteinHand.label>弗兰肯斯坦之手</BRF_FrankensteinHand.label>
+  <BRF_FrankensteinHand.description>受你控制的断手。</BRF_FrankensteinHand.description>
+  <BRF_FrankensteinHand.tools.fist.label>拳击</BRF_FrankensteinHand.tools.fist.label>
+  <BRF_FrankensteinHand.tools.claw.label>抓挠</BRF_FrankensteinHand.tools.claw.label>
+  <BRF_FrankensteinHand.tools.hit.label>撞击</BRF_FrankensteinHand.tools.hit.label>
+  <BRF_FrankensteinHand_Corpse.label>弗兰肯斯坦之手尸体</BRF_FrankensteinHand_Corpse.label>
+  <BRF_FrankensteinHand_Corpse.description>弗兰肯斯坦之手尸体</BRF_FrankensteinHand_Corpse.description>
+
+  <BRF_FrankensteinFoot.label>弗兰肯斯坦之足</BRF_FrankensteinFoot.label>
+  <BRF_FrankensteinFoot.description>受你控制的断足。</BRF_FrankensteinFoot.description>
+  <BRF_FrankensteinFoot.tools.fist.label>拳击</BRF_FrankensteinFoot.tools.fist.label>
+  <BRF_FrankensteinFoot.tools.claw.label>抓挠</BRF_FrankensteinFoot.tools.claw.label>
+  <BRF_FrankensteinFoot.tools.hit.label>撞击</BRF_FrankensteinFoot.tools.hit.label>
+  <BRF_FrankensteinFoot_Corpse.label>弗兰肯斯坦之足尸体</BRF_FrankensteinFoot_Corpse.label>
+  <BRF_FrankensteinFoot_Corpse.description>弗兰肯斯坦之足尸体</BRF_FrankensteinFoot_Corpse.description>
+
+
+
+</LanguageData>

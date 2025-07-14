@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 原始血肉兽 -->
+
+  <BRF_Launch_PrimordialFleshBeast.label>发射原始骨刺</BRF_Launch_PrimordialFleshBeast.label>
+
+  <!-- 棘刃血蛆 -->
+
+  <BRF_Launch_ThornbladeMaggot.label>发射蛆虫毒牙</BRF_Launch_ThornbladeMaggot.label>
+
+  <!-- 绯红活菌 -->
+
+  <BRF_Launch_CrimsonPus.label>绯红脓液</BRF_Launch_CrimsonPus.label>
+
+  <!-- 原生先知 -->
+
+  <BRF_Launch_RawProphet.label>腥臭脓液</BRF_Launch_RawProphet.label>
+
+  <!-- 实体位移 -->
+
+  <BRF_EntityLongjump.label>实体长跃</BRF_EntityLongjump.label>
+  <BRF_EntityLongjump.description>利用这个实体强大的跳跃能力，跳到遥远的地方。</BRF_EntityLongjump.description>
+  <BRF_EntityLongjump.verbProperties.label>跳跃</BRF_EntityLongjump.verbProperties.label>
+
+
+  <!-- 进食尸体 -->
+
+  <BRF_EntityNecrophagia.label>实体噬尸</BRF_EntityNecrophagia.label>
+  <BRF_EntityNecrophagia.description>这个实体有吞噬尸体的能力。</BRF_EntityNecrophagia.description>
+
+<!--虫族寄生虫-->
+
+  <BRF_BloodstainedTickParasitic.label>污血寄生</BRF_BloodstainedTickParasitic.label>
+  <BRF_BloodstainedTickParasitic.description>钻入虫族的尸骸之中释放扭曲的肉体合成的纳米生物机械复活并狂化死去的虫族。</BRF_BloodstainedTickParasitic.description>
+
+<!--脑姦-->
+
+  <BRF_ScarletCerebralJellyfishBrainInsertion.label>脑姦</BRF_ScarletCerebralJellyfishBrainInsertion.label>
+  <BRF_ScarletCerebralJellyfishBrainInsertion.description>什么东西在受害者的脑子里进行活塞运动，并注入怪异的物质……令人毛骨悚然……</BRF_ScarletCerebralJellyfishBrainInsertion.description>
+  
+</LanguageData>

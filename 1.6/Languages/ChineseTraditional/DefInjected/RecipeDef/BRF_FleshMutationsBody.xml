@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 血肉觸手 -->
+
+  <BRF_InstallFleshTentacle.label>安裝血肉觸手</BRF_InstallFleshTentacle.label>
+  <BRF_InstallFleshTentacle.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一個強健發達、已經有點血肉獸樣子的肉乎乎觸手。</BRF_InstallFleshTentacle.description>
+  <BRF_InstallFleshTentacle.jobString>正在安裝血肉觸手。</BRF_InstallFleshTentacle.jobString>
+
+
+  <!-- 血肉觸鞭 -->
+
+  <BRF_InstallFleshWhip.label>安裝血肉觸鞭</BRF_InstallFleshWhip.label>
+  <BRF_InstallFleshWhip.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一個強健發達、末端帶刃的肉乎乎觸手。這只血肉觸鞭算是不錯的近戰武器。</BRF_InstallFleshWhip.description>
+  <BRF_InstallFleshWhip.jobString>正在安裝血肉觸鞭。</BRF_InstallFleshWhip.jobString>
+
+
+  <!-- 血肉擬足 -->
+
+  <BRF_InstallFlesPseudoLeg.label>安裝血肉擬足</BRF_InstallFlesPseudoLeg.label>
+  <BRF_InstallFlesPseudoLeg.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一個強健發達的血肉觸手擬態而成的類腿器官。</BRF_InstallFlesPseudoLeg.description>
+  <BRF_InstallFlesPseudoLeg.jobString>正在安裝血肉擬足.</BRF_InstallFlesPseudoLeg.jobString>
+
+
+  <!-- 血肉腕足 -->
+
+  <BRF_InstallFlesBrachiopod.label>安裝血肉腕足</BRF_InstallFlesBrachiopod.label>
+  <BRF_InstallFlesBrachiopod.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一個肉質、肌肉發達的觸手，可以用來移動身體，但效果模樣那麼好。這些觸手長在應該長腿的地方，但由於其靈活性，在某種程度上也可以當作手來使用。</BRF_InstallFlesBrachiopod.description>
+  <BRF_InstallFlesBrachiopod.jobString>正在安裝血肉腕足。</BRF_InstallFlesBrachiopod.jobString>
+
+
+  <!-- 肺部 -->
+
+  <BRF_InstallFleshmassLung.label>安裝血肉肺</BRF_InstallFleshmassLung.label>
+  <BRF_InstallFleshmassLung.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一塊有不完全知覺的腫瘤血肉肺。其上組織不斷再生更替，能使安裝者免疫肺瘟、哮喘等疾病。</BRF_InstallFleshmassLung.description>
+  <BRF_InstallFleshmassLung.jobString>正在安裝血肉肺。</BRF_InstallFleshmassLung.jobString>
+
+
+  <!-- 胃部 -->
+
+  <BRF_InstallFleshmassStomach.label>安裝血肉胃</BRF_InstallFleshmassStomach.label>
+  <BRF_InstallFleshmassStomach.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一塊有不完全知覺的腫瘤血肉胃。其中含有的強酸會給安裝者帶來痛苦，但也能完全避免食物中毒。</BRF_InstallFleshmassStomach.description>
+  <BRF_InstallFleshmassStomach.jobString>正在安裝血肉胃。</BRF_InstallFleshmassStomach.jobString>
+
+
+  <!-- 腎臟 -->
+
+  <BRF_InstallFleshmassKidney.label>安裝血肉腎</BRF_InstallFleshmassKidney.label>
+  <BRF_InstallFleshmassKidney.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一個一團癌變一樣具有不完全知覺的血肉器官。這種組織會分泌一種特殊的液體進入你的循環系統，在一定程度上增強你的抗病能力。</BRF_InstallFleshmassKidney.description>
+  <BRF_InstallFleshmassKidney.jobString>正在安裝血肉腎。</BRF_InstallFleshmassKidney.jobString>
+
+
+  <!-- 肝臟 -->
+
+  <BRF_InstallFleshmassLiver.label>安裝血肉肝</BRF_InstallFleshmassLiver.label>
+  <BRF_InstallFleshmassLiver.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一團癌變一樣具有不完全知覺的血肉器官。這些扭曲生長組織具有出色的過濾能力，可以在一定程度上淨化進入血液的毒素。</BRF_InstallFleshmassLiver.description>
+  <BRF_InstallFleshmassLiver.jobString>正在安裝血肉肝。</BRF_InstallFleshmassLiver.jobString>
+
+
+  <!-- 眼 -->
+
+  <BRF_InstallFleshmassEye.label>安裝血肉眼</BRF_InstallFleshmassEye.label>
+  <BRF_InstallFleshmassEye.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一團癌變一樣具有不完全知覺的血肉器官。</BRF_InstallFleshmassEye.description>
+  <BRF_InstallFleshmassEye.jobString>正在安裝血肉眼。</BRF_InstallFleshmassEye.jobString>
+
+
+  <!-- 耳 -->
+
+  <BRF_InstallFleshmassEar.label>安裝血肉耳</BRF_InstallFleshmassEar.label>
+  <BRF_InstallFleshmassEar.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一團癌變一樣具有不完全知覺的血肉器官。</BRF_InstallFleshmassEar.description>
+  <BRF_InstallFleshmassEar.jobString>正在安裝血肉耳。</BRF_InstallFleshmassEar.jobString>
+
+
+  <!-- 鼻 -->
+
+  <BRF_InstallFleshmassNose.label>安裝血肉鼻</BRF_InstallFleshmassNose.label>
+  <BRF_InstallFleshmassNose.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一團癌變一樣具有不完全知覺的血肉器官。</BRF_InstallFleshmassNose.description>
+  <BRF_InstallFleshmassNose.jobString>正在安裝血肉鼻。</BRF_InstallFleshmassNose.jobString>
+
+
+  <!-- 舌 -->
+
+  <BRF_InstallFleshmassTongue.label>安裝血肉舌</BRF_InstallFleshmassTongue.label>
+  <BRF_InstallFleshmassTongue.description>安裝一團具有獨立的神經和類似血肉獸的結構的未成熟的肉塊。它將被啟動，完成最終發育。最終它會變成一團癌變一樣具有不完全知覺的血肉器官。</BRF_InstallFleshmassTongue.description>
+  <BRF_InstallFleshmassTongue.jobString>正在安裝血肉舌。</BRF_InstallFleshmassTongue.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <BRF_Akuloth_Bionic.label>神圣的白虫</BRF_Akuloth_Bionic.label>
+  <BRF_Akuloth_Bionic.description>一种共生生物，能够作为宿主的二级免疫系统，保护宿主免受疾病侵害，并大幅提升宿主的再生能力。这些共生生物无法通过凡人的医术轻易植入，需要通过某种血腥仪式才能实现共生。</BRF_Akuloth_Bionic.description>
+  
+  <BRF_ArchoRebirthEye.label>重生血肉眼</BRF_ArchoRebirthEye.label>
+  <BRF_ArchoRebirthEye.description>由重获新生的血肉与暗黑超凡碎片铸造的眼睛。它能极大的提高植入者的视觉能力，事物运动的轨迹在植入者眼里将会变得缓慢，对远近的调节能力也有着极大的提升。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthEye.description>
+
+  <BRF_ArchoRebirthArm.label>重生血肉臂</BRF_ArchoRebirthArm.label>
+  <BRF_ArchoRebirthArm.description>由重获新生的血肉与暗黑超凡碎片铸造的手臂。它的力量足以压碎手中一根粗大的硬木树枝，也足以在一粒米上写出一首十四行诗。它看完全像是正常的肌肉，但植入身体后比塑料更难损坏。即使它受到伤害，它也会随着时间的推移自行修复。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthArm.description>
+
+  <BRF_ArchoRebirthLeg.label>重生血肉腿</BRF_ArchoRebirthLeg.label>
+  <BRF_ArchoRebirthLeg.description>由重获新生的血肉与暗黑超凡碎片铸造的腿。它看完全像是正常的肌肉，但一双这样的腿可以使人像一辆像样的汽车一样快速移动，而且植入身体后比塑料更难损坏。即使它受到伤害，它也会随着时间的推移自行修复。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthLeg.description>
+
+  <BRF_ArchoRebirthEar.label>重生血肉耳</BRF_ArchoRebirthEar.label>
+  <BRF_ArchoRebirthEar.description>由重获新生的血肉与暗黑超凡碎片铸造的耳朵。外耳部分可以根据植入者的意愿来自由塑形。既能听到如同蚊子心跳般微小的声音，也可以在人声鼎沸的狭小房间内精准过滤出关键的词句。通过内部的超凡生物声波分析结构可以分析动物发出的声音从而感知目标的模糊情绪，既能用来社交，也能对驯兽起到辅助作用。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthEar.description>
+  
+  <BRF_ArchoRebirthHeart.label>重生血肉心</BRF_ArchoRebirthHeart.label>
+  <BRF_ArchoRebirthHeart.description>由重获新生的血肉与暗黑超凡碎片铸造的心脏。它的搏动速度不仅不会快到令人难以忍受，还可以让植入者长时间进行超人类水准的剧烈运动。它还能以某种方式操纵体内的血液循环系统，不仅可以使更多血液更快的流入大脑增加意识，还能使带有更多血小板和凝血因子的血液流至伤口处，以此来提高自愈速度。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthHeart.description>
+
+  <BRF_ArchoRebirthKidney.label>重生血肉肾</BRF_ArchoRebirthKidney.label>
+  <BRF_ArchoRebirthKidney.description>由重获新生的血肉与暗黑超凡碎片铸造的肾脏。可以强力而快速排滤掉人体内的毒素、放射性物质以及各种各样的病原体，极大的增强植入者的毒素抗性，一个重生血肉肾甚至能接近两个正常人类肾脏的功能。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthKidney.description>
+  
+  <BRF_ArchoRebirthLiver.label>重生血肉肝</BRF_ArchoRebirthLiver.label>
+  <BRF_ArchoRebirthLiver.description>由重获新生的血肉与暗黑超凡碎片铸造的肝脏。可以迅速溶解任何种类的化学毒素，并通过人类尚不知晓的物理反应中和掉放射性物质。与重生血肉肾强强联手时，更是能让植入者完全免疫毒素造成的负面影响。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthLiver.description>
+  
+  <BRF_ArchoRebirthLung.label>重生血肉肺</BRF_ArchoRebirthLung.label>
+  <BRF_ArchoRebirthLung.description>由重获新生的血肉与暗黑超凡碎片铸造的肺。它可以从生物无法存活的星球散逸层中抽取微乎其微的氧气，也能完全过滤掉会对人体造成损害的腐蚀性气体（不会受到肺瘟和酸雾影响）。植入者不仅能获得强大的免疫力，还可以长时间地在有毒尘埃下自由漫步。一个重生血肉肺甚至能接近两个正常人类肺的功能。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthLung.description>
+  
+  <BRF_ArchoRebirthNose.label>重生血肉鼻</BRF_ArchoRebirthNose.label>
+  <BRF_ArchoRebirthNose.description>由重获新生的血肉与暗黑超凡碎片铸造的鼻子。可以迎合观者的审美来自由塑形。它的灵敏度比最优秀的基因工程猎犬还强，极大的强加了植入者的嗅觉，可以使其分辩各种味道和微小的气息（这有利于在野外寻找珍稀的食材）。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthNose.description>
+
+  <BRF_ArchoRebirthStomach.label>重生血肉胃</BRF_ArchoRebirthStomach.label>
+  <BRF_ArchoRebirthStomach.description>由重获新生的血肉与暗黑超凡碎片铸造的胃。拥有着极其强大的消化能力，能够有效分解食物当中的所有养分，不仅可以提高能量获取率从而降低饥饿度，并且其产生的胃酸比正常的胃要强上几十倍，甚至比食腐动物更加强力，可以完全免疫任何食物中毒。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthStomach.description>
+
+  <BRF_ArchoRebirthSpine.label>重生血肉脊椎</BRF_ArchoRebirthSpine.label>
+  <BRF_ArchoRebirthSpine.description>由重获新生的血肉与暗黑超凡碎片铸造的脊椎。它惊人的柔韧性能令猫咪心生妒羡，而挺直后的坚固程度也足以支起一辆小轿车。它对中枢肌肉力量的大幅强化同样变相提高了植入者的操作能力。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthSpine.description>
+  
+  
+</LanguageData>

@@ -117,7 +117,6 @@
           <soundWounded>Pawn_Gorehulk_Wounded</soundWounded>
           <soundDeath>Pawn_Gorehulk_Death</soundDeath>
           <soundCall>Pawn_Gorehulk_Call</soundCall>
-			    <soundAngry>Pawn_Ghoul_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <canBecomeShambler>false</canBecomeShambler>

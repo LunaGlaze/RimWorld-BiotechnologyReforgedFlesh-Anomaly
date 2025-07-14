@@ -96,4 +96,4 @@
 
  - [Patreon](https://patreon.com/shiqiluna) (I probably don't use it that often)
 
- - [爱发电]( https://afdian.com/a/shiqiluna) (Available to Chinese users)
+ - [爱发电](https://afdian.com/a/shiqiluna) (Available to Chinese users)
