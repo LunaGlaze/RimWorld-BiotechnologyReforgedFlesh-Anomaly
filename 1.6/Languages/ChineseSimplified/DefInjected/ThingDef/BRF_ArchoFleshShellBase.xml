@@ -16,7 +16,7 @@
   <BRF_ArchoRebirthEar.label>重生血肉耳</BRF_ArchoRebirthEar.label>
   <BRF_ArchoRebirthEar.description>由重获新生的血肉与暗黑超凡碎片铸造的耳朵。外耳部分可以根据植入者的意愿来自由塑形。既能听到如同蚊子心跳般微小的声音，也可以在人声鼎沸的狭小房间内精准过滤出关键的词句。通过内部的超凡生物声波分析结构可以分析动物发出的声音从而感知目标的模糊情绪，既能用来社交，也能对驯兽起到辅助作用。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthEar.description>
   
-  <BRF_ArchoRebirthHeart.label>重生血肉心</BRF_ArchoRebirthHeart.label>
+  <BRF_ArchoRebirthHeart.label>重生血肉心脏</BRF_ArchoRebirthHeart.label>
   <BRF_ArchoRebirthHeart.description>由重获新生的血肉与暗黑超凡碎片铸造的心脏。它的搏动速度不仅不会快到令人难以忍受，还可以让植入者长时间进行超人类水准的剧烈运动。它还能以某种方式操纵体内的血液循环系统，不仅可以使更多血液更快的流入大脑增加意识，还能使带有更多血小板和凝血因子的血液流至伤口处，以此来提高自愈速度。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthHeart.description>
 
   <BRF_ArchoRebirthKidney.label>重生血肉肾</BRF_ArchoRebirthKidney.label>
@@ -36,6 +36,9 @@
 
   <BRF_ArchoRebirthSpine.label>重生血肉脊椎</BRF_ArchoRebirthSpine.label>
   <BRF_ArchoRebirthSpine.description>由重获新生的血肉与暗黑超凡碎片铸造的脊椎。它惊人的柔韧性能令猫咪心生妒羡，而挺直后的坚固程度也足以支起一辆小轿车。它对中枢肌肉力量的大幅强化同样变相提高了植入者的操作能力。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthSpine.description>
+
+  <BRF_ArchoRebirthSkin.label>重生血肉肌肤</BRF_ArchoRebirthSkin.label>
+  <BRF_ArchoRebirthSkin.description>由重获新生的血肉与暗黑超凡碎片铸造的肌肤。这种组织的核心被植入躯干之内，并且可以迅速生长覆盖体表以与原生皮肤彻底结合。结合后的皮肤可以有效地提升防护能力与环境适应性，并提升植入者外貌美观程度，甚至可以与其他影响皮肤的腺体与植入物完美共存。\n你才不是一个为了成百上千人的腐躯而残害他们，事后还试图为自己辩解的伪君子，对吗？</BRF_ArchoRebirthSkin.description>
   
   
 </LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BRF_CreepJoinerArrival_RebirthPsycorpse.questDescriptionRules.rulesStrings>
+    <li>questDescription->古怪同伴</li>
+  </BRF_CreepJoinerArrival_RebirthPsycorpse.questDescriptionRules.rulesStrings>
+  
+  <BRF_CreepJoinerJoin_OrinTransmuteFlesh.questDescriptionRules.rulesStrings>
+    <li>questDescription->古怪同伴</li>
+  </BRF_CreepJoinerJoin_OrinTransmuteFlesh.questDescriptionRules.rulesStrings>
+  
+  <BRF_CreepJoinerArrival_OrinFleshyModder.questDescriptionRules.rulesStrings>
+    <li>questDescription->古怪同伴</li>
+  </BRF_CreepJoinerArrival_OrinFleshyModder.questDescriptionRules.rulesStrings>
+  
+</LanguageData>

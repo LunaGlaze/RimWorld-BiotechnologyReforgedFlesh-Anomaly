@@ -70,6 +70,8 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
+      		<canLandGravshipOn>true</canLandGravshipOn>
+      		<canConstructInCorner>true</canConstructInCorner>
 		</building>
 		<drawerType>MapMeshOnly</drawerType>
 		<altitudeLayer>Conduits</altitudeLayer>
@@ -81,6 +83,7 @@
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
+    	<drawStyleCategory>Conduits</drawStyleCategory>
 		<comps>
 			<li Class="PipeSystem.CompProperties_Resource">
 				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
@@ -183,9 +186,15 @@
 					  <li>BRF_Things_LivingMaterial</li>
 					  <li>EggsFertilized</li>
 				  </disallowedCategories>
+				  <disallowedThingDefs>
+					  <li>InsectJelly</li>
+					  <li>BRF_NutritionalPaste</li>
+					  <li>BRF_GelatinousFlesh</li>
+				  </disallowedThingDefs>
 				</fuelFilter>
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        		<factorByDifficulty>false</factorByDifficulty>
 				<spawnInterval>3000</spawnInterval>
 				<PipeNet>BRF_NutritionalPasteNet</PipeNet>
 		  </li>

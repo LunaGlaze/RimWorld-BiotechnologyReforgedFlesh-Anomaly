@@ -3,7 +3,7 @@ using Verse;
 
 namespace Luna_BRF
 {
-    public class Hediff_Akuloth : HediffWithComps
+    public class Hediff_Akuloth : Hediff_Implant
     {
         private static readonly FloatRange floatRangeA = new FloatRange(0.6f, 1);
         public override void Tick()

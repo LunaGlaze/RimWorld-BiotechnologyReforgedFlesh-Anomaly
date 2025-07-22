@@ -127,3 +127,20 @@
  - 修复CountAddedAndImplantedPartsFlesh中的空引用错误。/Fix NullReferenceException at CountAddedAndImplantedPartsFlesh.
  - 重构地形转化代码使其支持RimWorld - Odyssey DLC。/Refactored terrain convert code to support the RimWorld - Odyssey DLC.
  - 阻止一些不适合的心灵仪式在太空层使用。/Prevent some inappropriate psychic rituals from being used in the space layer.
+
+ [v0.4.2]
+ - 微调部分材料属性。/Fine-tune some material properties.
+ - 补充部分翻译文本缺失。/Supplement some missing translated texts.
+ - 添加支持血肉菌毯的受转化重型桥梁与逆重飞船基架。/Add new converted heavy bridge and gravship substructure types that support flesh blanket.
+ - 为部分材料与结构添加密封性。/Set some resource and structure isAirtight to true.
+ - 删除了肉块墙体的CornerOverlay效果，因为Ludeon Studios实际上没有完成它，所以当玩家可建造的建筑具有该效果时始终会出现一条无伤大雅的错误报告；为了避免骚扰，我选择牺牲美观度。/Removed the CornerOverlay effect for flsehmass wall, since Ludeon Studios didn't actually finish it, so there was always a harmless bug report when player buildable structures had that effect; I chose to sacrifice aesthetics to avoid harassment.
+ - 修改燃料逻辑并使用HarmonyPatch使得模组内部分燃料组件变为使用营养值比例作为燃料数据，以此兼容RimWorld - Odyssey DLC中不符合原有营养值规则的生食。/Modified the fuel logic and used HarmonyPatch to change some modded fuel comps to use the things Nutrition stat value ratio as the fuel data, so as to be compatible with the raw food in RimWorld - Odyssey DLC that does not conform to the original nutrient value rules.
+ - 为使用营养糊剂作为燃料的工作台提供了弹出燃料功能。/Add EjectFuel functionality to crafting tables that use Nutritional Paste as fuel.
+ - 提升了超凡等级的仿生体在没有神圣的白虫的情况下造成的反噬。/The backlash caused by the bionic body that has been upgraded to the archotech level without Akuloth.
+ - 修复神圣的白虫可能无法正常计入仿生体计数的bug。/Fix a bug where the Akuloth was not counted towards the Bionics count properly.
+ - 为重生血肉之肺添加部分真空抗性。/Add partial vacuum resistance to rebirth flesh lung.
+ - 添加重生血肉肌肤。/Add rebirth flesh skin.
+ - 由于某些玩家的未知原因导致实际游戏渲染亮度与饱和度远超原始贴图，现小幅度降低墙体与地面纹理亮度与饱和度以使最终效果接近可接受范围。/Due to unknown reasons of some players, the brightness and saturation of actual game rendering far exceed the original textures. Now the brightness and saturation of wall and terrain textures are slightly reduced to make the final effect close to the acceptable range.
+ - 添加RimWorld - Odyssey DLC联动材料血曜石。/Add Bloodsidian, a DLC material for RimWorld - Odyssey.
+ - 支持部分建筑使用原版设计形状。/Support for some buildings using vanilla design shapes.
+ - 将重生灵骸与原生先知的跳跃能力修改为折跃。/Changed the Entity Longjump ability of Rebirth Psycorpse and Raw Prophet to Skip.

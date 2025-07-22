@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>BRF_UnfinishedFleshHealthItemBionic</defName>
+    <label>unfinished flesh bionic</label>
+    <description>An unfinished flesh bionic.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(189,50,50)</color>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+</Defs>

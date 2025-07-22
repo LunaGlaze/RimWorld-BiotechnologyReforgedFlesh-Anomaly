@@ -283,7 +283,7 @@
       <ComfyTemperatureMin>-115</ComfyTemperatureMin>
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
       <Flammability>0</Flammability>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>4</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>

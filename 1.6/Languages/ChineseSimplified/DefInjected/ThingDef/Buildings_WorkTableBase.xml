@@ -5,30 +5,18 @@
 
   <BRF_TwistedCrucible.label>扭曲坩埚</BRF_TwistedCrucible.label>
   <BRF_TwistedCrucible.description>一个装满了怪异的肉质触手的大锅，可以用于进行某些本不应该发生的转化。</BRF_TwistedCrucible.description>
-  <BRF_TwistedCrucible_Blueprint.label>扭曲坩埚（蓝图）</BRF_TwistedCrucible_Blueprint.label>
-  <BRF_TwistedCrucible_Blueprint_Install.label>扭曲坩埚（蓝图）</BRF_TwistedCrucible_Blueprint_Install.label>
-  <BRF_TwistedCrucible_Frame.label>扭曲坩埚（建造中）</BRF_TwistedCrucible_Frame.label>
-  <BRF_TwistedCrucible_Frame.description>一个装满了怪异的肉质触手的大锅，可以用于进行某些本不应该发生的转化。</BRF_TwistedCrucible_Frame.description>
 
 
   <!-- 生物锻炉 -->
 
   <BRF_BioForge.label>生物锻炉</BRF_BioForge.label>
   <BRF_BioForge.description>现在，你们已经开始了解血与肉的智慧。这个有生命的工作台可以将生物材料重新锻造成更完美的形态。</BRF_BioForge.description>
-  <BRF_BioForge_Blueprint.label>生物锻炉（蓝图）</BRF_BioForge_Blueprint.label>
-  <BRF_BioForge_Blueprint_Install.label>生物锻炉（蓝图）</BRF_BioForge_Blueprint_Install.label>
-  <BRF_BioForge_Frame.label>生物锻炉（建造中）</BRF_BioForge_Frame.label>
-  <BRF_BioForge_Frame.description>现在，你们已经开始了解血与肉的智慧。这个有生命的工作台可以将生物材料重新锻造成更完美的形态。</BRF_BioForge_Frame.description>
 
 
   <!-- 咀嚼器 -->
 
   <BRF_Chewer.label>咀嚼器</BRF_Chewer.label>
   <BRF_Chewer.description>由血肉和下颚构成的可怖巨口可以使用它那无穷无尽的咀嚼本能来摧毁一切。</BRF_Chewer.description>
-  <BRF_Chewer_Blueprint.label>咀嚼器（蓝图）</BRF_Chewer_Blueprint.label>
-  <BRF_Chewer_Blueprint_Install.label>咀嚼器（蓝图）</BRF_Chewer_Blueprint_Install.label>
-  <BRF_Chewer_Frame.label>咀嚼器（建造中）</BRF_Chewer_Frame.label>
-  <BRF_Chewer_Frame.description>由血肉和下颚构成的可怖巨口可以使用它那无穷无尽的咀嚼本能来摧毁一切。</BRF_Chewer_Frame.description>
 
 
   <!-- 猩红祭坛 -->

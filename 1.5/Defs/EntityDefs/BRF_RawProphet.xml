@@ -286,7 +286,7 @@
       <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.58</ArmorRating_Sharp>
       <ToxicResistance>1</ToxicResistance>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionResistance>
       <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionEnvironmentResistance>
     </statBases>

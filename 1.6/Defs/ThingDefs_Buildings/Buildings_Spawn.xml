@@ -64,10 +64,13 @@
       <Bioferrite>5</Bioferrite>
     </costList>
 	  <selectable>true</selectable>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_RefuelByNutrition" />
+    </modExtensions>
     <comps>
 	  <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>100.0</fuelConsumptionRate>
-        <fuelCapacity>500.0</fuelCapacity>
+        <fuelConsumptionRate>2000.0</fuelConsumptionRate>
+        <fuelCapacity>10000.0</fuelCapacity>
         <fuelFilter>
           <categories>
             <li>MeatRaw</li>
@@ -78,6 +81,8 @@
 		      </disallowedCategories>
           <disallowedThingDefs>
             <li>InsectJelly</li>
+            <li>BRF_NutritionalPaste</li>
+            <li>BRF_GelatinousFlesh</li>
           </disallowedThingDefs>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>
@@ -249,6 +254,11 @@
         <pointPerTimes>10</pointPerTimes>
       </li>
     </comps>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_RefuelByNutrition">
+            <nutritionMultiplier>20</nutritionMultiplier>
+        </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="BRF_Digester">
     <defName>BRF_Digester</defName>
@@ -283,10 +293,13 @@
 		      </disallowedCategories>
           <disallowedThingDefs>
             <li>InsectJelly</li>
+            <li>BRF_NutritionalPaste</li>
+            <li>BRF_GelatinousFlesh</li>
           </disallowedThingDefs>
         </fuelFilter>
         <initialFuelPercent>0</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <factorByDifficulty>false</factorByDifficulty>
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSpawnerWithFuel">
         <requiresPower>false</requiresPower>
@@ -319,7 +332,12 @@
     <researchPrerequisites>
       <li>BRF_FleshTaintSporeResearch</li>
     </researchPrerequisites>
-    <descriptionHyperlinks><ThingDef>BRF_GelatinousFlesh</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>BRF_GelatinousFlesh</ThingDef>
+      <TerrainDef>BRF_FleshBlanket</TerrainDef>
+      <TerrainDef>BRF_FleshBlanket_Substructure</TerrainDef>
+      <TerrainDef>BRF_FleshBlanket_HeavyBridge</TerrainDef>
+    </descriptionHyperlinks>
     <uiOrder>130</uiOrder>
     <graphicData>
       <texPath>Buildings/WorkTable/BRF_FleshTaintSpore</texPath>
@@ -377,6 +395,7 @@
         </fuelFilter>
         <initialFuelPercent>0.1</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Flickable"/>
@@ -401,14 +420,17 @@
 				<spawnTickRate>7500</spawnTickRate>
 				<allowTerrains>
           <li>Flesh</li>
-          <li>BRF_FleshSurface</li>
         </allowTerrains>
-				<!--specialConvertTerrainDefs>
+				<specialConvertTerrainDefs>
           <li MayRequire="Ludeon.RimWorld.Odyssey">
             <requiredTerrainDef>Substructure</requiredTerrainDef>
             <convertTerrainDef>BRF_FleshBlanket_Substructure</convertTerrainDef>
           </li>
-        </specialConvertTerrainDefs-->
+          <li MayRequire="Ludeon.RimWorld.Odyssey">
+            <requiredTerrainDef>HeavyBridge</requiredTerrainDef>
+            <convertTerrainDef>BRF_FleshBlanket_HeavyBridge</convertTerrainDef>
+          </li>
+        </specialConvertTerrainDefs>
 			</li>
     </comps>
   </ThingDef>
@@ -487,6 +509,7 @@
         </fuelFilter>
         <initialFuelPercent>0.1</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Flickable"/>

@@ -19,10 +19,17 @@
 
 
   <!-- 實體位移 -->
-
+ <!--大跳-->
   <BRF_EntityLongjump.label>實體長躍</BRF_EntityLongjump.label>
   <BRF_EntityLongjump.description>利用這個實體強大的跳躍能力，跳到遙遠的地方。</BRF_EntityLongjump.description>
   <BRF_EntityLongjump.verbProperties.label>跳躍</BRF_EntityLongjump.verbProperties.label>
+ <!--閃現-->
+  <BRF_EntityFlash.label>實體閃現</BRF_EntityFlash.label>
+  <BRF_EntityFlash.description>將自身折躍至指定地點。</BRF_EntityFlash.description>
+  <BRF_EntityFlashS.label>實體閃現</BRF_EntityFlashS.label>
+  <BRF_EntityFlashS.description>將自身折躍至指定地點。</BRF_EntityFlashS.description>
+  <BRF_EntityFlashM.label>實體閃現</BRF_EntityFlashM.label>
+  <BRF_EntityFlashM.description>將自身折躍至指定地點。</BRF_EntityFlashM.description>
 
 
   <!-- 進食屍體 -->

@@ -57,9 +57,6 @@
  - 终极的血肉生物装备，包括护甲、武器等等……
  - The ultimate flesh creature gear, including armour, weapons and more ......
 
- - 一个在背景中的新的原型来自SCP的欲肉教的黑暗超凡智能。在目前模组的文本里已经有少量体现，我正在考虑是否扩大其影响力，但也注意区分它与原型的区别。
- - A new archetype from SCP's Sarkicism of the dark hyperintelligent archotech mind in the background. It's already represented to a small extent in the text of the current mod, and I'm thinking about expanding its influence. Note the distinction between it and the archetype. Tynan's worldview has archotech mind in abundance in the rimworld, so I think such is considered by humans to be dark and twisted is that archotech mind may also exist in the plural, rather than just one individual called Horax ...... aka actually countless appellations that refer to the same archotech mind, just using a different technical route. Or maybe Horax is just a collective term used by some brain-dead humans to refer to this mind. Who knows? After all, humans can't understand it.
-
  - 一些我的支持者希望我加入的适合这个mod主题的内容，如果我可以做到的话。
  - What some of my backers would like me to include that fits the theme of this mod, if I can do it.
 

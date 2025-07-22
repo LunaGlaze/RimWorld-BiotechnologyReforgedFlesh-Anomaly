@@ -53,11 +53,11 @@
     </statBases>
     <costList>
       <Eye>1</Eye>
-      <BRF_ScarletFerrite>5</BRF_ScarletFerrite>
+      <BRF_ScarletFerrite>4</BRF_ScarletFerrite>
       <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
       <Bioferrite>5</Bioferrite>
       <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
-      <Meat_Twisted>10</Meat_Twisted>
+      <BRF_ReforgedMeat_Harbinger>10</BRF_ReforgedMeat_Harbinger>
     </costList>
     <researchPrerequisites>
       <li>BRF_InvisibleWatcherResearch</li>

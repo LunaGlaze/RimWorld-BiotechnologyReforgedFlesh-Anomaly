@@ -1,11 +1,14 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
+using static HarmonyLib.Code;
 
 namespace Luna_BRF
 {
     public class HediffComp_InfectionsWithoutAkuloth : HediffComp
     {
-        public int tickInterval = 2500;
+        public int tickInterval = 2000;
+        private static readonly FloatRange InfectionCount = new FloatRange(0, 6);
 
         public bool HasAkuloth(Pawn p)
         {
@@ -32,7 +35,9 @@ namespace Luna_BRF
             Pawn pawn = parent.pawn;
             if (!HasAkuloth(pawn))
             {
-                base.Pawn.health.AddHediff(HediffDefOf.WoundInfection, parent.Part);
+                Hediff WoundInfectionOnPawn = pawn.health?.GetOrAddHediff(HediffDefOf.WoundInfection, parent.Part);
+                float point = InfectionCount.RandomInRange;
+                WoundInfectionOnPawn.Severity = Mathf.Min(1, 0.01f * point + WoundInfectionOnPawn.Severity);
             }
         }
     }

@@ -64,7 +64,7 @@
       <BRF_BloodSakuraCeramics>50</BRF_BloodSakuraCeramics>
     </products>
     <skillRequirements>
-      <Crafting>14</Crafting>
+      <Crafting>10</Crafting>
     </skillRequirements>
   </RecipeDef>
 
@@ -110,7 +110,7 @@
       <BRF_BloodSakuraCeramics>200</BRF_BloodSakuraCeramics>
     </products>
     <skillRequirements>
-      <Crafting>16</Crafting>
+      <Crafting>14</Crafting>
     </skillRequirements>
   </RecipeDef>
 
@@ -186,7 +186,7 @@
       <BRF_BloodMumeSilk>15</BRF_BloodMumeSilk>
     </products>
     <skillRequirements>
-      <Crafting>12</Crafting>
+      <Crafting>10</Crafting>
     </skillRequirements>
   </RecipeDef>
 

@@ -24,7 +24,10 @@
 
   <BRF_Leather_Bloody.label>血腥皮革</BRF_Leather_Bloody.label>
   <BRF_Leather_Bloody.description>一种被重塑的类似皮革的制品，有着正常皮革与织物的特性和更强的性能。这种皮革散发出一种淡淡的和新鲜的血液类似的腥甜味。用这种皮革缝制的衣物能强化穿戴者的心灵。</BRF_Leather_Bloody.description>
-  <BRF_Leather_Bloody.tools.Crimson_Stem.label>血腥皮革</BRF_Leather_Bloody.tools.Crimson_Stem.label>
-  <BRF_Leather_Bloody.stuffProps.stuffAdjective>血腥皮革</BRF_Leather_Bloody.stuffProps.stuffAdjective>
+
+  <!-- 血曜石 -->
+
+  <BRF_Bloodsidian.label>血曜石</BRF_Bloodsidian.label>
+  <BRF_Bloodsidian.description>血曜石是一种受到血肉科技改造的黑曜石变体。传说中黑曜石有着“龙石”的称呼，而生命的力量可以释放一部分“龙”的潜力。</BRF_Bloodsidian.description>
   
 </LanguageData>

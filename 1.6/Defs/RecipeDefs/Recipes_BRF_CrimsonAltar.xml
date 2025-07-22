@@ -339,4 +339,100 @@
     </products>
   </RecipeDef>
 
+<!-- 血曜石 -->
+  <RecipeDef Name="BRF_MakeBloodsidianBase" ParentName="BRF_CrimsonAltarRecipeBase" Abstract="True" MayRequire="Ludeon.RimWorld.Odyssey">
+    <description>Forge Bloodsidian</description>
+    <jobString>Forging Bloodsidian</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <categories>
+        <li>BRF_Things_ReforgedMeat</li>
+      </categories>
+      <thingDefs>
+        <li>Obsidian</li>
+        <li>BRF_ScarletFerrite</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>BRF_LivingFlesh</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BRF_MakeBloodsidianBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BRF_MakeBloodsidian10</defName>
+    <label>Forge Bloodsidian ×10</label>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Obsidian</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ScarletFerrite</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_Bloodsidian>10</BRF_Bloodsidian>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="BRF_MakeBloodsidianBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BRF_MakeBloodsidian50</defName>
+    <label>Forge Bloodsidian ×50</label>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>BRF_Things_ReforgedMeat</li>
+          </categories>
+        </filter>
+        <count>125</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Obsidian</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BRF_ScarletFerrite</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <BRF_Bloodsidian>50</BRF_Bloodsidian>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
 </Defs>

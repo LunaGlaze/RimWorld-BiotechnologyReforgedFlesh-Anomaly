@@ -171,6 +171,7 @@
   </ThingDef>
 
 <!--实体位移-->
+ <!--大跳-->
   <AbilityDef Name="BRF_EntityLongjump">
     <defName>BRF_EntityLongjump</defName>
     <label>Entity Longjump</label>
@@ -197,6 +198,40 @@
       </targetParams>
     </verbProperties>
     <jobDef>CastJump</jobDef>
+  </AbilityDef>
+ <!--闪现-->
+  <AbilityDef ParentName="EntitySkip" Name="BRF_EntityFlash">
+    <defName>BRF_EntityFlash</defName>
+    <label>Entity Flash</label>
+    <iconPath>UI/Abilities/BRF_EntityFlash</iconPath>
+    <verbProperties>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>False</canTargetBuildings>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>Luna_BRF.CompAbilityEffect_EntityFlash</compClass>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef ParentName="BRF_EntityFlash">
+    <defName>BRF_EntityFlashS</defName>
+    <cooldownTicksRange>1200</cooldownTicksRange> <!-- 20 seconds -->
+    <verbProperties>
+      <range>24.9</range>
+    </verbProperties>
+  </AbilityDef>
+  <AbilityDef ParentName="BRF_EntityFlash">
+    <defName>BRF_EntityFlashM</defName>
+    <cooldownTicksRange>1200</cooldownTicksRange> <!-- 20 seconds -->
+    <verbProperties>
+      <range>34.9</range>
+    </verbProperties>
   </AbilityDef>
 
 <!--进食尸体-->

@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|h:\\[games]\\rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[bio-anomaly]\u8840\u8089\u91CD\u94F8\\source\\luna_brf_assemblies\\lunadefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|h:\\[games]\\rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[bio-anomaly]\u8840\u8089\u91CD\u94F8\\source\\luna_brf_assemblies\\misc\\compabilityeffect_entityflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|solutionrelative:misc\\compabilityeffect_entityflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\lunadefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|solutionrelative:lunadefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CompAbilityEffect_EntityFlash.cs",
+              "DocumentMoniker": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\Misc\\CompAbilityEffect_EntityFlash.cs",
+              "RelativeDocumentMoniker": "Misc\\CompAbilityEffect_EntityFlash.cs",
+              "ToolTip": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\Misc\\CompAbilityEffect_EntityFlash.cs",
+              "RelativeToolTip": "Misc\\CompAbilityEffect_EntityFlash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T05:36:53.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LunaDefOf.cs",
               "DocumentMoniker": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\LunaDefOf.cs",
               "RelativeDocumentMoniker": "LunaDefOf.cs",
               "ToolTip": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\LunaDefOf.cs",
               "RelativeToolTip": "LunaDefOf.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T10:21:07.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T05:37:31.917Z"
             }
           ]
         }

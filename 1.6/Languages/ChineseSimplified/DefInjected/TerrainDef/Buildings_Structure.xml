@@ -19,6 +19,13 @@
   <BRF_FleshBlanket_Substructure.description>一种被有机原生质层覆盖的逆重飞船基架，就像是一层肉生长在上面一样。该种被血肉菌毯寄染的轻质桁架结构具有与逆重飞船基架相同的功能，但在此基础上还可以承担血肉菌毯的作用，链接生物机械网路。</BRF_FleshBlanket_Substructure.description>
 
 
+  <!-- 血肉菌毯：桥梁 -->
+
+  <BRF_FleshBlanket_HeavyBridge.label>血肉寄染重型桥梁</BRF_FleshBlanket_HeavyBridge.label>
+  <BRF_FleshBlanket_HeavyBridge.description>一种被有机原生质层覆盖的基础桥梁的强化版，就像是一层肉生长在上面一样。该种被血肉菌毯寄染的桥梁结构具有与重型桥梁相同的功能，但在此基础上还可以承担血肉菌毯的作用，链接生物机械网路。</BRF_FleshBlanket_HeavyBridge.description>
+
+
+
   <!-- 血肉菌毯地砖 -->
 
   <BRF_FleshBlanket_Tile.label>血肉菌毯地砖</BRF_FleshBlanket_Tile.label>

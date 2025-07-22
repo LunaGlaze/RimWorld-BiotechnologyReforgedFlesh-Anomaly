@@ -36,7 +36,7 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <unfinishedThingDef>BRF_UnfinishedFleshHealthItemBionic</unfinishedThingDef>
       <researchPrerequisite>BRF_FleshShellBaseResearch</researchPrerequisite>
     </recipeMaker>
   </ThingDef>

@@ -24,7 +24,7 @@ namespace Luna_BRF
 				List<Pawn> animal = new List<Pawn>();
 				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 				{
-					if (item.AnimalOrWildMan() && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction)
+					if (item.IsAnimal && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction)
 					{
 						animal.Add(item);
 					}
@@ -63,7 +63,7 @@ namespace Luna_BRF
 				List<Pawn> animal = new List<Pawn>();
 				foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 				{
-					if (item.AnimalOrWildMan() && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction &&
+					if (item.IsAnimal && item.kindDef.combatPower < 500 && item.Faction != ability.pawn.Faction &&
 						pawn.Map.reachability.CanReach(pawn.Position,item.SpawnedParentOrMe, PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)))
 					{
 						animal.Add(item);

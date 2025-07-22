@@ -4,7 +4,7 @@
   <BRF_Akuloth.label>神圣的白虫</BRF_Akuloth.label>
   <BRF_Akuloth.description>一种共生生物，能够充当第二免疫系统，保护宿主免受疾病侵害，并大幅提升其再生能力。它能预防由超凡血肉仿生体引起的致命感染，并定期降低现有疾病的严重程度。</BRF_Akuloth.description>
 
-  <BRF_ArchoRebirthHeart.label>重生血肉心</BRF_ArchoRebirthHeart.label>
+  <BRF_ArchoRebirthHeart.label>重生血肉心脏</BRF_ArchoRebirthHeart.label>
   <BRF_ArchoRebirthHeart.description>一个已安装的重生血肉心。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthHeart.description>
   <BRF_ArchoRebirthHeart.labelNoun>重生血肉心</BRF_ArchoRebirthHeart.labelNoun>
 
@@ -48,5 +48,9 @@
   <BRF_ArchoRebirthSpine.label>重生血肉脊椎</BRF_ArchoRebirthSpine.label>
   <BRF_ArchoRebirthSpine.description>一个已安装的重生血肉脊椎。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthSpine.description>
   <BRF_ArchoRebirthSpine.labelNoun>重生血肉脊椎</BRF_ArchoRebirthSpine.labelNoun>
+
+  <BRF_ArchoRebirthSkin.label>重生血肉肌肤</BRF_ArchoRebirthSkin.label>
+  <BRF_ArchoRebirthSkin.description>一个已安装的重生血肉肌肤。如果在没有与神圣的白虫达成共生的情况下强行植入，植入者将继续遭受感染的反噬。</BRF_ArchoRebirthSkin.description>
+  <BRF_ArchoRebirthSkin.labelNoun>重生血肉脊椎</BRF_ArchoRebirthSkin.labelNoun>
 
 </LanguageData>

@@ -131,7 +131,7 @@ namespace Luna_BRF
             {
                 return false;
             }
-            if (terrain.isFoundation || terrain.HasTag("Road") || terrain.HasTag("Substructure"))
+            if (terrain.isFoundation || terrain.IsRoad || terrain.IsSubstructure)
             {
                 return false;
             }

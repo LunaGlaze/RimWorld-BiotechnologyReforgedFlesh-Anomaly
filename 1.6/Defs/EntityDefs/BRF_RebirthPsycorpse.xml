@@ -30,7 +30,7 @@
       <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
       <ToxicResistance>1</ToxicResistance>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 	    <NecrotionResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionResistance>
 	    <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC.1.5">2.5</NecrotionEnvironmentResistance>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
@@ -60,7 +60,7 @@
     <destroyGearOnDrop>false</destroyGearOnDrop>
     <canStrip>true</canStrip>
     <abilities>
-      <li>BRF_EntityLongjump</li>
+      <li>BRF_EntityFlashS</li>
     </abilities>
     <combatPower>500</combatPower>
     <lifeStages>

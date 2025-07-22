@@ -337,7 +337,7 @@
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <MinimumContainmentStrength>50</MinimumContainmentStrength>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <ToxicResistance>1</ToxicResistance>
       <InjuryHealingFactor>5</InjuryHealingFactor>
       <PainShockThreshold>0.99</PainShockThreshold>

@@ -84,6 +84,8 @@
     <Compile Include="Hediff\Hediff_Akuloth.cs" />
     <Compile Include="Hediff\Hediff_ParasiticControl.cs" />
     <Compile Include="Hediff\Hediff_RawHeartStartHolder.cs" />
+    <Compile Include="Misc\CompAbilityEffect_EntityFlash.cs" />
+    <Compile Include="Misc\ExtensionDef_RefuelByNutrition.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_InitiationRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_AkulothRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_CrimsonProvocation.cs" />

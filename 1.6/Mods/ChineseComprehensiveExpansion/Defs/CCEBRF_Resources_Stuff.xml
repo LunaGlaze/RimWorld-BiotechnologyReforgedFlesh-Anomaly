@@ -44,6 +44,7 @@
       </categories>
       <appearance>Metal</appearance>
       <commonality>0</commonality>
+      <isAirtight>true</isAirtight>
       <allowedInStuffGeneration>false</allowedInStuffGeneration>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(255,180,180)</color>

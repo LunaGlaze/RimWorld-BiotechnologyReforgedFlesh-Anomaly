@@ -3,11 +3,8 @@
 
   <!-- 血肉墙 -->
 
-  <BRF_FleshWall.label>血肉墙</BRF_FleshWall.label>
+  <BRF_FleshWall.label>肉块墙</BRF_FleshWall.label>
   <BRF_FleshWall.description>由某人建造的一团坚固的扭曲肉。它因自身可怖的生命力而蠕动、颤抖。</BRF_FleshWall.description>
-  <BRF_FleshWall_Blueprint.label>血肉墙（蓝图）</BRF_FleshWall_Blueprint.label>
-  <BRF_FleshWall_Frame.label>血肉墙（建造中）</BRF_FleshWall_Frame.label>
-  <BRF_FleshWall_Frame.description>由某人建造的一团坚固的扭曲肉。它因自身可怖的生命力而蠕动、颤抖。</BRF_FleshWall_Frame.description>
 
   <!-- 强化血肉墙 -->
 
@@ -19,9 +16,6 @@
 
   <BRF_FleshDoor.label>血肉门</BRF_FleshDoor.label>
   <BRF_FleshDoor.description>由某人建造的一团坚固的扭曲肉。它因自身可怖的生命力而蠕动、颤抖。</BRF_FleshDoor.description>
-  <BRF_FleshDoor_Blueprint.label>血肉门（蓝图）</BRF_FleshDoor_Blueprint.label>
-  <BRF_FleshDoor_Frame.label>血肉门（建造中）</BRF_FleshDoor_Frame.label>
-  <BRF_FleshDoor_Frame.description>由某人建造的一团坚固的扭曲肉。它因自身可怖的生命力而蠕动、颤抖。</BRF_FleshDoor_Frame.description>
 
 
   <!-- 血肉种植格 -->

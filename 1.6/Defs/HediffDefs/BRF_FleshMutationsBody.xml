@@ -615,7 +615,7 @@
       <li>
         <painOffset>0.02</painOffset>
         <statOffsets>
-          <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.3</ToxicEnvironmentResistance>
+          <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
         </statOffsets>
         <capMods>
           <li>

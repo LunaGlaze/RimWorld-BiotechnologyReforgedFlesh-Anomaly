@@ -42,6 +42,7 @@
       </categories>
       <appearance>Metal</appearance>
       <commonality>0</commonality>
+      <isAirtight>true</isAirtight>
       <allowedInStuffGeneration>false</allowedInStuffGeneration>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(87, 30, 36)</color>
@@ -152,7 +153,7 @@
       <soundMeleeHitBlunt>BRF_MeleeHit_Flesh</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
       <statFactors>
-        <MaxHitPoints>1</MaxHitPoints>
+        <MaxHitPoints>0.95</MaxHitPoints>
         <Beauty>0.9</Beauty>
         <Flammability>0</Flammability>
         <WorkToMake>0.75</WorkToMake>
@@ -215,7 +216,7 @@
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
       <statFactors>
-        <MaxHitPoints>1</MaxHitPoints>
+        <MaxHitPoints>1.25</MaxHitPoints>
         <Beauty>1.05</Beauty>
         <Flammability>0</Flammability>
         <WorkToMake>0.75</WorkToMake>
@@ -311,6 +312,100 @@
         </li>
       </statOffsetsQuality>
     </stuffProps>
+  </ThingDef>
+
+<!--血曜石-->
+
+  <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BRF_Bloodsidian</defName>
+    <label>Bloodsidian</label>
+    <description>Bloodsidian is a variant of obsidian that has been transformed by fleshtech. According to legend, obsidian is called "dragon stone", and the power of life can release some of the potential of "dragon".</description>
+    <graphicData>
+      <texPath>Items/Resource/BRF_Bloodsidian</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>8</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.58</SharpDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+        <li>Metallic</li>
+        <li>Bioferrite</li>
+        <li>BRF_LivingAlloy</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(167,47,47)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>9</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <WorkToMake>1.75</WorkToMake>
+        <WorkToBuild>6</WorkToBuild>
+        <Beauty>2.2</Beauty>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.03</awful>
+          <poor>1.04</poor>
+          <normal>1.05</normal>
+          <good>1.06</good>
+          <excellent>1.07</excellent>
+          <masterwork>1.9</masterwork>
+          <legendary>1.12</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>2</awful>
+          <poor>3</poor>
+          <normal>4</normal>
+          <good>6</good>
+          <excellent>8</excellent>
+          <masterwork>10</masterwork>
+          <legendary>12</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.04</awful>
+          <poor>0.04</poor>
+          <normal>0.04</normal>
+          <good>0.04</good>
+          <excellent>0.04</excellent>
+          <masterwork>0.04</masterwork>
+          <legendary>0.04</legendary>
+        </li>
+      </statOffsetsQuality>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
 
 </Defs>

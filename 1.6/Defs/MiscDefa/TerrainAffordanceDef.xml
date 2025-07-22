@@ -4,7 +4,7 @@
   <TerrainAffordanceDef>
     <defName>BRF_FleshBlanket</defName>
     <label>flesh blanket</label>
-    <order>1313</order>
+    <order>4800</order>
   </TerrainAffordanceDef>
 
 </Defs>

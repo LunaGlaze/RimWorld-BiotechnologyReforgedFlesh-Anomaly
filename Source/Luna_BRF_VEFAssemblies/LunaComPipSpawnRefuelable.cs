@@ -63,7 +63,7 @@ namespace Luna_BRF_VEFAssemblies
 					Refuel(18f);
 				}
 			}
-		}
+        }
 
         public void GetChildHolders(List<IThingHolder> outChildren)
         {

@@ -51,7 +51,7 @@
     </statBases>
     <costList>
 	    <Meat_Twisted>10</Meat_Twisted>
-	    <BRF_GelatinousFlesh>5</BRF_GelatinousFlesh>
+	    <BRF_GelatinousFlesh>3</BRF_GelatinousFlesh>
     </costList>
     <comps>
       <li Class="CompProperties_Glower">

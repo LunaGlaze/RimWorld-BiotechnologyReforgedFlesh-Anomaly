@@ -40,5 +40,13 @@
   <BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.description>分化營養糊劑，鑄造重塑先驅肉。</BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.description>
   <BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.jobString>分化營養糊劑</BRF_NutritionalPaste_To_ReforgedMeat_Harbinger.jobString>
 
+  <!-- 血曜石 -->
+
+  <BRF_MakeBloodsidian10.label>鍛造血曜石×10</BRF_MakeBloodsidian10.label>
+  <BRF_MakeBloodsidian10.description>將猩紅鋼與黑曜石結合釋放其中的潛力。</BRF_MakeBloodsidian10.description>
+  <BRF_MakeBloodsidian10.jobString>鍛造血曜石</BRF_MakeBloodsidian10.jobString>
+  <BRF_MakeBloodsidian50.label>鍛造血曜石×50</BRF_MakeBloodsidian50.label>
+  <BRF_MakeBloodsidian50.description>將猩紅鋼與黑曜石結合釋放其中的潛力。</BRF_MakeBloodsidian50.description>
+  <BRF_MakeBloodsidian50.jobString>鍛造血曜石</BRF_MakeBloodsidian50.jobString>
 
 </LanguageData>

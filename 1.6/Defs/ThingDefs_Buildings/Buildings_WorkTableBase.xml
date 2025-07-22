@@ -79,8 +79,8 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>5</fuelConsumptionRate>
-        <fuelCapacity>50.0</fuelCapacity>
+        <fuelConsumptionRate>25</fuelConsumptionRate>
+        <fuelCapacity>250.0</fuelCapacity>
         <fuelFilter>
           <categories>
              <li>FoodRaw</li>
@@ -89,6 +89,11 @@
 			      <li>BRF_Things_ReforgedMeat</li>
 			      <li>BRF_Things_LivingMaterial</li>
 		      </disallowedCategories>
+          <disallowedThingDefs>
+            <li>InsectJelly</li>
+            <li>BRF_NutritionalPaste</li>
+            <li>BRF_GelatinousFlesh</li>
+          </disallowedThingDefs>
         </fuelFilter>
         <initialFuelPercent>0.25</initialFuelPercent>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -115,6 +120,9 @@
     <recipes>
       <li MayRequire="trickity.seal.spirits">T_RendBio</li>
     </recipes>
+    <modExtensions>
+        <li Class="Luna_BRF.ExtensionDef_RefuelByNutrition" />
+    </modExtensions>
   </ThingDef>
 <!-- 生物锻炉 -->
   <ThingDef ParentName="BRF_BuildingWorkTableLiving">
@@ -177,6 +185,7 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
@@ -243,6 +252,7 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
     </comps>
     <placeWorkers>
@@ -324,6 +334,7 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>

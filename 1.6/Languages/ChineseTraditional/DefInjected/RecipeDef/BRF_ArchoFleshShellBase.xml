@@ -49,5 +49,9 @@
   <BRF_InstallRebirthFleshSpine.description>安裝重生血肉脊椎。</BRF_InstallRebirthFleshSpine.description>
   <BRF_InstallRebirthFleshSpine.jobString>正在安裝重生血肉脊椎</BRF_InstallRebirthFleshSpine.jobString>
 
+  <BRF_InstallReforgedFleshSkin.label>安裝重生血肉肌膚</BRF_InstallReforgedFleshSkin.label>
+  <BRF_InstallReforgedFleshSkin.description>安裝重生血肉肌膚。</BRF_InstallReforgedFleshSkin.description>
+  <BRF_InstallReforgedFleshSkin.jobString>正在安裝重生血肉肌膚</BRF_InstallReforgedFleshSkin.jobString>
+
 
 </LanguageData>

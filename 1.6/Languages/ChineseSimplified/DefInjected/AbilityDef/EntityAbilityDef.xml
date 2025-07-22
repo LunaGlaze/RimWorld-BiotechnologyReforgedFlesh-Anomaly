@@ -18,10 +18,17 @@
   <BRF_Launch_RawProphet.label>腥臭脓液</BRF_Launch_RawProphet.label>
 
   <!-- 实体位移 -->
-
+ <!--大跳-->
   <BRF_EntityLongjump.label>实体长跃</BRF_EntityLongjump.label>
   <BRF_EntityLongjump.description>利用这个实体强大的跳跃能力，跳到遥远的地方。</BRF_EntityLongjump.description>
   <BRF_EntityLongjump.verbProperties.label>跳跃</BRF_EntityLongjump.verbProperties.label>
+ <!--闪现-->
+  <BRF_EntityFlash.label>实体闪现</BRF_EntityFlash.label>
+  <BRF_EntityFlash.description>将自身折跃至指定地点。</BRF_EntityFlash.description>
+  <BRF_EntityFlashS.label>实体闪现</BRF_EntityFlashS.label>
+  <BRF_EntityFlashS.description>将自身折跃至指定地点。</BRF_EntityFlashS.description>
+  <BRF_EntityFlashM.label>实体闪现</BRF_EntityFlashM.label>
+  <BRF_EntityFlashM.description>将自身折跃至指定地点。</BRF_EntityFlashM.description>
 
 
   <!-- 进食尸体 -->

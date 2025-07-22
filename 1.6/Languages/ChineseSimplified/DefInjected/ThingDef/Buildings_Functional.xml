@@ -5,19 +5,12 @@
 
   <BRF_FleshWatcher.label>血肉监视者</BRF_FleshWatcher.label>
   <BRF_FleshWatcher.description>一个几乎完全改装过的潜近探测器，绝大部分内部结构都被生物组织取代了。\n\n这个有生命的机器在事实能上通过第三方观察者具有灵能效应的持续观测，干扰目标的隐形能力。</BRF_FleshWatcher.description>
-  <BRF_FleshWatcher_Blueprint.label>血肉监视者（蓝图）</BRF_FleshWatcher_Blueprint.label>
-  <BRF_FleshWatcher_Blueprint_Install.label>血肉监视者（安装蓝图）</BRF_FleshWatcher_Blueprint_Install.label>
-  <BRF_FleshWatcher_Frame.label>血肉监视者（建造中）</BRF_FleshWatcher_Frame.label>
-  <BRF_FleshWatcher_Frame.description>一个几乎完全改装过的潜近探测器，绝大部分内部结构都被生物组织取代了。\n\n这个有生命的机器在事实能上通过第三方观察者具有灵能效应的持续观测，干扰目标的隐形能力。</BRF_FleshWatcher_Frame.description>
 
 
   <!-- 湿件伺服节点 -->
 
   <BRF_WetwareServoNodes.label>湿件伺服节点</BRF_WetwareServoNodes.label>
   <BRF_WetwareServoNodes.description>链接在研究设施附近的一个以人脑为计算构件的生物伺服器节点，用以帮助科学研究。即使没有营养供应，它也能工作，但其中的大脑会很快坏死和腐烂。</BRF_WetwareServoNodes.description>
-  <BRF_WetwareServoNodes_Blueprint.label>湿件伺服节点（蓝图）</BRF_WetwareServoNodes_Blueprint.label>
-  <BRF_WetwareServoNodes_Frame.label>湿件伺服节点（建造中）</BRF_WetwareServoNodes_Frame.label>
-  <BRF_WetwareServoNodes_Frame.description>链接在研究设施附近的一个以人脑为计算构件的生物伺服器节点，用以帮助科学研究。即使没有营养供应，它也能工作，但其中的大脑会很快坏死和腐烂。</BRF_WetwareServoNodes_Frame.description>
 
 
 </LanguageData>
