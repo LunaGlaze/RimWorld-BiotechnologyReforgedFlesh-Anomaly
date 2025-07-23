@@ -328,6 +328,7 @@
       <li>Medium</li>
       <li>Heavy</li>
       <li>Walkable</li>
+      <li>Substructure</li>
 	  <li>BRF_FleshBlanket</li>
     </affordances>
     <placeWorkers>

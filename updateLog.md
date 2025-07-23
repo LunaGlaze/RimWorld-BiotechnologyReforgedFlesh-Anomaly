@@ -144,3 +144,6 @@
  - 添加RimWorld - Odyssey DLC联动材料血曜石。/Add Bloodsidian, a DLC material for RimWorld - Odyssey.
  - 支持部分建筑使用原版设计形状。/Support for some buildings using vanilla design shapes.
  - 将重生灵骸与原生先知的跳跃能力修改为折跃。/Changed the Entity Longjump ability of Rebirth Psycorpse and Raw Prophet to Skip.
+
+ [v0.4.3]
+ - 热修：修复因泰南为飞船基架修改了逻辑并没有在更新公告中提示导致的mod飞船基架失效。/Hotfix: Fixed the issue where the mod's gravship substructure was invalid because Ludeon Studios change the logic of the gravship substructure without notifying it in the update announcement.
