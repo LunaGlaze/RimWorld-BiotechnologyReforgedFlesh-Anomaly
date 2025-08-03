@@ -147,3 +147,17 @@
 
  [v0.4.3]
  - 热修：修复因泰南为飞船基架修改了逻辑并没有在更新公告中提示导致的mod飞船基架失效。/Hotfix: Fixed the issue where the mod's gravship substructure was invalid because Ludeon Studios change the logic of the gravship substructure without notifying it in the update announcement.
+
+ [v0.4.4]
+ - 修复缺失RimWorld - Odyssey DLC时的def错误。/Fixed def error when RimWorld - Odyssey DLC is missing.
+ - 修复因配方引用父类错误导致的重生血肉肌肤顶替全部仿生体的bug。/Fixed a bug where the rebirth flesh skin replaced all bionic bodies due to incorrect parent class reference in the recipe.
+ - 彻底重构原有的地形支持系统以避免RimWorld - Odyssey DLC引入的多层地形机制引发的bug。/Completely refactored the original terrain support system to avoid bugs caused by the multi-layer terrain mechanism introduced by RimWorld - Odyssey DLC.
+ - 修改地形转化代码逻辑使其不会被可通过的建筑阻止。/Modified terrain conversion code logic so that it is not blocked by traversable buildings.
+ - 重构了地形判断器，使血污孢子可以在小行星与轨道站点上工作。/Refactored terrain detectors to allow Flesh Taint Spore to work on asteroids and orbital stations.
+ - 提高了消化器的工作效率。/Improved the working efficiency of the digester.
+ - 极大幅度提升营养储囊的容量。/Greatly increase the capacity of the Nutrient Sac.
+ - 提升血藤行尸与棘刃血蛆的占用点数，较大幅度降低其生命倍率。/Increases the combatPower points used by Bloodvine Zombie and Thornblade Blood Maggot, and significantly reduces their health multipliers.
+ - 将污血蜱虫寄生与脑姧所需的准备时长翻倍。/Doubled the warmup time required for Bloodstained Tick Parasitic and Jellyfish Brain Insertion.
+ - 添加RimWorld - Odyssey DLC新增的虫族单位至污血蜱虫寄生袭击清单。/Added the insect units added by the RimWorld - Odyssey DLC to the BloodstainedTickParasiticable list.
+ - 修改饥渴之门仪式，当不能召唤原生先知时添加提示并重置仪式冷却时间，并提升原生先知眩晕时长。/Modified the Psychic Ritual of Thirst Gate to add a notification when the Raw Prophet cannot be summoned and reset the ritual cooldown. And add shock duration of Raw Prophet when summoned.
+ - 修改驱逐原生先知仪式，使其不能在异常黑暗中工作。/Modified the Psychic Ritual of Exile Raw Prophet so that it does not work in Unnatural Darkness.

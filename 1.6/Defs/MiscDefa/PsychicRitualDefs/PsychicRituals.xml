@@ -140,10 +140,10 @@
     <shockDurationFromQualityCurve>
       <points>
         <li>(0, 0)</li>
-        <li>(0.25, 5)</li>
-        <li>(0.8, 7)</li>
-        <li>(0.9, 8)</li>
-        <li>(1, 10)</li>
+        <li>(0.25, 6)</li>
+        <li>(0.8, 8)</li>
+        <li>(0.9, 10)</li>
+        <li>(1, 12.5)</li>
       </points>
     </shockDurationFromQualityCurve>
     <requiredOffering>
@@ -160,7 +160,7 @@
   <Luna_BRF.PsychicRitualDef_ExileRawProphet>
     <defName>BRF_ExileRawProphet</defName>
     <label>Exile Prophet</label>
-    <description>Similar to summoning the raw prophet, we can sacrifice a victim to open the Thirst Gate again, banishing the uncontained raw prophet back to that terrible space. This time, fewer sacrifices are required, and if we have already caused it enough damage, it will not take the strange object it has not yet dropped.</description>
+    <description>Similar to summoning the raw prophet, we can sacrifice a victim to open the Thirst Gate again, banishing the uncontained raw prophet back to that terrible space. This time, fewer sacrifices are required, and if we have already caused it enough damage, it will not take the strange object it has not yet dropped.\n\n It don't work in unnatural darkness.</description>
     <descriptionHyperlinks>
       <ThingDef>BRF_RawProphet</ThingDef>
     </descriptionHyperlinks>

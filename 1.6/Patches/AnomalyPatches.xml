@@ -138,6 +138,8 @@
                     <Megascarab>25</Megascarab><!-- 巨型甲虫-40 -->
                     <Spelopede>18</Spelopede><!-- 洞穴阔步虫-75 -->
                     <Megaspider>12</Megaspider><!-- 巨型蜘蛛-150 -->
+                    <Locust MayRequire="Ludeon.RimWorld.Odyssey">12</Locust><!-- 蝗虫-55 -->
+                    <HiveQueen MayRequire="Ludeon.RimWorld.Odyssey">1</HiveQueen><!-- 虫后 -->
                     <VFEI2_Megapede MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Megapede><!-- 巨型蜈蚣-300 -->
                     <VFEI2_Boomtick MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Boomtick><!-- 爆炸蜱-40 -->
                     <VFEI2_Megawasp MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Megawasp><!-- 巨型黄蜂-150 -->

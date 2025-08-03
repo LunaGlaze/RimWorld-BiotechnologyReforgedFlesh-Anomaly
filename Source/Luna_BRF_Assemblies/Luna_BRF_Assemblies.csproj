@@ -86,6 +86,7 @@
     <Compile Include="Hediff\Hediff_RawHeartStartHolder.cs" />
     <Compile Include="Misc\CompAbilityEffect_EntityFlash.cs" />
     <Compile Include="Misc\ExtensionDef_RefuelByNutrition.cs" />
+    <Compile Include="Misc\PlaceWorker_BRF_FleshBlanket.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_InitiationRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_AkulothRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_CrimsonProvocation.cs" />

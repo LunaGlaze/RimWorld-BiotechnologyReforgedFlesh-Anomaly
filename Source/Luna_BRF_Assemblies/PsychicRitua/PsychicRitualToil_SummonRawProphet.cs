@@ -70,6 +70,10 @@ namespace Luna_BRF
                 }
             }
             TaggedString text = "BRF_RitualSacrificedFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL")) + "\n\n" + (flag ? "BRF_SummonFleshBossSucceeded" : "BRF_SummonFleshBossFailed").Translate();
+            if (!flag) { 
+                text += "BRF_LackFleshmassNucleus".Translate();
+                Find.PsychicRitualManager.ClearCooldown(psychicRitual.def);
+            }
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label).CapitalizeFirst(), text, LetterDefOf.NeutralEvent);
         }
         public override void ExposeData()

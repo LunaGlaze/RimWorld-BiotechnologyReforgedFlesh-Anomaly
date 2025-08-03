@@ -41,74 +41,91 @@ namespace Luna_BRF
             bool flag = false;
             PsychicRitualDef_ExileRawProphet psychicRitualDef_ExileRawProphet = (PsychicRitualDef_ExileRawProphet)psychicRitual.def;
             Map map = psychicRitual.Map;
-            if (map.mapPawns.AllPawnsSpawned != null)
+            TaggedString text = "null";
+            if (ModsConfig.AnomalyActive && map.gameConditionManager.ConditionIsActive(GameConditionDefOf.UnnaturalDarkness))
             {
-                List<Pawn> rawProphet = new List<Pawn>();
-                foreach (Pawn item in map.mapPawns.AllPawnsSpawned)
+                text = "BRF_RitualSacrificedFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL")) + "\n\n" + "BRF_RitualSacrificedFailedUnnaturalDarkness".Translate();
+                if (Rand.Chance(psychicRitualDef_ExileRawProphet.psychicShockChanceFromQualityCurve.Evaluate(psychicRitual.PowerPercent)))
                 {
-                    if (item.def == ThingDef.Named("BRF_RawProphet"))
-                    {
-                        rawProphet.Add(item);
-                    }
+                    text += "\n\n" + "VoidProvocationDarkPsychicShock".Translate(invoker.Named("INVOKER"));
+                    Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.DarkPsychicShock, invoker);
+                    int duration = Mathf.RoundToInt(psychicRitualDef_ExileRawProphet.darkPsychicShockDurarionHoursRange.RandomInRange * 2500f);
+                    hediff.TryGetComp<HediffComp_Disappears>()?.SetDuration(duration);
+                    invoker.health.AddHediff(hediff);
                 }
-                if (!rawProphet.NullOrEmpty())
+                Find.PsychicRitualManager.ClearCooldown(psychicRitual.def);
+            }
+            else
+            {
+                if (map.mapPawns.AllPawnsSpawned != null)
                 {
-                    foreach (Pawn item in rawProphet)
+                    List<Pawn> rawProphet = new List<Pawn>();
+                    foreach (Pawn item in map.mapPawns.AllPawnsSpawned)
                     {
-                        CompHoldingPlatformTarget compHoldingPlatformTarget = item.TryGetComp<CompHoldingPlatformTarget>();
-                        if (compHoldingPlatformTarget == null || compHoldingPlatformTarget.targetHolder == null)
+                        if (item.def == ThingDef.Named("BRF_RawProphet"))
                         {
-                            if (item.health.hediffSet.HasHediff(LunaDefOf.BRF_RawHeartStartHolder))
+                            rawProphet.Add(item);
+                        }
+                    }
+                    if (!rawProphet.NullOrEmpty())
+                    {
+                        foreach (Pawn item in rawProphet)
+                        {
+                            CompHoldingPlatformTarget compHoldingPlatformTarget = item.TryGetComp<CompHoldingPlatformTarget>();
+                            if (compHoldingPlatformTarget == null || compHoldingPlatformTarget.targetHolder == null)
                             {
-                                if (item.health.Downed || item.health.summaryHealth.SummaryHealthPercent < 0.5)
+                                if (item.health.hediffSet.HasHediff(LunaDefOf.BRF_RawHeartStartHolder))
                                 {
-                                    if (item.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaDefOf.BRF_RawHeartStart), item.PositionHeld, item.MapHeld, ThingPlaceMode.Near, out var resultingThing))
+                                    if (item.health.Downed || item.health.summaryHealth.SummaryHealthPercent < 0.5)
                                     {
-                                        resultingThing.SetForbidden(!resultingThing.MapHeld.areaManager.Home[resultingThing.PositionHeld]);
-                                        string textaaa = item.LabelShort;
-                                        if (item.IsMutant)
+                                        if (item.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaDefOf.BRF_RawHeartStart), item.PositionHeld, item.MapHeld, ThingPlaceMode.Near, out var resultingThing))
                                         {
-                                            textaaa = Find.ActiveLanguageWorker.WithDefiniteArticle(item.mutant.Def.label);
+                                            resultingThing.SetForbidden(!resultingThing.MapHeld.areaManager.Home[resultingThing.PositionHeld]);
+                                            string textaaa = item.LabelShort;
+                                            if (item.IsMutant)
+                                            {
+                                                textaaa = Find.ActiveLanguageWorker.WithDefiniteArticle(item.mutant.Def.label);
+                                            }
+                                            else if (item.Name == null)
+                                            {
+                                                textaaa = Find.ActiveLanguageWorker.WithDefiniteArticle(textaaa);
+                                            }
+                                            Messages.Message("BRF_MessageRawHeartStartDropped".Translate(textaaa).CapitalizeFirst(), resultingThing, MessageTypeDefOf.NeutralEvent);
                                         }
-                                        else if (item.Name == null)
-                                        {
-                                            textaaa = Find.ActiveLanguageWorker.WithDefiniteArticle(textaaa);
-                                        }
-                                        Messages.Message("BRF_MessageRawHeartStartDropped".Translate(textaaa).CapitalizeFirst(), resultingThing, MessageTypeDefOf.NeutralEvent);
                                     }
                                 }
+                                item.Destroy();
                             }
-                            item.Destroy();
                         }
+                        flag = true;
                     }
-                    flag = true;
                 }
-            }
-            if (map != null)
-            {
-                List<Thing> corpses = map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse)
-                    .Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.def.defName == "BRF_RawProphet").ToList();
-                if (!corpses.NullOrEmpty())
+                if (map != null)
                 {
-                    foreach (Thing item in corpses)
+                    List<Thing> corpses = map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse)
+                        .Where(thing => thing is Corpse corpse && corpse.InnerPawn != null && corpse.InnerPawn.def.defName == "BRF_RawProphet").ToList();
+                    if (!corpses.NullOrEmpty())
                     {
-                        if (item is Corpse corpse && corpse.InnerPawn.health.hediffSet.HasHediff(HediffDefOf.DeathRefusal))
+                        foreach (Thing item in corpses)
                         {
-                            item.Destroy();
+                            if (item is Corpse corpse && corpse.InnerPawn.health.hediffSet.HasHediff(HediffDefOf.DeathRefusal))
+                            {
+                                item.Destroy();
+                            }
                         }
+                        flag = true;
                     }
-                    flag = true;
                 }
-            }
-            //虚空扰动同款结算
-            TaggedString text = "BRF_RitualSacrificedFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL")) + "\n\n" + (flag ? "BRF_ExileRawProphetSucceeded" : "BRF_ExileRawProphetFailed").Translate();
-            if (Rand.Chance(psychicRitualDef_ExileRawProphet.psychicShockChanceFromQualityCurve.Evaluate(psychicRitual.PowerPercent)))
-            {
-                text += "\n\n" + "VoidProvocationDarkPsychicShock".Translate(invoker.Named("INVOKER"));
-                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.DarkPsychicShock, invoker);
-                int duration = Mathf.RoundToInt(psychicRitualDef_ExileRawProphet.darkPsychicShockDurarionHoursRange.RandomInRange * 2500f);
-                hediff.TryGetComp<HediffComp_Disappears>()?.SetDuration(duration);
-                invoker.health.AddHediff(hediff);
+                //虚空扰动同款结算
+                text = "BRF_RitualSacrificedFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL")) + "\n\n" + (flag ? "BRF_ExileRawProphetSucceeded" : "BRF_ExileRawProphetFailed").Translate();
+                if (Rand.Chance(psychicRitualDef_ExileRawProphet.psychicShockChanceFromQualityCurve.Evaluate(psychicRitual.PowerPercent)))
+                {
+                    text += "\n\n" + "VoidProvocationDarkPsychicShock".Translate(invoker.Named("INVOKER"));
+                    Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.DarkPsychicShock, invoker);
+                    int duration = Mathf.RoundToInt(psychicRitualDef_ExileRawProphet.darkPsychicShockDurarionHoursRange.RandomInRange * 2500f);
+                    hediff.TryGetComp<HediffComp_Disappears>()?.SetDuration(duration);
+                    invoker.health.AddHediff(hediff);
+                }
             }
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label).CapitalizeFirst(), text, LetterDefOf.NeutralEvent);
         }

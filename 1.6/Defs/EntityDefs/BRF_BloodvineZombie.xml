@@ -45,7 +45,7 @@
     <defName>BRF_BloodvineZombie</defName>
     <label>Bloodvine Zombie</label>
     <race>BRF_BloodvineZombie</race>
-    <combatPower>60</combatPower>
+    <combatPower>75</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -83,7 +83,7 @@
     <race>
       <body>Human</body>
       <baseBodySize>1</baseBodySize>
-      <baseHealthScale>2.5</baseHealthScale>
+      <baseHealthScale>1</baseHealthScale>
       <intelligence>ToolUser</intelligence>
       <lifeExpectancy>750</lifeExpectancy>
       <deathAction Class="DeathActionProperties_Vanish">

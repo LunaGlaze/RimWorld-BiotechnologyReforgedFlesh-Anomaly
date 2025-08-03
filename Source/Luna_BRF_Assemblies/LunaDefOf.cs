@@ -11,6 +11,7 @@ namespace Luna_BRF
             DefOfHelper.EnsureInitializedInCtor(typeof(LunaDefOf));
         }
         public static TerrainAffordanceDef Diggable;
+        public static TerrainAffordanceDef BRF_FleshBlanket;
         public static FleckDef BlastEMP;
         public static HediffDef BRF_ScarletFever;
         public static HediffDef BRF_MalignantFleshActivation;

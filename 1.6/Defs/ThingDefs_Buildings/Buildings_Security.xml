@@ -174,7 +174,9 @@
       <BRF_PrimordialTissueSample>5</BRF_PrimordialTissueSample>
       <FleshmassNeuralLump>1</FleshmassNeuralLump>
     </costList>
-    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <building>
       <combatPower>275</combatPower>
@@ -405,7 +407,6 @@
       <BRF_LivingFlesh>9</BRF_LivingFlesh>
       <BRF_ReforgedMeat_Human>75</BRF_ReforgedMeat_Human>
     </costList>
-    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <building>
       <combatPower>75</combatPower>
@@ -418,7 +419,9 @@
     <researchPrerequisites>
       <li>BRF_PsycorpseGolemResearch</li>
     </researchPrerequisites>
-    <placeWorkers Inherit="False"/>
+    <placeWorkers Inherit="False">
+      <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    </placeWorkers>
     <comps>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>

@@ -1050,7 +1050,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="BRF_SurgeryInstallBodyPartNaturalBase">
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>BRF_InstallReforgedFleshSkin</defName>
     <label>install rebirth flesh skin</label>
     <description>Install an rebirth flesh skin.</description>

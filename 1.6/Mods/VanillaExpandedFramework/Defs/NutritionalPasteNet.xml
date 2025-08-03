@@ -35,7 +35,9 @@
       		<shaderType Inherit="False"/>
     	</graphicData>
 		<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
-		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    	<placeWorkers>
+      		<li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    	</placeWorkers>
 		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
 		<researchPrerequisites>
 			<li>BRF_FleshNutrientPipelineResearch</li>
@@ -154,7 +156,9 @@
 		<researchPrerequisites>
 			<li>BRF_FleshNutrientPipelineResearch</li>
 		</researchPrerequisites>
-		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    	<placeWorkers>
+      		<li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    	</placeWorkers>
 		<costList>
 			<BRF_ReforgedMeat_Human>25</BRF_ReforgedMeat_Human>
 	    	<Meat_Twisted>50</Meat_Twisted>
@@ -170,7 +174,7 @@
 				<pipeNet>VNPE_NutrientPasteNet</pipeNet>
 			</li>
 			<li Class="Luna_BRF_VEFAssemblies.CompProperties_PipSpawnRefuelable">
-				<fuelConsumptionRate>200.0</fuelConsumptionRate>
+				<fuelConsumptionRate>250.0</fuelConsumptionRate>
 				<fuelCapacity>250.0</fuelCapacity>
 				<fuelFilter>
 				  <categories>
@@ -195,7 +199,7 @@
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         		<factorByDifficulty>false</factorByDifficulty>
-				<spawnInterval>3000</spawnInterval>
+				<spawnInterval>2400</spawnInterval>
 				<PipeNet>BRF_NutritionalPasteNet</PipeNet>
 		  </li>
 		</comps>
@@ -243,7 +247,7 @@
 		<comps>
 			<li Class="PipeSystem.CompProperties_ResourceStorage">
 				<pipeNet>BRF_NutritionalPasteNet</pipeNet>
-				<storageCapacity>250</storageCapacity>
+				<storageCapacity>1250</storageCapacity>
 				<barSize>(0.75, 0.20)</barSize> 
 				<margin>0.05</margin> 
 				<centerOffset>(0, 0, -0.6)</centerOffset>
@@ -257,7 +261,9 @@
       		<shaderType Inherit="False"/>
     	</graphicData>
 		<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
-		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    	<placeWorkers>
+      		<li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    	</placeWorkers>
 		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
 		<researchPrerequisites>
 			<li>BRF_FleshNutrientPipelineResearch</li>

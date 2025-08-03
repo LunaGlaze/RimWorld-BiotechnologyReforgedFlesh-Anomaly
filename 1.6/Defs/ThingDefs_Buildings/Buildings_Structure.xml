@@ -337,7 +337,7 @@
     </placeWorkers>
   </TerrainDef>
 <!--血肉菌毯：桥梁-->
-  <TerrainDef ParentName="BridgeBase">
+  <TerrainDef ParentName="BridgeBase" MayRequire="Ludeon.RimWorld.Odyssey">
     <defName>BRF_FleshBlanket_HeavyBridge</defName>
     <label>Flesh-stained Heavy Bridge</label>
     <description>A stronger version of the basic bridge covered in a layer of organic protoplasm, like a layer of flesh growing on top. This Flesh Blanket-infected bridge has the same functions as a heavy bridge, but can also act as a flesh blanket, linking biomechanical networks.</description>
@@ -490,7 +490,9 @@
 			<li Class="CompProperties_Forbiddable" />
 		</comps>
 		<constructEffect>ConstructWood</constructEffect>
-		<terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    	<placeWorkers>
+      		<li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    	</placeWorkers>
 		<designationCategory>BRF_LivingFleshyBuilding</designationCategory>
     	<researchPrerequisites>
       		<li>BRF_BloodyAgriculture</li>

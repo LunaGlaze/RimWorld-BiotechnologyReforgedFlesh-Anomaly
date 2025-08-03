@@ -58,22 +58,15 @@ namespace Luna_BRF
 			{
 				parent.Map.terrainGrid.SetTerrain(parent.Position, ConvertTerrainSet(parent.Position.GetTerrain(parent.Map)));
 			}
-			this.compFuel = this.parent.GetComp<CompRefuelable>();
+			compFuel = parent.GetComp<CompRefuelable>();
         }
         private bool TryGetCellToCovert(out IntVec3 cell)
         {
-            int num = GenRadial.NumCellsInRadius(Props.radius);
-            Map map = parent.Map;
-            for (int i = 0; i < num; i++)
-            {
-                cell = parent.Position + GenRadial.RadialPattern[i];
-                if (CanEverConvertCell(cell, map, Props.setConvertTerrainDef))
-                {
-                    return true;
-                }
-            }
-            cell = IntVec3.Invalid;
-            return false;
+			List<IntVec3> cells = (from allowcell in GenRadial.RadialCellsAround(parent.Position, Props.radius, true)
+								   where allowcell.InBounds(parent.Map) && CanEverConvertCell(allowcell, parent.Map)
+								   select allowcell).ToList();
+            cell = cells.OrderBy((IntVec3 x) => x.DistanceTo(parent.Position)).FirstOrDefault();
+            return cell != default(IntVec3);
         }
         public bool CanEverConvertCell(IntVec3 cell, Map map, TerrainDef skip = null)
         {
@@ -91,7 +84,7 @@ namespace Luna_BRF
                 return false;
             }
             Building edifice = cell.GetEdifice(map);
-            if (edifice != null && !edifice.def.building.isNaturalRock && !edifice.def.building.isResourceRock)
+            if (edifice != null && edifice.def.passability == Traversability.Impassable)
             {
                 return false;
             }
@@ -115,10 +108,6 @@ namespace Luna_BRF
             {
                 return false;
             }
-            if (!terrain.canEverTerraform)
-            {
-                return false;
-            }
             if (skip != null && terrain == skip)
             {
                 return false;
@@ -127,16 +116,24 @@ namespace Luna_BRF
             {
                 return false;
             }
-            if (!terrain.affordances.Contains(TerrainAffordanceDefOf.Light))
-            {
-                return false;
-            }
             if (terrain.isFoundation || terrain.IsRoad || terrain.IsSubstructure)
             {
                 return false;
             }
-            return true;
-		}
+            if ((terrain.natural || (terrain.affordances != null && (terrain.affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) || terrain.affordances.Contains(LunaDefOf.Diggable)))) )
+            {
+                return true;
+            }
+            if (!terrain.canEverTerraform)
+            {
+                return false;
+            }
+            if (!terrain.affordances.Contains(TerrainAffordanceDefOf.Light))
+            {
+                return false;
+            }
+			return true;
+        }
         public bool AllowTranTerrain(TerrainDef terrain)
 		{
 			List<TerrainDef> terrainDefs = new List<TerrainDef>();

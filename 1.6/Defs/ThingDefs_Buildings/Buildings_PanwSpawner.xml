@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef Name="BRF_BuildingPanwSpawnerBase" Abstract="True" ParentName="BRF_BuildingSpawnerBase">
-    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    </placeWorkers>
   </ThingDef>
   <DesignatorDropdownGroupDef>
   	<defName>BRF_FlsehMetapod</defName>

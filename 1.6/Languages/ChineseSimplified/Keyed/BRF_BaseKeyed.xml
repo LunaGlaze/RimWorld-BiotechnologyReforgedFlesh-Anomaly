@@ -19,8 +19,12 @@
   <BRF_SummonFleshBossSucceeded>骇人且血腥的阴影浮现了！</BRF_SummonFleshBossSucceeded>
   <BRF_SummonFleshBossFailed>一定是哪里出现了什么问题，牺牲被浪费了！</BRF_SummonFleshBossFailed>
 
+  <BRF_LackFleshmassNucleus>（你需要将一个血肉核心放置在仪式主持者可抵达处才能正常进行仪式）</BRF_LackFleshmassNucleus>
+
   <BRF_ExileRawProphetSucceeded>原生先知已被送往它处。</BRF_ExileRawProphetSucceeded>
   <BRF_ExileRawProphetFailed>这里没有未束缚的原生先知，牺牲被浪费了！</BRF_ExileRawProphetFailed>
+  
+  <BRF_RitualSacrificedFailedUnnaturalDarkness>异常黑暗阻止了这一切，牺牲被浪费了！</BRF_RitualSacrificedFailedUnnaturalDarkness>
 
   <BRF_AkulothRitualFinishText>{INVOKER_nameDef}成功地与神圣的白虫达成了共生。</BRF_AkulothRitualFinishText>
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef}已经与神圣的白虫达成了共生。</BRF_psychicRitualLeaveReason_HasAkuloth>

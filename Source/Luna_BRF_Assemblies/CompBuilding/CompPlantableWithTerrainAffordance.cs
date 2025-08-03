@@ -226,7 +226,7 @@ namespace Luna_BRF
 				return false;
 			}
 			TerrainAffordanceDef terrainAffordanceNeeded = Props.terrainAffordanceNeeded;
-			if (!cell.GetTerrain(map).affordances.Contains(terrainAffordanceNeeded))
+			if (!cell.GetTerrain(map).affordances.NotNullAndContains(terrainAffordanceNeeded) || (map.terrainGrid.TopTerrainAt(cell) != null && !map.terrainGrid.TopTerrainAt(cell).affordances.NotNullAndContains(terrainAffordanceNeeded)) || (map.terrainGrid.FoundationAt(cell) != null && !map.terrainGrid.FoundationAt(cell).affordances.NotNullAndContains(terrainAffordanceNeeded)) )
 			{
 				return "CannotPlantThing".Translate(parent) + ": " + "TerrainCannotSupport_TerrainAffordanceFromStuff".Translate(parent.def, terrainAffordanceNeeded, cell.GetTerrain(map)).CapitalizeFirst();
 			}

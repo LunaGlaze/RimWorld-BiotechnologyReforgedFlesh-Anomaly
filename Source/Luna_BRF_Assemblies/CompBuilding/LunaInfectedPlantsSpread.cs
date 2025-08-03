@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using Verse.Noise;
 
 namespace Luna_BRF
 {
@@ -58,7 +59,7 @@ namespace Luna_BRF
 		protected bool CellValidator(IntVec3 cell)
 		{
 			return (this.Props.requiredTerrain == null ||
-				cell.GetTerrain(this.parent.Map) == this.Props.requiredTerrain) && !(cell.GetFirstBuilding(this.parent.Map) is Building_PlantGrower) && this.Props.plant.CanEverPlantAt(cell, this.parent.Map, true) 
+				cell.GetTerrain(this.parent.Map) == this.Props.requiredTerrain || this.parent.Map.terrainGrid.TopTerrainAt(cell) == this.Props.requiredTerrain ) && !(cell.GetFirstBuilding(this.parent.Map) is Building_PlantGrower) && this.Props.plant.CanEverPlantAt(cell, this.parent.Map, true) 
 				&& !cell.GetThingList(this.parent.Map).OfType<Plant>().Any((Plant thing) => this.Props.plant == thing.def);
 		}
 		protected  void DoEffect(IntVec3 cell)

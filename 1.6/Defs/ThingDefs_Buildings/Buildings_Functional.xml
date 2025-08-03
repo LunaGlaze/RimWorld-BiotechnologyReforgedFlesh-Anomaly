@@ -13,7 +13,9 @@
       </buildingTags>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
-    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    </placeWorkers>
     <comps>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>

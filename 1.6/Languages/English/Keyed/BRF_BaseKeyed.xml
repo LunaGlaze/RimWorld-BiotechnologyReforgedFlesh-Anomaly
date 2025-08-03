@@ -19,8 +19,12 @@
   <BRF_SummonFleshBossSucceeded>A terrifying and bloody shadow emerges!</BRF_SummonFleshBossSucceeded>
   <BRF_SummonFleshBossFailed>Something must have gone wrong somewhere and the sacrifice was wasted!</BRF_SummonFleshBossFailed>
 
+  <BRF_LackFleshmassNucleus>(You need to place a flesh nucleus where the ritual invoker can reach it in order to perform the ritual properly)</BRF_LackFleshmassNucleus>
+
   <BRF_ExileRawProphetSucceeded>The Raw Prophet had been sent to other place.</BRF_ExileRawProphetSucceeded>
   <BRF_ExileRawProphetFailed>There has not any Raw Prophet and the sacrifice was wasted!</BRF_ExileRawProphetFailed>
+  
+  <BRF_RitualSacrificedFailedUnnaturalDarkness>Unnatural darkness prevented this and the sacrifice was wasted!</BRF_RitualSacrificedFailedUnnaturalDarkness>
 
   <BRF_AkulothRitualFinishText>{INVOKER_nameDef} successfully achieve symbiosis with the akuloth.</BRF_AkulothRitualFinishText>
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has been symbiosis with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>

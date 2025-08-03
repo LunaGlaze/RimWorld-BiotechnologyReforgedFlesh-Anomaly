@@ -18,7 +18,7 @@
   <BRF_SummonRawProphet.outcomeDescription>以當前儀式質量，我們能夠束縛原生先知{0}秒。</BRF_SummonRawProphet.outcomeDescription>
   
   <BRF_ExileRawProphet.label>放逐先知</BRF_ExileRawProphet.label>
-  <BRF_ExileRawProphet.description>與召喚原生先知相同，我們可以獻祭一名受害者再次打開那扇飢渴之門，將未被收容的原生先知放逐回那片可怖的空間。這次需要的祭品更少，並且如果我們已經對它造成了足夠的傷害，它將不會帶走那個尚未掉落的怪異之物。</BRF_ExileRawProphet.description>
+  <BRF_ExileRawProphet.description>與召喚原生先知相同，我們可以獻祭一名受害者再次打開那扇飢渴之門，將未被收容的原生先知放逐回那片可怖的空間。這次需要的祭品更少，並且如果我們已經對它造成了足夠的傷害，它將不會帶走那個尚未掉落的怪異之物。\n\n這個儀式在異常黑暗中無法正常工作。</BRF_ExileRawProphet.description>
   <BRF_ExileRawProphet.outcomeDescription>以當前儀式質量，發起者有{0}的幾率陷入暗黑心靈衝擊狀態。</BRF_ExileRawProphet.outcomeDescription>
   
   <BRF_AkulothRitual.label>神聖的白蟲</BRF_AkulothRitual.label>

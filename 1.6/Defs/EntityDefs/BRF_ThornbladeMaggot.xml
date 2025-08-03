@@ -140,7 +140,7 @@
     <abilities>
       <li>BRF_Launch_ThornbladeMaggot</li>
     </abilities>
-    <combatPower>75</combatPower>
+    <combatPower>85</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -182,7 +182,7 @@
       <body>BRF_ThornbladeMaggotBody</body>
       <baseBodySize>0.4</baseBodySize>
       <lifeExpectancy>1</lifeExpectancy>
-      <baseHealthScale>3</baseHealthScale>
+      <baseHealthScale>1</baseHealthScale>
       <hasGenders>false</hasGenders>
       <deathAction Class="DeathActionProperties_Vanish">
         <workerClass>DeathActionWorker_Vanish</workerClass>

@@ -275,7 +275,7 @@
     </costList>
     <comps>
 	    <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>200.0</fuelConsumptionRate>
+        <fuelConsumptionRate>250.0</fuelConsumptionRate>
         <fuelCapacity>250.0</fuelCapacity>
         <fuelFilter>
           <categories>
@@ -307,8 +307,8 @@
         <thingToSpawn>BRF_NutritionalPaste</thingToSpawn>
         <spawnCount>1</spawnCount>
         <spawnIntervalRange>
-           <min>3000</min>
-           <max>3000</max>
+           <min>2400</min>
+           <max>2400</max>
         </spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>false</showMessageIfOwned>
@@ -335,8 +335,8 @@
     <descriptionHyperlinks>
       <ThingDef>BRF_GelatinousFlesh</ThingDef>
       <TerrainDef>BRF_FleshBlanket</TerrainDef>
-      <TerrainDef>BRF_FleshBlanket_Substructure</TerrainDef>
-      <TerrainDef>BRF_FleshBlanket_HeavyBridge</TerrainDef>
+      <TerrainDef MayRequire="Ludeon.RimWorld.Odyssey">BRF_FleshBlanket_Substructure</TerrainDef>
+      <TerrainDef MayRequire="Ludeon.RimWorld.Odyssey">BRF_FleshBlanket_HeavyBridge</TerrainDef>
     </descriptionHyperlinks>
     <uiOrder>130</uiOrder>
     <graphicData>
@@ -483,7 +483,9 @@
 		<specialDisplayRadius>6.9</specialDisplayRadius>
     <castEdgeShadows>false</castEdgeShadows>
     <canOverlapZones>false</canOverlapZones>
-    <terrainAffordanceNeeded>BRF_FleshBlanket</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <costList>
 	    <WoodLog>50</WoodLog>

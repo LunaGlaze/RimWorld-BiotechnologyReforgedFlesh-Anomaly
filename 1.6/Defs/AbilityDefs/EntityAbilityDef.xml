@@ -283,7 +283,7 @@
     <writeCombatLog>true</writeCombatLog>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
-	    <warmupTime>7.5</warmupTime>
+	    <warmupTime>15</warmupTime>
 	    <range>9.9</range>
       <requireLineOfSight>True</requireLineOfSight>
       <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -315,7 +315,7 @@
     <writeCombatLog>true</writeCombatLog>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
-	    <warmupTime>7.5</warmupTime>
+	    <warmupTime>15</warmupTime>
 	    <range>9.9</range>
       <requireLineOfSight>True</requireLineOfSight>
       <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
