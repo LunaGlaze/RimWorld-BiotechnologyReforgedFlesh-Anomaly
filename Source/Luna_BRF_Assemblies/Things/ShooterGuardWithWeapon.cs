@@ -446,7 +446,7 @@ namespace Luna_BRF
                             {
                                 return false;
                             }
-                            foreach (Building item in base.Map.listerBuildings.AllBuildingsColonistOfDef(LunaDefOf.BRF_PsycorpseGuard))
+                            foreach (Building item in base.Map.listerBuildings.AllBuildingsColonistOfDef(LunaBRFDefOf.BRF_PsycorpseGuard))
                             {
                                 if (item is ShooterGuardWithWeapon arcanePlant_Shootus && arcanePlant_Shootus.ReservedWeapon == target.Thing)
                                 {

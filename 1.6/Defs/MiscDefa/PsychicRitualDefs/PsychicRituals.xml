@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- 绯红扰动 -->
   <Luna_BRF.PsychicRitualDef_CrimsonProvocation>
     <defName>BRF_CrimsonProvocation</defName>
     <label>Crimson Provocation</label>
@@ -22,6 +22,7 @@
     </requiredOffering>
     <castableOnPocketMaps>false</castableOnPocketMaps>
     <cooldownHours>180</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
     <psychicShockChanceFromQualityCurve>
       <points>
         <li>(0, 0.9)</li>
@@ -75,7 +76,7 @@
       </li>
     </fleshEntityAssaultList>
   </Luna_BRF.PsychicRitualDef_CrimsonProvocation>
-
+<!-- 召唤虫群 -->
   <Luna_BRF.PsychicRitualDef_SummonSwarms>
     <defName>BRF_SummonSwarms</defName>
     <label>Draw Entity Swarms</label>
@@ -99,7 +100,7 @@
     </requiredOffering>
     <cooldownHours>180</cooldownHours>
   </Luna_BRF.PsychicRitualDef_SummonSwarms>
-
+<!-- 召唤肢团 -->
   <Luna_BRF.PsychicRitualDef_SummonClumps>
     <defName>BRF_SummonClumps</defName>
     <label>Draw Clumps</label>
@@ -122,8 +123,9 @@
       <count>15</count>
     </requiredOffering>
     <cooldownHours>240</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
   </Luna_BRF.PsychicRitualDef_SummonClumps>
-
+<!-- 召唤原生先知 -->
   <Luna_BRF.PsychicRitualDef_SummonRawProphet>
     <defName>BRF_SummonRawProphet</defName>
     <label>Thirst Gate</label>
@@ -155,8 +157,9 @@
       <count>25</count>
     </requiredOffering>
     <cooldownHours>120</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
   </Luna_BRF.PsychicRitualDef_SummonRawProphet>
-
+<!-- 放逐原生先知 -->
   <Luna_BRF.PsychicRitualDef_ExileRawProphet>
     <defName>BRF_ExileRawProphet</defName>
     <label>Exile Prophet</label>
@@ -187,8 +190,9 @@
     </psychicShockChanceFromQualityCurve>
     <darkPsychicShockDurarionHoursRange>2~4</darkPsychicShockDurarionHoursRange>
     <cooldownHours>360</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
   </Luna_BRF.PsychicRitualDef_ExileRawProphet>
-  
+<!-- 神圣的白虫植入 -->
   <Luna_BRF.PsychicRitualDef_AkulothRitual>
     <defName>BRF_AkulothRitual</defName>
     <label>Akuloth Symbiosis</label>
@@ -211,7 +215,7 @@
     </requiredOffering>
     <cooldownHours>12</cooldownHours>
   </Luna_BRF.PsychicRitualDef_AkulothRitual>
-  
+<!-- 启迪仪式（特性获取） -->
   <Luna_BRF.PsychicRitualDef_InitiationRitual>
     <defName>BRF_InitiationRitual</defName>
     <label>Initiation Ritual</label>
@@ -238,8 +242,79 @@
       </points>
     </skillOffsetPercentFromQualityCurve>
     <cooldownHours>180</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
   </Luna_BRF.PsychicRitualDef_InitiationRitual>
-
+<!-- 神餐仪式系列 -->
+  <!-- 神餐（明识） -->
+  <Luna_BRF.PsychicRitualDef_TheophagyKnowledge>
+    <defName>BRF_TheophagyKnowledge</defName>
+    <label>Theophagy Ritual (Phost)</label>
+    <description>"The sacramental consumption of a god." We feed on the reshaped remains of things forged by the twisted and the archo, and seek to draw from them knowledge of the flesh or void.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_TheophagyKnowledge</iconPath>
+    <researchPrerequisite>BRF_TheophagyPsychicRitualResearch</researchPrerequisite>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <outcomeDescription>With the current quality, will gain a random {0} points of Flesh Anomaly knowledge, or less of other knowledge. But if we don't have the right anomaly projects to study, the invoker might glimpse inappropriate and horrific knowledge or even fall into dark psychic shock.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ReforgedMeat_Harbinger</li>
+        </thingDefs>
+      </filter>
+      <count>75</count>
+    </requiredOffering>
+    <basicKnowledgePointsFromQualityCurve>
+      <points>
+        <li>(0, 5)</li>
+        <li>(0.25, 7)</li>
+        <li>(0.5, 10)</li>
+        <li>(0.8, 15)</li>
+        <li>(0.9, 20)</li>
+        <li>(1, 25)</li>
+      </points>
+    </basicKnowledgePointsFromQualityCurve>
+    <psychicShockChanceFromQualityCurve>
+      <points>
+        <li>(0, 0.95)</li>
+        <li>(0.5, 0.3)</li>
+        <li>(0.9, 0.15)</li>
+        <li>(1, 0.05)</li>
+      </points>
+    </psychicShockChanceFromQualityCurve>
+    <darkPsychicShockDurarionHoursRange>2~4</darkPsychicShockDurarionHoursRange>
+    <cooldownHours>36</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
+  </Luna_BRF.PsychicRitualDef_TheophagyKnowledge>
+  <!-- 神餐（餍足） -->
+  <Luna_BRF.PsychicRitualDef_TheophagySatisfaction>
+    <defName>BRF_TheophagySatisfaction</defName>
+    <label>Theophagy Ritual (Satisfaction)</label>
+    <description>"The sacramental consumption of a god." We feed on the reshaped remains of things forged by the twisted and the archo, and learn the secret that frees us from hunger and thirst.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_TheophagySatisfaction</iconPath>
+    <researchPrerequisite>BRF_TheophagyPsychicRitualResearch</researchPrerequisite>
+    <hoursUntilOutcome>2.5</hoursUntilOutcome>
+    <outcomeDescription>With the current quality, all of participants in the ritual will become very less likely to get hungry for the next {0} hours, but once this effect ends, they will become very hungry within the next hour.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ReforgedMeat_Harbinger</li>
+        </thingDefs>
+      </filter>
+      <count>50</count>
+    </requiredOffering>
+    <durationHoursFromQualityCurve>
+      <points>
+        <li>(0, 12)</li>
+        <li>(0.1, 24)</li>
+        <li>(0.25, 60)</li>
+        <li>(0.5, 96)</li>
+        <li>(0.8, 150)</li>
+        <li>(0.9, 165)</li>
+        <li>(1, 180)</li>
+      </points>
+    </durationHoursFromQualityCurve>
+    <cooldownHours>168</cooldownHours>
+  </Luna_BRF.PsychicRitualDef_TheophagySatisfaction>
+<!-- 角色 -->
   <PsychicRitualRoleDef>
     <defName>BRF_RitualRoleVictim</defName>
     <label>victim</label>

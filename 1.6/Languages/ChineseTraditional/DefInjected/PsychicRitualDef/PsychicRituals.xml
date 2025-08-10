@@ -27,5 +27,13 @@
   <BRF_InitiationRitual.label>啟迪儀式</BRF_InitiationRitual.label>
   <BRF_InitiationRitual.description>給予儀式的目標血肉的啟迪，使其成為一名光榮的Orin。</BRF_InitiationRitual.description>
   <BRF_InitiationRitual.outcomeDescription>目標將獲得“Orin”特質。\n\n以當前儀式質量，若發起者並非血肉之聖徒，目標的所有技能將降低{0}。</BRF_InitiationRitual.outcomeDescription>
+  
+  <BRF_TheophagyKnowledge.label>神餐儀式（明識）</BRF_TheophagyKnowledge.label>
+  <BRF_TheophagyKnowledge.description>“聖典性地進食神明。”我們以扭曲與超凡所造之物重鑄的殘骸為食，並試圖從中汲取關於血肉或虛空的學識。</BRF_TheophagyKnowledge.description>
+  <BRF_TheophagyKnowledge.outcomeDescription>根據儀式質量，將隨機獲得{0}點血肉異常知識，或更少的其他知識。但如果我們沒有合適的異常項目進行研究，主持者可能會瞥見不恰當且恐怖的知識，甚至陷入黑暗心靈衝擊。</BRF_TheophagyKnowledge.outcomeDescription>
+  
+  <BRF_TheophagySatisfaction.label>神餐儀式（饜足）</BRF_TheophagySatisfaction.label>
+  <BRF_TheophagySatisfaction.description>“聖典性地進食神明。”我們以扭曲與超凡所造之物重鑄的殘骸為食，並嘗試從中習得擺脫飢渴的秘密。</BRF_TheophagySatisfaction.description>
+  <BRF_TheophagySatisfaction.outcomeDescription>根據儀式質量，參與儀式者都將在接下來的{0}個小時之內變得非常不容易飢餓，但是一旦這個效果結束，接下來的一個小時之內它們會餓的非常快。</BRF_TheophagySatisfaction.outcomeDescription>
 
 </LanguageData>

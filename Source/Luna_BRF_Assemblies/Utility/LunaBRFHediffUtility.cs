@@ -79,7 +79,7 @@ namespace Luna_BRF
 		}
 		public static void AddPointRapidRegeneration (Pawn pawn, float point)
         {
-            Hediff firstHediff = pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_RapidRegeneration);
+            Hediff firstHediff = pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaBRFDefOf.BRF_RapidRegeneration);
             if (firstHediff != null)
             {
                 Hediff_BRFRapidRegeneration hediff = firstHediff as Hediff_BRFRapidRegeneration;
@@ -88,7 +88,7 @@ namespace Luna_BRF
             }
             else
             {
-                Hediff_BRFRapidRegeneration hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_RapidRegeneration, pawn) as Hediff_BRFRapidRegeneration;
+                Hediff_BRFRapidRegeneration hediff = HediffMaker.MakeHediff(LunaBRFDefOf.BRF_RapidRegeneration, pawn) as Hediff_BRFRapidRegeneration;
                 hediff.SetHpCapacity(point);
                 pawn.health.AddHediff(hediff);
             }

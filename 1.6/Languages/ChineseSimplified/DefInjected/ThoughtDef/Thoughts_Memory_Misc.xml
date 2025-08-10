@@ -13,4 +13,11 @@
   <BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.label>低等神经共生体</BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.label>
   <BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.description>低等神经共生体的效果并不是很好。或者说，效果不错，但副作用明显——我的脑海中充满了因为连结带来的不适的念头。</BRF_AnalogBrainSlugsAffect.stages.Lower_Neural_Symbiosis.description>
 
+  <BRF_RebirthPsycorpseReplace.stages.replaced_by_bloody_evil.label>{0}被血腥的邪恶之物替代</BRF_RebirthPsycorpseReplace.stages.replaced_by_bloody_evil.label>
+  <BRF_RebirthPsycorpseReplace.stages.replaced_by_bloody_evil.description>我们眼睁睁地看着那个怪物破体而出，甚至不知道它何时取代了别人……或者那个人从一开始就不属于人类。</BRF_RebirthPsycorpseReplace.stages.replaced_by_bloody_evil.description>
+  <BRF_RebirthPsycorpseReplace.stages.turned_into_a_monster.label>{0}变成了怪物</BRF_RebirthPsycorpseReplace.stages.turned_into_a_monster.label>
+  <BRF_RebirthPsycorpseReplace.stages.turned_into_a_monster.description>我看到一个人在我们面前变成怪物，真是太可怕了。</BRF_RebirthPsycorpseReplace.stages.turned_into_a_monster.description>
+  <BRF_RebirthPsycorpseReplace.stages.nothing_left.label>{0}已然一无所有</BRF_RebirthPsycorpseReplace.stages.nothing_left.label>
+  <BRF_RebirthPsycorpseReplace.stages.nothing_left.description>我最亲近的人之一甚至被怪物夺走了身份，什么也没留下。</BRF_RebirthPsycorpseReplace.stages.nothing_left.description>
+
 </LanguageData>

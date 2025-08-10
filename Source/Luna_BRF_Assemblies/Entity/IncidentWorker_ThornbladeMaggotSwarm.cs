@@ -17,7 +17,7 @@ namespace Luna_BRF
             Find.EntityCodex.SetDiscovered(LunaEntityCodexEntryDefOf.BRF_ThornbladeMaggot, ThingDef.Named("BRF_ThornbladeMaggot"));
             return true;
         }
-        protected override PawnGroupKindDef GroupKindDef => LunaDefOf.BRF_ThornbladeMaggotLarvalSwarmer;
+        protected override PawnGroupKindDef GroupKindDef => LunaBRFDefOf.BRF_ThornbladeMaggotLarvalSwarmer;
 
         protected override LordJob GenerateLordJob(IntVec3 entry, IntVec3 dest)
         {

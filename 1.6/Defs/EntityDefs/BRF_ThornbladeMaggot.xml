@@ -7,7 +7,6 @@
     <category>Basic</category>
     <useDescriptionFrom>BRF_ThornbladeMaggot</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_ThornbladeMaggot</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_ThornbladeMaggot</li>
     </linkedThings>
@@ -141,6 +140,7 @@
       <li>BRF_Launch_ThornbladeMaggot</li>
     </abilities>
     <combatPower>85</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

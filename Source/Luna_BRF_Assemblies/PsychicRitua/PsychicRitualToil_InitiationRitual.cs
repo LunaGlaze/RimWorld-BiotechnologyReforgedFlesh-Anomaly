@@ -34,9 +34,9 @@ namespace Luna_BRF
         }
         private void ApplyOutcome(PsychicRitual psychicRitual, Pawn invoker, Pawn target, float skillOffsetPct)
         {
-            Trait Orin = new Trait(LunaDefOf.BRF_Sarkicism, 0, true);
+            Trait Orin = new Trait(LunaBRFDefOf.BRF_Sarkicism, 0, true);
             target.story.traits.GainTrait(Orin);
-            if (invoker.story.traits.HasTrait(LunaDefOf.BRF_Sarkicism))
+            if (invoker.story.traits.HasTrait(LunaBRFDefOf.BRF_Sarkicism))
             {
                 TaggedString text = "BRF_InitiationRitualBaseFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL"));
                 Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label).CapitalizeFirst(), text, LetterDefOf.NeutralEvent);

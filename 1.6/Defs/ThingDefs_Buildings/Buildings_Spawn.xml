@@ -14,6 +14,9 @@
       </buildingTags>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
+    <statBases>
+      <MeditationFocusStrength>0.24</MeditationFocusStrength>
+    </statBases>
     <comps>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
@@ -48,6 +51,7 @@
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>0.8</Flammability>
+      <MeditationFocusStrength>0.28</MeditationFocusStrength>
 	  <WorkToBuild>200</WorkToBuild>
 	  <Beauty>-45</Beauty>
     </statBases>

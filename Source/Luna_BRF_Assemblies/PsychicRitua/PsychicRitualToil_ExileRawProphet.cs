@@ -74,11 +74,11 @@ namespace Luna_BRF
                             CompHoldingPlatformTarget compHoldingPlatformTarget = item.TryGetComp<CompHoldingPlatformTarget>();
                             if (compHoldingPlatformTarget == null || compHoldingPlatformTarget.targetHolder == null)
                             {
-                                if (item.health.hediffSet.HasHediff(LunaDefOf.BRF_RawHeartStartHolder))
+                                if (item.health.hediffSet.HasHediff(LunaBRFDefOf.BRF_RawHeartStartHolder))
                                 {
                                     if (item.health.Downed || item.health.summaryHealth.SummaryHealthPercent < 0.5)
                                     {
-                                        if (item.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaDefOf.BRF_RawHeartStart), item.PositionHeld, item.MapHeld, ThingPlaceMode.Near, out var resultingThing))
+                                        if (item.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaBRFDefOf.BRF_RawHeartStart), item.PositionHeld, item.MapHeld, ThingPlaceMode.Near, out var resultingThing))
                                         {
                                             resultingThing.SetForbidden(!resultingThing.MapHeld.areaManager.Home[resultingThing.PositionHeld]);
                                             string textaaa = item.LabelShort;

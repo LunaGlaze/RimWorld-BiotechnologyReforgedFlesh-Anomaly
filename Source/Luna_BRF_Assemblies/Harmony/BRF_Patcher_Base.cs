@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using RimWorld.QuestGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Luna_BRF
         [HarmonyPostfix]
         public static void ForcedVisiblePostfix(ref bool __result, HediffComp_Invisibility __instance)
         {
-            if (__instance.Pawn.health.hediffSet.HasHediff(LunaDefOf.BRF_InvisibleWatched))
+            if (__instance.Pawn.health.hediffSet.HasHediff(LunaBRFDefOf.BRF_InvisibleWatched))
             {
                 __result = true;
             }

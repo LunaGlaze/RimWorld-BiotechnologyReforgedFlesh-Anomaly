@@ -60,9 +60,9 @@ namespace Luna_BRF
             {
                 Find.TickManager.slower.SignalForceNormalSpeedShort();
                 Faction faction = Find.FactionManager.FirstFactionOfDef(FactionDefOf.Entities);
-                Pawn rawProphet = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaDefOf.BRF_RawProphet, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, 0f, 0f));
+                Pawn rawProphet = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaBRFDefOf.BRF_RawProphet, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, 0f, 0f));
                 GenSpawn.Spawn(rawProphet, target.Position, map, WipeMode.VanishOrMoveAside);
-                rawProphet.health.AddHediff(HediffMaker.MakeHediff(LunaDefOf.BRF_RawHeartStartHolder, rawProphet));
+                rawProphet.health.AddHediff(HediffMaker.MakeHediff(LunaBRFDefOf.BRF_RawHeartStartHolder, rawProphet));
                 rawProphet.stances.stunner.StunFor(shockDuration.SecondsToTicks(), rawProphet, false, false);
                 if (ModsConfig.AnomalyActive)
                 {

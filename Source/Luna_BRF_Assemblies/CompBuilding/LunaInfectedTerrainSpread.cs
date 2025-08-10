@@ -120,7 +120,7 @@ namespace Luna_BRF
             {
                 return false;
             }
-            if ((terrain.natural || (terrain.affordances != null && (terrain.affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) || terrain.affordances.Contains(LunaDefOf.Diggable)))) )
+            if ((terrain.natural || (terrain.affordances != null && (terrain.affordances.Contains(TerrainAffordanceDefOf.SmoothableStone) || terrain.affordances.Contains(LunaBRFDefOf.Diggable)))) )
             {
                 return true;
             }

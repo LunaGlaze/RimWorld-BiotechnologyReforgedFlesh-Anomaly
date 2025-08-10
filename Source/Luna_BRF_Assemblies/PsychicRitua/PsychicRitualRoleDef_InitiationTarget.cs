@@ -11,7 +11,7 @@ namespace Luna_BRF
             {
                 return false;
             }
-            if (pawn.story.traits.HasTrait(LunaDefOf.BRF_Sarkicism))
+            if (pawn.story.traits.HasTrait(LunaBRFDefOf.BRF_Sarkicism))
             {
                 return false;
             }

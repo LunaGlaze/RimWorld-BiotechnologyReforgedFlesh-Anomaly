@@ -33,7 +33,7 @@ namespace Luna_BRF
             target.Strip(true);
             target.Kill(null, null);
             target.Corpse.Destroy();
-            Hediff akuloth = HediffMaker.MakeHediff(LunaDefOf.BRF_Akuloth, invoker);
+            Hediff akuloth = HediffMaker.MakeHediff(LunaBRFDefOf.BRF_Akuloth, invoker);
             invoker.health.AddHediff(akuloth);
             TaggedString text = "BRF_RitualSacrificedFinishText".Translate(invoker.Named("INVOKER"), target.Named("TARGET"), psychicRitual.def.Named("RITUAL")) + "\n\n" + "BRF_AkulothRitualFinishText".Translate(invoker.Named("INVOKER"));
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label).CapitalizeFirst(), text, LetterDefOf.NeutralEvent);

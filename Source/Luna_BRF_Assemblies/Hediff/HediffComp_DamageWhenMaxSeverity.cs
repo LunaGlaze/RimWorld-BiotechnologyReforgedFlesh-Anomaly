@@ -70,7 +70,7 @@ namespace Luna_BRF
                     }
                     if (Props.isFleshPulse)
                     {
-                        damageDefs.Add(LunaDefOf.BRF_FleshPulse);
+                        damageDefs.Add(LunaBRFDefOf.BRF_FleshPulse);
                     }
                     GiveRandomDamage(panw, totalDamage, damageDefs, Props.allowDestroysBrain);
                 }

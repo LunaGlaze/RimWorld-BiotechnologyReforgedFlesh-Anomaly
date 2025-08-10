@@ -161,3 +161,17 @@
  - 添加RimWorld - Odyssey DLC新增的虫族单位至污血蜱虫寄生袭击清单。/Added the insect units added by the RimWorld - Odyssey DLC to the BloodstainedTickParasiticable list.
  - 修改饥渴之门仪式，当不能召唤原生先知时添加提示并重置仪式冷却时间，并提升原生先知眩晕时长。/Modified the Psychic Ritual of Thirst Gate to add a notification when the Raw Prophet cannot be summoned and reset the ritual cooldown. And add shock duration of Raw Prophet when summoned.
  - 修改驱逐原生先知仪式，使其不能在异常黑暗中工作。/Modified the Psychic Ritual of Exile Raw Prophet so that it does not work in Unnatural Darkness.
+
+ [v0.4.5]
+ - 修复了因RimWorld对AI的改动致使肢团会主动对预期外的目标使用实体噬尸能力的bug。/Fixed a bug where Clump would use his Entity Necrophagia on unintended targets due to RimWorld AI changes.
+ - 为猩红狂热hediff添加了增加对非肉体单位的伤害的效果。/Added increased damage to non-flesh pawns to the Scarlet Fever hediff.
+ - 提升了全部血肉武器的伤害与DPS。/Increased the damage and DPS of all flesh weapons.
+ - 修改实体图鉴解锁机制，使得本mod实体在经由其他mod事件生成时也能解锁实体图鉴条目。/Modified the unlocking mechanism of the entity codex so that entities in this mod can also discovery the entity codex entry when spawned in events added by other mods.
+ - 添加了电鱼mod联动。/Link with Electrofishing mod.
+ - 提升了高级仪式的吟诵者数量。/Increased the number of chanter role for advanced rituals.
+ - 添加基础神餐仪式研究（包括一个基于异象研究点数的仪式与一个降低饥饿速率的仪式）。/Added basic theophagy ritual research (including a ritual that grants anomaly knowledge points and a ritual that reduces the participant's hunger rate).
+ - 添加Vanilla Factions Expanded - Insectoids 2的皇家种系虫族单位与骸鸾的污秽虫族至污血蜱虫寄生袭击清单。/Added the royal type insect units and Waste Insect from Vanilla Factions Expanded - Insectoids 2 to the BloodstainedTickParasiticable list.
+ - 大幅度降低降低污血蜱虫寄生袭击自然发生概率。/Significantly reduces the chance of Bloodstained Tick Parasiticed attacks occurring naturally.
+ - 使得借出殖民者的任务有低概率令殖民者被伪装的重生灵骸替换。/Now allows quests that loan out colonists (PawnLend) to have a small chance of the colonist being replaced by a disguised Rebirth Psycorpse.
+ - 当重生灵骸显现时，为目击者添加负面情绪。/Added negative emotions for witnesses when the Rebirth Psycorpse manifests.
+ - 修复详细信息页面报错，并添加缺失的冥想效率。/Fixed an error in the details page and added missing meditation efficiency.

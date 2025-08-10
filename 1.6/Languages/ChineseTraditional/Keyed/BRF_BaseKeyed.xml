@@ -36,6 +36,15 @@
 
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef}已經與神聖的白蟲達成了共生。</BRF_psychicRitualLeaveReason_HasAkuloth>
   <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef}已經得到了血肉的啟迪。</BRF_psychicRitualLeaveReason_SarkicismTrait>
+
+
+  <BRF_RitualTheophagy_RitualFinishText>通過模仿“聖典性地進食神明”這一行為，{INVOKER_nameDef}完成了{RITUAL_definite}儀式。</BRF_RitualTheophagy_RitualFinishText>
+
+  <BRF_RitualTheophagyKnowledgeSucceeded>並從中汲取到了有關{PROJECT_definite}的扭曲的智慧。</BRF_RitualTheophagyKnowledgeSucceeded>
+  <BRF_RitualTheophagyKnowledgeFailed>但只看見了不可名狀的扭曲與光輝。</BRF_RitualTheophagyKnowledgeFailed>
+
+  <BRF_TheophagySatisfactionFinishText>暫時理解了饜足的秘密。</BRF_TheophagySatisfactionFinishText>
+  
     
   <BRF_WorkingSpeedMultiplierReduced>降低工作速度</BRF_WorkingSpeedMultiplierReduced>
   <BRF_WorkingSpeedMultiplierReduced_Desc>降低工作速度乘數與實際燃料消耗速率。</BRF_WorkingSpeedMultiplierReduced_Desc>

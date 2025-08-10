@@ -55,6 +55,12 @@
   <BRF_FleshShooterResearch.description>我们从对于实体的独特肉体结构的学习中受益良多，毕竟虚空或是其他什么我们无法想象之处的神祗们总是有着远比我们这些凡人要高的视野。现在，对于虫群的研究得到了进步，有一种鲜肉构成的幼虫发射毒牙的能力启发了我们。顺着犹如腥臭梦境中的呢喃般的灵感，我们试图创造一种更小巧、方便且阴狠的“血肉弓弩”。赞美亚……</BRF_FleshShooterResearch.description>
 
 
+  <!-- 神餐仪式 -->
+
+  <BRF_TheophagyPsychicRitualResearch.label>神餐仪式</BRF_TheophagyPsychicRitualResearch.label>
+  <BRF_TheophagyPsychicRitualResearch.description>“圣典性地进食神明。”\n\n那个梦境的所有者认为宇宙间有诸多神明，可以通过某些方式“吞食”这些实体。我们尚不能掌握此种伟力，但通过模仿这一行为，我们可以实现许多有用的心灵仪式。</BRF_TheophagyPsychicRitualResearch.description>
+
+
   <!-- 血污孢子（二本） -->
 
   <BRF_FleshTaintSporeResearch.label>血污孢子</BRF_FleshTaintSporeResearch.label>

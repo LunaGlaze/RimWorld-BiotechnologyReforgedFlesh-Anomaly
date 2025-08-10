@@ -3,6 +3,7 @@ using RimWorld.Planet;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 
 namespace Luna_BRF
@@ -34,7 +35,7 @@ namespace Luna_BRF
             {
                 return;
             }
-            bool malignantFleshActivation = parent.pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaDefOf.BRF_MalignantFleshActivation) != null;
+            bool malignantFleshActivation = parent.pawn.health?.hediffSet?.GetFirstHediffOfDef(LunaBRFDefOf.BRF_MalignantFleshActivation) != null;
             if (parent.CurStage.hungerRateFactorOffset < 1.2) { parent.CurStage.hungerRateFactorOffset = 1.2f; }
             else
             {
@@ -118,6 +119,30 @@ namespace Luna_BRF
             if (ModsConfig.AnomalyActive && Props.codexEntry != null)
             {
                 Find.EntityCodex.SetDiscovered(Props.codexEntry, Props.turnPawnKind.race);
+            }
+            foreach (Pawn item in PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive)
+            {
+                if (item == basepawn || item.needs == null || item.needs.mood == null || !PawnUtility.ShouldGetThoughtAbout(item, basepawn))
+                {
+                    continue;
+                }
+                if (ThoughtUtility.Witnessed(item, basepawn))
+                {
+                    bool flag_relation = item.relations.OpinionOf(basepawn) > 98;
+                    bool flag_relatives = item.relations.FamilyByBlood != null && item.relations.FamilyByBlood.Contains(basepawn);
+                    if ((flag_relation || flag_relatives) && (!ModsConfig.IdeologyActive || (ModsConfig.IdeologyActive && item.ideo != null && item.ideo.Ideo.memes.Contains(LunaBRFDefOf.Inhuman))))
+                    {
+                        item.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(LunaBRFDefOf.BRF_RebirthPsycorpseReplace, 2),basepawn);
+                    }
+                    else if(item.Faction == basepawn.Faction)
+                    {
+                        item.needs.mood.thoughts.memories.TryGainMemory(LunaBRFDefOf.BRF_RebirthPsycorpseReplace, basepawn);
+                    }
+                    else
+                    {
+                        item.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(LunaBRFDefOf.BRF_RebirthPsycorpseReplace, 1), basepawn);
+                    }
+                }
             }
             return;
         }

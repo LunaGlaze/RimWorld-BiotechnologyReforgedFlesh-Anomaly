@@ -83,7 +83,7 @@ namespace Luna_BRF
 											pawn1.Strip(false);
 											pawn1.Destroy();
 										}
-										else if (pawn1.RaceProps.IsFlesh && !pawn1.kindDef.IsFleshBeast() && !pawn1.RaceProps.IsAnomalyEntity && !pawn1.IsShambler && !pawn1.mutant.Def.isImmuneToInfections) {
+										else if (pawn1.RaceProps.IsFlesh && !pawn1.kindDef.IsFleshBeast() && !pawn1.RaceProps.IsAnomalyEntity && !pawn1.IsShambler && (pawn1.mutant != null && !pawn1.mutant.Def.isImmuneToInfections)) {
 											IEnumerable<BodyPartRecord> lungList = LunaBRFHediffUtility.GetLungWithoutFleshReforgeBodyParts(pawn1);
 											if (!defExtension.fleshTypeWithoutBRFLung || (defExtension.fleshTypeWithoutBRFLung && !lungList.EnumerableNullOrEmpty()))
                                             {

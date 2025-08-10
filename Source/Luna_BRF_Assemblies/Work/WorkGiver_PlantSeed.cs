@@ -55,7 +55,7 @@ namespace Luna_BRF
 					Plant plant = plantCells[i].GetPlant(t.Map);
 					if (plant == null)
 					{
-						Job job = JobMaker.MakeJob(LunaDefOf.BRF_PlantSeed, t, plantCells[i]);
+						Job job = JobMaker.MakeJob(LunaBRFDefOf.BRF_PlantSeed, t, plantCells[i]);
 						job.playerForced = forced;
 						job.plantDefToSow = compPlantable.Props.plantDefToSpawn;
 						job.count = 1;

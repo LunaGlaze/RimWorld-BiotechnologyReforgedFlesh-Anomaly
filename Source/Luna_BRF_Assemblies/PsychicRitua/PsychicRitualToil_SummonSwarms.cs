@@ -36,7 +36,7 @@ namespace Luna_BRF
             incidentParms.target = invoker.Map;
             incidentParms.pointMultiplier = combatPointMultiplier;
             incidentParms.forced = true;
-            Find.Storyteller.incidentQueue.Add(LunaDefOf.BRF_BloodstainedParasiticedInsectAssault, Find.TickManager.TicksGame + AnimalsDelayTicks.RandomInRange, incidentParms);
+            Find.Storyteller.incidentQueue.Add(LunaBRFDefOf.BRF_BloodstainedParasiticedInsectAssault, Find.TickManager.TicksGame + AnimalsDelayTicks.RandomInRange, incidentParms);
             LetterDef textLetterDef = LetterDefOf.NeutralEvent;
             TaggedString text = "BRF_SummonSwarmsFinishText".Translate(invoker, psychicRitual.def.Named("RITUAL"));
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate(psychicRitual.def.label), text, textLetterDef);

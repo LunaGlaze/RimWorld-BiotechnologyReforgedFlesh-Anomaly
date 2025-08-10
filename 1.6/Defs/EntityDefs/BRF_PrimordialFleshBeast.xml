@@ -7,7 +7,6 @@
     <category>Advanced</category>
     <useDescriptionFrom>BRF_PrimordialFleshBeast</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_PrimordialFleshBeast</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_PrimordialFleshBeast</li>
     </linkedThings>
@@ -309,6 +308,7 @@
       <li>BRF_Launch_PrimordialFleshBeast</li>
     </abilities>
     <combatPower>60</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

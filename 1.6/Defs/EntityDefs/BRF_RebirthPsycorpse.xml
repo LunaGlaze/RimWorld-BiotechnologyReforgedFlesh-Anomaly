@@ -7,7 +7,7 @@
     <category>Advanced</category>
     <useDescriptionFrom>BRF_RebirthPsycorpse</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_RebirthPsycorpse</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
+    <discoveryType>Spawn</discoveryType>
     <linkedThings>
       <li>BRF_RebirthPsycorpse</li>
     </linkedThings>
@@ -63,6 +63,7 @@
       <li>BRF_EntityFlashS</li>
     </abilities>
     <combatPower>500</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

@@ -13,6 +13,9 @@
       </buildingTags>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
+    <statBases>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
     <comps>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>

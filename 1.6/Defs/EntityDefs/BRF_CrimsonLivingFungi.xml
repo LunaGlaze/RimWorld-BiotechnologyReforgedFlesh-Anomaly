@@ -7,7 +7,6 @@
     <category>Advanced</category>
     <useDescriptionFrom>BRF_CrimsonLivingFungi</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_CrimsonLivingFungi</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_CrimsonLivingFungi</li>
     </linkedThings>
@@ -254,6 +253,7 @@
       <li>BRF_Launch_CrimsonPus</li>
     </abilities>
     <combatPower>275</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

@@ -35,6 +35,15 @@
 
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has symbiosied with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>
   <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef} has got the initiation of flesh.</BRF_psychicRitualLeaveReason_SarkicismTrait>
+  
+
+  <BRF_RitualTheophagy_RitualFinishText>By imitating the sacramental consumption of a god, {INVOKER_nameDef} has completed {RITUAL_definite} ritual.</BRF_RitualTheophagy_RitualFinishText>
+
+  <BRF_RitualTheophagyKnowledgeSucceeded>And have gained some twisted wisdom about {PROJECT_definite}.</BRF_RitualTheophagyKnowledgeSucceeded>
+  <BRF_RitualTheophagyKnowledgeFailed>But all the saw was indescribable distortion and brilliance.</BRF_RitualTheophagyKnowledgeFailed>
+
+  <BRF_TheophagySatisfactionFinishText>I have temporarily understood the secret of Satisfaction.</BRF_TheophagySatisfactionFinishText>
+
 
   <BRF_WorkingSpeedMultiplierReduced>Reduce Working Speed</BRF_WorkingSpeedMultiplierReduced>
   <BRF_WorkingSpeedMultiplierReduced_Desc>Reduce working speed multiplier and actual fuel consumption multiplier.</BRF_WorkingSpeedMultiplierReduced_Desc>

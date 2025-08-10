@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 <!--基础血肉墙-->
-	<ThingDef ParentName="Wall">
+	<ThingDef ParentName="Fleshmass">
         <defName>BRF_FleshWall</defName>
         <label>FleshMass Wall</label>
         <description>A solid mass of twisted flesh that constructed by someone. It throbs and shivers with horrible life.</description>
@@ -40,6 +40,7 @@
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToBuild>125</WorkToBuild>
 			<Flammability>0.6</Flammability>
+      		<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
@@ -58,6 +59,12 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<building>
+      		<paintable>true</paintable>
+			<isWall>true</isWall>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+      		<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<deconstructible>true</deconstructible>
+			<ai_chillDestination>false</ai_chillDestination>
       		<destroyEffecter>FleshmassDestroyed</destroyEffecter>
       		<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<relatedBuildCommands>
@@ -124,6 +131,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
 			<Flammability>0.1</Flammability>
+      		<MeditationFocusStrength>0.25</MeditationFocusStrength>
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
@@ -468,6 +476,7 @@
 			<MaxHitPoints>75</MaxHitPoints>
 			<Flammability>0.25</Flammability>
 			<Cleanliness>-4</Cleanliness>
+      		<MeditationFocusStrength>0.24</MeditationFocusStrength>
 		</statBases>
 		<building>
 			<defaultPlantToGrow>BRF_CrimsonPeepingLeaves</defaultPlantToGrow>
@@ -488,6 +497,12 @@
 		<fertility>2.5</fertility>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
+      		<li Class="CompProperties_MeditationFocus">
+        		<statDef>MeditationFocusStrength</statDef>
+        		<focusTypes>
+          			<li>BRF_Flesh</li>
+        		</focusTypes>
+      		</li>
 		</comps>
 		<constructEffect>ConstructWood</constructEffect>
     	<placeWorkers>

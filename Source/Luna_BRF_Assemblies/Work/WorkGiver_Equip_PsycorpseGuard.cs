@@ -6,7 +6,7 @@ namespace Luna_BRF
 {
     public class WorkGiver_Equip_PsycorpseGuard : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(LunaDefOf.BRF_PsycorpseGuard);
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(LunaBRFDefOf.BRF_PsycorpseGuard);
         public override PathEndMode PathEndMode => PathEndMode.ClosestTouch;
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)

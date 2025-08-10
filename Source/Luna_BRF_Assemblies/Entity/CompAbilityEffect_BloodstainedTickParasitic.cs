@@ -12,13 +12,13 @@ namespace Luna_BRF
 				if (!target.Pawn.Dead)
 				{
 					Log.Error("BloodstainedTick tried to parasitic a pawn who is not dead: " + target.Pawn.ToStringSafe());
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
 					return;
 				}
 				if (target.Pawn.Discarded)
 				{
 					Log.Error("BloodstainedTick tried to parasitic a discarded pawn: " + target.Pawn.ToStringSafe());
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
 					return;
 				}
 			}
@@ -28,12 +28,12 @@ namespace Luna_BRF
 				{
 					if (!corpse.InnerPawn.RaceProps.IsFlesh || corpse.InnerPawn.RaceProps.FleshType != FleshTypeDefOf.Insectoid)
 					{
-						parent.pawn.abilities.GetAbility(LunaDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
+						parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
 						return;
 					}
 					else
 					{
-						Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_BloodstainedTickParasiticed, corpse.InnerPawn);
+						Hediff hediff = HediffMaker.MakeHediff(LunaBRFDefOf.BRF_BloodstainedTickParasiticed, corpse.InnerPawn);
 						corpse.InnerPawn.health.AddHediff(hediff);
 						if (corpse.InnerPawn.Faction != Faction.OfEntities)
 						{
@@ -54,7 +54,7 @@ namespace Luna_BRF
 				else
 				{
 					Log.Error("BloodstainedTick tried to parasitic a target is not corpse: " + target.Thing.ToStringSafe());
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_BloodstainedTickParasitic).ResetCooldown();
 					return;
 				}
 			}

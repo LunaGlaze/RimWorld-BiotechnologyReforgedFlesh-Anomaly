@@ -11,8 +11,8 @@ namespace Luna_BRF
 		{
 			parms.faction = Faction.OfEntities;
 			parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
-			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaDefOf.BRF_BloodstainedTickParasiticable, parms);
-			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaDefOf.BRF_BloodstainedTickParasiticable);
+			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaBRFDefOf.BRF_BloodstainedTickParasiticable, parms);
+			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaBRFDefOf.BRF_BloodstainedTickParasiticable);
 			if (parms.points < num)
 			{
 				parms.points = (defaultPawnGroupMakerParms.points = num * 2f);
@@ -65,7 +65,7 @@ namespace Luna_BRF
 			parms.raidArrivalMode.Worker.Arrive(list, parms);
 			foreach (Pawn pawn in list)
             {
-				Hediff hediff = HediffMaker.MakeHediff(LunaDefOf.BRF_BloodstainedTickParasiticed, pawn);
+				Hediff hediff = HediffMaker.MakeHediff(LunaBRFDefOf.BRF_BloodstainedTickParasiticed, pawn);
 				pawn.health.AddHediff(hediff);
 				pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
 			}

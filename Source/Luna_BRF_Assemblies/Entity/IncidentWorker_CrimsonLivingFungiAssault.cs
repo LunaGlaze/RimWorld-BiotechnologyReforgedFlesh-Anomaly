@@ -14,8 +14,8 @@ namespace Luna_BRF
 			parms.faction = Faction.OfEntities;
 			parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
 			int tier = 1;
-			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaDefOf.BRF_CrimsonLivingFungi, parms);
-			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaDefOf.BRF_CrimsonLivingFungi);
+			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaBRFDefOf.BRF_CrimsonLivingFungi, parms);
+			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaBRFDefOf.BRF_CrimsonLivingFungi);
 			if (parms.points < num)
 			{
 				parms.points = (defaultPawnGroupMakerParms.points = num);

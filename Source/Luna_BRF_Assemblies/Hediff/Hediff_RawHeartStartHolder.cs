@@ -7,7 +7,7 @@ namespace Luna_BRF
     {
         public override void Notify_PawnKilled()
         {
-            if (pawn.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaDefOf.BRF_RawHeartStart), pawn.PositionHeld, pawn.MapHeld, ThingPlaceMode.Near, out var resultingThing))
+            if (pawn.SpawnedOrAnyParentSpawned && GenDrop.TryDropSpawn(ThingMaker.MakeThing(LunaBRFDefOf.BRF_RawHeartStart), pawn.PositionHeld, pawn.MapHeld, ThingPlaceMode.Near, out var resultingThing))
             {
                 resultingThing.SetForbidden(!resultingThing.MapHeld.areaManager.Home[resultingThing.PositionHeld]);
                 string text = pawn.LabelShort;

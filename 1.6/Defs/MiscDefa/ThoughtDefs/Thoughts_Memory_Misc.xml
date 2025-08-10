@@ -69,4 +69,32 @@
     </stages>
   </ThoughtDef>
 
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>BRF_RebirthPsycorpseReplace</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>BRF_Sarkicism</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>{0} replaced by bloody evil</label>
+        <description>We watched the monster emerge from the body, not even knowing when it replaced someone else... or whether that person was never human in the first place.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0} turned into a monster</label>
+        <description>It was terrifying to see someone transform into a monster right in front of us.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>{0} nothing left</label>
+        <description>One of the people closest to me even had his identity taken away by a monster, leaving nothing behind.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

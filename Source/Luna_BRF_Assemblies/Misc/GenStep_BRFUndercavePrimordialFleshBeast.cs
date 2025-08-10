@@ -61,7 +61,7 @@ namespace Luna_BRF
 			int randomInRange = NumFleshbeastsRange.RandomInRange + anomalyNum;
 			for (int i = 0; i < randomInRange; i++)
 			{
-				Pawn newThing = PawnGenerator.GeneratePawn(LunaDefOf.BRF_PrimordialFleshBeast, Faction.OfEntities);
+				Pawn newThing = PawnGenerator.GeneratePawn(LunaBRFDefOf.BRF_PrimordialFleshBeast, Faction.OfEntities);
 				if (CellFinder.TryFindRandomCellNear(cell, map, 4, (IntVec3 c) => c.Standable(map) && c.GetFirstPawn(map) == null, out var result) && GenSpawn.Spawn(newThing, result, map).TryGetComp(out CompCanBeDormant comp))
 				{
 					comp.ToSleep();

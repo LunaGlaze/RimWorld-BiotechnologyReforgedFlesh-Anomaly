@@ -7,7 +7,6 @@
     <category>Advanced</category>
     <useDescriptionFrom>BRF_Clump</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_Clump</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_Clump</li>
     </linkedThings>
@@ -372,6 +371,7 @@
       <li>BRF_EntityLongjump</li>
     </abilities>
     <combatPower>500</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

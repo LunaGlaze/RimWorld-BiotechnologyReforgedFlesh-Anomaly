@@ -8,7 +8,7 @@ namespace Luna_BRF
     {
         public override void OnCreated()
         {
-            base.Pawn.health.AddHediff(LunaDefOf.BRF_RebirthPsycorpse_AngelsDescend);
+            base.Pawn.health.AddHediff(LunaBRFDefOf.BRF_RebirthPsycorpse_AngelsDescend);
         }
 
         public override void DoResponse(List<TargetInfo> looktargets, List<NamedArgument> namedArgs)

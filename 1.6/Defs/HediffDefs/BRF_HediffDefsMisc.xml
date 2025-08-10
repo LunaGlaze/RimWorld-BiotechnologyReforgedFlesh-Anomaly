@@ -78,4 +78,53 @@
     </comps>
   </HediffDef>
 
+  <HediffDef>
+    <defName>BRF_SatisfactionAmpulla</defName>
+    <label>Satisfaction of Ampulla</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Hunger, lust, the drowning waters. We have temporarily achieved the means of appeasing our appetite, but the pain is eternal.</description>
+    <defaultLabelColor>(.85,.12,.12)</defaultLabelColor>
+    <isBad>false</isBad>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="Luna_BRF.HediffCompProperties_AddHediffPostRemoved">
+        <hediffDef>BRF_ThirstAmpulla</hediffDef>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>-0.01</painOffset>
+        <hungerRateFactor>0.05</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BRF_ThirstAmpulla</defName>
+    <label>Thirst of Ampulla</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Hunger, lust, the drowning waters. After a brief period of repression, the thirst will surge back like a grail drained tide.</description>
+    <defaultLabelColor>(.85,.12,.12)</defaultLabelColor>
+    <isBad>True</isBad>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>0.06</painOffset>
+        <hungerRateFactor>10</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>

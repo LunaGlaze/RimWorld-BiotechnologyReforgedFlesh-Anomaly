@@ -42,7 +42,7 @@ namespace Luna_BRF
 						}
 						if (Props.primordialFleshSpawer)
 						{
-							FilthMaker.TryMakeFilth(parent.Position, parent.Map, LunaDefOf.Filth_BRF_PrimordialTwistedFlesh);
+							FilthMaker.TryMakeFilth(parent.Position, parent.Map, LunaBRFDefOf.Filth_BRF_PrimordialTwistedFlesh);
 						}
 					}
 				}

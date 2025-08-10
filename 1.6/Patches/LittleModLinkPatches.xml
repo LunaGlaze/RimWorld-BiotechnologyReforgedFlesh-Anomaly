@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/QuestScriptDef[defName="PawnLend"]/root[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_Signal"]/node[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_LendColonistsToFaction"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationInsert">
+                    <xpath>/Defs/QuestScriptDef[defName="PawnLend"]/root[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_Signal"]/node[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_LendColonistsToFaction"]</xpath>
+                    <order>Append</order>
+                    <value>
+                        <li Class="Luna_BRF.QuestNode_BRF_RebirthPsycorpseReplace">
+                            <shuttle>$pickupShipThing</shuttle>
+                        </li>
+                    </value>
+                </li>
+				<!--li Class="PatchOperationReplace">
+                    <xpath>/Defs/QuestScriptDef[defName="PawnLend"]/root[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_Signal"]/node[@Class = "QuestNode_Sequence"]/nodes/li[@Class = "QuestNode_LendColonistsToFaction"]/returnLentColonistsInTicks</xpath>
+                    <value>
+                        <returnLentColonistsInTicks>$($lendForDays*2500)</returnLentColonistsInTicks>
+                    </value>
+                </li-->
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="HighVoltageFisher"]/comps/li[@Class = "ElectroFishing.CompProperties_ElectroFishingParams"]</xpath>
+        <match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationInsert" MayRequire="acutus.Electrofishing">
+                    <xpath>/Defs/ThingDef[defName="HighVoltageFisher"]/comps/li[@Class = "ElectroFishing.CompProperties_ElectroFishingParams"]/raidPawns/li/pawnList/li[text()="Devourer"]</xpath>
+                    <order>Append</order>
+                    <value>
+                        <li>BRF_PrimordialFleshBeast</li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd" MayRequire="acutus.Electrofishing">
+                    <xpath>/Defs/ThingDef[defName="HighVoltageFisher"]/comps/li[@Class = "ElectroFishing.CompProperties_ElectroFishingParams"]/raidPawns</xpath>
+                    <value>
+                        <li>
+                            <factionDef>Entities</factionDef>
+                            <raidLabel>The Flesh of Yaldabaoth Underwater</raidLabel>
+                            <raidText>Your electrofishing has agitated the dormant local underwater Flesh Entities! They will attack you on sight.</raidText>
+                            <pawnList>
+                                <li>BRF_Clump</li>
+                                <li>BRF_PrimordialFleshBeast</li>
+                            </pawnList>
+                        </li>
+                    </value>
+                </li>
+			</operations>
+        </match>
+    </Operation>
+
+</Patch>

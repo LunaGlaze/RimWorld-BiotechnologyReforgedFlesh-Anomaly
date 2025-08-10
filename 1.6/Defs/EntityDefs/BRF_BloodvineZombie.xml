@@ -7,7 +7,6 @@
     <category>Basic</category>
     <useDescriptionFrom>BRF_BloodvineZombie</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_BloodvineZombie</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_BloodvineZombie</li>
     </linkedThings>
@@ -46,6 +45,7 @@
     <label>Bloodvine Zombie</label>
     <race>BRF_BloodvineZombie</race>
     <combatPower>75</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

@@ -13,6 +13,9 @@
       </buildingTags>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
+    <statBases>
+      <MeditationFocusStrength>0.24</MeditationFocusStrength>
+    </statBases>
     <placeWorkers>
       <li>Luna_BRF.PlaceWorker_BRF_FleshBlanket</li>
     </placeWorkers>

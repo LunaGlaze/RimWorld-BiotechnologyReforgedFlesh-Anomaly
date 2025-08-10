@@ -140,6 +140,22 @@
 		</prerequisites>
     </ResearchProjectDef>
 
+<!--神餐仪式-->
+    <ResearchProjectDef>
+		<defName>BRF_TheophagyPsychicRitualResearch</defName>
+    	<label>Theophagy Ritual</label>
+    	<description>"The sacramental consumption of a god." \n\nWho has that dream holds that there are many gods in the universe and that these entities can be "devoured" in some fashion. We cannot yet master this power, but by imitating this behavior, we can perform many useful psychic rituals.</description>
+		<knowledgeCost>12</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+    		<li>BRF_SummonSwarmsResearch</li>
+    		<li>BRF_ReforgedMeatHarbingerResearch</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
 <!--血污孢子（二本）-->
     <ResearchProjectDef>
 		<defName>BRF_FleshTaintSporeResearch</defName>

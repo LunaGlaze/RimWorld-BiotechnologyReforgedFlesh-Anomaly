@@ -30,7 +30,7 @@
     <defName>BRF_BloodstainedParasiticedInsectAssault</defName>
     <label>Parasiticed Insect</label>
     <workerClass>Luna_BRF.IncidentWorker_BloodstainedTickParasiticableAssault</workerClass>
-    <baseChance>0.95</baseChance>
+    <baseChance>0.5</baseChance>
     <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
     <letterLabel>Parasiticed Insects Assault</letterLabel>
     <letterText>Some swarms of entity-parasitized bugs have come to your colony, and they have gone berserk from the entity's parasitism!</letterText>
@@ -43,7 +43,7 @@
     <defName>BRF_LittleBloodstainedParasiticedInsectAssault</defName>
     <label>Little Parasiticed Insect</label>
     <workerClass>Luna_BRF.IncidentWorker_BloodstainedTickParasiticableAssaultLittle</workerClass>
-    <baseChance>0.5</baseChance>
+    <baseChance>0.05</baseChance>
     <minAnomalyThreatLevel>0</minAnomalyThreatLevel>
     <letterLabel>Parasiticed Insects Assault</letterLabel>
     <letterText>Some swarms of entity-parasitized bugs have come to your colony, and they have gone berserk from the entity's parasitism!</letterText>

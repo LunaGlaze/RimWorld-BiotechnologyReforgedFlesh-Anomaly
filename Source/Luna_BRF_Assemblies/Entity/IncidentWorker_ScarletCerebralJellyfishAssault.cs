@@ -61,7 +61,7 @@ namespace Luna_BRF
         }
         protected Job TryGiveJob(Pawn pawn)
         {
-            Ability ability = pawn.abilities?.GetAbility(LunaDefOf.BRF_ScarletCerebralJellyfishBrainInsertion);
+            Ability ability = pawn.abilities?.GetAbility(LunaBRFDefOf.BRF_ScarletCerebralJellyfishBrainInsertion);
             if (ability == null || !ability.CanCast)
             {
                 return null;

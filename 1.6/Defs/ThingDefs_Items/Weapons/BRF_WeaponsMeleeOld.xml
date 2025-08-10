@@ -91,7 +91,7 @@
           <li>Stab</li>
         </capacities>
         <power>16</power>
-        <cooldownTime>1.8</cooldownTime>
+        <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
@@ -106,7 +106,7 @@
       <Bioferrite>1</Bioferrite>
     </costList>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.06</PsychicSensitivity>
+      <PsychicSensitivity>0.075</PsychicSensitivity>
     </equippedStatOffsets>
   </ThingDef>
 

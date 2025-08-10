@@ -4,11 +4,11 @@ using Verse;
 namespace Luna_BRF
 {
     [DefOf]
-    public static class LunaDefOf
+    public static class LunaBRFDefOf
     {
-        static LunaDefOf()
+        static LunaBRFDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(LunaDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(LunaBRFDefOf));
         }
         public static TerrainAffordanceDef Diggable;
         public static TerrainAffordanceDef BRF_FleshBlanket;
@@ -21,6 +21,8 @@ namespace Luna_BRF
         public static HediffDef BRF_RebirthPsycorpse_AngelsDescend;
         public static HediffDef BRF_RawHeartStartHolder;
         public static HediffDef BRF_Akuloth;
+        public static HediffDef BRF_SatisfactionAmpulla;
+        public static HediffDef BRF_ThirstAmpulla;
         public static DamageDef BRF_FleshPulse;
         public static PawnKindDef BRF_Clump;
         public static PawnKindDef BRF_BloodstainedTick;
@@ -28,6 +30,7 @@ namespace Luna_BRF
         public static PawnKindDef BRF_BloodvineZombie;
         public static PawnKindDef BRF_PrimordialFleshBeast;
         public static PawnKindDef BRF_MiniFleshBeast;
+        public static PawnKindDef BRF_RebirthPsycorpse;
         public static PawnKindDef BRF_RawProphet;
         public static PawnGroupKindDef BRF_BloodvineZombieSwarmer;
         public static PawnGroupKindDef BRF_ThornbladeMaggotLarvalSwarmer;
@@ -47,5 +50,8 @@ namespace Luna_BRF
         public static ThingDef BRF_RawHeartStart;
         public static ThingDef BRF_PsycorpseGuard;
         public static TraitDef BRF_Sarkicism;
+        public static ThoughtDef BRF_RebirthPsycorpseReplace;
+        public static MemeDef Inhuman;
+        public static ResearchTabDef ResearchTabBRF_BiomancyAnomaly;
     }
 }

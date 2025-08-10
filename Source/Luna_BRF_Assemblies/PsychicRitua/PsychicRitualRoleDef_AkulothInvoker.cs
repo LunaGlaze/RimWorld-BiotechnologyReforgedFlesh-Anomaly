@@ -11,7 +11,7 @@ namespace Luna_BRF
             {
                 return false;
             }
-            Hediff firstHediff = pawn.health.hediffSet.GetFirstHediffOfDef(LunaDefOf.BRF_Akuloth);
+            Hediff firstHediff = pawn.health.hediffSet.GetFirstHediffOfDef(LunaBRFDefOf.BRF_Akuloth);
             if (firstHediff != null)
             {
                 return false;

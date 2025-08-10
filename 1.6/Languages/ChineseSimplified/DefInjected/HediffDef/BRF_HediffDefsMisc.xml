@@ -10,5 +10,11 @@
   <BRF_ResurrectionLink.label>血肉苏生连结</BRF_ResurrectionLink.label>
   <BRF_ResurrectionLink.description>这个实体以某种方式通过或是欺瞒了远方某个血肉超凡节点的认证系统以得到了链接。这个链接会在该实体失去复活能力后的一段时间内通过远程心灵场向其灌输死亡回避。</BRF_ResurrectionLink.description>
 
+  <BRF_SatisfactionAmpulla.label>餍足之缻</BRF_SatisfactionAmpulla.label>
+  <BRF_SatisfactionAmpulla.description>食、色、性，有溺而无还者也。我们暂时取得了平息食欲的手段，但痛苦是永恒的。</BRF_SatisfactionAmpulla.description>
+
+  <BRF_ThirstAmpulla.label>渴求之缻</BRF_ThirstAmpulla.label>
+  <BRF_ThirstAmpulla.description>食、色、性，有溺而无还者也。在短暂的压抑后，饥渴将如潮水般涌来，一如圣杯饮干浪潮。</BRF_ThirstAmpulla.description>
+
 
 </LanguageData>

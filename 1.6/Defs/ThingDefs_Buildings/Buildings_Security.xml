@@ -25,6 +25,7 @@
       <Mass>100</Mass>
       <Beauty>-20</Beauty>
       <MarketValue>950</MarketValue>
+      <MeditationFocusStrength>0.24</MeditationFocusStrength>
 	</statBases>
 	<tickerType>Normal</tickerType>
 	<passability>PassThroughOnly</passability>
@@ -215,7 +216,7 @@
     </comps>
   </ThingDef>
  <!--血肉喷吐蠕虫-->
-	<ThingDef ParentName="BaseArtilleryWeapon">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>BRF_FleshSpitterWorm</defName>
 		<label>Flesh Spitter Worm</label>
 		<description>A flesh creature bred using fleshheart neural tissue coding. Its lower half is a lump of flesh linked to the ground of the fungus blanket, while the upper half is a giant worm-like structure. This flesh construct requires nourishment for maintenance and can spray acid over considerable distances to strike enemies.</description>

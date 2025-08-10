@@ -11,7 +11,7 @@ namespace Luna_BRF
 			CompRefuelable comp = this.GetComp<CompRefuelable>();
             if ((comp != null && comp.HasFuel) || comp == null)
 			{
-				FleckMaker.Static(this.Position, this.Map, LunaDefOf.BlastEMP);
+				FleckMaker.Static(this.Position, this.Map, LunaBRFDefOf.BlastEMP);
 			}
 		}
 		protected override void Tick()
@@ -22,7 +22,7 @@ namespace Luna_BRF
 				CompRefuelable comp = this.GetComp<CompRefuelable>();
 				if ((comp != null && comp.HasFuel) || comp == null)
 				{
-					FleckMaker.Static(this.Position, this.Map, LunaDefOf.BlastEMP);
+					FleckMaker.Static(this.Position, this.Map, LunaBRFDefOf.BlastEMP);
 				}
 			}
 		}

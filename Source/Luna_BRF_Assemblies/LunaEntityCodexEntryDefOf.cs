@@ -8,14 +8,16 @@ namespace Luna_BRF
     {
         static LunaEntityCodexEntryDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(LunaDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(LunaBRFDefOf));
         }
+        public static EntityCodexEntryDef VoidMonolith;
         public static EntityCodexEntryDef BRF_BloodstainedTick;
         public static EntityCodexEntryDef BRF_ThornbladeMaggot;
         public static EntityCodexEntryDef BRF_BloodvineZombie;
         public static EntityCodexEntryDef BRF_Clump;
         public static EntityCodexEntryDef BRF_CrimsonLivingFungi;
         public static EntityCodexEntryDef BRF_ScarletCerebralJellyfish;
+        public static EntityCodexEntryDef BRF_RebirthPsycorpse;
         public static EntityCodexEntryDef BRF_RawProphet;
     }
 }

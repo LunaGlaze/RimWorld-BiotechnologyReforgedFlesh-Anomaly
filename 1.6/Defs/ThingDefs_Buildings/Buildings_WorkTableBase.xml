@@ -12,6 +12,9 @@
         <li>BRF_WorkTable</li>
       </buildingTags>
     </building>
+    <statBases>
+      <MeditationFocusStrength>0.24</MeditationFocusStrength>
+    </statBases>
     <comps>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
@@ -62,6 +65,7 @@
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.1</Flammability>
+      <MeditationFocusStrength>0.23</MeditationFocusStrength>
     </statBases>
     <selectable>true</selectable>
     <costList>
@@ -308,6 +312,7 @@
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>0.4</Flammability>
       <Cleanliness>-3</Cleanliness>
+      <MeditationFocusStrength>0.28</MeditationFocusStrength>
     </statBases>
     <size>(2,2)</size>
     <uiOrder>2520</uiOrder>

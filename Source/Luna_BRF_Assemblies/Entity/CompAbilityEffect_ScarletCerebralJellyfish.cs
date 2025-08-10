@@ -13,13 +13,13 @@ namespace Luna_BRF
 				if (target.Pawn.Dead)
 				{
 					Log.Error("ScarletCerebralJellyfish tried to rape a pawn who is dead: " + target.Pawn.ToStringSafe());
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
 					return;
 				}
 				if (target.Pawn.Discarded)
 				{
 					Log.Error("ScarletCerebralJellyfish tried to rape a discarded pawn: " + target.Pawn.ToStringSafe());
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
 					return;
 				}
 				if (target.Pawn.RaceProps.IsMechanoid)
@@ -43,7 +43,7 @@ namespace Luna_BRF
 						}
 					}
 					target.Pawn.Kill(dinfo, null);
-					parent.pawn.abilities.GetAbility(LunaDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
+					parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
 					return;
 				}
 				Pawn self = parent.pawn;
@@ -57,7 +57,7 @@ namespace Luna_BRF
             else
 			{
 				Log.Error("ScarletCerebralJellyfish tried to rape a target which is not pawn: " + target.Thing.ToStringSafe());
-				parent.pawn.abilities.GetAbility(LunaDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
+				parent.pawn.abilities.GetAbility(LunaBRFDefOf.BRF_ScarletCerebralJellyfishBrainInsertion).ResetCooldown();
 				return;
 			}
 		}

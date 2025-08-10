@@ -12,7 +12,7 @@ namespace Luna_BRF
 
         public bool HasAkuloth(Pawn p)
         {
-            return p.health.hediffSet.HasHediff(LunaDefOf.BRF_Akuloth);
+            return p.health.hediffSet.HasHediff(LunaBRFDefOf.BRF_Akuloth);
         }
 
         public override void CompPostMake()

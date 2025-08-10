@@ -70,7 +70,7 @@ namespace Luna_BRF
 				target.Thing.DeSpawn();
 				ticksDigesting = 0;
 				innerContainer.TryAdd(target.Thing);
-                Pawn.jobs.StartJob(JobMaker.MakeJob(LunaDefOf.BRF_CorpseNecrophagistDigest), JobCondition.InterruptForced);
+                Pawn.jobs.StartJob(JobMaker.MakeJob(LunaBRFDefOf.BRF_CorpseNecrophagistDigest), JobCondition.InterruptForced);
 				Pawn.Rotation = Rot4.FromAngleFlat((parent.Position - origin).AngleFlat);
 				if (Pawn.Drawer.renderer.CurAnimation != AnimationDefOf.DevourerDigesting)
 				{
@@ -82,7 +82,7 @@ namespace Luna_BRF
 				pawn.DeSpawn();
 				ticksDigesting = 0;
 				innerContainer.TryAdd(pawn);
-				Pawn.jobs.StartJob(JobMaker.MakeJob(LunaDefOf.BRF_CorpseNecrophagistDigest), JobCondition.InterruptForced);
+				Pawn.jobs.StartJob(JobMaker.MakeJob(LunaBRFDefOf.BRF_CorpseNecrophagistDigest), JobCondition.InterruptForced);
 				Pawn.Rotation = Rot4.FromAngleFlat((parent.Position - origin).AngleFlat);
 				if (Pawn.Drawer.renderer.CurAnimation != AnimationDefOf.DevourerDigesting)
 				{
@@ -91,7 +91,7 @@ namespace Luna_BRF
 			}
             else
             {
-				Pawn.abilities.GetAbility(LunaDefOf.BRF_EntityNecrophagia).ResetCooldown();
+				Pawn.abilities.GetAbility(LunaBRFDefOf.BRF_EntityNecrophagia).ResetCooldown();
 				innerContainer.TryDropAll(Pawn.PositionHeld, Pawn.MapHeld, ThingPlaceMode.Direct);
 				if(target.Thing is Corpse)
                 {

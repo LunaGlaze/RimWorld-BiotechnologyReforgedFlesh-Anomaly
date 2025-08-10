@@ -12,8 +12,8 @@ namespace Luna_BRF
 		{
 			parms.faction = Faction.OfEntities;
 			parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
-			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaDefOf.BRF_ClumpGroup, parms);
-			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaDefOf.BRF_ClumpGroup);
+			PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(LunaBRFDefOf.BRF_ClumpGroup, parms);
+			float num = Faction.OfEntities.def.MinPointsToGeneratePawnGroup(LunaBRFDefOf.BRF_ClumpGroup);
 			if (parms.points < num)
 			{
 				parms.points = (defaultPawnGroupMakerParms.points = num * 2f);

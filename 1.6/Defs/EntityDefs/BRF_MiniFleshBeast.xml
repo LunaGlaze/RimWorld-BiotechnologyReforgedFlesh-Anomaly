@@ -190,6 +190,7 @@
     <label>Mini Fleshbeast</label>
     <race>BRF_MiniFleshBeast</race>
     <combatPower>5</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

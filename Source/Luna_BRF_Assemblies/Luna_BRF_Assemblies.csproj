@@ -75,23 +75,33 @@
     <Compile Include="Entity\IncidentWorker_ThornbladeMaggotSwarm.cs" />
     <Compile Include="Entity\JobGiver_JellyfishBrainInsertion.cs" />
     <Compile Include="Hediff\ExtensionDef_ParasiticControlConfiguration.cs" />
+    <Compile Include="Hediff\HediffCompProperties_AddHediffPostRemoved.cs" />
+    <Compile Include="Hediff\HediffCompProperties_CompTipStringExtra.cs" />
     <Compile Include="Hediff\HediffCompProperties_DeathRefusalGiver.cs" />
     <Compile Include="CreepJoiner\HediffCompProperties_RebirthPsycorpse.cs" />
     <Compile Include="Hediff\HediffCompProperties_InfectionsWithoutAkuloth.cs" />
+    <Compile Include="Hediff\HediffComp_AddHediffPostRemoved.cs" />
+    <Compile Include="Hediff\HediffComp_CompTipStringExtra.cs" />
     <Compile Include="Hediff\HediffComp_DeathRefusalGiver.cs" />
     <Compile Include="CreepJoiner\HediffComp_RebirthPsycorpse.cs" />
     <Compile Include="Hediff\HediffComp_InfectionsWithoutAkuloth.cs" />
     <Compile Include="Hediff\Hediff_Akuloth.cs" />
+    <Compile Include="Hediff\Hediff_BRF_ScarletFever.cs" />
     <Compile Include="Hediff\Hediff_ParasiticControl.cs" />
     <Compile Include="Hediff\Hediff_RawHeartStartHolder.cs" />
     <Compile Include="Misc\CompAbilityEffect_EntityFlash.cs" />
     <Compile Include="Misc\ExtensionDef_RefuelByNutrition.cs" />
     <Compile Include="Misc\PlaceWorker_BRF_FleshBlanket.cs" />
+    <Compile Include="Misc\QuestGen_PawnsBRF.cs" />
+    <Compile Include="Misc\QuestNode_BRF_RebirthPsycorpseReplace.cs" />
+    <Compile Include="Misc\QuestPart_TransporterPawns_BRF_RebirthPsycorpseReplace.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_InitiationRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_AkulothRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_CrimsonProvocation.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_ExileRawProphet.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonRawProphet.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_TheophagyKnowledge.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_TheophagySatisfaction.cs" />
     <Compile Include="PsychicRitua\PsychicRitualRoleDef_InitiationTarget.cs" />
     <Compile Include="PsychicRitua\PsychicRitualRoleDef_AkulothInvoker.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_AkulothRitual.cs" />
@@ -99,6 +109,8 @@
     <Compile Include="PsychicRitua\PsychicRitualToil_ExileRawProphet.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_InitiationRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_SummonRawProphet.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_TheophagyKnowledge.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_TheophagySatisfaction.cs" />
     <Compile Include="Things\BRFTurretTop.cs" />
     <Compile Include="Things\ExtensionDef_ShooterGuardWithWeapon.cs" />
     <Compile Include="Things\ShooterGuardWithWeapon.cs" />
@@ -174,7 +186,7 @@
     <Compile Include="CompBuilding\CompProperties_LunaInfectedTerrainSpread.cs" />
     <Compile Include="CompBuilding\CompProperties_LunaSelfhealHitpoints.cs" />
     <Compile Include="CompBuilding\CompProperties_LunaSpawnerPawnWithFuel.cs" />
-    <Compile Include="LunaDefOf.cs" />
+    <Compile Include="LunaBRFDefOf.cs" />
     <Compile Include="CompBuilding\LunaInfectedPlantsSpread.cs" />
     <Compile Include="CompBuilding\LunaInfectedTerrainSpread.cs" />
     <Compile Include="CompBuilding\LunaSelfhealHitpoints.cs" />
@@ -193,4 +205,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF $(ConfigurationName)==Release xcopy "$(TargetPath)" "H:\[Games]\Rimworld\自制mod测试\[Bio-Anomaly]血肉重铸\1.6\Assemblies\" /s/e/y</PostBuildEvent>
+  </PropertyGroup>
 </Project>

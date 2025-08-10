@@ -3,6 +3,7 @@
 
   <BRF_ScarletFever.label>猩紅狂熱</BRF_ScarletFever.label>
   <BRF_ScarletFever.description>那些更原始但更高效的血肉怪獸總是伴隨著這種扭曲的狂熱出現。牠們不怕疼痛，牠們所向披靡。</BRF_ScarletFever.description>
+  <BRF_ScarletFever.comps.0.compTipStringExtra>（增加對非肉體單位的傷害）</BRF_ScarletFever.comps.0.compTipStringExtra>
 
   <BRF_BloodstainedTickParasiticed.label>汙血寄生</BRF_BloodstainedTickParasiticed.label>
   <BRF_BloodstainedTickParasiticed.description>這個生物的體內存在一種寄生性的實體，該實體合成的生物納米機械在強化宿主的同時與一個遙遠的超凡智能引擎達成通訊，扭曲了宿主的意志。</BRF_BloodstainedTickParasiticed.description>

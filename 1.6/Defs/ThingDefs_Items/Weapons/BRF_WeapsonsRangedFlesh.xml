@@ -108,7 +108,7 @@
     <projectile>
       <speed>48</speed>
       <damageDef>ToxicBite</damageDef>
-      <damageAmountBase>11</damageAmountBase>
+      <damageAmountBase>13</damageAmountBase>
       <stoppingPower>1</stoppingPower>
     </projectile>
     <modExtensions>
@@ -175,7 +175,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
@@ -193,7 +193,7 @@
     <projectile>
       <speed>64</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>24</damageAmountBase>
       <stoppingPower>2</stoppingPower>
     </projectile>
     <modExtensions>
@@ -248,7 +248,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>BRF_BloodthornScatterer_Spike</defaultProjectile>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <warmupTime>1.2</warmupTime>
         <range>21.9</range>
         <soundCast>BRF_Pawn_Flesh_Call</soundCast>
@@ -262,7 +262,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
@@ -280,7 +280,7 @@
     <projectile>
       <speed>58</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>24</damageAmountBase>
+      <damageAmountBase>28</damageAmountBase>
       <stoppingPower>3</stoppingPower>
     </projectile>
     <modExtensions>
@@ -315,8 +315,8 @@
     <statBases>
       <WorkToMake>24000</WorkToMake>
       <Mass>3.5</Mass>
-      <AccuracyTouch>0.84</AccuracyTouch>
-      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyTouch>0.76</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
       <AccuracyMedium>0.64</AccuracyMedium>
       <AccuracyLong>0.48</AccuracyLong>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
@@ -349,7 +349,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>1.75</cooldownTime>
       </li>
     </tools>
@@ -367,7 +367,7 @@
     <projectile>
       <speed>72</speed>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>18</damageAmountBase>
+      <damageAmountBase>23</damageAmountBase>
       <stoppingPower>1</stoppingPower>
     </projectile>
     <modExtensions>

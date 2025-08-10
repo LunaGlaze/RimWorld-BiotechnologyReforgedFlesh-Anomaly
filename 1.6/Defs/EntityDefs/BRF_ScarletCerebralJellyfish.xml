@@ -7,7 +7,7 @@
     <category>Advanced</category>
     <useDescriptionFrom>BRF_ScarletCerebralJellyfish</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_ScarletCerebralJellyfish</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
+    <discoveryType>BecameVisible</discoveryType>
     <linkedThings>
       <li>BRF_ScarletCerebralJellyfish</li>
     </linkedThings>
@@ -307,6 +307,7 @@
       <li>BRF_ScarletCerebralJellyfishBrainInsertion</li>
     </abilities>
     <combatPower>300</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <overrideDeathOnDownedChance>1</overrideDeathOnDownedChance>
     <forceDeathOnDowned>true</forceDeathOnDowned>
     <immuneToGameConditionEffects>true</immuneToGameConditionEffects>

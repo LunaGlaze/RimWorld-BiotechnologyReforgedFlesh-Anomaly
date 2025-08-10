@@ -21,10 +21,10 @@ namespace Luna_BRF
 			{
 				if (allPawnsSpawned[i].Faction != selfFaction && allPawnsSpawned[i].Position.InHorDistOf(parent.Position, Range))
 				{
-					Hediff firstHediffOfDef = allPawnsSpawned[i].health.hediffSet.GetFirstHediffOfDef(LunaDefOf.BRF_InvisibleWatched);
+					Hediff firstHediffOfDef = allPawnsSpawned[i].health.hediffSet.GetFirstHediffOfDef(LunaBRFDefOf.BRF_InvisibleWatched);
 					if (firstHediffOfDef == null && allPawnsSpawned[i].IsPsychologicallyInvisible())
 					{
-						firstHediffOfDef = allPawnsSpawned[i].health.AddHediff(LunaDefOf.BRF_InvisibleWatched);
+						firstHediffOfDef = allPawnsSpawned[i].health.AddHediff(LunaBRFDefOf.BRF_InvisibleWatched);
 						allPawnsSpawned[i].Notify_BecameVisible();
 						break;
 					}

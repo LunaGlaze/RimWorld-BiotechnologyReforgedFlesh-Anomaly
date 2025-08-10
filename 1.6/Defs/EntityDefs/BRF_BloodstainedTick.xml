@@ -7,7 +7,6 @@
     <category>Basic</category>
     <useDescriptionFrom>BRF_BloodstainedTick</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_BloodstainedTick</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_BloodstainedTick</li>
     </linkedThings>
@@ -28,6 +27,7 @@
       <li>BRF_BloodstainedTickParasitic</li>
     </abilities>
     <combatPower>75</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <lifeStages>
       <li>
         <bodyGraphicData>

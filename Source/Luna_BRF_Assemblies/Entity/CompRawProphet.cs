@@ -26,11 +26,11 @@ namespace Luna_BRF
                 int randomInRangeA = PrimordialFleshBeastSpawnRange.RandomInRange;
                 for (int i = 0; i < randomInRangeA; i++)
                 {
-                    Pawn pawn1 = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaDefOf.BRF_PrimordialFleshBeast, parent.Faction, PawnGenerationContext.NonPlayer, -1, true, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, 0f));
+                    Pawn pawn1 = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaBRFDefOf.BRF_PrimordialFleshBeast, parent.Faction, PawnGenerationContext.NonPlayer, -1, true, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, 0f));
                     SpawnPawn(pawn1, parent.PositionHeld, parent.MapHeld);
                 }
                 FleshbeastUtility.MeatSplatter(BloodFilthCountRange.RandomInRange, parent.PositionHeld, parent.MapHeld);
-                FilthMaker.TryMakeFilth(parent.PositionHeld, parent.MapHeld, LunaDefOf.Filth_BRF_PrimordialTwistedFlesh);
+                FilthMaker.TryMakeFilth(parent.PositionHeld, parent.MapHeld, LunaBRFDefOf.Filth_BRF_PrimordialTwistedFlesh);
                 if (parent is Pawn pawn00)
                 {
                     float point = HpRegenerationPointsRange.RandomInRange + 25;
@@ -45,18 +45,18 @@ namespace Luna_BRF
             if(num < DamageSpawnThresholds) { randomInRangeB = Mathf.Max(1, randomInRangeB); }
             for (int i = 0; i < randomInRangeB; i++)
             {
-                Pawn pawn2 = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaDefOf.BRF_Clump, parent.Faction, PawnGenerationContext.NonPlayer, -1, true, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, 0f));
+                Pawn pawn2 = PawnGenerator.GeneratePawn(new PawnGenerationRequest(LunaBRFDefOf.BRF_Clump, parent.Faction, PawnGenerationContext.NonPlayer, -1, true, false, false, true, false, 1f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, 0f));
                 SpawnPawn(pawn2, parent.PositionHeld, parent.MapHeld);
             }
             FleshbeastUtility.MeatSplatter(BloodFilthCountRange.RandomInRange, parent.PositionHeld, parent.MapHeld);
-            FilthMaker.TryMakeFilth(parent.PositionHeld, parent.MapHeld, LunaDefOf.Filth_BRF_PrimordialTwistedFlesh);
+            FilthMaker.TryMakeFilth(parent.PositionHeld, parent.MapHeld, LunaBRFDefOf.Filth_BRF_PrimordialTwistedFlesh);
             if (parent.Map != null)
             {
                 foreach (IntVec3 cell in GenRadial.RadialCellsAround(parent.Position, 8, true))
                 {
                     if (cell.InBounds(parent.Map))
                     {
-                        Thing thing = ThingMaker.MakeThing(LunaDefOf.BRF_FishySteamGas);
+                        Thing thing = ThingMaker.MakeThing(LunaBRFDefOf.BRF_FishySteamGas);
                         thing.Rotation = Rot4.North;
                         thing.Position = cell;
                         thing.SpawnSetup(parent.Map, false);

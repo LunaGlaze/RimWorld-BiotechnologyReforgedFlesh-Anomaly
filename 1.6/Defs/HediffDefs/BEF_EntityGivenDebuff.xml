@@ -5,7 +5,7 @@
         <defName>BRF_ScarletFever</defName>
         <label>Scarlet Fever</label>
         <description>Those more primitive but more efficient flesh monster always accompanies this warped fever. They have no fear of pain and they are invincible.</description>
-        <hediffClass>HediffWithComps</hediffClass>
+        <hediffClass>Luna_BRF.Hediff_BRF_ScarletFever</hediffClass>
         <everCurableByItem>false</everCurableByItem>
         <defaultLabelColor>(1, 0.6, 0.58)</defaultLabelColor>
         <duplicationAllowed>false</duplicationAllowed>
@@ -31,6 +31,11 @@
                 </statFactors>
             </li>
         </stages>
+        <comps>
+          <li Class="Luna_BRF.HediffCompProperties_CompTipStringExtra">
+              <compTipStringExtra>(Increases damage to non-flesh pawns)</compTipStringExtra>
+          </li>
+        </comps>
     </HediffDef>
 
   <HediffDef>

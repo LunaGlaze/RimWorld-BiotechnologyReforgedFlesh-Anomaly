@@ -241,7 +241,7 @@
     <description>This entity has the ability to devour corpses.</description>
     <iconPath>UI/Abilities/BRF_EntityNecrophagia</iconPath>
     <cooldownTicksRange>3600</cooldownTicksRange>
-	  <aiCanUse>true</aiCanUse>
+	  <aiCanUse>false</aiCanUse>
     <showPsycastEffects>false</showPsycastEffects>
 	  <showOnCharacterCard>false</showOnCharacterCard>
     <moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>

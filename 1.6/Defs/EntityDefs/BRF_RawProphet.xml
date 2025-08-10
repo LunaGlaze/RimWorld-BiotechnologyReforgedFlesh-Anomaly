@@ -7,7 +7,6 @@
     <category>Ultimate</category>
     <useDescriptionFrom>BRF_RawProphet</useDescriptionFrom>
     <uiIconPath>UI/Codexentries/BRF_RawProphet</uiIconPath>
-    <discoveryType>Unfog</discoveryType>
     <linkedThings>
       <li>BRF_RawProphet</li>
     </linkedThings>
@@ -246,6 +245,7 @@
       <li>BRF_Launch_RawProphet</li>
     </abilities>
     <combatPower>800</combatPower>
+    <defaultFactionDef>Entities</defaultFactionDef>
     <immuneToTraps>true</immuneToTraps>
     <collidesWithPawns>false</collidesWithPawns>
     <lifeStages>

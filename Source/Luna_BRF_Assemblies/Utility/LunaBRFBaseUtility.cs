@@ -20,6 +20,13 @@ namespace Luna_BRF
 				num++;
 			}
 			return num;
-		}
-	}
+        }
+        public static void AddFoodNeedPoints(Pawn pawn, float nutrition)
+        {
+            if (pawn.needs != null && pawn.needs.food != null)
+            {
+                pawn.needs.food.CurLevel += nutrition;
+            }
+        }
+    }
 }
