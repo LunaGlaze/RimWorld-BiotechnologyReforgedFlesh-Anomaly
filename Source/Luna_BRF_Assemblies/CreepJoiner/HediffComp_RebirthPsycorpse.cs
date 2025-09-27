@@ -115,7 +115,7 @@ namespace Luna_BRF
                 CellFinder.TryFindRandomReachableCellNearPosition(basepawn.Position, basepawn.Position, map, 2f, TraverseParms.For(TraverseMode.NoPassClosedDoors), null, null, out var result);
                 FilthMaker.TryMakeFilth(result, map, ThingDefOf.Filth_Blood);
             }
-            SoundDef.Named("BRF_MeleeHit_Flesh").PlayOneShot(new TargetInfo(basepawn.Position, map));
+            SoundDef.Named("BRF_Pawn_RebirthPsycorpse_Call").PlayOneShot(new TargetInfo(basepawn.Position, map));
             if (ModsConfig.AnomalyActive && Props.codexEntry != null)
             {
                 Find.EntityCodex.SetDiscovered(Props.codexEntry, Props.turnPawnKind.race);

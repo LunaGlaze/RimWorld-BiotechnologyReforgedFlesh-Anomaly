@@ -11,6 +11,7 @@ namespace Luna_BRF
             DefOfHelper.EnsureInitializedInCtor(typeof(LunaBRFDefOf));
         }
         public static EntityCodexEntryDef VoidMonolith;
+        public static EntityCodexEntryDef FleshmassHeart;
         public static EntityCodexEntryDef BRF_BloodstainedTick;
         public static EntityCodexEntryDef BRF_ThornbladeMaggot;
         public static EntityCodexEntryDef BRF_BloodvineZombie;

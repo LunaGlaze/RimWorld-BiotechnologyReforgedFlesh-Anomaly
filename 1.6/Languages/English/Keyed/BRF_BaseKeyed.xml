@@ -27,22 +27,26 @@
   <BRF_RitualSacrificedFailedUnnaturalDarkness>Unnatural darkness prevented this and the sacrifice was wasted!</BRF_RitualSacrificedFailedUnnaturalDarkness>
 
   <BRF_AkulothRitualFinishText>{INVOKER_nameDef} successfully achieve symbiosis with the akuloth.</BRF_AkulothRitualFinishText>
-  <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has been symbiosis with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>
-  
   
   <BRF_InitiationRitualBaseFinishText>{INVOKER_nameDef} has completed {RITUAL_definite} ritual. {TARGET_nameDef} has became a glorious Orin.</BRF_InitiationRitualBaseFinishText>
   <BRF_InitiationRitualCompleteText>{0_nameDef} has became a glorious Orin. \n\nDue to the immaturity of the caster, the process has atrophied {0_nameDef}'s brain, causing {0_objective} to lose a total of {1} XP in {0_possessive} skills.</BRF_InitiationRitualCompleteText>
 
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef} has symbiosied with the akuloth.</BRF_psychicRitualLeaveReason_HasAkuloth>
   <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef} has got the initiation of flesh.</BRF_psychicRitualLeaveReason_SarkicismTrait>
-  
 
   <BRF_RitualTheophagy_RitualFinishText>By imitating the sacramental consumption of a god, {INVOKER_nameDef} has completed {RITUAL_definite} ritual.</BRF_RitualTheophagy_RitualFinishText>
 
   <BRF_RitualTheophagyKnowledgeSucceeded>And have gained some twisted wisdom about {PROJECT_definite}.</BRF_RitualTheophagyKnowledgeSucceeded>
   <BRF_RitualTheophagyKnowledgeFailed>But all the saw was indescribable distortion and brilliance.</BRF_RitualTheophagyKnowledgeFailed>
 
-  <BRF_TheophagySatisfactionFinishText>I have temporarily understood the secret of Satisfaction.</BRF_TheophagySatisfactionFinishText>
+  <BRF_TheophagySatisfactionFinishText>Have temporarily understood the secret of Satisfaction.</BRF_TheophagySatisfactionFinishText>
+
+  <BRF_TheophagyKnockFleshHeartSucceeded>The fleshmass heart was warped into the shallow ground here and is waking up!</BRF_TheophagyKnockFleshHeartSucceeded>
+  <BRF_TheophagyKnockFleshHeartFailed>However, there is not enough space here to open a warp rift!</BRF_TheophagyKnockFleshHeartFailed>
+
+  <BRF_TheophagyChorFinishText>And temporarily understand the chor of preservation.</BRF_TheophagyChorFinishText>
+
+  <BRF_TheophagyKnockSilenceFinishText>All the shamblers here fell silent.</BRF_TheophagyKnockSilenceFinishText>
 
 
   <BRF_WorkingSpeedMultiplierReduced>Reduce Working Speed</BRF_WorkingSpeedMultiplierReduced>

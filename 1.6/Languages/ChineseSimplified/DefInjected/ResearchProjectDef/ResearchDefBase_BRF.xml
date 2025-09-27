@@ -127,6 +127,12 @@
   <BRF_FleshBeastShellResearch.description>扭曲方尖碑中创造出噩梦般可怕的异常生物的未知能量是否比想象中更......古老？亦或者更原始？\n\n在肢团或者其他更古老、更先进的血肉兽体内似乎有者某种类似的东西... 抱歉，我不能描述它。但如果利用这种存在，我们也许能制造出那种经历畸变肢体，以更稳定的方式。</BRF_FleshBeastShellResearch.description>
 
 
+  <!-- 高级神餐仪式 -->
+
+  <BRF_TheophagyPsychicRitualResearchHight.label>高级神餐仪式</BRF_TheophagyPsychicRitualResearchHight.label>
+  <BRF_TheophagyPsychicRitualResearchHight.description>“圣典性地进食神明。”\n\n当我们在这条通往完美的道路上走得越远，我们能做到的就越多。我们没有回头的机会，但圣餐能带给我们更多。</BRF_TheophagyPsychicRitualResearchHight.description>
+
+
   <!-- 脑蛞蝓基础 -->
 
   <BRF_LowerNeuralSymbiosis.label>低等神经共生体</BRF_LowerNeuralSymbiosis.label>

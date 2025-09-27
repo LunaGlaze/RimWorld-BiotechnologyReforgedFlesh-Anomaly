@@ -223,6 +223,10 @@
     <defName>BRF_EntityFlashS</defName>
     <cooldownTicksRange>1200</cooldownTicksRange> <!-- 20 seconds -->
     <verbProperties>
+      <soundCast>BRF_Pawn_RebirthPsycorpse_Call</soundCast>
+      <requireLineOfSight>true</requireLineOfSight>
+    </verbProperties>
+    <verbProperties>
       <range>24.9</range>
     </verbProperties>
   </AbilityDef>

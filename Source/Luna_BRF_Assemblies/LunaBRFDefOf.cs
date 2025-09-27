@@ -47,6 +47,7 @@ namespace Luna_BRF
         public static ThingDef BRF_FishySteamGas;
         public static IncidentDef BRF_BloodstainedParasiticedInsectAssault;
         public static IncidentDef BRF_ClumpAssault;
+        public static IncidentDef FleshmassHeart;
         public static ThingDef BRF_RawHeartStart;
         public static ThingDef BRF_PsycorpseGuard;
         public static TraitDef BRF_Sarkicism;

@@ -35,5 +35,17 @@
   <BRF_TheophagySatisfaction.label>神餐仪式（餍足）</BRF_TheophagySatisfaction.label>
   <BRF_TheophagySatisfaction.description>“圣典性地进食神明。”我们以扭曲与超凡所造之物重铸的残骸为食，并尝试从中习得摆脱饥渴的秘密。</BRF_TheophagySatisfaction.description>
   <BRF_TheophagySatisfaction.outcomeDescription>根据仪式质量，参与仪式者都将在接下来的{0}个小时之内变得非常不容易饥饿，但是一旦这个效果结束，接下来的一个小时之内它们会饿的非常快。</BRF_TheophagySatisfaction.outcomeDescription>
+  
+  <BRF_TheophagyKnockFleshHeart.label>神餐仪式（碎心）</BRF_TheophagyKnockFleshHeart.label>
+  <BRF_TheophagyKnockFleshHeart.description>“圣典性地进食神明。”我们以扭曲与超凡所造之物重铸的残骸为食，并试图籍此开启维度之裂罅，将一个血肉心脏转移此地浅层地表。</BRF_TheophagyKnockFleshHeart.description>
+  <BRF_TheophagyKnockFleshHeart.outcomeDescription>以当前仪式质量，发起者有{0}的几率陷入暗黑心灵冲击状态。如果没有位置可供开启裂罅，发起者也将陷入暗黑心灵冲击。</BRF_TheophagyKnockFleshHeart.outcomeDescription>
+  
+  <BRF_TheophagyChor.label>神餐（脉律）</BRF_TheophagyChor.label>
+  <BRF_TheophagyChor.description>“圣典性地进食神明。”我们以扭曲与超凡所造之物重铸的残骸为食，并赋予祈求之人活力、本能与旋律……赋予发起者回避痛苦的力量。</BRF_TheophagyChor.description>
+  <BRF_TheophagyChor.outcomeDescription>根据仪式质量，发起者将获得{0}点超速再生。</BRF_TheophagyChor.outcomeDescription>
+  
+  <BRF_TheophagySilence.label>神餐（归寂）</BRF_TheophagySilence.label>
+  <BRF_TheophagySilence.description>“圣典性地进食神明。”我们以扭曲与超凡所造之物重铸的残骸为食，并使那已死的再度逝去。(杀死本地图全部蹒跚怪)</BRF_TheophagySilence.description>
+  <BRF_TheophagySilence.outcomeDescription>以当前仪式质量，发起者有{0}的几率陷入暗黑心灵冲击状态。</BRF_TheophagySilence.outcomeDescription>
 
 </LanguageData>

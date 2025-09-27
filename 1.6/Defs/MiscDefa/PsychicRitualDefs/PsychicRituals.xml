@@ -314,6 +314,100 @@
     </durationHoursFromQualityCurve>
     <cooldownHours>168</cooldownHours>
   </Luna_BRF.PsychicRitualDef_TheophagySatisfaction>
+  <!-- 神餐（碎心） -->
+  <Luna_BRF.PsychicRitualDef_TheophagyKnockFleshHeart>
+    <defName>BRF_TheophagyKnockFleshHeart</defName>
+    <label>Theophagy Ritual (KnockHeart)</label>
+    <description>"The sacramental consumption of a god." We feed on the reshaped remains of things forged by the twisted and the archo, and through this act, attempt to open a dimensional rift that will transfer the fleshmass heart to the shallow depths of this place.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_TheophagyKnockFleshHeart</iconPath>
+    <researchPrerequisite>BRF_TheophagyPsychicRitualResearchHight</researchPrerequisite>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <outcomeDescription>With the current quality, there's a {0} chance the invoker will receive dark psychic shock. If there's no place for the dimensional rift to open, the invoker will receive dark psychic shock as well.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ReforgedMeat_Harbinger</li>
+        </thingDefs>
+      </filter>
+      <count>75</count>
+    </requiredOffering>
+    <fleshmassheartPointsFromThreatPointsCurve>
+      <points>
+        <li>(0, 200)</li>
+        <li>(0.7, 600)</li>
+        <li>(0.9, 1200)</li>
+        <li>(1, 2400)</li>
+      </points>
+    </fleshmassheartPointsFromThreatPointsCurve>
+    <psychicShockChanceFromQualityCurve>
+      <points>
+        <li>(0, 0.9)</li>
+        <li>(0.5, 0.25)</li>
+        <li>(0.9, 0.05)</li>
+        <li>(1, 0)</li>
+      </points>
+    </psychicShockChanceFromQualityCurve>
+    <darkPsychicShockDurarionHoursRange>2~4</darkPsychicShockDurarionHoursRange>
+    <cooldownHours>180</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
+  </Luna_BRF.PsychicRitualDef_TheophagyKnockFleshHeart>
+  <!-- 神餐（脉律） -->
+  <Luna_BRF.PsychicRitualDef_TheophagyChor>
+    <defName>BRF_TheophagyChor</defName>
+    <label>Theophagy Ritual (Chor)</label>
+    <description>"The sacramental consumption of a god." We feed on the reshaped remains of things forged by the twisted and the archo, and give the invoker exuberance; instinct; rhythm... giving invoker the power to avoid pain.</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_TheophagyChor</iconPath>
+    <researchPrerequisite>BRF_TheophagyPsychicRitualResearchHight</researchPrerequisite>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <outcomeDescription>With the current quality, the invoker will gain or increase {0} points of rapid regeneration.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ReforgedMeat_Harbinger</li>
+        </thingDefs>
+      </filter>
+      <count>75</count>
+    </requiredOffering>
+    <extraHealthPointsFromQualityCurve>
+      <points>
+        <li>(0, 10)</li>
+        <li>(0.5, 25)</li>
+        <li>(0.75, 50)</li>
+        <li>(0.9, 75)</li>
+        <li>(1, 100)</li>
+      </points>
+    </extraHealthPointsFromQualityCurve>
+    <cooldownHours>180</cooldownHours>
+    <chanterRole>ChanterAdvanced</chanterRole>
+  </Luna_BRF.PsychicRitualDef_TheophagyChor>
+  <!-- 神餐（归寂） -->
+  <Luna_BRF.PsychicRitualDef_TheophagySilence>
+    <defName>BRF_TheophagySilence</defName>
+    <label>Theophagy Ritual (Silence)</label>
+    <description>"The sacramental consumption of a god." We feed on the reshaped remains of things forged by the twisted and the archo, and cause those who are dead to die again. (Kill all of shambler at this map.)</description>
+    <iconPath>UI/PsychicRituals/BRF_PsychicRitual_TheophagySilence</iconPath>
+    <researchPrerequisite>BRF_TheophagyPsychicRitualResearchHight</researchPrerequisite>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <outcomeDescription>With the current quality, there's a {0} chance the invoker will receive dark psychic shock.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>BRF_ReforgedMeat_Harbinger</li>
+        </thingDefs>
+      </filter>
+      <count>35</count>
+    </requiredOffering>
+    <psychicShockChanceFromQualityCurve>
+      <points>
+        <li>(0, 0.9)</li>
+        <li>(0.5, 0.25)</li>
+        <li>(0.9, 0.05)</li>
+        <li>(1, 0)</li>
+      </points>
+    </psychicShockChanceFromQualityCurve>
+    <darkPsychicShockDurarionHoursRange>2~4</darkPsychicShockDurarionHoursRange>
+    <cooldownHours>72</cooldownHours>
+  </Luna_BRF.PsychicRitualDef_TheophagySilence>
 <!-- 角色 -->
   <PsychicRitualRoleDef>
     <defName>BRF_RitualRoleVictim</defName>

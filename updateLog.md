@@ -175,3 +175,12 @@
  - 使得借出殖民者的任务有低概率令殖民者被伪装的重生灵骸替换。/Now allows quests that loan out colonists (PawnLend) to have a small chance of the colonist being replaced by a disguised Rebirth Psycorpse.
  - 当重生灵骸显现时，为目击者添加负面情绪。/Added negative emotions for witnesses when the Rebirth Psycorpse manifests.
  - 修复详细信息页面报错，并添加缺失的冥想效率。/Fixed an error in the details page and added missing meditation efficiency.
+
+ [v0.4.6]
+ - 降低机器的营养值消耗速率。/Reduces the rate at which the bio-machine consumes nutrients.
+ - 提升血柑橘的属性和性价比。/Improves the stats and cost-effectiveness of Bloody Citrus Reticulata.
+ - 新增高级神餐仪式研究与三个新心灵仪式（召唤血肉心脏、给予超速再生、杀死全图蹒跚怪）。/Added advanced Theophagy ritual research and three new mind rituals (summon fleshmass heart, grant rapid regeneration, kill all shambler of map).
+ - 微调研究树布局。/Fine-tuned the research tree layout.
+ - 为部分HarmonyPatch新增更多非空保护以避免与其他模组不规范或预期外的输入产生冲突。/Added more non-null protections to some HarmonyPatches to prevent conflicts with non-standard or unexpected inputs from other modules.
+ - 削弱重生灵骸，使其不能折跃至看不见的地点。/Nerfed Rebirth Psycorpse so it can no longer skip to unseen locations.
+ - 初步调整部分实体音效，为重生灵骸添加了独特叫声。/Made preliminary adjustments to some entity sound effects and added a unique cry for the Rebirth Psycorpse.

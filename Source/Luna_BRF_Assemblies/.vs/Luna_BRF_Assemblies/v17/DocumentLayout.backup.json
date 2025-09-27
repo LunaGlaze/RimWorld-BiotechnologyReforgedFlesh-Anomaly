@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|solutionrelative:creepjoiner\\hediffcomp_rebirthpsycorpse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|h:\\[games]\\rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[bio-anomaly]\u8840\u8089\u91CD\u94F8\\source\\luna_brf_assemblies\\lunabrfdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\lunabrfdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E762AFE-F4C4-46CB-9890-F5F7568FC6AF}|Luna_BRF_Assemblies.csproj|solutionrelative:lunabrfdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "RelativeDocumentMoniker": "CreepJoiner\\HediffComp_RebirthPsycorpse.cs",
               "ToolTip": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\CreepJoiner\\HediffComp_RebirthPsycorpse.cs",
               "RelativeToolTip": "CreepJoiner\\HediffComp_RebirthPsycorpse.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAgwIAAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwIQAAADFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T09:50:36.164Z",
+              "WhenOpened": "2025-09-27T06:11:03.363Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "LunaBRFDefOf.cs",
               "ToolTip": "H:\\[Games]\\Rimworld\\\u81EA\u5236mod\u6D4B\u8BD5\\[Bio-Anomaly]\u8840\u8089\u91CD\u94F8\\Source\\Luna_BRF_Assemblies\\LunaBRFDefOf.cs",
               "RelativeToolTip": "LunaBRFDefOf.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwDIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T12:02:32.424Z",
               "EditorCaption": ""

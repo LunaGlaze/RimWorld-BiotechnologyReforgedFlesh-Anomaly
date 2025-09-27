@@ -19,9 +19,9 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>16</MarketValue>
+      <MarketValue>18</MarketValue>
       <Mass>0.1</Mass>
-      <DeteriorationRate>2</DeteriorationRate>
+      <DeteriorationRate>1</DeteriorationRate>
       <Nutrition>0.2</Nutrition>
     </statBases>
     <techLevel>Neolithic</techLevel>
@@ -32,7 +32,7 @@
       <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.6</joy>
+      <joy>0.68</joy>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
@@ -53,7 +53,7 @@
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>38</daysToRotStart>
+        <daysToRotStart>48</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
       <li Class="CompProperties_Drug">
@@ -98,7 +98,7 @@
       <li>
         <label>Bloody Citrus Reticulata Warmth</label>
         <description>That Bloody Citrus Reticulata makes me feel more relaxed, and gives me energy at the same time.</description>
-        <baseMoodEffect>6</baseMoodEffect>
+        <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -145,7 +145,7 @@
     <chemicalNeed>BRF_Chemical_BloodyCitrusReticulata</chemicalNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.1</severityPerDay>
+        <severityPerDay>-0.075</severityPerDay>
         <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
@@ -171,7 +171,7 @@
       <li>
         <label>Bloody Citrus Reticulata Withdrawal</label>
         <description>I feel heavy and cold all the time. I never thought I'd want a piece of fruit so much.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

@@ -293,8 +293,8 @@
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>6</researchViewX>
-		<researchViewY>1.8</researchViewY>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.4</researchViewY>
 		<prerequisites>
     		<li>BRF_ScarletForgeResearch</li>
     		<li>MicroelectronicsBasics</li>
@@ -310,7 +310,7 @@
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<researchViewX>5</researchViewX>
-		<researchViewY>2.4</researchViewY>
+		<researchViewY>1.8</researchViewY>
 		<prerequisites>
     		<li>BRF_FleshTaintSporeResearch</li>
 		</prerequisites>
@@ -324,7 +324,7 @@
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<researchViewX>6</researchViewX>
-		<researchViewY>2.4</researchViewY>
+		<researchViewY>1.8</researchViewY>
 		<prerequisites>
     		<li>BRF_LimbGuardResearch</li>
     		<li>BRF_FleshShellBaseResearch</li>
@@ -339,10 +339,28 @@
 		<knowledgeCategory>Advanced</knowledgeCategory>
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<researchViewX>7</researchViewX>
-		<researchViewY>2.4</researchViewY>
+		<researchViewY>1.8</researchViewY>
 		<prerequisites>
     		<li>BRF_FleshBeastShellResearch</li>
     		<li>BlissLobotomy</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+<!--高级神餐仪式-->
+    <ResearchProjectDef>
+		<defName>BRF_TheophagyPsychicRitualResearchHight</defName>
+    	<label>Advanced Theophagy Ritual</label>
+    	<description>"The sacramental consumption of a god." \n\nThe further we go on this path of perfection, the more we can accomplish. There is no turning back, but the sacrament can bring us more and more.</description>
+		<knowledgeCost>15</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+    		<li>AdvancedPsychicRituals</li>
+    		<li>BRF_TheophagyPsychicRitualResearch</li>
+    		<li>BRF_FleshTaintSporeResearch</li>
 		</prerequisites>
     </ResearchProjectDef>
 
@@ -374,7 +392,7 @@
 		<researchViewY>3</researchViewY>
 		<prerequisites>
     		<li>BRF_SummonClumpsResearch</li>
-    		<li>BRF_SummonSwarmsResearch</li>
+    		<li>BRF_TheophagyPsychicRitualResearchHight</li>
 		</prerequisites>
     </ResearchProjectDef>
 

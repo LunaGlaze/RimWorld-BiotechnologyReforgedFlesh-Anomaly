@@ -27,12 +27,9 @@
   <BRF_RitualSacrificedFailedUnnaturalDarkness>异常黑暗阻止了这一切，牺牲被浪费了！</BRF_RitualSacrificedFailedUnnaturalDarkness>
 
   <BRF_AkulothRitualFinishText>{INVOKER_nameDef}成功地与神圣的白虫达成了共生。</BRF_AkulothRitualFinishText>
-  <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef}已经与神圣的白虫达成了共生。</BRF_psychicRitualLeaveReason_HasAkuloth>
-  
   
   <BRF_InitiationRitualBaseFinishText>{INVOKER_nameDef}完成了{RITUAL_definite}仪式。{TARGET_nameDef}成为了一名光荣的Orin。</BRF_InitiationRitualBaseFinishText>
   <BRF_InitiationRitualCompleteText>{0_nameDef}成为了一名光荣的Orin。\n\n由于施法者的不成熟，该过程使{0_nameDef}大脑衰退，令{0_pronoun}在各种技能上失去总计{1}经验。</BRF_InitiationRitualCompleteText>
-  
 
   <BRF_psychicRitualLeaveReason_HasAkuloth>{PAWN_nameDef}已经与神圣的白虫达成了共生。</BRF_psychicRitualLeaveReason_HasAkuloth>
   <BRF_psychicRitualLeaveReason_SarkicismTrait>{PAWN_nameDef}已经得到了血肉的启迪。</BRF_psychicRitualLeaveReason_SarkicismTrait>
@@ -44,6 +41,13 @@
   <BRF_RitualTheophagyKnowledgeFailed>但只看见了不可名状的扭曲与光辉。</BRF_RitualTheophagyKnowledgeFailed>
 
   <BRF_TheophagySatisfactionFinishText>暂时理解了餍足的秘密。</BRF_TheophagySatisfactionFinishText>
+
+  <BRF_TheophagyKnockFleshHeartSucceeded>血肉心脏被折跃到了此地的浅层地面中并正在苏醒！</BRF_TheophagyKnockFleshHeartSucceeded>
+  <BRF_TheophagyKnockFleshHeartFailed>然而这里没有足以开启折跃裂罅的空间！</BRF_TheophagyKnockFleshHeartFailed>
+
+  <BRF_TheophagyChorFinishText>暂且通晓保存的脉律。</BRF_TheophagyChorFinishText>
+
+  <BRF_TheophagyKnockSilenceFinishText>使得此地的蹒跚怪尽数归于沉寂。</BRF_TheophagyKnockSilenceFinishText>
 
   
   <BRF_WorkingSpeedMultiplierReduced>降低工作速度</BRF_WorkingSpeedMultiplierReduced>

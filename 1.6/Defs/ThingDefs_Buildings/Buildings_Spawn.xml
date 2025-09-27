@@ -73,7 +73,7 @@
     </modExtensions>
     <comps>
 	  <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>2000.0</fuelConsumptionRate>
+        <fuelConsumptionRate>500.0</fuelConsumptionRate>
         <fuelCapacity>10000.0</fuelCapacity>
         <fuelFilter>
           <categories>

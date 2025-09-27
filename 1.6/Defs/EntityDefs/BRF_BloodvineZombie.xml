@@ -95,9 +95,9 @@
       <lifeStageAges>
         <li>
           <def>EntityFullyFormed</def>
-          <soundWounded>Pawn_Gorehulk_Wounded</soundWounded>
-          <soundDeath>Pawn_Gorehulk_Death</soundDeath>
-          <soundCall>Pawn_Gorehulk_Call</soundCall>
+          <soundWounded>Pawn_Shambler_Wounded</soundWounded>
+          <soundDeath>Pawn_Shambler_Killed</soundDeath>
+          <soundCall>Pawn_Shambler_Call</soundCall>
         </li>
       </lifeStageAges>
     </race>

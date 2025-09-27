@@ -100,8 +100,11 @@
     <Compile Include="PsychicRitua\PsychicRitualDef_CrimsonProvocation.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_ExileRawProphet.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_SummonRawProphet.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_TheophagyChor.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_TheophagyKnockFleshHeart.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_TheophagyKnowledge.cs" />
     <Compile Include="PsychicRitua\PsychicRitualDef_TheophagySatisfaction.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualDef_TheophagySilence.cs" />
     <Compile Include="PsychicRitua\PsychicRitualRoleDef_InitiationTarget.cs" />
     <Compile Include="PsychicRitua\PsychicRitualRoleDef_AkulothInvoker.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_AkulothRitual.cs" />
@@ -109,8 +112,11 @@
     <Compile Include="PsychicRitua\PsychicRitualToil_ExileRawProphet.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_InitiationRitual.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_SummonRawProphet.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_TheophagyChor.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_TheophagyKnockFleshHeart.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_TheophagyKnowledge.cs" />
     <Compile Include="PsychicRitua\PsychicRitualToil_TheophagySatisfaction.cs" />
+    <Compile Include="PsychicRitua\PsychicRitualToil_TheophagySilence.cs" />
     <Compile Include="Things\BRFTurretTop.cs" />
     <Compile Include="Things\ExtensionDef_ShooterGuardWithWeapon.cs" />
     <Compile Include="Things\ShooterGuardWithWeapon.cs" />

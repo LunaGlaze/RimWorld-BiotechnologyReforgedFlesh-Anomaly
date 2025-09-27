@@ -11,7 +11,7 @@
 		<tab>ResearchTabBRF_BiomancyAnomaly</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>5</researchViewX>
-		<researchViewY>1.8</researchViewY>
+		<researchViewY>2.4</researchViewY>
 		<prerequisites>
     		<li>BRF_FleshTaintSporeResearch</li>
 		</prerequisites>

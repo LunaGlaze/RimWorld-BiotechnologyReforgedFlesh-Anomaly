@@ -32,15 +32,19 @@ namespace Luna_BRF
         {
             if (flag(__result))
             {
+                Predicate<Thing> validator = (Thing x) => x is Pawn y && (int)x.def.race.intelligence >= 1 && !flag(y);
+                bool canBashDoors2 = canBashDoors;
+                bool canBashFences2 = canBashFences;
                 Pawn newpawn = (Pawn)AttackTargetFinder.BestAttackTarget(pawn,
                     TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable,
-                    (Thing x) => x is Pawn y && (int)x.def.race.intelligence >= 1 && !flag(y),
-                    0f, 9999f, default(IntVec3), float.MaxValue, canBashDoors, canTakeTargetsCloserThanEffectiveMinRange: true, canBashFences);
+                    validator,
+                    0f, 9999f, default(IntVec3), float.MaxValue, canBashDoors2, true, canBashFences2);
                 __result = newpawn;
             }
         }
         static bool flag(Pawn pawn)
         {
+            if (pawn == null) { return false; }
             ExtensionDef_LunaDisallowManhunterTarget pawnProps = pawn.def.GetModExtension<ExtensionDef_LunaDisallowManhunterTarget>();
             if (pawnProps != null) { return pawnProps.disallowFindPawnTargetManhunter; }
             else { return pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_BloodstainedTickParasiticed")) != null; }
