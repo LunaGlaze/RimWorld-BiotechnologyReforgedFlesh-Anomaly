@@ -43,7 +43,6 @@
     </graphicData>
         <thingCategories>
             <li>BRF_Things_FreshShell_Base</li>
-            <li>BodyPartsNatural</li>
         </thingCategories>
       <tradeability>None</tradeability>
   </ThingDef>
@@ -54,7 +53,6 @@
     </graphicData>
         <thingCategories>
             <li>BRF_Things_FreshShell_Base</li>
-            <li>BodyPartsNatural</li>
         </thingCategories>
       <tradeability>None</tradeability>
   </ThingDef>
@@ -65,7 +63,6 @@
     </graphicData>
         <thingCategories>
             <li>BRF_Things_FreshShell_Base</li>
-            <li>BodyPartsNatural</li>
         </thingCategories>
       <tradeability>None</tradeability>
   </ThingDef>
@@ -76,7 +73,6 @@
     </graphicData>
         <thingCategories>
             <li>BRF_Things_FreshShell_Base</li>
-            <li>BodyPartsNatural</li>
         </thingCategories>
       <tradeability>None</tradeability>
   </ThingDef>
