@@ -114,7 +114,7 @@
       <foodType>Corpse, Meat</foodType>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <isImmuneToInfections>true</isImmuneToInfections>
-      <petness>0.05</petness>
+      <petness>0</petness>
       <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
       <nameOnTameChance>1</nameOnTameChance>
@@ -143,7 +143,7 @@
     </race>
     <comps>
         <li Class="Luna_BRF.CompProperties_AnimalProduct">
-            <gatheringIntervalDays>5</gatheringIntervalDays>
+            <gatheringIntervalDays>3</gatheringIntervalDays>
             <resourceAmount>1</resourceAmount>
             <customResourceString>BRF_MutationsRelicImplantsDesc</customResourceString>
             <isRandom>true</isRandom>

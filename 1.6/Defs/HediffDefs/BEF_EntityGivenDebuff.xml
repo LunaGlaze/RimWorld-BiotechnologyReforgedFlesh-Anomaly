@@ -500,6 +500,7 @@
     <comps>
       <li Class="Luna_BRF.HediffCompProperties_MindControlBerserk">
         <mentalStateDef>Berserk</mentalStateDef>
+        <mandatory>true</mandatory>
       </li>
     </comps>
     <modExtensions>

@@ -184,3 +184,12 @@
  - 为部分HarmonyPatch新增更多非空保护以避免与其他模组不规范或预期外的输入产生冲突。/Added more non-null protections to some HarmonyPatches to prevent conflicts with non-standard or unexpected inputs from other modules.
  - 削弱重生灵骸，使其不能折跃至看不见的地点。/Nerfed Rebirth Psycorpse so it can no longer skip to unseen locations.
  - 初步调整部分实体音效，为重生灵骸添加了独特叫声。/Made preliminary adjustments to some entity sound effects and added a unique cry for the Rebirth Psycorpse.
+
+ [v0.4.7]
+ - 修复蠕动肉块和畸变肉块可能作为开局宠物的bug。/Fixed a bug where peristaltic flesh blobs and mutations fleshmass could be kept as pets at begin.
+ - 修复由血肉温床产生的蠕动肉块无法通过面板管理的bug。/Fixed a bug where peristaltic flesh blobs created by the primordial flesh cradle could not be managed through the panel.
+ - 降低畸变肉块产物产出间隔。/Reduce the interval between mutations fleshmass production.
+ - 加快蠕动肉块成年速度，减少产肉量。/Accelerates the maturation of peristaltic flesh blobs, and reducing meat production.
+ - 修复模组内仿生体可以进行交易或出现在商人列表中的bug。/Fixed a bug where bionic within the mod could be traded or appear in the merchant list.
+ - 从猩红脑蛰的目标中移除蹒跚怪，并且使其可以持续阻止不可狂暴目标的工作和战斗。/Removed shambler from Scarlet Cerebral Jellyfish's targeting, and made it so that it can consistently prevent non-berserk targets from working and fighting.
+ - 修复和恢复1.5添加的RJW基础联动。/Repair and restore the RJW base linkage added in 1.5.

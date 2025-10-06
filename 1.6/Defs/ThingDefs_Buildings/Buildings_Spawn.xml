@@ -110,7 +110,7 @@
         <showNextSpawnInInspect>true</showNextSpawnInInspect>
         <lordJob>LordJob_MechanoidsDefend</lordJob>
         <pawnSpawnIntervalDays>0.666</pawnSpawnIntervalDays>
-        <shouldJoinParentLord>False</shouldJoinParentLord>
+        <shouldJoinParentLord>false</shouldJoinParentLord>
       </li>
       <li Class="Luna_BRF.CompProperties_LunaSelfhealHitpoints">
         <requiresFuel>true</requiresFuel>

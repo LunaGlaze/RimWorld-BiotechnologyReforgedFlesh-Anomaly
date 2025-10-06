@@ -3,7 +3,7 @@
 <name>MeatCore 血肉重铸 Bio-Anomaly Flesh Reforged</name>
 <author>幽月琉璃Luna</author>
 <packageId>lunaglaze.Anomaly.BiotechnologyReforgedFlesh</packageId>
-<modVersion>0.4.6</modVersion>
+<modVersion>0.4.7</modVersion>
 <modIconPath>Items/Resource/BRF_RecastFleshCube</modIconPath>
 <supportedVersions>
 	<li>1.5</li>

@@ -32,7 +32,9 @@ namespace Luna_BRF
 
 		public float defendRadius = 21f;
 
-		public int initialPawnsCount;
+        public float lordJoinRadius = 2.1474836E+09f;
+
+        public int initialPawnsCount;
 
 		public float initialPawnsPoints;
 

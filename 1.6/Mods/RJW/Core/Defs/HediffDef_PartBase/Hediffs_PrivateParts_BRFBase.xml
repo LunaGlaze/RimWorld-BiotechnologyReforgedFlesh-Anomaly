@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--基础父类-->
+
+        <!--阴茎-->
+        <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis"  Name="BRF_FleshBodyPart_PenisBase" Abstract="True">
+          <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+          <isBad>false</isBad>
+          <partTags>
+            <li>Humanlike</li>
+            <li>STDImmune</li>
+          </partTags>
+        </rjw.HediffDef_SexPart>
+        <!--阴道-->
+        <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina"  Name="BRF_FleshBodyPart_VaginaBase" Abstract="True">
+          <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+          <isBad>false</isBad>
+          <partTags>
+            <li>STDImmune</li>
+          </partTags>
+        </rjw.HediffDef_SexPart>
+        <!--肛门-->
+        <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartAnus"  Name="BRF_FleshBodyPart_AnusBase" Abstract="True">
+          <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+          <isBad>false</isBad>
+          <partTags>
+            <li>STDImmune</li>
+          </partTags>
+        </rjw.HediffDef_SexPart>
+        <!--乳房-->
+        <rjw.HediffDef_SexPart ParentName="NaturalPrivatePartBreast"  Name="BRF_FleshBodyPart_BreastBase" Abstract="True">
+          <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+          <isBad>false</isBad>
+          <partTags>
+            <li>STDImmune</li>
+          </partTags>
+        </rjw.HediffDef_SexPart>
+
+    <!--阴茎-->
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale"  Name="BRF_FleshBodyPart_GenMaleThing" Abstract="True">
+    <graphicData>
+      <color>(203,101,102)</color>
+    </graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+      <tradeability>None</tradeability>
+  </ThingDef>
+    <!--阴道-->
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseGenFemale"  Name="BRF_FleshBodyPart_GenFemaleThing" Abstract="True">
+    <graphicData>
+      <color>(203,101,102)</color>
+    </graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+      <tradeability>None</tradeability>
+  </ThingDef>
+    <!--肛门-->
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseAnus"  Name="BRF_FleshBodyPart_AnusThing" Abstract="True">
+    <graphicData>
+      <color>(203,101,102)</color>
+    </graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+      <tradeability>None</tradeability>
+  </ThingDef>
+    <!--乳房-->
+  <ThingDef ParentName="rjw_BodyPartNaturalBaseBreast"  Name="BRF_FleshBodyPart_BreastThing" Abstract="True">
+    <graphicData>
+      <color>(203,101,102)</color>
+    </graphicData>
+        <thingCategories>
+            <li>BRF_Things_FreshShell_Base</li>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+      <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

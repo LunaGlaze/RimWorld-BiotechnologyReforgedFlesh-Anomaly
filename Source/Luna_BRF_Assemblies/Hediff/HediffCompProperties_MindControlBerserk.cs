@@ -11,5 +11,6 @@ namespace Luna_BRF
 		}
 		public MentalStateDef mentalStateDef;
 		public FactionDef factionDef;
-	}
+        public bool mandatory = false;
+    }
 }

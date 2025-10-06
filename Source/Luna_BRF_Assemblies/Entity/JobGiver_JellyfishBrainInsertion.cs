@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -14,7 +13,7 @@ namespace Luna_BRF
 			List<Pawn> pawns = new List<Pawn>();
 			foreach (Pawn item in pawn.Map.mapPawns.AllPawnsSpawned)
 			{
-				if (item.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_ScarletCerebralJellyfishBrainInsertion")) == null && !item.AnimalOrWildMan() && item.health.hediffSet.GetBrain() != null && item.Faction != pawn.Faction && item.health.State != PawnHealthState.Down && pawn.Map.reachability.CanReach(pawn.Position, item.SpawnedParentOrMe, PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)) && item.RaceProps.IsFlesh )
+				if (item.health?.hediffSet?.GetFirstHediffOfDef(HediffDef.Named("BRF_ScarletCerebralJellyfishBrainInsertion")) == null && !item.AnimalOrWildMan() && item.health.hediffSet.GetBrain() != null && item.Faction != pawn.Faction && item.health.State != PawnHealthState.Down && pawn.Map.reachability.CanReach(pawn.Position, item.SpawnedParentOrMe, PathEndMode.OnCell, TraverseParms.For(pawn, canBashDoors: true, canBashFences: true)) && item.RaceProps.IsFlesh && !item.IsShambler )
 				{
 					pawns.Add(item);
 				}

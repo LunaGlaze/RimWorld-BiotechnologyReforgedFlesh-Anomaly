@@ -21,10 +21,13 @@
             <li Class="Luna_BRF.HediffCompProperties_InfectionsWithoutAkuloth"/>
         </comps>
     </HediffDef>
+	  <ThingDef Name="BRF_BodyPartBase" ParentName="BodyPartBase" Abstract="True">
+      <tradeability>None</tradeability>
+    </ThingDef>
     
 <!--神圣的白虫-->
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BRF_BodyPartBase">
     <defName>BRF_Akuloth_Bionic</defName>
     <label>Akuloth</label>
     <description>A type of symbiotic organisms that act as a secondary immune system, protecting the host against disease as well as greatly increasing their regenerative abilities. These symbiotic organisms cannot be easily installed by mortal medical skills, but require a certain bloody ritual to achieve symbiosis.</description>
@@ -110,7 +113,7 @@
 
 <!--重生系列（基础超凡仿生体）-->
 
-	<ThingDef Name="BRF_ArchoRebirthBodyPartBase" ParentName="BodyPartBase" Abstract="True">
+	<ThingDef Name="BRF_ArchoRebirthBodyPartBase" ParentName="BRF_BodyPartBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

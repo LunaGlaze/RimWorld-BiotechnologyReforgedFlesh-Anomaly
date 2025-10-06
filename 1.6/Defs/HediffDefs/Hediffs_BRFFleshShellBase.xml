@@ -8,6 +8,7 @@
 			<drawSize>0.80</drawSize>
 			<color>(203,101,102)</color>
 		</graphicData>
+    <tradeability>None</tradeability>
 	  <tickerType>Rare</tickerType>
     <thingCategories>
       <li>BRF_Things_FreshShell_Base</li>

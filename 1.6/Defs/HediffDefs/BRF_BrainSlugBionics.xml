@@ -7,6 +7,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
+    <tradeability>None</tradeability>
 	    <tickerType>Rare</tickerType>
         <thingCategories>
             <li>BRF_Things_FreshShell_NeuralSymbiosis</li>

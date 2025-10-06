@@ -196,8 +196,11 @@
     <statBases>
       <MoveSpeed>1.2</MoveSpeed>
       <MarketValue>0</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>75</MeatAmount>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
+      <ToxicResistance>0.5</ToxicResistance>
       <Wildness>0.5</Wildness>
     </statBases>
     <uiIconScale>1.1</uiIconScale>
@@ -216,6 +219,7 @@
     </tools>
     <race>
       <body>BRF_FleshBase</body>
+      <herdAnimal>false</herdAnimal>
       <predator>true</predator>
       <maxPreyBodySize>0.25</maxPreyBodySize>
       <baseBodySize>0.67</baseBodySize>
@@ -224,14 +228,12 @@
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <isImmuneToInfections>true</isImmuneToInfections>
-      <herdMigrationAllowed>false</herdMigrationAllowed>
-      <petness>0.05</petness>
+      <petness>0</petness>
       <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>200</lifeExpectancy>
       <trainability>Advanced</trainability>
-      <disableAreaControl>false</disableAreaControl>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -239,11 +241,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.25</minAge>
+          <minAge>0.2</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.75</minAge>
+          <minAge>0.58</minAge>
           <soundWounded>BRF_MeleeHit_Flesh</soundWounded>
           <soundDeath>BRF_Pawn_Flesh_Death</soundDeath>
           <soundCall>BRF_Pawn_Flesh_Call</soundCall>
@@ -269,10 +271,6 @@
 	  <butcherProducts>
 		  <BRF_LivingFlesh>1</BRF_LivingFlesh>
     </butcherProducts>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-      <li>AnimalFighter</li>
-    </tradeTags>
     <comps>
 	    <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		    <gender>Male</gender>
@@ -291,7 +289,7 @@
     <race>BRF_PeristalticFleshBlob</race>
     <ecoSystemWeight>0</ecoSystemWeight>
     <canArriveManhunter>false</canArriveManhunter>
-    <combatPower>35</combatPower>
+    <combatPower>25</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -317,6 +315,10 @@
     </lifeStages>
   </PawnKindDef>
 
+	<rjw.RaceTagDef MayRequire="rim.job.world">
+		<defName>BRF_FleshCreatures</defName>
+	</rjw.RaceTagDef>
+  
   <rjw.RaceGroupDef MayRequire="rim.job.world">
 		<defName>BRF_PeristalticFleshBlob</defName>
 		<raceNames>
@@ -336,7 +338,7 @@
 		</maleGenitals>
 		<tags>
 			<li>Skin</li>
-			<li>animal</li>
+			<li>BRF_FleshCreatures</li>
 		</tags>
 		<hasSingleGender>true</hasSingleGender>
 		<hasSexNeed>true</hasSexNeed>

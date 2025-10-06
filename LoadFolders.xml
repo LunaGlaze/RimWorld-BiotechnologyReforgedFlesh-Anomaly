@@ -13,6 +13,7 @@
 		<li>/</li>
 		<li>1.6</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.6/Mods/VanillaExpandedFramework</li>
+		<li IfModActive="rim.job.world">1.6/Mods/RJW/Core</li>
 		<li IfModActive="automatic.bionicicons">1.6/Mods/Bionicicons</li>
 		<li IfModActive="ninedaylongbow.ChineseComprehensiveExpansion">1.6/Mods/ChineseComprehensiveExpansion</li>
 	</v1.6>
